@@ -6,8 +6,8 @@
 <title>Control Room - Looking for 2nd opinions | John Sayers’ Recording Studio Design Forum archive</title>
 <meta name="description" content="Started by jgoldkamp in Acoustics, 2019. 3 replies.">
 <link rel="canonical" href="https://johnlsayersarchive.com/t/22058/">
-<link rel="stylesheet" href="/johnlsayersarchive/static/style.css">
-<link rel="icon" href="/johnlsayersarchive/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 
 
 </head>
@@ -16,13 +16,13 @@
 <header class="masthead">
 <div class="wrap">
 <div class="masthead-row">
-<a class="wordmark" href="/johnlsayersarchive/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
 <nav class="site-nav" aria-label="Site">
-<a href="/johnlsayersarchive/library/">Library</a>
-<a href="/johnlsayersarchive/forum/" aria-current="page">Forums</a>
-<a href="/johnlsayersarchive/people/">People</a>
-<a href="/johnlsayersarchive/about/">About</a>
-<form action="/johnlsayersarchive/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
 </nav>
 </div>
 </div>
@@ -31,7 +31,7 @@
 <main id="main"><div class="wrap">
 
 <div class="read">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/johnlsayersarchive/forum/">Forums</a> › <a href="/johnlsayersarchive/forum/acoustics/">Acoustics</a></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
 <article data-pagefind-body>
 <header class="thread-head">
 <h1>Control Room - Looking for 2nd opinions</h1>
@@ -63,7 +63,7 @@ My goal is a flat frequency response for the room for mixing/mastering. If you h
 Also, if there is a free way to model my room in 3D (that is not a 30 day trial) let me know. I&#x27;d love to see my reflections as my room actually is.</div>
 </article>
 <article class="post" id="p151178">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2019-07-23">23 July 2019</time><a class="permalink" href="#p151178" aria-label="Link to post 2">#2</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-07-23">23 July 2019</time><a class="permalink" href="#p151178" aria-label="Link to post 2">#2</a></header>
 <div class="post-body">Hi there &quot;jgoldkamp&quot;, and Welcome!
 
 I&#x27;m downloading your files to take a look, but your image is not there!  When I click on that link, all I get is &quot;This image does not exist.&quot;.  So please follow the forum rules, and upload the image to the forum itself, where it will always be around for as long as the forum exists.
@@ -86,7 +86,7 @@ Next up; you have some type of interference in your signal chain somewhere:
 So, ignoring all of those major issues, what you have is typical response from a partly treated small room.  There&#x27;s some modal issues (see above waterfall plots), there&#x27;s a hole in the frequency response around 116 Hz (probably either floor bounce or SBIR), and there&#x27;s too much absorption in the mids and highs, not enough in the lows:
 <div class="bb-attachment-missing">Image not preserved: jgoldkamp--REW--SP--12-500.png</div><div class="bb-attachment-missing">Image not preserved: jgoldkamp--REW--RT--40-11k.png</div>I marked roughly where your goal should be for decay time, around 180 ms or so.  Perhaps a bit more, but it would be hard to do that in such a small room.
 
-Overall, your results are not terribly bad, but things can certainly be improved.  However, I would suggest that you first fix all the issues that I outlined above with your REW measurements.  Here&#x27;s a tutorial I wrote a while ago on <span class="bb-u"><em><strong><a href="/johnlsayersarchive/t/21122/">How to calibrate and use REW to test and tune your room acoustics</a></strong></em></span>.  
+Overall, your results are not terribly bad, but things can certainly be improved.  However, I would suggest that you first fix all the issues that I outlined above with your REW measurements.  Here&#x27;s a tutorial I wrote a while ago on <span class="bb-u"><em><strong><a href="/t/21122/">How to calibrate and use REW to test and tune your room acoustics</a></strong></em></span>.  
 
 After you get your REW problems sorted out, please re-measure and post the new results, so we can have another look.
 <blockquote class="bb-quote"><div class="bb-quote-body">My goal is a flat frequency response for the room for mixing/mastering</div></blockquote>That&#x27;s <span class="bb-u"><em>part </em></span>of a good goal, but contrary to popular belief, flat frequency response is not the best metric to set aiming for: Flat time-domain response and correct phase response are more useful and desirable goals, with flat frequency response in third place.  Flat frequency response is meaningless with the context of good phase control and flat time-domain response.  Which is why so-called &quot;room correction&quot; hardware and software are such big flops: way too many people try to use that instead of treating their rooms properly... then they wonder why the are seeing such beautifully flat graphs on the screen, yet the room still sounds like crap...!  (Excuse my French).  Fortunately, you didn&#x27;t do that, so you can ignore my rant... <span class="smilie" title=":)">:)</span>  It&#x27;s meant mostly for other people  who are following your thread, and might be thinking &quot;But if only he would put so EQ on there, he could fix his frequency response!&quot;. 
@@ -120,7 +120,7 @@ I cannot get the loopback to work for the life of me. I tried for 2 hours with y
 </div></main>
 <footer class="site-foot"><div class="wrap">
 <p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
-<p>Have an old johnlsayers.com link? <a href="/johnlsayersarchive/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
 </div></footer>
 </body>
 </html>

@@ -6,8 +6,8 @@
 <title>Need Help to understand what the graphic shows! | John Sayers’ Recording Studio Design Forum archive</title>
 <meta name="description" content="Started by ocilsound in Acoustics, 2012. 5 replies.">
 <link rel="canonical" href="https://johnlsayersarchive.com/t/17914/">
-<link rel="stylesheet" href="/johnlsayersarchive/static/style.css">
-<link rel="icon" href="/johnlsayersarchive/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 
 
 </head>
@@ -16,13 +16,13 @@
 <header class="masthead">
 <div class="wrap">
 <div class="masthead-row">
-<a class="wordmark" href="/johnlsayersarchive/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
 <nav class="site-nav" aria-label="Site">
-<a href="/johnlsayersarchive/library/">Library</a>
-<a href="/johnlsayersarchive/forum/" aria-current="page">Forums</a>
-<a href="/johnlsayersarchive/people/">People</a>
-<a href="/johnlsayersarchive/about/">About</a>
-<form action="/johnlsayersarchive/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
 </nav>
 </div>
 </div>
@@ -31,7 +31,7 @@
 <main id="main"><div class="wrap">
 
 <div class="read">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/johnlsayersarchive/forum/">Forums</a> › <a href="/johnlsayersarchive/forum/acoustics/">Acoustics</a></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
 <article data-pagefind-body>
 <header class="thread-head">
 <h1>Need Help to understand what the graphic shows!</h1>
@@ -52,7 +52,7 @@ This was taken from the &quot;sweetspot&quot;. I used Fuzzmesure, Pro Tools HD, 
 Can someone help me or you need more info to help me out here.<div class="bb-attachments-trailing"><div class="bb-attachment-missing">File not preserved: Sweetspot FG.pdf</div></div></div>
 </article>
 <article class="post" id="p125213">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2012-10-23">23 October 2012</time><a class="permalink" href="#p125213" aria-label="Link to post 2">#2</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-10-23">23 October 2012</time><a class="permalink" href="#p125213" aria-label="Link to post 2">#2</a></header>
 <div class="post-body">Hi &quot;ocilsound&quot;, and welcome!  <span class="smilie" title=":)">:)</span>
 <blockquote class="bb-quote"><div class="bb-quote-body">But I am not totally sure how to analise it.</div></blockquote>It shows only a small part of the story, and not enough to draw conclusive conclusions.  It shows the room response only in the frequency domain, but the time domain is just as important:  How the room reacts to the sound after it stops playing.  You should also look at the impulse response and waterfall plots to learn about the time domain.
 
@@ -75,7 +75,7 @@ Here&#x27;s some more measurements:
 <div class="bb-attachment-missing">Image not preserved: Control Room Layout.jpg</div><div class="bb-attachment-missing">Image not preserved: Octave Band RT (EDT).png</div><div class="bb-attachment-missing">File not preserved: Sweetspot L Speaker.pdf</div><div class="bb-attachment-missing">File not preserved: Sweetspot R Speaker.pdf</div><div class="bb-attachment-missing">File not preserved: Sweetspot L+R Speaker.pdf</div><div class="bb-attachment-missing">Image not preserved: Octave Band RT (T20).png</div><div class="bb-attachment-missing">Image not preserved: Octave Band RT (T30).png</div><div class="bb-attachment-missing">Image not preserved: Cumulative Spectral Decay1.png</div><div class="bb-attachment-missing">Image not preserved: Cumulative Spectral Decay2.png</div>Hope it gives you a better idea!</div>
 </article>
 <article class="post" id="p125217">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2012-10-24">24 October 2012</time><a class="permalink" href="#p125217" aria-label="Link to post 4">#4</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-10-24">24 October 2012</time><a class="permalink" href="#p125217" aria-label="Link to post 4">#4</a></header>
 <div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Hope it gives you a better idea!</div></blockquote>Actually, that&#x27;s more confusing than before!   <span class="smilie" title=":shock:">:shock:</span>  Those graphs don&#x27;t even agree with each other.  For example, one graph shows a decay time of well over one second at 32 Hz, yet another graph shows less than 200ms decay at 32 Hz.  They cannot both be right!  There might well be differences between different calculation methods, and difference between speakers, but not that big.  Then to confuse things even more, the waterfall plots don&#x27;t seem to show any decay at all, either at 32 Hz nor at any other modal frequency: the decay looks flat, to me.  Add to that the curious situation of having a much higher decay time for 4k (290 ms) than for 250 Hz (70 ms)...  That&#x27;s hard to explain, unless there are some pretty serious treatment problems in the room.
 
 I suspect there&#x27;s something wrong with the way the measurements were taken, or with the way they were processed.  I&#x27;m not familiar with Fuzzmesure, so I can&#x27;t tell what you need to do to get valid readings, but there definitely seems to be an issue with the way those graphs are presenting the data.
@@ -111,7 +111,7 @@ Here&#x27;s some pics of it:
 <div class="bb-attachment-missing">Image not preserved: PANORAMICA 02.jpg</div><div class="bb-attachment-missing">Image not preserved: IMG_3802 copy.jpg</div><div class="bb-attachment-missing">Image not preserved: IMG_3766_copy.jpg</div></div>
 </article>
 <article class="post" id="p125226">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2012-10-24">24 October 2012</time><a class="permalink" href="#p125226" aria-label="Link to post 6">#6</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-10-24">24 October 2012</time><a class="permalink" href="#p125226" aria-label="Link to post 6">#6</a></header>
 <div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Here&#x27;s some pics of it:</div></blockquote>The plot thickens!  The actual room does not match the drawings.  The monitors are not soffit mounted, but rather are sitting on top of the bridge, so you aren&#x27;t getting the benefits of the soffit, and are getting the usual artifacts from first-order reflections off the face of the console.  There also doesn&#x27;t seem t be much broad-band bass trapping in the room, although there might be: the diagram seems to show it, but it&#x27;s hard to figure out form the photos if that&#x27;s what they actually did.
 <blockquote class="bb-quote"><div class="bb-quote-body">The most problem I have right now is with some cancelling in the Lo Freq area in the &quot;sweetspot&quot;.</div></blockquote>That might be due to the lack of bass trapping, or it more likely it is due to the location of the listening position and also the curved front wall.  It seems that your listening position is very close to 50% of the room depth (front to back), which is the worst possible place:  that&#x27;s the location in the room where ALL of the room modes are either at full peak or at null, so it would not be surprising for you to notice some low frequency cancellation there, and that would explain the rather large peaks and dips below 500 Hz. on the frequency response graph.
 <blockquote class="bb-quote"><div class="bb-quote-body">I can send you the project if you want to understand it a little more.</div></blockquote>Sure, that would be great.  But I&#x27;d suggest that you PM me with that, rather than post it in public, since it seems to be a paid design job, and the designer might not want his work in the public domain.  So send me a PM (private message) with that, and I&#x27;ll take a look.
@@ -128,7 +128,7 @@ The room looks very nice, by the way:  It&#x27;s just that some of the things vi
 </div></main>
 <footer class="site-foot"><div class="wrap">
 <p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
-<p>Have an old johnlsayers.com link? <a href="/johnlsayersarchive/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
 </div></footer>
 </body>
 </html>

@@ -6,8 +6,8 @@
 <title>Recommendations of Microphone/SPL meter for REW | John Sayers’ Recording Studio Design Forum archive</title>
 <meta name="description" content="Started by FriFlo in Acoustics, 2015. 10 replies.">
 <link rel="canonical" href="https://johnlsayersarchive.com/t/20247/">
-<link rel="stylesheet" href="/johnlsayersarchive/static/style.css">
-<link rel="icon" href="/johnlsayersarchive/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 
 
 </head>
@@ -16,13 +16,13 @@
 <header class="masthead">
 <div class="wrap">
 <div class="masthead-row">
-<a class="wordmark" href="/johnlsayersarchive/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
 <nav class="site-nav" aria-label="Site">
-<a href="/johnlsayersarchive/library/">Library</a>
-<a href="/johnlsayersarchive/forum/" aria-current="page">Forums</a>
-<a href="/johnlsayersarchive/people/">People</a>
-<a href="/johnlsayersarchive/about/">About</a>
-<form action="/johnlsayersarchive/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
 </nav>
 </div>
 </div>
@@ -31,7 +31,7 @@
 <main id="main"><div class="wrap">
 
 <div class="read">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/johnlsayersarchive/forum/">Forums</a> › <a href="/johnlsayersarchive/forum/acoustics/">Acoustics</a></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
 <article data-pagefind-body>
 <header class="thread-head">
 <h1>Recommendations of Microphone/SPL meter for REW</h1>
@@ -61,7 +61,7 @@ What do you guys use and what would you recommend? I will be using this equipmen
 <div class="post-body">Oh, I just found out, the Phonic is 1/3 Octave scale, so not good for measuring small rooms ...</div>
 </article>
 <article class="post" id="p137647">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2015-11-10">10 November 2015</time><a class="permalink" href="#p137647" aria-label="Link to post 3">#3</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-11-10">10 November 2015</time><a class="permalink" href="#p137647" aria-label="Link to post 3">#3</a></header>
 <div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">But I assume a standard calibration file for a mic brand is not really honest, as calibration would have to be done for each individual mic. Do you agree?</div></blockquote>That is true, yes, but the differences between individual mic&#x27;s probably won&#x27;t be huge.  Unless you are doing high precision work in high-end rooms, it probably isn&#x27;t going to be a big problem.
 <blockquote class="bb-quote"><div class="bb-quote-body">What do you guys use and what would you recommend? </div></blockquote>I use three mics and an audio analyzer for acoustic testing.  I have a Behringer ECM8000 that I use for rough measurements, low precision measurements, or in places where it might get damaged (construction sites, for example).  I have a PreSonus PRM1 for higher precision work in cleaner places.  This is the one I use most for room testing and calibration.  I have a Dayton iMM6 as well, for use with smart-phones, and I also have a Phonic PAA-3, which I use mostly as a stand-alone tool, not as a reference mic.
 <blockquote class="bb-quote"><div class="bb-quote-body">As I find it attractive to be able to do some measurements without REW, I tend more an SPL meter with some other functions, like this one (Phonic PAA3)</div></blockquote>That&#x27;s what I use all the time, for all types of measurements, but not as a mic for REW.
@@ -84,7 +84,7 @@ Oh, and the SPL would still be necessary to have for good precision, as I would 
 How precise is the Dayton mic with a smartphone vs. buying the phonic meter? And which App(s) are good? I have an old iPhone 4.</div>
 </article>
 <article class="post" id="p137652">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2015-11-10">10 November 2015</time><a class="permalink" href="#p137652" aria-label="Link to post 5">#5</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-11-10">10 November 2015</time><a class="permalink" href="#p137652" aria-label="Link to post 5">#5</a></header>
 <div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">calibrate your DA converter by plugging its output into its input and running the test in REW. Would you do the same including the preamp in the chain?</div></blockquote> Correct!  Always do the calibration in REW using the complete signal chain that you would use for the test itself, as much as possible.  So if you are going to use a mic-pre of unknown characteristics, then make sure that is in the chain too.... 
 <blockquote class="bb-quote"><div class="bb-quote-body">as I would need to compare the SPL level with REW and adjust, right?</div></blockquote>Correct!  There&#x27;s a procedure for calibrating REW to an external meter, and you definitely should do that, to make sure that the graphs are reflecting real levels.
 <blockquote class="bb-quote"><div class="bb-quote-body">How precise is the Dayton mic with a smartphone vs. buying the phonic meter?</div></blockquote>It&#x27;s much better than using the built-in mic on the smart-phone, but still not as good as the PAA3, which was specifically designed from the ground up as a precision acoustic measurement device.  I have compared the PAA3 reading to my Android+iMM6 readings, and mostly they are similar, but every now and then I do see discrepancies.
@@ -113,7 +113,7 @@ You have a small setup for € 400,- and can do more than with B&amp;K or RION s
 @Bert: Thanks for the hint, but I had already ordered, when I read your message! <span class="smilie" title=":-)">:-)</span></div>
 </article>
 <article class="post" id="p137856">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2015-11-29">29 November 2015</time><a class="permalink" href="#p137856" aria-label="Link to post 9">#9</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-11-29">29 November 2015</time><a class="permalink" href="#p137856" aria-label="Link to post 9">#9</a></header>
 <div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">So, are you using the PRM1 without mic calibration or have you done a professional calibration of the individual mic? </div></blockquote>I don&#x27;t use a calibration file for my PRM1.  For the type of work I use it for, it isn&#x27;t that critical.  One day I will get it calibrated properly, but for now it is quite accurate enough for what I need.
 
 -  Stuart  -</div>
@@ -143,7 +143,7 @@ D.</div>
 </div></main>
 <footer class="site-foot"><div class="wrap">
 <p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
-<p>Have an old johnlsayers.com link? <a href="/johnlsayersarchive/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
 </div></footer>
 </body>
 </html>

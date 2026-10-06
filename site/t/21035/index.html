@@ -6,8 +6,8 @@
 <title>How can monitors with holes not be out of phase? | John Sayers’ Recording Studio Design Forum archive</title>
 <meta name="description" content="Started by joenobody in Speaking of Speakers, 2017. 3 replies.">
 <link rel="canonical" href="https://johnlsayersarchive.com/t/21035/">
-<link rel="stylesheet" href="/johnlsayersarchive/static/style.css">
-<link rel="icon" href="/johnlsayersarchive/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 
 
 </head>
@@ -16,13 +16,13 @@
 <header class="masthead">
 <div class="wrap">
 <div class="masthead-row">
-<a class="wordmark" href="/johnlsayersarchive/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
 <nav class="site-nav" aria-label="Site">
-<a href="/johnlsayersarchive/library/">Library</a>
-<a href="/johnlsayersarchive/forum/" aria-current="page">Forums</a>
-<a href="/johnlsayersarchive/people/">People</a>
-<a href="/johnlsayersarchive/about/">About</a>
-<form action="/johnlsayersarchive/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
 </nav>
 </div>
 </div>
@@ -31,7 +31,7 @@
 <main id="main"><div class="wrap">
 
 <div class="read">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/johnlsayersarchive/forum/">Forums</a> › <a href="/johnlsayersarchive/forum/speaking-of-speakers/">Speaking of Speakers</a></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/speaking-of-speakers/">Speaking of Speakers</a></nav>
 <article data-pagefind-body>
 <header class="thread-head">
 <h1>How can monitors with holes not be out of phase?</h1>
@@ -60,7 +60,7 @@ I&#x27;ve noticed that in many pro studios, the monitors are set inside the wall
 So my question is, are unsealed monitors always going to have the out of phase component and therefore be avoided, or am I making a mistake somewhere and that it really is possible for the two paths the sound takes to end up back in phase?</div>
 </article>
 <article class="post" id="p142115">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2017-04-30">30 April 2017</time><a class="permalink" href="#p142115" aria-label="Link to post 2">#2</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-04-30">30 April 2017</time><a class="permalink" href="#p142115" aria-label="Link to post 2">#2</a></header>
 <div class="post-body">It looks like you are mashing together a whole bunch of very different issues, most of which aren&#x27;t even related to each other, and also confusing them with other things. You seem to be misunderstanding the purpose of the &quot;holes&quot;, and also confusing what happens inside the holes, with what happens inside the room.  Those are two entirely different things.  And you seem to be not taking into account the way low frequency sound behaves, regardless of how the speaker is built.
 
 Let&#x27;s take those in order.
@@ -103,7 +103,7 @@ I know that a large driver in a sealed box will have anything but spectacular ex
 Does this mean that a ported sub has a more even phase response in relation to it&#x27;s input?</div>
 </article>
 <article class="post" id="p146431">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2018-07-04">4 July 2018</time><a class="permalink" href="#p146431" aria-label="Link to post 4">#4</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-07-04">4 July 2018</time><a class="permalink" href="#p146431" aria-label="Link to post 4">#4</a></header>
 <div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">But, resonance implies ringing. And since it&#x27;s a mass/spring system, it has a certain inertia.</div></blockquote>Exactly.  Very correct.  Which is why bass reflex ports are usually damped in one way or another.  
 <blockquote class="bb-quote"><div class="bb-quote-body">This means it takes some time (x cycles) for the port to emit sound.</div></blockquote>Right, to a certain extent.  But since it is only ENHANCING sound that is already being emitted by the driver, there is already sound at that frequency: it just takes a bit until the port can &quot;get up to speed&quot; and help that along... which is why bass-reflex speakers often show pretty strange things on the Group Delay plots.
 <blockquote class="bb-quote"><div class="bb-quote-body">And after the driver has stopped moving, the port will still &quot;ring&quot; for a short time, it&#x27;s output diminishing over time.</div></blockquote>Right.  Hence the need for damping.
@@ -115,7 +115,7 @@ Does this mean that a ported sub has a more even phase response in relation to i
 <blockquote class="bb-quote"><div class="bb-quote-body">you&#x27;ll introduce a phase shift of the signal (&quot;group delay&quot;).</div></blockquote>Phase shift is not group delay: two different things. Related, but different.
 <blockquote class="bb-quote"><div class="bb-quote-body">You&#x27;ll have to actively correct it&#x27;s response by using a Linkwitz transform eq. Among other things, this pulls down f3 to wherever you want it to be (taking into account the limits of the amp and driver), but at the expense of a lot of efficiency. You&#x27;ll need to apply serious power in the low registers below it&#x27;s natural cut-off frequency to achieve meaningful LF output. Also, by using that Linkwitz transform, you&#x27;ll introduce a phase shift of the signal (&quot;group delay&quot;). If you&#x27;re smart and install a hi-pass filter in order to save your amp and driver from infrasonic rumble, you&#x27;ll introduce even more phase shift. The trick is to get the signal in phase at the cross-over frequency to the mains.</div></blockquote>You seem to be assuming rather a lot about speaker design, and most of it is irrelevant to how the speakers actually perform in the room!  As  studio designer, I really don&#x27;t care if the speaker designer used a third-order Linkwitz-Riley filter in the cross-over, or a 2nd-order Butterworth, or a brand new unheard-of Trump-Obama 10th order filter!  I really don&#x27;t care.  All that I care about is the overall frequency response smoothness, and even more importantly, the time-domain smoothness, as well as the phase linearity, and the directionality characteristics.  I really don&#x27;t care HOW he achieved that inside the box: If he used pixie dust and unicorn hair to do it, that&#x27;s fine with me.  If he used an ART tweeter instead of a silk-dome conventional tweeter, or a woofer cone made from depleted uranium, or alien metal from Saturn... I just don&#x27;t care!  All that matters to me, is how the speaker performs.  I might be academically interested in the workings, but since my job is to design STUDIOS, not SPEAKERS, it matters not at all how the speaker designer worked his magic.
 
-In fact, when needed I will modify the speaker response myself, to suit that I need it to do.  Take a look at Studio Three (I linked you to that in another thread, but here it is again: <a href="/johnlsayersarchive/t/20471/">viewtopic.php?f=2&amp;t=20471</a> ).  Those are Eve Audio SC-407&#x27;s.  They are not supposed to be mounted vertically, and not supposed to be soffit-mounted.  But I did.  They are rear ported.  To get that to work, I had to put extra damping on the rear ports, and apply some digital tuning to compensate.  I did talk to the chief engineer at Eve Audio briefly, to get his approval, and he gave me a couple of tips.  So those speakers are performing rather wonderfully (as you can see form the REW graphs), even though they are NOT being used as designed.  I changed that, to make them work better with THAT SPECIFIC ROOM! In a different room, I might not have changed them at all, and perhaps would have mounted them horizontally.  But for THIS room, I wanted them to be a bit different from what the specs showed, so I did that.  But I have not the slightest idea, or interest, regarding the Thiele-Small parameters of the drivers, or the type of cross over, or the density of the cabinet material, or the thickness of the woofer cone material, or the Gaussian characteristics of the magnets... I chose those speakers because they came closest to what I needed for that room and were within the price range that the studio owner indicated, and then I did some slight &quot;tweaking&quot;, with the help of the manufacturer(!!!), to get them where I wanted them.
+In fact, when needed I will modify the speaker response myself, to suit that I need it to do.  Take a look at Studio Three (I linked you to that in another thread, but here it is again: <a href="/t/20471/">viewtopic.php?f=2&amp;t=20471</a> ).  Those are Eve Audio SC-407&#x27;s.  They are not supposed to be mounted vertically, and not supposed to be soffit-mounted.  But I did.  They are rear ported.  To get that to work, I had to put extra damping on the rear ports, and apply some digital tuning to compensate.  I did talk to the chief engineer at Eve Audio briefly, to get his approval, and he gave me a couple of tips.  So those speakers are performing rather wonderfully (as you can see form the REW graphs), even though they are NOT being used as designed.  I changed that, to make them work better with THAT SPECIFIC ROOM! In a different room, I might not have changed them at all, and perhaps would have mounted them horizontally.  But for THIS room, I wanted them to be a bit different from what the specs showed, so I did that.  But I have not the slightest idea, or interest, regarding the Thiele-Small parameters of the drivers, or the type of cross over, or the density of the cabinet material, or the thickness of the woofer cone material, or the Gaussian characteristics of the magnets... I chose those speakers because they came closest to what I needed for that room and were within the price range that the studio owner indicated, and then I did some slight &quot;tweaking&quot;, with the help of the manufacturer(!!!), to get them where I wanted them.
 
 My point being; the actual inner workings are not relevant to me: only the final behavior.  If I designed speakers instead of rooms, I would have a very different point of view, of course!  But my job is to design rooms, so to me a speaker is just a &quot;Black box&quot; that produces sound with certain characteristics.
 
@@ -129,7 +129,7 @@ My point being; the actual inner workings are not relevant to me: only the final
 </div></main>
 <footer class="site-foot"><div class="wrap">
 <p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
-<p>Have an old johnlsayers.com link? <a href="/johnlsayersarchive/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
 </div></footer>
 </body>
 </html>

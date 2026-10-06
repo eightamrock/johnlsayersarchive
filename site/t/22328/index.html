@@ -6,8 +6,8 @@
 <title>Measuring Acoustics | John Sayers’ Recording Studio Design Forum archive</title>
 <meta name="description" content="Started by DanDan in Acoustics, 2020. 0 replies.">
 <link rel="canonical" href="https://johnlsayersarchive.com/t/22328/">
-<link rel="stylesheet" href="/johnlsayersarchive/static/style.css">
-<link rel="icon" href="/johnlsayersarchive/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 
 
 </head>
@@ -16,13 +16,13 @@
 <header class="masthead">
 <div class="wrap">
 <div class="masthead-row">
-<a class="wordmark" href="/johnlsayersarchive/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
 <nav class="site-nav" aria-label="Site">
-<a href="/johnlsayersarchive/library/">Library</a>
-<a href="/johnlsayersarchive/forum/" aria-current="page">Forums</a>
-<a href="/johnlsayersarchive/people/">People</a>
-<a href="/johnlsayersarchive/about/">About</a>
-<form action="/johnlsayersarchive/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
 </nav>
 </div>
 </div>
@@ -31,18 +31,18 @@
 <main id="main"><div class="wrap">
 
 <div class="read">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/johnlsayersarchive/forum/">Forums</a> › <a href="/johnlsayersarchive/forum/acoustics/">Acoustics</a></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
 <article data-pagefind-body>
 <header class="thread-head">
 <h1>Measuring Acoustics</h1>
 <div data-pagefind-ignore="all">
-<p class="thread-meta">Started by DanDan on 1 April 2020. 0 replies. In the Library under <a href="/johnlsayersarchive/library/tools-measurement/">Measurement and tools</a>.</p>
+<p class="thread-meta">Started by DanDan on 1 April 2020. 0 replies. In the Library under <a href="/library/tools-measurement/">Measurement and tools</a>.</p>
 <p class="origin">Originally posted at johnlsayers.com, topic 22328.</p>
 
 </div>
 </header>
 <article class="post" id="p153136">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/dandan/">DanDan</a><time datetime="2020-04-01">1 April 2020</time><a class="permalink" href="#p153136" aria-label="Link to post 1">#1</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/dandan/">DanDan</a><time datetime="2020-04-01">1 April 2020</time><a class="permalink" href="#p153136" aria-label="Link to post 1">#1</a></header>
 <div class="post-body"><strong>Measuring  Acoustics </strong>
 
 There are now quite a few Apps which enable us to measure the acoustic properties of rooms and larger spaces. 
@@ -58,7 +58,7 @@ There are also integrated packages which both measure the room and generate corr
 Let&#x27;s start with an idealised sound stimulus, i.e. all audio frequencies starting instantaneously and simultaneously. Balloons, handclaps,  and starter pistols,  have been used. Electronic stimulus is obviously more convenient and controllable. So we play a sine sweep from say 10Hz to 20KHz i.e. all audio frequencies of interest stated serially and slowly. While this plays, we record what is happening in the room. 
 Play and Record, what could possibly go wrong? The subsequent recording will contain all frequencies of interest, PLUS the combined responses of the room and speaker. Magically our software now virtually ’subtracts’  the sweep, leaving us with only the room + speaker response. We now have a map of what will happen to any sound played on those speakers in that room. An Impulse Response. These IR&#x27;s are the same as those used in convolution reverbs. Indeed Arjan (Altiverb) explains the IR really well in his guided tour video.  Perhaps a picture says it better. Here we see the idealised initial impulse, a single instantaneous spike of 0dBFS  followed by reflections from nearby surfaces. The level and arrival time of these reflections show if they are welcome or not. In critical listening rooms, it is common to see all reflections within the first 20mS suppressed by at least 20dB. Here we see an IR Graph, but the Envelope Time Curve variant is most commonly used due to some advantages. 
 It might be useful to consider these as ‘Echographs’. 
-<figure class="bb-attachment"><img src="/johnlsayersarchive/img/ext_2fbf30ac13714441.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://m.imgur.com/TQ5SI85h.jpg</figcaption></figure>
+<figure class="bb-attachment"><img src="/img/ext_2fbf30ac13714441.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://m.imgur.com/TQ5SI85h.jpg</figcaption></figure>
 <strong>The Microphone</strong>
 The frequency response bumps of any reasonable mic are tiny compared to the 30dB anomalies we find in real rooms. Omni is necessary though because some of the acoustic action has direction.               Jump in, get a demo of the software and go for it with whatever mic you have at hand, even built in iMacs, Laptops, Phones.  In time, if you develop a liking for measurement, you may want a more suitable mic or software. Measurement mics are omnidirectional small diaphragm condensers. The best of these are optimised to have a very accurate and stable frequency response at all angles of incidence. This requires small capsules which can lead to poor signal to noise ratio. There are a couple which are flat and genuinely omni, and quiet enough for recording. e.g. DPA, EarthWorks. The HF response of all the commonly used cheap mics is dodgy. They are not flat and pointing them in spurious directions doesn&#x27;t make them so. Thankfully most these days are suppled with Calibration Files in a standard text format. Measurement Apps can apply these individual corrections to flatten Frequency Response and as a bonus, read absolute SPL. Different Cal files are supplied for on axis 0 degrees, or 90 degrees pointing vertically up or down.  The verticals are used when working on with Surround, point the mic at the ceiling or floor, whichever is less reflective. The mic will now hear the HF from all horizontal sources equally, but corrected to flat by the Cal file.  Sound Level Meters are very useful in the studio and elsewhere. It is good to get a sense of what SPL numbers actually mean and sound like, e.g. 60dBA, or 90dBC Slow. However I absolutely do not recommend using the mic in any cheap SLM for measurement. The Frequency Response can be without LF due to HPF, unknown, or HF boosted. The self noise is usually awful, sometimes even including DC. Appendix 2 has a list of recommended measurement mics from iPhone to Lab standard.  Mic Cal is always very welcome with the wildly varying cheap mics. But the tolerances  of the best recording and measurement mics  are very tight and IMO trustworthy. Other specs such as noise, distortion, headroom, phase, will all be much superior in high end mics. Many of these mics are equally well suited to very high quality recording.   
 
@@ -88,11 +88,11 @@ Music is a train of impulses, each of which stimulates the room&#x27;s response.
 <strong>Envelope Time Curve</strong> 
 is a variation on viewing the Impulse Response graph directly. Both are very similar in that they show a pretty literal graphic representation of a hypothetical or real single Impulsive spike followed by a train of reflections from all the boundaries. When viewing,  is useful to Normalise these ETC graphs to 0dBFS and to shift the initial spike to 0mS. Room Tone Decay Time can be derived from the slope of the ETC. The absolute level of reflections and their time of arrival after the direct are visible, an indication of how live the room is. Some Apps include the ability to view using 1/3 Octave filters. Note only single speaker measures should be viewed when looking for reflections.  
 
-<strong>T30</strong> gives a fair indication of how long sound will carry on after the source is stopped. Even better is the specially created Topt in REW. Avoid EDT, T20 and such unless you have a knowing reason to go there. Reverberation Time, RT60, strictly speaking is not defined in small non diffuse rooms, but we use them anyway.  The BBC required their regional studio Control Rooms to have third octave decays within 10% of each other. IMO a wise and powerful qualifier. <div class="bb-attachment-missing">Image not preserved: P3 RT etc. copy.png</div><figure class="bb-attachment"><img src="/johnlsayersarchive/img/ext_aad4ec6f9e9e6b07.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://i.imgur.com/JDgECV1h.jpg</figcaption></figure>
+<strong>T30</strong> gives a fair indication of how long sound will carry on after the source is stopped. Even better is the specially created Topt in REW. Avoid EDT, T20 and such unless you have a knowing reason to go there. Reverberation Time, RT60, strictly speaking is not defined in small non diffuse rooms, but we use them anyway.  The BBC required their regional studio Control Rooms to have third octave decays within 10% of each other. IMO a wise and powerful qualifier. <div class="bb-attachment-missing">Image not preserved: P3 RT etc. copy.png</div><figure class="bb-attachment"><img src="/img/ext_aad4ec6f9e9e6b07.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://i.imgur.com/JDgECV1h.jpg</figcaption></figure>
 <strong>The Waterfall </strong>or Cumulative Spectral Decay is fairly self explanatory. It gives an easily understandable picture of a sound spectrum decaying over time. However the numbers are indicative only, decay times read directly off the graphs will be inaccurate. 
-<figure class="bb-attachment"><img src="/johnlsayersarchive/img/ext_d3895099ed4f725b.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://imgur.com/ieYu0rKh.jpg</figcaption></figure>REW also has a Spectrogram which many favour when viewing  LF decay. 
-<figure class="bb-attachment"><img src="/johnlsayersarchive/img/ext_c1af4a0e5b6424b5.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://imgur.com/DrXrpf5h.jpg</figcaption></figure>These decay revealing graphs vividly show how modal resonance rings on. These  modes cause individual bass notes to pop up loudly at particular places in the room, becoming virtually inaudible at other locations. These modal peaks and nulls are solidly located in the room. It is very useful to get to know where they are. A modal map if you will. There is  another form of non resonant null caused by a single or small number of close hard boundaries near the speaker. Speaker Boundary Interference Response, SBIR with it’s trademark deep nulls.  These nulls vary in frequency with different locations of speaker and listener.  They appear as a void in the Frequency Response. This may exist for only for the first, say 50ms, then it may get filled in by blooming modes close in frequency. SBIR nulls caused by the Front or Side Walls, or the Floor,  can be as deep as 30dB, entirely removing some bass notes, making LF mix decisions very unreliable.
-<figure class="bb-attachment"><img src="/johnlsayersarchive/img/ext_b44670b23f2017ee.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://imgur.com/yUssKZjh.jpg</figcaption></figure>￼As we are dealing with Decay, our Y axis needs to show from  the ambient noise floor, say about -50dB FS up to the Sweep SPLs, typically peaking around say 90dB.   Adjust X axis duration to fully reveal those modes tailing off into the noise floor of the room.
+<figure class="bb-attachment"><img src="/img/ext_d3895099ed4f725b.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://imgur.com/ieYu0rKh.jpg</figcaption></figure>REW also has a Spectrogram which many favour when viewing  LF decay. 
+<figure class="bb-attachment"><img src="/img/ext_c1af4a0e5b6424b5.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://imgur.com/DrXrpf5h.jpg</figcaption></figure>These decay revealing graphs vividly show how modal resonance rings on. These  modes cause individual bass notes to pop up loudly at particular places in the room, becoming virtually inaudible at other locations. These modal peaks and nulls are solidly located in the room. It is very useful to get to know where they are. A modal map if you will. There is  another form of non resonant null caused by a single or small number of close hard boundaries near the speaker. Speaker Boundary Interference Response, SBIR with it’s trademark deep nulls.  These nulls vary in frequency with different locations of speaker and listener.  They appear as a void in the Frequency Response. This may exist for only for the first, say 50ms, then it may get filled in by blooming modes close in frequency. SBIR nulls caused by the Front or Side Walls, or the Floor,  can be as deep as 30dB, entirely removing some bass notes, making LF mix decisions very unreliable.
+<figure class="bb-attachment"><img src="/img/ext_b44670b23f2017ee.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://imgur.com/yUssKZjh.jpg</figcaption></figure>￼As we are dealing with Decay, our Y axis needs to show from  the ambient noise floor, say about -50dB FS up to the Sweep SPLs, typically peaking around say 90dB.   Adjust X axis duration to fully reveal those modes tailing off into the noise floor of the room.
 
 <strong>What to expect</strong>
 Horrible looking graphs! Even the best Pro Studios don&#x27;t publish their measurements because they are simply way too ugly. It takes an experienced brain to evaluate how a room sounds or errs. A lot more to figure what to do about it. Let’s not expect a health check and a treatment prescription from Software. We see many forum post with the same question, ‘how does my room look’. The answer is  ‘squiggly’ or  ‘wrong question’  These Apps are are just tools, not Room Doctors.
@@ -103,7 +103,7 @@ Impulse Response based measurement is very sophisticated. Simpler tools are some
 <strong>Location Location Location</strong>
 I believe it was Bob Hodas who said that optimising the speaker and listener locations is 70% of room treatment. 
 The following spectacular improvement from Red to Blue was accomplished by merely moving the speakers and listener to optimal positions. 
-<figure class="bb-attachment"><img src="/johnlsayersarchive/img/ext_5eba6e5a3a490935.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://imgur.com/AqUtMKch.jpg</figcaption></figure><strong>Appendix 1 Measurement Apps</strong>
+<figure class="bb-attachment"><img src="/img/ext_5eba6e5a3a490935.jpg" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at https://imgur.com/AqUtMKch.jpg</figcaption></figure><strong>Appendix 1 Measurement Apps</strong>
 <a href="https://www.rodetest.com" rel="nofollow noopener" target="_blank">https://www.rodetest.com</a> (Mac OS)
 <a href="http://www.artalabs.hr" rel="nofollow noopener" target="_blank">http://www.artalabs.hr</a> (PC)
 <a href="https://www.roomeqwizard.com" rel="nofollow noopener" target="_blank">https://www.roomeqwizard.com</a> (Mac and PC)
@@ -131,7 +131,7 @@ Enjoy, DD March 2020</div>
 </div></main>
 <footer class="site-foot"><div class="wrap">
 <p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
-<p>Have an old johnlsayers.com link? <a href="/johnlsayersarchive/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
 </div></footer>
 </body>
 </html>
