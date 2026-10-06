@@ -13,27 +13,9 @@ The finished website is in `site/`. It is plain HTML, one `index.html` per folde
 
 The forum database itself is not here. Post text in it still contains the email addresses, phone numbers and street addresses that the build removes from the published pages, so it stays private.
 
-## Rebuilding
-
-You need the original SQL dump (`jls_archive_good.sql.gz`, kept privately in the folder above this one), Python 3.9+ and Node.
-
-```sh
-python3 -m venv .venv && .venv/bin/pip install jinja2 pillow requests
-python3 tools/01_extract.py                  # dump -> data/archive.db (whitelisted columns only)
-python3 tools/04_rank.py                     # score threads -> data/candidates.jsonl
-.venv/bin/python tools/build.py             # site/ + search index
-python3 tools/qa.py                          # link check, privacy scan, counts
-```
-
-Image recovery from the Wayback Machine (`tools/03_wayback.py`, `tools/08_wayback_external_images.py`) takes hours and only needs to run once; its results are recorded in `data/recovered*.csv`. Topic tagging and the Library introductions were drafted with AI assistance (`tools/05_*`, `tools/06_*`) and can be reviewed in `tools/review/index.html`, which exports `data/curation.json`.
-
-`PLAN.md` records every decision behind the archive.
-
 ## Publishing
 
 The site is hosted on GitHub Pages. `.github/workflows/pages.yml` uploads whatever is committed in `site/` whenever it changes on `main`, so publishing is: build, run QA, commit, push.
-
-While the domain still pointed elsewhere, the site was previewed at https://eightamrock.github.io/johnlsayersarchive/ using a build made with `JLS_BASE_PATH=/johnlsayersarchive`, which prefixes every link with that folder. Builds for johnlsayersarchive.com itself leave `JLS_BASE_PATH` unset.
 
 ## Removal requests
 
