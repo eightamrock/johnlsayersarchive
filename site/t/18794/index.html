@@ -6,8 +6,8 @@
 <title>How do I best treat a multi-purpose Control Room? | John Sayers’ Recording Studio Design Forum archive</title>
 <meta name="description" content="Started by Howardk in Acoustics, 2014. 14 replies.">
 <link rel="canonical" href="https://johnlsayersarchive.com/t/18794/">
-<link rel="stylesheet" href="/static/style.css">
-<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/johnlsayersarchive/static/style.css">
+<link rel="icon" href="/johnlsayersarchive/static/favicon.svg" type="image/svg+xml">
 
 
 </head>
@@ -16,13 +16,13 @@
 <header class="masthead">
 <div class="wrap">
 <div class="masthead-row">
-<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<a class="wordmark" href="/johnlsayersarchive/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
 <nav class="site-nav" aria-label="Site">
-<a href="/library/">Library</a>
-<a href="/forum/" aria-current="page">Forums</a>
-<a href="/people/">People</a>
-<a href="/about/">About</a>
-<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+<a href="/johnlsayersarchive/library/">Library</a>
+<a href="/johnlsayersarchive/forum/" aria-current="page">Forums</a>
+<a href="/johnlsayersarchive/people/">People</a>
+<a href="/johnlsayersarchive/about/">About</a>
+<form action="/johnlsayersarchive/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
 </nav>
 </div>
 </div>
@@ -31,7 +31,7 @@
 <main id="main"><div class="wrap">
 
 <div class="read">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/johnlsayersarchive/forum/">Forums</a> › <a href="/johnlsayersarchive/forum/acoustics/">Acoustics</a></nav>
 <article data-pagefind-body>
 <header class="thread-head">
 <h1>How do I best treat a multi-purpose Control Room?</h1>
@@ -61,7 +61,7 @@ Let me know how bad it looks in your opinion, ideas/thoughts toward improving. .
 Thanks in advance!</div>
 </article>
 <article class="post" id="p131615">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-02-17">17 February 2014</time><a class="permalink" href="#p131615" aria-label="Link to post 2">#2</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2014-02-17">17 February 2014</time><a class="permalink" href="#p131615" aria-label="Link to post 2">#2</a></header>
 <div class="post-body">The frequency response doesn&#x27;t look too bad at all, actually:  It&#x27;s pretty much +/-10 dB, which is acceptable for a home studio.  But the time domain response... well .... um....  <span class="smilie" title=":shock:">:shock:</span>   And the RT60 is pretty high too.   And there&#x27;s a lot of early reflections going on in there too!
 
 You&#x27;ll need to provide more info about that room (dimensions, layout, etc.), and what treatment it has already.  Photos would be very useful, too.  From the MDAT file, it seems there isn&#x27;t that much treatment, especially for the low end...
@@ -113,7 +113,7 @@ Hopefully the levels are better. . . I have to call it a day, getting a bit late
 Thanks!</div>
 </article>
 <article class="post" id="p131624">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-02-17">17 February 2014</time><a class="permalink" href="#p131624" aria-label="Link to post 5">#5</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2014-02-17">17 February 2014</time><a class="permalink" href="#p131624" aria-label="Link to post 5">#5</a></header>
 <div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">The level of the file may have been low, but the audio volume in the studio was loud enough that I thought it best to put on my hearing protection, and I felt it was as loud as I wanted to drive my monitors.</div></blockquote>That probably means that you didn&#x27;t calibrate REW correctly.  You need a reasonably accurate hand-held Sound Level Meter to check the REAL level in the room, then you tell REW about that level by using its own internal SPL meter, and the &quot;calibrate&quot; option, until it matches the SLM.  If you don&#x27;t do that, then REW is just guessing what the actual level is, since it has no way of knowing.  If the level in the room was loud enough to need hearing protection, then it certainly wasn&#x27;t 70 dB!  So REW is guessing very wrong right now.  Once you get it calibrated correctly, then do the tests at a level of 85 dB or so, average.
 <blockquote class="bb-quote"><div class="bb-quote-body">Mic used the first time where just the cheap behringer ECM8000. </div></blockquote>Yeah, I have one of those.  They are OK, but not fantastic.  Fine for home studio work, though.  You should download a generic calibration file for an ECM8000 and select that in REW.  It won&#x27;t make a huge difference, but is worth doing for the sake of accuracy.
 <blockquote class="bb-quote"><div class="bb-quote-body"> I know the ceiling is too low for much of the room, which is a big part of the problem. I considered hammering out the floor/concrete and going down 4 ft in 1998, when I bought and renovated the house, but I would have been a big undertaking. . . and my wife and the cats would have had me checked-in for treatment, and I just didn&#x27;t know that a visit to the rubber room would have been worth it.</div></blockquote> <span class="smilie" title=":lol:">:lol:</span> Yup, it can be kinda hard to get your spouse on board with some acoustical decisions!  <span class="smilie" title=":)">:)</span>
@@ -148,7 +148,7 @@ I hope I am not <span class="smilie" title=":horse:">:horse:</span> with my goal
 Thanks for your comments/input!</div>
 </article>
 <article class="post" id="p131630">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-02-17">17 February 2014</time><a class="permalink" href="#p131630" aria-label="Link to post 7">#7</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2014-02-17">17 February 2014</time><a class="permalink" href="#p131630" aria-label="Link to post 7">#7</a></header>
 <div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">BTW, even an iphone is within a 0.5 DB in the midrange below ~90db. . . at least mine was when I compared it to several very expensive calibrated systems when on tour. </div></blockquote>Mmmm.... wellll.... it might LOOK that way, but in reality it&#x27;s nowhere near accurate for usable acoustic measurements.  For starters, that tiny little US$ 2.00 mic is not even an omni, and in fact is designed to be directional!   <span class="smilie" title=":shock:">:shock:</span>   No use for acoustics.  Then there&#x27;s the response: nowhere near flat, on purpose.  It is designed for voice frequencies, and deliberately rolls off highs and lows:  Not to mention the digitizer circuitry, which is also designed for voice, not full spectrum.
 
 If you really want to use your iPhone as an SLM, then get yourself a proper calibrated acoustic measurement mic meant for the job, such as this one:  
@@ -235,7 +235,7 @@ I look forward to suggestions!
 Thanks. . .</div>
 </article>
 <article class="post" id="p132981">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-04-25">25 April 2014</time><a class="permalink" href="#p132981" aria-label="Link to post 11">#11</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2014-04-25">25 April 2014</time><a class="permalink" href="#p132981" aria-label="Link to post 11">#11</a></header>
 <div class="post-body">I&#x27;ve been meaning to get back to this thread several times, but also put it off several times because what I have to say is not what you want to hear, and I hate to be a wet blanket.
 
 But to be very honest (perhaps too brutally honest) there&#x27;s just so much wrong in there that I really don&#x27;t know where to start.  I just don&#x27;t know how to say this kindly, so I guess I&#x27;ll just dive right in and blurt it all out.
@@ -287,7 +287,7 @@ I have been in hundreds of rooms over the years. . . some very expensive, and ve
 This room has been working since 1998. From what you have said, it appears there is no practical way to find an improvement worthwhile for the short or mid-term, which means unfortunately I will just have to continue to live with it as is for the next couple years (hoping to move). Also, I am very busy in the studio so I can not afford significant down time. Plus, I am managing to get good results that stand up well in listening environments outside the studio. . . it is just a pain because I am fighting aspects of the room. . . I had hoped to make it appreciably better. Oh well, next time then.</div>
 </article>
 <article class="post" id="p132990">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-04-26">26 April 2014</time><a class="permalink" href="#p132990" aria-label="Link to post 13">#13</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2014-04-26">26 April 2014</time><a class="permalink" href="#p132990" aria-label="Link to post 13">#13</a></header>
 <div class="post-body">I&#x27;m not saying you can&#x27;t improve low end response by adding bass traps: they would help, certainly, but they won&#x27;t solve the other big issues with that room, so I&#x27;m sure it is worth trying.  The other issue is, bass traps need to be BIG, and need to go in the room corners for maximum effect, but I don&#x27;t see any place where you could put them.  The best type is the &quot;superchunk&quot; style, which is basically made from stacked triangles of OC-703:  They measure about 36&quot; across the front diagonal, and stick out from the corners about 24&quot;.  I don&#x27;t see any place where you have that type of space in your corners.  Another very effective type is hangers across the rear wall, but you need about two feet of depth on the entire real wall to do those properly, and once again I don&#x27;t see any place to put them.  If you could make space for superchunks in all four vertical room corners, and also some of the horizontal corners (wall/ceiling or wall/floor) then that would be about the only suggestion I would have for doing something at reasonable cost that would help, and that could also be re-used in any future room, if you do decide to redo the whole studio properly.
 
 -  Stuart  -</div>
@@ -304,7 +304,7 @@ I will think a bit about what space I can give up in the present room. . . Yes o
 Thanks. . .</div>
 </article>
 <article class="post" id="p133065">
-<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-05-01">1 May 2014</time><a class="permalink" href="#p133065" aria-label="Link to post 15">#15</a></header>
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/johnlsayersarchive/people/soundman2020/">Soundman2020</a><time datetime="2014-05-01">1 May 2014</time><a class="permalink" href="#p133065" aria-label="Link to post 15">#15</a></header>
 <div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I presume you missed the word &quot;not&quot;.</div></blockquote>Right!  That should have read &quot;so I&#x27;m <span class="bb-u">not </span>sure it is worth trying&quot;.
 
  <blockquote class="bb-quote"><div class="bb-quote-body">. . . the next space is an entirely different topic. . . I plan to do something very different, you may not like the concept I am hatching,</div></blockquote>I&#x27;d love to see it!  It&#x27;s not a matter of whether or not I <em>like </em>it, but rather a matter of whether or not it will <em>work </em>acoustically.  If you&#x27;d like to share the design, that would be great.
@@ -321,7 +321,7 @@ Sure, we can do Skype at some point, if you&#x27;d like.  PM me.
 </div></main>
 <footer class="site-foot"><div class="wrap">
 <p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
-<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+<p>Have an old johnlsayers.com link? <a href="/johnlsayersarchive/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
 </div></footer>
 </body>
 </html>

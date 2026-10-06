@@ -17,6 +17,10 @@ Usage:
 
 The removal-request contact defaults to removals@johnlsayersarchive.com;
 JLS_REMOVAL_CONTACT overrides it.
+
+To preview the site in a sub-folder (GitHub Pages before the domain points at
+it), build with JLS_BASE_PATH=/johnlsayersarchive. Every root-relative link is
+then prefixed with that folder. Rebuild without it for the real domain.
 """
 import csv
 import datetime
@@ -44,6 +48,10 @@ STATIC = os.path.join(ROOT, 'static')
 
 BASE_URL = 'https://johnlsayersarchive.com'
 REMOVAL_CONTACT = os.environ.get('JLS_REMOVAL_CONTACT', 'removals@johnlsayersarchive.com')
+# Folder the site is served from, e.g. "/johnlsayersarchive" while it is previewed at
+# eightamrock.github.io/johnlsayersarchive/. Empty for the real domain.
+BASE_PATH = os.environ.get('JLS_BASE_PATH', '').rstrip('/')
+ROOT_LINK_RE = re.compile(r'((?:href|src|action)=")/(?!/)')
 PAGEFIND_VERSION = '1.3.0'
 
 PAGE_SIZE = linkmap.PAGE_SIZE
@@ -197,12 +205,14 @@ class Writer:
             keep_trailing_newline=True,
             undefined=jinja2.StrictUndefined,
         )
-        self.env.globals.update(base_url=BASE_URL, removal_contact=REMOVAL_CONTACT,
+        self.env.globals.update(base_url=BASE_URL, removal_contact=REMOVAL_CONTACT, base_path=BASE_PATH,
                                 section=None, title=None, description=None, noindex=False)
         self.count = 0
 
     def page(self, template, path, **ctx):
         out = self.env.get_template(template).render(path=path, **ctx)
+        if BASE_PATH:
+            out = ROOT_LINK_RE.sub(r'\1' + BASE_PATH + '/', out)
         if path.endswith('/'):
             dest = os.path.join(SITE, path.strip('/'), 'index.html')
         else:

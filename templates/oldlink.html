@@ -11,10 +11,11 @@
 (function () {
   var form = document.getElementById('oldlink-form');
   var out = document.getElementById('oldlink-result');
+  var BASE = '{{ base_path }}';
   var mapPromise = null;
   function loadMap() {
     if (!mapPromise) {
-      mapPromise = fetch('/old-link/map.json').then(function (r) { return r.json(); }).then(function (m) {
+      mapPromise = fetch(BASE + '/old-link/map.json').then(function (r) { return r.json(); }).then(function (m) {
         m.post = {};
         Object.keys(m.t).forEach(function (tid) {
           m.t[tid].forEach(function (pid, i) { m.post[pid] = [Number(tid), Math.floor(i / m.page_size) + 1]; });
@@ -38,16 +39,16 @@
       var p = param(url, 'p'), t = param(url, 't'), f = param(url, 'f');
       if (/viewtopic/i.test(url) && p && map.post[p]) {
         var loc = map.post[p];
-        window.location.href = '/t/' + loc[0] + '/' + (loc[1] > 1 ? 'page/' + loc[1] + '/' : '') + '#p' + p;
+        window.location.href = BASE + '/t/' + loc[0] + '/' + (loc[1] > 1 ? 'page/' + loc[1] + '/' : '') + '#p' + p;
         return;
       }
       if (/viewtopic/i.test(url) && t) {
         var tid = map.moved[t] || t;
-        if (map.t[tid]) { window.location.href = '/t/' + tid + '/'; return; }
+        if (map.t[tid]) { window.location.href = BASE + '/t/' + tid + '/'; return; }
         say('Topic ' + t + ' was in a part of the forum that is not included in this archive.');
         return;
       }
-      if (/viewforum/i.test(url) && f && map.forums[f]) { window.location.href = '/forum/' + map.forums[f] + '/'; return; }
+      if (/viewforum/i.test(url) && f && map.forums[f]) { window.location.href = BASE + '/forum/' + map.forums[f] + '/'; return; }
       say('That link does not point to a thread or forum this archive can find. Check that it contains viewtopic.php or viewforum.php.');
     }).catch(function () { say('The link map could not be loaded. Reload the page and try again.'); });
   });

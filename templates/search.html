@@ -11,7 +11,7 @@
 <script src="/pagefind/pagefind-ui.js"></script>
 <script>
 window.addEventListener('DOMContentLoaded', function () {
-  var ui = new PagefindUI({ element: '#search', showSubResults: true, showImages: false, resetStyles: false });
+  var ui = new PagefindUI({ element: '#search', showSubResults: true, showImages: false, resetStyles: false, baseUrl: '{{ base_path }}/' });
   var q = new URLSearchParams(window.location.search).get('q');
   if (q) { ui.triggerSearch(q); }
 });

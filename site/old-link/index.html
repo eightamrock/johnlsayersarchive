@@ -6,8 +6,8 @@
 <title>Find an old link | John Sayers’ Recording Studio Design Forum archive</title>
 <meta name="description" content="A read-only archive of the johnlsayers.com recording studio design forum, 2003–2022.">
 <link rel="canonical" href="https://johnlsayersarchive.com/old-link/">
-<link rel="stylesheet" href="/static/style.css">
-<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/johnlsayersarchive/static/style.css">
+<link rel="icon" href="/johnlsayersarchive/static/favicon.svg" type="image/svg+xml">
 
 
 </head>
@@ -16,13 +16,13 @@
 <header class="masthead">
 <div class="wrap">
 <div class="masthead-row">
-<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<a class="wordmark" href="/johnlsayersarchive/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
 <nav class="site-nav" aria-label="Site">
-<a href="/library/">Library</a>
-<a href="/forum/">Forums</a>
-<a href="/people/">People</a>
-<a href="/about/">About</a>
-<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+<a href="/johnlsayersarchive/library/">Library</a>
+<a href="/johnlsayersarchive/forum/">Forums</a>
+<a href="/johnlsayersarchive/people/">People</a>
+<a href="/johnlsayersarchive/about/">About</a>
+<form action="/johnlsayersarchive/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
 </nav>
 </div>
 </div>
@@ -35,16 +35,17 @@
 <p class="lede">Paste a johnlsayers.com forum link and this page will take you to the same thread, or the same post, in the archive.</p>
 <form id="oldlink-form"><label class="vh" for="oldlink-url">Old johnlsayers.com link</label><input id="oldlink-url" type="url" placeholder="http://www.johnlsayers.com/phpBB2/viewtopic.php?t=4310" required> <button type="submit">Find thread</button></form>
 <p id="oldlink-result" role="status"></p>
-<noscript><p>This finder needs JavaScript. Without it, look for <strong>t=</strong> followed by a number in the old link: topic <strong>t=4310</strong> lives at <a href="/t/4310/">/t/4310/</a> here.</p></noscript>
+<noscript><p>This finder needs JavaScript. Without it, look for <strong>t=</strong> followed by a number in the old link: topic <strong>t=4310</strong> lives at <a href="/johnlsayersarchive/t/4310/">/t/4310/</a> here.</p></noscript>
 </div>
 <script>
 (function () {
   var form = document.getElementById('oldlink-form');
   var out = document.getElementById('oldlink-result');
+  var BASE = '/johnlsayersarchive';
   var mapPromise = null;
   function loadMap() {
     if (!mapPromise) {
-      mapPromise = fetch('/old-link/map.json').then(function (r) { return r.json(); }).then(function (m) {
+      mapPromise = fetch(BASE + '/old-link/map.json').then(function (r) { return r.json(); }).then(function (m) {
         m.post = {};
         Object.keys(m.t).forEach(function (tid) {
           m.t[tid].forEach(function (pid, i) { m.post[pid] = [Number(tid), Math.floor(i / m.page_size) + 1]; });
@@ -68,16 +69,16 @@
       var p = param(url, 'p'), t = param(url, 't'), f = param(url, 'f');
       if (/viewtopic/i.test(url) && p && map.post[p]) {
         var loc = map.post[p];
-        window.location.href = '/t/' + loc[0] + '/' + (loc[1] > 1 ? 'page/' + loc[1] + '/' : '') + '#p' + p;
+        window.location.href = BASE + '/t/' + loc[0] + '/' + (loc[1] > 1 ? 'page/' + loc[1] + '/' : '') + '#p' + p;
         return;
       }
       if (/viewtopic/i.test(url) && t) {
         var tid = map.moved[t] || t;
-        if (map.t[tid]) { window.location.href = '/t/' + tid + '/'; return; }
+        if (map.t[tid]) { window.location.href = BASE + '/t/' + tid + '/'; return; }
         say('Topic ' + t + ' was in a part of the forum that is not included in this archive.');
         return;
       }
-      if (/viewforum/i.test(url) && f && map.forums[f]) { window.location.href = '/forum/' + map.forums[f] + '/'; return; }
+      if (/viewforum/i.test(url) && f && map.forums[f]) { window.location.href = BASE + '/forum/' + map.forums[f] + '/'; return; }
       say('That link does not point to a thread or forum this archive can find. Check that it contains viewtopic.php or viewforum.php.');
     }).catch(function () { say('The link map could not be loaded. Reload the page and try again.'); });
   });
@@ -87,7 +88,7 @@
 </div></main>
 <footer class="site-foot"><div class="wrap">
 <p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
-<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+<p>Have an old johnlsayers.com link? <a href="/johnlsayersarchive/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
 </div></footer>
 </body>
 </html>

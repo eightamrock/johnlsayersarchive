@@ -35,6 +35,7 @@ EMAIL_RE = pii.STRICT_EMAIL_RE
 IPV4_RE = pii.IPV4_RE
 SID_RE = pii.SID_RE
 SITE_DOMAIN = 'johnlsayersarchive.com'
+BASE_PATH = os.environ.get('JLS_BASE_PATH', '').rstrip('/')  # same as tools/build.py
 # North American and international-style numbers; same shapes tools/lib/pii.py scrubs.
 PHONE_RE = re.compile(r'(?<![\w/.-])(?:\+\d{1,3}[ .-]?)?\(?\d{3}\)?[ .-]\d{3}[ .-]\d{4}(?![\w/-])')
 
@@ -55,6 +56,10 @@ def page_files():
 
 def target_file(path):
     path = path.split('#', 1)[0].split('?', 1)[0]
+    if BASE_PATH:
+        if not path.startswith(BASE_PATH + '/'):
+            return os.path.join(SITE, '__outside_base_path__')
+        path = path[len(BASE_PATH):]
     if path.endswith('/'):
         return os.path.join(SITE, path.strip('/'), 'index.html')
     return os.path.join(SITE, path.lstrip('/'))
