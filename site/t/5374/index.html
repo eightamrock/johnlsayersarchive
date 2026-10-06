@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ground Loop and Diode question | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by mpedrummer in Installation and Wiring, 2006. 5 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/5374/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Ground Loop and Diode question</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by mpedrummer on 3 January 2006. 5 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 5374.</p>
+
+</div>
+</header>
+<article class="post" id="p36993">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mpedrummer</span><time datetime="2006-01-03">3 January 2006</time><a class="permalink" href="#p36993" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Ok, bear with me on this one.  I&#x27;m either on the verge of a really good idea, or missing something important due to incomplete understandings of, well, most things.  I&#x27;m assuming the latter.
+
+The following (potentially incorrect) assumptions are being made
+
+1. Ground loops are (or are caused by) current flowing in the ground wire.
+2. This is bad.
+3. Diodes only allow current to flow in one direction, up to their breakdown point.
+
+This begs the question (in my mind) why not put diodes in the ground path?  Gear would still be able to safely discharge voltage to ground, but (within reason) no voltage would come back out.
+
+This seems obvious to the point that someone else must have thought of it, and either disproved it or made a buttload of money off the idea.  Maybe I&#x27;m googling the wrong things, but I haven&#x27;t found much evidence of either.  It seems if you had enough diodes in parallel (to divide the 120V down to something more reasonable) it&#x27;d work.
+
+So, what am I missing?
+
+MPEDrummer</div>
+</article>
+<article class="post" id="p36996">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">edenorchestra</span><time datetime="2006-01-03">3 January 2006</time><a class="permalink" href="#p36996" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">A couple issues.  Diodes have a constant forward voltage drop across them, generally 0.7 volts.  They are a non-linear device and as such are not proportional to the current as a passive device (ie, L,C,or R).   Plus we are dealing with an AC issue here.  So the diode would only block the reverse current for one half of the signal wave, not to mention the safety considerations. The other issue is that diodes have a break-down voltage which means they can fry.  Even if you could use a diode, there would be no guarantee as to the direction of the current flow in the ground loop. 
+
+Good to think out of the box however.</div>
+</article>
+<article class="post" id="p36998">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mpedrummer</span><time datetime="2006-01-03">3 January 2006</time><a class="permalink" href="#p36998" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">OK...few more questions then, forgiving my (continued) ignorance.
+
+The AC thing I get, but for one bit - is the ground AC?  By my understanding, it&#x27;s a discharge - the path of least resistance, so any excess current or problems has somewhere safe to go.  That would (basically) be a 1-way street, right?  
+
+I&#x27;m proposing diodes on the ground pin only of a 3-prong AC outlet, just to clarify.  I don&#x27;t know if you&#x27;re confused about my somewhat vague initial post or I&#x27;m mis-reading something in your reply, so just to be safe.  It seems like a voltage drop there wouldn&#x27;t be such a big deal, unless the voltage drop is accompanied by an increase in resistance, which would make the hot look like an easier path to discharge...?
+
+Thanks again
+
+MPEDrummer
+
+PS, I love this place - intelligent conversation on the Internet?  Who knew?</div>
+</article>
+<article class="post" id="p37003">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">edenorchestra</span><time datetime="2006-01-03">3 January 2006</time><a class="permalink" href="#p37003" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">No ignorance here, we&#x27;re all learning together. <span class="smilie" title=":D">:D</span>
+
+It is AC. What is discharging is AC or some alternating wave form.  DC causes no sound.  For example if you placed a battery (DC) across a speker lead, you will see the cone go in one direction only and stay there.   The other thing DC can do is bias the AC, but that is for another discussion.  AC is what we associate with noise.  Pure AC is the sine wave from the power, 60hz.  Interference on the line which causes hum is that annoying 60hz AC.  Of course that is only one of many sources, cell phones, radios, swithcing power supplies, computers, to name a few.  Audio, radio, &quot;whatever&quot; signals alternate, that is why you hear sound, the speaker moves back and forth.  
+
+Now as for the diode, by placing the diode in the circuit you have created a volage drop in one direction which now is a greater impedance to the signal or noise that you had with just a straight conductor.  You just lost your path of least resistance, not to mention that the other half is still there and will seek a path somewhere.
+
+But a biggy is that you have just violated the National Electric Code if you are doing this on the AC ground.  Your path to ground must be a solid conductive path.
+
+Read this, maybe it will help: <a href="http://www.kpsec.freeuk.com/components/diode.htm" rel="nofollow noopener" target="_blank">http://www.kpsec.freeuk.com/components/diode.htm</a></div>
+</article>
+<article class="post" id="p37020">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mpedrummer</span><time datetime="2006-01-04">4 January 2006</time><a class="permalink" href="#p37020" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Cool beans, I dig it now.
+
+Actually, I think the main misconception was not thinking that the ground would be AC - once you pointed out that you can&#x27;t hear DC, the rest was a big &#x27;duh&#x27; moment.
+
+Thanks.
+
+MPEDrummer</div>
+</article>
+<article class="post" id="p37354">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/len-morgan/">len-morgan</a><time datetime="2006-01-09">9 January 2006</time><a class="permalink" href="#p37354" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">If you go back to your breaker box, you will probably find that the neutral wire (white) is directly shorted to the ground connection (which should then go to a copper rod in the ground.  The diode in the ground lead would make the neutral path &quot;easier&quot; and therefore, you&#x27;d really have only a two wire system.
+
+len</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

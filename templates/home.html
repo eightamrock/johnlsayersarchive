@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="questions"><span>How thick should my walls be?</span><span>Should I float my floors?</span><span>Why is two-leaf mass-air-mass design important?</span></p>
+<p class="attribution">From the description of the Studio Construction forum, where members answered these questions for nineteen years.</p>
+<div class="read">
+<p class="lede">John Sayers designed recording studios, and from 2003 to 2022 his forum was where people came to plan and build their own. Members posted floor plans, wall sections and build diaries, and John and a group of experienced builders answered them. This archive keeps all {{ threads }} threads and {{ posts }} posts readable now that the original site is offline.</p>
+</div>
+<div class="home-grid">
+<section>
+<h2>The Library</h2>
+<p class="muted small">The most useful threads, sorted by topic. <a href="/library/">See all topics</a>.</p>
+<ul class="topics">{% for t in topics %}<li><a href="/library/{{ t.slug }}/">{{ t.name }}</a><p>{{ t.count }} threads</p></li>{% endfor %}</ul>
+<aside class="feature">
+<h2><a href="/t/{{ feature.id }}/">{{ feature.title }}</a></h2>
+<p>A member’s house build around one of John’s own small-studio designs, worked through with {{ feature.helper }} over {{ feature.replies }} replies. It sat in a hidden section of the old forum.</p>
+</aside>
+</section>
+<section>
+<h2>Most read</h2>
+<ol class="plain-list">{% for t in most_read %}<li><a href="/t/{{ t.id }}/">{{ t.title }}</a><span class="meta">{{ t.views_label }}, {{ t.replies_label }}</span></li>{% endfor %}</ol>
+<h2>Forums</h2>
+<ul class="plain-list">{% for f in forums %}<li><a href="/forum/{{ f.slug }}/">{{ f.name }}</a><span class="meta">{{ f.count_label }}</span></li>{% endfor %}</ul>
+</section>
+</div>
+{% endblock %}

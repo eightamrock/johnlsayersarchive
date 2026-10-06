@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BIG problems at 40Hz | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by ermi in Acoustics, 2005. 11 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/5348/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>BIG problems at 40Hz</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by ermi on 29 December 2005. 11 replies, 2005–2006. In the Library under <a href="/library/treatment/">Acoustic treatment</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 5348.</p>
+
+</div>
+</header>
+<article class="post" id="p36779">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">ermi</span><time datetime="2005-12-29">29 December 2005</time><a class="permalink" href="#p36779" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi!
+
+
+I have a room: 4 x 3 x 2.4m.
+
+I efficiently absorbed most freqs, but the frequencies around 40-41 Hz are very very loud. Those frequencies seem to be fundemental freqs of my room. Or why else would they be so loud?
+
+Is there a way to cure this efficiently? I only have two corners available for treatment in the back of the room. 
+And one corner in the front (because of the door). But then it wouldn&#x27;t be symmetrical any more. Or it doesn&#x27;t matter for such low freqs?
+
+
+Thanks!</div>
+</article>
+<article class="post" id="p36817">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bpape</span><time datetime="2005-12-30">30 December 2005</time><a class="permalink" href="#p36817" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Move your measuring position to determine which dimension or dimensions are causing the issue.  Then you can put up some targeted Helmholz or sealed membrane absorbers that will get down that low.  Just don&#x27;t try to target 40Hz as a center frequency or you can actually cause more issues than you fix.</div>
+</article>
+<article class="post" id="p36824">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">ermi</span><time datetime="2005-12-30">30 December 2005</time><a class="permalink" href="#p36824" aria-label="Link to post 3">#3</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">bpape wrote:</div><div class="bb-quote-body">Move your measuring position to determine which dimension or dimensions are causing the issue.</div></blockquote>
+How do I do that? Do you have any links about this?
+
+
+The loudest note is D#, followed by E (around 40Hz). One octave up is quite normal. This is happening at my listening position.</div>
+</article>
+<article class="post" id="p36837">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/kendale/">kendale</a><time datetime="2005-12-30">30 December 2005</time><a class="permalink" href="#p36837" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Aloha Ermi,
+
+Have you tried calculating the room modes? (requires Excel)
+<a href="http://www.harman.com/wp/index.jsp?articleId=131" rel="nofollow noopener" target="_blank">http://www.harman.com/wp/index.jsp?articleId=131</a>
+
+If I&#x27;ve applied your measurements correctly (L x W x H):
+
+Length: 4 m =   13.1232 ft (decimal)
+ 	       13&#x27; - 1 5/10&quot; (feet, inches and tenths-of-an-inch)
+Width: 3 m =     9.8424 ft (decimal)
+ 	        9&#x27; - 10 1/10&quot; (feet, inches and tenths-of-an-inch
+Height: 2.4 m = 7.87392 ft (decimal)
+ 	        7&#x27; - 10 5/10&quot; (feet, inches and tenths-of-an-inch)
+
+then, it would seem that you do have standing wave a @ 43Hz.
+
+1st	2nd	3rd	4th
+72Hz	144Hz	216Hz	289Hz
+57Hz	115Hz	172Hz	230Hz
+<strong>43Hz</strong>	86Hz	130Hz	173Hz
+
+Attached are the results of the info entered from above.
+
+In my first thread: <a href="/t/2124/#p15644">http://johnlsayers.com/phpBB2/viewtopic ... ght=#15644</a>
+
+Steve (Knightfly) replied to a similar question I had with: <blockquote class="bb-quote"><div class="bb-quote-body">Distance to wall behind speakers will change response drastically - there is a wall bounce calculator on the Acoustics forum that&#x27;s fun to play with (needs Excel) 
+
+<strong>Moving either speakers or your head by as little as an inch or two can sometimes make drastic changes in response, due to modal peaks and dips;</strong> here&#x27;s a useful calculator for figuring this. 
+
+<a href="http://www.harman.com/wp/index.jsp?articleId=131" rel="nofollow noopener" target="_blank">http://www.harman.com/wp/index.jsp?articleId=131</a> 
+
+I cut and paste the length and width graphs alongside a scaled room diagram (after scaling them to the same size as the walls) and draw red lines across the room where peaks and nulls are, then green lines where there are NO peaks or nulls - <strong>anywhere there&#x27;s a green intersection is a candidate for speaker or head placement, keeping in mind you need plane symmetry in a mix room (head in center side to side) and an equilateral triangle for speaker/head placement (or at least an Isoscelese triangle)</strong></div></blockquote>If I understand this correctly, we want to position ourselves where there is: 
+
+ - no peaks or nulls - front to back
+ - a plane symmetry in mix position (head in center, side to side)
+ - an equilateral triangle for speaker/head placement (or at least an Isoscelese triangle
+ - no peaks or nulls - ceiling to floor
+
+If you could post:
+ - a drawing or pic of your room
+ - measurements of your ears at listening/mix position from the front wall
+ - measurements of your ears at listening/mix position from floor to ceiling
+it would be helpful to further determine any possible courses of action.
+
+Hope this helps.
+
+Aloha  <span class="smilie" title="8)">8)</span><div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: s Room.jpg</div></div></div>
+</article>
+<article class="post" id="p36845">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">ermi</span><time datetime="2005-12-30">30 December 2005</time><a class="permalink" href="#p36845" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Thanks kendale!
+
+
+Yes I already did the calculations at the SAE site. But now I found out that my room is actually sligtly bigger, it&#x27;s more around 4.2m. Now it all makes more sense. <span class="smilie" title=":lol:">:lol:</span> 
+
+Because I was running a sine wave with TrueRTA (<a href="http://www.trueaudio.com/rta_abt1.htm" rel="nofollow noopener" target="_blank">http://www.trueaudio.com/rta_abt1.htm</a>) and it was definitely around 40-41hz. 
+
+
+I also tried to move the speakers 10cm further away from the rear wall, but it didn&#x27;t make a noticeable difference. Maybe I should try a greater distance.
+
+
+I&#x27;ll upload some fresh pictures ASAP, in the mean time you can see the ones that I made in an older thread. Some furniture was removed, absorbers added, but the listening position is still the same.
+<a href="/t/4348/">http://www.johnlsayers.com/phpBB2/viewtopic.php?t=4348</a></div>
+</article>
+<article class="post" id="p36864">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bpape</span><time datetime="2005-12-31">31 December 2005</time><a class="permalink" href="#p36864" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">If you&#x27;re getting an issue tied to room length, then the measurment/seating position should be moved to minimize interaction with the modes.  Generally, 38% is considered the best place to minimize modal interactions for the length dimension.  While this may not be the whole answer, it&#x27;s a start to verify that this is actually the issue.</div>
+</article>
+<article class="post" id="p36949">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">ermi</span><time datetime="2006-01-03">3 January 2006</time><a class="permalink" href="#p36949" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Ok, I&#x27;ll try in the weekend when I get home.
+
+I got some fresh pictures now:
+
+
+Front  (I&#x27;m mostly using the big speakers, the small ones don&#x27;t go to 40hz):
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://users.volja.net/neres/spr.jpg" rel="nofollow noopener" target="_blank">http://users.volja.net/neres/spr.jpg</a></div>
+Back, right side:
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://users.volja.net/neres/z-d.jpg" rel="nofollow noopener" target="_blank">http://users.volja.net/neres/z-d.jpg</a></div>
+Back, left side:
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://users.volja.net/neres/z-l.jpg" rel="nofollow noopener" target="_blank">http://users.volja.net/neres/z-l.jpg</a></div></div>
+</article>
+<article class="post" id="p36954">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/kendale/">kendale</a><time datetime="2006-01-03">3 January 2006</time><a class="permalink" href="#p36954" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Aloha Ermi,
+
+Nice pics, big improvement to the room (compared to old pics).
+<blockquote class="bb-quote"><div class="bb-quote-body">I also tried to move the speakers 10cm further away from the rear wall, but it didn&#x27;t make a noticeable difference. Maybe I should try a greater distance.</div></blockquote>Have you tried moving <strong>your</strong> position back (say about 1.5m from the front wall)? Could it be possible that you are positioned in a peak?
+
+Here&#x27;s a link that might be helpful: <a href="/t/2441/">http://www.johnlsayers.com/phpBB2/viewt ... light=null</a>
+
+Aloha  <span class="smilie" title="8)">8)</span></div>
+</article>
+<article class="post" id="p37312">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/kendale/">kendale</a><time datetime="2006-01-09">9 January 2006</time><a class="permalink" href="#p37312" aria-label="Link to post 9">#9</a></header>
+<div class="post-body">Aloha Ermi,
+
+How&#x27;s it going? Any luck with the positioning of things?
+
+Thought this might be helpful. Check out Steve&#x27;s (Knightfly) post: &quot;About Traps&quot; <a href="/t/5401/">http://johnlsayers.com/phpBB2/viewtopic.php?t=5401</a>
+
+Aloha  <span class="smilie" title="8)">8)</span></div>
+</article>
+<article class="post" id="p42506">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">ermi</span><time datetime="2006-04-15">15 April 2006</time><a class="permalink" href="#p42506" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Hello! Sorry for not replying for all this time. I probably didn&#x27;t get email notifications and then just forgot about this forum. <span class="smilie" title=":lol:">:lol:</span> 
+
+Thanks again, kendale, for the links!
+
+Anyway I tried some positioning combinations (of myself and the speakers) and they DO make a noticeable difference. Basically now I just moved backwards 0.5-1m. There might still be a bit too much of 40Hz, but it&#x27;s ok, also because so I can clearly hear problems that might occur in similarly-problematic enviromnments.
+I can still go back for another 0.5m or so and there the 40Hz almost disappear.
+
+Hope this can be useful info for someone else, too. At first I thought that bass traps were the only solution. Sure they might still be very useful, but bass traps alone couldn&#x27;t make enough difference, IMHO.</div>
+</article>
+<article class="post" id="p42620">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2006-04-17">17 April 2006</time><a class="permalink" href="#p42620" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">Kendale, I posted a new location for the harmon calculator; it&#x27;s here
+
+<a href="/t/5801/">http://www.johnlsayers.com/phpBB2/viewtopic.php?t=5801</a>
+
+ermi, you&#x27;re right; neither positioning nor treatments alone will usually fix a room; you need both. And for me, it&#x27;s easier to first get the best positioning - this, because any changes will be more apparent if they aren&#x27;t already damped/absorbed/evened out with treatments. 
+
+then, once everything is in best possible position, the treatments will finish up the job... Steve</div>
+</article>
+<article class="post" id="p42638">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bpape</span><time datetime="2006-04-17">17 April 2006</time><a class="permalink" href="#p42638" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">I couldn&#x27;t agree more.  
+
+Get the speakers and seat (and potentially subwoofer) in the best arrangement first - THEN deal with the treatments.  You&#x27;ll find it much easier and the differences much more apparent prior to treatment.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

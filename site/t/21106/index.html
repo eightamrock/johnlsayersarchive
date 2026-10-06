@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untreated room - Room EQ Wizard Plots - Advice? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by digi001 in Acoustics, 2017. 4 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21106/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Untreated room - Room EQ Wizard Plots - Advice?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by digi001 on 13 June 2017. 4 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21106.</p>
+
+</div>
+</header>
+<article class="post" id="p142549">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">digi001</span><time datetime="2017-06-13">13 June 2017</time><a class="permalink" href="#p142549" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Looking to setup a control / production room. No recorded acoustic sounds really. (Building a separate iso room for that.)
+
+Dimensions are: 178 inch by 174 inch by 95 inch height. 
+Polished Concrete Floor, Double Drywall Walls.
+
+No treatment yet but room full of furniture, vintage synths and vintage effect racks to get idea of where things are going.
+
+Please see my Room EQ plot. Looks like a peak at around 127 and 139 Hz ....but notice the huge gap from 77 to 112Hz! Confirmed on 2 sets of speakers. What does this mean, cancellation? How should I treat the room to correct this? 
+
+I enjoy mostly vintage 60&#x27;s/70&#x27;s music .....and looking to setup the room in that vein. 
+
+Advice appreciated!<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: untreated full.jpg</div><div class="bb-attachment-missing">Image not preserved: untreated room.jpg</div></div></div>
+</article>
+<article class="post" id="p142550">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-06-13">13 June 2017</time><a class="permalink" href="#p142550" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Hi. Please read the <a href="/t/3231/">forum rules for posting  (click here)</a>.  You seem to be missing a couple of things!  <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">Please see my Room EQ plot.</div></blockquote>What was the geometry for that measurement, and how did you take it?  
+
+Clearly, you did not correctly calibrate REW using a SLM prior to taking that measurement, so you should do that first, then re-measure.  You should also make sure that your speakers and listening position are set up in the correct relationship.
+
+You are only showing the Frequency Response curves for your room, which is just a very small part of the overall acoustic picture, and not necessarily even the most important, and you are also showing them on scales that are not very useful.  I would need to see the actual MDAT file itself, but I&#x27;d also need to be sure that the measurements in that file were taken correctly, after the system was calibrated correctly.  Otherwise, it&#x27;s just wavy lines on the screen, without a lot of meaning.  Acoustic response graphs only have meaning if the context is known.   If not, it&#x27;s pointless.  By &quot;context&quot;, I mean that everything about how the reading was taken is fully documented, and correctly calibrated.
+<blockquote class="bb-quote"><div class="bb-quote-body">What does this mean, cancellation? </div></blockquote>Most likely, it is either SBIR from the front or back wall, or more probably due to a wall, floor, or ceiling bounce.  But first we&#x27;ll need to get your REW measurements done correctly.  It might also be modal, but that&#x27;s very unlikely.  
+<blockquote class="bb-quote"><div class="bb-quote-body">How should I treat the room to correct this? </div></blockquote>Until we know what is causing it, and where that &quot;what&quot; is located, then we can start thinking about methods for treating it.
+<blockquote class="bb-quote"><div class="bb-quote-body">178 inch by 174 inch by 95 inch height</div></blockquote>So the room is basically SQUARE?   <span class="smilie" title=":shock:">:shock:</span>  <span class="smilie" title=":roll:">:roll:</span>  Ooops.  How did that happen?  You will have major modal issues at around 77 Hz from that, as well as several others.  Your room ratio is 1 : 1.83 : 1.86, which fails two of the three critical tests for usability of a room...
+<blockquote class="bb-quote"><div class="bb-quote-body">No treatment yet but room full of furniture,</div></blockquote>Your baseline REW test should be conducted with a completely empty room: nothing at all in it, except the speakers and the measurement mic, and perhaps the desk if you really need it in there for the test gear.
+<blockquote class="bb-quote"><div class="bb-quote-body">Confirmed on 2 sets of speakers.</div></blockquote>Did you place both sets of speakers in the exact same location?  And are the results perfectly identical?  I doubt that&#x27;s what happened.  The results might look similar, but different speakers will likely show different results, and especially so if they are in non-identical locations.
+<blockquote class="bb-quote"><div class="bb-quote-body">I enjoy mostly vintage 60&#x27;s/70&#x27;s music .....and looking to setup the room in that vein </div></blockquote>There&#x27;s no such thing as different setups for different genres or styles.  There&#x27;s usually only one &quot;perfect&quot; layout for any given room, with perhaps a few other &quot;really good&quot; layouts, and the layout is totally independent of the type of music:  It depends entirely and completely on the laws of physics.  The &quot;perfect&quot; layout (which isn&#x27;t truly perfect by any means, but is rather just better than all others) is the arrangement of  locations in the room for the speakers and the listening position, where the room itself has the least affect on the sound, as measured at the listening position.  It&#x27;s the setup where the sound gets directly from the speakers to your ears while being affected as little as possible by the room.  That setup is different for every room, so you can forget the famous &quot;equilateral triangle&quot; thing: it&#x27;s a myth.  That will often give you a reasonably good set up in most rooms, but it wont be the best.  There are equations, empirical guidelines, rules of thumb, and adjustments from experience, that will all combine to get the setup in your room as good as it can be.   Then there are treatment devices that will need to be installed at specific locations in the room to deal with certain of the issues, and the locations might need re-tweaking after that.  Rinse.  Repeat.
+<blockquote class="bb-quote"><div class="bb-quote-body">Advice appreciated!</div></blockquote>OK, first you&#x27;ll need to clear out the room and get it totally empty.  Then you&#x27;ll need to setup your speakers in the correct locations and orientations for that specific room, and you&#x27;ll need to set up your mic at the correct location and orientation too.  I&#x27;m assuming that it is also the correct mic:  What mic are you using for your measurements? (make and model number).
+
+Then calibrate REW correctly such that each of your speakers is producing 80 dBC at the listening position when playing the REW full-range test signal through ONLY that speaker all by itself, with the other one turned off.  That will automatically guarantee that you will get exactly 86 dBC at the listening position with both speakers on, playing the same sound.
+
+You measure those levels at the mix position using your SLM (which must also be calibrated, of course), then you calibrate REW to those levels, using the SPL meter tool, &quot;calibrate&quot; button.
+
+When you have done all that, run one full-spectrum test with ONLY the left speaker on, all by itself, and label that &quot;L&quot;.  Then do another test with  ONLY the right speaker on, all by itself, and label that &quot;R&quot;.  The do one more test with both speakers on, and label that &quot;LR&quot;.  Upload the MDAT file to a file-sharing service, such as &quot;Dropbox&quot;, and post the link here so we can download it and start analyzing it.
+
+When you have done all that, carefully measure and mark the exact location of both speakers in the room, and the measurement mic, with accuracy of better than 5mm, so you can get them all back to the identical locations for all future tests. 
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p142551">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">digi001</span><time datetime="2017-06-13">13 June 2017</time><a class="permalink" href="#p142551" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Thanks for the reply!
+
+Ok let me give it another shot. I guess you can tell this was my first post..... and first Room EQ measurement. 
+But I want to learn. 
+I did not have a chance to calibrate with an SPL meter since I do not have one. Do you recommend any on amazon or other?
+
+I purchased the Behringer ECM8000 for my measurement mic.</div>
+</article>
+<article class="post" id="p142552">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">digi001</span><time datetime="2017-06-13">13 June 2017</time><a class="permalink" href="#p142552" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">The room on paper is square but actually has some more complex geometry, which maybe is helping. 
+First there is a drop in ceiling towards left side for HVAC, next there is a cutout for pipes which also makes the wall less square. By about 8-9 inches or so. 
+
+I will gladly get some more details this week and post it up here. Look forward to hearing the feedback!</div>
+</article>
+<article class="post" id="p142636">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-06-19">19 June 2017</time><a class="permalink" href="#p142636" aria-label="Link to post 5">#5</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">First there is a drop in ceiling towards left side for HVAC, next there is a cutout for pipes which also makes the wall less square. By about 8-9 inches or so. </div></blockquote>So the room is also not symmetrical?   <span class="smilie" title=":shock:">:shock:</span> Symmetry is critical for a control room.  If the room is not symmetrical, then your left ear and right ear do not here the same room sound, and you will subconsciously try to &quot;correct&quot; that in the mix, when clearly it does not actually need correcting.
+
+To see how bad it is, on your next set of tests, (after you correctly calibrate REW), please do a set of three tests without changing anything at all in the room or the setup: one test with just the left speaker turned on (right off), one with just the right speaker turned on (left off), and one with both speakers on.  Post the MDAT some place we can download it.
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SLAT TYPE HELMHOLTZ RESONATOR FORMULA | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Eric_Desart in Acoustics, 2004. 26 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/1351/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>SLAT TYPE HELMHOLTZ RESONATOR FORMULA</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Eric_Desart on 18 February 2004. 26 replies, 2004–2016. In the Library under <a href="/library/treatment/">Acoustic treatment</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 1351.</p>
+<nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/1351/page/2/">2</a>
+<a href="/t/1351/page/2/" rel="next">Next</a></nav>
+</div>
+</header>
+<article class="post" id="p9891">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-02-18">18 February 2004</time><a class="permalink" href="#p9891" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Recently a very attentive person noticed an error related to published Slat type Helmholtz resonator formulas and reported this.
+
+<strong>From: Scott Smith</strong>
+Newsgroups: alt.sci.physics.acoustics
+Date: 2004-02-02 15:45:49 PST 
+
+The noticed error was further investigated by the author versus diverse editions of the referred books.
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+WRONG often published and in calculators used formula
+fo = 2160*sqrt(r/((d*1.2*D)+(r+w)))
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+<strong>CORRECT formula
+fo = 2160*sqrt(r/((d*1.2*D)*(r+w)))</strong>
+
+r = slot width
+d = slat thickness
+1.2 = mouth correction
+D = cavity depth,
+w = slat width
+2160 = c/(2*PI) but rounded
+c = speed of sound in inch/sec.
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+<strong>DETAILS</strong>
+
+There was some confusion about the origin of this error:
+Both: 
+Master Handbook of Acoustics
+Handbook for Sound Engineers
+were referred as possible sources.
+
+I took liberty to check different editions of the books themselves
+Master Handbook of Acoustics - F. Alton Everest - editions 2, 3 and 4
+Handbook for Sound Engineers - Glen M. Ballou - editions 2 and 3
+
+The formula with the included error is:
+2160*sqrt(r/((d*D)+(r+w)))
+
+This error does NOT originate from &quot;Master Handbook of Acoustics&quot; but from &quot;Handbook for Sound Engineers&quot;
+
+The correct formula is:
+2160*sqrt(r/((d*D)*(r+w))) [+ sign to be substituted by *]
+Both Handbook for Sound Engineers: editions 2 and 3 still show the faulty version.
+
+Scott Smith reported his RIGHTFUL CONCERN about the spreadsheets he found on the net and reported at least 3 of them based on the wrong formula.
+
+I took the liberty to check any further and came to the conclusion that for &quot;Slat type Helmholtz resonators&quot; I could not come up with even 1 single correct calculator, neither HTML, nor Java or Excel calculators.
+So this problem seems even worse then reported by Scott Smith.
+<strong>The faulty &quot;Slat type Helmholtz resonator&quot; calculators on the net are NOT the exception but the rule!!!</strong>
+
+Even the calculators on highly respected sites as SAE: <span class="smilie" title=":oops:">:oops:</span> 
+<a href="http://www.saecollege.de/reference_material/images/Helmholtz.xls" rel="nofollow noopener" target="_blank">http://www.saecollege.de/reference_mate ... mholtz.xls</a>  <a href="http://www.saecollege.de/reference_material/pages/Low%20Mid%20Frequencies.htm" rel="nofollow noopener" target="_blank">http://www.saecollege.de/reference_mate ... encies.htm</a>
+but also others as e.g.: <span class="smilie" title=":oops:">:oops:</span>
+<a href="http://homepages.tig.com.au/~audio/electric/helmholz.htm" rel="nofollow noopener" target="_blank">http://homepages.tig.com.au/~audio/elec ... lmholz.htm</a>
+<a href="http://www.mhsoft.nl/Helmholtzabsorber.asp" rel="nofollow noopener" target="_blank">http://www.mhsoft.nl/Helmholtzabsorber.asp</a>
+<a href="http://www.mindspring.com/~c_campbell_2000/eyedrum/helmholtz.xls" rel="nofollow noopener" target="_blank">http://www.mindspring.com/~c_campbell_2 ... mholtz.xls</a>
+are wrong.
+
+This error does not appear in the &quot;Master Handbook of Acoustics - F. Alton Everest&quot;
+So why are that many calculators wrong, knowing That F. Alton Everest is also a standard work in the studio world?
+
+Lets analyse both approaches:
+
+<strong>1) Handbook for Sound Engineers - Glen M. Ballou - editions 2 and 3</strong>
+
+fo = 2160*sqrt(r/((d*D)+(r+w))) (note this is still the Wrong formula)
+
+d = the effective depth of the slot in inches, which is approximately (1.2) x (thickness of the slot in inches)
+Important to note is that the factor 1.2 is an approximation.
+The correct mathematical modelling of the mouth correction for Slat type Helmholtz resonators is a rather complex business.
+
+<strong>2) Master Handbook of Acoustics - F. Alton Everest - editions 2, 3 and 4</strong>
+
+fo = 216*sqrt(p/(d*D))
+
+fo = resonance freq.. in Hz
+p = perforation percentage (noted as values 1 to 100%)
+D= airspace depth in inches
+d = thickness of slat
+
+p = 100 * r/(w+r)
+r = slot width
+w = slat width
+
+<em>One notices that F. Alton Everest <strong>ignores</strong> this (in reality complex) mouth correction.</em>
+It is not that uncommon that lots of books, even respected works only present stylized versions of formulas.
+Any work is written in function of a specific target group.
+
+As such works as the &quot;The Master Handbook of Acoustics&quot; will go less deep in mathematics as more specialized works.
+
+<em><strong>While the aforementioned noted factor 1.2 for the mouth correction in the &quot;Handbook for Sound Engineers&quot; is only an approximation, it&#x27;s still better to use this approximation than ignoring the mouth correction.</strong></em>
+
+<strong>What is this mouth correction?</strong>
+A Helmholtz resonator is a mass-spring system, which is comparable with a panel or membrane resonator.
+The system is based on a mass which vibrates in resonance on a spring.
+The ratio of the mass versus the dynamic stiffness of this spring defines the resonance frequency.
+The air layer in the cavity acts as a spring with a certain dynamic stiffness mainly defined by its volume.
+The larger the Volume, the weaker the spring becomes (lowering resonance frequency) and vice versa.
+
+For a panel resonator it&#x27;s easy to imagine what the mass is: the panel. 
+The heavier this mass becomes the lower the resonance frequency and vice versa.
+As such a panel resonator is mainly defined by the combination of both properties.
+This isn&#x27;t complete, since angle of incidence, weakness of spring, damping etc. will influence the resonance frequency and the Q-factor.
+
+For a Helmholtz resonator this mass is represented by the mass of the air enclosed by the neck or slot of the resonator.
+However this apparent mass extends outside the exact geometrical boundaries of this neck or slot.
+This is covered by the mouth correction, which is in fact a correction factor increasing those geometrical boundaries.
+In reality this phenomenon is much more complicated than the simple factor, used by the traditional formulas.
+As such the distance between those necks or slots (interaction) and others will influence this correction.
+For practical use however the standard formulas are a good approach.
+
+<em>I can only assume that it is <strong>the lack of this mouth correction </strong>in Everest&#x27;s formulas why Ballou&#x27;s formula (but correctly printed in Michael Rettinger&#x27;s book on Studio Acoustics) is used.</em>
+ 
+In fact one can call it incredible that so many calculators on the net are wrong, even from well respected organizations as SAE, which is and presents itself as:
+&quot;The largest Institute for Multimedia, Audio Education and Digital Film Education worldwide&quot;
+
+NONE of the calculators I found mention the source of the used calculation method.
+
+And here Some EXTREMELY important comments, in relation to the error reporting by Scott Smith, are due
+
+<strong>From: Tony Woolf</strong>
+Newsgroups: alt.sci.physics.acoustics
+Date: 2004-02-04 10:46:33 PST 
+
+...I found your post a useful reminder that published equations can have errors.  
+For this reason and others, it is dangerous to pick up and use equations that you are not familiar with and do not understand.    
+Your post also made me realize that is not nearly so easy to see an error in an equation in spreadsheet format as it is in conventional notation, and I think this is also worth remembering ...
+
+<strong>From: Noral Stewart</strong>
+Newsgroups: alt.sci.physics.acoustics
+Date: 2004-02-04 17:56:50 PST 
+&lt;SNIP&gt;
+.........that many of us in this newsgroup know that errors exist in even the most respected works and we watch out for them.  
+However, those in some other newsgroups might be more inclined to take anything in print as gospel and spread it.
+I can point out errors in almost every book I have.  For some, I even have lists for various editions.  
+Errors are there for a variety of reasons.  
+&lt;SNIP&gt;
+Unfortunately, we are plagued by many people who trust equations and and data they find without verifying them or without asking the conditions that make the data valid. 
+These same people buy computer programs with limitations and possibly errors they do not understand, and suddenly think they are an expert.
+
+<strong>Note from the author:</strong>
+It is indeed incredible, and this is certainly valid for the studio world, how many data is copied from site to site, without any respect for the author or source of the information or used calculation methods.
+Is this done just to look clever? To attract people to there site? To present themselves as experts?
+
+<strong>The above example is a SCHOOL EXAMPLE of this type of behavior.</strong>
+It most likely started with nothing more than a simple typesetting error remaining unnoticed.
+
+<strong>As it seems now, the resulting WRONG calculation formula used by so many sites became the standard rather than the exception.</strong>
+
+Why then did educated acousticians didn&#x27;t noticed this before?
+Mostly professional acousticians do NOT rely on net calculators, but on there study and books.
+And here the comments by Noral Stewart are important.
+
+For a trained acoustician a formula is a mathematical representation of a physical process.  
+As such it is a language in the same manner the written word is the tool for a writer to express his thoughts.
+
+Anyhow the author wishes to express his respect to Scott Smitt for:
+a) Reporting this.
+b) Being critical enough to notice this error.  <span class="smilie" title=":P">:P</span> 
+
+Further the author expresses his respect:
+1) Tony Woolf (Europe: UK acoustician - <a href="http://www.tonywoolf.co.uk" rel="nofollow noopener" target="_blank">http://www.tonywoolf.co.uk</a> )
+2) Noral Stewart (US: NC acoustician - <a href="http://www.stewartacousticalconsultants.com" rel="nofollow noopener" target="_blank">http://www.stewartacousticalconsultants.com</a> )
+For their valuable comments
+
+3) J.F. Oros (member <a href="http://forum.studiotips.com" rel="nofollow noopener" target="_blank">http://forum.studiotips.com</a> )
+4) Jack Hildwine (member <a href="http://forum.studiotips.com" rel="nofollow noopener" target="_blank">http://forum.studiotips.com</a> )
+5) Jeff D. Szymanski  (Chief Acoustician: <a href="http://www.auralex.com" rel="nofollow noopener" target="_blank">http://www.auralex.com</a> )
+For checking the exact content of the by the author lacking editions of Everest&#x27;s and Ballou&#x27;s books.
+ 
+Eric Desart
+<a href="http://www.acoustics-noise.com" rel="nofollow noopener" target="_blank">http://www.acoustics-noise.com</a></div>
+</article>
+<article class="post" id="p9932">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/john-sayers/">John Sayers</a><time datetime="2004-02-18">18 February 2004</time><a class="permalink" href="#p9932" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Wow - that&#x27;s interesting Eric and embarrassing  <span class="smilie" title=":oops:">:oops:</span>  <span class="smilie" title=":oops:">:oops:</span> 
+
+Mate I think I probably got my formula from the &quot;Handbook for Sound Engineers&quot; as it was a standard textbook at the University where I taught sound engineering. I&#x27;m afraid I trusted it.
+
+I first used the formula in my &quot;How to Build a Recording Studio&quot; site which I posted back in 97/98. It then became &quot;The Recording Manual&quot; that was eventually sold to the SAE in 2000 who have since offered it in their reference material section.
+
+Naturally I accept full responsibility for misleading people by using an incorrect formula and to everyone I apologise.
+
+It&#x27;s interesting because the difference in the Helmholtz formulas came up a while back on your Yahoo Acoustics Group where someone questioned the different results given by different formulas on the web. I do remember you pointing out then that some of the calculators were incorrect and you did post the SAE one as being a correct one.
+
+cheers
+john</div>
+</article>
+<article class="post" id="p9935">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-18">18 February 2004</time><a class="permalink" href="#p9935" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Eric, thank you VERY much for including us in the loop - I&#x27;ll be modifying a spreadsheet or two when I get some time.
+
+(Just what I need, another project  <span class="smilie" title=":?">:?</span> )
+
+Thanks again... Steve</div>
+</article>
+<article class="post" id="p9937">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-02-18">18 February 2004</time><a class="permalink" href="#p9937" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">John Sayers wrote:</div><div class="bb-quote-body">Wow - that&#x27;s interesting Eric and embarrassing  <span class="smilie" title=":oops:">:oops:</span>  <span class="smilie" title=":oops:">:oops:</span> 
+It&#x27;s interesting because the difference in the Helmholtz formulas came up a while back on your Yahoo Acoustics Group where someone questioned the different results given by different formulas on the web. I do remember you pointing out then that some of the calculators were incorrect and you did post the SAE one as being a correct one.
+cheers
+john</div></blockquote>Hi John,
+
+I can&#x27;t remember, but it&#x27;s very possible.
+I must say I never checked them, and I don&#x27;t use Net calculators.
+I&#x27;m maybe 3 year on the net, and do acoustics &gt;&gt; 25 years.
+And indeed I always automatically trusted SAE as a safe site to refer to.
+So if I did I&#x27;m guilty too,  <span class="smilie" title=":oops:">:oops:</span>  (lucky you left one blush).
+
+And for whatever reason: slat type Helmholtz resonators relative seldom came up there (I wonder if I&#x27;m looking for an alibi  <span class="smilie" title=":roll:">:roll:</span> )
+
+Anyhow when this Scott pointed this out I started investigating. 
+He originally thought it was Everest, so I think he also found those references via, via...
+So I don&#x27;t take credit for some very clever guy with some healty critisisme.
+
+Cheers
+Eric
+
+PS: If you wonder what I used/use:
+Being Dutch my Univ books are Dutch courses made over the years by the Univ/Profs itself.
+
+But a very good book which goes much more in-depth:
+
+BAUPHYSIKALISCHE ENTWURFSLEHRE
+BAU- UND RAUMAKUSTIK
+by FASOLD, SONNTAG, WINKLER
+Publisher: Rudolf Müller - Berlin 1987
+ISBN 3-481-12421-X
+
+Problem this is East German.
+With the unification of Germany this Publisher disappeared.
+
+If you or anybody else should ever find this book back (I still have an overused copy) I&#x27;m certainly interested.
+Believe it or not, but books from the former communistic countries were often extremely good.
+Reason (as a Prof told me): They invested enormous amounts in knowledge and the profs themselves had little personal gain (very low salaries). They published all they knew.</div>
+</article>
+<article class="post" id="p9939">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-02-18">18 February 2004</time><a class="permalink" href="#p9939" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Hello Steve,
+
+I won&#x27;t forget you héééééééé!!
+
+Just fun:
+
+1) If a studio guy accidentally comes here first than his studio is dominated by slat type Helmholz resonators.
+2) If He came 3/4 year back at RO then his studio was a collection of paneltraps.
+3) Now a fresh guy at RO makes it cornertraps or MiniTraps.
+4) A visiter at Yahoo by definition ended up with corner traps.
+
+So what&#x27;s good: I&#x27;m not home anymore  <span class="smilie" title=":lol:">:lol:</span>  <span class="smilie" title=":lol:">:lol:</span> 
+
+    :?:   <span class="smilie" title=":?:">:?:</span>   <span class="smilie" title=":?:">:?:</span>   <span class="smilie" title=":?:">:?:</span>   <span class="smilie" title=":?:">:?:</span>   <span class="smilie" title=":?:">:?:</span>   <span class="smilie" title=":?:">:?:</span></div>
+</article>
+<article class="post" id="p9966">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-20">20 February 2004</time><a class="permalink" href="#p9966" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">You forgot - My personal favorite 
+(5) The Trap that puts the Snap in your mix - special pricing for Mickey Mouse Club members. (the trap can be converted to broadband by simply using a small swatch of 703 placed on the yellow platform...  <span class="smilie" title=":wink:">:wink:</span><div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: rat_traps.jpg</div></div></div>
+</article>
+<article class="post" id="p9969">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-20">20 February 2004</time><a class="permalink" href="#p9969" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">BTW, just changed the SAE calculator formula, and with the same 5/100/400/25 values, the old one returns center freq of 201 hZ vs 109 hZ for the correct formula. Another set of values puts the difference at OVER an OCTAVE - Oops... Steve</div>
+</article>
+<article class="post" id="p9974">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/cadesignr/">cadesignr</a><time datetime="2004-02-20">20 February 2004</time><a class="permalink" href="#p9974" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Hello gentleman, not being mathimatically enlightend, this is out of my league, but it would seem, IF these were designed to absorb a specific frequency, like a room mode, and they did NOT work as calculated, why hasn&#x27;t anyone heard it after all this time. Seems kind of......unnoticed? Or am I not understanding the design purpose.  I always thought that things that did NOT work would be noticed right away?  Especially if a room was tested? Or is this so vauge that the ear cannot distinquish if it is working or not?   I mean, whats the point of a VERY specific formula, if no one can even tell if it is doing what it is designed to do?  Please do not take this as anything but curiosity. 
+
+fitZ <span class="smilie" title=":?">:?</span></div>
+</article>
+<article class="post" id="p9976">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/bassman/">bassman</a><time datetime="2004-02-20">20 February 2004</time><a class="permalink" href="#p9976" aria-label="Link to post 9">#9</a></header>
+<div class="post-body">One thing I wanted to add to this is that making panels, or in my case gobos, with varying gaps between the slats does not yeild a more wideband absorber by having multiple resonant frequencies.  My understanding is that the <em>average</em> gap dimension becomes the resonant frequency variable.  Looks nice but doesn&#x27;t give you different frequency absorbtion unless the cavity beneath each variance in gap is separated from adjacent cavities with other gap sizes.
+
+Those hemoltz traps can be tough.  <span class="smilie" title=":)">:)</span>
+
+-bassman</div>
+</article>
+<article class="post" id="p9977">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-20">20 February 2004</time><a class="permalink" href="#p9977" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">&quot;doesn&#x27;t give you different frequency absorbtion unless the cavity beneath each variance in gap is separated from adjacent cavities with other gap sizes&quot; -  
+
+Yeah, Barefoot mentioned this quite a few months ago - has to do with the wavelength being much larger than the trap in most cases, so the AVERAGE pressure across the trap tends to dominate rather than each slot being autonomous. (Unless, as you said, you place individual septums between slot cavities, in which case you have several small independent Helmholz traps, any one of which wouldn&#x27;t have a lot of effect) but taken together, if the face were slanted creating a different depth (or different slot width/slat width, or all of these), then you would effectively create a more broadband trap. 
+
+Rick, one possible reason few people have noticed is that the change seems (so far, with limited tests) to produce close to an octave difference. Can you say &quot;harmonic&quot; ? I&#x27;m thinking that the end results would have been close enough to an octave that the traps would still help in most cases. So far, not that many people actually use room analyzers/software and &quot;shoot the room&quot; - more often, they just listen to &quot;golden&quot; CD&#x27;s and say, yeah that works... 
+
+That&#x27;s just a theory of course - I&#x27;m still looking at this, as I&#x27;m sure a LOT of people are... Steve</div>
+</article>
+<article class="post" id="p9984">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/cadesignr/">cadesignr</a><time datetime="2004-02-20">20 February 2004</time><a class="permalink" href="#p9984" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">Hello Steve, thanks buddy, here is another one for ya <span class="smilie" title=":D">:D</span> 
+
+Alright, lets imagine, you&#x27;ve done all the analysis of a room, but before you do ANYTHING to  a bare bones room,(control room)  you install nothing but your speakers, an amp, and a playback device or signal generator. Assuming the room is soundproofed enough, and the interior shell is built as part of the absorbtion calculation criteria etc, would it be safe to assume, that if you energized the room with a signal gererator from 20 hz on up, this would tell your ears exactly what the room was doing with NO treatment. After all, isn&#x27;t this what all this is about. Anyway, wouldn&#x27;t you HEAR resonance or, room modes, at various frequencys from the generator, and with a digital one, it should tell you exactly what those frequencys are?
+  And if this is true so far, IF you were to bring calculated  treatment (slat tresonators etc) into the room and run these same frequencys, it seems reasonable to me, that either you would be able to tell whether they are working or not, simply by placing a sheet of ply or something over the slots, and removing it. Would not that cause you to hear the resonance when the cover is removed?  I know this sounds simplistic, and it is, cause damit, either you can hear this stuff working or NOT working, right. Or, to my way of thinking, if not, what is this, the emporoers new clothing <span class="smilie" title=":D">:D</span> Just kidding, but in a way I&#x27;m not as I am really curious now exactly what it is your SUPPOSED to hear if they indeed are working.
+
+fitZ  still <span class="smilie" title=":?">:?</span></div>
+</article>
+<article class="post" id="p9991">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-20">20 February 2004</time><a class="permalink" href="#p9991" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">Sorry Rick, gettin&#x27; too close to draggin my sorry ass to bed for one of these - prob&#x27;ly tomorrow night (BTW, it&#x27;s NOT quite that simple, since music isn&#x27;t made of sine waves very often (flute solos possibly excepted) 
+
+Also, if you cover a helmholz with a solid sheet of plywood, you&#x27;ve just (sorta) created a panel trap  <span class="smilie" title=":?">:?</span> 
+
+I&#x27;ll get into this more soon... Steve</div>
+</article>
+<article class="post" id="p9996">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-02-20">20 February 2004</time><a class="permalink" href="#p9996" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">Hi all,
+
+I see a lot of rightfull questions here.
+
+I have no time to go in-depth. This is not to hide something, but because lots of it can&#x27;t very simply be answered, and lots I just don&#x27;t know exactly.
+
+Your soundfield that you generate depends for the traveling waves on the combination direct field and boundary interference. So directionality speakers and sound propagation come into play.
+
+For the standing waves (room modes) directionality doesn&#x27;t come into the picture (at least not in function of source radiation), but the position of the source will be defining for the strenght of the excitation of the diffent modes.
+Axial modes behave as plain waves straight to the walls.
+Tangential modes as wave fronts in relation the the diagonals (depends on order) in 2-D plains, but form a rather complex pattern for higher order modes.
+Oblique modes as wave fronts in relation to the diagonals in a 3-D space, but form a rather complex pattern for higher order modes.
+
+Slat type and other Helmholtz resonators are angle of incidence dependent, but are also influenced by other factors.
+
+I&#x27;m saying this all to make clear that exact tests to check formulas calls for a lot of boundary conditions, one must either understand, or measure in measurement rooms where the field is better known.
+
+Note that all those resonator formulas assume a lot of boundary conditions and are based on simple conditions, and that for exact tuning one better checks that in practice.
+
+<strong>Those Helmholtz formulas as well as Panel trap formulas are nothing else than the room acoustic translation of a simple 1 DOF mass-spring system.
+This means in analogy : a small mass, as a piece of wood, on a helical (or other linear) spring on top of a table.</strong>
+
+I think I have a little bit different vision than Thomas on those things.
+I see Thomas using a lot of wavelenght relations (which of course is partly involved).
+
+The way slat type Helmholtz resonators are used here are rather broadbanded.  Also the different slat widths, while certainly usefull are difficult theoretical to define.  The law of inertia certainly plays a role in the cavity. The stiffness of the spring will try to smooth out, while simultaniously one gets in fact a higher order mass-spring system (multi- DOF = Degrees Of Freedom).
+
+<strong>What I&#x27;m saying is: be careful with explenations, just because it&#x27;s easy to have one.  
+I think a lot of systematic testing is needed to isolate some of those phenomena. Without having access to such data (published or measured) it&#x27;s very risky to see certain explenations as facts.</strong>
+
+One of the risky things that I notice on the net is:
+Someone tries to figure out why something happens or just is: He suggests some possible well thought through options.  For one or the other reason, while never tested, and by the originator only suggested as still to be investigated thoughts, they become fact on the net.
+Just because it&#x27;s easy to give things a name or simple definition.
+
+Too many well meant assumptions from searching minds became facts.
+<strong>And checking formulas and measuring resonance frequencies based on real life circumstances is very good and even advisable for specific applications and use, but risky if used as a generalization of the phenomenon without controlling and understanding all boundary conditions</strong>.
+
+Eric
+
+Here I have also a question for Thomas:
+Thomas I heard you say at RO that the efficiency of a helmholtz or slat type Helmholtz can be somehow related to the ratio of open (slots) to the closed (area).
+Have you measurements or publications confirming that?
+E.g. A single 10 ounce Cola bottle at river banks resulted in 5.9 sabins.
+
+I can&#x27;t find that back, nor do the measurements I know confirm that (certainly not as some kind of linear relation).
+I admit I never investigated that, but still have lots of data in which I can&#x27;t recognize this.  And I have books that remain very vague about it, while going very deep where mathematical approaches can be used.
+And the afforementioned Cola bottle gives rather impressive results.
+
+What I once tested was an extensive series of perforated thin steelsheets on top of rockwool (300 mm and 100 mm thick; surface ca 12 m2).
+This test was done in function of investigating the acoustic transparency of those thin steel sheets for industrial purposes.
+
+I tested between ca 4.5 % to 70 % perforation.
+Also there nothing related systematically to this ratio.
+In fact what we mainly found was a (still further to be investigated, since no main perpose of study) relation between the closed surface measures and the wavelenght in function of reflection/scattering.  
+Note: all those test were performed by myself in an official Univ reverb lab as per ISO 354 standard (standard absorption measurements).
+
+Kind regards to all
+Eric
+
+PS: A question to Steve or other mods.
+I write an enormous amount of spelling errors, maybe wrong words.
+This is all very time consuming for me.
+If usefull, please edit my messages to correct such things but as well please without altering the content.</div>
+</article>
+<article class="post" id="p10007">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-21">21 February 2004</time><a class="permalink" href="#p10007" aria-label="Link to post 14">#14</a></header>
+<div class="post-body">Rick, one of the problems with your approach (not that it isn&#x27;t possible) is human persistence - if you do AB testing between any two choices, the time lag between tests needs to be at or near zero or our mind forgets exactly what the other one sounded like. This is partly why test software can be helpful, if you know enough about acoustics in the first place NOT to let the software lie to you by doing wrong tests, or in the wrong way, wrong place, ad nauseum...
+
+Still, that&#x27;s pretty much what I intend when I get to that point - set up what you KNOW will be necessary, fire it up and listen. Between &quot;golden&quot; CD&#x27;s and high res plots of each speaker in position separately, then in combination, etc, one should be able to figure out from the combination of listening to music and comparing graphs, just what kind (and generally how much) of treatment is still needed to reach the goal for that room. 
+
+Eric, the way the board is set up I only have editing capability for posts in the Construction forum - plus, I don&#x27;t think I should put words in other peoples mouths, although if you&#x27;re asking, I might clear up syntax a bit and notate at the bottom so you can check it - Either your english is improving or my interpretation is getting better, because I understand a LOT more of your posts than I used to - I really wouldn&#x27;t worry about it if I were you.
+
+I&#x27;m posting the corrected Helmholz calculator as a sticky here (or if that doesn&#x27;t work I&#x27;ll do it on the Construction forum) - I kept the old formula as well, and labeled it for comparison so it&#x27;s really quick to see what the old and the correct formula results are... Steve</div>
+</article>
+<article class="post" id="p10052">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/cadesignr/">cadesignr</a><time datetime="2004-02-22">22 February 2004</time><a class="permalink" href="#p10052" aria-label="Link to post 15">#15</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body"> Too many well meant assumptions from searching minds became facts.   k</div></blockquote> 
+ Give me a break Eric. Sounds like the shoe is on the other foot to me.  Your the professionals.  And yet this formula has skipped by for how many years. Talk about fact.  How bout diffusion in a small room.  I bought that one for years, because Everest ballyhooed it in his book.  Now every website I read about diffusion says it theres no such thing as a diffuse sound field in a small room.  He even shows pictures of diffusers in SMALL ROOMS and describes the effects on music listening, AND gives graphic representation.  So who is the ones passing info as fact, if indeed its not the professionals.  Maybe YOU can explain why after all these years no one has come forward complaining why thier hemholtz resonators arn&#x27;t working as you should be able to HEAR it. Or is this some kind of no hear, no know if its working deal. I mean, what the hell are these for if not to remove offensive AUDIBLE frequencys?  Layman maybe responsible for the use of technical issues in incorrect ways, but they seldom are responsible for PUBLISHING professional journals and documents with error and so called facts that are later tossed to the wind like so much acoustical brain farts.  And frankly, spending $25 on this book makes me pissed as I spent many hours trying to decipher the elements of diffusion from a laymans point of perspective for my SMALL ROOM!.  Only to be told years later it doesn&#x27;t work in small rooms.    So  I say it again, give me a break.  What you professionals seem to forget is your TRUTH is the very reason layman come to these bbs&#x27;s as I doubt if any interested layman with half a brain would waste their time on net fact crap.  How bout this.  The use of 703 has spread across this planet in less time than an outbreak of SARS.  And why? Only because the word of professional studio designers and acoustitions.  But now, my trust in professional acoustical word has been betrayed.  Whats next, the speed of sound is an error? Besides, I&#x27;m tired of elitist ivory tower suppositions of superior thinking vs layman capabilitys.  Millions of records have been made in less than perfect acoustical conditions, and some of them have terrible acoustics, but I don&#x27;t give a damn, as I, like most mortals, llisten to the music. NOT the acoustics.
+
+fitZ <span class="smilie" title=":twisted:">:twisted:</span></div>
+</article>
+<article class="post" id="p10056">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-02-22">22 February 2004</time><a class="permalink" href="#p10056" aria-label="Link to post 16">#16</a></header>
+<div class="post-body">Hello Fitz,
+
+&quot;...Give me a break Eric....&quot;
+
+Sorry Fitz, how can you make this personal?
+I even don&#x27;t know you.
+
+If it sounded like that, then I&#x27;m really sorry.
+
+I started this thread, to report an error, and to explain some background.
+I wanted to show the limits of even CORRECT formulas and the fact that they are valid within certain boundary conditions, by explaining what the physical origin is of those formulas (the mechanical mass-spring 1 DOF system).
+You were searching, wondering.  I DO LIKE searching/wondering people.
+If well meant there are NO stupid questions. I&#x27;ll have them too, and the more answers I get, the exponentially more questions I have. And that will be the case until I die.
+Once I tell I know it all, it only means that I got crazy somehow, needing a medicin.
+
+You blame professionals:
+In this case it started with a typesetting error, which are possible in any book. If it happens in text, no problem, our mind reads over it.
+It&#x27;s annoying that it happens on such an important spot as interchanging an operator in a formula.
+But in fact I answered your question already before.
+E.g. I never in my live relied on a net calculator: Why? I studied physics from the basics, I have my own books and courses. If I see a Helmholtz or a panel trap formula then I know where it comes from, the basics behind it.
+
+I&#x27;m also not used to see Imperial factors. So I lack feeling for such formulas before I converted them to metric. And mostly one must look to the source of the page to find the formula (if accessible) often difficult to read in Java or HTML language, since the symbolic notation of the formula is VERY SELDOM to be found on the page itself.
+So a real expert, will not necessarily notice an error in a formula, just by seeing the calculated result. If the standard symbolic notation of the formula should be shown, then his build-in alarm should much easier be triggered.
+
+Also Noral and Tony explained.
+
+The biggest problem on the NET in the studio world are NOT the real acousticians, but the ones THINKING they are, or like to present themselves as the expert, and copying things from site to site without ever mentioning the source, just in order to look clever.  And this alinia I DO MEAN with everything I stand for.  The net is poisened with this kind of stuff.
+
+So sorry for any possible misunderstanding.
+
+Kind regards
+Eric</div>
+</article>
+<article class="post" id="p10058">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-22">22 February 2004</time><a class="permalink" href="#p10058" aria-label="Link to post 17">#17</a></header>
+<div class="post-body">Rick, neither Eric nor I MADE the mistake in the helmholz formula, we&#x27;re just trying to correct it. And neither of us INVENTED acoustics, we only STUDY the subject. I know you&#x27;re trying to understand acoustics enough NOT to make any serious mistakes in building your recording space, as am I. I don&#x27;t consider myself anywhere close to finished with acoustic study, only a lot further along than I used to be. 
+
+I get the impression from time to time that you think acoustics is a simple subject, with only one answer to each question - I&#x27;m sorry, but that&#x27;s just NOT the case. If it were, then room modeling programs like CARA wouldn&#x27;t take DAYS on a 3 gig pentium to model a room with just an average amount of detail input. 
+
+Don&#x27;t think I don&#x27;t understand your frustration in this - I&#x27;ve been trying to get a handle on the subject off and on since 1982, and it&#x27;s only been in the last year or so that I&#x27;ve made any serious breakthroughs - and mistakes, no matter where they come from, don&#x27;t help that. 
+
+It&#x27;s late and I should be in bed, so I&#x27;m not gonna sugar coat this any more than you just did - your comment that you don&#x27;t give a damn is bullshit. If it were true, then you wouldn&#x27;t read, study, or post anything about the subject. Your comment about just listening to the music is also bull - most of the tonality of a mix usually comes from acoustics or the lack of them. Things like slap echo, flutter, uneven reverb, honky vocals, too much reverb, too dry, swishy flanging sound on cymbals, etc, ALL can be caused or eliminated with acoustics. Some may just be the fault of the recording engineer for not knowing enough about acoustics to pick the right spot in the room for the instrument or the mic, etc. Bottom line is, that&#x27;s what the song sounds like. If it&#x27;s different, or quirky, the song may gain a following BECAUSE of acoustics giving it that &quot;different&quot; sound. There are all kinds of different reasons why people like or dislike music, and that&#x27;s one of them.
+
+As far as I&#x27;m concerned, people like Eric and I, and a small handful of others, DONATE our time to try and help others understand a very complex subject so they can do things to improve their musical environment. As Eric pointed out, we are not Gods but students ourselves, and as such, if/when we learn new things we tend to share them - if the subject is too complex for you, either study more or leave it alone. 
+
+But do NOT come here and tear US a new asshole because we tried to HELP - shooting THIS particular messenger can be dangerous because I tend to shoot back. And once you&#x27;ve alienated the 8-10 people on the net who actually CAN think with your rants, who&#x27;s gonna try to answer your questions - you know, the ones you dont give a damn about?
+
+As you so aptly put it to Eric, gimme a BREAK... Steve</div>
+</article>
+<article class="post" id="p10064">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2004-02-23">23 February 2004</time><a class="permalink" href="#p10064" aria-label="Link to post 18">#18</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Talk about fact. How bout diffusion in a small room. I bought that one for years, because Everest ballyhooed it in his book. Now every website I read about diffusion says it theres no such thing as a diffuse sound field in a small room. </div></blockquote>
+
+Diffusers also reduce the amplitude of the peak reflections.  You put diffusers in a small room on the back wall.  This reduces the level of the refections and thus the comb filter effect.  Better sound quality.  No diffuse field, but better sound quality.
+<blockquote class="bb-quote"><div class="bb-quote-body">I spent many hours trying to decipher the elements of diffusion from a layman&#x27;s point of perspective for my SMALL ROOM!. Only to be told years later it doesn&#x27;t work in small rooms. </div></blockquote>I have found in several different fields that at times I had problems understanding certain ideas  because I did not quite understand the basics clearly until explained a different way.  Perhaps my previous paragraph will help you in the same manner.
+<blockquote class="bb-quote"><div class="bb-quote-body">Maybe YOU can explain why after all these years no one has come forward complaining why thier hemholtz resonators arn&#x27;t working as you should be able to HEAR it. </div></blockquote>Acoustics, especially control room acoustics, despite its massive amounts of objective study and analysis is still very much an art.  When dealing with absorption, the interactions are not theoretically very predictable.  Read the BBC RD report 1991-07 (its on their website) as an example of how even professionals do not have a predictable (Mathematica) model for real room acoustics with various types of absorption.
+
+When designing a room we work with very specific numbers.  In reality the one must understand th significance of the numbers.  In the case of Helmholtz absorbers, the design criteria is the centre frequency, yet the effective bandwidth can be several octaves wide, depending the % open area.  How often have you read about taking that into consideration?  So the actual peak absorption frequency is off.  The effective bandwidth could be so wide that the practical effect, especially if the following paragraph&#x27;s procedure is not followed, is not noticed when listening.
+
+Amateurs usually do not have the time or desire to: 
+
+  test, 
+  analyze, 
+  guess at the causes of problems,
+  implement hopefully successful solutions, 
+  and then repeat the process.
+
+A second factor is that most rooms will be acoustically improved by the treatments regardless.  This does mean that the room is at its potential best?  No.  But it is significantly improved.
+
+I hope this helps understand the situation.  
+
+When I started to write this post I was going respond in the same style as your post, but after thinking about it, I felt that an informative response would help much more than an emotional rant.
+
+Andre</div>
+</article>
+<article class="post" id="p10065">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-23">23 February 2004</time><a class="permalink" href="#p10065" aria-label="Link to post 19">#19</a></header>
+<div class="post-body">Andre, good comments and point well taken. 
+
+Normally, I would have been either more gentle or else gone to bed and answered when I was less irritable - however, in this case (since you&#x27;re relatively new here) a bit of history - Rick and I consider ourselve friends, thru over a year of net interaction (and his recent move to within driving distance, even though we&#x27;ve not yet met) - he gets frustrated with this subject (as I&#x27;ve done), he vents, I explain a thing or two, tell him to &quot;shut the f--- up, he calms down and continues his quest for knowledge. It&#x27;s kind of a personality thing, he and I both understand it (I think) and we&#x27;re still pals ( I hope) and, if he actually &quot;goes away&quot;, I&#x27;ll hunt him down like a dog and bash his head in with an acoustics book...   <span class="smilie" title=":twisted:">:twisted:</span> 
+
+
+When we actually physically meet, I&#x27;m gonna kick his ass  <span class="smilie" title=":wink:">:wink:</span>  Gawd, will that be funny - two old farts wrestling around in the mud, both too stupid to realize nobody&#x27;s winning... Steve</div>
+</article>
+<article class="post" id="p100069">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2010-03-30">30 March 2010</time><a class="permalink" href="#p100069" aria-label="Link to post 20">#20</a></header>
+<div class="post-body">This is a rather old thread, but I was just going over it again and I found an explanation by Erir Desart that I found to be very interesting, and worthwhile repeating, regarding the complexities of calculating with Helmholtz equations.  At the end of his post, Eric said:  &quot;I write an enormous amount of spelling errors, maybe wrong words.  This is all very time consuming for me.  If useful, please edit my messages to correct such things but as well please without altering the content.&quot;  So I took the liberty of doing exactly that, editing Eric&#x27;s message, in order to try to clarify what I think Eric meant.  From personal experience I know how hard it is to express complex thoughts in a foreign language, so I wanted to try to help out and make Eric&#x27;s explanation a little more fluid, and easier to understand.
+
+Eric, if you read this and don&#x27;t like what I did to your text, then PLEASE tell me, and I&#x27;ll happily delete it or correct it!
+
+The original post is here:  <a href="/t/1351/">viewtopic.php?f=3&amp;t=1351&amp;p=9996+#p9996</a>
+
+-- ERIC DESART PARAPHRASED --:
+
+Hi all, 
+
+I see a lot of good questions here.   I don’t have the time to analyze this in-depth. This isn’t because I’m trying to hide something, but rather because lots of it just cannot be answered simply, and some of it I just don&#x27;t know exactly. 
+
+For traveling waves, the sound field generated depends on a combination of direct field and boundary interference. So the directionality of the speakers and sound propagation come into play. 
+
+For standing waves (room modes), directionality doesn&#x27;t come into the picture (at least not for source radiation), but the position of the source defines the degree of excitation of the various modes.  Axial modes behave as plain waves, normal to the walls.  Tangential modes behave as wave fronts with regard to the diagonals on a 2-D plain (depends on order), but they form rather complex patterns for higher order modes. 
+Oblique modes behave as wave fronts with regard to the diagonals in 3-D space, but form  very complex patterns for higher order modes. 
+
+Slat type and other Helmholtz resonators are dependent on the angle of incidence, but are also influenced by other factors. 
+
+I&#x27;m saying all of this to make it clear that exact testing to check equations calls for a lot of (control of) boundary conditions.  One must either understand them, or measure them in acoustic laboratories where the field is better known. 
+
+Note that all of these resonator formulas assume a lot of boundary conditions, and are based on simple conditions.  For exact tuning, one should check this in practice. 
+
+Equations for Helmholtz resonators and also for panel traps are nothing more than room acoustic translations of a simple 1 degree-of-freedom mass-spring system. In other words, you can think of it like a small mass, such as a piece of wood, mounted on top of a spring, on a tabletop. 
+
+I think I take a slightly different point of view from Thomas on these things.  I noticed that  Thomas uses a lot of wavelength relationships (which of course is partly correct). 
+
+The way slat type Helmholtz resonators are used here is rather broadband.  The various  slat widths, while certainly useful, are difficult to define theoretically. The law of inertia certainly plays a role in the cavity. The stiffness of the spring will try to smooth it out, but at the same time you also, in fact, get a higher order mass-spring system (multiple degrees-of-freedom). 
+
+What I&#x27;m saying is: be careful with explanations.  I think a lot of systematic testing is needed in order to isolate some of those phenomena. Without having access to such data (published or measured) it&#x27;s very risky to take certain explanations as fact. 
+
+One of the risky things that I notice on the Internet is this:  Someone tries to figure out why something happens.  He suggests a plausible explanation, which is well thought out.  Then, for one reason or another, even though the hypothesis has never been tested, and the originator only suggested it as a possibility that should be investigated, it starts to be taken as fact on the Internet.   Just because it&#x27;s easy to give things a name or simple definition. 
+
+Too many well-meant assumptions from searching minds became “facts” like this.
+
+Checking formulas and measuring resonant frequencies based on real-life circumstances is very good, and even advisable for specific applications and use, but risky if used as generalizations of the phenomena, without controlling and understanding all of the boundary conditions. 
+
+
+Eric 
+
+
+I have also have a question for Thomas:  Thomas, you said that the efficiency of a Helmholtz or slat resonator can be somehow related to the ratio of open area (slots) to the closed area (slats).  Do you have measurements or publications that confirm this? 
+E.g. “A single 10 ounce Cola bottle at river banks resulted in 5.9 sabins”. 
+
+I can&#x27;t find that backed up, nor do any measurements that I know of confirm this (certainly not as some kind of linear relation).  I admit that I have never investigated this, but I do have lots of data, where I can&#x27;t see this.  I also have books that are very vague about it, while going very deep where mathematical approaches can be used.  That above-mentioned Cola bottle gives rather impressive results. 
+
+What I did test once, was an extensive series of thin perforated steel sheet over rockwool (300 mm and 100 mm thick; surface area of 12 m2 roughly).  This testing was done while investigating the acoustic transparency of thin steel sheet for industrial purposes.
+
+I tested between 4.5 % and 70 % perforation.   In these tests,  nothing related systematically to this ratio (of open to closed area).  In fact, what we mainly found was a relationship (that still needs further investigation, since it was not the main purpose of that study) between the closed surface measures and the wavelength as a function of reflection/scattering.   Note: all those test were performed by myself in an official university reverb laboratory, in accordance with the ISO 354 standard (standard absorption measurements). 
+
+ 
+PS: For Steve or other mods. 
+I write an enormous amount of spelling errors, maybe wrong words.  This is all very time consuming for me.  If useful, please edit my messages to correct such things but as well please without altering the content.
+
+
+-- END OF PARAPHRASE --
+
+
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p100085">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2010-03-30">30 March 2010</time><a class="permalink" href="#p100085" aria-label="Link to post 21">#21</a></header>
+<div class="post-body">Have I told you this week that you are good man Stuart?  If not, you are good man Stuart.
+
+Andre</div>
+</article>
+<article class="post" id="p100090">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2010-03-31">31 March 2010</time><a class="permalink" href="#p100090" aria-label="Link to post 22">#22</a></header>
+<div class="post-body">Thanks, André!  <span class="smilie" title=":)">:)</span>  Your comments are much appreciated!
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p100091">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/john-sayers/">John Sayers</a><time datetime="2010-03-31">31 March 2010</time><a class="permalink" href="#p100091" aria-label="Link to post 23">#23</a></header>
+<div class="post-body">thanks Stuart. <span class="smilie" title=":)">:)</span>
+
+I must say I agree with Eric on this statement.
+<blockquote class="bb-quote"><div class="bb-quote-body">One of the risky things that I notice on the Internet is this: Someone tries to figure out why something happens. He suggests a plausible explanation, which is well thought out. Then, for one reason or another, even though the hypothesis has never been tested, and the originator only suggested it as a possibility that should be investigated, it starts to be taken as fact on the Internet. Just because it&#x27;s easy to give things a name or simple definition.
+
+Too many well-meant assumptions from searching minds became “facts” like this.</div></blockquote></div>
+</article>
+<article class="post" id="p100099">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2010-03-31">31 March 2010</time><a class="permalink" href="#p100099" aria-label="Link to post 24">#24</a></header>
+<div class="post-body">Absolutely! Even though I think Eric meant that at a higher level, I reckon it sums up a lot of acoustic folklore very well too, right down at the level of egg-crates on the walls and carpet on the ceiling.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p138915">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">i625</span><time datetime="2016-04-22">22 April 2016</time><a class="permalink" href="#p138915" aria-label="Link to post 25">#25</a></header>
+<div class="post-body">Now I don&#x27;t mean to bring back a thread that&#x27;s years old (disclaimer: I actually do)
+
+But I&#x27;m looking into slat Helmholtz resonators right now and stumbled upon this thread. For what it&#x27;s worth, I&#x27;ve run numbers through the formula:
+
+f_res = 2160*sqrt(s/(d*D*1.2*(s+w))) 
+
+where
+s is the slot width
+w is the slat width
+d is the slat depth
+D is the cavity depth
+
+and the resonant frequency seemed.. well.. incredibly high for a Helmholtz resonator. I went through acoustics in university and am still studying acoustics, and the general impression that I had (right or wrong) is that Helmholtz resonators are generally for low-mid frequencies.
+
+While we&#x27;re on the topic of questioning this formula and poking at it from all sorts of angles, I&#x27;d like to bring some attention to the 2160 that sits right in front of everything else.
+
+I looked up the formula and happened to stumble across this acoustics textbook on Google books:
+Home Recording Studio: Build it Like the Pros By Rod Gervais
+
+and in the text, he mentions that
+2160 = c/(2*pi)
+where c is the speed of sound
+
+Now, I may be missing something, or this may just be a completely fudged explanation on the author&#x27;s part, but there is no possible way 343/(2*pi) can be 2160. (But 343*2*pi comes awfully close!)
+
+You might all call me out on using wikipedia as a source, but the Helmholtz resonator frequency is cited to be:
+
+f_res = c/(2*pi)*sqrt(A/(V*L)) 
+
+where
+c is the speed of sound in m/s
+A is the cross-sectional area of the opening
+V is the volume of the cavity
+L is the corrected neck length
+
+From which, I assume, all variants of Helmholtz type equations are derived from. And I think it makes sense that the coefficient out front is supposed to be low, while all the other mass/spring-related terms stay within the square-root. 
+
+Just my two cents.
+i625
+
+P.S. I like exact numbers, but acoustics has too much jiggery pokery magic for anyone to try to be really exact about anything. People are still trying to make empirical formulas for porous absorbers...!</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"><nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/1351/page/2/">2</a>
+<a href="/t/1351/page/2/" rel="next">Next</a></nav></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

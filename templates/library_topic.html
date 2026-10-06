@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% from "macros.html" import topic_row %}
+{% block content %}
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/library/">Library</a></nav>
+<div data-pagefind-body data-pagefind-weight="2">
+<h1>{{ name }}</h1>
+<section class="intro" aria-label="Introduction">
+{% for para in intro %}<p>{{ para }}</p>{% endfor %}
+<p class="ai-note">Introduction drafted with AI assistance from forum posts.</p>
+</section>
+{% if subtags %}<nav class="subtags" aria-label="Kinds of build" data-pagefind-ignore="all">{% for s in subtags %}<a href="#{{ s.slug }}">{{ s.name }} ({{ s.count }})</a>{% endfor %}</nav>{% endif %}
+{% for g in groups %}{% if g.name %}<h2 id="{{ g.slug }}">{{ g.name }}</h2>{% endif %}
+<ol class="topic-list">{% for t in g.threads %}{{ topic_row(t, show_forum=True) }}{% endfor %}</ol>
+{% endfor %}
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Here are the REW measurements for my room | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by mbira in Acoustics, 2018. 2 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21609/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Here are the REW measurements for my room</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by mbira on 27 May 2018. 2 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21609.</p>
+
+</div>
+</header>
+<article class="post" id="p145932">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mbira</span><time datetime="2018-05-27">27 May 2018</time><a class="permalink" href="#p145932" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I followed Soundman2020&#x27;s guide and got base measurements of my room.  I have a considerable amount of treatment there already: superchunks in the four corners, the &quot;reflection zone&quot; is treated with a 6 x 4 x 4&quot; panel of oc703 on each side and a 6 x 4 x 4&quot; hanging cloud.  I have a 6x4x4&quot; panel on the back wall as well as two 2x4x&quot;4 panels, and lastly two more 2x4x4&quot; panels on the side walls towards the rear half.  It is amazing how much tighter the room sounds now.  I really wanted to do these measurements now to get an idea about what I am still dealing with when mixing.  
+
+At this point, if needed I could add some diffusion on some of the rear wall as well as some of the space in the back half of the side walls.  If it made a big difference, I could still add some bass trapping between the front wall and ceiling, and the side walls and ceiling, but honestly I prefer not to if it&#x27;s not needed because I am ready to get to work mixing!  
+
+The real downside of this room is that it is basically a 19x19x10 square, and there&#x27;s nothing I can do about that fact.
+
+<a href="https://www.dropbox.com/s/iydkkr4yckbvqke/Baseline%20Measurements.mdat?dl=0" rel="nofollow noopener" target="_blank">https://www.dropbox.com/s/iydkkr4yckbvq ... .mdat?dl=0</a></div>
+</article>
+<article class="post" id="p145959">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-05-30">30 May 2018</time><a class="permalink" href="#p145959" aria-label="Link to post 2">#2</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I really wanted to do these measurements now to get an idea about what I am still dealing with when mixing. ---  it is basically a 19x19x10 square, and there&#x27;s nothing I can do about that fact.</div></blockquote>I took a look at your data, and it&#x27;s not too bad, considering.  Yes there are modal issues clearly visible.  All of the following are present.  Left column is predicted frequency based on dimensions, right column is actual measured frequency:
+
+030   033
+059   058
+064	062  
+066	065
+070	070
+089   091
+119   117
+145   147 / 148
+
+And several others.  That could probably be improved with deep bass trapping at suitable locations.
+
+In general, the decay times are reasonably good and fairly even across the spectrum.  The high end is a little too bright, so it might be worth looking at diffusers tuned high, or maybe just thin, heavy (high density) absorption on some surfaces in the room.
+
+There&#x27;s another issue in your room: symmetry.  There&#x27;s a fairly substantial difference between the left and right speakers, especially in the mid range.  I&#x27;d suggest looking for things that might be causing that, and trying to fix it.  You have swings of +/-10 dB, which is a lot, and at around 460 Hz there&#x27;s an even larger swing of nearly 20 dB.
+
+There&#x27;s also something strange going on with the left channel in the very high end:  It looks like comb filtering, perhaps due to a strong reflection, or it might be flutter echo.  It might even be a problem with the speaker itself.  Hard to say.  But it&#x27;s not there on the right channel.  So one thing you could do to check, is to physically swap the two main speakers, but WITHOUT changing anything else.  So move the left speaker to where the right one is and the right to where the left one is, and position them as accurately as you possibly can in location and angle, then repeat just the L-- and R-- tests.  If the problem moves to the right channel, then it is the speaker itself.  If it stays on the left, then it could be your signal chain on the left channel, or the room itself.
+
+I suspect it will stay on the left, and that it is due to the strong reflection that I&#x27;m seeing on the left channel. coming in at 1ms after the direct sound:  That&#x27;s a path difference of only about 40cm, so it is something very close to the &quot;line of flight&quot; between the speaker and the mic: desktop surface?  Console?   Something else in the room close to the left speaker or the mic, on the left side of the room?  That might also be related to the cause of the 460 Hz issue.
+
+But overall, it&#x27;s not too bad, and should be fixable.  Your room is probably also a candidate for digital tuning.  If you&#x27;d like to explore that, PM me.
+
+It would be good to have an accurate diagram of the room, showing the current layout, locations of speakers and mix position, and also the locations of the treatment devices.  Photos too!  <span class="smilie" title=":)">:)</span>
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p146838">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mbira</span><time datetime="2018-07-31">31 July 2018</time><a class="permalink" href="#p146838" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Hi Stuart.
+First, I apologize for the long delay in responding.  My family has been dealing with some serious health issues, and that has taken over.  In any case, I am still in the studio most days working on music.  
+
+When I get some time, I will throw together a sketchup diagram of my room.  The issue you were seeing on the left was probably because I had a large modular synth and my gear rack to my left.  It was blocking a portion of my left reflection-free zone, and I&#x27;m sure it was causing issues-especially since you saw it.  That&#x27;s very impressive that you were able to see the issue.  I just moved the whole rack back towards the rear of the room about three feet and that gets it out of the RFZ, so hopefully that will help!  I will try and do another REW measurement soon to see where I&#x27;m at.  Thanks again very much for your help!</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

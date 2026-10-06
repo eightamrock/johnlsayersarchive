@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Measuring Error? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by DanMilo in Studio Design, 2013. 2 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/18385/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Measuring Error?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by DanMilo on 3 June 2013. 2 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 18385.</p>
+
+</div>
+</header>
+<article class="post" id="p128677">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">DanMilo</span><time datetime="2013-06-03">3 June 2013</time><a class="permalink" href="#p128677" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hello,
+i´m back after a long time and a lot of reading and learning from this forum.
+I´ve done a lot of tweaking in the past to my mixingroom and tried many different things to get a better acoustic or better said a better translation. 
+Now i´ve flushmounted my Events into the frontwall. After flushmounting i got a normal bass boost between 3-7db under 200hz. I tried different Eqs (Linearphase and nonlinearphase EQs) to lower the bass boost from the flushmounting with a shelf eq and a smaller parametric dip to get the boost from the table (mixing desk) a little bit down. I didn`t boost any frequency with the EQ. Now the response seems or better said measures really flat...(+-2-3db up to 300Hz unsmoothed).
+The problem is, the bass totally sounds limply and wishywashy. I´ve got the feeling as if i hear no strong attack from kicks and snares and as if the sustain from bass or synthsounds etc seems to be to much in relation to the rest. That also happens, if i listen with a 90hz cut. It sounds muddy, so it isn´t only a low bass problem. 
+I´ve tried to see some modal problems in the waterfall graph, but i can´t see a problem. But it doesn´t sound like a modal problem...it more sounds like some short cancelations killing the transients. A little bit like something is out of phase. But it isn´t i checked all cabeling etc.  But why can´t i see anything in the response measurement? Could it be, that the measurement doesnt represent what i hear? Are there some additional kinds of measurements i could do? I think it has to do with the integration time, so that i can hear a problem, but can´t measure it.
+The room is 7x5x2,40m and i´m sitting 1,2m away from the frontwall and the flushmounted speakers. The complete backwall has a 1m thick rockwool abdsorber installed.
+I´m not hoping about some acoustical solutions at the moment, i just would like to measure the wired bass problem. 
+I´v got two further pairs of speaker placed at different positions in the room - ns10 and yamaha hs80m. Both pairs give me a more direct feeling and a much better kick over the bass feeling as the events. 
+Isnt there a kind of dynamic measuring test?
+thx for an idea.<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: studio.jpg</div><div class="bb-attachment-missing">Image not preserved: waterfall.jpg</div></div></div>
+</article>
+<article class="post" id="p128680">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2013-06-03">3 June 2013</time><a class="permalink" href="#p128680" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">You seem to be using ETF for your measurements, but I&#x27;d suggest that you switch to REW.  It&#x27;s just a much better package all around, and is FREE!  <span class="smilie" title=":)">:)</span>  You can download it from the Home Theater Shack web site.  I bought and used ETF for a few years, but since they never updated it again, I switched to REW.  ETF does not show you everything that REW shows you, so it is quite possible that there are issues you just are not seeing in ETF.
+<blockquote class="bb-quote"><div class="bb-quote-body">After flushmounting i got a normal bass boost between 3-7db under 200hz. I tried different Eqs (Linearphase and nonlinearphase EQs) to lower the bass boost from the flushmounting with a shelf eq</div></blockquote>It would have been better to use the built-in shelving filter on the speakers themselves.  The circuitry is specifically designed for the exact baffle step response of that cabinet, so it makes more sense to use that than to try to get close with an external circuit.  In general, I&#x27;m not a big fan of using EQ to &quot;fix&quot; room problems, because EQ cannot actually fix any room problems!  
+
+After you download REW, I would suggest taking out the EQ from the signal path, and using only the built in controls on the speaker itself, then run a test like that.
+
+What mic are you using for the tests?
+
+There&#x27;s also the issue with your geometry.  For a room 7 meters long, you are way too close to the speaker.  Your head should be about 2.5 m from the front wall, not 1.2m.  You might very well be sitting in a bad location, acoustically.
+
+You also say that you don&#x27;t think you have modal issues, yet the waterfall seems to be showing some rather marked modal issues.
+<blockquote class="bb-quote"><div class="bb-quote-body">The complete backwall has a 1m thick rockwool abdsorber installed.</div></blockquote>OK, but what did you do to that to reduce high frequency absorption?  And what about the rest of the treatment in the room?  From the way you describe it, you might well have too much high frequency absorption in the room in general, and not enough diffusion / reflection.  Please describe in detail how the rest of the room is treated, and also provide photos.
+<blockquote class="bb-quote"><div class="bb-quote-body">I´m not hoping about some acoustical solutions at the moment, i just would like to measure the wired bass problem.</div></blockquote>They go together.  It <em><span class="bb-u">IS</span></em> an acoustical problem, so it has to be viewed in terms of the entire room acoustic response, across the entire spectrum, not just a problem with the speakers and the bass.
+
+So my suggestion would be to remove everything from the signal path to your speakers such that it is as direct as possible: No EQ, compression, processing, bass management, or anything else: just a direct path from the DAW out to the speaker in, and with the speaker shelving set to -6 dB, the rest set flat.  The measure with REW, using a suitable mic in the mix position at ear height.  After you do that, measure the exact position of the mic in the room, in all 3 dimensions, so you can get the mic back to that precise location for all future measurements, accurate to within a few mm.  This is very important, so that you can compare future measurements validly.  If the mic is in a different position, even a few mm away, then you can no longer compare.  
+
+Do three measurements with REW: Left speaker only, right speaker only, then both together.  Then move the mic to a point about 2.5 m from the front wall, 1.2m above the floor, on the room center-line, and repeat the those three tests like that.
+
+Upload the MDAT data file to a sharing service (maybe Dropbox), then post the link here so we can download it and analyze it.
+
+Also post photos of the room, and a description of how it is treated.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p128681">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">DanMilo</span><time datetime="2013-06-03">3 June 2013</time><a class="permalink" href="#p128681" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">okay thx soundman,
+the problem with the eqs from the event is that they are designed for soffit mounting. They drop the bass about 3db at maximum position, which is way to less. Everything is so muddy and warm that i can´t mix, so i switched to a software eq.
+Yes i´ll try to do the measurement with REW, but that way i can´t include the vst-EQ in my measurement.
+You are right...i don´t like to fix a room problem with an eq, but flush mounted thats the only way to get the bass down....
+I´m using a Behringer ECM Mic. The Sidewalls aren´t treated, but there are some rockwoolabsorber in the corners on the floor to get down some modes.
+On the rearwall i had some wood stripes in front of the rockwool to get some highs and mids back.
+I know what you mean to say that it goes hand in hand with the acoustic. But the problem doesn´t have to do with a to short rt60 or anything with reflections. 
+There are two further speaker pairs in that room which i placed in the middle of the room. They sound very fine. 
+But i´m still wondering, why i can´t measure something strange. I´m excited to see what REW measures....thx a lot!!!</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

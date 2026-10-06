@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John - Active Bass Absorbers? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by barefoot in Studio Design, 2003. 26 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/636/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>John - Active Bass Absorbers?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by barefoot on 29 August 2003. 26 replies, 2003–2010. In the Library under <a href="/library/treatment/">Acoustic treatment</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 636.</p>
+<nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/636/page/2/">2</a>
+<a href="/t/636/page/2/" rel="next">Next</a></nav>
+</div>
+</header>
+<article class="post" id="p4574">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-08-29">29 August 2003</time><a class="permalink" href="#p4574" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">John, 
+
+Is anyone building studios with active bass absorbers rather than passive traps?   It&#x27;s not a new concept.  I recall reading an article in Stereophile magazine when I was in college, about 15 years ago, describing an active servo feedback bass trap product.  With the advancements in sub woofer designs these days it seems like active systems would be a cost effective alternative to passive traps... especially when you consider the real estate and building costs associated with some of these high-end &quot;20Hz&quot; studios.
+
+Any thoughts?
+
+Thomas</div>
+</article>
+<article class="post" id="p4582">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/john-sayers/">John Sayers</a><time datetime="2003-08-29">29 August 2003</time><a class="permalink" href="#p4582" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Never heard of them mate - could you please elaborate?
+
+cheers
+john</div>
+</article>
+<article class="post" id="p4589">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-08-29">29 August 2003</time><a class="permalink" href="#p4589" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">The basic design principle is very straightforward  - as represented in its simplest form in the schematic below.
+
+Even for those of you who know nothing about electronics this circuit is very easy to understand.  The Op Amp is basically a device with 3 connections - a positive input, a negative input, and an output.  The Op Amp&#x27;s only mission in life is to keep it&#x27;s positive and negative inputs the same.  It will try to produce whatever output is necessary in order to achieve this goal.  
+
+Our circuit schematic has the positive input tied to ground.  In other words, the positive input sees no signal at all.  So, where does the Op Amp want the negative input to be?  That&#x27;s right, at ground.  We also see that the negative input is connected to a microphone, and the output is connected to a speaker.  The microphone is positioned close to the speaker cone.
+
+Now what happens if a sound wave hits the microphone?  Well, it starts to produce a signal at the negative input - i.e. it starts to move the negative input away from ground.  But like we said before, the Op Amp hates this.  It absolutely wants to keep those inputs the same.  And since the microphone is connected to the negative input, the Op Amp will start to swing its output in the opposite direction of the signal until, hopefully, something happens to bring the negative input back to ground.  
+
+So the output sends a signal to the speaker opposite to the microphone input signal.  And its only satisfied when the speaker output equally and oppositely matches any external sound waves such that the microphone signal always rests at zero.  
+
+Since there is a finite time required for the signal to travel from the microphone, through circuit, out of the speaker, then back to the microphone, this type of &quot;active feedback system&quot; is restricted to low frequencies where the wave cycle time is large compared to the circuit cycle time.  Buy this is fine.  We&#x27;re interested in bass traps, and this is just the frequency range where this type of circuit works.  
+
+As we see, this microphone/speaker system acts like a black hole for sound.  Whenever a sound wave comes by, the system produces an opposing sound wave to cancel it out.   If we strategically place these devices in our studio, it&#x27;s very much like knocking down the walls as far as bass frequencies are concerned.   The cancellation doesn&#x27;t necessarily have to be 100% and we can even add equalization to the feedback circuit so the cancellations occur more or less at various frequencies, allowing us to tailor the bass response of the room.
+
+In practice, these systems would look just like subwoofers with small microphones mounted in front of the speaker cones.  A big control room might require 4 or 8 of them and, depending on the quality of the sub, they could seriously be effective down to 20Hz.    Say, you built 8 monster versions of these for $2000 a piece.  That&#x27;s $16,000.  My guess is, high end &quot;20Hz&quot; studios spend far more than $16,000 on those giant concrete outer shells and massive trapping systems.  Am I right?
+
+Thomas<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: SERVO-1.jpg</div></div></div>
+</article>
+<article class="post" id="p4591">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-08-29">29 August 2003</time><a class="permalink" href="#p4591" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">.... And of course, much more modest and affordable systems could be built for small studios with no space to put deep bass traps.
+
+Thomas</div>
+</article>
+<article class="post" id="p4595">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/john-sayers/">John Sayers</a><time datetime="2003-08-30">30 August 2003</time><a class="permalink" href="#p4595" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Sounds like the system they are trying to develop to quieten airplane noise - hasn&#x27;t worked so far but it&#x27;s a possibility I suppose. <span class="smilie" title=";)">;)</span>
+
+cheers
+john</div>
+</article>
+<article class="post" id="p4600">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ethan-winer/">Ethan Winer</a><time datetime="2003-08-30">30 August 2003</time><a class="permalink" href="#p4600" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Thomas,
+
+&gt; Whenever a sound wave comes by, the system produces an opposing sound wave to cancel it out. &lt;
+
+As best I can tell this type of design is fundamentally flawed. I believe the <em>concept</em> can be made to work, but only with substantial modification.
+
+Last year my partner Doug and I pondered this at length. Our idea was to mount a piston driver within a panel trap, to make the entire panel work like a huge loudspeaker cone. First we thought to use negative feedback, as proposed above. The problem with negative feedback is it makes the wall infinitely stiff! So there&#x27;s no difference between an active trap with negative feedback and a massive cement wall. Then we considered positive feedback, but that too won&#x27;t work because when a low level sound wave strikes the front the panel will bottom out immediately.
+
+The key is understanding that a panel trap works like a shock absorber in a car. It offers <em>just enough</em> resistance to wave pressure to absorb the energy. Too much resistance and the waves are reflected. Too little and the panel flexes too easily as if it wasn&#x27;t even present.
+
+So it seems to me the only way to create an active trap is to have a pressure sensor in the loop that influences the amount of negative feedback, so the panel offers the optimum resistance. What would be fabulous about a design like this is it could be made efficient over a <em>very</em> wide range of frequencies.
+
+--Ethan</div>
+</article>
+<article class="post" id="p4602">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-08-30">30 August 2003</time><a class="permalink" href="#p4602" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">This whole thing really isn&#x27;t abstract theory.  It works.  This design is already widely used in noise protection headsets <a href="http://www.sennheiserusa.com/pages/products/index.htm" rel="nofollow noopener" target="_blank">http://www.sennheiserusa.com/pages/products/index.htm</a>    Velodyne Acoustics also uses a variation of this idea to linearize their subwoofers.  Instead of connecting the positive op amp input to ground they connect it to the amplifier output.  The signal from an accelerometer attached to the speaker cone is fed to the negative input.  The op amp then outputs a compensating signal to cancel out any difference between the amplifier output and the cone motion.  In other words, it cancels any distortion created by the speaker.    I think Meyers Sound makes a studio monitor with a similar bass linearization system that actually uses a microphone mounted in front of the woofer.
+
+The major technological hurdle these days have to do with developing active noise cancellation systems that are effective at high frequencies and which don&#x27;t require the cancellation system to be in close proximity to the area one wants to protect.  So yes, developing an airplane noise cancellation system that works on even the higher frequencies and doesn&#x27;t require a headset is indeed an extremely difficult challenge at this point in time.  But low frequency cancellation where the system is in close proximity to the affected area (the wall reflection in this case) is far from rocket science.
+
+
+Ethan, I&#x27;m not sure I understand your points.   Either the system you were envisioning is different than what I&#x27;ve described, or you may have some misunderstandings about the nature of active feedback.  The circuit I drew just described the basic principle, but there are simple refinements that can account for the issues I think you&#x27;re trying to raise.  The &quot;just enough&quot; aspect of the system is simply controlled by the gain of the feedback loop.   The idea of an active panel, whether it be an absorber or a loudspeaker, has been around for a long time.  The only reasons such panels don’t work are because 1. They aren&#x27;t stiff enough relative to their dimensions.   They flex and do not radiate like pistons. 2.  They are too heavy and, therefore, extremely inefficient. (This is the very same reason why passive panel absorbers are very inefficient for their size).
+
+As far as car suspensions go, there are active systems that work on the very same basic principles I&#x27;ve outlined.  <a href="http://www.carlist.com/autoglossary/autoglossary_27.html" rel="nofollow noopener" target="_blank">http://www.carlist.com/autoglossary/aut ... ry_27.html</a>   Some of these sytems use &quot;complex algorithms&quot;, but this is only because the optimal alignment of a car&#x27;s suspension under various conditions is far more complicated than the one dimensional problem of positioning of a loudspeaker to cancel low frequencies.
+
+These sytems can and do work.  My question mainly centers on the economics of the solution.  Does it make sense relative to the cost of building large traps?  
+Thomas</div>
+</article>
+<article class="post" id="p4612">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ethan-winer/">Ethan Winer</a><time datetime="2003-08-31">31 August 2003</time><a class="permalink" href="#p4612" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Thomas,
+
+&gt; This whole thing really isn&#x27;t abstract theory. &lt;
+
+I understand, but it seems to me that active noise cancellation and bass trapping have entirely different and opposite goals. In the first case you are trying to counter a sound source with an inverted version to cancel it. In the second case you are trying to <em>avoid</em> the cancelling reflections. So using active noise cancellation in a control room will remove the primary content too, no? That is, instead of unwanted dips in the response at only some frequencies, you&#x27;d reduce the level at <em>all</em> frequencies. Unless I missed something in your drawing. Do you mean to place the system near a wall and have it cancel only the reflected sound from the wall but not the direct sound from the speakers? How would you get the microphone to distinguish the source direction?
+
+&gt; Velodyne Acoustics also uses a variation of this idea to linearize their subwoofers. &lt;
+
+That is yet another variation on the same theme. Mackie does this too in their HR series loudspeakers, and (I was told) they do so without the added complexity of a cone-mounted transducer. They simply compare the woofer current that <em>should</em> be drawn at the moment with what is <em>actually</em> being drawn, and compensate by sending more or less voltage. Or something close to that.
+
+&gt; Either the system you were envisioning is different than what I&#x27;ve described &lt;
+
+I thought you were describing exactly the same thing I was describing. <span class="smilie" title=":D">:D</span> That is, a panel or other surface that reacts to wave pressure in a manner that absorbs the pressure instead of reflecting it. Again, such a panel would have to be mounted against a room boundary, and it would have to provide a controlled resistance to the wave pressure.
+
+&gt; This is the very same reason why passive panel absorbers are very inefficient for their size. &lt;
+
+Jeez, not this again. <span class="smilie" title=":roll:">:roll:</span> Read my fingers: The panel traps I build have an absorption coefficient near 1.0 at their center frequency, as measured at a real acoustics lab. That is very <em>efficient</em>, not inefficient! I don&#x27;t know where you got the idea that panel traps are inefficient, but it&#x27;s very wrong.
+
+Anyway, back to active trapping, if I&#x27;m missing something in how you envision these panels working and where you would mount them, please explain. I understand all about op-amps and feedback and servos. That&#x27;s not the problem.
+
+&gt; My question mainly centers on the economics of the solution. Does it make sense relative to the cost of building large traps? &lt;
+
+When we were selling panel traps we found it difficult to get people to pay $400 each for eight of them. I think it will be even harder to get people to pay $1000 or more each!
+
+--Ethan</div>
+</article>
+<article class="post" id="p4632">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-09-01">1 September 2003</time><a class="permalink" href="#p4632" aria-label="Link to post 9">#9</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Ethan Winer wrote:</div><div class="bb-quote-body">I understand, but it seems to me that active noise cancellation and bass trapping have entirely different and opposite goals. In the first case you are trying to counter a sound source with an inverted version to cancel it. In the second case you are trying to <em>avoid</em> the cancelling reflections. So using active noise cancellation in a control room will remove the primary content too, no? That is, instead of unwanted dips in the response at only some frequencies, you&#x27;d reduce the level at <em>all</em> frequencies. Unless I missed something in your drawing. Do you mean to place the system near a wall and have it cancel only the reflected sound from the wall but not the direct sound from the speakers? How would you get the microphone to distinguish the source direction?</div></blockquote>Whether it be a perfect panel absorber, a window open to an abyss, or an active feedback mechanism, absorption is absorption.  The only way an absorber can completely eliminate the primary wave at its source is if it is also located at the source.  Otherwise it is only eliminating a potential reflection.  
+
+Absorption and cancellation of a potential reflection are physically equivalent.  The source doesn’t sense the outgoing wave.  It is only affected by reflections from nearby barriers.  Those reflections are what cause interference either at the source location or at the listening position.  As long as those reflections are eliminated we don&#x27;t care what happens to the outgoing wave.  By the time the wave reaches a barrier its intensity has dropped off according to the 1/r^2 law.  This reduced intensity is what the absorber senses.  In the case of a passive absorber this wavefront is completely transmitted, never to return.  In the case of an active absorber the wavefront is reflected, but another wavefront of equal magnitude and opposite phase to the refection is also produced.  This opposing wave completely cancels out the <em>reflection</em>.  Since the resulting magnitude of the reflection and its opposing wave are zero, the source or the listener experience it as if there were no reflection at all.  [In fact, if you setup the problem in terms of boundary conditions, you find that in essence there is no reflection from the active absorber.]
+
+The cool thing about an active absorber is that the amount of absorption can easily be adjusted by setting the feedback loop gain.  Infinite gain (effectively infinite) yields 100% absorption.  Zero gain yields 100% reflection.  And any setting in between can easily be adjusted with the turn of a potentiometer, allowing one to tailor the low frequency &quot;reverberation&quot; field of the room.  (reverberation isn&#x27;t technically the correct term when discussing wavelengths of similar or larger scale than the room dimensions).   Furthermore, the feedback mechanism automatically compensates for intensity variations at any frequency within the active absorber&#x27;s bandwidth.  Standing waves are attenuated greatly while other frequencies are attenuated less, leveling out the room, and without any need to know the modal frequencies ahead of time.  
+
+Of course, the main advantage is size.  Trading space for active power consumption an active absorber can provide 100% absorption across a broad frequency range (20-200Hz) all in the size of a subwoofer box.  When placed in the corners (major antinodes) active absorbers can significantly attenuate both complex room modes as well as bass lift in even small rooms.
+
+Thomas</div>
+</article>
+<article class="post" id="p4633">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/john-sayers/">John Sayers</a><time datetime="2003-09-01">1 September 2003</time><a class="permalink" href="#p4633" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Have you tried this thomas -i.e. built one and measured it or is it theory?
+
+cheers
+John</div>
+</article>
+<article class="post" id="p4636">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-09-01">1 September 2003</time><a class="permalink" href="#p4636" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">John, 
+
+I&#x27;ve had plans to build a scale model of a room to test out a few other ideas.  I&#x27;ll put this on the list as well.  Not sure when I&#x27;ll get to it, but it should be fun to see these things in practice.  <span class="smilie" title=":)">:)</span>
+
+Thomas</div>
+</article>
+<article class="post" id="p4659">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ethan-winer/">Ethan Winer</a><time datetime="2003-09-02">2 September 2003</time><a class="permalink" href="#p4659" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">Thomas,
+
+&gt; In the case of an active absorber the wavefront is reflected, but another wavefront of equal magnitude and opposite phase to the refection is also produced. This opposing wave completely cancels out the <em>reflection</em>. &lt;
+
+Okay, let&#x27;s try this from a different angle:
+
+You say you plan to put the proposed active panel in a corner. Forgetting feedback and op-amps and all that, how will the panel respond physically as a sound wave strikes its front surface? Will it respond to wave pressure by pushing forward in opposition, or will it move inward? Either way, how much will it move and with how much force?
+
+--Ethan</div>
+</article>
+<article class="post" id="p4661">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-09-02">2 September 2003</time><a class="permalink" href="#p4661" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">An acoustic pressure rise will cause the panel to move outward (out of the room) with an appropriate velocity such that it creates an equivalent pressure drop, maintaining a net pressure equal to atmospheric near its surface.   An acoustic pressure drop will cause the panel to move inward (into the room) with an appropriate velocity such that it creates an equivalent pressure rise, once again maintaining a net pressure equal to atmospheric near its surface.   
+
+This is that same thing that would happen if the panel were made of a near perfect absorbent material.    The wavefront would penetrate into the material and almost instantaneously its energy would be dissipated into heat - net pressure equal to ambient.  The more perfect the material, the shallower the penetration depth.  
+
+Thomas</div>
+</article>
+<article class="post" id="p4662">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ethan-winer/">Ethan Winer</a><time datetime="2003-09-02">2 September 2003</time><a class="permalink" href="#p4662" aria-label="Link to post 14">#14</a></header>
+<div class="post-body">Thomas,
+
+&gt; An acoustic pressure rise will cause the panel to move outward &lt;
+
+Okay, then how is that different from a passive panel that also moves in and out in sync with the wavefront? What role would the active components play? Do you see what I&#x27;m getting at?
+
+Or put another way, what you seem to be describing is positive feedback, in that a positive pressure on the panel will cause it to move into the enclosure (out of the room) by even more than it would were it passive. Yes?
+
+--Ethan</div>
+</article>
+<article class="post" id="p4666">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-09-02">2 September 2003</time><a class="permalink" href="#p4666" aria-label="Link to post 15">#15</a></header>
+<div class="post-body">There is a very big difference.
+
+A passive resonator is limited by its mass and resonance characteristics.  The only force on the panel is the sound wave itself.  It must accelerate the panel into motion.  Off resonance the mass and reactance of the system allow very little energy transmission into the absorber.  Even on resonance the panel inertia causes a phase lag between the incident wave and the opposing wave generated by the resonator (lighter panels with larger cavity volumes yield higher efficiencies).     And, of course, maximum efficiency requires a sharp resonance.  Broadening the bandwith  (lowering the Q) necessarily reduces efficiency.  
+
+With an active system, however, the only input inertia to overcome is the mass of the microphone diaphragm.   At low frequencies, therefore, the input signal is effectively 100% in phase with the incident wave.  The inertia of the output (loudspeaker cone) is actively overcome by the amplifier.   The system output can stay effectively 100% out of phase with the input (negative feedback) within its pass band.  The high frequency bandwidth is primarily limited by the time delay caused by the necessary physical separation between the microphone and the speaker cone.  
+
+Of course, the universe never gives a free lunch.   The price you pay for the vastly superior characteristics of the active system is the power input.  If you want a small, broadband, high absorption (cancellation) efficiency device, you must provide the power.
+
+Thomas</div>
+</article>
+<article class="post" id="p4671">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ethan-winer/">Ethan Winer</a><time datetime="2003-09-02">2 September 2003</time><a class="permalink" href="#p4671" aria-label="Link to post 16">#16</a></header>
+<div class="post-body">Thomas,
+
+&gt; The system output can stay effectively 100% out of phase with the input (negative feedback) within its pass band. &lt;
+
+Okay, I guess we&#x27;ll never really know for sure if this can work until you build one. It sure seems to me that such a design is not even theoretically possible, at least as described so far. But I&#x27;ve been wrong before. <span class="smilie" title=":D">:D</span>
+
+Again, it seems to me what is needed is for the active system to <em>partially</em> and controllably buck the wave front, to behave as a shock absorber. Too much resistance and you have the same thing as a stiff wall. Too little and the wave will pass through to the wall behind and therefore not work either. I think such a system would need more than just a microphone and driving piston. It would also need a sensor inside the loop that can tell how much resistance to the wave is being applied, to control the resistance offered by the piston.
+
+Good luck. It will be really cool if it works!
+
+--Ethan</div>
+</article>
+<article class="post" id="p29685">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">playtoydave</span><time datetime="2005-08-08">8 August 2005</time><a class="permalink" href="#p29685" aria-label="Link to post 17">#17</a></header>
+<div class="post-body">Hey Thomas I had a question about this system, because I am interested in building something like this. I just want to uderstand it better.
+
+I agree and understand that having a cone move outward (out of the room) when sound passes by  the mic, keeps the air pressure equal to normal air pressure. But what happens when the cone stops moving back out of the room, because the sound wave keeps moving. right? sound waves shouldnt just stop in normal air pressure. 
+
+If i am not wrong you said it cancels the sound waves, but I am  unsure how this happens if all you are doing is keeping the normal air pressure for a split second longer, until the wave hits the cone at the end of its range of motion, where the bass builds like hitting a concrete wall. Or even worse pushes back depending on the point it is at in the cycle.
+
+Do I have things all wrong here? 
+
+I think it would make more sense if a sytem like this was vented out of the studio. You would be sucking air molecules away from the sound wave at the same rate as the wave. Leaving the wave with no air to push against or interact with. I still dont think that would work well since it only affects the positive side of the wave. If at all?!
+
+Thanks for your patience
+
+dave</div>
+</article>
+<article class="post" id="p29699">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2005-08-08">8 August 2005</time><a class="permalink" href="#p29699" aria-label="Link to post 18">#18</a></header>
+<div class="post-body">Hi Dave,
+
+If you look at the simplified schematic in my second post it will help explain things.   An op amp always wants to keep its <span style="font-size:150%"><strong>+</strong></span>  and <span style="font-size:150%"><strong>-</strong></span> inputs at the same voltage.  And a voltage present at the <span style="font-size:150%"><strong>-</strong></span> input will cause the output to swing in the opposite direction.  So, lets imagine what would happen in this circuit if a low frequency sound wave is present.     
+
+Let&#x27;s say the mic senses a rising pressure wave.  It will start to send a positive voltage to the <span style="font-size:150%"><strong>-</strong></span> input, which will then cause the output to move negative.  In other words the speaker will start to create a negative pressure wave, opposite to the incoming sound wave.  Now, the <span style="font-size:150%"><strong>+</strong></span> input is tied to ground, so it always sees zero voltage no matter what.  And since we know that the op amp needs to keep both inputs at the same voltage, the <span style="font-size:150%"><strong>-</strong></span>  input needs to see zero as well.   The only way for this to happen is if the speaker generates a pressure wave that is exactly equal and opposite to any incoming sound waves.  Thus, this is a sound canceling system.
+
+Make sense?   
+
+Thomas</div>
+</article>
+<article class="post" id="p29702">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">drfrankencopter</span><time datetime="2005-08-08">8 August 2005</time><a class="permalink" href="#p29702" aria-label="Link to post 19">#19</a></header>
+<div class="post-body">The real problems that I can see regarding this sort of system is that there are a couple of things to consider.
+
+1. There is a significant delay in the feedback loop depending on where the microphone is placed owing to the speed of sound. This delay may make it hard (or even impossible) to have a stable system. Op-amps don&#x27;t have this problem since their loops operate at the speed of light.
+
+2. Assuming you can get around the delay issue, now you are faced with the problem that the system will only null out the sound at the mic location. If the dispersion of the speaker is not uniform (and I don&#x27;t think many are), then you may actually introduce more problems than you are solving.
+
+That said, active noise cancellation works....but its a slightly different goal than bass control. You won&#x27;t complain about the artifacts in a noise reduction system for a prop driven aircraft, but artifacts in your control room would be cause for concern.
+
+Cheers,
+
+Kris</div>
+</article>
+<article class="post" id="p29703">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2005-08-08">8 August 2005</time><a class="permalink" href="#p29703" aria-label="Link to post 20">#20</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">drfrankencopter wrote:</div><div class="bb-quote-body">
+1. There is a significant delay in the feedback loop depending on where the microphone is placed owing to the speed of sound. This delay may make it hard (or even impossible) to have a stable system. Op-amps don&#x27;t have this problem since their loops operate at the speed of light.</div></blockquote>Yes there is delay.  But as long as the delay is on a tiny fraction of a cycle, the speaker output is essentially in phase with the microphone input.   So as long as we limit the high frequency response, there is no issue with stability (oscillation).   
+<blockquote class="bb-quote"><div class="bb-quote-body">2. Assuming you can get around the delay issue, now you are faced with the problem that the system will only null out the sound at the mic location. If the dispersion of the speaker is not uniform (and I don&#x27;t think many are), then you may actually introduce more problems than you are solving.</div></blockquote>As long as we are talking about low frequencies with long wavelengths, the speaker will radiate omni directionally.  And the wave cancellation will occur over a region corresponding to a significant fraction of a wavelength beyond the vicinity of the system.    
+
+Like I wrote in previous posts, these sorts of devices are not theoretical.   They work and have been around for decades.   My original point in bringing up the subject really had to do with economic feasibility.  Since the prices of high output subwoofers and high power switching amplifiers have decreased so remarkably in recent years, perhaps the time has come for cost effective active bass absorption.  
+
+Thomas</div>
+</article>
+<article class="post" id="p29709">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/john-sayers/">John Sayers</a><time datetime="2005-08-08">8 August 2005</time><a class="permalink" href="#p29709" aria-label="Link to post 21">#21</a></header>
+<div class="post-body">Thomas - I think it&#x27;s a very interesting idea and I&#x27;d like to hear it in action.
+
+My concern is the phase cancelling side of it - I&#x27;m very sensitive to phase - one of the reasons I hate EQ in speakers - if I walk into a room and the speakers are out of phase I pick it immediately so I&#x27;m worried I&#x27;d hear it in this instance.
+
+cheers
+john</div>
+</article>
+<article class="post" id="p60369">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Eriksmusicproduction</span><time datetime="2007-04-12">12 April 2007</time><a class="permalink" href="#p60369" aria-label="Link to post 22">#22</a></header>
+<div class="post-body">Hey Thomas, any more developments on this idea?
+
+Just my thoughts:  I would think this could be a great tool, not for eliminating conventional absorbtion per-se but as an exacting tool for evening out room modes and such in an already decently treated room.
+
+I would imagine that you could place a powerful multiband parametric eq inbetween the mic and servo op-amp to tailer the transducer to even out all the modes that are impossibe to completely achieve with conventional methods.  Imagine a room that actually is flat <span class="smilie" title=":shock:">:shock:</span> 
+
+One thing I wonder though is that you wouldn&#x27;t want a point source transducer trying to cancel all the unwanted sound in an entire room as that would require more that 100% cancellation near the transducer. Maybe one in each corner might do the trick.
+
+Anouther idea that came to me reading this:
+
+In tiny control rooms that are made completely absorbtive due to the inability to extend the reflections past 50ms, an alternate speaker system placed at the back of the room and facing a diffusor mounted on the back wall could be fed a signal (possibly a mic at the back of the room) and delayed accordingly.  Thus artificial room reflections could be achieved to alieve the mixer of the dreaded fatigue of a dry room.
+
+Jusy my thoughts.</div>
+</article>
+<article class="post" id="p60956">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Eriksmusicproduction</span><time datetime="2007-04-27">27 April 2007</time><a class="permalink" href="#p60956" aria-label="Link to post 23">#23</a></header>
+<div class="post-body">Looks like they beat you too it. <span class="smilie" title=":cry:">:cry:</span>  <span class="smilie" title=":cry:">:cry:</span> 
+<a href="http://www.bagend.com/bagend/downloads/E-Trap.pdf" rel="nofollow noopener" target="_blank">http://www.bagend.com/bagend/downloads/E-Trap.pdf</a></div>
+</article>
+<article class="post" id="p60957">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2007-04-27">27 April 2007</time><a class="permalink" href="#p60957" aria-label="Link to post 24">#24</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Eriksmusicproduction wrote:</div><div class="bb-quote-body">Looks like they beat you too it. <span class="smilie" title=":cry:">:cry:</span>  <span class="smilie" title=":cry:">:cry:</span> 
+<a href="http://www.bagend.com/bagend/downloads/E-Trap.pdf" rel="nofollow noopener" target="_blank">http://www.bagend.com/bagend/downloads/E-Trap.pdf</a></div></blockquote>Nah, these sorts of things have been around for years.   I recall seeing one in a hi-fi magazine back in late 80&#x27;s.   It looked like a tube trap, but was active.  It&#x27;s cool that somebody is still making them.   
+
+Thomas</div>
+</article>
+<article class="post" id="p97277">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Death By Darwin</span><time datetime="2010-01-15">15 January 2010</time><a class="permalink" href="#p97277" aria-label="Link to post 25">#25</a></header>
+<div class="post-body">This post is setting off light bulbs in my head! I am currently trying to figure out how I am going to provide ventilation in and out of my new studio build without opening a big flanking path around my carefully designed isolation walls. If I were to place a speaker and microphone in the ends of the duct or at a elbow I could actively cancel the bass frequencies and use baffling in the vent to attenuate the high frequencies! Has anyone tried this? I read one post where someone was suggesting a similar setup to cancel the fan noise from coming into the studio, but could this also work to keep low frequencies from getting out?
+regards,
+-jER</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"><nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/636/page/2/">2</a>
+<a href="/t/636/page/2/" rel="next">Next</a></nav></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

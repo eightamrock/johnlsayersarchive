@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Literata";
+  src: url("/static/fonts/literata-latin-wght-normal.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Literata";
+  src: url("/static/fonts/literata-latin-wght-italic.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("/static/fonts/barlow-semi-condensed-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("/static/fonts/barlow-semi-condensed-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* Gypsum board, graphite pencil, pink fiberglass batts. */
+:root {
+  --paper: #edefea;
+  --sheet: #f6f7f4;
+  --ink: #22272b;
+  --ink-soft: #57605f;
+  --rule: #c3c9c1;
+  --batt: #d9738f;
+  --link: #962c52;
+  --link-hover: #6d1c3b;
+  --quote: #e2e6df;
+  --hatch: #c9cec6;
+  --focus: #1f6fb2;
+  --mark: #f4d2dc;
+
+  --serif: "Literata", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Barlow Semi Condensed", "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --measure: 42rem;
+  --wide: 60rem;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1c2023;
+    --sheet: #23292c;
+    --ink: #dce0da;
+    --ink-soft: #9aa39d;
+    --rule: #3b4448;
+    --batt: #e48aa3;
+    --link: #f0a3ba;
+    --link-hover: #ffd0dd;
+    --quote: #262d31;
+    --hatch: #353d41;
+    --focus: #79b8ec;
+    --mark: #5b2b3c;
+    color-scheme: dark;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.65 var(--serif);
+  font-optical-sizing: auto;
+  overflow-wrap: break-word;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
+a:hover { color: var(--link-hover); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: var(--sheet); padding: 0.5rem 0.75rem; z-index: 10; }
+
+.wrap { max-width: var(--wide); margin: 0 auto; padding: 0 1.25rem; }
+.read { max-width: var(--measure); }
+
+/* --- masthead ------------------------------------------------------------ */
+.masthead { padding-top: 1.25rem; }
+.masthead-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 2rem; }
+.wordmark { font-family: var(--sans); font-weight: 600; font-size: 1.5rem; line-height: 1.1; color: var(--ink); text-decoration: none; letter-spacing: 0.005em; }
+.wordmark small { display: block; font-weight: 500; font-size: 0.95rem; color: var(--ink-soft); letter-spacing: 0.01em; margin-top: 0.2rem; }
+.wordmark:hover { color: var(--ink); }
+.site-nav { font-family: var(--sans); font-weight: 500; font-size: 1.05rem; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; align-items: center; }
+.site-nav a { color: var(--ink); text-decoration: none; padding: 0.2rem 0; border-bottom: 2px solid transparent; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { border-bottom-color: var(--batt); }
+.site-nav form { display: flex; }
+.site-nav input[type="search"] {
+  font: 500 1rem var(--sans); width: 9.5rem; padding: 0.25rem 0.5rem;
+  border: 1px solid var(--rule); border-radius: 2px; background: var(--sheet); color: var(--ink);
+}
+
+/* The wall section: two layers of drywall, a cavity with batt insulation,
+   two more layers of drywall. Drawn once, in the masthead. */
+.wall { display: block; width: 100%; height: 34px; margin-top: 1rem; color: var(--ink); }
+.wall .leaf { fill: var(--ink); }
+.wall .leaf-2 { fill: var(--ink-soft); }
+.wall .batt { fill: none; stroke: var(--batt); stroke-width: 1.6; stroke-linejoin: round; }
+
+/* --- type ---------------------------------------------------------------- */
+h1, h2, h3 { font-family: var(--sans); font-weight: 600; line-height: 1.15; letter-spacing: 0.003em; margin: 0; }
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.5rem; margin-top: 2.5rem; }
+h3 { font-size: 1.2rem; }
+main { padding: 2rem 0 4rem; }
+.lede { font-size: 1.1875rem; }
+.muted { color: var(--ink-soft); }
+.small { font-size: 0.9rem; }
+.crumbs { font-family: var(--sans); font-weight: 500; font-size: 1rem; color: var(--ink-soft); margin-bottom: 0.6rem; }
+.crumbs a { color: var(--ink-soft); }
+
+/* --- home ---------------------------------------------------------------- */
+.questions { font-size: clamp(1.6rem, 4.2vw, 2.6rem); line-height: 1.22; font-weight: 400; margin: 0.5rem 0 0.75rem; max-width: 22em; letter-spacing: -0.005em; }
+.questions span { display: block; }
+.attribution { font-family: var(--sans); font-weight: 500; color: var(--ink-soft); margin: 0 0 2rem; }
+.home-grid { display: grid; gap: 0 3rem; grid-template-columns: 1fr; }
+@media (min-width: 52rem) { .home-grid { grid-template-columns: 3fr 2fr; } }
+
+.topics { list-style: none; padding: 0; margin: 1rem 0 0; columns: 1; }
+@media (min-width: 40rem) { .topics { columns: 2; column-gap: 2.5rem; } }
+.topics li { break-inside: avoid; padding: 0.55rem 0 0.7rem; border-top: 1px solid var(--rule); }
+.topics a { font-family: var(--sans); font-weight: 600; font-size: 1.15rem; text-decoration: none; }
+.topics a:hover { text-decoration: underline; }
+.topics p { margin: 0.1rem 0 0; font-size: 0.95rem; color: var(--ink-soft); line-height: 1.45; }
+
+.plain-list { list-style: none; padding: 0; margin: 1rem 0 0; }
+.plain-list li { padding: 0.45rem 0; border-top: 1px solid var(--rule); line-height: 1.4; overflow-wrap: anywhere; }
+.plain-list .meta { display: block; font-size: 0.875rem; color: var(--ink-soft); }
+.feature { margin: 2rem 0 0; padding: 1rem 1.1rem; background: var(--sheet); border-left: 4px solid var(--batt); }
+.feature h2 { margin: 0 0 0.3rem; font-size: 1.25rem; }
+.feature p { margin: 0.3rem 0 0; }
+
+/* --- listings ------------------------------------------------------------ */
+.topic-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+.topic-list li { padding: 0.65rem 0; border-top: 1px solid var(--rule); }
+.topic-list .title { font-weight: 500; }
+.topic-list .meta { display: block; font-size: 0.875rem; color: var(--ink-soft); margin-top: 0.1rem; }
+.topic-list .pin { font-family: var(--sans); font-weight: 600; font-size: 0.85rem; color: var(--ink); background: var(--quote); padding: 0.05rem 0.4rem; margin-right: 0.35rem; border-radius: 2px; }
+.ai-note { font-family: var(--sans); font-weight: 500; font-size: 0.95rem; color: var(--ink-soft); margin: 0.4rem 0 0; }
+.intro { margin-top: 1.5rem; padding: 1.1rem 1.25rem 0.4rem; background: var(--sheet); border: 1px solid var(--rule); }
+.intro p:first-child { margin-top: 0; }
+.subtags { display: flex; flex-wrap: wrap; gap: 0.25rem 1.1rem; font-family: var(--sans); font-weight: 500; margin-top: 1rem; }
+
+/* --- thread -------------------------------------------------------------- */
+.thread-head { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; }
+.thread-head h1 { overflow-wrap: anywhere; }
+.thread-meta { margin: 0.6rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+.thread-meta a { color: inherit; }
+.origin { font-size: 0.85rem; color: var(--ink-soft); margin: 0.3rem 0 0; }
+
+.post { padding: 1.4rem 0 1.5rem; border-bottom: 1px solid var(--rule); }
+.post-head { display: flex; flex-wrap: wrap; gap: 0.1rem 0.9rem; align-items: baseline; font-family: var(--sans); margin-bottom: 0.5rem; }
+.post-author { font-weight: 600; font-size: 1.1rem; color: var(--ink); }
+a.post-author { text-decoration: none; border-bottom: 2px solid var(--batt); }
+.post-head time, .post-head .permalink { font-weight: 500; color: var(--ink-soft); font-size: 0.95rem; }
+.post-head .permalink { margin-left: auto; text-decoration: none; }
+.post-head .permalink:hover { text-decoration: underline; }
+.post-body { white-space: pre-wrap; overflow-wrap: anywhere; }
+.post:target { background: linear-gradient(90deg, var(--sheet), transparent); }
+
+.bb-quote { white-space: normal; margin: 0.6rem 0; padding: 0.35rem 0 0.35rem 1rem; border-left: 3px solid var(--batt); background: var(--quote); }
+.bb-quote-author { font-family: var(--sans); font-weight: 600; font-size: 0.95rem; color: var(--ink-soft); }
+.bb-quote-body { white-space: pre-wrap; padding-right: 0.75rem; }
+.bb-code { white-space: pre; overflow-x: auto; font: 0.875rem/1.5 var(--mono); background: var(--sheet); border: 1px solid var(--rule); padding: 0.75rem; }
+.bb-list { white-space: normal; margin: 0.4rem 0; padding-left: 1.6rem; }
+.bb-list li { white-space: pre-wrap; }
+.bb-u { text-decoration: underline; }
+.smilie { color: var(--ink-soft); }
+.dead-link { color: var(--ink-soft); text-decoration: line-through; text-decoration-color: var(--rule); }
+
+figure.bb-attachment { white-space: normal; margin: 0.8rem 0; }
+figure.bb-attachment img { display: block; border: 1px solid var(--rule); background: var(--sheet); }
+figure.bb-attachment figcaption { font-size: 0.8rem; color: var(--ink-soft); margin-top: 0.3rem; overflow-wrap: anywhere; }
+
+/* A lost image is drawn the way a section drawing shows a void: hatched. */
+.bb-attachment-missing, .bb-external-img, .bb-file {
+  white-space: normal; margin: 0.6rem 0; padding: 0.55rem 0.8rem;
+  font-family: var(--sans); font-weight: 500; font-size: 0.95rem; color: var(--ink-soft);
+  border: 1px solid var(--rule); overflow-wrap: anywhere;
+}
+.bb-attachment-missing, .bb-external-img {
+  background: repeating-linear-gradient(-45deg, transparent 0 7px, var(--hatch) 7px 8px);
+}
+.bb-file { background: var(--sheet); }
+.bb-attachments-trailing { white-space: normal; margin-top: 1rem; }
+
+.pager { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.4rem; font-family: var(--sans); font-weight: 500; margin: 1.5rem 0 0; }
+.pager a, .pager span { padding: 0.15rem 0.5rem; border: 1px solid var(--rule); text-decoration: none; min-width: 2rem; text-align: center; }
+.pager a:hover { border-color: var(--link); }
+.pager [aria-current="page"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.pager .gap { border-color: transparent; }
+.pager .label { border: 0; padding-left: 0; color: var(--ink-soft); }
+
+/* --- people, old links, search ------------------------------------------ */
+.people { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: 0 2rem; }
+.people li { padding: 0.5rem 0; border-top: 1px solid var(--rule); }
+.people a { font-family: var(--sans); font-weight: 600; font-size: 1.1rem; text-decoration: none; }
+.people span { display: block; font-size: 0.875rem; color: var(--ink-soft); }
+
+.oldlink form { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+.oldlink input { flex: 1 1 20rem; font: 1rem var(--serif); padding: 0.5rem 0.65rem; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); }
+button, .button {
+  font: 600 1rem var(--sans); padding: 0.5rem 1rem; border: 0; border-radius: 2px;
+  background: var(--ink); color: var(--paper); cursor: pointer;
+}
+#oldlink-result { margin-top: 1rem; min-height: 1.5rem; }
+
+#search { margin-top: 1.5rem; }
+#search mark { background: var(--mark); color: inherit; padding: 0 0.1em; }
+.pagefind-ui {
+  --pagefind-ui-scale: 0.9;
+  --pagefind-ui-primary: var(--link);
+  --pagefind-ui-text: var(--ink);
+  --pagefind-ui-background: var(--sheet);
+  --pagefind-ui-border: var(--rule);
+  --pagefind-ui-tag: var(--quote);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 2px;
+  --pagefind-ui-font: var(--serif);
+}
+
+/* --- footer -------------------------------------------------------------- */
+.site-foot { border-top: 1px solid var(--rule); padding: 1.5rem 0 2.5rem; font-size: 0.9rem; color: var(--ink-soft); }
+.site-foot p { margin: 0.3rem 0; max-width: var(--measure); }
+.site-foot a { color: var(--ink-soft); }
+
+@media (max-width: 34rem) {
+  body { font-size: 1rem; }
+  h1 { font-size: 1.75rem; }
+  .site-nav input[type="search"] { width: 100%; }
+  .site-nav form { flex: 1 1 100%; }
+}
+@media print {
+  .site-nav, .wall, .pager, .skip { display: none; }
+  body { background: #fff; color: #000; }
+}

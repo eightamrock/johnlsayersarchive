@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Under 100Hz Isolation Performance | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by AVare in Studio Construction, 2004. 4 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/1499/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-construction/">Studio Construction</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Under 100Hz Isolation Performance</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by AVare on 9 April 2004. 4 replies. In the Library under <a href="/library/materials-reference/">Materials reference</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 1499.</p>
+
+</div>
+</header>
+<article class="post" id="p10863">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2004-04-09">9 April 2004</time><a class="permalink" href="#p10863" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I have been thinking about all the data in the NRC-IRC report IR761 (tests on 350 walls) and some of the questions I have been having about the effect of certain wall constructions on transmission loss in the bass range. Bass range meaning below the traditional 125Hz normally reported.  Despite having 350 walls to choose from, I could not keep everything consistent as I wanted to. I pulled out some data and created this data table.
+<pre class="bb-code"><code>Gyp	Stud	Stud	Add	Loss 	(dB)				
+	Mat.	Style		50	63	80	100	125	STC
+2(13)	W	sing		26.8	23.1	26.2	20.9	15.4	38
+2(13)	S	sing		25.1	17.6	18.1	16.8	23.6	48				
+2(13)	W	sing	RC	23.7	16.7	22.3	23.2	30.1	54
+2(13)	S	sing	RC	18.8	16.4	23.5	27	35.1	59
+1(16)	W	sing	FB	22.7	16.5	18.4	18.7	32.1	49
+2(16)	W	sing	FB	26	21.5	21.4	19.7	32	52
+2(16)	W	Stag		21	21.8	25.3	32	29.4	57
+2(16)	W	dble		24.7	25.4	32.2	39.1	42.8	67
+									
+Conc									
+Blck									
+190					36	34	35	33	50
+</code></pre>The first column is the number of layers of gypboard per leaf and in brackets the thickness.  The second column is the stud material; with W for wood and S for steel.  The third column is the stud style as in: single stud (sing), staggered (stag), and double (dble).  The fourth column is for additions to the construction: resilient channel on one side (RC), and fiberboard, &quot;soundboard&quot; on the inside of both leafs (FB).  The fifth through ninth columns are the losses at the frequencies shown at the top of the column. The last column is the STC of the wall.  After looking at the basically lousy  performance with the exception of the double stud wall, I wanted to compare the performances to a bare concrete block wall.  I pulled the data in the last from IR586.  That report does not go to 50Hz.
+
+The first surprise was the steel versus wood studs.  The single stud walls showed the steel to be worse than the wood
+despite the STC being 10dB better.  With the RC channel, the  loss was worse for 50 and 63Hz for both studs, and 80Hz for wood also.  This despite 11 (steel) and 16 (wood) point improvements in STC.
+
+Conclusion number 1.  RC improves high end and decreases low end response.  Take your choice.
+
+The fiberboard (soundboard) worsened low end response.
+
+Going to a staggered stud wall improved low end at 100Hz and decreased it below.
+
+The double stud was mostly better except at 59Hz, where the single stud wall still beat it, despite having thinner gypboard.
+
+The plain concrete block beat all the walls below 100Hz and beat 7 of the eight at 100Hz.  The wall&#x27;s STC is worse than  5 of the 8 other walls, by up to 17 points.   This was a plain wall, no second leaf to improve performance!
+
+Conclusion number 2.  If someone is serious about low end isolation, mass is the only way to go.
+
+I hope this provides some useful information for people considering various types of wall construction.</div>
+</article>
+<article class="post" id="p10878">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-04-09">9 April 2004</time><a class="permalink" href="#p10878" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">&quot;Conclusion number 1. RC improves high end and decreases low end response.&quot; - true - this is one of the reasons to only use RC on ONE side of a wall frame. It&#x27;s also one of the reasons that fully separate frames improve isolation as much as they do, even over RC walls. 
+
+&quot;The fiberboard (soundboard) worsened low end response&quot; - naturally, less mass = less low freq TL. 
+
+&quot;The double stud was mostly better except at 59Hz, where the single stud wall still beat it, despite having thinner gypboard.&quot; - This is partly due to the fact that double 16mm gypboard on each side of a wall frame, depending on air gap, can have a mass-air-mass resonance of 45-58 hZ, in the typical range of wall spacings of 4 to 8 inches. The thinner wallboard would change that, lessening the bleed-through at that resonant frequency. 
+
+&quot;Conclusion number 2. If someone is serious about low end isolation, mass is the only way to go&quot; - agreed, that&#x27;s why my next facility&#x27;s walls will be 8&quot; concrete, with an insulated air gap and a single drywall layer inside to finish off the mass-spring-mass equation without needing as much bass trapping (due to the lighter inside panels)
+
+Finally, thanks for putting this chart together for us, it&#x27;s very enlightening and much easier to wade through than all 350-odd walls in that paper... Steve</div>
+</article>
+<article class="post" id="p10896">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2004-04-09">9 April 2004</time><a class="permalink" href="#p10896" aria-label="Link to post 3">#3</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">&quot;Conclusion number 1. RC improves high end and decreases low end response.&quot; 
+
+- true - this is one of the reasons to only use RC on ONE side of a wall frame. It&#x27;s also one of the reasons that fully separate frames improve isolation as much as they do, even over RC walls.[ /quote]
+
+Exactly.  That is why I did not compare any of the wall designs with RC on both sides of the frame.  Also none of the designs with more than two leafs.  I was interested in wall designs that most people here would consider for their studios.  Any test performed on designs that would not be chosen for studio isolation were rejected out of hand.
+<blockquote class="bb-quote"><div class="bb-quote-body">&quot;The fiberboard (soundboard) worsened low end response&quot; 
+
+- naturally, less mass = less low freq TL. [ /quote]
+
+You have me confused with that statement.  Part of the confusion may be because the table did bot come out very well aligned, despite all my efforts.
+
+Here is the table again, hopefully with some &quot;tricks&quot;applied to improve the alignment of the columns.
+<pre class="bb-code"><code>Gyp	Stud	Stud	Add	Loss 	(dB)	@Hz			
+   	Mat.	Style	 	50	63	80	100	125	  STC
+2(13)	W	sing	 	26.8	23.1	26.2	20.9	15.4	38
+2(13)	S	sing	 	25.1	17.6	18.1	16.8	23.6	48
+2(13)	W	sing	RC	23.7	16.7	22.3	23.2	30.1	54
+2(13)	S	sing	RC	18.8	16.4	23.5	27.0	35.1	59
+1(16)	W	sing	FB	22.7	16.5	18.4	18.7	32.1	49
+2(16)	W	sing	FB	26.0	21.5	21.4	19.7	32.0	52
+2(16)	W	stag	 	21.0	21.8	25.3	32.0	29.4	57
+2(16)	W	dble	 	24.7	25.4	32.2	39.1	42.8	67
+									
+Conc									
+Blck									
+190	 	 	 	 	36.0	34.0	35.0	33.0	50</code></pre>The direct comparison is between rows one and six.  Row six has 25% more mass  from the thicker gypboard and 62% more mass from the fiberboard, for total of 87% more mass.  The TL is still WORSE in every 1/3 octave band from 50-100Hz,  up to 5.8 dB@80Hz.  The exact opposite of what I expected with the additional mass of the gypboard.  What would have helped is being to do a direct comparison of two designs with the fiberboard being the only change, but the testing did not include any two designs to do that.  Clarification: I could not find two walls to do that comparison.  Not surprisingly, above 100Hz the fiberboard wall was much better.
+<blockquote class="bb-quote"><div class="bb-quote-body">&quot;The double stud was mostly better except at 59Hz, where the single stud wall still beat it, despite having thinner gypboard.&quot; 
+
+- This is partly due to the fact that double 16mm gypboard on each side of a wall frame, depending on air gap, can have a mass-air-mass resonance of 45-58 Hz, in the typical range of wall spacings of 4 to 8 inches. The thinner wallboard would change that, lessening the bleed-through at that resonant frequency. [ /quote]
+
+Thanks.  I hadn&#x27;t given any thought as to why. 
+<blockquote class="bb-quote"><div class="bb-quote-body">&quot;Conclusion number 2. If someone is serious about low end isolation, mass is the only way to go&quot; 
+
+- agreed, that&#x27;s why my next facility&#x27;s walls will be 8&quot; concrete, with an insulated air gap and a single drywall layer inside to finish off the mass-spring-mass equation without needing as much bass trapping (due to the lighter inside panels) [ /quote]
+
+Nice thinking of the system.  I recall several years ago a studio where the designer set the double glass window resonance to match that of the drum room that the window was isolating.  Great results and. like you wrote less additional trapping required.
+<blockquote class="bb-quote"><div class="bb-quote-body">Finally, thanks for putting this chart together for us, it&#x27;s very enlightening and much easier to wade through than all 350-odd walls in that paper.[ /quote]
+
+Your welcome.  I happened to be in a &quot;data research&quot; mode and decided to try  to get some directly useful info out of all the results.
+
+</div></blockquote></div></blockquote></div></blockquote></div></blockquote></div></blockquote></div>
+</article>
+<article class="post" id="p10901">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-04-10">10 April 2004</time><a class="permalink" href="#p10901" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">&quot;- naturally, less mass = less low freq TL. [ /quote]
+
+You have me confused with that statement. Part of the confusion may be because the table did bot come out very well aligned, despite all my efforts.&quot; - 
+Sorry, I was referring to REPLACING one layer of gypboard with a layer of &quot;soundboard&quot; - that combo would have less mass than the same # of layers of straight gypsum, and therefore worse low freq performance. I saw by the chart where two layers of gyp on each side PLUS a layer of soundboard came out better - again, mass does it at low end every time. (Along with air gap)
+
+&quot;The TL is still WORSE in every 1/3 octave band from 50-100Hz, up to 5.8 dB@80Hz. The exact opposite of what I expected with the additional mass of the gypboard.&quot; - 
+
+That does seem odd at first glance - all I can think of is that maybe the fiberboard reduces stiffness enough to cause worse LF performance when close to the mass-air-mass resonance - other than that, I have no idea... Steve</div>
+</article>
+<article class="post" id="p11616">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Jas</span><time datetime="2004-05-01">1 May 2004</time><a class="permalink" href="#p11616" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">&quot;The TL is still WORSE in every 1/3 octave band from 50-100Hz, up to 5.8 dB@80Hz. The exact opposite of what I expected with the additional mass of the gypboard.&quot; - 
+
+That does seem odd at first glance - all I can think of is that maybe the fiberboard reduces stiffness enough to cause worse LF performance when close to the mass-air-mass resonance - other than that, I have no idea... Steve
+
+I had only just posted a new topic on studio wall design when I noticed this very useful bit of info on low end isolation. I would say that with the above somewhat odd results, the loss in low end TL would be relative to which layer in the tri layer the sound board was. If it is on or close to the studs separating the drywall it would split the mass and the resulting wall would vibrate at different, higher frequencies showing a loss in TL at that point and below... Just a thought.
+
+Cheers 
+Jas</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

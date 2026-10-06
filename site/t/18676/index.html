@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rt60&#39;s for rooms with 2 types of wall material | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by JamesGolding in Acoustics, 2013. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/18676/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Rt60&#39;s for rooms with 2 types of wall material</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by JamesGolding on 4 December 2013. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 18676.</p>
+
+</div>
+</header>
+<article class="post" id="p130779">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JamesGolding</span><time datetime="2013-12-04">4 December 2013</time><a class="permalink" href="#p130779" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I am working with a cuboid, dimensions are 1.95m(length), 1.65m(width) and 2.5m (height). One length and one width however, the walls are painted brick wall. The opposing 2 walls are painted plasterboard. It is in a fairly secluded part of the house so Im concerned only with treatment rather then isolation. 
+
+I have worked out the rt60&#x27;s in excel taking into account the surface area of brick wall and surface area of plasterboard, and the room only required minimal treatment (1.1m of rw3 50mm rock wool) to create fairly even reverb times, ranging from 0.50 to 0.59, however i fear my technique is inaccurate due to the walls being different material and it not taking into account positioning in the room. Does anyone have any experience working with a similar environment? 
+
+Thanks, James</div>
+</article>
+<article class="post" id="p130780">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2013-12-04">4 December 2013</time><a class="permalink" href="#p130780" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Hi James. Please read the <a href="/t/3231/">forum rules for posting  (click here)</a>.  You seem to be missing a couple of things!  <span class="smilie" title=":)">:)</span>
+
+RT60 is mostly a function of room volume, but does depend on the boundary surfaces, of course.  Also, it is not a single number, but rather a range of times for different frequencies.  ITU-BS116 and BS-775 define those ranges, and other documents too, such as EBU-3276.  For a room with your dimensions, the overall time should be 103 ms, varying in the range 53 to 153 between 200 Hz and 4kHz, rising to about 400 ms below 63 Hz.  To accomplish that, theoretically you&#x27;d need about 127 sabins of absorption spread around the room more or less evenly.
+<blockquote class="bb-quote"><div class="bb-quote-body">the room only required minimal treatment (1.1m of rw3 50mm rock wool)</div></blockquote> <span class="smilie" title=":shock:">:shock:</span> That&#x27;s rather hard to believe, given the dimensions of the room!  Theory says you need at least 12 square meters of perfect absorption to tame that room enough to meet ITU or EBU specs.  1 square meter is not going to do much at all, and 50mm mineral wool is absorbing mostly in the mids and highs, not the lows where you need it most.
+
+That&#x27;s a very small room, so it is going to need a huge amount of bass trapping, which will probably push the overall absorption too far.  There are ways of dealing with that too, but instead of guessing it would be better if you could just run a full acoustic analysis of the room using REW (its free!), and post the results here, along with some photos of the room, so we can see what you are dealing with and try to suggest how you can improve it.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p130781">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JamesGolding</span><time datetime="2013-12-04">4 December 2013</time><a class="permalink" href="#p130781" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">I apologise I should have read the guidelines first! Unfortunately the room has been treated by someone before who has covered all surfaces in duvets, which I&#x27;m you can imagine is pretty awful treatment. This lead me to being convinced I can do a better job but really I wanted to present the owners of the room a solution before taking down the duvets, which is why I didn&#x27;t use REW. I used the RT60 = (0.161 x V / S x a ) formula and did the calculations in excel but have possibly made a mistake as my knowledge of acoustics is pretty limited.
+
+Maybe It would be best to wait until I have got permission to remove the duvets and done the rew test before I burden you with the information asked for in the guidelines.</div>
+</article>
+<article class="post" id="p130783">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2013-12-05">5 December 2013</time><a class="permalink" href="#p130783" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I apologise I should have read the guidelines first!</div></blockquote>That&#x27;s OK!  A lot of people seen miss that... <span class="smilie" title=":)">:)</span>  But you fixed the most important part, so that&#x27;s great!
+<blockquote class="bb-quote"><div class="bb-quote-body">Unfortunately the room has been treated by someone before who has covered all surfaces in duvets,</div></blockquote> <span class="smilie" title=":shock:">:shock:</span>  <span class="smilie" title=":!:">:!:</span> 
+<blockquote class="bb-quote"><div class="bb-quote-body">, which I&#x27;m you can imagine is pretty awful treatment.</div></blockquote>... ummm... Yup!  That&#x27;s for sure!  That&#x27;s pretty much the same as gluing carpet to the walls, acoustically, only not so pretty aesthetically... <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">This lead me to being convinced I can do a better job </div></blockquote>I have absolutely no doubt about that!  What you did is certainly moving along the correct lines, and doubtless did improve the room a lot, but until those duvets come out, it won&#x27;t be possible to make the room acoustically usable as a studio.
+<blockquote class="bb-quote"><div class="bb-quote-body">I wanted to present the owners of the room a solution before taking down the duvets, which is why I didn&#x27;t use REW.</div></blockquote>I would use it anyway, and show the owners some of the graphs, then explain what they mean and what they should look like.
+<blockquote class="bb-quote"><div class="bb-quote-body">I used the RT60 = (0.161 x V / S x a ) formula and did the calculations in excel but have possibly made a mistake as my knowledge of acoustics is pretty limited.</div></blockquote>There&#x27;s an easier way...  Use this link: <a href="http://www.bobgolds.com/Mode/RoomModes.htm" rel="nofollow noopener" target="_blank">http://www.bobgolds.com/Mode/RoomModes.htm</a>  Plug in the dimensions for the room, then go over the results it gives you. There&#x27;s a huge amount of very valuable information in there, but the stuff you need most right now is in the text, about half way down on the right hand side.  That pretty much spells out how the room would behave when empty, and how it should behave when treated, according to EBU and ITU specs (among others).  
+
+But your biggest issues in a room that size are not going to be in the part of the spectrum that can be treated with duvets, or even with 50mm thick mineral wool.  Small rooms have huge modal problems, all of them below about 200 Hz, so that&#x27;s where your treatment needs to be concentrated.  It also can&#x27;t be dealt with along the walls:  It&#x27;s the corners you need to attack most, since that&#x27;s where all modes terminate, and therefore where treatment is most effective.
+<blockquote class="bb-quote"><div class="bb-quote-body">Maybe It would be best to wait until I have got permission to remove the duvets and done the rew test</div></blockquote>I would suggest that you do it right now anyway, so you have something you can compare against in the future, to demonstrate how much the room has improved with each stage of treatment, and what still needs treating.  I would do a test now, then another in the empty room once the duvets are out (that will be your actual baseline test), then one more after each piece of treatment goes in.  That gives you a complete record of the room, and how the acoustic response changes.  It helps you to understand the room better, which also helps you to treat it better.
+<blockquote class="bb-quote"><div class="bb-quote-body">before I burden you with the information asked for in the guidelines.</div></blockquote>We don&#x27;t need all of that at once!  <span class="smilie" title=":)">:)</span>  Just the parts that are pertinent.  For example, you say isolation isn&#x27;t an issue, so there&#x27;s no need to mention anything about that.  Etc.  <span class="smilie" title=":)">:)</span>
+
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

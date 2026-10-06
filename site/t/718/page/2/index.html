@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitor Flush Mounting Method (page 2) | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by barefoot in Speaking of Speakers, 2003. 76 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/718/page/2/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/speaking-of-speakers/">Speaking of Speakers</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Monitor Flush Mounting Method</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by barefoot on 22 September 2003. 76 replies, 2003–2021. In the Library under <a href="/library/speakers/">Speakers and soffits</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 718.</p>
+<nav class="pager" aria-label="Pages"><span class="label">Page 2 of 4</span>
+<a href="/t/718/" rel="prev">Previous</a>
+<a href="/t/718/">1</a><span aria-current="page">2</span><a href="/t/718/page/3/">3</a><a href="/t/718/page/4/">4</a>
+<a href="/t/718/page/3/" rel="next">Next</a></nav>
+</div>
+</header>
+<article class="post" id="p117941">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-best/">Eric Best</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117941" aria-label="Link to post 26">#26</a></header>
+<div class="post-body">I know it is an old post, but I decided that there were some unanswered questions from this thread about baffle step compensation.
+
+Here is a response graph of a single driver in an enclosure on an infinite baffle (i.e. flush mounted)
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://dl.dropbox.com/u/1049914/baffle%20step/1337%205L%20box%20ported.JPG" rel="nofollow noopener" target="_blank">http://dl.dropbox.com/u/1049914/baffle%20step/1337%205L%20box%20ported.JPG</a></div>If that speaker in that enclosure is mounted on a 7&quot; baffle the bass response will drop like this at about 650hz.
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://dl.dropbox.com/u/1049914/baffle%20step/7%20inch%20baffle.JPG" rel="nofollow noopener" target="_blank">http://dl.dropbox.com/u/1049914/baffle%20step/7%20inch%20baffle.JPG</a></div>So when the crossover is designed for this speaker a low pass filter is created that will drop the sensitivity of the speaker from 86dB to 80 dB, you lose 6dB of efficiency to flatten out the bass.
+
+So when you flush mount a speaker your bass response will look like this.
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://dl.dropbox.com/u/1049914/baffle%20step/low%20pass%20filter%20in%20the%20crossover.JPG" rel="nofollow noopener" target="_blank">http://dl.dropbox.com/u/1049914/baffle%20step/low%20pass%20filter%20in%20the%20crossover.JPG</a></div>Just for comparison sake here is the some driver on an 18&quot; baffle.  Notice the difference of where the -6dB shelf occurs,  about 250hz.
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://dl.dropbox.com/u/1049914/baffle%20step/18%20inch%20baffle.JPG" rel="nofollow noopener" target="_blank">http://dl.dropbox.com/u/1049914/baffle%20step/18%20inch%20baffle.JPG</a></div>The formula to determine where the compensation takes place is below.
+
+f3 = 4650/x   where x is the baffle width in inches. 
+
+So for the 7&quot; baffle we used  you have 4650/7=651.43hz.</div>
+</article>
+<article class="post" id="p117942">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117942" aria-label="Link to post 27">#27</a></header>
+<div class="post-body">Thanks Eric!  That is REALLY useful stuff!  Clarifies some questions I had in the back of my mind, but hadn&#x27;t gotten around to researching yet.
+
+So I would imagine that&#x27;s the same equation you&#x27;d need to figure where you need to roll off the bass for any given baffle size?  For example, if you are going to soffit mount a speaker and will use a parametric equalizer to roll of the bass, then this is the equation you&#x27;d use to calculate the roll off frequency, based on the baffle width, correct?
+
+Alternatively, if your speaker has a built-in roll-off control preset at a certain frequency, then you could also use that equation to help decide on the correct baffle width?
+
+Also, the roll off is 6 dB/octave initially, but then shelving, correct?
+
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p117944">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-best/">Eric Best</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117944" aria-label="Link to post 28">#28</a></header>
+<div class="post-body">Exactly!  Since I&#x27;ve been doing so much studying of speaker design, I understand it so much better, I thought I&#x27;d pass that on.</div>
+</article>
+<article class="post" id="p117947">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/rjhollins/">RJHollins</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117947" aria-label="Link to post 29">#29</a></header>
+<div class="post-body">thanks for &#x27;reviving&#x27; an important topic !
+
+A related question please ...
+
+Lets say, breaking the &#x27;Cardinal Rule&#x27;, you do NOT have a &#x27;flush mounted&#x27; system  <span class="smilie" title=":shock:">:shock:</span> 
+
+However ... the monitor is placed &#x27;close&#x27; to the front wall.  EQ compensation may [might] be
+useful ...  are there any &#x27;equations&#x27; available to mathematically examine this issue ??
+
+Thanks!</div>
+</article>
+<article class="post" id="p117953">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117953" aria-label="Link to post 30">#30</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">he monitor is placed &#x27;close&#x27; to the front wall. EQ compensation may [might] be
+useful ... are there any &#x27;equations&#x27; available to mathematically examine this issue ??</div></blockquote>If your monitor is close to a wall, then you don&#x27;t just have an EQ problem.  What you ALSO have is an SBIR problem, comb filtering, first reflections and other issues.  EQ can&#x27;t do much for any of that.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p117960">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-best/">Eric Best</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117960" aria-label="Link to post 31">#31</a></header>
+<div class="post-body">The closer you get to a wall the more the bass will build up.  I&#x27;ve seen a lot of designers vary the baffle step compensation in their designs based on their speaker placement, but I&#x27;ve never seen equations to predict this behavior.  These designs that I&#x27;ve seen were not for studio monitoring so it wasn&#x27;t a critical listening.
+
+If you had to go this way you could minimize the problems with a lot of absorption behind the speakers.  Heck, it might even work in an LEDE room, it wouldn&#x27;t be my choice though.
+
+If I remember correctly (which I probably don&#x27;t) you should be at least 3 feet from the nearest walls.</div>
+</article>
+<article class="post" id="p117961">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117961" aria-label="Link to post 32">#32</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">If I remember correctly (which I probably don&#x27;t) you should be at least 3 feet from the nearest walls.</div></blockquote>I think the ITU recommendation is 1.5 m, (but my recollection might not be any better than yours! <span class="smilie" title=":)">:)</span> ).
+
+I&#x27;ll see if I can find that.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p117964">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117964" aria-label="Link to post 33">#33</a></header>
+<div class="post-body">Hmmmm... not finding much.  Genelec recommends 1.1 m minimum, but also add that the main factor is the cut-off frequency of the specific speaker you are using.  Makes sense:  They give this comment:
+<blockquote class="bb-quote"><div class="bb-quote-body">... position the speakers far enough from the wall to move the first order interference dip below the lower cut-off frequency of the speaker. To move the dip down to 30 Hz, the distance needed is 2.8 meters. This would not be possible in most control rooms simply because of lack of space.</div></blockquote>So I guess the best answer is &quot;it depends on your speaker&quot;.  If you have a really small thing with no useful bass, then you can put it anywhere, but if your speaker has decent bass response, then the minimum distance to the wall depends on the lowest frequency that the speaker can reproduce.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p117980">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/rjhollins/">RJHollins</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117980" aria-label="Link to post 34">#34</a></header>
+<div class="post-body">hmmm ...
+
+So HOW does this all fly when the starting &#x27;IDEAL&#x27; point of 38% from the front wall
+is to be considered ????    <span class="smilie" title=":|">:|</span> 
+
+Keeping in mind that it&#x27;s only a start reference point ...  ok  ... but ...
+
+for ex: Some of us have small control rooms [12x16].  So ... any thoughts on the preferred
+way to balance this all out ??
+
+Thanks</div>
+</article>
+<article class="post" id="p117983">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2011-09-02">2 September 2011</time><a class="permalink" href="#p117983" aria-label="Link to post 35">#35</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">So HOW does this all fly when the starting &#x27;IDEAL&#x27; point of 38% from the front wall</div></blockquote>If you are not soffit mounting, and can&#x27;t get that kind of distance from the walls that you need, them go with Method Number 3: get the speakers as close as you can to the front wall, which forces the issues up into the higher end of the spectrum, where it hopefully won&#x27;t be too noticeable.  IE, put them right up tight against the front wall, or really close.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p117989">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/rjhollins/">RJHollins</a><time datetime="2011-09-03">3 September 2011</time><a class="permalink" href="#p117989" aria-label="Link to post 36">#36</a></header>
+<div class="post-body">Hi Stuart !
+
+Thanks for working this thread .... and the other flush-mount thread. Very educational.
+
+Regarding monitor positioning [not soffitted] ... should you have a moment to re-check
+my build thread [UAN- COntrol room]
+<a href="/t/14794/">viewtopic.php?f=1&amp;t=14794&amp;start=390</a>
+
+and see that I do have monitors [these OLD beat-up ones] quite close to the wall.
+
+Directly behind the monitors is my plain wall, while between, I have 2 - 2&#x27;x4&#x27;x4&quot; panels, along
+with chunkies in the corners.
+
+I&#x27;m doing listening test ... but the concern is,  The inner monitor edge is about 1&quot; in FRONT
+of the panel plane ... do you see any issues with that.  [I probably should be posting in my
+thread ... don&#x27;t mean to deflect nor hijack].
+
+Thanks!</div>
+</article>
+<article class="post" id="p117995">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-best/">Eric Best</a><time datetime="2011-09-03">3 September 2011</time><a class="permalink" href="#p117995" aria-label="Link to post 37">#37</a></header>
+<div class="post-body">I would pull the speakers out away from the wall and angle them in so you don&#x27;t have to move back the mix position.  You don&#x27;t have to have the equilateral triangle with the speakers and your mix position.  You can move them out and angle them at 45 degrees and not have to change your mix position.
+
+Your mixes against the wall will probably be bass light because of the boost they get from the wall and you will compensate.
+
+edit:clarified the last statement and spelling of compensate <span class="smilie" title=":oops:">:oops:</span></div>
+</article>
+<article class="post" id="p118027">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2011-09-03">3 September 2011</time><a class="permalink" href="#p118027" aria-label="Link to post 38">#38</a></header>
+<div class="post-body">RJ, you might find this interesting, from Genelec:
+
+<a href="http://www.genelec.com/learning-center/technology-tutorials/placingloudspeakers/wallcancellation/" rel="nofollow noopener" target="_blank">http://www.genelec.com/learning-center/ ... cellation/</a>
+
+Their recommendations on how to place speakers relative to the front wall:
+
+1) Flush mount (soffit mount)
+2) Right against the wall.
+3) Very far from the wall.
+4) Make the wall extremely absorbent.
+
+They give their reasoning for each case (very logical).
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p118028">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-best/">Eric Best</a><time datetime="2011-09-03">3 September 2011</time><a class="permalink" href="#p118028" aria-label="Link to post 39">#39</a></header>
+<div class="post-body">Very important last sentence in case 2 
+
+&quot;Additionally, the low frequency boost should be compensated for when the loudspeaker is mounted close to the wall (+6 dB).&quot;</div>
+</article>
+<article class="post" id="p118030">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/rjhollins/">RJHollins</a><time datetime="2011-09-03">3 September 2011</time><a class="permalink" href="#p118030" aria-label="Link to post 40">#40</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Eric Best wrote:</div><div class="bb-quote-body">Very important last sentence in case 2 
+
+&quot;Additionally, the low frequency boost should be compensated for when the loudspeaker is mounted close to the wall (+6 dB).&quot;</div></blockquote>Hi Eric,
+
+Very useful/educational material you&#x27;ve posted. Thank-you.
+
+I was particularly interested in the passive EQ circuit too.
+
+At the moment, I have an old pair of ALTEC studio monitors in the room for listening &amp; testing,
+but these old boyz are NOT quite in the sonic shape they USE to be  <span class="smilie" title=":|">:|</span>   I probably need
+to replace the drivers, and most likely, rebuild the x-overs.  I&#x27;ve heard that caps can &#x27;drift&#x27;
+after some 50 years  <span class="smilie" title=":shock:">:shock:</span> 
+
+My next plan is to audition some new monitors ... looking at several lines like the Focals,
+Opals, BF, etc...  [would like to stay within a $2-3k [US] price range if possible].
+
+Again ... thanks for your posts!!</div>
+</article>
+<article class="post" id="p118034">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-best/">Eric Best</a><time datetime="2011-09-04">4 September 2011</time><a class="permalink" href="#p118034" aria-label="Link to post 41">#41</a></header>
+<div class="post-body">Which Altecs do you have?
+
+If the surrounds are OK and the cone looks fine you shouldn&#x27;t have too much problem.
+
+Replacing the capacitors would probably help.  
+
+There is a company <a href="http://www.greatplainsaudio.com/" rel="nofollow noopener" target="_blank">http://www.greatplainsaudio.com/</a> that specializes in Altec speakers.  I have some 902 drivers on 511B horns that I bought replacement diaphragms for the drivers.  They were very helpful and might be able to replace or refurbish your drivers, if they are monitors that you know well and like.</div>
+</article>
+<article class="post" id="p118654">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">audiobox</span><time datetime="2011-09-20">20 September 2011</time><a class="permalink" href="#p118654" aria-label="Link to post 42">#42</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Eric Best wrote:</div><div class="bb-quote-body">Very important last sentence in case 2 
+
+&quot;Additionally, the low frequency boost should be compensated for when the loudspeaker is mounted close to the wall (+6 dB).&quot;</div></blockquote>Just a data point for anyone following this thread.  I&#x27;m going to flush mount my ATC 100 ASL speakers.  The tech guy at ATC told me I could expect a &quot;real world&quot; LFB of about +4 dB.  So, at least in this case, there&#x27;s a slight difference between the projected boost and the mfr. tested boost.  I&#x27;m sure this varies with the speaker under consideration and its crossover.  The ATCs have no provision for switchable response, so I plan to test after the room is done and build a software filter in my Metric Halo D/As for the compensation.
+
+Craig
+
+-------------
+
+&lt;&lt; SPAM SIGNATURE REMOVED &gt;&gt;</div>
+</article>
+<article class="post" id="p118655">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2011-09-20">20 September 2011</time><a class="permalink" href="#p118655" aria-label="Link to post 43">#43</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">The tech guy at ATC told me I could expect a &quot;real world&quot; LFB of about +4 dB. So, at least in this case, there&#x27;s a slight difference between the projected boost and the mfr. tested boost. I&#x27;m sure this varies with the speaker under consideration and its crossover.</div></blockquote>That&#x27;s a surprising comment, coming from a speaker manufacturer.
+
+The base boost doesn&#x27;t really depend on any aspect of the speaker itself: it depends on the simple fact of soffit mounting. This is basic physics.  Compare two identical speakers, one radiating freely into full space, and one radiating into half space. There will ALWAYS be a boost of 6dB for the one radiating into half space, since that half of the power that was going &quot;backwards&quot; is now forced to go &quot;forwards&quot;.  Doubling the power radiated forwards is an increase of 6 dB, regardless of the speaker, manufacturer, crossover, planet or galaxy in which this is done.  A 100% increase in radiated power is a 6 dB boost, no doubt about it.
+
+In fact, the boost could theoretically be GREATER than 6 dB if the speaker also happens to be getting a boost from other walls, or the floor, or the ceiling.  For example, if you were to mount the speaker right in the &quot;tri-corner&quot; between two walls and the ceiling, you&#x27;d get a major boost.  The only way that the boost could be LESS than 6 dB is if the original location of the speaker was such that it wasn&#x27;t radiating into full space to start with.  But if that were the case, then once again the boost would be identical for all speakers used in that location, regardless of brand, power, model or crossover.  The soffit boost is independent of the speaker, amplifier, crossover, or anything else.  It is an effect created by the soffit itself, and always gives a 6dB increase, as compared to the same speaker radiating into full space.
+
+The only difference that the size/shape of the soffit makes, is that it changes the frequency at which the boost starts, and thus the frequency at which the roll-off should start.  But it does not change the 6dB peak boost: that is a function of just soffit mounting, itself, nothing else.
+
+Maybe he was talking about interaction with the rest of the room?  In other words, a 4dB boost from soffit mounting AS COMPARED TO just having the speaker in a small room, close to walls?  That would make sense, but if that&#x27;s the case he explained it wrong:  The roll-off you need is <em>still </em>6 dB as compared to full-space, but only 4dB as compared to being in a small room in proximity to walls.
+<blockquote class="bb-quote"><div class="bb-quote-body">The ATCs have no provision for switchable response, so I plan to test after the room is done and build a software filter in my Metric Halo D/As for the compensation.</div></blockquote>Software EQ may or may not work well: It would have to be phase-linear for optimum performance.  
+
+Testing the room response is always a good idea, but you&#x27;d have to be very careful to differentiate between the modal response of the room, and the bass boost from the soffit.  For any small room, it is possible to confuse the two issues, unless you use a good analysis program, such as REW.  And of course, you cannot compensate for modal response issues by using EQ, since that is a time-domain problem, but you MUST compensate for the soffit bass boost, since that is purely a frequency and power issue.
+
+The circuit that Eric mentions is pretty simple and easy to make, and should do the job well.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p124265">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">cabenegogna</span><time datetime="2012-08-21">21 August 2012</time><a class="permalink" href="#p124265" aria-label="Link to post 44">#44</a></header>
+<div class="post-body">Based on the very well explained Genelec flush mounting techniques, and the techniques mentioned on this forum, i was wandering if i can make the outer wall from concrete blocks, and fill the inner space with absorbant material, and also place an opening (like a speaker port)  near the bottom of this concrete wall, so that the air can enter and by convection cool a bit the speakers. In this case, do i get any significant advantage on using concrete blocks instead of wood or mda? should i calculate this port based somehow on the speaker size? thanks in advance guys!!! 
+
+Cheers from Argentina!!</div>
+</article>
+<article class="post" id="p127001">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2013-02-17">17 February 2013</time><a class="permalink" href="#p127001" aria-label="Link to post 45">#45</a></header>
+<div class="post-body">Ooops!  Just realized that I never responded to this!  Oh well, hopefully &quot;six months late&quot; is better than &quot;never&quot;!
+<blockquote class="bb-quote"><div class="bb-quote-body">i was wandering if i can make the outer wall from concrete blocks, and fill the inner space with absorbant material, </div></blockquote>Are you talking about the soffit walls, or the room walls?  In both cases, the answer is &quot;yes&quot;.
+<blockquote class="bb-quote"><div class="bb-quote-body">and also place an opening (like a speaker port) near the bottom of this concrete wall, so that the air can enter and by convection cool a bit the speakers.</div></blockquote>OK, so it the soffit wall you are talking about.  Yes, you can do that, and in fact you MUST do that: your speakers will need some cooling, even if they are passive, and if they are active the probably need a lot of cooling.
+<blockquote class="bb-quote"><div class="bb-quote-body">In this case, do i get any significant advantage on using concrete blocks instead of wood or mda?</div></blockquote>Both will work, provided that the MDF is very thick.  The front baffle of the soffit hast to be very rigid and massive to work properly.  Light-weight thin MDF would not be good, but thick, heavy MDF would be fine.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p136593">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">patatajec</span><time datetime="2015-07-27">27 July 2015</time><a class="permalink" href="#p136593" aria-label="Link to post 46">#46</a></header>
+<div class="post-body">Hi!
+
+After moths of being just the reader of this forum I decided to ask some questions. I&#x27;m trying to figure out the best way for flush mounting my monitors and prepare as best as I can before building process. I&#x27;ve found the formula below posted few years ago by Eric Best.
+<blockquote class="bb-quote"><div class="bb-quote-author">Eric Best wrote:</div><div class="bb-quote-body">
+
+f3 = 4650/x   where x is the baffle width in inches. 
+
+So for the 7&quot; baffle we used  you have 4650/7=651.43hz.</div></blockquote>I understand that 7&quot; and 18&quot; width baffles with single driver flushed in that baffles are just examples and showing how frequency roll off can vary. If we change values to let&#x27;s say 50&quot; width (similiar in size to real baffle), the roll off frequency will start from 93Hz, which means (if I understand correctly) that all below 93Hz would be boosted +6db when flush mounted. Or maybe I&#x27;ve messed all this?!
+
+1. If monitor have low shelf control starting from 300/400Hz wouldn&#x27;t it make a huge frequency drop between 93 and 300/400hz? 
+
+2. What about the height of the baffle, or the surface size in m2? Isn&#x27;t it required?
+
+3. What is the meaning of 4560 number?
+
+4. If my understanding is correct, should I build crossover starting the shelfing from 93Hz down instead of monitors build in low shelf?
+
+I hope I&#x27;ve put it clear as my english is very poor. It would be great to hear from you guys, and Eric.</div>
+</article>
+<article class="post" id="p136883">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-08-26">26 August 2015</time><a class="permalink" href="#p136883" aria-label="Link to post 47">#47</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">which means (if I understand correctly) that all below 93Hz would be boosted +6db when flush mounted. Or maybe I&#x27;ve messed all this?!</div></blockquote>It won&#x27;t all be rolled off: it&#x27;s not a sudden drop in response, but a gradual change, over a couple of octaves.  Also, the equation gives you the center point of the roll-off: the point where it is -3dB.  So there&#x27;s a couple of octaves below that point, and a couple above it.
+<blockquote class="bb-quote"><div class="bb-quote-body">What about the height of the baffle, or the surface size in m2? Isn&#x27;t it required?</div></blockquote>No. because the baffle step is all about the smallest dimension of the baffle, and with most speakers, that is the width.  If you have a speaker that is wider than it is high, then you would use the height for your calculation, not the width.  Whichever dimension is smaller.
+<blockquote class="bb-quote"><div class="bb-quote-body">What is the meaning of 4560 number?</div></blockquote>It&#x27;s a constant.  It is 4560 if you are measuring in inches, 380 if you are measuring in feet, and 115 if you are measuring in meters.
+<blockquote class="bb-quote"><div class="bb-quote-body">If my understanding is correct, should I build crossover starting the shelfing from 93Hz down instead of monitors build in low shelf?</div></blockquote>If the equation gives you 93Hz, that&#x27;s the center point of the curve: the point where the roll-off is already 3 dB.  The roll-off would start 2 octaves higher, at about 372 Hz, and it would end 2 octaves lower, at about 23 Hz.  so your shelving filter would be designed for those parameters: start the roll-off at 372 Hz, -3dB at 93 Hz, and -6 dB at 25 Hz.  Note (the 2 octave things is just a very rough estimate: there are more accurate ways of calculating the end points.)
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p139286">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JasonFoi</span><time datetime="2016-06-25">25 June 2016</time><a class="permalink" href="#p139286" aria-label="Link to post 48">#48</a></header>
+<div class="post-body">The more I read, the more questions I have, and I was hoping you could clarify some things for me. 
+
+1. Why does John&#x27;s soffit design require the monitor to be placed inside a box, and Thomas&#x27;s does not? Are there drawbacks or advantages to either?
+
+2. I see no provisions for ventilation using Thomas&#x27;s design. Does filling the cavity with loose fluffy pink stuff allow enough ventilation as is? Or should an airway be provided?
+
+3. Should the bezel be as large as possible both horizontally and vertically? Ie. Floor to ceiling/wall to wall using Thomas&#x27;s design? Or could a rigid backed broadband absorber be placed above and below the bezel? If so, how tall vertically would the bezel need to be before adding a little absorption?
+
+4. I&#x27;ve read that the monitor should be centered in the bezel and I have also read that it should not. Which is correct, or is that dependant on the flush mounting design implemented? If an offset is preferred, how great or little of an offset is ideal?
+
+5. For example, if I created a bezel that was 48&quot; wide and 24&quot; tall, would the center frequency be approx 93 or approx 227?</div>
+</article>
+<article class="post" id="p139287">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2016-06-25">25 June 2016</time><a class="permalink" href="#p139287" aria-label="Link to post 49">#49</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">1. Why does John&#x27;s soffit design require the monitor to be placed inside a box, and Thomas&#x27;s does not? Are there drawbacks or advantages to either?</div></blockquote>John&#x27;s design holds the speaker very rigidly in place, since the speaker is attached to the baffle via the box.  John&#x27;s design is massive and rigid all around, keeping things very firmly in place.  Thomas&#x27;s design still keeps the front baffle very rigidly mounted, but doesn&#x27;t need to be as tight on the speaker, since they are independent with his concept.
+<blockquote class="bb-quote"><div class="bb-quote-body">2. I see no provisions for ventilation using Thomas&#x27;s design. Does filling the cavity with loose fluffy pink stuff allow enough ventilation as is? Or should an airway be provided?</div></blockquote>You still need ventilation.  I think Thomas does not show that for clarity, but you do still need it.  You can&#x27;t enclose a speaker that is generating hundreds of watts of heat in a small area with no ventilation and expect it to keep on working.
+<blockquote class="bb-quote"><div class="bb-quote-body">3. Should the bezel be as large as possible both horizontally and vertically? Ie. Floor to ceiling/wall to wall using Thomas&#x27;s design? Or could a rigid backed broadband absorber be placed above and below the bezel? If so, how tall vertically would the bezel need to be before adding a little absorption?</div></blockquote>That&#x27;s a little tougher to answer!
+
+The basic concept of flush mounting id to create an &quot;infinite baffle&quot; for the speaker.  One that appears infinitely large acoustically.  In other words, much lager than the longest wavelength that the speaker can produce. Obviously, in the real world that is impossible, since we are talking about waves that are dozens of feet long.  So next best is just &quot;as big as possible&quot;.  But even that isn&#x27;t strictly necessary, as you can see from the baffle-step equation.  The real purpose of the baffle is just to prevent the wave from &quot;wrapping around&quot; behind the speaker (technically, it prevents it from radiating into full space and forces it to radiate into half-space), so as long as your baffle does that, you are fine.  So if your baffle extends out to the side wall and front wall, you are fine horizontally, and if it extend up to the ceiling and down to the floor, you are fine vertically.
+
+But even that isn&#x27;t necessary:  There&#x27;s another issue involved here: the further away you go along the face of the baffle, the smaller the effect is, and the lower the problematic frequency is, so it gets to the point where level is low enough and the frequency is low enough that it doesn&#x27;t really matter too much any more.
+
+That&#x27;s why John can do exactly what you suggest: set up a hard-backed absorber below the speaker to deal with reflections from the back of the desk.  You could, in fact, do that on all four sides, starting a a decent distance from the speaker center.  The further you get away from the speaker cone, the deeper the absorption can be.
+
+The above applies to all soffit designs, not just John&#x27;s or Barefoot&#x27;s
+
+With my soffit designs, I follow John&#x27;s concepts for the part below the speaker, then I take the baffle up almost to the ceiling, but I do generally leave a gap of many inches, and I use that area for bass trapping.  There&#x27;s a &quot;lid&quot; on top of the area where the speaker is, of course, and on top of that lid I put a lot of absorption, then a fabric front on it.  For high-end rooms, I borrow form both John and Barefoot to create a rigid box around the speaker but with suitably designed resilient pads all around, so that there is no contact at all between the speaker and the enclosing box: the speaker &quot;floats&quot; inside the box.  I tune the mounting system to a low enough frequency such that resonance will not be an issue.
+<blockquote class="bb-quote"><div class="bb-quote-body">4. I&#x27;ve read that the monitor should be centered in the bezel and I have also read that it should not. Which is correct, or is that dependant on the flush mounting design implemented? If an offset is preferred, how great or little of an offset is ideal?</div></blockquote>If you center it in the baffle, then there will be symmetrical focused lobing patterns forming for some frequencies.  If you offset it from the center, that effect is reduced.  A good rule of thumb is to center it about 2/5 of the width of the baffle, but that&#x27;s also not written in stone.  I used to think that centering it was ideal, but in reality it isn&#x27;t, so you might still find some of my older posts from many years back, that say it should be centered.  Ignore that!   <span class="smilie" title=":oops:">:oops:</span> 
+<blockquote class="bb-quote"><div class="bb-quote-body">5. For example, if I created a bezel that was 48&quot; wide and 24&quot; tall, would the center frequency be approx 93 or approx 227?</div></blockquote>I think you mean baffle, not bezel, and a baffle that was much wider than it is high would be unusual anyway!  But the baffle step response is always related to the SMALLEST dimension of the baffle, so it will be the higher frequency.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p139288">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JasonFoi</span><time datetime="2016-06-25">25 June 2016</time><a class="permalink" href="#p139288" aria-label="Link to post 50">#50</a></header>
+<div class="post-body">Thank you, Stuart. I appreciate your generosity with your time and knowledge. It helps a great deal.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"><nav class="pager" aria-label="Pages"><span class="label">Page 2 of 4</span>
+<a href="/t/718/" rel="prev">Previous</a>
+<a href="/t/718/">1</a><span aria-current="page">2</span><a href="/t/718/page/3/">3</a><a href="/t/718/page/4/">4</a>
+<a href="/t/718/page/3/" rel="next">Next</a></nav></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

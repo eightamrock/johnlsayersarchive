@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lutron lighting ideas | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by dkatz42 in Installation and Wiring, 2005. 2 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/3465/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Lutron lighting ideas</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by dkatz42 on 24 March 2005. 2 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 3465.</p>
+
+</div>
+</header>
+<article class="post" id="p24217">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">dkatz42</span><time datetime="2005-03-24">24 March 2005</time><a class="permalink" href="#p24217" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I&#x27;m putting together a studio with three rooms (live, booth, CR) plus an equipment room, and would like to be able to dim the lights in each room individually.  As an optional added bonus, I&#x27;d like to be able to control all of them from the control room.
+
+I&#x27;ve been digging through the Lutron Grafik Eye specs trying to see if I can pull off what I would like.  It looks possible.  Assume that each room is one zone.  One of the available wallstations (SG-4S) has four scene selection buttons and a master up/down button.  It appears by looking at one of Lutron&#x27;s application notes that you can trick the system into dimming an individual zone by setting a scene that has all other zones set to &quot;unaffected&quot;;  then you can vary the master level and it will only affect the particular zone.  Has anybody tried this?
+
+The only downside I see to this approach is that if anybody hits the off button in one of the rooms, all of the lights in all of the rooms will turn off.
+
+Anybody out there with a Grafik Eye doing anything like this?
+
+
+Another possibility might be to use one of the Smart Dimmers (such as the Maestro.)  It appears that the way these units work is that the master dimmer has the triac;  then one of the travellers carries the power to the load and the other carries a communications bus.  Additional remote units seem to only pass requests over the comm bus back to the main dimmer.
+
+This implies that I could put the main dimmer for each room in my equipment room (away from the tracking rooms and hopefully not spraying too much EMI) and then put a remote unit in each of the rooms.  Anyone with any experience on how noisy the smart dimmers are?
+
+
+Any other ideas on how to approach this problem?
+
+Thanks...</div>
+</article>
+<article class="post" id="p24233">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/aaronw/">Aaronw</a><time datetime="2005-03-24">24 March 2005</time><a class="permalink" href="#p24233" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">I haven&#x27;t used the Lutron products, so i don&#x27;t know.
+
+I&#x27;m assuming you&#x27;re wanting a dimmer in both the control room &amp; in each room?  If that&#x27;s the case, you need a 3 way switch/dimmer on each end and run 12/3 wire.</div>
+</article>
+<article class="post" id="p24241">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">dkatz42</span><time datetime="2005-03-24">24 March 2005</time><a class="permalink" href="#p24241" aria-label="Link to post 3">#3</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Aaronw wrote:</div><div class="bb-quote-body">I haven&#x27;t used the Lutron products, so i don&#x27;t know.
+
+I&#x27;m assuming you&#x27;re wanting a dimmer in both the control room &amp; in each room?  If that&#x27;s the case, you need a 3 way switch/dimmer on each end and run 12/3 wire.</div></blockquote>One of the slick things about the smart dimmers is that they&#x27;re all 3way (actually 4way).  All but one of them don&#x27;t actually do anything except talk to the first one, which sits at the line end.  You use 14/3 (a bit easier to handle than 12/3, which is overkill) and one of the conductors carries the power regulated by the first unit, which is passed along through all the others to the load at the far end, and the other conductor is the communications bus so that all of the units can control the light level.
+
+With standard triac dimmers you can only have one dimmer;  the rest have to be 3way or 4way switches.  I imagine that you could use multiple variacs on the same circuit, but they would be subtractive (each dimmer could only make things darker;  to make it bright you&#x27;d have to turn up all of them.)</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

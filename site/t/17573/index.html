@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Membrane absorber to deal with 1/4 wavelength cancellation | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by chavernac in Acoustics, 2012. 2 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/17573/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Membrane absorber to deal with 1/4 wavelength cancellation</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by chavernac on 12 May 2012. 2 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 17573.</p>
+
+</div>
+</header>
+<article class="post" id="p122775">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">chavernac</span><time datetime="2012-05-12">12 May 2012</time><a class="permalink" href="#p122775" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi Guys! 
+I decided to build myself some membranes absorbers to deal with 1/4 wavelength cancellation nulls (which are NOT room modes)
+
+I would consider my knowledge &quot; intermediate&quot; in the realm of acoustic treatment. So I know that If I put my membrane absorbers in the corners of my room I will absorb a lot of bass and most specifically the frequencies tied to my room modes. I&#x27;ve done it and it works.
+
+However, I did run some tests and read a lot of Ethan Winer&#x27;s <a href="http://www.realtraps.com/art_small_rooms.htm" rel="nofollow noopener" target="_blank">http://www.realtraps.com/art_small_rooms.htm</a> posts and I agree that there are nulls that are caused by the distance you are at from the walls (1/4 wave length). I know that it is not a mode because when I move my measuring mic, the null shifts up/down in frequency accordingly. So that is not a mode but rather a destructive summation of a sound waves...
+
+Question: How do you deal with those?
+
+Membrane absorbers really work at pressure point. Where is the pressure point of that destructive sound wave? Is that foolish to think that it&#x27;ll work at the primary reflection point? Where to I put mt membrane absorber to deal with this guy?</div>
+</article>
+<article class="post" id="p122779">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-05-12">12 May 2012</time><a class="permalink" href="#p122779" aria-label="Link to post 2">#2</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">... to deal with 1/4 wavelength cancellation nulls (which are NOT room modes)</div></blockquote>yes they are room modes.  If you have a constant cancellation at a point in the room for a specific wavelength (frequency), then by definition that IS a room mode.
+<blockquote class="bb-quote"><div class="bb-quote-body">I know that it is not a mode because when I move my measuring mic, the null shifts up/down in frequency accordingly. </div></blockquote>If the frequency changes, then you aren&#x27;t looking at the same problem!  And if the frequency changes, then there is no 1/4 wave that you can tune your traps to...
+
+Just to clarify: if you have a null (or a peak) at a specific location in the studio, then that IS a mode.  No doubt about it.  If the null is always in the same place for a specific frequency, then by definition you have a standing wave in the room, and your mic is located at either a pressure null or a velocity null (depending on the type of mic), and that most certainly is a mode.  If you then move the mic to a DIFFERENT position, and also find a null there, but for a DIFFERENT frequency, then all you have done is to find a DIFFERENT mode!  It&#x27;s still a mode, just not the same one.
+
+In other words, if you hear the same problem in different locations in the room and at different frequencies, then in reality it is not the same problem: Rather, there are several problems, not just one.
+
+So it seems you have several modal issue with your room, and you are finding them at different locations in the room, which is very normal for small rooms.
+
+
+I would suggest that you run REW on your room, with the mic at the listening position, and post the data file here, so we can analyze it and try to figure out what the problems are, and how to deal with them.  While Ethan&#x27;s tone files are fine for seeing if you have a problem with a specific frequency in a specific location, they don&#x27;t tell you much more than that, since all you get is a frequency-domain response, at best  Yet most problems in small rooms are time-domain problems, as well as frequency-domain.
+<blockquote class="bb-quote"><div class="bb-quote-body">So that is not a mode but rather a destructive summation of a sound waves...</div></blockquote>That&#x27;s exactly what a mode is!  A wave bouncing around the room in a fixed path, and getting back to the starting point in phase with itself, thus creating a pattern of summation within the room. 
+
+So unless you are talking about some kind of comb filtering at higher frequencies, then you have a room mode problem.
+<blockquote class="bb-quote"><div class="bb-quote-body">Membrane absorbers really work at pressure point</div></blockquote>Well, kind of: they work on the pressure <em>component </em>of sound waves, and are therefore most effective at locations within the room where the pressure is close to its peak... but that isn&#x27;t a point.  Rather, it is an area, or at least along a line, not just a point.  And since modal issues are only a problem for low frequencies, then any specific mode will have a peak pressure zone covering a relatively large area.  But that only happens at fixed locations with the room for room modes (standing waves) at fixed frequencies.  There is no such location for &quot;problems&quot; that occur at different frequencies in room, since they will either be at different locations, or have different wavelengths.
+
+And since you say that you can hear your problems at several frequencies, then you cannot build a membrane trap to solve that problem: membrane traps are tuned devices.  You MUST tune it to the problem frequency (wavelength), and it will then treat ONLY that frequency (or rather, a narrow band of frequencies centered around the tuned frequency).  You cannot tune a single membrane trap to more than one frequency.
+
+Yes, you can make a membrane trap that covers a range of frequencies, but then those frequencies have to be close together, and even then you are &quot;de-tuning&quot; the trap, so even though it deals with more frequencies, it is less efficient at doing so.  In acoustic terms, the Q is broader but flatter, and at a lower level.
+
+That&#x27;s why small rooms need absorption in the corners, not membrane traps.  A large area of thick absorption will act as a broadband bass trap, treating a wide range frequencies quite effectively.
+
+Another good option is a slightly angled slot wall, with the slots tuned to a range of frequencies in the problematic area, and the angle designed to cover a broader range of frequencies.
+<blockquote class="bb-quote"><div class="bb-quote-body">Where is the pressure point of that destructive sound wave?</div></blockquote>If the frequency of the problem changes, then there is no fixed location. 
+ 
+<blockquote class="bb-quote"><div class="bb-quote-body">Is that foolish to think that it&#x27;ll work at the primary reflection point?</div></blockquote>No, not foolish: the pressure does indeed peak at the reflection boundary (which is an area, not really a point).  But what you describe is not a single problem at one frequency (and therefore one wavelength):  Rather, it is a group of several different problems, at several different frequencies (and therefore several different wavelengths).  Therefore, there is no one single place where the problem can be treated: it must be treated over broad areas.  And since the problem is standing waves (room modes), and all modes terminate in room corners, and room corners give you a free 12 or 18 dB boost in effectiveness, that&#x27;s the best place to put broadband absorption.
+
+So what I&#x27;d suggest is that you post a diagram of your room (in SketchUp), with accurate dimensions, indicating the treatment that you already have in there (if any), as well as several photos of your room, so we can get an idea of what you are dealing with, then also run a full REW analysis of your room, and post the results here.  Based on that, we can suggest the best way of dealing with the problems you are experiencing.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p122793">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/brihar/">BriHar</a><time datetime="2012-05-14">14 May 2012</time><a class="permalink" href="#p122793" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">What Stuart has told you is correct - but just too add perhaps a further overview -
+
+Absorbers (falsley a.k.a. bass traps) work on the velocity principle, therefore out in the room and preferrably at a distance from the boundary where the velocity is highest for the target frequencies.  This is why it is advised that such panels be spaced away from the wall.
+Membrane traps work on the pressure component. When a wave meets the boundary, it&#x27;s velocity drops to 0 and the pressure rises to maximum.  Therefore a membrane trap works best at (or as part of) the boundary.  A given modal frequency will correspond to a specific room dimension - normally the axial modes dominating, so to trap for a specific modal frequency, the trap would be placed at a boundary of it&#x27;s specific vector.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

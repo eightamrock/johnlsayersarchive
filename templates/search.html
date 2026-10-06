@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="/pagefind/pagefind-ui.css">{% endblock %}
+{% block content %}
+<div class="read">
+<h1>Search</h1>
+<p class="lede">Search thread titles and every post in the archive.</p>
+<div id="search"></div>
+<noscript><p>Search needs JavaScript. Without it, browse the <a href="/library/">Library</a> or the <a href="/forum/">forums</a>, or search with DuckDuckGo:</p>
+<form action="https://duckduckgo.com/" method="get"><input type="hidden" name="sites" value="johnlsayersarchive.com"><label class="vh" for="ddg-q">Search terms</label><input type="search" id="ddg-q" name="q"> <button type="submit">Search with DuckDuckGo</button></form></noscript>
+</div>
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+  var ui = new PagefindUI({ element: '#search', showSubResults: true, showImages: false, resetStyles: false });
+  var q = new URLSearchParams(window.location.search).get('q');
+  if (q) { ui.triggerSearch(q); }
+});
+</script>
+{% endblock %}

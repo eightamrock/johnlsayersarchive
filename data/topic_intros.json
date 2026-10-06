@@ -1,0 +1,120 @@
+{
+  "fundamentals": {
+    "intro": "This topic gathers the forum's foundational discussions on studio isolation and acoustic treatment, and the physical principles that shape practical decisions. Contributors distinguish isolation, keeping sound from passing between spaces, from treatment, which shapes how sound behaves within a room, a distinction that recurs across the community's introductory guides and terminology threads. Reference posts define basic building-block terms such as wall and frame, and describe resilient-mount and framing options used to reduce sound transmission. Several threads examine mass-air-mass resonance, the physics governing double- and triple-leaf wall assemblies, including debate over whether triple-leaf construction meaningfully improves isolation or wastes money, and whether a non-airtight leaf still functions as part of a mass-air-mass system. Related discussions address room-in-room construction, where an inner structural shell is decoupled from the outer building. Together these threads represent the forum's early attempts to establish shared vocabulary and settled guidance before newcomers post construction questions, and they remain frequently cited starting points for understanding why isolation and treatment call for different solutions.",
+    "key_threads": [
+      3231,
+      4310,
+      6773,
+      22298,
+      17298
+    ]
+  },
+  "hvac": {
+    "intro": "HVAC systems present a persistent challenge in studio construction: conditioning and ventilating isolated rooms without introducing airborne noise or compromising the isolation the walls were built to provide. Threads in this section cover the full range of approaches, from basic DIY questions about ducting, fans, and whether gas or water connections are needed, to detailed silencer box and baffle designs intended to quiet airflow through rectangular ductwork and joist cavities. Several builders discuss split-ductless and humidity-controlling air conditioners as alternatives to full ducted systems, along with heat- and energy-recovery ventilation for exchanging stale air with fresh air in sealed rooms. Smaller vocal booths and iso booths raise their own concerns, since limited space makes silencing airflow while preventing a stuffy \"sweat box\" feel especially difficult. A few threads also address ventilation code requirements, including how commercial building codes and UK regulations for air exchange apply to converted spaces. Together these discussions form a practical reference for anyone planning how to move air through a soundproofed studio without letting noise move with it.",
+    "key_threads": [
+      644,
+      21752,
+      15724,
+      4384
+    ]
+  },
+  "speakers": {
+    "intro": "This topic collects discussions on soffit mounting and flush mounting of studio monitors, a technique in which speakers are built into a wall or soffit rather than left freestanding. Contributors weigh the acoustic rationale — reducing nearby boundary reflections and comb filtering, particularly at low frequencies — against practical construction questions such as enclosure isolation, cabinet angles, and the maximum recommended downward tilt for a soffit. Several threads address flush-mounting freestanding monitors that were not designed for soffit installation, including methods for isolating cabinet vibration and filters that compensate for the loss of \"baffle step\" boost when a speaker is pulled into a wall. Others troubleshoot problems after construction, such as monitors losing midrange and high-frequency definition once soffited. Specific monitor models discussed include Adam S2A and A7, Mackie HR824, and Klein & Hummel O300, alongside a DIY reference-monitor build. Readers will also find soffit planning folded into broader room designs, from garages and basements to dedicated mix rooms.",
+    "key_threads": [
+      66,
+      718,
+      766,
+      589,
+      16933
+    ]
+  },
+  "materials-reference": {
+    "intro": "This section gathers technical reference material on the building materials commonly used in home-studio construction, drawn from the forum's ongoing discussions of acoustic treatment and wall assemblies. A curated \"Reference Area\" thread indexes links to wall-construction terms, nominal lumber sizes, and weights and densities of common materials, serving as a starting point for newcomers. Several threads compile hard data: measured absorption coefficients for Owens Corning 701, 703, and 705 fiberglass at varying thicknesses and densities, and tabulated weights of standard drywall panels converted between imperial and metric units. Other threads clarify terminology and equivalence, explaining that \"703\" is a trademarked name for a specific density of Owens-Corning fiberglass rather than a unique product, and that mineral wool can serve as an acoustically comparable substitute. A separate discussion addresses health concerns raised about synthetic mineral fiber products, weighing claims of increased cancer risk against available information. Together these threads function as a practical reference shelf for builders comparing insulation products, sourcing construction materials, and evaluating safety considerations before purchasing.",
+    "key_threads": [
+      2125,
+      562,
+      7264,
+      9677,
+      1742
+    ]
+  },
+  "walls-floors-ceilings": {
+    "intro": "This section gathers forum discussion on framing and assembling the walls, floors, and ceilings of a decoupled recording studio. A recurring theme is leaf design: threads compare double-leaf and triple-leaf wall construction, including cost trade-offs and construction details for corners where multiple leaves meet. Members also discuss the air gap between leaves — whether insulation should fill it, how wide it needs to be, and how it affects STC ratings — along with insulation choices such as fiberglass density inside stud cavities. Floating floors receive extensive debate: several threads question whether a floating floor is actually necessary for isolation, particularly on concrete slabs, and weigh alternatives such as cutting or isolating the slab, or using a smaller floating drum riser instead of floating an entire room. Practical construction questions round out the topic, including the sequence for hanging and caulking drywall on a framed leaf. Full studio build logs, from rural New England to a garage bonus room, show these framing, insulation, and decoupling choices being worked out in real projects.",
+    "key_threads": [
+      13629,
+      8173,
+      2765,
+      86,
+      4079
+    ]
+  },
+  "doors-windows": {
+    "intro": "Doors and windows are among the most vulnerable points in a studio's isolation shell, since any opening in a wall or door assembly threatens to undo the mass and decoupling built elsewhere. Threads in this section cover both problems together. On doors, members compare commercial \"acoustic\" doors against home-built alternatives using solid-core or beefed-up stock doors, discuss installing a door between a studio and adjoining living space, and work through how doors should be handled where two isolated walls meet, including whether a door is needed on each leaf of a double-wall gap. Sourcing airtight seals, such as automotive rubber gasket stock, and troubleshooting construction problems with leakage-prone door and window assemblies also come up. On windows, discussions address acoustically sealing existing windows without changing their exterior appearance, and step-by-step guidance for installing new studio windows using setting blocks, glazing tape, and caulking. Together these threads offer both conceptual guidance on isolating door and window openings and practical, hands-on troubleshooting for builders working through the same problems.",
+    "key_threads": [
+      12664,
+      1662,
+      272,
+      8400,
+      3330
+    ]
+  },
+  "electrical": {
+    "intro": "This section gathers forum discussions on the electrical infrastructure of home and project recording studios, with an emphasis on grounding, wiring, and power distribution. The most active topic is star grounding, a scheme for connecting audio equipment safety and signal grounds back to a single point to reduce hum and noise; multiple threads work through its principles, practical wiring, and points of confusion for newcomers. Other threads cover related power questions, including whether a single-phase electrical service is adequate for a separate studio building, how to size circuits and calculate amperage for equipment loads, and how to wire isolated circuits with dedicated ground lugs. Additional posts address the physical routing of cables, such as passing lines between isolated rooms without compromising sound isolation, terminating snake cables for multi-room I/O, and running headphone feeds to multiple spaces. A general resources thread collects external links on studio wiring and installation. Together these threads reflect the concerns of builders wiring a studio from scratch: minimizing electrical noise, meeting power demands safely, and organizing cable runs between rooms.",
+    "key_threads": [
+      2206,
+      2086,
+      11402,
+      1330,
+      2020
+    ]
+  },
+  "tools-measurement": {
+    "intro": "This topic collects threads about software tools used for measuring, modeling, and calculating acoustic and physical properties of home and project recording studios. Two tools dominate: SketchUp, a free 3D modeling program used to sketch studio layouts and room designs (including shared example files such as a small studio model and a basement studio build), and Room EQ Wizard (REW), a free acoustic measurement package used to analyze room response and guide treatment decisions. Alongside these are a number of member-built calculators and spreadsheets distributed as Excel or HTML5 files, covering room modes, wall bounce reflections off the front and side walls, reverberation time, Helmholtz resonator tuning, and transmission loss through wall assemblies, as well as the Harman Mode Calculator for identifying problematic room resonances. Together these threads document the practical toolkit members used to plan, measure, and evaluate studio spaces before and after construction, and to troubleshoot acoustic problems using data rather than guesswork. Readers new to studio design will find both the software recommendations and the calculation methods behind them explained across these posts.",
+    "key_threads": [
+      21122,
+      5457,
+      6109,
+      5801,
+      7337
+    ]
+  },
+  "build-diaries": {
+    "intro": "This topic collects first-person build diaries chronicling home and project studio construction from planning through completion. Contributors document real-time decisions on framing, isolation, flooring, and insulation as their builds progress, often over years and hundreds of pages, with community members offering technical feedback along the way. The projects span a range of spaces and structures, including garage conversions, basement builds, a barn conversion, and a shipping-container studio, reflecting the variety of spaces forum members have adapted into working studios. Several threads, such as Sharward's Partial Garage Conversion and the Artifact Recording basement floor thread, rank among the archive's most-viewed and most-replied topics, indicating their value as long-running references others returned to for guidance. Readers can follow a build diary as a continuous record of one project's construction challenges and solutions, or dip into individual pages for specific techniques, such as floating floor installation over concrete or acoustic hanger placement in soffits. Together, these diaries offer a practical, thread-by-thread history of how forum members actually built their rooms, complementing the more theoretical design discussions found elsewhere in the archive.",
+    "key_threads": [
+      2921,
+      839,
+      9156,
+      5556,
+      4168
+    ]
+  },
+  "control-room-design": {
+    "intro": "This section gathers forum discussions on control room geometry and acoustic treatment strategy, ranging from theoretical questions to real-world project reviews. Members analyze how room dimensions, speaker placement, and boundary treatments like corner superchunks and rear-wall bass traps interact to create smooth low-frequency response, as in one thread investigating a possible null between monitors and listening position. Other threads address foundational planning questions, including whether angling a ceiling helps reduce modal buildup and parallel-surface reflections, and general-purpose floor plans adapted for bedroom, garage, and larger studio spaces. Many threads are project logs in which forum members—building control rooms in basements, garages, converted living spaces, and purpose-built structures across several countries—post their own dimensions, wall construction, and layouts for community feedback on sightlines, reflection control, and overall geometry. Together these discussions illustrate the recurring tradeoffs studio builders face when translating acoustic design principles like the reflection-free zone into constrained, real-world spaces.",
+    "key_threads": [
+      2441,
+      4206,
+      7254,
+      9925
+    ]
+  },
+  "treatment": {
+    "intro": "This section gathers forum discussions on acoustic treatment: the panels, bass traps, and diffusers used to control reflections and low-frequency buildup in recording and control rooms. Contributors document do-it-yourself construction methods, most centered on rigid fiberglass or mineral wool (such as Owens Corning 703/705) framed in wood and wrapped in fabric, including budget panel builds, \"superchunk\" corner bass traps, and slat-type Helmholtz resonators and diffusors, with one thread correcting a published resonator formula. Other threads address specific applications, including vocal booth treatment, acoustic hangers for suspending panels, and rockwool density and fabric covering choices. Several long-running threads follow individual studio projects through extended treatment and tuning phases, while others debate technical questions such as the \"edge effect\" in absorption coefficient measurements. Together these threads range from quick reference how-tos and material lists to in-depth technical debate, making this topic a practical starting point for readers planning or troubleshooting the acoustic treatment of a home or professional studio space.",
+    "key_threads": [
+      10304,
+      5930,
+      10297,
+      7278,
+      14147
+    ]
+  },
+  "codes-permits": {
+    "intro": "This topic gathers forum discussions on the legal and regulatory side of studio construction: building permits, codes, licensing, zoning, and inspections. The anchor thread, 'Permits, Codes, Licenses -- and WHY YOU SHOULD CARE!,' argues for working within official channels and was meant as a go-to reference for later posts on the topic. Related threads cover specific obstacles builders encountered, including a 2003 International Building Code restriction on sliding glass and double doors, code issues raised during a permit review that affected door and exit design, and a reminder that audio cable conduit runs can themselves be subject to inspection. Other threads document real-world planning experiences: a bid on a city-owned building with uncertain environmental conditions, a frost-wall foundation question for new construction in Vermont, a discouraging response from a local council on a proposed permit application, and debate over whether a studio designer and an architect are interchangeable when local codes require professional sign-off. A thread on demolition and construction safety, including asbestos hazards in buildings predating 1978, rounds out the collection. Together these threads illustrate why regulatory compliance is treated as a foundational step rather than an afterthought in studio design.",
+    "key_threads": [
+      4442,
+      3393,
+      6159,
+      10054,
+      8021
+    ]
+  }
+}

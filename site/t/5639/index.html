@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paradise Studio - A power and lighting control thread. | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by edenorchestra in Installation and Wiring, 2006. 5 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/5639/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Paradise Studio - A power and lighting control thread.</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by edenorchestra on 14 February 2006. 5 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 5639.</p>
+
+</div>
+</header>
+<article class="post" id="p39197">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">edenorchestra</span><time datetime="2006-02-14">14 February 2006</time><a class="permalink" href="#p39197" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi All
+
+Here’s the lighting/power system I came up with for my project.  The AutoCAD drawings were printed out to *.jpg and because of limits on the forum you can’t see the details all that great.  You can easily see the star grounding in the schematic.  All lighting and audio equipment feeds are on opposite legs of the service panel.  All the outlets are individually home run back to a junction box and then “bugged” together and sent to the panel on a #6 ground wire.  The lighting has its own home run to the service as well with a common connection for each lighting home run to the lighting panel.
+
+  The lighting system uses an <span style="color:blue"><strong>Omron</strong></span> programmable logic controller (PLC) switching a series of 24 lighting channels so far (it’s quite expandable as well).  Each lighting circuit comes back to the panel and is tied to an easily changeable terminal block.  All neutrals for the lighting are connected to one common bus.  The lighting panel is feed by two 20A breakers.  Since all lighting runs are #14, I have individually protected each leg with 15A fuses.  This allows me to use the 20A breaker in the service panel for other unseen future needs.<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: Electrical-Model2.jpg</div><div class="bb-attachment-missing">Image not preserved: Electrical-Model1.jpg</div></div></div>
+</article>
+<article class="post" id="p39198">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">edenorchestra</span><time datetime="2006-02-14">14 February 2006</time><a class="permalink" href="#p39198" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">The PLC is connected via RS-232 with an industrial protocol to two touch screen panels.  One will be in the Studio/Stage area and the other at the console.  This allows full control of all lighting in the building from two locations.  The touch screens are developed on a PC to create any kind control screens desired.  The PLC is located in the lighting panel with its own local inputs and outputs which can accept a variety of signals (120VAC, 24VDC, and analog).  The system also includes a remote input/output (I/O) network which allows me to have control at a different part of the building with just a small control block and a twisted pair of communication cable.  This provides the convenience of only having to run 120V circuits near the area you want to control with out running lots of power wiring.<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: 100_1788.jpg</div></div></div>
+</article>
+<article class="post" id="p39202">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">edenorchestra</span><time datetime="2006-02-14">14 February 2006</time><a class="permalink" href="#p39202" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">The Omron PLC when told by the touch screens to energize a light (or whatever you need to power up) sends out a small 24VDC signal which then fires a small imposing relay which in turn has contacts that can handle about 10A of power. Each of the relays go to a bank of 5 dedicated  terminals which allow me to patch the lighting circuits to a respective terminal.  This adds the flexibility of putting more than one light on a relay circuit for custom lighting schemes.  I can program the PLC to create scenes or individual control such as dim, bright, colors, moods, etc.  One of my key motivations was to eliminate dimmers and simply stage lighting as needed.   I was lucky to get many of the materials for next to a song or free.  And I did my own programming, buts that&#x27;s what I do.  If your are interested in one, let me know . . .  shipping included of course . .  a bit more than dimmers . . but hey  . . no noise.<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: 100_1787.jpg</div></div></div>
+</article>
+<article class="post" id="p39203">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2006-02-14">14 February 2006</time><a class="permalink" href="#p39203" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Thanks Mark!</div>
+</article>
+<article class="post" id="p41747">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/bassman/">bassman</a><time datetime="2006-04-02">2 April 2006</time><a class="permalink" href="#p41747" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">The PLC is interesting..... <span class="smilie" title=":?">:?</span>  <span class="smilie" title=":shock:">:shock:</span>  <span class="smilie" title="8)">8)</span>  <span class="smilie" title=":idea:">:idea:</span> 
+
+When you say &quot;dim&quot; do you mean a combination of lights  that gives you a dim sort of vibe in the roon or does it actually make the light softer like a  dimmer?  Just wanting to clarify.
+
+Also, combien ca?  (how much?) for a base unit...
+
+-bassman</div>
+</article>
+<article class="post" id="p41770">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">edenorchestra</span><time datetime="2006-04-02">2 April 2006</time><a class="permalink" href="#p41770" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Yes I mean a combination.  The PLC has various types of modules you can snap to the backplane, or you can get them &quot;fixed&quot; with a predetermined number input and outputs.  In my case I use all digital (on-off) only.  You could add analog cards that send out a varying voltage or current, you would then have to connect those to a dimmer circuit to handle the lighting current. That&#x27;s also a lot more money, and your now back to noise issues from Triacs or SCR&quot;s.
+
+Here are some screen shots of the touch screen that controls the system.  I have them made up with individual control as well as &quot;moods&quot; like colors or &quot;dimming&quot;. You build these on a PC and then download them to the touch screen. Every object is a &quot;touch cell&quot;  so I have the first screen laid out physically the same as the room.  The other screens are more subjective.  I haven&#x27;t done my control rooom screens yet.
+
+The other cool thing is that this same unit does the start up of my console by staging my gear up or down with a timing sequece, that way you hit one button and system comes up in a sequence.
+
+As far as a base price I really haven&#x27;t given it a lot of thougt. I need an idea how much you need to control.  It would depend on how many circuits are required.  The other thing is the touch screen, they are pricey, I lucked out and got two for basically nothing.  However to save money you could have a panel of nice push buttons that perform the same functionality, just not as flexible.<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: 57.JPG</div><div class="bb-attachment-missing">Image not preserved: 58.JPG</div><div class="bb-attachment-missing">Image not preserved: 59.JPG</div></div></div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

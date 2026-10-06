@@ -1,0 +1,11 @@
+{% macro pager(p) -%}
+{% if p and p.total > 1 %}<nav class="pager" aria-label="Pages"><span class="label">Page {{ p.current }} of {{ p.total }}</span>
+{% if p.prev %}<a href="{{ p.prev }}" rel="prev">Previous</a>{% endif %}
+{% for item in p.links %}{% if item.gap %}<span class="gap">…</span>{% elif item.current %}<span aria-current="page">{{ item.n }}</span>{% else %}<a href="{{ item.href }}">{{ item.n }}</a>{% endif %}{% endfor %}
+{% if p.next %}<a href="{{ p.next }}" rel="next">Next</a>{% endif %}</nav>{% endif %}
+{%- endmacro %}
+
+{% macro topic_row(t, show_forum=False) -%}
+<li>{% if t.pinned %}<span class="pin">Start here</span>{% endif %}<a class="title" href="/t/{{ t.id }}/">{{ t.title }}</a>
+<span class="meta">{{ t.replies_label }}, {{ t.years }}. Started by {{ t.starter }}{% if show_forum %} in {{ t.forum_name }}{% endif %}.{% if t.experts %} With {{ t.experts }}.{% endif %}</span></li>
+{%- endmacro %}

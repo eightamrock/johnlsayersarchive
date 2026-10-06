@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/{{ forum_slug }}/">{{ forum_name }}</a> › <a href="/t/{{ topic_id }}/">{{ thread_title }}</a></nav>
+<h1>Key posts: {{ thread_title }}</h1>
+<p class="lede">Substantial posts by {{ starter }}, who started the thread, and by the forum’s most active contributors. {{ count }} of {{ total }} posts are listed.</p>
+{% for group in groups %}<h2>Page {{ group.page }}</h2>
+<ul class="plain-list">{% for p in group.posts %}<li><a href="{{ p.href }}">{{ p.author }}, {{ p.date }}</a><span class="meta">{{ p.snippet }}</span></li>{% endfor %}</ul>
+{% endfor %}
+</div>
+{% endblock %}

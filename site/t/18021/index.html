@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firewire/USB Latency when extended/adapted | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by x00011011 in Installation and Wiring, 2012. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/18021/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Firewire/USB Latency when extended/adapted</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by x00011011 on 8 December 2012. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 18021.</p>
+
+</div>
+</header>
+<article class="post" id="p126046">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">x00011011</span><time datetime="2012-12-08">8 December 2012</time><a class="permalink" href="#p126046" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi everyone.  I&#x27;m currently using a Digidesign 003 (firewire) and planning to have the DAW in another &quot;machine&quot; room approximately a 35-40&#x27; cable run away.  Does anyone have any experience regarding quality/latency/problems when running these cables longer-than-spec lengths for audio recording?
+
+I was considering the following solutions:
+- Firewire 15&#x27; active repeaters/extension cables (may need a couple of these)
+- Firewire over Ethernet using baluns
+
+Some such products:
+<a href="http://www.lindy-usa.com/usb-firewire/firewire-extenders.html" rel="nofollow noopener" target="_blank">http://www.lindy-usa.com/usb-firewire/f ... nders.html</a>
+
+Also for MIDI, instead of running 16 cables (8 pairs) from my live room to my machine room, I was considering putting a MIDI interface (such as a MOTU) in the live room, while running only the USB back to the Machine Room.  But because this is roughly the same distance (35-40&#x27;), I&#x27;m afraid I would have to use a similar repeater or balun solution for USB as well...?<div class="bb-attachments-trailing"><figure class="bb-attachment"><img src="/img/46284.jpg" loading="lazy" alt="102b Lounge Drywall 750w.jpg"><figcaption>102b Lounge Drywall 750w.jpg</figcaption></figure></div></div>
+</article>
+<article class="post" id="p126049">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-12-08">8 December 2012</time><a class="permalink" href="#p126049" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">The length of the cables is not a problem, and won&#x27;t cause any latency.  The speed of signals traveling on wire is around 50% to 90% of the speed of light, so it travels somewhere between 90 and 150 MILES in a millisecond.  For those very short distances you are talking about, the latency is a tiny fraction of a millisecond, somewhere around 50 to 100 nanoseconds.  Not a problem.
+
+However, the devices you install to extend your distance (repeaters, switches, extenders, etc.) will very likely have some latency involved, especially if they have to convert from one physical media to another.  Since each manufacturer has their own methods for conversion, you should check the specs of the equipment you plan to buy to find out how much extra latency they add.  With good equipment, it should not be an issue.  The latency should just be a few milliseconds.
+<blockquote class="bb-quote"><div class="bb-quote-body">I was considering the following solutions:
+- Firewire 15&#x27; active repeaters/extension cables (may need a couple of these)
+- Firewire over Ethernet using baluns</div></blockquote>I would not do either of those.  You would need three repeaters, and each one will introduce it&#x27;s own issues.  Simple baluns might not be reliable for such high speeds.  I would bite the bullet and buy some proper firewire extenders.  Get a pair plus CAT5 cable.  Problem solved.   (Not cheap, though.)
+<blockquote class="bb-quote"><div class="bb-quote-body">while running only the USB back to the Machine Room. But because this is roughly the same distance (35-40&#x27;), I&#x27;m afraid I would have to use a similar repeater or balun solution for USB as well...?</div></blockquote>Same answer: a pair of USB extenders and CAT5 cable.</div>
+</article>
+<article class="post" id="p126054">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">x00011011</span><time datetime="2012-12-08">8 December 2012</time><a class="permalink" href="#p126054" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Thanks you kindly.  Sorry, I think I was using the term balun inappropriately.  I found it refers to devices that change between balanced and unbalanced signals.  Repeaters vs Ethernet Extenders is what I was meaning to convey.
+
+Do you have a recommendation for particular products with acceptable latency or what&#x27;s your opinion on these products?
+
+The Newnex FireNEX-CAT5-S800 800 Mbps 1394b Cat5 Repeater
+<a href="http://ntcdistributing.com/products/firenex/FIRENEX-C-800.htm?gclid=COnuud23i7QCFcsWMgodJkUAsQ" rel="nofollow noopener" target="_blank">http://ntcdistributing.com/products/fir ... MgodJkUAsQ</a>
+
+Gefen GTB-USB2.0-4LR-BLK USB 2.0 Long Range 4-Port Extender over CAT5 up to 330ft
+<a href="https://hdwise.com/product.php?productid=1300&amp;gclid=CNGFoJe7i7QCFY9DMgod_H0A2w" rel="nofollow noopener" target="_blank">https://hdwise.com/product.php?producti ... Mgod_H0A2w</a></div>
+</article>
+<article class="post" id="p126116">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">x00011011</span><time datetime="2012-12-12">12 December 2012</time><a class="permalink" href="#p126116" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Has anyone successfully used Firewire/USB extenders (over ethernet) between your Interfaces and DAW, without a problem in latency, or other?
+
+I would really like to know what models you have used.  Please share...</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

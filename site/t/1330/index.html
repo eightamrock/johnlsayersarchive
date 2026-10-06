@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>wiring question isolated circuits | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by chunger in Studio Construction, 2004. 16 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/1330/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-construction/">Studio Construction</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>wiring question isolated circuits</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by chunger on 13 February 2004. 16 replies. In the Library under <a href="/library/electrical/">Electrical and wiring</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 1330.</p>
+
+</div>
+</header>
+<article class="post" id="p9733">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">chunger</span><time datetime="2004-02-13">13 February 2004</time><a class="permalink" href="#p9733" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">hey guys,
+
+I have a question regarding the ground wire on isolated circuits.  Do you typically put another ground lug in the panel and use that for all isolated circuits?
+
+
+Also, what kind of wire can I use?  Is there such things as a single conductor NM cable that I don&#x27;t have to run through conduit?  That would be ideal. . . or. . .
+
+I guess i&#x27;d have to run 3 conductor cables to my boxes and ground inside the panel. . . but then I&#x27;d have trouble if I have say, 1 feeder to 3 iso-plugs but I need to ground all 3 separately. . .
+
+or, do I have to run conduit to all the iso ground boxes. . . 
+
+-&#x27;Chung</div>
+</article>
+<article class="post" id="p9740">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-13">13 February 2004</time><a class="permalink" href="#p9740" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">I&#x27;m headed for the sack for a few winks, but here&#x27;s page 3 of a 4 page thread I was involved in at RO a few months back - covers bunches of code, etc - 
+
+<a href="http://www.recording.org/ubb/ultimatebb.php?ubb=get_topic;f=34;t=000831;p=3" rel="nofollow noopener" target="_blank">http://www.recording.org/ubb/ultimatebb ... 000831;p=3</a>
+
+At least one (Colorado) inspector wanted to see the separate ground wires inside FMC (flexible metal conduit) and run with the power conductors. There is a thing about mutual inductance being required to reduce impedance so faults will trip breakers properly - it&#x27;s in the above thread.
+
+Yes, you use a separate ground lug at the main panel, and run separate (insulated) ground wires to each hospital grade (IGR) receptacle&#x27;s isolated ground terminal. You can daisy-chain the power and neutral, and bond the normal ground wire(s) to outlet boxes in the normal way, but the actual ground for the outlet (the round hole) only connects to its own separate insulated ground wire, and ALL these ground wires ONLY connect to the main grounding bus - hence, the &quot;star&quot; ground. 
+
+I think the Colorado guy ended up running FMC in the same stud holes as the romex, with individual THHN (green insulation) ground wires to each IGR. 
+
+To allow for future upgrades, I would recommend keeping all the wiring for receptacles that could possibly have studio gear plugged into, as a separate sub-system - that way, if you decide in future to change over to a balanced power transformer system, the retrofit will be almost totally painless.
+
+If you don&#x27;t have a code book handy, that 4 page thread has quotes of every applicable current NEC article that exists... Steve</div>
+</article>
+<article class="post" id="p9747">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/aaronw/">Aaronw</a><time datetime="2004-02-14">14 February 2004</time><a class="permalink" href="#p9747" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">OH Boy Steve,
+
+I started reading that thread...Wew!  Curiosity...In a situation of NOT running Romex, but running wire off the spool through the conduit, it appears that 2 ground wires are needed for each box or outlet?  One to attach to the IGR outlet (I think I&#x27;m using the right acronym), and one to the metal outlet box itself.  Did I read that correct on the other forum?  And I&#x27;m assuming that is to &quot;Code&quot;.  Or is it required to ground the box itself?  If grounding the box, I assume it too is run to the same central grounding point (star ground) as everything else?
+
+If there&#x27;s one thing I haven&#x27;t actually done, is read a code book, or done star grounding.  This is still farely new territory for myself.  I&#x27;ve read up on it and researched it some, but the code info, just stirred up some Q&#x27;s...
+
+Aaron</div>
+</article>
+<article class="post" id="p9748">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-14">14 February 2004</time><a class="permalink" href="#p9748" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Here is the gist - standard romex, standard boxes, IGR outlets - wire the box grounds with the included ground in the romex. Wire the hots and neutrals with one romex per box, unless you want max current per outlet in which case you could run one breaker, one duplex outlet. Generally though, putting one 4-plex (or even two) per romex should be fine.
+
+Run FMC bundled with the romex to each box, large enough for proper fill percentage for the wires (code doesn&#x27;t allow you to fill to capacity, there are really convoluted tables to determine how many wires in what size conduit) 
+
+Pull one THHN insulated green wire per duplex outlet, starting at the common star point (the buss at the main panel) and ending at ONLY the isolated ground terminal on the IGR. 
+
+Code states that the separate grounds be run WITH the conductors - reason is that mutual inductance lowers the impedance so that protective devices will trip quickly enough (or at all) 
+
+AS to the conduit (FMC, or Flexible Metal Conduit, otherwise known as &quot;robbie the robot arms&quot;) - this was what lunatic was told by his inspector in Colorado - what the CODE says, is that the wires need to be protected. I still maintain that depending on the inspector, since these will be INSIDE walls, that putting the metal protector plates over the studs where the wiring goes through should be enough. All the code states is that they will be protected. 
+
+However, as in all gestapo (oops, I mean building inspections) the inspector is the final authority, so it pays to be respectful and not argue too much.
+
+I haven&#x27;t had occasion (yet) to test this, but my thoughts are that you should be able to tie wrap the bundle of ground wires alongside the romex, and use the little metal shields over wood studs where the wires penetrate - for metal studs, you would need grommets through the studs when using romex - not for the metal conduit (although I&#x27;d pad it some way, for rattle elimination) - supposedly not ALL local codes allow using romex with steel studs, so check with your local gestapo on this.
+
+Whoops, sorry Aaron - I just re-read your question, re using separate wires in CONDUIT - for that, you can daisy chain power, neutral, and equipment ground per code (just like wiring romex) but you would need separate insulated ground wires from star point to each IGR. NO bare wires, the goal is NOT having any possibility of ground current. This means no complete circuits or loops. 
+
+Hope that helped... Steve</div>
+</article>
+<article class="post" id="p9750">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/aaronw/">Aaronw</a><time datetime="2004-02-14">14 February 2004</time><a class="permalink" href="#p9750" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Steve, 
+
+I just reread a post you made on RO.  Here is your quote...
+<blockquote class="bb-quote"><div class="bb-quote-body">A better (more time consuming, slightly less expensive) way would be to run your Romex in the normal way (daisy chaining) but DON’T CONNECT the Romex’ ground to your BOXES (if they’re metal) or to your receptacles - Then, for the ground, run separate (Insulated, green) wires from the panel ground to each of your outlets, with NO DAISY CHAINING - Connect these green wires to the grounding screw, using a SEPARATE WIRE all the way from the panel ground to EACH OUTLET’s green terminal.</div></blockquote>I think this may have answered my question.  In reading that same post (still reading...again)  You were talking about a chart that codes allows only so many wires per size of conduit.  Do you have this chart?
+
+I&#x27;ve only run one set so far.  I have 2 boxes (w/ 2 outlets each) in the floor right behind where the console will go.  I ran the hot and neutral, and will daisy chain those together, and I ran 4 ground wires (one for each outlet) for isolated ground.  As far as I can tell, I shouldn&#x27;t have any issues here.  This about the only one in the control room at the moment that has more than one outlet on one circuit...until I get to the rack power.
+
+Thanks,
+
+Aaron</div>
+</article>
+<article class="post" id="p9754">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/aaronw/">Aaronw</a><time datetime="2004-02-14">14 February 2004</time><a class="permalink" href="#p9754" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Steve,
+
+I just read some more of that thread...What the heck...First no ground on the box.  Now from what I&#x27;ve read, I do need to run even more wires to ground the boxes themselves...Argh...Fortunately it&#x27;s the only one w/ wire, but I&#x27;d have to run a larger conduit for all the ground wires.</div>
+</article>
+<article class="post" id="p9757">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-14">14 February 2004</time><a class="permalink" href="#p9757" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">If you&#x27;re running EMT and using metal boxes, the ONLY way you can get a true star ground is with SEPARATE ground wires and IGR outlets. This is because standard duplex receptacles have their frame and their ground terminals BONDED to each other. 
+
+If you were running romex and using PLASTIC outlet boxes, you could conceivably achieve star ground by daisy chaining the hot and neutrals and NOT using the ground in the romex - then, you would tie separate INSULATED grounds from star point to each duplex receptacle&#x27;s green terminal. By mounting the duplex receptacles in plastic boxes, and being careful NOT to let two duplex receptacles in the same plastic box TOUCH each other&#x27;s frames, and NOT using METAL covers, you could save the cost of the IGR receptacles. Whether it&#x27;s worth the hassle is up to you... Steve
+
+I have the entire NEC 2002 on my laptop, but it&#x27;s temporarily out of the loop - I&#x27;ll try to get that info for you as soon as I can...</div>
+</article>
+<article class="post" id="p9759">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/aaronw/">Aaronw</a><time datetime="2004-02-14">14 February 2004</time><a class="permalink" href="#p9759" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Yes, that all made since.  And really already understood that.  What I was trying to figure out was the &quot;code&quot; issue of grounding the metal box the recepticals are in.  I am using IGR recepticals (just scored a great deal on EBAY...12 recepticals for $15.50 + shipping).
+
+But after further investigation...I have found the answer.  I already knew about the issue of regular outlets and the grounding issues.  Already intended on the IGR&#x27;s.
+
+Uh-oh...Codes/permit guy just called me back.  Hmmm...  Gotta run...</div>
+</article>
+<article class="post" id="p9763">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-14">14 February 2004</time><a class="permalink" href="#p9763" aria-label="Link to post 9">#9</a></header>
+<div class="post-body">One more tip - code doesn&#x27;t specify which end of a duplex receptacle goes up - I tend to put the ground pin on top when given a choice. Reason: if a plug is partially pulled out but still making contact, and something thin (like a screwdriver or razor blade, for example) should be dropped and somehow manage to fall between the plug and the receptacle, I&#x27;d much rather it hit the ground pin and bounce off than to contact the hot and neutral simultaneously...  Steve</div>
+</article>
+<article class="post" id="p9831">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">chunger</span><time datetime="2004-02-16">16 February 2004</time><a class="permalink" href="#p9831" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Steve!
+
+Thanks for that link.  I&#x27;m almost finished putting in all my boxes in my new construction.  I am starting the wiring this week.
+
+Just wanted to get some verification before I proceed. . . I&#x27;m sorry, typically I would read a lot more to verify for myself, but since my timeline is so pushed, I hope you don&#x27;t mind my asking some project-specific questions.  Please let me know if any of my planned steps are off base.
+
+I&#x27;ve upgraded my house service to 200amp.  The existing house is wired into the main panel.
+
+I have a 100amp subpanel already installed in the new construction.  This is where I wish to run all my isolated ground circuits.
+
+My inspector was unfortunately not so keen on the idea of my using cut-in boxes for my outlets so I was forced to use new construction boxes compromising my soundproofing  <span class="smilie" title=":evil:">:evil:</span> . . . I will have to make do and caulk well.  I have installed screw-adjustable depth plastic boxes and will be running Romex.  (Sidenote:  all of my walls are 2x6 and I will be using RSIC-1 clips w/ 2 layers of 5/8&quot; drywall. . . I also will have 2&quot; Thermafiber SAFB on top of normal 3 1/2&quot; R-13 fiberglass inside the walls).
+
+I plan on not needing to chain more than 2 boxes together for any of my isolated outlets. . . so my plan is to use 12/3 Romex for all my dedicated iso circuits and for my other circuits:
+
+12/4 romex to the first outlet and 12/3 romex from that box to the second box in the chain giving me a separate insulated ground wire for each outlet in the chain.
+
+Within the new subpanel, I will be able to place lighting, appliances, etc. on one leg and isolated circuits on the other leg.  I will, however have HVAC and a 220 volt garage feed on this subpanel.
+
+My understanding from reading the links above is that I cannot install a separate grounding rod for my audio circuits only.  I must connect to the main system ground in 1 of these 2 ways:
+
+1.  Connect all my isolated receptical ground wires to my subpanel grounding bar. . . thus achieving star grounding for all critical circuits.
+
+2.  Pull all my isolated ground wires through my subpanel to another nearby &quot;grounding panel&quot; in which I install a separate grounding bar for my isolated circuits. . .then,  run an insulated grounding wire from this grounding bar to my main ground rod.
+
+I do not know which one to do. . . probably #2.
+
+Please let me know if I&#x27;m on the right track.
+
+-&#x27;Chung</div>
+</article>
+<article class="post" id="p9887">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-17">17 February 2004</time><a class="permalink" href="#p9887" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">Electrically, the two methods are virtually identical except for a few milli-ohms resistance in the extra ground wire. Where you continue your ground to the second outlet, will that be in a separate box? And how will you connect the ground from the 12/4 romex to the ground wire in the 12/3? 
+
+The REAL bottom line, as you&#x27;ve already found out, is which way YOUR inspector wants it.... Steve</div>
+</article>
+<article class="post" id="p9909">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">chunger</span><time datetime="2004-02-18">18 February 2004</time><a class="permalink" href="#p9909" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">I was planning on doing it this way. . . 
+
+12/4 romex (from panel to 1st outlet box)
+
+wire 1     hot
+wire 2     neutral
+wire 3     iso ground for box 1
+wire 4     iso ground for box 2
+ground
+
+12/3 romex (from 1st outlet box to 2nd outlet box)
+wire 1     hot
+wire 2     neutral
+wire 3     spliced to wire 4 of 12/4
+ground</div>
+</article>
+<article class="post" id="p9911">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-18">18 February 2004</time><a class="permalink" href="#p9911" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">I&#x27;m not positive you can legally splice grounds that way, or if you&#x27;d want to - I&#x27;ll try to find time tonight (first graveyard shift) to do a code search on this. I also still need to check for wire fill tables, wish me luck on having a &quot;slow night&quot;... Steve</div>
+</article>
+<article class="post" id="p10143">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">chunger</span><time datetime="2004-02-25">25 February 2004</time><a class="permalink" href="#p10143" aria-label="Link to post 14">#14</a></header>
+<div class="post-body">ok,
+
+In light of my lack of  concrete info, I&#x27;ve decided to cut down the number of isolated plugs in my rooms and simply run isolated and dedicated circuits for all the studio plugs. . . that makes life easier.
+
+Downstairs is roughed in. .. now for the upstairs. . .
+
+-&#x27;Chung</div>
+</article>
+<article class="post" id="p10184">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-26">26 February 2004</time><a class="permalink" href="#p10184" aria-label="Link to post 15">#15</a></header>
+<div class="post-body">Sorry about all the delays, my life only seems to know how to get MORE complex - If you&#x27;re using a knowledgeable electrician, they should be able to find that info in the code book unless they BOUGHT their licence from their uncle - it&#x27;s not easy or fast, but it&#x27;s there in the NEC.
+
+If I EVER get enough free time to dig into this, I&#x27;ll put the info up here... Steve</div>
+</article>
+<article class="post" id="p10212">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">chunger</span><time datetime="2004-02-27">27 February 2004</time><a class="permalink" href="#p10212" aria-label="Link to post 16">#16</a></header>
+<div class="post-body">No problem,
+
+I appreciate the amount of work you put into this site and answering all the various questions.
+
+When it comes hammer time, let me know if I can be of any help in one of your ongoing projects.  It&#x27;s a short flight from San Francisco area to the northern west coast. .  .  unless, of course you&#x27;re not actually in Portland area <span class="smilie" title=":)">:)</span>
+
+Construction is going well.  Had a scare because my 3/4&quot; purpleheart floors were at the lumber wearhouse, and they just got flooded yesterday with 1 1/2 feet of water.  Luckily, my floors are 6 ft. in the air on top of other stuff. . . went and checked this morning.
+
+Have a good one,
+&#x27;Chung</div>
+</article>
+<article class="post" id="p10219">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-02-27">27 February 2004</time><a class="permalink" href="#p10219" aria-label="Link to post 17">#17</a></header>
+<div class="post-body">Actually, I&#x27;m about 80 miles south of Portland, just off I-5 - 
+
+I appreciate your offer, even though you have no idea what you&#x27;d be getting into  <span class="smilie" title=":cry:">:cry:</span>  How &#x27;bout if you just buy my neighbot&#x27;s house (don&#x27;t like them anyway) and live next door for the next 5 years or so (+ however long it takes us to do YOUR projects too  <span class="smilie" title=":?">:?</span> ) 
+
+IF I had any sense, I would have either moved or burned the place &quot;accidentally&quot; and started over... Steve</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

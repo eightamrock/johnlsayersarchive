@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finding Bass in a room to decide where to trap it | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by peurhmn in Acoustics, 2018. 5 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21599/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Finding Bass in a room to decide where to trap it</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by peurhmn on 13 May 2018. 5 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21599.</p>
+
+</div>
+</header>
+<article class="post" id="p145781">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">peurhmn</span><time datetime="2018-05-13">13 May 2018</time><a class="permalink" href="#p145781" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hey guys,
+
+Just a basic acoustic question:
+
+In figuring out how to treat the low-end in my room, I&#x27;ve ran across this idea:  Play a &#x27;problem&#x27; frequency (a frequency that peaks in the sweep) as a sine wave, walk around the room and find the places where that frequency is the loudest, and put a trap there.  So, in my room, I&#x27;ve found that the floor-wall intersection of the corners are often 7-10 dB higher than the ceiling-wall intersection.  Does it make sense to double down on the bass trapping on the bottom section of the corners rather than having the same size up and down?  
+
+What if a certain wall also has a higher reading, should more bass traps be on that wall than other walls? Should I follow where the bass &#x27;collects&#x27; with my bass traps?
+
+I&#x27;m guessing the physics of sound is not nearly this simple to actually work, right?</div>
+</article>
+<article class="post" id="p145786">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-05-14">14 May 2018</time><a class="permalink" href="#p145786" aria-label="Link to post 2">#2</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;m guessing the physics of sound is not nearly this simple to actually work, right?</div></blockquote>Actually, it is!  <span class="smilie" title=":)">:)</span>  Well, sort of....
+
+You didn&#x27;t say, but I&#x27;ll assume you are talking about a control room, rather than a live room, and that you need to damp the modal response in the very low end, since it is causing problems.  Room modes ALWAYS terminate in corners.  Simple rule of thumb!  If you want to find the pressure peak node of a mode, go look for it in the corner. It will always be there, for a simple reason: as the wave hits the wall, the velocity component of the wave falls to zero, while the pressure component rises to its peak.  At ever point along the wave, the total energy is the sum of those two different components.  In the exact middle of the room, it&#x27;s the other way around: the velocity peaks, and the pressure nulls.
+
+You can sort of think of it like this:  If you throw a tennis ball against the wall, then it will bounce back.  Exactly at the wall, the ball comes to a complete stop: the velocity of the tennis ball drops to zero, then it picks up again as it bounces off.  At the same time, if you could put a pressure gauge on the front of the ball, you&#x27;d see that the pressure is very low as it approaches the wall, but increases dramatically as the ball hits the wall, then drops down again as it bounces.
+
+Sound waves are pretty much the same.
+
+So far so good: Now for modes: room modes are standing waves, and they exist because of the walls.  A standing wave appears to &quot;stand&quot; precisely because the wavelength matches the distance between the walls. For axial modes, it matches the distance across the room between two walls, for tangential modes it matches the distance for a trip around the room between any four walls (where the ceiling and floor are also considered &quot;walls&quot; for this), and for an oblique mode, it matches the distance for a trip around the room involving all six walls.
+
+Now think this through: if all of those modes are just waves bouncing off walls, then obviously there will ALWAYS be a pressure peak and velocity null at ever single wall, for all of the modes that are associated with that wall!  And since walls just happen to meet in corners, you will find the modes associated with BOTH walls at any given bi-corner (where two surfaces meet), as well as the modes associated with all THREE walls in every tri-corner (where three surfaces meet, such as two walls and the floor).  
+
+Thus, you can ALWAYS find peak modal activity in the tri-corners, which is why they are the best place to put bass traps.  Yes, you can still put bass taps in bi-corners, and they will be effective, but only for modes associated with those two walls.  So if you have a problem with a mode that is developing between the floor and ceiling, then it would be pointless to treat it with a bass trap in the corner between the front wall and left side wall: the vertical mode never &quot;sees&quot; that corner.  But it DOES see the corner between the ceiling and the side wall, so you could put your trap there.  And yes, you can also still put a bass trap in the middle of a wall, but it will ONLY work for modes that are associated with that specific wall.  So a trap on the middle of the left wall won&#x27;t do anything for vertical modes (ceiling-floor), nor for front-back axial modes: it will only work for side-to-side modes.
+
+Now for the kicker:  Yes you can walk around the room and listen for the peak, and that will help you identify which mode you are dealing with... but!!!!  Your ears are sensitive to the sound PRESSURE component of the wave. not the VELOCITY component... but porous absorption (such as insulation) acts son the VELOCITY component, not the pressure component....  So putting insulation where you hear the peak is not going to do much, since insulation does not affect the aspect of the wave that you can hear.  If you want to damp a problem with maximum effect, you should put the insulation where the velocity peak is, not where the pressure peak is.  IF you walk around the room listening for the NULL, where you hear the sound quietest, that&#x27;s where the velocity peak is located, so that&#x27;s where the insulation would be most effective.  However.... that&#x27;s normally out in the middle of the room somewhere!  Fortunately, you don&#x27;t have to get the insulation in the exact peak: it is still effective anyplace there is decent velocity, and that can be even quite close to the wall or corner.  The other option is to use a pressure-based trap, such as a Helmholtz resonator, or a membrane trap, at the pressure peak.  The disadvantage of those is that they are hard to tune to the correct frequency, whereas insulation is broadband and therefore absorbs at all frequencies.  And that, in turn, is another problem: If you use bare insulation, it will absorb everything, even the stuff that you didn&#x27;t want to absorb, so you will need to take precautions to prevent that from happening.
+
+Sorry for the long rant, but your question is actually very simple, but far more complex than you&#x27;d think at first sight!
+
+So where should you treat your room?  Assuming it&#x27;s a control room, and you are following a modern design concept such as RFZ, CID, NER, or similar, then the rear wall is your best friend: trap the hell out of it.  If that isn&#x27;t enough, then add bass trapping in the front tri-corners, followed by the wall-ceiling corners.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p145790">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">peurhmn</span><time datetime="2018-05-14">14 May 2018</time><a class="permalink" href="#p145790" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Thanks Stuart!
+<blockquote class="bb-quote"><div class="bb-quote-body">Yes you can walk around the room and listen for the peak, and that will help you identify which mode you are dealing with... but!!!! Your ears are sensitive to the sound PRESSURE component of the wave. not the VELOCITY component... but porous absorption (such as insulation) acts son the VELOCITY component, not the pressure component.... So putting insulation where you hear the peak is not going to do much, since insulation does not affect the aspect of the wave that you can hear.</div></blockquote>That&#x27;s my answer right there!  So, finding the spots in the room that have the highest pressure only tells you what mode is the strongest, not where you should specifically place your absorption.  Good to know.  
+
+Two questions, and I know you cover a lot of this forum, Stuart, so no worries if you don&#x27;t get to these, but:
+
+1. Is there a reason why a concrete floor (basement studio) and a drywall ceiling would cause the situation described  - - where the sound pressure is loudest on the floor/wall intersection of the corner? Or does that difference in densities have no effect on specific mode strengths?
+
+2. Like many musicians/composers, I have only one room to do all my recording, tracking, mixing and mastering, so, you can call this a control room moonlighting as a live room.  Are there any nuggets of wisdom in how to approach sound treatment in this type of situation? (I don&#x27;t feel like this issue is addressed that much in forums, when it&#x27;s a very common situation) I obviously want a good mixing environment, but would like to do what I can to make instruments (mainly acoustic string instruments, hand percussion) sound decent in the same space.  
+
+That last question should probably be on a different section of the forum, but while I have you here  <span class="smilie" title=":lol:">:lol:</span>  
+
+Thanks again!</div>
+</article>
+<article class="post" id="p145793">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-05-14">14 May 2018</time><a class="permalink" href="#p145793" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body"> So, finding the spots in the room that have the highest pressure only tells you what mode is the strongest, not where you should specifically place your absorption. Good to know.</div></blockquote>Right!  It would be the ideal spot to put a pressure-based device, such as a membrane trap for example, but not so ideal for a velocity based device.  However, as I mentioned, even though it&#x27;s not ideal, you can still get usable performance out of insulation placed close to walls / corners, for other reasons.  One of those is &quot;angle of incidence&quot;.  Waves don&#x27;t just approach the wall head on: after having bounced around the room a bit, waves are approaching at many angles.  Ideally, they would be approaching at all angles, evenly, and that is refereed to as &quot;random incidence&quot;.  Randomly incident sound does not behave the same way as normally incident sound... <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">1. Is there a reason why a concrete floor (basement studio) and a drywall ceiling would cause the situation described - - where the sound pressure is loudest on the floor/wall intersection of the corner? Or does that difference in densities have no effect on specific mode strengths?</div></blockquote>It&#x27;s possible yes, if the ceiling is not very good, for example.  In other words, if the ceiling happens to be partially transparent to that frequency, or even absorptive of that frequency, then you could indeed notice it more at the floor/wall interface tahn the other &quot;end&quot;, which is the ceiling/wall interface.
+<blockquote class="bb-quote"><div class="bb-quote-body">2. Like many musicians/composers, I have only one room to do all my recording, tracking, mixing and mastering, so, you can call this a control room moonlighting as a live room. Are there any nuggets of wisdom in how to approach sound treatment in this type of situation? (I don&#x27;t feel like this issue is addressed that much in forums, when it&#x27;s a very common situation) I obviously want a good mixing environment, but would like to do what I can to make instruments (mainly acoustic string instruments, hand percussion) sound decent in the same space. </div></blockquote>I have mentioned this a few times before, since a lot of people have the same problem. 
+
+So first, the bad news:  Tracking / rehearsing has a very, very different set of acoustic needs from mixing / mastering, and it is impossible to have one single set of fixed treatment that works equally well for both.  Let&#x27;s start with the later scenario: mixing / mastering.  For that, you need to have totally neutral acoustics, such that the room does not &quot;sound&quot; like anything!  It &quot;sounds&quot; like it isn&#x27;t there.  It sounds natural, neutral, transparent.  There&#x27;s a document called &quot;ITU BS.1116-3&quot; (google it) that defines the ideal acoustic specifications for a &quot;critical listening room&quot;, which is exactly what you need for a control room (mixing/mastering).  BS.1116 defines exactly how the room must behave, acoustically, in order to provide the environment that is needed for critical listening.  &quot;Critical Listening&quot; is exactly what you are doing as you sit at your console, putting together a mix, and even more so as you master a mix.  You need to give your ears and brain that perfect environment that they need in order to accurately discern what the frequency response, time-domain response, directionality, sound-stage, stereo image, and every other aspect of the DIRECT sound really us, exactly as it comes out of the speakers, and WITHOUT the room modifying that in any way.  So the room must not add anything to the direct sound, and it must not take anything away: it must not &quot;color&quot; that sound at all.  The acoustic response of a properly treated control room should be totally neutral, flat, and uninteresting.  Here&#x27;s what that acoustic response looks like when the room is done: <strong><em> <a href="/t/20471/">viewtopic.php?f=2&amp;t=20471</a>  </em></strong>and here&#x27;s what it looks like while the tuning process is in progress (right now!  Current situation today of a control room being treated) : <strong><em> <a href="/t/21368/">viewtopic.php?f=2&amp;t=21368&amp;start=0</a> </em></strong>  .
+
+So that&#x27;s great!  Control rooms must be neutral, and have no sound of their own.  But LIVE rooms, for tracking / rehearsing / composing are very different!  They MUST have a sound of their own!  A live room has to be... well.... LIVE!  It has to have life, and character, and be interesting, and have &quot;vibe&quot;, and be pleasant for musicians to play in, and enhance the sounds of the instruments, providing &quot;warmth&quot; and &quot;air&quot; and &quot;mellowness&quot;.  It CANNOT be neutral!  A neutral room sounds dull, lifeless, not very interesting ... not a good place at all to track.
+
+So there&#x27;s the problem:  The room you need for tracking is very different from the room you need for mixing.  Hugely different.  Tracking in a neutral room sounds dull.  Mixing in a live room is next to impossible.  About the only things you can track succesfully in a control room, are vocals and maybe acoustic guitar.  Anything else just sounds &quot;off&quot;.
+
+Thus, my original statement that you cannot treat a room with fixed treatment to be good for both tracking and also mixing.
+
+&quot;So!&quot;, you think: &quot;No problem!  I&#x27;ll just tune my room half way in between!  A mixture of both live room and also control room treatment!&quot;.  However, if you did that then the result would be a room that sucks for both!  It would be lousy to track in AND ALSO lousy to mix in!  No good for either.  Sort of like trying to decide if you want a milkshake or a steak for lunch, then figuring you&#x27;ll compromise, so you dump all the ingredients for both in a blender for 5 minutes, then pour the result on your grill and cook at 180° for 20 minutes ..... You end up with a disgusting mess that is not at all like a milkshake, and not at all like a steak dinner!
+
+So what can you do?  Well, the answer is &quot;variable acoustics&quot;.  Instead of fixed treatment that produces only one result, you make  panels that can be flipped, slid, rotated, opened, close, angled, and otherwise adjusted in any of several ways, to change the acoustic response of the room.  Some panels might be absorptive on one side and reflective on the other.  Or perhaps broadly diffusive on one side, but narrowly tuned on the other.  Etc.  The combination of all those would provide the acoustic response needed for a live room in one configuration, and the response needed for a control room in another configuration, plus you also have the benefit of a large range in between those two extremes, so you can cover a multitude of specific cases, and even get creative for tracking unusual things:  &quot;What happens if I track Tibetan cow bells with everything set to diffusion?  And with everything set to absorption?&quot;.
+
+So that&#x27;s my long, waffling response to your question, for what it&#x27;s worth.
+
+Of course, designing such treatment is a LOT more difficult than designing either a live room or a control room!  And ore expensive too.  But it does work, and is a viable solution.  Here&#x27;s variable-acoustic device I designed for one of my customers a few years ago, for a general-purpose small tracking room:
+<div class="bb-attachment-missing">Image not preserved: Variable-acoustic-01--panels--construction--half-open-SML.jpg</div><div class="bb-attachment-missing">Image not preserved: Variable-acoustic-02--panels--construction--fully-open--SML-ENH.JPG</div><div class="bb-attachment-missing">Image not preserved: Variable-acoustic-03--partly-completed--SML-ENH.jpg</div><div class="bb-attachment-missing">Image not preserved: Variable-acoustic-04--room--completed--SML-ENH.jpg</div>
+And here&#x27;s the results, showing how the acoustic response changes with the panels in various positions.  Not a huge change in this case, but it does what it is supposed to do.  The room goes from a bit &quot;dull&quot; with one configuration, to a bit &quot;live&quot; with another.  This is a vocal booth / guitar both mainly, so there effect does not need to be dramatic.  For your case, it would need to be more drastic.
+
+
+-  Stuart  -
+<div class="bb-attachment-missing">Image not preserved: variable-acoustic-05--acoustic-rt60-plots-all-positions-t20.jpg</div></div>
+</article>
+<article class="post" id="p145795">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">peurhmn</span><time datetime="2018-05-14">14 May 2018</time><a class="permalink" href="#p145795" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Ok, cool.
+
+Based on your solution for your client above, it looks like when it is in &#x27;live&#x27; mode it is allowing the high/mids to be reflected back with the wood paneling, but still controlling for bass with what I assume is a slot resonator (?)  Am I to assume that absorbing low-freq is good for both live and control rooms? It&#x27;s the high and mids that really make a room feel &#x27;live&#x27;?
+
+In this case, I wonder if it makes sense to have some acoustic panels that are removable.  Especially 1st reflection points from the speakers, ones that might not be absorbing much of the bass.  Maybe when I know I&#x27;ll be doing a lot of mixing, I have them up, when it&#x27;s time to live track some instruments, I take them down.  Also, I feel like I&#x27;ve heard of people bringing in a big piece of wood to lay down when recording, to get that reflection. 
+
+Thanks again!</div>
+</article>
+<article class="post" id="p145834">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-05-17">17 May 2018</time><a class="permalink" href="#p145834" aria-label="Link to post 6">#6</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Based on your solution for your client above, it looks like when it is in &#x27;live&#x27; mode it is allowing the high/mids to be reflected back with the wood paneling, but still controlling for bass with what I assume is a slot resonator (?) </div></blockquote>Something like that, yes.  When fully open, the bass trap part is also double the &quot;closed&quot; thickness.  And yes, that is a slot resonator.  I call it a &quot;slotted wedge&quot;, but the original concept is pure John Sayers. John has been doing that style for years, with great success.  I just borrowed the idea, and the I re-tune it as needed for each studio.
+<blockquote class="bb-quote"><div class="bb-quote-body">Am I to assume that absorbing low-freq is good for both live and control rooms? </div></blockquote>In general, yes.  Pretty much all small rooms need some type of bass trapping.  Larger rooms might need less.  But for control rooms, it is critical to control the bass with high precision.  Here&#x27;s an example of a control room where the bass was controlled to the extreme: <a href="/t/20471/">viewtopic.php?f=2&amp;t=20471</a>  And here&#x27;s a control room that is currently in the process of being tuned:  <a href="/t/21368/">viewtopic.php?f=2&amp;t=21368&amp;start=0</a>  As you can see on that second thread, the very first thing I went after was the bass.  And we&#x27;ll continue to go after that with the remaining treatment.  We should be able get it fairly flat under 150 Hz, which is the most critical area.
+<blockquote class="bb-quote"><div class="bb-quote-body">It&#x27;s the high and mids that really make a room feel &#x27;live&#x27;?</div></blockquote>Weeelllll.... yes, sort of, mostly, but not completely.  It&#x27;s more complex than that.  The overall acoustic &quot;signature&quot; of the room is governed by the room volume and dimensions.  You can make the room very reflective in the high end, but it still won&#x27;t sound as &quot;live&quot; as a larger room, simply because of the size.  That&#x27;s why small vocal booths always sound &quot;boxy&quot;, no matter how much glass and wood you put on the walls.  The overall frequency response is cast in stone by the dimensions of the room, and there is NOTHING you can do about that with treatment.
+<blockquote class="bb-quote"><div class="bb-quote-body">In this case, I wonder if it makes sense to have some acoustic panels that are removable.</div></blockquote>It&#x27;s possible, yes, but that&#x27;s a huge pain to have to drag panels in and out all the time.  Plus, they are rather large, so you need some place to store them when they are not in the room.  It makes more sense to build panels that stay in place, but are variable in some sense.  The one I showed above is only one of many, may ways of making a panel provide variable response.
+<blockquote class="bb-quote"><div class="bb-quote-body">Also, I feel like I&#x27;ve heard of people bringing in a big piece of wood to lay down when recording, to get that reflection. </div></blockquote>That&#x27;s for the case of very poorly designed studios that have carpeted floors.  High-end studios only have REFLECTIVE floors: take a look at photos of leading studios around the world, in the big magazines... and here on the forum too.  For psycho-acoustic reasons (and other reasons too), floors should be hard, solid, rigid, massive, and very reflective.  If you have carpet on the floor, that really messes with the sound.  So for those places that did somehow end up with carpeted floors, yes, bringing ina big sheet of plywood and plonking that down over the carpet is one way of diminishing the ugly sound caused by the carpet.  But once again, that&#x27;s a big pain, to have to drag in a huge sheet of thick plywood, then drag it out again!  Much better to just build your room correctly from the start, WITHOUT carpet.
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

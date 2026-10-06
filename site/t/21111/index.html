@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theoretical Absorption Question | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by digi001 in Acoustics, 2017. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21111/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Theoretical Absorption Question</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by digi001 on 15 June 2017. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21111.</p>
+
+</div>
+</header>
+<article class="post" id="p142595">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">digi001</span><time datetime="2017-06-15">15 June 2017</time><a class="permalink" href="#p142595" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I have a Theoretical Absorption Question to give me more perspective of what it means. I sometimes get confused between absorption and isolation. (although I know the basic differences, so please no lectures on this if possible... stick to directly answering the question)
+Also just for reference: Yes I already have the standard textbooks by Everest and Gervais and have read them as well as many Ethan Winer articles. I still want to ask dumb questions if that is ok, that&#x27;s how I learn.
+
+--------------------------------------------
+
+Picture we are downstairs in my finished basement.....
+
+There is a standard construction room built (drywall, 2x4 studs) that is floating/levitating in the air 5 inches above the ground. It has no electrical/no HVAC/no door. It is then completely surrounded by a solid piece of 4 inch of Owens Corning 703.  
+Fiberglass board (100mm(4&quot;) thick) 0.99 0.99 0.99 0.99 0.99 0.97 @125 Hz 250 Hz 500 Hz 1 kHz 2 kHz 4 kHz.
+
+Someone is playing a loud drumset inside the room. Do the coefficients say that we will be able to hear practically nothing just outside this theoretical room? Are these absorption coefficients related to isolation in that way?</div>
+</article>
+<article class="post" id="p142596">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-06-15">15 June 2017</time><a class="permalink" href="#p142596" aria-label="Link to post 2">#2</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Do the coefficients say that we will be able to hear practically nothing just outside this theoretical room?</div></blockquote>No.
+<blockquote class="bb-quote"><div class="bb-quote-body">Are these absorption coefficients related to isolation in that way?</div></blockquote>Not directly, no.  They are only related rather indirectly, when the absorption is used as part of an isolation system, but not when used alone in the manner you describe in your hypothetical situation.
+
+First, coefficients of absorption are NOT percentages, so a coefficient of 0.83 does not mean that the sample absorbs 83% of that frequency.  It simply means that it absorbs a factor of 0.83 as compared to the reference unit, which is 1 sabin, and which I explained in another thread for you yesterday.  To understand this, you need to take a close look at Sabine&#x27;s equation, and see what it actually says: it&#x27;s all about RT60, and has nothing at all to do with stopping sound from getting through.
+
+If it were true that coefficients are percentages, then the Owens Corning OC-700 product line must clearly use magic and voodoo:
+<div class="bb-attachment-missing">Image not preserved: oc-703-coefficient-graph.jpg</div>According to that, which is a real and valid test result, this product absorbs 124% of all sound at 500 Hz!  Clearly, that is impossible.  You cannot absorb MORE sound than is present, and that&#x27;s not what the number means anyway
+
+These coefficients are NOT related to total absorption: they are related to reduction in decay times as compared to a standardized reference.  So what that number actually means, is simply that the product under test absorbed a factor of 1.24 times better than the reference unit, at 500 Hz.
+
+But there are other issues too:  Those numbers are measured in acoustical test laboratories in a manner that allows the result to be greater than one, even if you could test the actual standard reference unit (which in reality can&#x27;t be tested either, but that&#x27;s another story...). The test goes like this, basically:  You lay out a large sample of the product on the floor of the test chamber, then you play a series of sounds in the room, and measure how much of each sound that sample absorbed, as compared to the empty room with no sample in it.  But what you are actually measuring, is decay times, since the test itself is measuring sabins of absorption, and 1 sabin of absorption is a measure of RT60 decay rate, as you can clearly and obvisoulsy see form the Sabine equation.  So what you <em>actually </em>measure, is how well your test sample reduced the decay time in the room at each of your test frequencies, as compared to the theoretical prediction for a theoretical product sample that would provide 1 sabin of &quot;decay time reduction&quot; at that same frequency, adjusted for the size of the sample as compared to the size of the theoretical but non existant 1 sabin test unit.  That&#x27;s all.
+
+Now, here&#x27;s where it gets interesting:  Since the test itself assumes that there is a uniform reverberant field in the room (which, as you already learned yesterday, can ONLY be achieved in large rooms, NEVER in small rooms, no matter how much you wish it), and since the presence of the test sample in the room PREVENTS the field from being uniformly reverberant, just by its presence, it is entirely possible for the test to show a coefficient of greater than 1.  The reason is that the test assumes uniform sound field, but the sample itself distorts the sound field, so the sample can appear to be larger than it really is.  This is known as the &quot;edge diffraction&quot; effect.  A simple-but-not-really-accurate analogy is pulling the plug in your bathtub (without any trout in it!).  Let&#x27;s say the area of the plug hole is one square inch, but as soon as you pull the plug and the water starts flowing, you&#x27;ll see that it is affecting an area much larger than one square inch: for a radius around the plug, you can visually see that the water level is &quot;funneled&quot; downwards towards the hole.  If you were to measure what area of water surface is affected, and compare that to the actual area of the plug hole, you might come to the conclusion that the plug hole has a coefficient of absorption of 2.7, since it &quot;absorbs water&quot; over an area that is 2.7 times greater than its own area.  So even though the actual area of the hole is one, it BEHAVES as though it had an area of 2.7.  (I just invented that number as an example!  I have no idea what it would really be for a typical bath and plug hole: it&#x27;s just an illustration, so please don&#x27;t take that as representing actual baths and actual plug holes!)
+
+Ditto with the absorption coefficient tests:  all that the coefficient of 1.24 in the above graph is telling you, is that sample under test behaves as though it were 1.24 times bigger than the reference sample, at that frequency.  In other words, it reduces the decay rate by a factor of 1.24 times better than a the same size reference sample would, at that frequency.  Or another way of looking at it: it reduces the decay rate exactly the same as a theoretical reference sample that is 1.24 times bigger than itself.  So if the area of the test sample was 10 square meters, for example, then what the 1,24 number means, is that it is absorbing as much as a 1 sabin reference sample of 12.4 square meters would absorb, for that 500 Hz tone.  Or that it provides 1.24 sabins o absorption for every square meter of surface area (since the reference sample would only provide 1 sabin per square meter).  There are many ways of looking at this, but none of them involve stopping sound.
+
+Nothing at all to do with how much sound it actually absorbed, as an absolute measurement.  It&#x27;s all relative.  It&#x27;s all about decay time reduction measurements under laboratory test conditions, and not about &quot;blocking&quot; sound from getting through.  The sound still gets through, rather well in fact.  If the sound did not get through the sample, then it could not be absorbed, and the coefficient would be much LOWER than 1!  The very fact that the coefficient is greater than 1, indicates that the sample allows sound to get through it quiet well.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p142601">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">digi001</span><time datetime="2017-06-15">15 June 2017</time><a class="permalink" href="#p142601" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Interesting, ok thanks for this! I will ponder some more.
+
+Stuart, where is your tip jar?
+ <span class="smilie" title=":)">:)</span> 
+
+Ok, can we consider for a second the 4 inch Fiberglass Coefficients from Sayer&#x27;s chart (which what fiberglass is this referring to by the way? seems better than the chart you posted on 703)
+<a href="http://johnlsayers.com/Recmanual/Pages/Coefficient%20Chart.htm" rel="nofollow noopener" target="_blank">http://johnlsayers.com/Recmanual/Pages/ ... 0Chart.htm</a>
+This is a more &#x27;perfect&#x27; absorber (or I should say comparatively closer to 1 sabian)
+
+------------------
+
+So the perspective of the coefficient chart has more to do with what is bounced back into the room, rather than what escapes? That is more clear now.
+But how would the material just outside of the 4 inches of fiberglass effect the numbers of the chart? You are saying it has no influence, correct?
+
+If there was a layer of concrete (almost purely reflective material) wrapped around the 4 inches of fiberglass, this would have no influence on what is bounced back into the room, in the practical sense? 
+Essentially the sound (in worst case) has 2 trips through an absorption material in a practical room. If it hits a purely reflective material just outside the absorption then its 1 trip going in, and 1 trip coming back? And still this chart would say it is still purely absorptive and in practice? (This would measure an RT60 of 0?) 
+
+Would this mean that if the absorption material was doubled (now 8 inches) it should completely absorb AS WELL AS completely isolate it from outside? or is there no connection there?
+
+-------------------
+
+I guess overall I will think more about the test you described when looking at the charts. That was the best info for me to put into perspective.</div>
+</article>
+<article class="post" id="p142605">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-06-16">16 June 2017</time><a class="permalink" href="#p142605" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">If there was a layer of concrete (almost purely reflective material) wrapped around the 4 inches of fiberglass, this would have no influence on what is bounced back into the room,</div></blockquote>Of course it would, because that&#x27;s how the test is done!  The test chamber is basically a concrete bunker, highly reverberant across the entire spectrum, down to lowish frequencies.  It can only conduct tests down to the frequency where the room no longer has a statistical reverberant field, because obviously, trying to measure revbereance where there is none would be silly.  (Just like trying to play drums in a room that does not have a reverberant field at the frequencies where drums need it, for example).  So the test chamber has to be large in order to be able to actually have a response at lowish frequencies (in other words, the walls have to be far enough apart that there can be multiple modes at all frequencies of interest), and the room as to be highly reverberant, built with very solid, very massive, very rigid, very reflective walls, floor and ceiling.  The best material for doing that, is concrete.  
+
+One test is done with the room totally empty, to record the reverberant response of the room all by itself, then the sample is placed on the floor of the room, covering enough area to produce a usable response, and the test is repeated, to see what changed.  The difference between the two tests is used to do the calculations that then end up as the coefficients of absorption.
+
+So since the test itself is done with the sample sitting on the concrete floor, then the test results do, in fact, depend on reflections from the floor.  The floor has a large influence on the results.  If there were no floor at all under the sample (levitated in mid air), then there would be no reverberant field to measure, either with or without the sample!  The floor is partly responsible for CREATING the reverberant field, so it has an enormous influence on the results.
+
+(That said, there are several test protocols among the ASTM C423 standardized procedure for this, and some of them do allow the sample to be placed a certain distance away from the floor.  the E-405 notation, for example, is for testing the sample when there is an air gap of 405 millimeters between the sample and the floor, while the &quot;A&quot; notion is for having the sample directly on the floor, with no air gap at all.  So do mae sure you are comparing apples to apples when looking at absorption coefficients.  E-405  causes the sample to appear to absorb down to lower frequencies than A.)
+<blockquote class="bb-quote"><div class="bb-quote-body">Essentially the sound (in worst case) has 2 trips through an absorption material in a practical room.</div></blockquote>Correct, yes, but don&#x27;t forget that this is a reverberant field we are talking about here, fully diffuse, fully even, so there are multiple paths that sound takes through the sample, each one at a different angle and of a different path length.  The shortest path is for normally incident sound, and the longest path is for grazing incidence.
+<blockquote class="bb-quote"><div class="bb-quote-body">If it hits a purely reflective material just outside the absorption then its 1 trip going in, and 1 trip coming back?</div></blockquote>In theory, but it could be more if there are internal reflections taking place inside the sample, due to impedance mismatches or diffraction, or refraction, or whatever.  The minimum number of paths that any sound could take is one, and there&#x27;s really no limit on the maximum number.  But assuming that each wave takes about 2 trips is about right.
+<blockquote class="bb-quote"><div class="bb-quote-body"> And still this chart would say it is still purely absorptive and in practice?</div></blockquote>No, it is not purely absorptive.  The coefficients do not mean that.  A coefficient of one simply means that the sample showed the exact same behavior as an equivalent sample that has 1 sabin of absorption would show, at that frequency.  There is no such think as &quot;purely absorptive&quot;, just as there is no such thing as &quot;purely reflective&quot;.
+<blockquote class="bb-quote"><div class="bb-quote-body">This would measure an RT60 of 0</div></blockquote>No.  An RT60 time of zero is impossible, since that would imply that the sound wave was actually moving at the speed of light!  <span class="smilie" title=":)">:)</span>  It takes a certain finite time for the sound wave to get through the sample, and get back out again.  That time depends on many factors, including the speed of sound in the air inside the room, the speed of sound inside the sample (which will practically always be slower than in air, since the sample itself changes the way air deals with heat from adiabatic to isothermic), the path length in air, the path length in the sample, etc.  There will always be a finite RT60 time for any room that has walls around it.  RT60 = 0 implies that no time at all passed from the instant the sound wave was generated until it was completely gone, and of course that is impossible.  Air itself makes that impossible.  There will always be a reverberant field in any room, and all that you are measuring with these tests is how the sample changed that reverberant field.
+<blockquote class="bb-quote"><div class="bb-quote-body">Would this mean that if the absorption material was doubled (now 8 inches) it should completely absorb AS WELL AS completely isolate it from outside?</div></blockquote>Nope!  Because there is no such thing as &quot;completely absorbed&quot;, and you still have not grasped that this testing method does not even test absolute absorption!  It only tests absorption <span class="bb-u"><em>COEFFICIENTS </em></span>, and even then only with reference to a theoretical reference sample of 1 sabin.
+
+In other words, you are not measuring how fast your car is ACTUALLY going, relative to the road.  You are measuring how much faster or slower it is going than a hypothetical &quot;standard&quot; car would go on the same road.  That&#x27;s all.  The test tells you nothing at all about the road, or your absolute speed.  Only the difference in speed relative to another car.
+
+So if you wanted to know how an 8&quot; thick sample behaves, then you would have to take such a sample into the test chamber, and test it.
+<blockquote class="bb-quote"><div class="bb-quote-body">or is there no connection there?</div></blockquote>No, there is no direct connection.
+<blockquote class="bb-quote"><div class="bb-quote-body">Ok, can we consider for a second the 4 inch Fiberglass Coefficients from Sayer&#x27;s chart</div></blockquote>I prefer to look at the actual measured data published by the manufacturers, as tested in independent, reputable acoustic testing facilities.  Here&#x27;s such a table from Owens Corning, about there 700 product line:
+<div class="bb-attachment-missing">Image not preserved: OC-703-specs.jpg</div>That comes from page 26 of the rather complete design guide that Owens Corning has published, regarding their products for acoustic wall insulation.
+<blockquote class="bb-quote"><div class="bb-quote-body">(which what fiberglass is this referring to by the way?</div></blockquote>Generic fiberglass, I assume.  A very rough approximation, taken from many sources. 
+<blockquote class="bb-quote"><div class="bb-quote-body">seems better than the chart you posted on 703)</div></blockquote>I posted a graph, not a chart, since it is often easier to interpret when you have a clear visual representation.  I provided one single graph for one single product to illustrate the point that it is entirely possible and valid and correct  to have coefficients greater than 1.  I did not post anything else, since it was not necessary to illustrate that specific point.  But if you want more complete data about a whole bunch of spe, Bob Golds has a very complete set on hos website:  <a href="http://www.bobgolds.com/AbsorptionCoefficients.htm" rel="nofollow noopener" target="_blank">http://www.bobgolds.com/AbsorptionCoefficients.htm</a>  That&#x27;s the best compilation of data that I know of, currently.
+<blockquote class="bb-quote"><div class="bb-quote-body">So the perspective of the coefficient chart has more to do with what is bounced back into the room, rather than what escapes?</div></blockquote>No.  It has to do with the absorption of specific third-octave frequency bands as compared to the theoretical absorption of an equivalent area of a hypothetical sample that provides 1 sabin per square meter of absorption.
+
+It&#x27;s a hard concept to get your head around, I know.  And very confusing!  But it you think this is complex, wait until you try to understand coefficients of diffusion... <span class="smilie" title=":ahh:">:ahh:</span>   <span class="smilie" title=":)">:)</span> 
+
+
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

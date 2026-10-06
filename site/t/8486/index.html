@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mass per unit Area | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Ponch in Acoustics, 2007. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/8486/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Mass per unit Area</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Ponch on 26 March 2007. 6 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 8486.</p>
+
+</div>
+</header>
+<article class="post" id="p59526">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Ponch</span><time datetime="2007-03-26">26 March 2007</time><a class="permalink" href="#p59526" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Ok, I know.  I rarely post just - hit you up with some weird questions now and again so here&#x27;s another one.  
+
+Can anyone find a list of materials and their respective area densities?  I&#x27;ve been googling and wikipediaing for the last I dunno how many hours and can&#x27;t find a list.  Not even any of the manufacturers I&#x27;ve gone to have the kg/m^2 listed in their specs.  (Although, many of the list bulk density.)  
+Follow-up question:  Can you convert (kg/m^3) to (kg/m^2) by taking the cube root and squaring it?
+
+Why do I need to know?  I&#x27;m writing a program I hope to share with you guys that will do a number of things for small room design.  The standard I&#x27;ve found requires that the calculations for the transmission loss of a partition and subsequently the sound transmission class (bah...)  include the mass per unit area of the partition.  Thus, I need a list, if there is one, of materials and their respective masses per unit area.  If I can&#x27;t find it I&#x27;ll take the easy way out and use the empirical data I&#x27;ve found in a few studies but having the program run the calculations for you would, in my mind, be much better.
+
+Apologies for the length,
+Ponch.</div>
+</article>
+<article class="post" id="p59536">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2007-03-26">26 March 2007</time><a class="permalink" href="#p59536" aria-label="Link to post 2">#2</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Ponch wrote:</div><div class="bb-quote-body"> Follow-up question:  Can you convert (kg/m^3) to (kg/m^2) by taking the cube root and squaring it?</div></blockquote> <span class="smilie" title=":)">:)</span>  You just multiply the kg/m3 with the thickness expressed in <strong>m</strong>
+
+Hence: 
+a panel of 12.5 mm = kg/m3 x 0.0125
+a wall of 20 cm = kg/m3 x 0.2
+
+Search for:
+&quot;density different materials metric&quot;
+which results e.g. in:
+<a href="http://www.simetric.co.uk/si_materials.htm" rel="nofollow noopener" target="_blank">http://www.simetric.co.uk/si_materials.htm</a>
+
+But you still have to be careful:
+Gypsum board depending on type and brand can vary from 680 to 1075 kg/m3 (maybe wider).
+A brick wall can vary a lot in density.
+Wood can differ a lot between types. (there are also sub-links in the above link)
+
+And so on ........
+
+Eric
+
+PS: and if you find a standard: refer clearly in your calculation document to this and possible additional other sources.
+.</div>
+</article>
+<article class="post" id="p59579">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ro/">Ro</a><time datetime="2007-03-27">27 March 2007</time><a class="permalink" href="#p59579" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">yup. basic math <span class="smilie" title=":)">:)</span>
+m3 is 1mx1mx1m
+
+for example:
+Gypsum has a density of about 800kg/m3, just like MDF
+a 12,5mm (12,5 x 10-3 m) gypsum board than has a density of 800/1000*12=10kg/m2
+a 15mm MDF board has a density of 800/1000*15=12kg/m2
+
+<span class="smilie" title=":)">:)</span></div>
+</article>
+<article class="post" id="p59581">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2007-03-27">27 March 2007</time><a class="permalink" href="#p59581" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Ro wrote:</div><div class="bb-quote-body">yup. basic math <span class="smilie" title=":)">:)</span>
+m2 is 1mx1mx1m</div></blockquote> <span class="smilie" title=":mrgreen:">:mrgreen:</span> Ro,
+
+Just teasing, I know here&#x27;s just some typo.
+But as you wrote it here, it&#x27;s indeed basic math (????), a bit toooo basic.
+
+ <span class="smilie" title=":)">:)</span></div>
+</article>
+<article class="post" id="p59618">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Ponch</span><time datetime="2007-03-27">27 March 2007</time><a class="permalink" href="#p59618" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Yeah it seems obvious I guess when you say it. For the record though, consulting a math major did not help me.  He said ultimately that he didn&#x27;t know.  ha.</div>
+</article>
+<article class="post" id="p59620">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2007-03-27">27 March 2007</time><a class="permalink" href="#p59620" aria-label="Link to post 6">#6</a></header>
+<div class="post-body"><span class="smilie" title=":mrgreen:">:mrgreen:</span> - must have been drunk or something ....</div>
+</article>
+<article class="post" id="p59656">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ro/">Ro</a><time datetime="2007-03-28">28 March 2007</time><a class="permalink" href="#p59656" aria-label="Link to post 7">#7</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Eric_Desart wrote:</div><div class="bb-quote-body"><blockquote class="bb-quote"><div class="bb-quote-author">Ro wrote:</div><div class="bb-quote-body">yup. basic math <span class="smilie" title=":)">:)</span>
+m2 is 1mx1mx1m</div></blockquote> <span class="smilie" title=":mrgreen:">:mrgreen:</span> Ro,
+
+Just teasing, I know here&#x27;s just some typo.
+But as you wrote it here, it&#x27;s indeed basic math (????), a bit toooo basic.
+
+ <span class="smilie" title=":)">:)</span></div></blockquote>yuh, haha. fixed the typo... sorry <span class="smilie" title=":)">:)</span></div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balanced power and computer DAWs | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by cfuehrer in Installation and Wiring, 2004. 9 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/2498/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Balanced power and computer DAWs</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by cfuehrer on 16 October 2004. 9 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 2498.</p>
+
+</div>
+</header>
+<article class="post" id="p18376">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">cfuehrer</span><time datetime="2004-10-16">16 October 2004</time><a class="permalink" href="#p18376" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I am going to be installing balanced power system in my facility for all audio components and use the existing power system for the lights, vaccum, appliances, etc. Where do I plug in my DAW computer and the components (monitor, external hard drives, etc.) the balanced system or the normal system?</div>
+</article>
+<article class="post" id="p18383">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-10-17">17 October 2004</time><a class="permalink" href="#p18383" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Carl, if you check here
+
+<a href="http://www.equitech.com/products/consumer/modelq.html" rel="nofollow noopener" target="_blank">http://www.equitech.com/products/consumer/modelq.html</a>
+
+look under digital outputs (really outputs for digital equipment) 
+
+Part of the answer to your question depends on whether you intend to use a UPS for your DAW. If so, and you want the DAW on balanced power so your audio interface is as quiet as possible, then you need a sine or modified sine wave UPS that is large enough to run your balanced power transformer with everything you have plugged into it; see this
+
+<a href="http://www.equitech.com/faq/ups.html" rel="nofollow noopener" target="_blank">http://www.equitech.com/faq/ups.html</a>
+
+You would then plug your DAW into one of the digital outputs in order to take advantage of the extra filtering. 
+
+In fact, the only difference between UPS and non-UPS operation would be the need for a UPS large enough to run the balanced transformer and all its &quot;customers&quot;... Steve</div>
+</article>
+<article class="post" id="p19234">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">cfuehrer</span><time datetime="2004-11-09">9 November 2004</time><a class="permalink" href="#p19234" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">I wanted to resurrect this post again. Currently I will not be running a UPS for the computer. Since I am running PT there is no direct audio connection to the computer so I want to make sure I am going to get the correct power unit for my computer. I am currently in a temporay studio space while I am planning and construction my dream facility. I am going to get a Furman IT-1220 for the audio gear and was wondering if I should run the computer, monitor and hard drives off of it or just have the audio gear on that and get something else for the computer like a Furman AR-1215 (or the new AR-15) just for computer gear hooked up to another wall outlet?</div>
+</article>
+<article class="post" id="p19263">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">musictech</span><time datetime="2004-11-10">10 November 2004</time><a class="permalink" href="#p19263" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">I got a Furman IT-1220 at the beginning of the year and I have that plugged into an old Furman AR-117 voltage regulator (as Furman suggests putting the voltage regulator first, followed by the IT).
+
+I do have a separate UPS for my computer and first tried leaving the computer on the UPS but just connected to a regular wall outlet (NOT through the Furman units).  That didn&#x27;t work for me since I would then get a nasty ground loop through my USB MIDI interface which would cause the outputs of all my synths to buzz loudly... not acceptable.
+
+I ditched the UPS and just plugged the computer right into the IT-1220 along with all the other gear so that everything had a common ground, and it works just fine... no buzzes from anything!
+
+So, yes... there are no problems with plugging a computer right into an IT-1220... the power supply in the computer has no problems with balanced power.  The IT-1220 doesn&#x27;t have any &quot;digital&quot; outputs... all outlets are the same as far as I can tell.
+
+Steve</div>
+</article>
+<article class="post" id="p19296">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/aaronw/">Aaronw</a><time datetime="2004-11-11">11 November 2004</time><a class="permalink" href="#p19296" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Here&#x27;s another balanced power unit.  It&#x27;s the HTPS 7000...
+
+<a href="http://www.monstercable.com/power/SignaturePower.asp" rel="nofollow noopener" target="_blank">http://www.monstercable.com/power/SignaturePower.asp</a></div>
+</article>
+<article class="post" id="p19297">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">cfuehrer</span><time datetime="2004-11-11">11 November 2004</time><a class="permalink" href="#p19297" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">I am sold on the Furman IT-1220 for my mini rig! Thanks so much for the info Musictech. I am going to also grab a few Furman SS-4 quad outlet boxed to run off the IT so musicians and I can benefit from the balanced power for their gear too since I am in a one room type studio for now.</div>
+</article>
+<article class="post" id="p19770">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Guest</span><time datetime="2004-11-27">27 November 2004</time><a class="permalink" href="#p19770" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">The Furmans are ok, Surgex is better and cheaper.</div>
+</article>
+<article class="post" id="p19771">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2004-11-27">27 November 2004</time><a class="permalink" href="#p19771" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">I am missing something here.  The purpose of balanced power is to reduce noise in analague electronics.  Why would you want to plug a noise generator into the clean(er) power system? 
+
+Noisily confused;
+Andre</div>
+</article>
+<article class="post" id="p19777">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">cfuehrer</span><time datetime="2004-11-27">27 November 2004</time><a class="permalink" href="#p19777" aria-label="Link to post 9">#9</a></header>
+<div class="post-body">Well as you can see they where a Guest so they must not know too much about balanced power. Everyone seems to assume a power strip or rack unit that says &quot;Power Conditioner&quot; or &quot;Surge Protection&quot; it must work good. I love it when I tell friends to buy a Furman or Equi-Tech and they go buy something else cause it was cheaper and &quot;Does the same thing&quot; and 6 months later they are buying another one cause the first one blew up or burned out. I have had my oldest Furman since 1993 and it&#x27;s still perfect. I can&#x27;t wait tio install the Equi-Tech wall panel into my studio!!</div>
+</article>
+<article class="post" id="p19800">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-11-28">28 November 2004</time><a class="permalink" href="#p19800" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Andre, check the paragraph here titled Digital Equipment Outlets - 
+
+<a href="http://www.equitech.com/products/consumer/modelq.html" rel="nofollow noopener" target="_blank">http://www.equitech.com/products/consumer/modelq.html</a>
+
+Those units are (I think) the only ones that can legally be installed in a non-commercial facility according to the recent NEC changes - anything that&#x27;s hardwired has to be in a commercial facility with only qualified people having access, according to the code
+
+<a href="http://www.equitech.com/support/647.html" rel="nofollow noopener" target="_blank">http://www.equitech.com/support/647.html</a>
+
+I guess it&#x27;s possible that using the &quot;digital&quot; outlets to power computers and other switching power supplies could actually be quieter than powering them off a separate supply - less likelihood of a ground loop with everything on the same circuit, and the increased filtration on those outlets should help kill the switching noise - from another page on equitech&#x27;s site - 
+
+&quot;EMI/RFI filter option. Filters are applied to the balanced output.  Where a balanced power system&#x27;s common mode noise rejection ends, EMI/RFI filtering begins. Some equipment power supplies are not very well balanced so some high frequency AC interference differs from typical power harmonics making these balanced multi-stage line filters a fine compliment to a balanced power system.  Sensitive digital electronics in a system may require additional line filtering for best performance.  Switching digital power supply noise is attenuated on the line and kept isolated from outlets that power other sensitive electronics.  These filters reduce line noise -30dB from 100kHz to 1gHz.&quot;
+
+Probably the thing to do would be to plug such devices into a common power strip, then see whether they give a quieter noise floor while plugged into one of the &quot;digital&quot; outlets or into regular power - just make sure your ground system is starred 100%... Steve</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

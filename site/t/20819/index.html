@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>multicore snake install into PVC pipe, multi-pin connectors | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by muze in Studio Construction, 2017. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/20819/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-construction/">Studio Construction</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>multicore snake install into PVC pipe, multi-pin connectors</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by muze on 2 January 2017. 6 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 20819.</p>
+
+</div>
+</header>
+<article class="post" id="p140883">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">muze</span><time datetime="2017-01-02">2 January 2017</time><a class="permalink" href="#p140883" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi all,
+Thank you all for this forum, and for your participation, it is a great resource.  I&#x27;m in the research/design phase of converting a 4-car garage into a 2-room studio, split into a Control Room and Live Room. 
+
+I&#x27;m currently designing the audio routing, and I&#x27;ve read many forum posts, but I still have questions.
+
+Please refer to the below diagram, which shows a simplified design diagram, highlighting my audio routing plan.  I will be installing a 3&quot; or 4&quot; PVC pipe that will provide a conduit between the Control Room and the Live Room.  The PVC pipe openings will be in the interior walls of the Control Room and Live Room.  The pipe will run between the interior and exterior walls, with a small break in the PVC pipe to avoid creating a flanking path between the interior walls of the Control Room and Live Room.  The multicore snake will run in the PVC pipe, breaking out into XLR and TRS connectors in the Control Room, and ending in a stage box in the Live Room.
+<div class="bb-attachment-missing">Image not preserved: Audio Routing.png</div>My questions are around the multicore snake and its termination points (breakout cables, stage box).
+
+1) I&#x27;ve read that the XLR lines and the headphone returns should be on separate trunks to avoid crosstalk.  However, if I buy a single multicore snake that contains both the XLR lines and TRS returns, is this okay (see image below)?  Can I assume that this snake is designed to prevent crosstalk between the XLR and TRS lines that are wrapped in the single multicore snake?
+
+2) After I install the PVC pipe, I&#x27;m not sure how I will install the multicore snake along with its terminating breakout cables and stage box.  I&#x27;ve attached an image below of the multicore cables that I&#x27;ve seen online.  I don&#x27;t see how I can slide this multicore snake into the PVC pipe opening unless I can somehow detach the stagebox and breakout cables.  Can I detach the stagebox from one end of the multicore snake, and do people usually cut and resolder the breakout cables on the other end?  Alternately, is it possible to install according to the below steps using multi-pin connections on both ends of the snake?  If the components are available, it seems that it would be simple to install, unless there is a downside that I&#x27;m not seeing.
+a. Slide a multicore snake that terminates with a multi-pin connector on each end, through the PVC pipe.
+b. In the Control Room, attach the breakout cables that terminate to a single cable with a multi-pin connector (do they make these?), with the snake&#x27;s multi-pin connector.
+c. In the Live Room, attach a stage box with a multi-pin connector, to the snake&#x27;s multi-pin connector.
+<div class="bb-attachment-missing">Image not preserved: multicore.jpeg</div>Thanks for your help!
+- Alex</div>
+</article>
+<article class="post" id="p140884">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">DanCostello</span><time datetime="2017-01-03">3 January 2017</time><a class="permalink" href="#p140884" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">If you&#x27;re worried about crosstalk between input lines and headphone lines, put the headphone amp in the room with the band. That way, you&#x27;ve only got line level signals returning to the live room.
+
+Yes, they make snakes with multipin disconnects pre-installed - they&#x27;re typically marketed to the live concert market and they can be very expensive. But they&#x27;re going away, because that market has mostly switched to digital snakes. Rather than going that route, you&#x27;d probably be better off buying the bulk cable and xlr connectors and learning to solder it all yourself.
+
+Otherwise, you could switch to Dante, put all of your converters in the live room (plus one in the CR for playback), and just run 1-2 ethernet wires through the duct to your computer. Depending on how much i/o you need, it may or may not be cheaper, but it&#x27;s a heck of a lot easier that building a bunch of snakes if you don&#x27;t know how.
+
+-Dan.</div>
+</article>
+<article class="post" id="p140928">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">muze</span><time datetime="2017-01-07">7 January 2017</time><a class="permalink" href="#p140928" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Hi Dan,
+Thanks for your response!  Great suggestion, I will place the headphone amp in the control room, to avoid crosstalk.
+
+The background info on snakes with multi-pin disconnects, and the live market is helpful.  It sounds like I will need to refresh my soldering skills; the last time I soldered was in my high school shop class.  I found a youtube instructional video (below) on building the end of an audio snake, so I&#x27;ll follow that.  My main concern was making a bad solder connection and then passing bad audio, but it looks like I can use an ohmmeter or the &quot;SoundTools - XLR Sniffer/Sender Cable Tester&quot;, to verify that I have good audio connections.
+
+<a href="https://www.youtube.com/watch?v=W-_PG8VwGNM" rel="nofollow noopener" target="_blank">https://www.youtube.com/watch?v=W-_PG8VwGNM</a>
+
+Does the standard multicore snake with stage box, have a multi-pin disconnect on the stage box end of the snake, that I can easily disconnect and then reconnect?  Or will I have to cut the stage box end off and then re-solder the stage box to the snake, after I pass the snake through the PVC pipe?
+
+Also, do people usually buy a multicore snake with the breakout XLR connections installed, and then cut off the individual breakout wires and resolder?  Or do they buy the snake and XLR connectors separately and then install the individual wire wraps as well as the XLR connectors?  It just occurred to me that a snake with 24 individual breakout wire wraps, would not as easily fit through the PVC pipe (the 24 wire wraps might be too thick).  So maybe people first pass the snake through the PVC pipe, and then install the individual wire wraps afterwards?
+
+Thanks!
+- Alex</div>
+</article>
+<article class="post" id="p140929">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-01-07">7 January 2017</time><a class="permalink" href="#p140929" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Does the standard multicore snake with stage box, have a multi-pin disconnect on the stage box end of the snake, that I can easily disconnect and then reconnect?</div></blockquote>No.  Those connectors are damn expensive, so typical snakes do not use them.  Just hard-wired.
+
+To be honest, I would not bother putting the snake through a conduit, unless you think you will need to take it out again at some point.  Just install it permanently, with the cable held firmly where it passes through each leaf, carefully sealed, then leave an &quot;S&quot; shape of cable inside the wall cavity a few feet long (taking care that it does not touch both sides).  There won&#x27;t be much flanking through that.  Unless you have a need for very high levels of isolation, or you have a need to remove and replace the snake without breaking down the wall, don&#x27;t worry about all the hassle of trying to get it through conduit.
+
+ <blockquote class="bb-quote"><div class="bb-quote-body">Or will I have to cut the stage box end off and then re-solder the stage box to the snake, after I pass the snake through the PVC pipe?</div></blockquote>If you do decide to go with conduit, then yes, that&#x27;s exactly what you will have to do.  I would not cut the cable, though: I would un-solder all the connectors, then just re-solder them after pulling the cable through.
+<blockquote class="bb-quote"><div class="bb-quote-body">Also, do people usually buy a multicore snake with the breakout XLR connections installed, and then cut off the individual breakout wires and resolder? Or do they buy the snake and XLR connectors separately and then install the individual wire wraps as well as the XLR connectors? It just occurred to me that a snake with 24 individual breakout wire wraps, would not as easily fit through the PVC pipe (the 24 wire wraps might be too thick). So maybe people first pass the snake through the PVC pipe, and then install the individual wire wraps afterwards?</div></blockquote>If you are planning to detach the cable at the stagebox end, then there&#x27;s no need to do anything at all with the breakout end!  Only one end of the cable needs to get through the conduit....
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p140933">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">muze</span><time datetime="2017-01-07">7 January 2017</time><a class="permalink" href="#p140933" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Hi Stuart,
+Thanks for your reply.  Good point!  I totally missed that I only need to detach either the stage box or the breakout XLR connectors, to get one end to fit through the PVC pipe.  Thanks for showing me the forest, I was looking at trees <span class="smilie" title=":)">:)</span>.  So it would be a matter of which end would be less work to solder.  I&#x27;m thinking that the stage box would be less actual soldering work, however keeping track of which wires to solder back might be a royal pain.
+
+The reason I wanted to install a PVC pipe, is to have an easy way to replace the multicore snake in case it fails.  However, if I&#x27;m not moving the snake itself, then maybe the chance of failure is pretty low.
+
+Now that you mention not installing a PVC pipe (and just installing the multicore snake itself), maybe replacing a failed multicore snake wouldn&#x27;t be too bad in terms of work and compromising the original isolation of my inner room walls.  Since my penetrations will be on the Live Room inner wall and the Control Room inner wall, if I need to replace the snake, I can just cut a big opening on each room&#x27;s inner wall, that is as wide as the 24&quot; stud spacing.  Then I replace the multicore snake and repair the drywall: install 2 large sheets of 5/8&quot; gypsum + green glue onto the studs, as well as backer rod + acoustic caulk along the edges.  As long as I repair the drywall carefully, then I should have restored my inner room isolation to the way it was initially.  Does what I describe make sense in terms of process and the assumption that I would&#x27;ve restored the inner rooms to original isolation?
+
+Thanks!
+- Alex</div>
+</article>
+<article class="post" id="p140934">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-01-07">7 January 2017</time><a class="permalink" href="#p140934" aria-label="Link to post 6">#6</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body"> Does what I describe make sense</div></blockquote>It does, yes.  As long as you can get the wall back to being continuous mass and fully sealed, there&#x27;s no problem.
+
+On the other hand, if you are concerned about some of the channel on the snake failing and leaving you short, then just use a bigger snake to start with!  IF you need 24 channels, then use a 32 channel snake.... that way you can have up to 8 failures, and still not need to replace it.  And there&#x27;s really no reason why a snake should fail, if you start with a good quality one and take care of it.  It&#x27;s much, much more likely that the connectors on one end or the other will fail, and those are dead easy to replace.  I have half a dozen snakes that I use all the time, for many years,  some on fixed locations, others for live gigs that travel all over the country, and I have never had an actual conductor fail inside a snake... but a few connectors have gone flaky...
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p140936">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">muze</span><time datetime="2017-01-07">7 January 2017</time><a class="permalink" href="#p140936" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Thanks, Stuart.  It&#x27;s helpful to hear your experience with the reliability of the conductors in the snake.  Great suggestion on getting a snake with extra channels for redundancy, I will definitely do that.
+
+I still need to determine the distance to use between my inner wall studs and outer wall studs.  I&#x27;m hoping that I will be able to install the snake in between the inner wall studs and outer wall studs, without the snake&#x27;s &quot;S&quot; shape touching both walls, but I&#x27;ll come back to this question after I&#x27;ve determined my install distance for the walls.
+
+Thanks!
+- Alex</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

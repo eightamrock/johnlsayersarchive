@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>REPEAT - Questions on Helmotz absorbers | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by MarcoSan in Acoustics, 2004. 1 reply.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/1520/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>REPEAT - Questions on Helmotz absorbers</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by MarcoSan on 15 April 2004. 1 reply.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 1520.</p>
+
+</div>
+</header>
+<article class="post" id="p11046">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">MarcoSan</span><time datetime="2004-04-15">15 April 2004</time><a class="permalink" href="#p11046" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Sorry guys, but I&#x27;m still looking for some replies to my questions  <span class="smilie" title=":cry:">:cry:</span> :
+
+1) The formula for calculating the Helmotz absorber is based on the distance from the wall of the box. But in case of a corner unit, which distance should I consider ? 
+
+2) John suggest to alternate size of slats and of gaps on the front of the absorber, but is this really necessary ? I guess this will help to widen the bandwidth of the absorber, but how to use the formula to consider these variables ? 
+
+3) I am currently &quot;playing&quot; with a software called CARA (<a href="http://www.cara.de" rel="nofollow noopener" target="_blank">www.cara.de</a>), that should help me with the design of the room from the acoustic point of view. For those who do not know this SW , it contains a sort of CAD for 3D objects to be later on placed in the room and each object is defined by its physical dimensions and its acoustical characteristics. 
+I wonder if it is possible to load the characteristics of the units as per John&#x27;s design : of course size is not a problem as can be easily measured (or defined in advance) but what about the absorption (alpha) coefficient of these units at various frequencies ? Does anybody have some data for units he already built ? 
+
+Anybody out there wants to throw away some of his precious time to enlighten me  <span class="smilie" title=":wink:">:wink:</span> ?
+
+Thks in advance &amp; have a nice day !
+
+Marco</div>
+</article>
+<article class="post" id="p11058">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2004-04-15">15 April 2004</time><a class="permalink" href="#p11058" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Hi Marco.
+
+1. Actually the fundamental formula for a Helmholtz resonator depends on the total area <strong>S</strong>  of the slots and the volume <strong>V</strong> of the rear cavity.  
+
+<strong>f = (c/2π)sqrt[S/(V*SOd)]</strong>
+
+where <strong>c</strong> is the speed of sound and <strong> SOd</strong> is the slot depth (slat thickness).
+
+A rectangular slot resonator offers a special case.  The slot area depends on the overall height <strong>H</strong>  and width <strong>W</strong> of the box and the ratio of slot width <strong>SAw</strong> to slat width <strong>SOw</strong>.
+
+<strong>S = H*W*[SAw/(SAw + SOw)] </strong>
+
+Of course, the volume of the cavity is given by:
+
+<strong>V = H*W*D</strong>  
+
+were <strong>D</strong> is the overall depth.
+
+Substituting V and S back into the resonance frequency equation we get:
+
+<strong>f = (c/2π)sqrt[H*W*[SAw/(SAw + SOw)] /( H*W*D*SOd)]</strong>
+
+and H*W/ H*W = 1 so
+
+<strong>f = (c/2π)sqrt[SAw/[(SAw + SOw)*D*SOd]</strong>
+
+Which probably looks more familiar.  
+
+But if your rear cavity is oddly shaped, all you need to do is refer back to the original equation.   Calculate the volume of the cavity and the overall slot area and you&#x27;re good to go!
+
+2. Varying the slot width can have a mild affect on bandwidth, but not as much as you might think.   Notice that the resonance frequency depends on S, the overall slot area.   To a certain degree it doesn&#x27;t really care about variations in the individual slot areas.   The only reason you do get some spread is because the whole resonator is usually bigger than a wavelength near the resonance frequency.  So the slots are somewhat acoustically isolated from one another at opposite sides of the resonator.  Make sense?
+
+3.  I don&#x27;t have any experience with this software.  Maybe somebody else can answer?
+
+Thomas</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

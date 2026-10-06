@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kick drum microphone phase shifting | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by marx in Installation and Wiring, 2007. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/9747/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>kick drum microphone phase shifting</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by marx on 14 November 2007. 6 replies, 2007–2008.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 9747.</p>
+
+</div>
+</header>
+<article class="post" id="p68753">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">marx</span><time datetime="2007-11-14">14 November 2007</time><a class="permalink" href="#p68753" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">hi, i want to make a small mic phase shifting device for kick drum but i cant find schematics or some theory on the web. is there way to make something  like that? thanks</div>
+</article>
+<article class="post" id="p69207">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">EK Sound</span><time datetime="2007-11-23">23 November 2007</time><a class="permalink" href="#p69207" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">To flip the &quot;phase&quot; or polarity of a mic line, simply reverse pins 2 and 3 on the XLR connector.  If you are handy with a soldering iron, you could build a box with a DPDT toggle switch to do exactly that (see the attached pic for the wiring on the back of the switch).  The sheild line (pin 1) would be connected straight through. Any decent DPDT toggle (with NO center OFF position) will work.  Be sure NOT to switch the phase/polarity with condenser mics &quot;live&quot; to the monitors... there might be a big BANG.  <span class="smilie" title=":roll:">:roll:</span> 
+
+Dave.<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: Phase.jpg</div></div></div>
+</article>
+<article class="post" id="p73203">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Studio A</span><time datetime="2008-02-29">29 February 2008</time><a class="permalink" href="#p73203" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">OK, now what if you want to variably adjust the phase? Not just 180 degrees.</div>
+</article>
+<article class="post" id="p73305">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">EK Sound</span><time datetime="2008-03-03">3 March 2008</time><a class="permalink" href="#p73305" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Delay...
+
+For example, it takes 16mSec to complete one full cycle at 60Hz.  If you wanted 45 degrees of phase shift at 60Hz, you would use a delay time of 2mSec.  Of course that same 2mSec delay time would produce 22.5 degrees of phase shift at 30Hz, and 90 Degrees of phase shift at 120Hz.
+
+There is no way to partially shift the phase of all frequencies at the same time by an equal amount.
+
+Dave.</div>
+</article>
+<article class="post" id="p73307">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Studio A</span><time datetime="2008-03-04">4 March 2008</time><a class="permalink" href="#p73307" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Interesting...thanks.
+
+So assuming the multi mic phasing is due to direct sound and not reflections.  Can we measure the distances from the source to the mics, find the difference and determine the exact amount of delay to align the signals?</div>
+</article>
+<article class="post" id="p73351">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">MMazurek</span><time datetime="2008-03-04">4 March 2008</time><a class="permalink" href="#p73351" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Fantastic tool for drums (and bass)...
+
+<a href="http://www.mercenaryaudio.com/lilaibpjr.html" rel="nofollow noopener" target="_blank">http://www.mercenaryaudio.com/lilaibpjr.html</a></div>
+</article>
+<article class="post" id="p73357">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">EK Sound</span><time datetime="2008-03-04">4 March 2008</time><a class="permalink" href="#p73357" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">The problem is with multiple mics and sources like a drum kit.  Lets take the snare mic... if you time/phase align all the other mics to the snare mic, the kick mic (as an example) will be out of line with the tom mics because the distance between mics is not constant...  there is no way to &quot;perfectly align&quot; *all* the drum mics.  This is why some of the best drum sounds have been obtained with only one or two mics.  Pick your battles... only mess with phase on the worst offender.  Careful choice and placement of the mics will minimize leakage and phase problems.
+
+Dave.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

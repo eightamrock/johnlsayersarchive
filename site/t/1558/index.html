@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Question about Diffusor plan equations | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Skrasms in Acoustics, 2004. 4 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/1558/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Question about Diffusor plan equations</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Skrasms on 23 April 2004. 4 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 1558.</p>
+
+</div>
+</header>
+<article class="post" id="p11328">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Skrasms</span><time datetime="2004-04-23">23 April 2004</time><a class="permalink" href="#p11328" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I understand how to use quadratic residue and such to make a diffusor based on the BBC articles, but there&#x27;s one thing I can&#x27;t help but wonder: what makes a quadratic residue sequence better than just using a sequence of completely random numbers between two boundaries? Shouldn&#x27;t the scattering of a diffusor be as random as possible? Or does it turn out that using quadratic residue creates some type of symmetry to make the diffusion spread out more evenly, and that is more important? I hope my question makes sense.</div>
+</article>
+<article class="post" id="p11337">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2004-04-23">23 April 2004</time><a class="permalink" href="#p11337" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Hi Skrasms and welcome! <span class="smilie" title=":D">:D</span>
+
+This is a really good question.  I only wish I had a good answer!  <span class="smilie" title=":lol:">:lol:</span>  <span class="smilie" title=";)">;)</span>
+
+My background is in experimental physics, not mathematical physics, but let me take a qualitative crack at it.  I&#x27;m pretty sure that, in theory, you are right.  A random surface will produce diffuse reflections.   The issue, however, comes down to practicality.  
+
+All random sequences have some level of short scale periodicity.   In other words, for a small number of rolls of the dice, there is some low order linear function that will fit the data.  The elements in the sequence appear not to be random, only because there are so few of them.  A surface having this sort of short scale linearity will not produce diffuse reflections.   But we need to physically build this diffuser.  We don&#x27;t want it to be too complex.  And it turns out that a dozen or so random surface elements just aren&#x27;t random enough. We would need a lot more per unit length to get the results we want.  So the real beauty of the Schroeder residue approach is that it allows us to use a relatively small number of surface elements to achieve a high level of diffusivity.  
+
+I haven&#x27;t investigated diffusors in theoretical detail, so I might be wrong.  But, I&#x27;m pretty sure this is the gist of it.  
+
+Thomas</div>
+</article>
+<article class="post" id="p11338">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">VSpaceBoy</span><time datetime="2004-04-24">24 April 2004</time><a class="permalink" href="#p11338" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">So if I understand..  The use of the formula creates a more random than random surface? &lt;so to speak&gt;</div>
+</article>
+<article class="post" id="p11342">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2004-04-24">24 April 2004</time><a class="permalink" href="#p11342" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">No, not really.  Think of it as a periodic surface with the special properties of giving diffuse reflections over a limited frequency range.</div>
+</article>
+<article class="post" id="p13466">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Jim B</span><time datetime="2004-06-30">30 June 2004</time><a class="permalink" href="#p13466" aria-label="Link to post 5">#5</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Skrasms wrote:</div><div class="bb-quote-body">... Shouldn&#x27;t the scattering of a diffusor be as random as possible? Or does it turn out that using quadratic residue creates some type of symmetry to make the diffusion spread out more evenly, and that is more important? I hope my question makes sense.</div></blockquote>I haven&#x27;t mastered the QRD concept....but, good diffusion needs to have certain qualities that make it a good diffusor design.
+
+1) It needs to reflect the scattered sound in all directions (3 dimensional).  I can kind of understand why a repeated pattern would be advantageous to retain the stereo imaging.
+
+2) It should not be absorptive.  Some QRD diffusors will actually reasonate and absorb lower frequencies.  Diffusors should diffuse.  
+
+3) Good diffusion works.  Acoustically, it has the perceived effect of moving the wall surface farther away from the listening position...and knocks out slap back and flutter echos.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

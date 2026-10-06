@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is a helmholtz resonator with resonance at 125Hz possible? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Schwerdy in Acoustics, 2004. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/2702/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Is a helmholtz resonator with resonance at 125Hz possible?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Schwerdy on 22 November 2004. 6 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 2702.</p>
+
+</div>
+</header>
+<article class="post" id="p19644">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Schwerdy</span><time datetime="2004-11-22">22 November 2004</time><a class="permalink" href="#p19644" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi all!
+
+First I want to excuse me for my very bad english. Second I have problem in my wannabe-studio. At 125 Hz everything gets insufferable loud! So I would like to build a corner absorber as described here:
+
+<a href="http://www.johnlsayers.com/HR/index1.htm" rel="nofollow noopener" target="_blank">http://www.johnlsayers.com/HR/index1.htm</a>
+
+The document says, that the corner unit is for the 150Hz - 500Hz range, but with the Helmholtz Resonator Calculation Sheet, I can build one for 125 Hz. EG: 
+
+Slot width.: 3
+Slat width.: 420
+Depth from wall.: 500
+Slat Depth.: 20
+
+So it should be possible, or not?
+
+The Third question: What is the &quot;depth from wall&quot; for a corner unit? Is this the mathematically &quot;height&quot; of the triangle?
+
+Thanks!</div>
+</article>
+<article class="post" id="p19646">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/lovecow/">lovecow</a><time datetime="2004-11-22">22 November 2004</time><a class="permalink" href="#p19646" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Schwerdy,
+<blockquote class="bb-quote"><div class="bb-quote-author">Schwerdy wrote:</div><div class="bb-quote-body">The document says, that the corner unit is for the 150Hz - 500Hz range, but with the Helmholtz Resonator Calculation Sheet, I can build one for 125 Hz. EG: 
+
+Slot width.: 3
+Slat width.: 420
+Depth from wall.: 500
+Slat Depth.: 20
+
+So it should be possible, or not?</div></blockquote>If your measurements/dimensions above are in millimeters, then I think you meant &quot;50&quot; for &quot;Depth from wall.&quot; Otherwise, 500mm deep will put the resonance around 40 Hz.
+
+Other than that, this design should work for the range you specified.
+<blockquote class="bb-quote"><div class="bb-quote-body">The Third question: What is the &quot;depth from wall&quot; for a corner unit? Is this the mathematically &quot;height&quot; of the triangle?</div></blockquote>According to Everest, an average depth is used for calculation purposes.</div>
+</article>
+<article class="post" id="p19675">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2004-11-23">23 November 2004</time><a class="permalink" href="#p19675" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Schwerdy, Jeff is right on the money - it appears to me that you used the old calculator on the SAE site, which has the same error in the formula that is all over the web; if you check here
+
+<a href="/t/1363/">http://www.johnlsayers.com/phpBB2/viewtopic.php?t=1363</a>
+
+there are two newer versions of that calculator that are correct in their calculations - for your example, if you were to use 6 mm slot width and 90 mm slat width with your 500 mm average depth from wall and 20 mm slot depth, you would be right at 125 hZ. 
+
+If you don&#x27;t have that deep an AVERAGE depth, you could adjust things - for example, if your average depth is only 250 mm, you could use 3mm slot width/90mm slat width/250mm depth/20mm slat depth, which calculates at 127 hZ - 
+
+Please note that in the corrected version I posted, I left in the OLD, INCORRECT calculation - this is highlighted in green, and is there for those who had already calculated and built these units just for an idea of what those units might be doing - if you&#x27;re building these for the first time, just IGNORE the GREEN highlighted value and use the one in the BROWN highlighted area.
+
+Hope that helps... Steve</div>
+</article>
+<article class="post" id="p19688">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/lovecow/">lovecow</a><time datetime="2004-11-23">23 November 2004</time><a class="permalink" href="#p19688" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Schwerdy,
+
+FWIW: Steve&#x27;s specs for both scenarios (500mm and 250mm avg. depth) give you a better absorber than what you originally posted. Note that this assumes you&#x27;ll fill the cavity about 20-40% with &quot;fuzz.&quot;</div>
+</article>
+<article class="post" id="p19691">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Schwerdy</span><time datetime="2004-11-23">23 November 2004</time><a class="permalink" href="#p19691" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Thank you very much for helping!
+
+But I still don&#x27;t really understand what&#x27;s the &quot;depth from wall&quot; or &quot;average depth&quot;. Maybe my stupidity in English is the cause...
+
+I&#x27;ll attach a drawing. Is the &quot;depth from wall&quot; (what i need for the calculation - and the building!) the small or the long red arrow? 
+
+Thanks!<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: dfwquestion.jpg</div></div></div>
+</article>
+<article class="post" id="p19692">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/lovecow/">lovecow</a><time datetime="2004-11-23">23 November 2004</time><a class="permalink" href="#p19692" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">For this type of triangle (right, isosceles), the average height is half the height. If the height from the center of the face into the corner (long arrow) is 500mm, the average height is 250mm.</div>
+</article>
+<article class="post" id="p19694">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Schwerdy</span><time datetime="2004-11-23">23 November 2004</time><a class="permalink" href="#p19694" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Thank you!</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

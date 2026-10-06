@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Star grounging with isolation transformer | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Elec Tek in Installation and Wiring, 2009. 4 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/11860/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Star grounging with isolation transformer</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Elec Tek on 1 April 2009. 4 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 11860.</p>
+
+</div>
+</header>
+<article class="post" id="p86918">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Elec Tek</span><time datetime="2009-04-01">1 April 2009</time><a class="permalink" href="#p86918" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hello everyone,  I am a local electrical contractor in the Charlotte NC area and I am looking into wiring a new construction home studio for a potential client and have a few questions: If i install a sub panel for only audio equipment and the client has 2 isolating transformers (1000 watt each) then how does this affect my star grounding?  I will only have 2 20 amp circuits for the equipment which hes says will be plenty of power.  I can not figure out a way to make the star grounding pass local code.  It appears to me that the grounds for the audio equipment must be totally separate from all other grounds form the entire residence. Has anyone ever wired a studio that had to be inspected and what did you do to pass?  Any advise would be greatly appreciated as I want to make sure I am giving my client exactly what he is looking.</div>
+</article>
+<article class="post" id="p86935">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2009-04-01">1 April 2009</time><a class="permalink" href="#p86935" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">I do that kind of thing regularly for video post production facilities that I install, and it passes inspection fine.  But I live in Chile, not the USA, so I don&#x27;t know how our code compares to your code.
+
+What we do is exactly what you mentioned:  A totally separate grounding system for the equipment, independent of the grounding for the rest of the building.  We call it &quot;technical ground&quot;, and the rest of the building we refer to as &quot;service ground&quot;.  We do it by driving long copper rods into the physical ground (planet earth) someone outside the building, usually four of them arranged in a square, but at least two.  The rods are about 1.5 m long, and we drive them about 2 m apart, roughly, or whatever fits the landscape.  We bridge them together with thick copper wire, then run a thick copper conductor (at least twice the cross sectional area of the live conductor, or twice the minimum required by code, whichever is greater) from one of the rods back to the &quot;technical&quot; distribution panel.  In Chile, panels usually come with bus bars installed for earth and neutral, so we just hook up that wire to the bar, and that becomes the central hub point of our star ground.
+
+I normally specify a full on-line UPS, rather than just isolation transformers, but the principle is the same.  The isolation transformers cannot be auto-transformers, obviously:  they must have two totally separate and independent windings, with no electrical connections. If code requires you to ground them, them ground them ONLY to the technical ground, not the service ground.
+
+Here, we also tie the neutral bus directly to the ground bus in the distribution panel.  I&#x27;m not sure if code will let you do that in the USA, but it does here, and it is a God-send.  Basically, it means that your neutral becomes a another ground, and does not float, like it would if you did not ground it.  So you end up with only the live conductor being at a voltage other than ground.  Everything else is grounded.  You should be able to do that just fine, since you are using isolation transformers, but local code will dictate.   In your case, with two transformers you&#x27;d have to tie both neutrals to the ground bus, and run the two lives to two sets of breakers.
+
+One word of caution:  technical power means ONLY the equipment, nothing else.  No lights, no HVAC, nothing.  Lights, HVAC and similar should be the service panel and service ground, not the technical panel and ground.  So you might need to have two sub-panels in the studio: one for the equipment, and one for the other stuff.
+
+Once again, that&#x27;s what we do here in Chile for video post suites, and it works great, but code in your area might well be different.  For starters, we are all 220v/50Hz here, so our currents and conductor sections are half of yours.
+
+Hope that helps!
+
+
+
+-  Stuart -</div>
+</article>
+<article class="post" id="p86954">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Speedskater</span><time datetime="2009-04-01">1 April 2009</time><a class="permalink" href="#p86954" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">What year NEC code is Charlotte operating under?  The new 2008 code does not allow isolation transformers in residential systems.  But anyway all grounds in your house must connect to mother earth directly from the main circuit breaker box. Charlotte has lots of thunder storms and if you connect to mother eart at an isolated point, huge voltages can develop between your ground rods.</div>
+</article>
+<article class="post" id="p87787">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Elec Tek</span><time datetime="2009-04-15">15 April 2009</time><a class="permalink" href="#p87787" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Speedskater we are on 2008 code.</div>
+</article>
+<article class="post" id="p87804">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2009-04-15">15 April 2009</time><a class="permalink" href="#p87804" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Looks like your options might be rather limited then!  Pity.  You might want to give your local electrical inspector a visit, and see what he says.
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

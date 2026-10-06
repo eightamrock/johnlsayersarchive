@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to predict the total TL of a 2-leaf MSM system | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by OttoPus in Acoustics, 2015. 19 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/20221/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>How to predict the total TL of a 2-leaf MSM system</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by OttoPus on 25 October 2015. 19 replies. In the Library under <a href="/library/fundamentals/">Fundamentals</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 20221.</p>
+
+</div>
+</header>
+<article class="post" id="p137504">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">OttoPus</span><time datetime="2015-10-25">25 October 2015</time><a class="permalink" href="#p137504" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hello all!
+
+My name is Marco, I&#x27;m a long time lurker and in the &quot;study and basic concept understanding&quot; phase of my studio design journey.
+
+I&#x27;ve read and understood the &quot;before post rules&quot; stated here <a href="/t/3231/">viewtopic.php?t=3231</a> , but I&#x27;m not yet trying to design anything at this point, because some basic concepts seems to fall out of my understanding.
+
+I&#x27;ll be posting a full and detailed design/presentation post with all the requested data as soon as I manage to cover the most important knowledge ground needed and actually designing the studio <span class="smilie" title=":)">:)</span>
+
+So, by now, I&#x27;ll just try posting a single question. I don&#x27;t know if this is allowed, but worth a try, maybe the answer can turn useful to other readers over time <span class="smilie" title=":)">:)</span>
+
+I read several books: Rod Gervais &quot;Home recording studio&quot;, Philip Newell &quot;Recording studio design&quot;, F.Alton Everest &quot;Handbook of sound studio construction&quot;.
+I also read a lot of forum&#x27;s threads and the &quot;FAQ&quot; section.
+
+There is though a question that hangs around my head without finding a meaningful answer:
+
+<span class="bb-u"><span style="font-size:150%">How can I predict/calculate the TL of a 2-leaf MSM build?</span></span>
+
+Reading through the forums, the answer seems to be: you have to go through published experimental data and build that way.
+
+But there&#x27;s a period in the Philip Newell book that make me think that is possible. It can be found at page 39, chapter 3, of the third edition of Recording studio design. It talks about MSM and walls decoupling for sound isolation:
+<pre class="bb-code"><code>The effect of this decoupling of the masses is to render the two systems (floated and structural) acustically indepdendent. Hence if we had a structure of 20cm sand-filled concrete blocks, with 40dB of low frequency isolation, we would only need an internal floated structure with 20dB of isolation in order to achieve 60dB of total isolation.</code></pre> <span class="smilie" title=":shock:">:shock:</span> can be this simple? TL of wall 1 + TL of wall 2 (for frequencies above 1.4 times the MSM resonance frequency of course) and that&#x27;s it??
+
+My ideas are really confused about the TL calculation/prediction.
+
+Thanks for reading!!
+
+Marco</div>
+</article>
+<article class="post" id="p137505">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bert Stoltenborg</span><time datetime="2015-10-25">25 October 2015</time><a class="permalink" href="#p137505" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">The second mass and spring will raise the resonance frequency of the construction so simply adding TL values seems, well, too simple to me.  <span class="smilie" title=":D">:D</span></div>
+</article>
+<article class="post" id="p137506">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">OttoPus</span><time datetime="2015-10-26">26 October 2015</time><a class="permalink" href="#p137506" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">That paragraph really threw me in confusion <span class="smilie" title=":evil:">:evil:</span> 
+
+After more research, I came across a famous TL prediction software (I&#x27;ll not name it now - out of purpose). 
+
+In their website, there&#x27;s a page where it describes without much detail how the prediction works for 2-leaf systems, BUT there is a really interesting statement:
+<pre class="bb-code"><code>Above the mass-air-mass resonance frequency of the partition (fo) determined by the mass of the panels and the air gap, the TL increases at 18 dB/octave as the two sides become decoupled.</code></pre>Is this concept a reliable model? 
+I already know how to calculate MSM resonance frequency (in this forum the formula has been posted several times), doing the maths and figure out how much (theoretical of course!) TL can be provided at the octaves above that frequency should not be impossible.
+
+IF that&#x27;s confirmed as a reliable model <span class="smilie" title=":D">:D</span>
+
+What do you think?</div>
+</article>
+<article class="post" id="p137507">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bert Stoltenborg</span><time datetime="2015-10-26">26 October 2015</time><a class="permalink" href="#p137507" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><a href="http://forum.noiseconsult.com/viewtopic.php?t=1042" rel="nofollow noopener" target="_blank">http://forum.noiseconsult.com/viewtopic.php?t=1042</a>
+<a href="http://forum.noiseconsult.com/viewtopic.php?t=1337" rel="nofollow noopener" target="_blank">http://forum.noiseconsult.com/viewtopic.php?t=1337</a>
+
+These are some explanaitions of what happens in double leaf constuctions.
+I know they are in Dutch, but the graphics are in english, so maybe you&#x27;ll understand it, else just ask.
+
+In TL you also have a coincidence region where waves in the material having frequency dependent speed interact with waves hitting the material under an angle, so this 18 dB-statement is not totally valid</div>
+</article>
+<article class="post" id="p137508">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">OttoPus</span><time datetime="2015-10-26">26 October 2015</time><a class="permalink" href="#p137508" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Thank you Bert, I&#x27;ll give it a try using Chrome translate function <span class="smilie" title=":)">:)</span>
+
+In the second link though, Eric it seems to confirm what I&#x27;ve reported in the post above:
+<blockquote class="bb-quote"><div class="bb-quote-body">However, a double system works quite differently than a single wall system. The stylized effect of the cavity above the MSM frequency is a further increase of 6 dB per octave. This brings the total increase in the isolation of a tweewandig system as a function of frequency at 6 dB (first wall) + 6 dB (cavity) + 6 dB (second wall) = 18 dB per octave (this neglect of the restrictive influence of other phenomena). The amplitude of the movement of the panels for pragmatic reasons (clarification mutual displacement of the panels) greatly exaggerated. The opposite movement of the panels is similar to anti-noise. Among others, will get double-walled systems, high frequency such high insulation values.</div></blockquote>It&#x27;s an automatic translation, but it seems the same concept.
+
+I&#x27;m starting to deduce that:
+the goal [designing a proper 2 leaf MSM system] is to tune the system to have the resonant frequency low enough so that the TL curve (the 18dB/octave one) meets my isolation requirements at the frequencies I&#x27;m interested isolating.
+
+So the prediction can be made by calculating the MSM resonance frequency, and then tracing the 18dB/octave curve. This path seems a little bit simplistic too, but less simplistic than just adding the TL values of the single leaf partitions involved in the MSM system...
+<blockquote class="bb-quote"><div class="bb-quote-body">In TL you also have a coincidence region where waves in the material having frequency dependent speed interact with waves hitting the material under an angle, so this 18 dB-statement is not totally valid</div></blockquote>Thank you, this surely is one of the &quot;other fenomena&quot; Eric was referring to <span class="smilie" title=":)">:)</span></div>
+</article>
+<article class="post" id="p137509">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-10-26">26 October 2015</time><a class="permalink" href="#p137509" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Hi Marco, and Welcome to the forum!
+
+As Bert already pointed out, predicting the isolation of a two-leaf wall is no simple matter.  It&#x27;s a lot more complex than for a single leaf wall, which is fairly straight forward.  For a single-leaf wall, the Mass Law equations are pretty accurate.  If you want to know about isolation at specific frequency bands and draw a graph of TL for the entire spectrum, then you can use the basic mass law equation:
+
+TL(dB)= 20log(M) + 20log(F) -47.2 
+
+M is the surface density of the panel, and
+F is the center frequency of the measurement band
+
+If you just want an overall estimate of TL for the entire wall, without being too worried about individual frequencies, then you can use the simplified empirical mass-law equation:
+
+TL = 14.5 log (Ms * 0.205) + 23 dB  
+
+Where:   M = Surface Mass in kg/m2 ) 
+
+That works for walls with low surface density.  For walls with high surface density (above about 150 kg/m2), you need this version:
+
+TL = 37.5 log (M) - 42 dB
+
+That&#x27;s all for single-leaf walls, and is rather simplistic (there are other factors involved too) but reasonably accurate for most studio-builder applications.
+
+But when it comes to two-leaf walls, things get rather more complicated.  Firstly, for any wall (no matter how many leaves) there are actually five different regions on the spectrum for, and each region is controlled by a different aspect of the wall.  Like this:
+<div class="bb-attachment-missing">Image not preserved: five-regions-of-isolation-spectrum-2.jpg</div>At the very low end of the spectrum, isolation is controlled by stiffness (how rigid the wall is), then there is a region that is controlled by the resonant frequency of the wall system, followed by a region that is governed by mass law, then there&#x27;s the &quot;coincidence dip&quot; where isolation is governed mostly by damping, and finally at the very high end of the spectrum, isolation is governed mostly by shear waves in the wall.  This graph as shown applies to single leaf walls, and thus shows isolation as increasing by 6 dB per octave in general (mass law), but modified by the various types of resonance.
+
+In the case of a two-leaf wall, isolation increases at a much higher rate, of 18 dB per octave (as you already discovered), but once again modified by the various resonances.  With a two-leaf wall, the MSM resonance is usually higher up the curve than the simple resonance for a single leaf wall, which implies that two-leaf walls are much better at isolating higher frequencies, and not so good at lower frequencies.
+
+In fact, at the resonant frequency of the wall, if there is no damping at all and the materials are not very stiff, then not only do you not get isolation, you can actually get amplification!  Since the entire wall is resonating, the resulting sound transmission can be louder at that specific frequency range.  Something like this:
+<div class="bb-attachment-missing">Image not preserved: MSM-isolation-graph--amplification--reduction-#2-negative-image-resonance-damping-GOOD!!!!.GIF</div>So you can actually get considerably LESS isolation at the resonant region than you would have gotten with just a mass-law governed single-leaf wall.
+
+If you take a close look at the graph, you&#x27;ll notice that there&#x27;s a note saying that at 1.4 times the resonant frequency, the difference in isolation is down to zero, again, and at higher frequencies, the wall isolates well.  Above that, you get your 18db per octave increase.  (If you are interested in total accuracy, the zero point is actually at 1.414 times the resonant frequency, since the math related to resonance is also related to the square root of 2, which happens to be roughly 1.414).
+
+Here&#x27;s another version of that graph, showing how damping affects that peak:
+<div class="bb-attachment-missing">Image not preserved: MSM-AMPLIFICATION-graph---GOOD!!!Ifigtw-V2o.gif</div>That&#x27;s why the general recommendation is to tune the resonant frequency of your wall to be at least one octave lower than the lowest frequency you need to isolate (one octave lower = half the frequency), and that you have good damping inside the wall cavity
+
+So how do you tune your wall?  Using the equation for 2-leaf MSM resonance, which goes like this:
+<div class="bb-attachment-missing">Image not preserved: msm-2-leaf-equation.jpg</div>Simplifying that, you get this:
+
+Fc=c[(m1+m2)/(m1m2d)]^.5
+
+where:
+
+Fc=resonance frequency (Hz)
+c=constant (60 for empty cavity, and 43 for with insulation)
+m1=mass of first leaf (kg/m^2)
+m2 mass of second leaf (kg/m^2)
+d=depth of cavity between leaves (m)
+
+So by adjusting the mass on each leaf of your wall, and the size of the cavity in between you can tune your wall to the resonant frequency you want, which should be no higher than half the lowest frequency that you need to isolate (in other words, it you want to isolate down to 50 Hz, then you tune the wall below 25 Hz, and if you want to isolate down to 40Hz then you tune the wall to below 20 Hz),
+
+
+If you want an overall summary of figuring out isolation for a 2-leaf wall, then here it is:
+<div class="bb-attachment-missing">Image not preserved: Full-spectrum-TL-isoaltion-equations.jpg</div>You have three equations ther.  The first one applies to frequencies below resonance, the second to frequencies around resonance, and the third to frequencies above resonance.  
+
+The above is all theoretical, of course, and since theory is no necessarily the same as reality, don&#x27;t take it as being carved in stone.  All of the above assume perfect materials that behave perfevtly under perfect conditions: there&#x27;s no such thing as perfect materials, and you certainly can&#x27;t build a perfect wall and keep conditions perfect...  so you won&#x27;t actually get that 18 dB / octave increase, MSM resonance will be higher than you expected, and the wall won&#x27;t isolate as well as predicted.  But the above does at least give you a reasonable basis for estimating overall isolation.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p137510">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bert Stoltenborg</span><time datetime="2015-10-26">26 October 2015</time><a class="permalink" href="#p137510" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">In fact there are numerous documents presenting actual measurements on single and double leaf constructions.
+I would prefer them over pure math.
+
+I seem to have gotten that Philip Newell boork Marco mentioned from Eric. I have to give it a tight read, but just walking through it I see some suspicious things in it.</div>
+</article>
+<article class="post" id="p137511">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">OttoPus</span><time datetime="2015-10-26">26 October 2015</time><a class="permalink" href="#p137511" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Wow Stuart, this is what I call an exhaustive answer! <span class="smilie" title=":D">:D</span> in fact, considering the completeness of your post, I propose to put the post sticky or at least linked in the FAQ.
+
+Thank you very much, it&#x27;s all much clearer now.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">The above is all theoretical, of course, and since theory is no necessarily the same as reality, don&#x27;t take it as being carved in stone. All of the above assume perfect materials that behave perfevtly under perfect conditions: there&#x27;s no such thing as perfect materials, and you certainly can&#x27;t build a perfect wall and keep conditions perfect... so you won&#x27;t actually get that 18 dB / octave increase, MSM resonance will be higher than you expected, and the wall won&#x27;t isolate as well as predicted. But the above does at least give you a reasonable basis for estimating overall isolation.</div></blockquote>I understand that, I just don&#x27;t like to have a completely empty pit on my knowledge road. You just filled one of those pits A LOT!
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">You have three equations there. The first one applies to frequencies below resonance, the second to frequencies around resonance, and the third to frequencies above resonance. </div></blockquote>Just to complete the picture:
+In the third equation I&#x27;m missing some parameter value: Alpha, Beta and K. I suppose R1 and R2 are the reduction values obtained by using the single leaf partition TL formula?
+
+Thank you again,
+Marco</div>
+</article>
+<article class="post" id="p137512">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">OttoPus</span><time datetime="2015-10-26">26 October 2015</time><a class="permalink" href="#p137512" aria-label="Link to post 9">#9</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">bert Stoltenborg wrote:</div><div class="bb-quote-body">In fact there are numerous documents presenting actual measurements on single and double leaf constructions.
+I would prefer them over pure math.</div></blockquote>The problem is that the published constructions data cannot cover all possible situations. In my opinion is preferable to have some degree of estimation capability on a larger scale of cases, when possible.
+<blockquote class="bb-quote"><div class="bb-quote-author">bert Stoltenborg wrote:</div><div class="bb-quote-body">I seem to have gotten that Philip Newell boork Marco mentioned from Eric. I have to give it a tight read, but just walking through it I see some suspicious things in it.</div></blockquote>Well, this is not encouraging, but it makes me grateful that I questioned what I read there...</div>
+</article>
+<article class="post" id="p137513">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-10-27">27 October 2015</time><a class="permalink" href="#p137513" aria-label="Link to post 10">#10</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">bert Stoltenborg wrote:</div><div class="bb-quote-body">In fact there are numerous documents presenting actual measurements on single and double leaf constructions.
+I would prefer them over pure math.</div></blockquote>Absolutely agree!  Math is one thing, and the real world is quite another.  When you look at IR-761, it&#x27;s fascinating how seemingly minor differences between two walls produce results that seem to defy math.    
+
+I&#x27;d say that math can get you in the general ballpark, but it won&#x27;t get you a precise prediction outside of the laboratory, and even inside the lab it still isn&#x27;t spot on all the time.
+<blockquote class="bb-quote"><div class="bb-quote-body">I seem to have gotten that Philip Newell boork Marco mentioned from Eric. I have to give it a tight read, but just walking through it I see some suspicious things in it.</div></blockquote>Agree with that too.  Newell has done some good work, but I can&#x27;t say that I agree with everything he says.  Some of it is, indeed, suspicious....  <span class="smilie" title="8)">8)</span>   It&#x27;s nice to see that I&#x27;m not the only one that thinks this.
+
+And it&#x27;s a real shame that Eric is no longer with is to bring his legendary expertise and direct to-the-point comments.  I miss that.  I didn&#x27;t know him personally, and only chatted with him a few times on forums, but I miss him nevertheless.  Amazing man.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p137514">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-10-27">27 October 2015</time><a class="permalink" href="#p137514" aria-label="Link to post 11">#11</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Well, this is not encouraging, but it makes me grateful that I questioned what I read there...</div></blockquote>Yep.  It seems that he was suggesting that you can simply add up TL numbers for individual barriers, and arrive at at total, and I&#x27;m not buying that at all, because decibels are logarithmic, not linear, so adding them is the same as multiplying!  As far as I know, you can&#x27;t multiply isolation...
+<blockquote class="bb-quote"><div class="bb-quote-body">Hence if we had a structure of 20cm sand-filled concrete blocks, with 40dB of low frequency isolation, we would only need an internal floated structure with 20dB of isolation in order to achieve 60dB of total isolation.</div></blockquote>If that were true, then consider this: according to empirical mass law, a single sheet of drywall will get you about 25 dB of isolation, so four sheets close to each other would get you 100 dB...  <span class="smilie" title=":shock:">:shock:</span>  <span class="smilie" title=":!:">:!:</span>  <span class="smilie" title=":roll:">:roll:</span> <span class="smilie" title=":shot:">:shot:</span>   If that were the case, then Eric and the guys at Galaxy Studios wasted a huge amount of time and money building enormously massive concrete bunkers, and floating them on complex spring systems in order to get their world-record 100 dB of isolation... <span class="smilie" title=":)">:)</span> 
+Even better if you set up ten sheets of drywall like that, then you&#x27;d get 250 dB of isolation, so you&#x27;d even be able to silence the sounds of things things like MOAB bombs exploding and volcanoes erupting jet a few meters outside your studio!  <span class="smilie" title=":)">:)</span>
+
+I have a suspicion that this would not work too well...  Because you can&#x27;t just add decibels like that, since they are based on logs.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p137516">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bert Stoltenborg</span><time datetime="2015-10-27">27 October 2015</time><a class="permalink" href="#p137516" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">I miss Eric a lot to, Stuart. Thanks for the nice words.
+
+Maybe we should point out, Marco, TL doesn&#x27;t tell you much about isolation of sound with a music spectrum.</div>
+</article>
+<article class="post" id="p137518">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">OttoPus</span><time datetime="2015-10-27">27 October 2015</time><a class="permalink" href="#p137518" aria-label="Link to post 13">#13</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">bert Stoltenborg wrote:</div><div class="bb-quote-body">
+Maybe we should point out, Marco, TL doesn&#x27;t tell you much about isolation of sound with a music spectrum.</div></blockquote>Bert, I think I&#x27;m not following you here.
+
+As far as I read and understood, TL varies in function of the frequency.
+
+So if I consider my music spectrum the whole 20Hz-&gt;20KHz interval (well, let&#x27;s forget about pipe organs for a moment <span class="smilie" title=":)">:)</span> ), I have to calculate/estimate/read from lab test what&#x27;s the TL of that specific build at the frequencies I&#x27;m focusing in. 
+Then I could compare different building techniques TL values in different sound bands (mainly very low and low frequencies, since they are the most difficult to isolate).
+
+Am I missing something?
+
+[edit: maybe you&#x27;re pointing out that, in order to be a meaningful piece of data, I have not to consider the total TL value but the TL value at specific frequencies?]
+
+Thanks,
+Marco</div>
+</article>
+<article class="post" id="p137519">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-10-27">27 October 2015</time><a class="permalink" href="#p137519" aria-label="Link to post 14">#14</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">In the third equation I&#x27;m missing some parameter value: Alpha, Beta and K. I suppose R1 and R2 are the reduction values obtained by using the single leaf partition TL formula?</div></blockquote>For the final equation, it gets a bit more complicated!  Alpha and Beta are the real and imaginary parts of the propagation coefficient for the porous absorption (insulation)) inside your wall, and k is the wave number.
+
+Fortunately, there&#x27;s an easier way; by making several assumptions about typical properties here, you can round out all those terms to the constant &quot;6&quot;.
+
+So the third equation would then be simply:  
+
+R = R1 + R2 + 6
+
+Once again, that&#x27;s making a lot of assumptions about a lot of things, and the result is &quot;ballpark&quot; at best!  Plus, as Bert has mentioned several times, real-world results don&#x27;t necessarily match prediction, especially when using single-number indicators.  STC is notorious in this area, for example:  STC is not, and was never meant to be, a method for indicating how well a wall will attenuate rock music.  It merely tells you, very roughly how well a wall should isolate typical speech.  I can build you a wall rated at STC-50 that does a lousy job of isolating music, and another wall rated at STC-40 that does a much better job of isolating music...  Ditto with single-number TL.  It gives you an overall idea of how well a wall isolates, but not specifically for music.  You need to look at the entire TL curve to understand that.  And for studios, you also need to take into account things like the Fletcher-Munson curves, and even the NR (or NC) rating, if you really want to get a feel for how well the room isolates, subjectively, as judged by a typical human being.  For example, a room that does not isolate so well in the low frequencies might not seem too bad if the NC rating is high and the offending sound coming from outside is very loud, when you are listening on a busy day right after coming in from rush-hour traffic,  but the exact same room might be judged as NOT having good isolation if the NC rating is very low and the offending sound is a quieter when you are listening late at night after a restful nap...  Go figure that one!  <span class="smilie" title=":)">:)</span>
+
+In other words, the math will tell you numbers, and even draw graphs, but they won&#x27;t really be as accurate as you&#x27;d like, and they are objective anyway: your actual subjective experience of the real-world wall could be rather different from what the numbers say.
+
+That&#x27;s probably not what you wanted to hear (no pun intended!), but it&#x27;s reality.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p137520">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-10-27">27 October 2015</time><a class="permalink" href="#p137520" aria-label="Link to post 15">#15</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">As far as I read and understood, TL varies in function of the frequency.
+
+So if I consider my music spectrum the whole 20Hz-&gt;20KHz interval (well, let&#x27;s forget about pipe organs for a moment <span class="smilie" title=":)">:)</span> ), I have to calculate/estimate/read from lab test what&#x27;s the TL of that specific build at the frequencies I&#x27;m focusing in.
+Then I could compare different building techniques TL values in different sound bands (mainly very low and low frequencies, since they are the most difficult to isolate).
+
+Am I missing something?</div></blockquote>Marco, I think Bert is referring to single-number TL ratings.  If an equation tells you that your wall will have a TL of 58.73 dB, then that is not very meaningful, since it doesn&#x27;t tell you much about individual frequencies.  You need to look at the entire TL graph to get a more realistic idea.  Tl is a hell of a lot more useful than STC in this aspect, but still deficient.  Personally, I don&#x27;t think it is even possible to have a meaningful single-number rating system for isolation.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p137521">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">OttoPus</span><time datetime="2015-10-27">27 October 2015</time><a class="permalink" href="#p137521" aria-label="Link to post 16">#16</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">
+For the final equation, it gets a bit more complicated!  Alpha and Beta are the real and imaginary parts of the propagation coefficient for the porous absorption (insulation)) inside your wall, and k is the wave number.
+
+Fortunately, there&#x27;s an easier way; by making several assumptions about typical properties here, you can round out all those terms to the constant &quot;6&quot;.
+
+So the third equation would then be simply:  
+
+R = R1 + R2 + 6
+</div></blockquote>Thank you!! Another equation to add to my formulary.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">That&#x27;s probably not what you wanted to hear (no pun intended!), but it&#x27;s reality.
+
+-  Stuart  -</div></blockquote>I know, thanks for the thorough explanation.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">
+Marco, I think Bert is referring to single-number TL ratings.  If an equation tells you that your wall will have a TL of 58.73 dB, then that is not very meaningful, since it doesn&#x27;t tell you much about individual frequencies.  You need to look at the entire TL graph to get a more realistic idea.  Tl is a hell of a lot more useful than STC in this aspect, but still deficient. 
+-  Stuart  -</div></blockquote>I figured it out a second after I posted my reply <span class="smilie" title=":D">:D</span>
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">
+Personally, I don&#x27;t think it is even possible to have a meaningful single-number rating system for isolation.
+</div></blockquote>I agree it can&#x27;t. 
+In my humble opinion, it would be meaningful only if the isolation curve was linear and with a known slope. In that case you could extract a value from any point of the curve just knowing the central pivot.
+
+BUT isolation system don&#x27;t show such a curve, so... 
+
+Marco</div>
+</article>
+<article class="post" id="p137522">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bert Stoltenborg</span><time datetime="2015-10-27">27 October 2015</time><a class="permalink" href="#p137522" aria-label="Link to post 17">#17</a></header>
+<div class="post-body">Over here they use spectral weightings (like the dB(A)-, STC- or RW-correction) for popmusic, housemusic, filmmusic, traffic noise, plane noise and rail noise.
+But as these weighting spectra are fairly old (from the 80&#x27;s and 90&#x27;s) and for example music production echniques changes, I agree that it is best to calculate with 1/3 or 1 octave spectra when you&#x27;re designing isolation.</div>
+</article>
+<article class="post" id="p137558">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">OttoPus</span><time datetime="2015-10-30">30 October 2015</time><a class="permalink" href="#p137558" aria-label="Link to post 18">#18</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">
+For the final equation, it gets a bit more complicated!  Alpha and Beta are the real and imaginary parts of the propagation coefficient for the porous absorption (insulation)) inside your wall, and k is the wave number.
+
+Fortunately, there&#x27;s an easier way; by making several assumptions about typical properties here, you can round out all those terms to the constant &quot;6&quot;.
+
+So the third equation would then be simply:  
+
+R = R1 + R2 + 6
+</div></blockquote>Sorry if I sound like a broken record, but I have a question about that formula.
+
+Given a wall reported by lab test data to show a TL of 38 dB. (R1 = 38dB)
+Given a second wall built the same way. (R2 = 38dB)
+
+By that formula, the R should be:
+R = 38dB + 38dB + 6
+
+Since R1 and R2 are TL, so expressed in dB, should I apply the log math? So that:
+
+R = 41dB + 6
+
+R = 47 db?
+
+Is it correct? <span class="smilie" title=":horse:">:horse:</span>  <span class="smilie" title=":oops:">:oops:</span></div>
+</article>
+<article class="post" id="p137559">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bert Stoltenborg</span><time datetime="2015-10-30">30 October 2015</time><a class="permalink" href="#p137559" aria-label="Link to post 19">#19</a></header>
+<div class="post-body">Yes.</div>
+</article>
+<article class="post" id="p137560">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">OttoPus</span><time datetime="2015-10-30">30 October 2015</time><a class="permalink" href="#p137560" aria-label="Link to post 20">#20</a></header>
+<div class="post-body">Thank you! <span class="smilie" title=":)">:)</span></div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

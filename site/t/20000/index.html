@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Absorption mechanism: mineral wool wrapped in thin plastic | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by John Cage in Acoustics, 2015. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/20000/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Absorption mechanism: mineral wool wrapped in thin plastic</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by John Cage on 4 June 2015. 6 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 20000.</p>
+
+</div>
+</header>
+<article class="post" id="p136222">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">John Cage</span><time datetime="2015-06-04">4 June 2015</time><a class="permalink" href="#p136222" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi,
+I have been following this forum with great interest and I have learned a lot. This is my first post and is a more theoretical question about the absorption mechanism of DIY acosutic panels in which the mineral wool is wrapped in thin plastic.
+
+I have submited this same question in another forum.
+
+In various forums (including this one) I have seen people to state that mineral wool wrapped in thin plastic (for DIY acoustic panels/corner bass traps/ceiling clouds) does not alter its absorption characteristics (at least at low and medium frequencies); however the absorption mechanism has not been addressed. In the book &quot;Acoustic Absorbers and Diffusers&quot;, by Trevor J. Cox and Peter D’Antonio it is stated that:
+
+&quot;The porous absorber often has to be protected from dust, and so is frequently wrapped in plastic, but this decreases high frequency absorption.&quot; (p. 13)
+
+However, the mechanism of porous absorption is based in energy dissipated via friction and is stated in the same book:
+
+&quot;Air is a viscous fluid, and consequently sound energy is dissipated via friction with the porewalls.For the absorption to be effective there must be interconnected air paths through the material; so an open pore structure is needed&quot;. (p. 156)
+
+My question is: thin plastic which completely encloses the mineral wool does not let passing air through the mineral wool so there are not friction losses. Can someone enlighten me on this matter and in particular on the absorption mechanism involved in plastic/mineral wool?
+
+Thank you.</div>
+</article>
+<article class="post" id="p136224">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-06-04">4 June 2015</time><a class="permalink" href="#p136224" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Hi John, and welcome! <span class="smilie" title=":)">:)</span>
+
+A porous absorber with a foil or membrane over it is two devices at once, not just one.  The first part is the membrane (plastic, in your case) which reflects high frequencies above a certain threshold that is set mostly by the mass of the membrane, which in turn is related to its thickness: the thicker it is, the higher the mass is, and the lower the point where it starts reflecting.  Of course, it is not really a single fixed point, where all higher frequencies are reflected but all lower frequencies get through: rather, that &quot;point&quot; is just the center point for a slow, gradual change from &quot;reflected&quot; to &quot;not reflected&quot;.
+
+The reflection is basically due to mechanical impedance mismatch, and since it is <em>impedance</em>, it changes with frequency.  The higher the frequency, the higher the impedance, and the greater the transmission loss for sound attempting to pass through the membrane.  Low frequencies get through very easily, since the impedance is practically zero for them, but higher frequencies basically see the foil (membrane) as a solid barrier, and bounce back.
+
+The amount of Tl is given by the equation:
+
+TL = 10 * log  (1 + (  Zm  /  (2 * Rho * c ) ) ^2
+
+WHERE:
+Zm = the mechanical impedance of the membrane.
+
+
+And the mid point of the roll-off is given very approximately by:
+
+F = 90 / m
+
+WHERE:
+F = frequency where 80% of the energy passes through the foil
+m = Surface Mass of the foil in kg/sqm
+
+so for, example to reflect above 500hz, you&#x27;d need a foil with a surface density 180 grams per square meter (0.180kg/m2).  At 500 Hz, 80% of the energy would still get through, but at successively higher frequencies, less and less gets through, and down in the low end, it all gets through.
+
+OK, so on the other side of the foil, where the porous absorber is, things work exactly as they always do for porous absorbers: the air motion is converted into low-grade heat by the fibers.  As the vibrating air molecules hit the fibers, they transfer some of their energy into the fibers, which &quot;absorb&quot; it by turning it into heat.
+
+So the  porous absorber does not behave any differently than it would without the foil there, except that the foil prevents high frequencies from reaching it.  High frequencies never even get there, since they are reflected back towards the room by the foil, but low frequencies don&#x27;t even &quot;see&quot; the foil at all, and just carry on through as though it wasn&#x27;t even there, so they can then be absorbed in the normal way by the porous absorption.
+<blockquote class="bb-quote"><div class="bb-quote-body">I have seen people to state that mineral wool wrapped in thin plastic (for DIY acoustic panels/corner bass traps/ceiling clouds) does not alter its absorption characteristics</div></blockquote>Actually, it does not alter them AT ALL!  The porous absorber behaves exactly the same as always.  The foil does not change it&#x27;s characteristics in any way.  All that the foil does, is to stop some frequencies from ever getting to the porous absorber. 
+<blockquote class="bb-quote"><div class="bb-quote-body">&quot;The porous absorber often has to be protected from dust, and so is frequently wrapped in plastic, but this decreases high frequency absorption.&quot;</div></blockquote>Correct, because the plastic prevents the high frequencies from getting through!
+<blockquote class="bb-quote"><div class="bb-quote-body">However, the mechanism of porous absorption is based in energy dissipated via friction </div></blockquote>Correct, and that does not change.  The fibers of the porous absorption material still work exactly the same as before.   As air molecules strike them while vibrating, some of that energy is is lost in causing mechanical movement of the fiber, which is then lost as heat.  No change.
+<blockquote class="bb-quote"><div class="bb-quote-body">.For the absorption to be effective there must be interconnected air paths through the material; so an open pore structure is needed&quot;.</div></blockquote>Correct.  The porous absorption material still has all those myriad interconnected air paths through it, so nothing has changed there either: it still works as normal.
+<blockquote class="bb-quote"><div class="bb-quote-body">thin plastic which completely encloses the mineral wool does not let passing air through the mineral wool so there are not friction losses</div></blockquote>You seem to be confused about what sound is!  It is NOT moving air!  No air flows through the insulation, with or without the foil in front of it.  sound energy is not air movement: it is air <em>vibration</em>, which is very different.  Individual molecules of air are not displaced by a sound wave: they simply vibrate back and forth around a central neutral position, but they don&#x27;t move.  The sound <em>wave </em>moves, yes, but the air itself does not.  Sound is transmitted by one molecule being struck by the one behind it, which causes it to strike the one in front of it, then bounce back to its original position, and so on.  So there is no net movement of air.  There is no flow of air.  So even though the foil would indeed prevent air from flowing through, it does not impede low frequency sound waves.  It simply passes them through to the other side.  It does not matter if air can flow through the foil into the insulation or not: sound can still get through, since sound is not made up of moving air: it is made up of moving waves, that are propagated by air molecules that vibrate in place, with moving.
+<blockquote class="bb-quote"><div class="bb-quote-body"> Can someone enlighten me on this matter and in particular on the absorption mechanism involved in plastic/mineral wool?</div></blockquote>The absorption mechanism is exactly the same as for any type of porous absorber: no difference at all.  The only thing different, is that the foil prevented high frequencies from getting through, by reflecting them back into the room due to the very high impedance mismatch, but it allows low frequencies to get through, since it only offers very low impedance to them.  So the absorber only &quot;sees&quot; the low frequencies, since the highs never reach it, but apart from that, there&#x27;s nothing strange going on.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p136242">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">John Cage</span><time datetime="2015-06-05">5 June 2015</time><a class="permalink" href="#p136242" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Hi Stuart,
+
+Impressive.  <span class="smilie" title=":shock:">:shock:</span> 
+A very clear and brilliant explanation.
+
+Thank you for the equations and the relevant theory: very informative and useful to me.
+
+And yes, you are right: I was confused about the nature of sound: confusion between air movement and air vibration; and because of that I could not find an explanation for the phenomenon   <span class="smilie" title=":oops:">:oops:</span> .  All is clear to me now.
+
+Thank for your answer and your time... and for helping me to understand a bit more of the reality.
+
+This forum is a wonderful community.</div>
+</article>
+<article class="post" id="p136245">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-06-05">5 June 2015</time><a class="permalink" href="#p136245" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><span class="smilie" title=":thu:">:thu:</span>  glad to be of help!  That&#x27;s what the forum is for... <span class="smilie" title=":)">:)</span>
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p136324">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mutetourettes</span><time datetime="2015-06-15">15 June 2015</time><a class="permalink" href="#p136324" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">hi Stuart - you show how the membrane rolls off at a lower point the thicker it is... I wonder for a given membrane what happens if we start making holes in it?
+
+I&#x27;ve been looking at making diy versions of the asc tube traps, which according to this link have thin mylar meberanes on the &#x27;reflective&#x27; side with circa 2&quot;dia holes on 4&quot; centres (<a href="http://forum.studiotips.com/viewtopic.php?f=1&amp;t=3711" rel="nofollow noopener" target="_blank">http://forum.studiotips.com/viewtopic.php?f=1&amp;t=3711</a>)
+
+Now there&#x27;s foil-covered insulation for steam pipes around that looks like it could be a diy approach, but obviously the FRK gives a way different (lower?) roll-off than asc&#x27;s 6-mil mylar with holes... and that&#x27;s be why they sound a bit wrong (also I&#x27;ve seen FRK-covered absorbers described as &#x27;pingy&#x27;)
+
+I&#x27;ve pored over this link, which is supposedly the bible for holy sheets: <a href="http://www.iperf.org/files/1313/9265/8912/The_Acoustical_Uses_for_Perforated_Metals_Handbook.pdf" rel="nofollow noopener" target="_blank">http://www.iperf.org/files/1313/9265/8912/The_Acoustical_Uses_for_Perforated_Metals_Handbook.pdf</a>
+
+and as far as I can tell, perforations will make the roll-off frequency go *UP*, right? (as the sheet gets more &#x27;transparent&#x27;, more high frequency reach the absorbent material behind, so 80% point goes upwards?...)
+
+so I&#x27;m struggling to understand but I suggest to bring the frk up to a similar roll-off point as the perforated 6mil mylar a much more &#x27;transparent&#x27; hole design is going to be needed... ie more, smaller, closer-spaced perforations... is that right?
+
+practically, making all those perforations in the FRK might be tedious, so it might be best to rip it all off and just use similar spec mylar...</div>
+</article>
+<article class="post" id="p136536">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">laru1977</span><time datetime="2015-07-18">18 July 2015</time><a class="permalink" href="#p136536" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Hello everybody,
+
+great forum here, just disovered right now !
+
+I bought Rockwool today and built 2 frames (about 120 x 60 x 14 cm) and planed to build 2 basstraps and pack them in thin plastic (for covering the floor when painting) as I red, that the low frequencies still easily passes.
+
+In the rockwool parcel were 4 panels, so I would still have 2 left. I was thinking to make broadbend absorbers from them, but I am not confortable the rockwool just to be covered with fabric. I was quite surprises how tiny this fibres are when they come on your clothes and as my studio is also in the same room with our bedroom (we have just a 2 room flat) and this is the given situation at the moment, I want things to be secure and healthy.
+
+Is there any other material which lets mid and high frequencies through to be also absorbed, but to keep the fibres 100 % back. Would newspaper be a solution ?
+
+Thank you in advance for help,
+
+Best,
+
+Lars</div>
+</article>
+<article class="post" id="p136537">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-07-18">18 July 2015</time><a class="permalink" href="#p136537" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Hi Lars,  Please read the <a href="/t/3231/">forum rules for posting  (click here)</a>.  You seem to be missing a couple of things!  <span class="smilie" title=":)">:)</span>
+
+Most people use thin plastic sheeting for that purpose: it fully contains the fibers while still allowing the low frequencies through for absorption, and also reflecting some of the highs back into the room.
+
+However, for first reflection point absorption the plastic must be very, very thin, to avoid reflecting too much mid-high energy.
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

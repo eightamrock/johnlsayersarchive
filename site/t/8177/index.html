@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Need help connecting ETF | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Trinitor in Acoustics, 2007. 4 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/8177/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Need help connecting ETF</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Trinitor on 11 February 2007. 4 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 8177.</p>
+
+</div>
+</header>
+<article class="post" id="p57163">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Trinitor</span><time datetime="2007-02-11">11 February 2007</time><a class="permalink" href="#p57163" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi,
+
+for some reason I can&#x27;t figure this out on my own  <span class="smilie" title=":evil:">:evil:</span> 
+
+<strong>What I have:</strong>
+- Digi 002R
+- Genelec 8040
+
+<strong>What I will buy soon:</strong>
+- Behringer ECM8000
+
+<strong>My problem(s):</strong> Connecting all this.
+- mic preamp
+- active monitor
+
+<strong>What to do:</strong>
+1) Use the Digi002R as the soundcard. This gives me the mic preamp, and the connection for my active monitor.
+But as far as I&#x27;ve seen, ETF doesn&#x27;t &quot;see&quot; my Digi002R as a soundcard, so this doesn&#x27;t work.
+2) Buy a cheap soundcard (f.e. Creative USB)
+- mic preamp: I guess these will have some sort of a mic preamp (xlr to jack).
+- active monitors: If they don&#x27;t allow this, I can connect the outs to my Digi002R.
+
+Can somebody help me out here, is this the way to go?
+I&#x27;m dying to do some measurements, but these simple connections drive me crazy.
+
+Thanks in advance!</div>
+</article>
+<article class="post" id="p57267">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ethan-winer/">Ethan Winer</a><time datetime="2007-02-12">12 February 2007</time><a class="permalink" href="#p57267" aria-label="Link to post 2">#2</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Trinitor wrote:</div><div class="bb-quote-body">ETF doesn&#x27;t &quot;see&quot; my Digi002R as a soundcard</div></blockquote>ETF requires a sound card with WDM drivers.
+
+&gt; Buy a cheap soundcard (f.e. Creative USB) &lt;
+
+Yes, that works. Though it&#x27;s maddening to already own a perfectly wonderful sound card and then have to buy a cheap one too!
+
+&gt; these simple connections drive me crazy. &lt;
+
+Once you have a sound card that ETF recognizes, the rest is easy. But I&#x27;ll mention that the hookup shown in ETF&#x27;s Help file is incomplete because it doesn&#x27;t show the Y splitter that&#x27;s also needed. The drawing below shows this.
+
+--Ethan
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://www.ethanwiner.com/misc-content/etf-setup.gif" rel="nofollow noopener" target="_blank">http://www.ethanwiner.com/misc-content/etf-setup.gif</a></div></div>
+</article>
+<article class="post" id="p57347">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Trinitor</span><time datetime="2007-02-13">13 February 2007</time><a class="permalink" href="#p57347" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Hi Ethan,
+
+thanks for helping me. Your articles have always been really helpful to me  <span class="smilie" title=":wink:">:wink:</span> 
+
+So, the Creative USB it will be then.
+
+One last question:
+I&#x27;ve read that the sound card needs line inputs. Ok, but I guess that means that I can&#x27;t put the mic directly into the Creative USB card. I would have to use an external mic preamp, and send that to my line inputs on the Creative USB card.
+So maybe the Radio Shack SPL meter might be a better option (the ETF help file says &quot;Radio Shack SPL meter OR ETF mic/preamp output&quot;). I guess I can plug the output from the SPL meter directly into the right line input of the Creative USB card. This way I don&#x27;t have to buy a mic preamp. Correct me if I&#x27;m wrong.
+
+To summarize:
+- Creative USB card
+- Radio Shack SPL meter
+
+
+(As for the Y splitter, does it matter if you&#x27;re using only one speaker for the measurement?)
+
+Thanks!</div>
+</article>
+<article class="post" id="p57363">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2007-02-13">13 February 2007</time><a class="permalink" href="#p57363" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">ETF uses ONE of your line in/out channels to &quot;characterize&quot; the sound card - this is how it can use the &quot;cheap&quot; sound cards instead of high dollar ones. The other channel is the actual measurement channel, which ETF &quot;tweaks&quot; according to what it sees in the &quot;calibrate&quot; channel - this is why you have to connect the line out of one channel into it&#x27;s own line in.
+
+The Rat Shack SLM&#x27;s put out approximately (consumer) line level, so you shouldn&#x27;t need a preamp when using that as your test mic - but be aware that the SLM doesn&#x27;t come close to being &quot;flat&quot;, and should only be used for the lower frequency measurements available in ETF - don&#x27;t remember exactly where the SLM falls off, somewhere in the 4-8 kHz range IIRC. Still, it&#x27;s fine for all modal concerns since they rarely exceed 400 hZ or thereabouts.
+
+Speakers - if you want to actually know what your entire ROOM is doing, then you SHOULD only use one speaker. In the case of an actual, closed, rectangular room, a single speaker should be placed as close to (for example) the lower, left, front corner - in that example, the measurement mic would be placed in the upper, right, REAR corner of the room. That way, ALL the room modes will be excited and ALL the results should be evident at the mic location.
+
+For a more accurate idea of what your speakers are doing <strong>in their chosen location, measured at the mix position,</strong> the &quot;Y&quot; adapter Ethan mentioned would be used so the same test signal is emanating from both speakers at equal SPL&#x27;s - Even in THAT scenario, though, there are situations (like non-symmetrical object positioning in the room) where you may want to just check one speaker or the other, to see where a specific problem is coming from.
+
+Beyond that, I think Ethan&#x27;s used the software a lot more than I have (I tend more toward gut feel and practice, plus haven&#x27;t had enough time lately, starting a new biz doing corporate training videos) so Ethan is more likely to be able to help you with specifics of the software... Steve</div>
+</article>
+<article class="post" id="p57378">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ethan-winer/">Ethan Winer</a><time datetime="2007-02-13">13 February 2007</time><a class="permalink" href="#p57378" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Steve,
+
+&gt; the SLM doesn&#x27;t come close to being &quot;flat&quot;, and should only be used for the lower frequency measurements available in ETF - don&#x27;t remember exactly where the SLM falls off, somewhere in the 4-8 kHz range IIRC. &lt;
+
+It&#x27;s much lower than that. I once compared my RS meter to an expensive calibrated AKG mike, and they tracked perfectly up to 800 Hz, and by 4 KHz the RS meter was way off.
+
+&gt; For a more accurate idea of what your speakers are doing <strong>in their chosen location, measured at the mix position,</strong> the &quot;Y&quot; adapter Ethan mentioned would be used so the same test signal is emanating from both speakers at equal SPL&#x27;s &lt;
+
+Yes, mainly because most music, especially pop music, has bass instruments panned in the middle. So an LF response test should emulate that.
+
+&gt; you may want to just check one speaker or the other, to see where a specific problem is coming from. &lt;
+
+Not only that, it&#x27;s a good way to be sure your speakers are both working. I once heard of someone finding a blown woofer that had been blown for who knows how long. When they had someone come in to test their room, that&#x27;s when the blown woofer was discovered. <span class="smilie" title=":)">:)</span>
+
+--Ethan</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

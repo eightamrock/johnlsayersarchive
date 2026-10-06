@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How To Measure Room&#39;s Frequency Response | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by bolehnggak in Studio Construction, 2003. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/439/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-construction/">Studio Construction</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>How To Measure Room&#39;s Frequency Response</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by bolehnggak on 15 July 2003. 6 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 439.</p>
+
+</div>
+</header>
+<article class="post" id="p2913">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bolehnggak</span><time datetime="2003-07-15">15 July 2003</time><a class="permalink" href="#p2913" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi.
+ 
+Here&#x27;s some questions:
+- Since all the formula for the room nodes are meant for rectangular shape of room, how can I apply the formula to a non-rectangular room, which often found on most studios&#x27; control rooms?
+- I&#x27;m thinking of using pink noise or frequency sweep tones to measure the room, using my reference speaker and a test microphone, and monitor them on a spectrum analyser. Is it effective to find peaks and dips in the room response so I can provide treatment at the problem frequencies?
+- If so, how should I measure it? Where should I place the speaker and the test mic? (Corner, center, etc.)
+ 
+Thanks
+Ari</div>
+</article>
+<article class="post" id="p2918">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2003-07-15">15 July 2003</time><a class="permalink" href="#p2918" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Ari, for splayed wall rooms, sloped ceilings, etc, you can just use the average distance. Keep in mind that any &quot;problem&quot; areas that show up won&#x27;t be nearly as bad in reality, because of the varying dimensions. Still, the general concensus is that room ratios are still important (Sepmeyer and others) because room modes don&#x27;t go away with non-parallel walls, they just change. Done correctly though, splaying/sloping can get rid of flutter echo as well as provide a Reflection Free Zone for mixing. To figure out some of the angles, such as front wall slopes/facets, I use a CAD program and manually &quot;ray trace&quot; the path of reflections to make sure I&#x27;m directing early reflections away from the mix position and to the rear of the room. If the room is smaller than about 20-22 feet in length, the rear should be absorbed a lot to kill early reflections back to the mix position. If there is a path from the mix engineer&#x27;s head to the rear wall (and back) that totals more than about 22-25 feet, diffusion can be used instead.
+
+As to software, steady state pink noise is kind of limited in what it will tell you. You also need to be able to measure impulse response, do a sweep frequency, etc - Here&#x27;s a link to one of the reasonably priced setups I&#x27;m looking at (free demo, but pretty crippled) - there&#x27;s some good explanation in their &quot;demo room&quot; - 
+
+<a href="http://www.etfacoustic.com/" rel="nofollow noopener" target="_blank">http://www.etfacoustic.com/</a>
+
+There&#x27;s another called CLIO, but it&#x27;s about 2-3 times as expensive, you can&#x27;t buy it online, and their reps like to play games (no pricing, you have to contact them) - Here&#x27;s a link
+
+<a href="http://www.mclink.it/com/audiomatica/clioeng.htm" rel="nofollow noopener" target="_blank">http://www.mclink.it/com/audiomatica/clioeng.htm</a>
+
+The other thing I like about the ETF stuff is that you can use laptops/cheap sound cards, the calibration process compensates for them. 
+
+Gotta head out to the DDJ (Dreaded Day Job) so I&#x27;ll let you check this stuff out... Steve</div>
+</article>
+<article class="post" id="p2932">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ethan-winer/">Ethan Winer</a><time datetime="2003-07-15">15 July 2003</time><a class="permalink" href="#p2932" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Ari,
+
+Besides Steve&#x27;s excellent advice, I&#x27;ll also mention that pink noise, impulses, and swept tones do not reveal response variations at low frequencies. And those are often the biggest problem of all. Besides the tests you mentioned, you also need to play steady sine waves at various low frequencies and measure the response to see how it varies.
+
+--Ethan</div>
+</article>
+<article class="post" id="p2933">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-07-15">15 July 2003</time><a class="permalink" href="#p2933" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Ari,
+
+This is actually a very complicated subject and the test methods you use depend greatly on what you&#x27;re trying to achieve.   Are you interested in the charateristic room response, or are you simply interested in the response using your monitors in their particular position?  Are you trying to optimize the entire room.... the listening position.... the general vicinity of the listening position?
+
+Also, the quantity and type of data you collect may tell you a great deal about some particular situation at hand, but it could turn out to be next to useless for predicting the results of any change.  This is especially true in the case of low frequency modal analysis.  
+
+So what exactly are you wanting to do with these measurements?
+
+Thomas</div>
+</article>
+<article class="post" id="p2950">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">bolehnggak</span><time datetime="2003-07-16">16 July 2003</time><a class="permalink" href="#p2950" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Well, the main purpose for the test is to obtain the problematic frequencies for the room, so I won&#x27;t use the wrong acoustic treatment. e.g. I might install slot resonator for 300-500Hz, but only to find out that my room doesn&#x27;t need absorption at 300-500Hz.
+Actually I wonder, how do you guys know what frequencies that need absorption for a room?
+
+Ari</div>
+</article>
+<article class="post" id="p2969">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ethan-winer/">Ethan Winer</a><time datetime="2003-07-16">16 July 2003</time><a class="permalink" href="#p2969" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Ari,
+
+&gt; how do you guys know what frequencies that need absorption for a room? &lt;
+
+One way is to measure the reverb decay time in various frequency ranges, looking for ranges that deviate from the others. Then you can aim to make the decay times more uniform at all frequencies.
+
+--Ethan</div>
+</article>
+<article class="post" id="p2976">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2003-07-16">16 July 2003</time><a class="permalink" href="#p2976" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Ari, Ethan&#x27;s right about the RT60 times being a good indicator - the ETF software lets you measure that and more, which is why I&#x27;m planning on ordering the whole package soon. Until I have the new facility, I&#x27;ll play with the stuff on existing rooms and see how correlatable it is to hearing tests...
+
+One of the problems of &quot;A/B testing&quot;, when it comes to acoustics, is the time lag between tests. If you&#x27;re just listening, instead of quantifying the results, it isn&#x27;t even POSSIBLE to be objective when there may be a WEEK between tests, depending on what changes are made. Sometimes 10 SECONDS is too long for us to be sure what differences we heard.
+
+That&#x27;s why, even though the ears should have the final say, I feel that something like the ETF package or similar can be a really useful tool - with it, you can save the results of each test and see visually what effect a specific change in your environment has caused - 
+
+Another tool I will be using along this line, is to use a pair of condenser mics thru a clean preamp into a 24/96 wav file, the mics located as close to my ears as possible, so that after ALL changes are made I can put on a set of phones (not hyped ones) and review the effects of each change. (don&#x27;t hold your breath waiting for these WAV files to be posted, even if they&#x27;d be small enough - I&#x27;ve not yet broken ground on the new place. I&#x27;m only mentioning this intent as a sharing of ideas...)
+
+Granted, any tool can be abused - so the more you learn about the why/where/how/what of different tests, the more you&#x27;ll be able to test the right things in the right places... Steve</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

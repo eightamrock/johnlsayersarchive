@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noise attenuation reference? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by antp in Studio Construction, 2019. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21982/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-construction/">Studio Construction</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Noise attenuation reference?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by antp on 8 May 2019. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21982.</p>
+
+</div>
+</header>
+<article class="post" id="p150491">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">antp</span><time datetime="2019-05-08">8 May 2019</time><a class="permalink" href="#p150491" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi all,
+
+I posted a while back thinking about drum room construction - life got in the way but I am starting to reopen the can of worms.
+
+I&#x27;m aware that the best way to prevent noise from escaping from a room is a proper decoupled two-leaf, sealed room construction. What I&#x27;ve been looking for but unable to find is some rough reference numbers for the kind of noise attenuation provided by a few solutions for comparison, e.g.:
+
+A) A &quot;normal&quot; downstairs room in a brick-built house w/ double-glazed windows.
+B) (A) with attention paid to sealing up around the door, some sort of &quot;slot-in&quot; seal for windows
+C) (B) with some mass added to walls, e.g. MLV
+D) (B) with resilient channel + drywall?
+
+Maybe some other comparisons - brick-built detached garage etc.
+
+Does anyone know of any reference/case studies for this sort of thing? Essentially trying to gauge options for adding some noise attenuation to a room for courtesy purposes without the need to achieve studio-level soundproofing (10dB is a big deal when it comes to neighbourhood peace).
+
+Thanks!</div>
+</article>
+<article class="post" id="p150493">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-05-08">8 May 2019</time><a class="permalink" href="#p150493" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">This can all be calculated from acoustic theory.  Theory will give you the maxiumum isolation that you would get from each situation, but considering that theory assumes perfect materials, perfect construction, and perfect conditions, in real life the actual outcome won&#x27;t be as good as predicted by theory.  More on that below...
+
+OK, your first option was for a single brick wall.  In acoustic terms, that is a &quot;single leaf&quot;, and the maximum isolation you can expect from that is given by an equation called &quot;Mass Law&quot;, which goes like this:
+
+TL(dB)= 20log(M) + 20log(f) -47.2 
+
+Where: 
+M is the surface density of the panel (mass per unit area (kg/m²) ), and
+F is the center frequency of any one-third-octave measurement band
+
+Plug in your numbers, and that will tell you how much isolation you can expect for any given frequency band.  
+
+There&#x27;s also an empirical version of Mass Law that give you the isolation for the entire spectrum, instead of just one frequency, that that one goes like this:
+
+TL = 14.5 log (M * 0.205) + 23 dB
+
+Where:   M = Surface density in kg/m2
+
+Those are both very simple equations, needing nothing more than basic math skill to do.  A scientific calculator makes it dead easy.
+
+This is actually the method for figuring out your &quot;B&quot; situation, in a perfectly sealed room with the same mass on all sides, and no cracks, gaps, or holes.  For your &quot;A&quot; situation (unsealed, presumably WITH cracks, gaps, and holes), you could expect to lose 90% of that isolation.  Yes, that isn&#x27;t a typo:  I really do mean that you would lose up to ninety percent of the isolation that you would have had otherwise in a properly sealed room.  In other words, you would lose 10 dB across in the overall isolation, for every frequency.  That&#x27;s why you&#x27;ll see the mantra chanted here incessantly: sealing is critically important.  Poor seals = poor isolation.
+
+However, that said, even mass law isn&#x27;t very attractive: try out a few numbers using the surface density of common building materials, and you&#x27;ll be very disappointed that <em>nothing</em> isolates very well...  For a single-leaf partition with Mass Law, your best bet is a two foot thick solid reinforced concrete wall, floor, ceiling... and a matching door.  That will give you close to 60 dB isolation, which is quite good (a typical stud wall in a house only gives 1/1000th of that, at about 30 dB).
+
+For a typical brick wall, assuming typical bricks, one wythe thick, that would give you about 44.6 dB isolation (assuming perfect seals, doors, windows... etc..)
+
+For your &quot;C&quot; case, you wanted to add a layer of MLV to your wall.  I&#x27;ll assume you meant the thicker 6mm 10kg/m2 MLV, not the thinner stuff.  Well, the surface density of the brick wall by itself would be about 150 kg/m2, and adding a layer of MLV would increase that to 160 mg/m2, which means an increase of about 6% in mass.  So instead of 44.6 dB, you would get 44.9 dB.... <span class="smilie" title=":)">:)</span>  Not very useful!  If you added FIFTEEN layers of MLV on top of your bricks, (I have no idea how you could even do that physically, and keep it all in place, but just assuming you could), then you would have doubled the mass of the bricks, so the isolation would increase by 6 dB in theory, to about 50 dB total....  But in real life, it would only be about a 4 to 5 dB increase, so the total would be around maybe 48 or so.  
+
+Mass law is not your friend.
+
+For your &quot;D&quot; case, you mentioned only resilient channel (RC) and drywall, so I&#x27;m assuming that you wanted to attach that directly to the brick.  That would give you a small air cavity 12mm deep between the brick and the drywall.  That would REDUCE your low frequency isolation considerably.  Yes, that&#x27;s not a typo: I really do mean it would make the isolation WORSE (less isolation, not more).  Because it would create an undamped resonant system having a resonant frequency of 164 Hz, so the wall would not isolate at all below about 230 Hz, and would only isolate well starting from about 330 Hz.  Total isolation would be about 41 dB (as compared to about 45 dB for the brick wall by itself).  Thus, you would lose about 4 dB of isolation, and all of that would be in low frequencies, where the drums, bass guitar, keyboards, etc. put out a lot of power....
+<blockquote class="bb-quote"><div class="bb-quote-body">Does anyone know of any reference/case studies for this sort of thing?</div></blockquote> You can probably find what you are looking for here:  <a href="/t/21894/">viewtopic.php?f=3&amp;t=21894&amp;hilit=reference</a>
+<blockquote class="bb-quote"><div class="bb-quote-body">Essentially trying to gauge options for adding some noise attenuation to a room for courtesy purposes without the need to achieve studio-level soundproofing</div></blockquote>As I mentioned above, a typical house wall gets about 30 dB isolation.  Clearly, that isn&#x27;t enough, or you would not be asking!  <span class="smilie" title=":)">:)</span>  Increasing that to 40 dB means that subjectively it sounds about half as loud.  Increasing to 50 dB makes it about as quarter as loud.  60 dB makes it 1/8th as loud.  70 dB makes it 1/16th as loud.  You can see the progression here...   High-end pros studios are isolated to around 60 to 70 dB.  Most home studios are more like 50 to 60 dB.  Less than 50 dB isn&#x27;t very exciting.
+
+Long story short: There are no magical shortcuts in isolation.  Adding things directly to a single-leaf wall doesn&#x27;t have much effect.
+
+Mass law is not your friend.  Single-leaf is not your friend.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p150516">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">antp</span><time datetime="2019-05-09">9 May 2019</time><a class="permalink" href="#p150516" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Great info - thanks!
+
+Right now it&#x27;s tricky to say how much additional isolation I&#x27;ll need (if any) - looking at house buying and just trying to factor where I can put my kit into decision making, so I&#x27;m trying to get an idea of what I should expect from the houses we&#x27;re seeing and what potential they would have for improvement.
+
+For example, a semi-detached house with a ground-floor room on the far side from the neighbours. 3 brick walls and one stud wall, with a couple of rooms and brick party wall on the other side of the stud wall. Then on the detached side, a 10 foot gap followed by another brick wall (other neighbour&#x27;s house).
+
+Any way to model/guesstimate noise transfer to neighbouring houses in this sort of scenario, accounting for these kinds of complexities? And to factor things like windows in?</div>
+</article>
+<article class="post" id="p150547">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/dandan/">DanDan</a><time datetime="2019-05-12">12 May 2019</time><a class="permalink" href="#p150547" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">The Calculations would be onerous, and unlikely to provide a useful answer. 
+I suggest the best way to get a sense of reality is to get a drummer to play in typical situations, ideally in the actual house under consideration. Or something similar. 
+Your neighbours will hear just drums, probably mostly Kick. Starting and stopping, and probably attempting to play difficult bits somewhat beyond capability. Practicing. 
+I play drums, but for neighbours and my own hearing&#x27;s sake I use Electronic for home. Currently Aerodrums to save space. 
+DD</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

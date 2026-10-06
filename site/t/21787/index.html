@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>room dimensions w/ Gambrel roof | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by audion in Acoustics, 2018. 17 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21787/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>room dimensions w/ Gambrel roof</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by audion on 17 November 2018. 17 replies, 2018–2019. In the Library under <a href="/library/control-room-design/">Control room design</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21787.</p>
+
+</div>
+</header>
+<article class="post" id="p148051">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">audion</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148051" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi, 
+
+I&#x27;m thinking up having a building constructed with a Gambrel style roof [like a barn].  All the room dimensions calculators I run across seem to use the ceiling height as basis for the ratio calculations, and assume a flat ceiling,  Not the case here, as I do not intend to put a ceiling below the roof.
+
+Its probably 16 - 17 feet high or so, at the peak, and the building&#x27;s side walls can apparently be from 8-10 feet high, or so.  I&#x27;m looking to make the building fairly large, i.e. 20&#x27;-30&#x27;  wide x 30&#x27;-40&#x27; long, or so.  Depending on what I figure out, it could be wider or longer or shorter or skinnier.
+
+Is there any good method of calculating advantageous room dimensions where the &quot;ceiling&quot; is not flat, or a way to just consider length and width apart from height?
+
+Thanks very much for any help.
+
+
+audion</div>
+</article>
+<article class="post" id="p148052">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JasonFoi</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148052" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Just base your dimensions off of a flat ceiling. Predictions on two of 3 axial modes will still be pretty accurate. The good thing is that with that much volume, you can treat the space sufficiently which takes away from the importance of &quot;golden ratios&quot;. A tall roof like that will have a null higher up which is easier to treat. You&#x27;ll be fine.</div>
+</article>
+<article class="post" id="p148053">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">audion</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148053" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Anybody else?
+
+
+audion</div>
+</article>
+<article class="post" id="p148080">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148080" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body"> All the room dimensions calculators I run across seem to use the ceiling height as basis for the ratio calculations, and assume a flat ceiling</div></blockquote>Right.  Because all the simple calculators that are publicly available are designed for rectangular rooms, with three sets of mutually parallel and perpendicular surfaces.  Because it is dead easy to predict modal response for those conditions.  However, as soon as you angle one of those surfaces significantly, or add an extra surface, those simple calculations are no longer valid: they won&#x27;t give you the right answer any more, because the math that they are based on is only valid for rectangular rooms.  If your room is not rectangular, then you have to resort to way more complex calculations, if you want a full prediction of how the room will behave, using FEM/FEA or BEM, or something similar type of advanced mathematical methods.  It&#x27;s no longer a simple solution: the modeling and solution gets to be very much more complex.  Not something the average home studio builder can do on their own.
+
+That said, Jason is dead right:  If the remaining four walls are still parallel and perpendicular to each other, then you can still use a simple calculators and the axial modes predicted FOR THOSE WALLS ONLY will still be correct, as will the tangential modes that are associated ONLY with those walls.  All other axial, tangential, and oblique modes will be incorrect. As long as you are OK with having incorrect vertical axial, tangential, and oblique predictions, then that&#x27;s fine.  The remaining predictions will be good.
+<blockquote class="bb-quote"><div class="bb-quote-body">Not the case here, as I do not intend to put a ceiling below the roof.</div></blockquote>So you do not intend having good isolation then?  <span class="smilie" title=":)">:)</span>  Without a proper 2-leaf roof-ceiling combination, you get lousy isolation.  Most studios need extensive isolation, but by only having a single-leaf roof, your studio will not have much isolation at all.  Are you OK with that?
+<blockquote class="bb-quote"><div class="bb-quote-body">Its probably 16 - 17 feet high or so, at the peak, and the building&#x27;s side walls can apparently be from 8-10 feet high, or so. I&#x27;m looking to make the building fairly large, i.e. 20&#x27;-30&#x27; wide x 30&#x27;-40&#x27; long, or so. Depending on what I figure out, it could be wider or longer or shorter or skinnier.</div></blockquote>You did not say what the purpose of this room is.  At 600 to 1200 square feet and 17 feet high, obviously it is NOT a control room, so why would you even need to predict the modal response accurately?
+<blockquote class="bb-quote"><div class="bb-quote-body">Is there any good method of calculating advantageous room dimensions where the &quot;ceiling&quot; is not flat,</div></blockquote>&quot;advantageous &quot; in what way?  For what purpose?   You aren&#x27;t giving us much information to go on!  If this is a rehearsal space, for example, then there&#x27;s no need at all to bother with predicting modal behavior: just stay away from identical direct mathematical relationships between dimensions, or within 5%, and there&#x27;s no problem.  But if it is a control room, first it is too big to be a good control room, and secondly you really would need to do a better job of prediting modal behavior.
+
+On the other, other, other hand, at 1200 ft2 and something like 15,000 cubic feet, the room is going to be fairly large; getting close to having a Schroeder frequency near the bottom end of the audible spectrum (somewhere around 50 to 60 Hz, for those dimensions), so there isn&#x27;t really much need to be worried about modal issues in any case.  It&#x27;s getting close to being subject to large room acoustics, not so much small room acoustics, so you should be more worried about the issues that affect large rooms...
+
+If you can&#x27;t give us good information on the room, then we can&#x27;t help you much more than that.  There&#x27;s not enough here to go on.
+<blockquote class="bb-quote"><div class="bb-quote-body">Anybody else?</div></blockquote>What was it about Jason&#x27;s reply that you did not like?  That was rather rude.  He did give you good advice....  Are you going to post the same response to my reply?  You seem to have a history of getting upset with people who are trying to help you, giving you good advice.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p148082">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">audion</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148082" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Boo Hoo<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: BooHoo-Big_baby.jpg</div></div></div>
+</article>
+<article class="post" id="p148083">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">audion</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148083" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Anyone care to take a crack at stating clearly what ceiling height to use for the imaginary flat ceiling, or how to calculate / determine that value?  
+
+
+
+Thanks,
+
+
+audion</div>
+</article>
+<article class="post" id="p148084">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JasonFoi</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148084" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">You said a max of 16 and low of 8, so an average height would be 12&#x27;. Use 12&#x27; and you will have a ballpark number.
+
+Modes in a non rectangular dimension
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://i63.tinypic.com/2dahug1.jpg" rel="nofollow noopener" target="_blank">http://i63.tinypic.com/2dahug1.jpg</a></div>Modes in a rectangular dimension
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://i65.tinypic.com/ics0v9.jpg" rel="nofollow noopener" target="_blank">http://i65.tinypic.com/ics0v9.jpg</a></div></div>
+</article>
+<article class="post" id="p148085">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148085" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Bye!</div>
+</article>
+<article class="post" id="p148086">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JasonFoi</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148086" aria-label="Link to post 9">#9</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">Bye!</div></blockquote>Did you ban him?</div>
+</article>
+<article class="post" id="p148087">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148087" aria-label="Link to post 10">#10</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Did you ban him?</div></blockquote>Nope!  I don&#x27;t need to.  He banned himself...  Nobody is going to want to help someone with that type of major anti-social &quot;chip-on-the-shoulder&quot; attitude problem.  Why would anyone bother to give good advice to someone who really doesn&#x27;t want it, doesn&#x27;t appreciate it, doesn&#x27;t accept it because he doesn&#x27;t like it (or can&#x27;t comprehend it), then he spits in your face, and flips you the bird... all because you tried to help him?  Psychiatrists have words that describe people like that, I suppose...
+
+He seems to be the kind of guy that goes to the doctor, then refuses to follow the doctor&#x27;s advice or take the prescribed medication, then swears and yells at the doctor, because he doesn&#x27;t like what the doctor told him.  That&#x27;s more typical of a highly entitled millennial living in mommy&#x27;s basement, with delusions of grandeur, but not of an sensible, sane adult who really does want to build a studio.  
+
+Link to his original thread: <a href="/t/21708/">viewtopic.php?t=21708</a> , so you can see what kind of person this is.
+
+So there&#x27;s no point in trying to help: You&#x27;ll just get a load of garbage spewed back in your face for your efforts.  Just watch, and you&#x27;ll see... <span class="smilie" title=":)">:)</span>
+
+I am surprised that he would post a photo of himself, though!  That&#x27;s unusual.</div>
+</article>
+<article class="post" id="p148089">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JasonFoi</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148089" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">He&#x27;s got an identical thread on GS where he attacked Andre. And two new identical ones on GS, where he didnt like my input either. I didnt realize it was him till his second post.
+
+<a href="https://www.gearslutz.com/board/studio-building-acoustics/1237718-room-dimensions-chart.html" rel="nofollow noopener" target="_blank">https://www.gearslutz.com/board/studio- ... chart.html</a>
+
+<a href="https://www.gearslutz.com/board/studio-building-acoustics/1237814-speaker-direction-w-barn-ceiling.html" rel="nofollow noopener" target="_blank">https://www.gearslutz.com/board/studio- ... iling.html</a>
+
+I still dont have a problem with helping him, but he doesnt seem to like my advice.</div>
+</article>
+<article class="post" id="p148090">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">audion</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148090" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">Anybody else?  Adults, please.   :  )
+
+
+
+audion</div>
+</article>
+<article class="post" id="p148091">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JasonFoi</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148091" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">Lol 2+2=4</div>
+</article>
+<article class="post" id="p148092">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148092" aria-label="Link to post 14">#14</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I still dont have a problem with helping him, but he doesnt seem to like my advice.</div></blockquote>It&#x27;s not just you: He doesn&#x27;t seem to like ANYBODY&#x27;S advice!  He seems to be searching for somebody who will lie to him, not tell him the truth, and just say that everything is fine, he&#x27;s great, his studio plans are perfect, ...   
+
+Apparently, he only wants to hear from people who stroke his ego, and tell him things that he has already decided are the only way to do it, even when they are clearly wrong.  For example, he insists that he needs no isolation for his studio, yet he wants to track in there!  <span class="smilie" title=":)">:)</span>  Go figure. 
+<blockquote class="bb-quote"><div class="bb-quote-body">He&#x27;s got an identical thread on GS where he attacked Andre.</div></blockquote>  <span class="smilie" title=":shock:">:shock:</span>  <span class="smilie" title=":roll:">:roll:</span>  Not a smart thing to do!  Attacking one of the most respected and highest regarded acousticians around today... I&#x27;m sure that will get him plenty of expert help!  <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">And two new identical ones on GS, where he didnt like my input either. I didnt realize it was him till his second post.</div></blockquote>Clearly.  Same abrasive, &quot;I know better than anyone&quot; attitude, when in reality he knows nothing at all about acoustics or studios, and refuses to listen to those who do...  Such as the excellent advice you gave him on speaker setup, and they way he totally trashed that, thus demonstrating his ignorance of the widely accepted specifications for critical listening rooms and psycho-acoustics.  He&#x27;s probably never been in a room that has truly flat response, and apparently does not realize why that is so fundamental.  That would explain why he wants multiple speakers, when that would be rather silly in room that has been treated and tuned perfectly to true flat response.  Maybe one day, when he actually does get to go inside a room that meets ITU BS.1116-3 or EBU Tech.3276, he&#x27;ll realize his error.  But I bet he&#x27;d never admit it!  After all, he&#x27;s the type of fellow who can NEVER be wrong!  <span class="smilie" title=":)">:)</span>
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p148093">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">JasonFoi</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148093" aria-label="Link to post 15">#15</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">
+ <span class="smilie" title=":shock:">:shock:</span>  <span class="smilie" title=":roll:">:roll:</span>  Not a smart thing to do!  Attacking one of the most respected and highest regarded acousticians around today... I&#x27;m sure that will get him plenty of expert help!  <span class="smilie" title=":)">:)</span>
+</div></blockquote>And on top of that one of the genuinely nicest people i have me on the forums.</div>
+</article>
+<article class="post" id="p148095">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">audion</span><time datetime="2018-11-17">17 November 2018</time><a class="permalink" href="#p148095" aria-label="Link to post 16">#16</a></header>
+<div class="post-body">You guys [Jason, and Stuart] are just lying, trash-talking trolls.  Stay out of my threads, O.K.?  You&#x27;re making asses of yourselves, and you don&#x27;t know what you&#x27;re talking about.
+
+
+
+audion</div>
+</article>
+<article class="post" id="p148099">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">audion</span><time datetime="2018-11-18">18 November 2018</time><a class="permalink" href="#p148099" aria-label="Link to post 17">#17</a></header>
+<div class="post-body">Anybody else want to take a crack at answering the actual question, now that the two malcontents are finished?  [always hopeful <span class="smilie" title=":)">:)</span>]
+
+What value would one use for the ceiling height where the ceiling is not flat?  Its not just sloped either, btw, its &quot;Gambrel style&#x27; [like a barn].  
+
+Or, at that height, wouldn&#x27;t it work to use just any value between where the supporting walls end and the roof peaks?
+
+
+
+
+Thanks,
+
+
+audion</div>
+</article>
+<article class="post" id="p148870">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-01-19">19 January 2019</time><a class="permalink" href="#p148870" aria-label="Link to post 18">#18</a></header>
+<div class="post-body">Well, this didn&#x27;t work out too well for you, did it?  Two whole months have passed after you sent all of the experts to hell on two different forums, because you know better than they do...  
+
+You were given correct answers on both forums, but rejected them for no discernible reason, and now here you are, two months later, still designing and building your place wrong....
+
+Well done!  Please do post pictures of the build, and acoustic measurement results when you test, so you can show us all what a bunch of idiots we are, and prove that you know better than anybody on the planet, regarding acoustics...
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

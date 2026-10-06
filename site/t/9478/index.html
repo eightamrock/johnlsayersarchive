@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic prediction softwares? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by kurz in Studio Design, 2007. 13 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/9478/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Magic prediction softwares?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by kurz on 27 September 2007. 13 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 9478.</p>
+
+</div>
+</header>
+<article class="post" id="p66479">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">kurz</span><time datetime="2007-09-27">27 September 2007</time><a class="permalink" href="#p66479" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi,
+is it possible with a simple program (for only 69,00 Euro) to get a Frequency Response prediction, SPL as well as T60 for any room shape?
+
+Here the link:
+<a href="http://www.cara.de/ENU/index.html" rel="nofollow noopener" target="_blank">http://www.cara.de/ENU/index.html</a>
+see also (about Frequency Response): <a href="http://www.cara.de/ENU/CARA/index.html" rel="nofollow noopener" target="_blank">http://www.cara.de/ENU/CARA/index.html</a>
+
+Is it possible to do as many very useful evaluations. Are they reliable?
+
+I know the more expensive (and more complex) CATT-Acoustic v(8.0)
+(here the link <a href="http://www.catt.se/" rel="nofollow noopener" target="_blank">http://www.catt.se/</a>)
+but I have a lot of confusion about these softwares: are they helpful for a control room design? And after, they allow prediction (and optimization) of nonrectangular rooms that I thought possible only whit &quot;finite element&quot; approach.
+Is it possible with these relatively simple softwares and without &quot;on field&quot; measurements obtein reasonable acoustic values? In particular, the CARA software appears very simple and more suitable for a control room design: for example I can try to obtimize a rectangular design with a nonrectangular one, looking for flattest frequecy response. Are CARA or CATT a rough reliable tools? What is the best for control room design?
+
+Thanks,
+(sorry for my english)
+Salvatore.</div>
+</article>
+<article class="post" id="p66499">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">kurz</span><time datetime="2007-09-28">28 September 2007</time><a class="permalink" href="#p66499" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Right now I&#x27;m reading from CATT-Acousic v8.0 manual:
+in most halls the lowest two octaves will not be well predicted. For small rooms such as control rooms and studios typically only the upper octaves 1, 2, and 4k Hz will be well predicted (in all halls 8k and 16k Hz may suffer from lack of proper input data).
+But I also have read just the opposite from CARA v2.2 site:
+<a href="http://www.cara.de/ENU/CARA/index.html" rel="nofollow noopener" target="_blank">http://www.cara.de/ENU/CARA/index.html</a>
+The comparison with &quot;on fied&quot; measurements shows a very good matching of the results with the CARA calculation and this software seems done just for normal control/listening/rehearsal room hardly ever very big. 
+What is the truth?
+
+Thanks again,
+Salvatore Garozzo</div>
+</article>
+<article class="post" id="p66527">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2007-09-29">29 September 2007</time><a class="permalink" href="#p66527" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Kurz,
+
+I give you a very careful reply with a lot of reserve.  
+I&#x27;ve played with CARA and not with CATT.
+I find CARA a cheap very educational program (with a rather strange frequency scale they use).
+
+I think it works as a ray tracing model (alternative should be mirror source but I don&#x27;t think it is).  The documentation is rather vague about that (and about lots of things).
+
+When you work with rectangular rooms the simulation seems nice, but that&#x27;s because also low frequent room modes can show nicely in such a room with ray-tracing.
+
+However when more complicated (objects, diverting shapes) ray-tracing is not the ideal approach (wave behavior rather than ray behavior) and indeed FEM or BEM is the more logical approach.
+
+CATT is more a pro program for large room acoustics.
+
+FEM and other principles:
+Some papers: 
+<a href="http://gacoust.hwe.oita-u.ac.jp/AIJ-BPCA/paper.html" rel="nofollow noopener" target="_blank">http://gacoust.hwe.oita-u.ac.jp/AIJ-BPCA/paper.html</a>
+<a href="http://www.odeon.dk/pdf/Vilnius_2000-rindel.pdf" rel="nofollow noopener" target="_blank">http://www.odeon.dk/pdf/Vilnius_2000-rindel.pdf</a>
+<a href="http://www.tonmeister.ca/main/textbook/node736.html" rel="nofollow noopener" target="_blank">http://www.tonmeister.ca/main/textbook/node736.html</a>
+
+Program for small room acoustics based on FEM:
+<a href="http://www.interdomain.net.au/~bodzio/" rel="nofollow noopener" target="_blank">http://www.interdomain.net.au/~bodzio/</a>
+This site, while not very nicely build contains some very interesting PDF docs.
+
+<strong>HOWEVER</strong>
+
+A simulation model of whatever type calls for good input data.  A result can never be better than what you enter as variables for it to calculate with.
+
+For instance: how are you going to integrate corner absorbers? 
+What is the frequency related acoustic functional surface in function of the edge effect?
+What about discrete absorbers anywhere else?  
+What is the exact absorption of the numerous suggestions of slat type absorbers suggested in the forum here?
+What about these hangers?
+How to handle tables, racks and and cabinets correctly?
+And so on ....
+In large rooms statistical values and geometric acoustics (with added statistical correction for diffraction, scattering etc.) more apply.
+
+Hence if you see such programs as educational tools, or as a simulation aid, a tool for something you do understand/feel the principles and boundaries already then they are nice tools.
+If you intent to use them as a substitute for lacking insight/feeling than they become risky tools.
+This is certainly valid for small rooms, where a large amount of uncertainties and question marks, even in the input alone already are to be taken into account.
+
+The same is valid for room mode calculators.  They are a useful tool, as long you understand the limits and boundaries.
+But I&#x27;m personally against the use of &quot;only axial&quot; room mode calculators, certainly when there are lots available which calculate them all.</div>
+</article>
+<article class="post" id="p66528">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">kurz</span><time datetime="2007-09-29">29 September 2007</time><a class="permalink" href="#p66528" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Thanks....</div>
+</article>
+<article class="post" id="p66529">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">kurz</span><time datetime="2007-09-29">29 September 2007</time><a class="permalink" href="#p66529" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Thanks again Eric,
+your help was very precious especially for the last link.
+
+Salvatore</div>
+</article>
+<article class="post" id="p66532">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2007-09-29">29 September 2007</time><a class="permalink" href="#p66532" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Kurz,
+
+<span class="smilie" title=":roll:">:roll:</span>   After you first polite thanks (coming from your head), I thought ....&quot;Damned again lost time&quot;...
+
+ <span class="smilie" title=":)">:)</span> After you second thanks (coming from your belly), you showed that you were interested in knowing, understanding, and I felt good and useful.
+
+<strong>Thanks for that</strong>.</div>
+</article>
+<article class="post" id="p66533">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">kurz</span><time datetime="2007-09-29">29 September 2007</time><a class="permalink" href="#p66533" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Eric,
+do you have Soundeasy? Do you have tested it? I think it perfect for my purpose (acoustics of nonrectangular rooms). Maybe I will buy it.
+
+Thanks from my belly  <span class="smilie" title=":)">:)</span> 
+Salvatore</div>
+</article>
+<article class="post" id="p66534">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2007-09-29">29 September 2007</time><a class="permalink" href="#p66534" aria-label="Link to post 8">#8</a></header>
+<div class="post-body"><span class="smilie" title=":mrgreen:">:mrgreen:</span>  <span class="smilie" title=":mrgreen:">:mrgreen:</span>  <span class="smilie" title=":mrgreen:">:mrgreen:</span> 
+
+Let&#x27;s put it carefully:
+I&#x27;ve access to an elder version of the program. <span style="font-size:84%">( <span class="smilie" title=":D">:D</span>  and for &gt; a year I am trying to decide whether I should buy a recent version, but have no real commercial use for it)</span>
+
+When playing with it, for me it&#x27;s more for ego/educational reasons (What if scenarios).  Note that this kind of software is VERY calculation intensive.
+
+I also have access to non commercial stuff.
+
+But I stay a bit with my previous comments, for the reasons I gave (difficulty to enter correct variables for small rooms).
+
+In practice I once did a large studio:  The control rooms weren&#x27;t really simulated, in this sense that treatment decisions were based on them. (notwithstanding I had access to such tools, and played around). But the huge tracking hall was.</div>
+</article>
+<article class="post" id="p66539">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">kurz</span><time datetime="2007-09-29">29 September 2007</time><a class="permalink" href="#p66539" aria-label="Link to post 9">#9</a></header>
+<div class="post-body">Eric,
+do you have suggestions for acoustical shape optimization of the nonrectangular room?
+I think that FEM is the best (at the time) way to investigate on modal characteristics of nonrectangular reverberation rooms but I didn&#x27;t know any software FEM based.
+However, prediction is already very difficult for the room shell and then I think that it is too difficult a good prediction also considering all the treatment (infact as you have said it is difficulty to enter correct variables). Maybe, FEM can be a guide for the shape room:
+<a href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=JASMAN0000800000S1000S11000003&amp;idtype=cvips&amp;gifs=yes" rel="nofollow noopener" target="_blank">http://scitation.aip.org/getabs/servlet ... s&amp;gifs=yes</a>
+
+The question is if this program is a correct apllication of FEM...
+Is it?
+
+Salvatore.</div>
+</article>
+<article class="post" id="p66561">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2007-09-30">30 September 2007</time><a class="permalink" href="#p66561" aria-label="Link to post 10">#10</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">kurz wrote:</div><div class="bb-quote-body">Maybe, FEM can be a guide for the shape room:
+<a href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=JASMAN0000800000S1000S11000003&amp;idtype=cvips&amp;gifs=yes" rel="nofollow noopener" target="_blank">http://scitation.aip.org/getabs/servlet ... s&amp;gifs=yes</a>
+
+The question is if this program is a correct application of FEM...
+Is it?
+</div></blockquote>Salvatore
+I didn&#x27;t understand the reason of that link, I still didn&#x27;t understand after downloading the 12 MB document which is a huge collection of excerpts.
+
+<span class="smilie" title=":)">:)</span> If it is to convince me of the use of FEM, you don&#x27;t need to since I referred to FEM myself.  I haven&#x27;t studied the (not accessible) document referred in that link, nor can I compare how that relates to the program I linked.
+There is sooooo many stuff about room simulation, and it&#x27;s in fact an ongoing study, which also means that it isn&#x27;t that easy and obvious.
+
+Here several Pro simulation tools are compared (focused on large room acoustics approach).
+<a href="http://www.ptb.de/en/org/1/17/173/roundrobin.htm" rel="nofollow noopener" target="_blank">http://www.ptb.de/en/org/1/17/173/roundrobin.htm</a>  (more details can be found via included links)
+It also includes a HUGE absorption values database.
+
+Here you can see that Sabin absorption values (treatment) are very much influenced by the soundfield and the way they are used and as such are no material constant, but the absorption within certain measurement circumstances and boundaries.
+<a href="/t/6446/page/4/#p46386">http://www.johnlsayers.com/phpBB2/viewt ... c86e#46386</a>
+
+If you&#x27;re still referring to the program I linked, I think it&#x27;s OK (and has a very broad amount of possibilities, supported by a forum, 3rd party help files, etc.).
+
+<span class="smilie" title=":twisted:">:twisted:</span>  But your topic title: <span class="bb-u"><strong>Magic prediction softwares</strong></span> <span style="font-size:84%">( <span class="smilie" title=":wink:">:wink:</span> you posted on at least 3 forums)</span>, I think for the Magic part you are responsible yourself.  
+It are indeed very extensive and &quot;nice to impressive&quot; calculation and graphical tools.</div>
+</article>
+<article class="post" id="p66598">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gullfo/">gullfo</a><time datetime="2007-09-30">30 September 2007</time><a class="permalink" href="#p66598" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">Eric - how are we going to get any work done around here if you keep giving us all this reading material?  <span class="smilie" title=":wink:">:wink:</span>  <span class="smilie" title=":twisted:">:twisted:</span></div>
+</article>
+<article class="post" id="p66608">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2007-10-01">1 October 2007</time><a class="permalink" href="#p66608" aria-label="Link to post 12">#12</a></header>
+<div class="post-body"><span class="smilie" title=":mrgreen:">:mrgreen:</span> 
+
+I should say that the amount of work that you and the moderators do here, you easily can skip the bit I write.
+John has a lot of luck here having people like you, Kendale , Keith and others around.
+
+<span class="smilie" title=":)">:)</span> It sometimes feels as a help &amp; design factory here.
+
+With a lot of respect for you guys.</div>
+</article>
+<article class="post" id="p66612">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">kurz</span><time datetime="2007-10-01">1 October 2007</time><a class="permalink" href="#p66612" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">Eric,
+sorry for my english, I can explain you the reason of that link and of that &quot;magic&quot; word.
+
+With regard to this link:
+<a href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=JASMAN0000800000S1000S11000003&amp;idtype=cvips&amp;gifs=yes" rel="nofollow noopener" target="_blank">http://scitation.aip.org/getabs/servlet ... s&amp;gifs=yes</a>
+it was my starting point of my research about BEM and FEM and so I have simply shown you (IMO) the &quot;definitive&quot; collection of acoustics resources, i.e.:
+<a href="http://scitation.aip.org/journals/doc/ASALIB-home/" rel="nofollow noopener" target="_blank">http://scitation.aip.org/journals/doc/ASALIB-home/</a>
+as well as: 
+<a href="http://www.aes.org/" rel="nofollow noopener" target="_blank">http://www.aes.org/</a>
+For a very little cost (15$ for AES) you have the sources (the references) of many popular audio engineering books: from there I have learned a lot of esoteric informations and projects (sometimes less practical). When you want to study in detail a particular argument you can buy the main references. 
+
+With regard to the &quot;magic&quot; word, I have used it because in CARA site I have found this (for me) &quot;magic&quot; prediction of the Frequency Response (especially for nonrectangular small rooms):
+<a href="http://www.cara.de/ENU/CARA/index.html" rel="nofollow noopener" target="_blank">http://www.cara.de/ENU/CARA/index.html</a>
+(you must click on III. Results 2D - 1. Frequency Response)
+(click also on II. Calculations - 6. Comparison: CARA and Measurements)
+And I think that a such range of prediction is unlikely, indeed (like you have shown me) CARA seems &quot;works as a ray tracing model (alternative should be mirror source but I don&#x27;t think it is). The documentation is rather vague about that (and about lots of things)&quot;.
+
+After, during this period I was looking for a FEM based program but without result and this my failure have addressed me on the only softwares I found (only ray tracing method): CATT, ODEON and CARA but with a lot of reservations about them especially after CARA site promises... from here it was born the word: &quot;MAGIC&quot; (because CARA is in needs of a magic to go below 300Hz predictions, especially for small rooms).
+ 
+Then, when I already had losed all my hopes, you have shown me this:
+<a href="http://www.interdomain.net.au/~bodzio/" rel="nofollow noopener" target="_blank">http://www.interdomain.net.au/~bodzio/</a>
+So, I don&#x27;t know if this program will be a perfect executor of the same FEM that I&#x27;m trying to apply but now I have a hope thanks to you. As you have seen from other forums, you have been the only one that show me this FEM software. Maybe it depended from my first vague question where I haven&#x27;t asked directly for a FEM software (due to my failure search), but also in this case you have given to me the most complete answer. My first question was not complete but, your so complete answer have made up my question.
+
+Finally, excuse me for all those things which show my poor pratic experience.
+
+
+Sorry and sorry and sorry....
+Thanks and thanks and thanks....
+
+Salvatore.</div>
+</article>
+<article class="post" id="p66623">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2007-10-01">1 October 2007</time><a class="permalink" href="#p66623" aria-label="Link to post 14">#14</a></header>
+<div class="post-body">Salvatore,
+
+Don&#x27;t say sorry.
+You did nothing wrong, and I enjoyed the conversation.
+
+With the Magic thing I was merely teasing you, because indeed often software is seen as a substitute rather than an aid.  But you showed your searching mind which I do respect a lot.
+
+And indeed a FEM program for small room acoustics isn&#x27;t easy to find, which surprised me as well years ago, and it toke me a long time to find it back then.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

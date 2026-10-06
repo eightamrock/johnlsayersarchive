@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slat spacing for loosely hung diffuser? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by joenobody in Acoustics, 2017. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/20826/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Slat spacing for loosely hung diffuser?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by joenobody on 4 January 2017. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 20826.</p>
+
+</div>
+</header>
+<article class="post" id="p140900">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">joenobody</span><time datetime="2017-01-04">4 January 2017</time><a class="permalink" href="#p140900" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I have some extra laminate floor planks that I&#x27;m thinking about using as portable diffusers.
+
+I intend to hang the planks loosely by rope on each side in a pattern similar to the attached image. The idea is to make diffusers that can be easily taken down, rolled up and moved whenever needed.
+
+With most of the patterns for slat diffusers I&#x27;ve found, the gap between the slats is the same but the width of the slats varies. My question is, is there a slat spacing pattern I could use that assumes the slats are all the same dimensions but the spacing between the slats is varied?<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: slat pattern examples.jpg</div></div></div>
+</article>
+<article class="post" id="p140905">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-01-05">5 January 2017</time><a class="permalink" href="#p140905" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">What you are showing are not diffusers!  They are slot walls.  They are tuned Helmholtz resonators.  They do provide some limited difuusion at high frequencies, yes, but their main purpose is not diffusion.  Their main purpose is absorption. They absorb a certain range of frequencies, and reflect others.
+
+It would be impossible to build them them way you describe: &quot;hung loosely by rope ... that can be easily taken down, rolled up and moved&quot;.  Slot walls only work when the slats are fixed to sealed cavities.  There has to be a &quot;box&quot; behind the slats that is sealed on the other five sides, with only the gaps between the slats open to the room.  They work on the principle of Helmholtz resonance: the air trapped in between the slats will vibrate at only one fixed frequency, which is set by the depth of the air in the &quot;box&quot; behind it.  The device absorbs energy at that specific frequency, because the air inside the box compresses and decompresses at only that frequency, due to it being sealed.  
+
+If you just hang those slats on ropes, with no sealed cavity behind, all that you have is a nice looking wall decoration...
+<blockquote class="bb-quote"><div class="bb-quote-body">With most of the patterns for slat diffusers I&#x27;ve found, the gap between the slats is the same but the width of the slats varies. My question is, is there a slat spacing pattern I could use that assumes the slats are all the same dimensions but the spacing between the slats is varied?</div></blockquote>Yes there, but it does not work the way you want it to work!  There is an equation for calculating the resonant frequency of each slot, and you can set that frequency by adjusting the height of the slot (how big the air gap is), the depth of the slot (how thick the plank is), the depth of the cavity behind it, and the spacing between adjacent slots (the width of the plank).  All of those have an effect on the frequency.  The equation is:
+
+F = 2160 x SQRT ( R / (( d x D ) * (r + w)))
+
+Where:
+r = slot width
+w = slat width
+D = depth of the cavity in the box behind the slats
+d = slat depth (thickness of the plank) multiplied by 1.2
+
+So you can have any arrangement of slat widths and gaps that you want, provide that you vary the cavity depth and slat thickness to get the absorption frequency that you need.
+
+But there&#x27;s more:  depending on the total &quot;open area&quot; of the entire wall, it might act either as a set of individual resonators, each sharply tuned to its own specific frequency, or it might act as a general broadband absorber, tuned to the average frequency of all the slots, and with a broad, low Q.
+
+And before you even start on building a slot wall, you&#x27;d need to know which frequencies you need to treat, and how much treatment each one needs!
+
+
+Finally, Helmholtz resonators are notoriously difficult to tune: theory is one thing, but actual end result is another.  It might well end up that the wall does nothing useful at all, or it might even absorb the wrong frequencies while NOT absorbing the right ones!  I don&#x27;t use them very much in studios I design, or at least I usually just tune them broadband.
+
+But one thing it is not, is a &quot;roll up and take away&quot; diffuser.  If that&#x27;s what you want, then probably a binary array might work for you.  But I&#x27;ve never been very too convinced about the effectiveness of those.
+
+However, I guess the REAL question here, is why do you want diffusion in your side walls anyway?  For what reason?  Is this a control room or a live room we are talking about?  If it&#x27;s a control room, you&#x27;d have to do a lot of talking to convince me that you need diffusion on your side walls!
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p140908">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">joenobody</span><time datetime="2017-01-05">5 January 2017</time><a class="permalink" href="#p140908" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Thanks very much for your detailed reply and especially the formula.
+
+This is mainly to make the room where I do programming work (and some non-pro audio) sound less boxy and clicky. Previously I&#x27;ve hung acoustic blankets on the walls and they&#x27;ve greatly improved the sound quality of the room by making the various clicks and humming sounds and so forth from the computer and keyboard much less pronounced and echo-y.
+
+However the blankets look pretty terrible and I would like to replace them with something less hideous. I was thinking that drapes made of slats might act similar to mass loaded vinyl drapes and take out some of the 90 degree angles in the room. The laminate planks are about the same density as MDF so I thought they might somehow be useful for this.
+
+I move around a lot so having a portable solution is important, I am not in need of anything very professional, but just something that makes the room more like a library and easier to concentrate on things without lots of little auditory distractions.</div>
+</article>
+<article class="post" id="p141059">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-01-17">17 January 2017</time><a class="permalink" href="#p141059" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I was thinking that drapes made of slats might act similar to mass loaded vinyl drapes and take out some of the 90 degree angles in the room.</div></blockquote>Neither slats nor drapes nor 90° corners are the problem, or the solution.  90° corners are not different than any other corner, and the only acoustically interesting thing about corners is that all room modes begin and end in corners, so they are a good place for treating modal issues.  But &quot;echoing computer clicking and humming sounds&quot; are not modal issues.  Those sounds are at much higher frequencies than where modal spread is problematic.  Slats wont help, since they are nothing like MLV in any way.  MLV is a high density flexible limp membrane, slats are medium density rigid reflectors.  Totally different, acoustically.
+
+The problems that you describe are simple mid- and high- frequency reflections inside room, perhaps also including flutter echo, and the simplest way of dealing with that, is with porous absorption.   I would suggest that you just buy a few sheets of 4&quot; OC-703, and make yourself some simple absorption panels that you can hang on the walls and ceiling in the room, and take with you if you leave.
+
+There are many, many examples in the forum of people who have built such panels.  It&#x27;s very simple: you just make simple wood frames from 1x6 lumber, put the OC-703 inside the frames, and cover the frames with breathable fabric of your choice.  Done!  Simple, very effective, and lightweight.
+
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

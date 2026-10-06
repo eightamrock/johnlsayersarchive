@@ -1,0 +1,22 @@
+{% extends "base.html" %}{% from "macros.html" import pager %}
+{% block content %}
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/{{ forum_slug }}/">{{ forum_name }}</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>{{ thread_title }}</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by {{ starter }} on {{ started }}. {{ replies_label }}{% if span %}, {{ span }}{% endif %}.{% if library %} In the Library under <a href="/library/{{ library.slug }}/">{{ library.name }}</a>.{% endif %}{% if has_keyposts %} <a href="/t/{{ topic_id }}/key-posts/">Key posts in this thread</a>.{% endif %}</p>
+<p class="origin">Originally posted at johnlsayers.com, topic {{ topic_id }}.</p>
+{{ pager(pages) }}
+</div>
+</header>
+{% for p in posts %}<article class="post" id="p{{ p.id }}">
+<header class="post-head" data-pagefind-ignore="all">{% if p.author_href %}<a class="post-author" href="{{ p.author_href }}">{{ p.author }}</a>{% else %}<span class="post-author">{{ p.author }}</span>{% endif %}<time datetime="{{ p.iso }}">{{ p.date }}</time><a class="permalink" href="#p{{ p.id }}" aria-label="Link to post {{ p.n }}">#{{ p.n }}</a></header>
+<div class="post-body">{{ p.html|safe }}</div>
+</article>
+{% endfor %}
+</article>
+<div data-pagefind-ignore="all">{{ pager(pages) }}</div>
+</div>
+{% endblock %}

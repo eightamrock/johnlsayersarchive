@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Using CAT5e/CAT6 shielded twisted pair for analog signal | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by snowman3645 in Installation and Wiring, 2017. 1 reply.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21354/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Using CAT5e/CAT6 shielded twisted pair for analog signal</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by snowman3645 on 25 December 2017. 1 reply.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21354.</p>
+
+</div>
+</header>
+<article class="post" id="p144007">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">snowman3645</span><time datetime="2017-12-25">25 December 2017</time><a class="permalink" href="#p144007" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hello all,
+
+looking for some testimonials 
+
+here&#x27;s a little on me- Name&#x27;s Jesse, live in Everett Washington in the united states. I&#x27;m an industrial electrician in my 4th year of a 5 year union apprenticeship (IBEW LOCAL 191). Very comfortable with general construction, framing, building wiring, and electrical theory. just finished my second class on structured cabling systems installation but have had little time in the field testing or setting up CAT5 or similar cable systems. before I got into the apprenticeship I spent 2 years going to school for sound design/recording at a local community college. so generally familiar with signal flow, shielding, and associated hardware. but haven&#x27;t built a studio from the ground up. just hooked up mixers, setup mics, run software..etc etc. okay that&#x27;s me. 
+
+here&#x27;s what I&#x27;m trying to do- my girlfriend has a small business front she&#x27;s currently leasing and wants to renovate it as a place for music teachers to hold private lessons and classes for multiple students. she was planning on a completely unplugged setup. rooms with chairs and instruments... pretty boring, and limited capabilities. my plan is to wire up each room to have multiple XLR, TRS/TS, and ethernet ports to allow each room to act as a recording booth as well as a practice area. with one room designated as the control room with a main mixer. so the space could be used for music lessons, practice space for anyone, or recording space for bands. I&#x27;d plan on running CAT5e shielded twisted pair as the mic/instrument inputs from each room to the mixing room. I&#x27;d likely use one twisted pair per termination on XLR and TRS/TS connectors. so one cable per mic/instrument input. definitely plan on using shielded cable throughout. 
+
+most of the runs wouldn&#x27;t be more than 30-50 feet long. I&#x27;d bundle them on J-hooks just like it would be done in a data center or server room, with maybe 15-20 cables being run to each recording room. only plan on using 6-10 currently, but having spares can&#x27;t hurt. up for suggestions on how to connect these cable runs to a basic medium sized mixer like a 16 channel mackie. a patch bay could be utilized? or if we can get a bigger mixer we could hardwire 10 channels from each room directly and patch in the rest if needed? to be determined... its not going to have top of the line equipment, but I want to have the capability to improve without having to do a total rewire if this business actually pans out like we hope. 
+
+thanks in advance for your input friends:-)</div>
+</article>
+<article class="post" id="p144008">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-12-25">25 December 2017</time><a class="permalink" href="#p144008" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Hi &quot;snowman3645&quot;.  Welcome!  <span class="smilie" title=":)">:)</span>  And Merry Christmas!
+
+Mic signals use three conductors, not two, so UTP is not going to work.  Both XLR and TRS need all three conductors. Mics are also very, very low level signals, and do need shielding.  I&#x27;d suggest that you just buy ordinary audio &quot;snake&quot; cable, or use ordinary mic cable.
+<blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;d likely use one twisted pair per termination on XLR and TRS/TS connectors. so one cable per mic/instrument input. definitely plan on using shielded cable throughout. </div></blockquote>So which is it going to be?  CAT5, or shielded cable?  Those are very different things.  By definition, CAT5 is NOT shielded, which is why it is called &quot;UTP&quot;: that stands for &quot;Unshielded Twisted Pair&quot;.  By definition, XLR <span class="bb-u"><em>is</em></span> shielded.  Each signal channel carries it&#x27;s own individual shield, in addition to the two balanced lines. And if you are talking about STP, that won&#x27;t work either, because XLR and TRS need each individual pair to have it&#x27;s own shield, but STP has each set of four pairs with one singled shield around them.  Not an option.  Either way,  I doubt that the impedance of CAT5 would be useful for what XLR needs.  XLR is 45 ohm, CAT5 is 100 Ohms.  
+<blockquote class="bb-quote"><div class="bb-quote-body">a patch bay could be utilized?</div></blockquote>The &quot;standard&quot; in studios is to use Bantam TT patchbays:
+<div class="bb-attachment-missing">Image not preserved: neutrik-96-way-bantam-tt-patch-bay-1u.jpg</div>You don&#x27;t have to follow the standard, of course, but it would be very advisable, if you want it to work well.  You should probably also follow the convention for wiring up the patchbays: outputs on the top row, inputs on the bottom row, with the channels set up to be automatically normalled (or maybe half-normalled) in a logical fashion when now patch cables are present.  Etc.
+
+
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

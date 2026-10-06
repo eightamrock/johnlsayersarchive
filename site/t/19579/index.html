@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Understanding ROOM EQ WIZARD File - I&#39;m Lost | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by TheVoiceOfBrian in Acoustics, 2014. 7 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/19579/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Understanding ROOM EQ WIZARD File - I&#39;m Lost</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by TheVoiceOfBrian on 20 August 2014. 7 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 19579.</p>
+
+</div>
+</header>
+<article class="post" id="p134070">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">TheVoiceOfBrian</span><time datetime="2014-08-20">20 August 2014</time><a class="permalink" href="#p134070" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Good day to all.  I&#x27;ve successfully been able to take measurements of my WhisperRoom VO Booth.  Now wondering if anyone has a moment to read the file and give some directives as to what I can do to remedy my issue.  Typical boxy, nasty sound on my VO work.  I took 2 measurements of my 3.5x5x7 booth.  First one has 3.5 inch Roxul on all 3 walls, straddled Roxul panels across the long walls at the top. Also have fabricated traps floor to ceiling on two corner, then foam traps floor to ceiling in the other two corners.  Second is without the Roxul panels on each of the long walls.  That&#x27;s because I&#x27;d like to be able to have more room to move around in there thus, if after reading the measurements, I can fix the issue and still have some decent space I&#x27;d prefer that.
+
+So there&#x27;s plenty of absorption, but guessing comb filtering is the issue?
+
+Anyway, I&#x27;m hoping someone can read the file and tell me how I can remedy the issue.  I&#x27;ve exhausted every avenue I know for help and have come up short.
+
+Thank you very much for your time,
+
+Brian</div>
+</article>
+<article class="post" id="p134134">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-09-01">1 September 2014</time><a class="permalink" href="#p134134" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Could you post a link to your REW MDAT files again please?  I thought I had saved copies on my disk, but I can&#x27;t find them... <span class="smilie" title=":(">:(</span>
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p134137">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">TheVoiceOfBrian</span><time datetime="2014-09-02">2 September 2014</time><a class="permalink" href="#p134137" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Here a link Stuart: <a href="https://files.secureserver.net/0fiqOMA7FhH08S" rel="nofollow noopener" target="_blank">https://files.secureserver.net/0fiqOMA7FhH08S</a>  As I mentioned, one measurement is with the two full wall Roxul panels in and one is without.</div>
+</article>
+<article class="post" id="p134143">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-09-03">3 September 2014</time><a class="permalink" href="#p134143" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Wow, that&#x27;s a really small room!  Plus the height is exactly twice the width, so there are doubled-up modes across the entire spectrum..
+
+The treatment you have in there seems to be working to a certain extent, but there isn&#x27;t enough of it for the low end, and there is too much of it for the high end!  <span class="smilie" title=":|">:|</span>  The modes are there, as expected, and they are better damped on the &quot;With Panels&quot; than &quot;without panels&quot;.
+
+However, the problem is that the room is also very dry, from having all the surfaces covered.  That&#x27;s probably why you prefer the &quot;without&quot; setup, even though it is acoustically worse, since it sounds a bit more less dead.  But there there&#x27;s comb-filtering going on with that setup, and there&#x27;s a huge cancellation dip at around 350 Hz, so that isn&#x27;t really a good option.
+
+I&#x27;d suggest trying another setup, with the panels from <em>both </em>side walls set up against only one of those walls (in other words, double the normal thickness), leaving the opposite wall bare.
+
+Also, did you do the tests with the door open?  It looks like you might have done that.  If that makes the type of difference I&#x27;m expecting, then you might want to consider using something even better for that, instead of foam.
+
+You might also want to liven up the room some more without damaging the low-end trapping, by putting wood slats over that double-thick foam: You could test this by just leaning some wood strips (eg. floor boards, or something like that) against the foam, leaving gaps of different sizes between the strips. (for example, varying from an inch to 6 inches.  Do another test like that.
+
+I&#x27;d also consider doing an angled slot wall on the far end of the booth (opposite the door), along the lines of John&#x27;s wedge-shaped slotted-panel design, with fairly steep angles on each side:  You could even make that non-symmetrical, by doing the vertical joint at 2/3 the width, instead of the normal 1/2.
+
+But start out by putting all the side-wall foam on just one side and do a REW test like that, then add the simulated random slats and do another REW test.
+
+It&#x27;s a really tiny booth, so it is never going to sound fantastic, but there are things that can be done to improve it.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p134144">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">TheVoiceOfBrian</span><time datetime="2014-09-03">3 September 2014</time><a class="permalink" href="#p134144" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">So nice of you, Stuart - THANKS A TON.  Yes, it&#x27;s very small.  I actually was able to get my hands on some acoustic blankets &quot;Producers Choice&quot; is the name.  I removed the two 3.5&quot; Roxul panels and hung the blankets (pleated every 7 inches or so) on the two walls, and it really seemed to help.  It&#x27;s not great but it really seems to have softened the glaring issue I was having. It&#x27;s not as dead, which does help a bit.  I went back and listened to a few old recordings with fresh ears and you are so right, really was too dead and then with the other issues in there, it seems like it made it worse.
+
+The sound is &quot;cleaner&quot; now and seemingly a bit &quot;tighter&quot; as well.</div>
+</article>
+<article class="post" id="p134148">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">TheVoiceOfBrian</span><time datetime="2014-09-03">3 September 2014</time><a class="permalink" href="#p134148" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">OH, by the way, Stuart - the door was closed when I did the test…I had the cables running in there, but I was able to get the door almost completely shut.</div>
+</article>
+<article class="post" id="p134149">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-09-03">3 September 2014</time><a class="permalink" href="#p134149" aria-label="Link to post 7">#7</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body"> the door was closed when I did the test…I had the cables running in there, but I was able to get the door almost completely shut.</div></blockquote>The reason I asked was because there are two different decay slopes visible in the REW data, which is typical of a room that is somehow acoustically open to a larger room.  After the sound finishes decaying in the first room (smaller) it carries on decaying in the other room (larger) more slowly for a bit more time, which is sort of what it looks like in your case.  Not sure why that is, if the door was closed.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p134150">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">TheVoiceOfBrian</span><time datetime="2014-09-03">3 September 2014</time><a class="permalink" href="#p134150" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">I&#x27;m so thankful for your experience - I see what you mean with the decay, makes total sense.  You should be a teacher too!</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

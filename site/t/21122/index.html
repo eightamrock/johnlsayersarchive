@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to use REW to analyze the acoustics of your room... | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Soundman2020 in Acoustics, 2017. 36 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21122/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>How to use REW to analyze the acoustics of your room...</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Soundman2020 on 27 June 2017. 36 replies, 2017–2020. In the Library under <a href="/library/tools-measurement/">Measurement and tools</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21122.</p>
+<nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/21122/page/2/">2</a>
+<a href="/t/21122/page/2/" rel="next">Next</a></nav>
+</div>
+</header>
+<article class="post" id="p142690">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-06-27">27 June 2017</time><a class="permalink" href="#p142690" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">REW is a free acoustic analysis package, and is way better than some of the packages that cost a lot of money!
+
+REW stands for Room EQ Wizard, and you can find it here:  <a href="https://www.roomeqwizard.com/" rel="nofollow noopener" target="_blank">https://www.roomeqwizard.com/</a>
+
+In short, it&#x27;s amazing (and even more amazing that it is FREE!)  I highly recommend it.  It&#x27;s what I use for pretty much all my acoustic testing these days.
+
+
+But in order to get useful information from it, you need to first calibrate it, and use it correctly.  Below is the series of steps that I use with customers to help set up and use REW in the most meaningful way.  If you want me to analyze your data, then please follow these instructions carefully.  If you post REW data here on the forum that shows you clearly didn&#x27;t follow this procedure, then please don&#x27;t expect a reply.  It&#x27;s not hard to do.
+
+
+<strong><span class="bb-u"><em> <span style="font-size:200%">SOUNDMAN-2020 PROCEDURE FOR CALIBRATING AND USING R.E.W.</span> </em></span></strong>
+<strong><em><span class="bb-u"> <span style="font-size:150%">BASELINE TEST</span> </span></em></strong>
+(prepared by Stuart Allsop)
+(updated July 2019)
+
+<span class="bb-u"><strong><span style="font-size:150%">What you will need:</span></strong></span>
+
+<span class="bb-u">Computer and interface:</span>  You will need a computer capable of running REW, obviously! The computer will need a decent quality audio interface of some type for connecting your mic and speakers, and the REW manual refers to this as the &quot;sound card&quot;.  That might be a physical card inside your computer, or it might be an external box connected by USB, Firewire ( <span class="smilie" title=":shock:">:shock:</span> ), or some proprietary connection.  It will have at least two output channels for connecting to your speakers (either directly, or via your DAW), and it will have at least one input channel, for connecting to your acoustic measurement mic (either directly, or via your DAW).
+
+<span class="bb-u">Acoustic measurement mic:</span>  Use only a proper acoustic measurement mic for these tests!   If you don&#x27;t have one, go buy one.  There is no substitute.  You <em>cannot </em>use a typical directional vocal or instrument mic, or a mic that does not have flat response across the spectrum.  It must be an omnidirectional mic with flat response.  So if you used an SM58 or U47 or C1000 for your tests already, throw the data away, get a proper mic, and do it again. 
+
+<strong>A typical acoustic measurement mic:</strong>
+<div class="bb-attachment-missing">Image not preserved: acoustic-mic-07.JPG</div><strong>Which mic should you buy?</strong>  I <span class="bb-u">do NOT recommend</span> the Behringer ECM8000 mic for this, as I&#x27;ve heard too many sad stories about people getting faulty mics, including my own personal experience.  I have several mics, but the one I use for most testing is a simple, inexpensive PreSonus PRM-1. Other good ones are the dbx RTA-M, Audix TM-1, Nady CM-100, Beyerdynamic MM1, Dayton EMM-6, and if you really feel like blowing a lot of money, then get an Earthworks M30 (you can buy all of the others together for about the same price as a single M30...)  There are some USB mics that supposedly don&#x27;t need calibrating, but I&#x27;m still on the fence about those.... not convinced at all.  I prefer a &quot;real&quot; mic with a &quot;proper&quot; XLR connector on the back... One reason for this is the need to move the mic around the room... if it is tethered to the computer with a USB cable, which can only be a few feet (meter or so) long, then you have a problem... How do you move the mic without also moving the DAW?
+
+A good mic will cost you maybe around US$ 100 or so (2018 prices).
+
+If you have more than one measurement mic, then always use the exact same one for all of your testing, otherwise you will not be able to validly compare tests.  
+
+<span class="bb-u">Sound level meter:</span>  Yes you do need a proper, real, good quality hand-held sound level meter to do this.  <strong><em><span class="bb-u">NOT</span></em></strong> an app on your iPhone.  (Don&#x27;t get me started on why that&#x27;s a bad idea....)  If you are building a studio, then the cost of a good sound level meter is peanuts, compared to what you spend on everything else.  It costs less than half a dozen sheets of drywall!  DO NOT GET A CHEAP CHINESE JUNK METER!  Those go for under US$ 50, and they are nothing but toys.  A good meter will cost you around the same as a good mic: in the region of US$ 100 (2018 prices).  Good meters:  Extech (eg. model 407730 or 407732), Galaxy, Phonic (Eg. PAA-2 or PAA-3), Reed Instruments, B&amp;K, some Triplett.
+
+<strong>A typical sound level meter:</strong>
+<div class="bb-attachment-missing">Image not preserved: Extech-407732-sound-level-meter-360.jpg</div>
+<span class="bb-u">Hearing Protection:</span> The test signals can get pretty loud if there&#x27;s a strong modal response in the room to some frequencies, and they don&#x27;t sound very nice anyway, so it&#x27;s a good idea to have something handy to protect your hearing.  Typical &quot;ear defender&quot; headphone type protectors work very well, and so do the small &quot;ear bud&quot; type foam plugs.  Whatever it is you get, make sure that it provides at least 20 dB of protection, and 30 dB would be better.  And make sure you use it, every time you test.
+
+<strong>Typical headphone type &quot;ear defender&quot; hearing protection:</strong>
+<div class="bb-attachment-missing">Image not preserved: hearing-protection-headphones-ear-defender.jpg</div><strong>Typical &quot;ear bud&quot; type hearing protection:</strong>
+<div class="bb-attachment-missing">Image not preserved: 61247_earplugs_00.jpg</div>
+
+OK, so that&#x27;s what you&#x27;ll need (in addition to your speakers, cables, a mic stand, and some common sense!).  
+
+Now here&#x27;s how to do the calibration and first test in your empty room.
+
+
+
+<span class="bb-u"><strong>1. Gear setup:</strong></span> Make sure that all EQ controls on your entire signal chain (including your speakers, console, DAW, mic pre-amp, speaker controller, etc.) are set totally flat.   Also make sure that there is no compression, delay, or other effect applied anywhere, and that the gain structure is correctly set across at the input and output of every piece of equipment in the complete signal chain, at –20 dbFS (for digital gear) or 0 dBVU (for analog gear).
+
+
+<span class="bb-u"><strong>2. Calibrate REW to your DAW sound card:</strong></span>  There&#x27;s a procedure in the REW manual for doing this: In REW, go to &quot;help&quot; --&gt; &quot;show help&quot;, click on the magnifying glass icon, and type in &quot;Calibrating the Soundcard&quot;.  Follow those instructions to generate a calibration file.  Make sure you always use that calibration file, and that it is included in your MDAT file when you upload it.
+
+When you are done with that, disconnect the loopback and connect your two main speakers to the output channels, and connect your measurement mic to the input channel.
+
+
+<span class="bb-u"><strong>3. Calibrate REW to the real sound levels</strong></span>: This is important, even though the REW manual says it isn&#x27;t.  If you don&#x27;t calibrate REW, the absolute SPL levels on your graphs will be wrong, and I won&#x27;t be very interested in helping you analyze them...  (I have several standard settings that I use for viewing REW data.  If I use those to look at your data, and if your data is in the wrong place, I won&#x27;t be able to see it or analyze it. I would have to change my settings.  And yes, that IS a big deal:  I have thousands of REW data sets on my computer, from many, many dozens of studios, and if your data does not conform to that, then I&#x27;m not going to mess up my settings to try to find your data...)
+
+Go to the PREFERENCES menu in REW, click on the &quot;Soundcard&quot; tab, and make sure you have the correct device and channel selected for both input and output.  Just below that, there are several controls for setting levels.  Make sure the &quot;Invert&quot; and &quot;High Pass&quot; boxes are NOT selected, and that the &quot;sweep level&quot; is set to -12.  
+
+Like this:
+<div class="bb-attachment-missing">Image not preserved: REW-pref-soundcard-menu-setup-3.jpg</div>
+About half way down the page, there&#x27;s a heading that says &quot;Levels&quot;.  Make sure that is set to &quot;Use main speakers to check/set levels&quot;.  Click on the &quot;Check Levels&quot; button next to that, then click on &quot;Next&quot;.  
+<div class="bb-attachment-missing">Image not preserved: REW-pref-soundcard-menu-set-levels-out-2.jpg</div>It should start playing pink noise through both speakers, and you should see the &quot;Out&quot; meter showing a level of -12 and the &quot;In&quot; meter showing about -18, like this:
+<div class="bb-attachment-missing">Image not preserved: REW-pref-soundcard-menu-set-levels-3.jpg</div>Turn off the left speaker, so that ONLY the right speaker is playing.  Get out your hand-held sound level meter (I&#x27;ll call it the &quot;HH meter&quot; from here on), select &quot;C&quot; weighting and &quot;Slow&quot; response. 
+
+While REW is playing out that pink-noise test signal, use your HH meter (set to &quot;C&quot; and &quot;Slow&quot;) to measure the level at the place where the measurement mic will be (ie, where you head will normally be while mixing), and turn up or down the volume control for the right speaker until your HH meter is showing 80 dB.  Now turn off the right speaker, turn on the left speaker, and adjust that speaker until it is also showing 80 dB on the HH meter.   It&#x27;s hard to calibrate with pink noise, since it varies a bit, and there are also limitations on how accurately low frequencies can be measured, but do try to get this as accurate as you possibly can.
+
+Yes, I know that the REW manual says to use 70 dB, but I prefer 80 dBC to make sure that there&#x27;s a good signal to noise ratio, and that all of the room modes are triggered.  If your level is too low, the data will be &quot;dirty&quot;, and there might not be enough headroom to do decent analysis.  And if your level is too low, it won&#x27;t necessarily trigger all of the modes in the room at a decent level.
+
+Click &quot;Finish&quot; and close the Preferences menu.
+
+Now place your measurement mic at the mix position, in a good, firm, steady mic stand that won’t move during the tests.  Set up the mic on its stand exactly where your head will be when you are mixing normally, on the room center line, directly above your chair, facing straight forwards and slanted a bit upwards, angled around 60° up.  (Yes, I know that some people say to point it straight up, and others say to point it forwards, or at 45°, or at the speaker, but I&#x27;m not them, and there are very good reasons for me suggesting 60° for this test.  I&#x27;m not going to go into them here, but if you want me to analyze your data, then please use 60°).
+
+Click on the &quot;SPL Meter&quot; icon at the top of the REW screen: another window opens, with an SPL meter in it.  Make sure that the buttons under the display are set to &quot;SPL&quot;, and &quot;C&quot; and &quot;S&quot;.  Like this:
+<div class="bb-attachment-missing">Image not preserved: REW-SPL-calibration-setup-2.jpg</div>Click on &quot;Calibrate&quot;.  A window opens asking you to select the signal source: Set it to &quot;Use REW speaker cal  signal&quot;, and click &quot;accept&quot;.  Like this:
+<div class="bb-attachment-missing">Image not preserved: REW-SPL-calibration-setup-signal-select-8.jpg</div>It starts playing pink noise again, and another window appears, titled &quot;SPL Reading Calibration&quot;. Using your HH meter confirm that the level coming from your<span class="bb-u"> left speaker alone</span> (right speaker turned off) is still producing 80 dB. Adjust the volume control on the speaker if necessary to get as close as possible to 80.0 dB on the hand-held meter, then double-click the number in the REW meter calibration box and change it to &quot;80.0&quot;, then click finished.  Like this:
+<div class="bb-attachment-missing">Image not preserved: REW-SPL-calibration-setup-signal-6.jpg</div>REW then tells you something about the maximum level that it can measure with this calibration setup:
+<div class="bb-attachment-missing">Image not preserved: REW-SPL-calibration-setup-max-lvl-7.jpg</div>Click &quot;OK&quot;.  Close the SPL meter window.
+
+
+
+That&#x27;s it.  You have fully calibrated REW.
+
+
+<span class="bb-u"><strong>4. Make the measurements:</strong></span> With the same setup as for the previous step (<strong><em><span class="bb-u">do not change any settings at all from here on!</span></em></strong>), click on the &quot;Measure&quot; button in the top left corner of the REW screen.  It opens another window, titled &quot;Make a Measurement&quot;.  Check that it is set to &quot;SPL&quot; (not &quot;Impedance&quot;).
+
+Makes sure that  &quot;Start Freq&quot; is set to 10, &quot;End Freq&quot; is set to 22,000, &quot;Level&quot; is set to -12dB, &quot;Length&quot; is set to 256k, and &quot;Repetitions&quot; is set to 2 
+(NOTE:  On older versions of REW, &quot;Repetitions&quot; was called &quot;Sweeps&quot;.  It&#x27;s the same thing with a different name).
+(NOTE:  With some configurations, the &quot;Sweeps&quot; / &quot;Repetitions&quot; value will be grayed out and set to 1, so you will not be able to change it.  For example, if you have a USB mic, or if you use &quot;Acoustic timing reference&quot;).
+
+That window looks like this, for newer versions of REW.  (If you have an older versions the window for that is shown further down, below this one.)
+<div class="bb-attachment-missing">Image not preserved: REW-calibration-and-testing-procedure-New-Meausrement-Screen-5.jpg</div>Below is the old-style measurement window, from versions of REW prior to May 2019:
+<div class="bb-attachment-missing">Image not preserved: REW-Measurement-setup-2.jpg</div>THE ABOVE IS IMPORTANT!  <span class="bb-u">If you post data that does NOT start at 10 Hz and end at 22 kHz, then don&#x27;t expect me to help you analyze it</span>. 
+
+Click on &quot;Check Levels&quot;.  It should play pink noise for a few seconds, and you should see the output meter jump to &quot;-12&quot;, and the input meters should show a reading of somewhere between 0 and -20.  After a few seconds, it stops playing the pink noise, then tells you what the level was, with a message saying if it was too high (clipping), too low, or OK to proceed.  You might need to adjust the mic preamp gain or speaker levels to get that correct.  If so you will have to repeat the above calibration procedure from step 3 onward.
+
+For the actual measurement sweep, get out of the room while that runs!  Yes, your body can affect the measurements, which is why REW has a feature for dealing with that.... Set the &quot;Delay&quot; option (called “Start Delay” in older versions) to several seconds, enough time for you to get out of the room and close the door, plus an additional 5 seconds for the room to settle down. In other words, if you need eight seconds to walk out of the room and close the door, then set the &quot;start delay&quot; number to 13 seconds.
+
+Like this (NEW VERSION):
+<div class="bb-attachment-missing">Image not preserved: REW-calibration-and-testing-procedure-New-Meausrement-Screen-6.jpg</div>OLD VERSION:
+<div class="bb-attachment-missing">Image not preserved: REW-Measurement-setup-3.jpg</div>
+Click &quot;Start&quot; at the bottom of the screen (which was called &quot;Start Measuring&quot; in older versions of REW), leave the room, close the door, and wait for the test to complete fully.  
+
+When you get back in, the first thing you need to do is to name the test!  In the name box at the top of that test measurement (left hand column of the REW screen), type in the name: &quot;L-- Baseline empty&quot;,   . . . . .   LIKE THIS:
+<div class="bb-attachment-missing">Image not preserved: REW-Measurement-L--Baseline-2.jpg</div>Do not name the measurements using the text box below the thumbnail!  You can add extra information in the text box if you want, such as the treatment that you added to the room just before this test, but the name of the test MUST go in the tab at the top right of the thumbnail.
+
+Then turn off the left speaker, turn on the right, and repeat the measurement step above.  Do not change any settings!  Once again, leave the room while the test runs.  Name that measurement as &quot;R-- Baseline empty&quot;. 
+<div class="bb-attachment-missing">Image not preserved: REW-Measurement-R--Baseline-3.jpg</div>Then turn on the left speaker again, do one more measurement (with you outside the room), and name that one &quot;LR- Baseline empt &quot;.
+<div class="bb-attachment-missing">Image not preserved: REW-Measurement-LR-Baseline-3.jpg</div><strong><em><span class="bb-u">Please makes sure that you arrange the tests in this exact order!  Fist the &quot;L--&quot; test, then the &quot;R--&quot; test, then the &quot;LR-&quot; test.</span> </em></strong> If you did the tests in the wrong order, that&#x27;s fine: REW allows you to drag them up or down in that window.  The reason I ask you to keep them in this order, is because that&#x27;s the order I analyze them in, and also because I get many, many test results from many people, and if I have to drag the tests around to put them in the order I want them, that just wastes time.  It&#x27;s only a few seconds, sure, but if I have to do that several times per day, it&#x27;s boring, and annoying!  Sometimes I get files from people that have dozens of tests, taken at different points in their studio build, and it can take several minutes to re-arrange those into a logical sequence. Make it easy for me to help you, and it&#x27;s probable that you&#x27;ll get better help!
+
+If you also have a sub-woofer, then you will need to do a set of SEVEN tests, instead of just three, in the following order
+
+--S  Sub only
+L--  Left speaker only
+R--  Right speaker only
+LR-  Left plus Right speakers, but no sub
+L-S  Left plus Sub
+R-S  Right plus Sub
+LRS  All three on together
+
+
+Save all of the measurements into one single MDAT file (&quot;File&quot; menu, &quot;Save all measurements&quot;), upload that MDAT file to a file sharing service such as DropBox, and post the link in your thread on this forum, not some other place.  (Note.  Post it in YOUR THREAD!  Not this thread here.  Your own thread, here on the John Sayers forum, where you are documenting your room build / tuning process.  If you post links on THIS thread, I will remove them.  <em><strong><span class="bb-u">I do not want this thread cluttered up with measurements or details about your own build</span></strong></em>.  This thread is ONLY for instructions on how to use REW, and questions about that).  If you post your results on another forum or website, I probably wont see them, so you won&#x27;t get a response.  Post your results here, only, and on your own thread.
+
+<strong><span class="bb-u">5. Make a note of the mic location:</span></strong> LAST STEP:  VERY IMPORTANT!!!  When you have done all of the above, you need to measure EXACTLY where the mic is in the room, in all three dimensions, and using reference points around the room that wont change or end up hidden behind treatment!  You need to be able to get the mic back to that precise location, every single time you do another set of tests, and it has to be accurate to within about 5mm (1/4&quot;).  The tip of the mic must always end up at that point, every time.  If not, then you cannot compare the graphs, validly.  Very important.
+
+That&#x27;s it!  Not complicated.
+
+I will add more information to this thread later, with instructions on how to look at your data (settings for REW), and basic tips on how to interpret your data, as well as other acoustic tests you can do in your room, to reveal more about it, and understand it better.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p142712">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">brainditch</span><time datetime="2017-06-29">29 June 2017</time><a class="permalink" href="#p142712" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Thank you very much for the comprehensive post Stuart. As usual it demonstrates your methodical approach to the subject, and with excellent suggestions all around, particularly for those (such as myself) just getting started in the analysis end of their rooms/builds. 
+
+I have managed to cobble together a fairly decent, though modest analysis set-up: 
+1. Dedicated laptop for analysis and mains control.
+2. Dedicated mic pre-amp (Focusrite 2i4).
+3. Third-party calibrated Dayton EMM-6 measurement mic with included cal file.
+4. A digital hand-held ANSI class 2 SPL meter with data-logging and USB transfer features.
+
+Part of my build amenities included installation of an overhead grid system made of punched angle steel (primarily for the installation of overhead acoustic treatments). By suspending some modified 10&#x27; tape measures (with fishing weights as plumb bobs) I will be able to achieve a three-dimensional placement accuracy of +-1/16&quot; for anything which needs to be periodically moved and re-positioned. Between that and the laser distometers and alignment tools I own for my carpentry/rigging work, positional accuracy and repeat-ability shouldn&#x27;t present too much of a problem.
+
+I have made a couple of room pings at certain build milestones, and have used my rig with REW to help calibrate a couple of finished rooms for some friends, but as I am just about to start final treatments and calibration of my own build (Shattered Saucer Studios) your posting of this thread is remarkably timely.
+
+A quick question- a few posts I&#x27;ve read written by some acousticians I respect have suggested that an additional valuable ping location might be with a full-range monitor placed on the floor in a corner, and the opposite ceiling corner being used for the measurement mic, as this will provide some extra gain from boundary proximity, and also verify the room modes fairly well. Do you think this would be a valuable measurement to include in addition to the L, R, L+R monitors &quot;pingset&quot; as measured from the Listening Position?
+
+Thanks again for your efforts, and looking forward to future posts regarding this topic.</div>
+</article>
+<article class="post" id="p142713">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-06-29">29 June 2017</time><a class="permalink" href="#p142713" aria-label="Link to post 3">#3</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">might be with a full-range monitor placed on the floor in a corner, and the opposite ceiling corner being used for the measurement mic, as this will provide some extra gain from boundary proximity, and also verify the room modes fairly well.</div></blockquote>I often do that in live rooms and booths, yes, because there&#x27;s no fixed positions for the sound source and receiver (ear, mic) in a live room.  That does give you a pretty good feeling for how the low end is behaving, especially modes.  But I don&#x27;t usually do that in a control room, since it isn&#x27;t going to tell me much that I didn&#x27;t already know from the &quot;standard&quot; test, and also because in a control room, there&#x27;s a very precise fixed location for both the source (speakers) and receiver (listening position).  Since the entire purpose of a control room is based around the listening position(s), that&#x27;s what I&#x27;m most interested in: the room response at the listening position.  For a control room, I might do another series of tests that I call the &quot;walking mic&quot; test (which I&#x27;ll post a description of at some point soon), as that tells me a lot more about the SBIR issues and the modal issues, as well as about possible changes in the mix position, but I don&#x27;t see much of a need to do the &quot;diagonal corners&quot; test that you describe:  That&#x27;s really useful in live rooms, but not very much in a a control room.  (There&#x27;s one exception, which has to do with very high precision room tuning, but I won&#x27;t be going into that here, as it&#x27;s not even applicable to most home studios).
+<blockquote class="bb-quote"><div class="bb-quote-body">Thanks again for your efforts, and looking forward to future posts regarding this topic.</div></blockquote> <span class="smilie" title=":thu:">:thu:</span>
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p145922">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mbira</span><time datetime="2018-05-25">25 May 2018</time><a class="permalink" href="#p145922" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Hi Stuart,
+
+How do these instructions change if we have a sub?   Thanks for taking the time to do this!  I will redo my RW measurements following your preferences and post when I know what you want us to do about a sub.</div>
+</article>
+<article class="post" id="p145923">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-05-26">26 May 2018</time><a class="permalink" href="#p145923" aria-label="Link to post 5">#5</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">mbira wrote:</div><div class="bb-quote-body">Hi Stuart,
+
+How do these instructions change if we have a sub?   Thanks for taking the time to do this!  I will redo my RW measurements following your preferences and post when I know what you want us to do about a sub.</div></blockquote>Good question!  
+
+First, calibration: You will need to adjust the levels slightly, and the amount of that adjustment depends on the actual setup: basically, how much overlap there is between the sub and the bottom end of the mains.  The final goal is the same: 86 dB with all speakers on, and even levels across the spectrum.  But the individual speaker levels will be a bit lower.  Typically, the mains will be putting out maybe 78 dBC each (84 total) and the sub set at maybe 72 dBC making up the difference.  But your actual setup will dictate that, and it might be very different.  For example, it might even work out nicely at 77, 77, 77, if you get lucky.   The actual speakers, the cross-over setting, the positions in the room, and the room itself can all affect that.  Unfortunately, it&#x27;s &quot;trial and error&quot; here!  Keep fiddling until you get a roughly even level on the frequency response graph when you have all three speakers running, with the sub looking to be at about the same level as the other two combined. (In other words, if you visually average out all the peaks and dips, then the remaining imaginary line looks reasonably flat).  However,  you&#x27;ll likely need to repeat this &quot;trial and error&quot; fiddling later on, as the room treatment and tuning starts to take shape, and as you adjust the location/settings of the sub for optimal results.
+
+
+Next, measurements:  For the baseline test, you will need to take 7 measurements, instead of just three:
+
+--S  Sub only
+L--  Left speaker only
+R--  Right speaker only
+LR-  Left plus Right speakers, but no sub
+L-S  Left plus Sub
+R-S  Right plus Sub
+LRS  All three on together
+
+The three-letter group on th left in the list above is what you type into the name of each measurement tab, right at the start of the field, then you add &quot;Baseline Empty&quot; after that.
+
+After that you&#x27;ll probably only do L--, R-- and LRS for each new measurement, after you change something in the room.  Occasionally you might need one of the others as well, but usually just those three.
+
+(Just be thankful you don&#x27;t have a 5.1 or 7.1 setup, or even more fun, a 5.2!  That&#x27;s rather &quot;entertaining&quot; to calibrate that correctly!)
+
+I have now update the original post to include this.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p145925">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mbira</span><time datetime="2018-05-26">26 May 2018</time><a class="permalink" href="#p145925" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Thanks Stuart.  Just to be certain, is the &quot;frequency response graph&quot; the &quot;All SPL&quot; graph in REW?  Is that what I&#x27;m wanting to be flat?  Thank you, sir!
+
+The only other thing (at this point!) that I have not been able to figure out is calibrating the sound card itself.  I&#x27;m using an Apollo 16, and I have heard some people say that REW gave then the individual inputs and outputs of the soundcard in the drop down, but for some reason i don&#x27;t get that.  I created a horrible sounding feedback loop, but I&#x27;m pretty sure that wasn&#x27;t what I was supposed to do.  
+
+My question is can I bypass the sound card calibration part?  Also, i am using one of those calibrated USB mics that come with a calibration file that you don&#x27;t like, but that&#x27;s what I&#x27;ve got....</div>
+</article>
+<article class="post" id="p147318">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/dandan/">DanDan</a><time datetime="2018-09-12">12 September 2018</time><a class="permalink" href="#p147318" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">A USB Mic contains a &#x27;soundcard&#x27;. It has no second channel for a Loopback Calibration. Just ignore the SoundCard Calibration process entirely. 
+Use the longest sweep you can, as multiple sweeps will be disabled.</div>
+</article>
+<article class="post" id="p150265">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">LionHo</span><time datetime="2019-04-17">17 April 2019</time><a class="permalink" href="#p150265" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Hi...If the mic cal file is correct that seems like a very loud measurement, mostly over 100 dB, maybe why the distortion is quite high. 75 dB is loud enough for good measurements. Did you have both speakers playing? Generally better measuring each speaker individually.</div>
+</article>
+<article class="post" id="p150266">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-04-17">17 April 2019</time><a class="permalink" href="#p150266" aria-label="Link to post 9">#9</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">LionHo wrote:</div><div class="bb-quote-body">... that seems like a very loud measurement, mostly over 100 dB, ...</div></blockquote>Which measurement are you referring to? None were posted in this thread.  Nothing was over 100 dB, and there is no distortion shown anywhere.  Please stop guessing:  What you are doing is exactly what spammers do... I&#x27;ll be watching you very carefully!
+
+Also, please read the<strong> <a href="/t/3231/">forum rules for posting  (click here)</a>. </strong> You seem to be missing a couple of things.
+<blockquote class="bb-quote"><div class="bb-quote-body"> 75 dB is loud enough for good measurements. Did you have both speakers playing? Generally better measuring each speaker individually.</div></blockquote>Did you actually read the instructions?  Clearly, you did not. Commenting on posts that you have not actually read just makes you like stupid.  Or indicates you are a spammer!   You seem to have not even noticed that this is a TUTORIAL on how to use REW!  I covered ALL of that, in great detail. There are very good reasons for my recommendations.  If you have valid evidence to the contrary, then I&#x27;d love to consider it, ... but I&#x27;m not very inclined to consider ANY input in an anonymous post from someone who doesn&#x27;t follow the forum rules, has no profile, didn&#x27;t even bother reading the original post at all, butted into a thread which I specifically asked to be kept clean and on-topic, with blatantly incorrect statements, and not even any introduction....
+
+Have a nice day! <span class="smilie" title=":)">:)</span>
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151097">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-07-10">10 July 2019</time><a class="permalink" href="#p151097" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Thread updated to include the new &quot;Measurement&quot; window in the latest version of REW, and also to fix some minor spelling errors.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151236">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-07-29">29 July 2019</time><a class="permalink" href="#p151236" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">Stuart,
+I&#x27;m reading your tutorial and beginning to purchase the equipment I need to measure my current room and the new studio I will be building in about 6 months. I&#x27;ve never used the software or equipment so this is new to me.
+
+I am purchasing the PreSonus PRM1 Measurement Microphone.
+
+I have an SPL meter but it&#x27;s a Radio Shack model and, according to your instructions, this will not suffice.
+
+The &quot;Extech 407730&quot; is substantially cheaper than the 407732. This is in a desirable price range (~$100) so I&#x27;m hoping it (or another one) will work. I noticed the measurement bandwidth for the 407330 is &quot;300Hz to 8KHz&quot; and the 407732 is &quot;31.5Hz to 8KHz&quot;.
+Would one need the wider range to measure a sub-woofer?
+
+The Galaxy CM-140 is $129 and has a  bandwidth of 31.5Hz to 8KHz.
+
+I&#x27;m all ears when it comes to your advice.
+
+Appreciate your help.</div>
+</article>
+<article class="post" id="p151238">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-07-29">29 July 2019</time><a class="permalink" href="#p151238" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">In that case, I would go with the Galaxy.  It&#x27;s a decent meter, and a decent price.  There&#x27;s no need to get a crazy expensive high-precision laboratory quality meter: any reputable brand in that price range and specification range is fine.  I must admit, I hadn&#x27;t checked the Extech 407730 specs, and a little surprised to see that the only mention 300 Hz for the low end.  I must look into that, but if that&#x27;s what they say, then it&#x27;s no the ideal meter for studio work.  Good eye to spot that!  Due diligence pays off...  <span class="smilie" title=":thu:">:thu:</span>  
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151239">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-07-29">29 July 2019</time><a class="permalink" href="#p151239" aria-label="Link to post 13">#13</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">In that case, I would go with the Galaxy.  It&#x27;s a decent meter, and a decent price.  There&#x27;s no need to get a crazy expensive high-precision laboratory quality meter: any reputable brand in that price range and specification range is fine.  I must admit, I hadn&#x27;t checked the Extech 407730 specs, and a little surprised to see that the only mention 300 Hz for the low end.  I must look into that, but if that&#x27;s what they say, then it&#x27;s no the ideal meter for studio work.  Good eye to spot that!  Due diligence pays off...  <span class="smilie" title=":thu:">:thu:</span>  
+
+-  Stuart  -</div></blockquote>Thank you Stuart!</div>
+</article>
+<article class="post" id="p151243">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-07-31">31 July 2019</time><a class="permalink" href="#p151243" aria-label="Link to post 14">#14</a></header>
+<div class="post-body">Stuart,
+I have a question regarding SPL meters. I am ready to purchase the Galaxy CM-140 and wanted to ask about calibration.
+Galaxy recommends their meters be calibrated yearly. Some of Galaxy&#x27;s meters are no longer available and are being replaced (as stated on their website) by the CM-170.  
+
+I&#x27;m wondering if the CM-140 may be sitting in a warehouse and may need calibrating before 1 year after I purchase it?
+
+Galaxy&#x27;s calibrator is over $200. I see other calibrators going for ~$100.
+
+I plan to measure my current studio - mainly just for reference. I will be starting to build my new studio around March-April 2020.
+
+Curious of your thoughts on calibrating meters.</div>
+</article>
+<article class="post" id="p151245">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-07-31">31 July 2019</time><a class="permalink" href="#p151245" aria-label="Link to post 15">#15</a></header>
+<div class="post-body">I do have a calibrator, which I use on all of my meters a couple of times per year, but to be very honest, most of the time no adjustment is needed, and even when I do need to adjust, the changes are rather small.  So I wouldn&#x27;t worry about it, at least for now.  Maybe in a year or two, if you are concerned that the meter might have drifted, then get a calibrator to make sure... or find a buddy who has one!  Unless the meter is damaged or maybe has suffered a strong impact (perhaps being dropped), or stored outside of the approved temperature range, then it&#x27;s not going to be far off: probably within a decibel or so, so it&#x27;s not really something to be worried about... unless you need to use your meter to check legal issues, as I sometimes do: most noise regulations require that the meter must have been calibrate in the last 3 months, or 30 days, or whatever.   
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151246">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-07-31">31 July 2019</time><a class="permalink" href="#p151246" aria-label="Link to post 16">#16</a></header>
+<div class="post-body">Excellent, thank you.</div>
+</article>
+<article class="post" id="p151336">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Robot House Ind</span><time datetime="2019-08-18">18 August 2019</time><a class="permalink" href="#p151336" aria-label="Link to post 17">#17</a></header>
+<div class="post-body">I&#x27;m a noob to this forum, so I apologize for any obvious questions. I&#x27;ve looked around a decent amount, but still had a question about this:
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body"><blockquote class="bb-quote"><div class="bb-quote-body">might be with a full-range monitor placed on the floor in a corner, and the opposite ceiling corner being used for the measurement mic, as this will provide some extra gain from boundary proximity, and also verify the room modes fairly well.</div></blockquote>I often do that in live rooms and booths, yes, because there&#x27;s no fixed positions for the sound source and receiver (ear, mic) in a live room.  That does give you a pretty good feeling for how the low end is behaving, especially modes.  But I don&#x27;t usually do that in a control room, since it isn&#x27;t going to tell me much that I didn&#x27;t already know from the &quot;standard&quot; test, and also because in a control room, there&#x27;s a very precise fixed location for both the source (speakers) and receiver (listening position).  Since the entire purpose of a control room is based around the listening position(s), that&#x27;s what I&#x27;m most interested in: the room response at the listening position.  For a control room, I might do another series of tests that I call the &quot;walking mic&quot; test (which I&#x27;ll post a description of at some point soon), as that tells me a lot more about the SBIR issues and the modal issues, as well as about possible changes in the mix position, but I don&#x27;t see much of a need to do the &quot;diagonal corners&quot; test that you describe:  That&#x27;s really useful in live rooms, but not very much in a a control room.  (There&#x27;s one exception, which has to do with very high precision room tuning, but I won&#x27;t be going into that here, as it&#x27;s not even applicable to most home studios).
+<blockquote class="bb-quote"><div class="bb-quote-body">Thanks again for your efforts, and looking forward to future posts regarding this topic.</div></blockquote> <span class="smilie" title=":thu:">:thu:</span>
+
+-  Stuart  -</div></blockquote>Is there a good tutorial on measuring live rooms specifically, similar to this one? Or would the opposite corners strategy be the only difference in testing compared to this? I&#x27;m really curious since I&#x27;m wondering if you would need to test a variety of speakers considering different speakers I&#x27;d expect would have a different frequency response, and when recording you would be using a variety of them in a live room depending on the application, right?</div>
+</article>
+<article class="post" id="p151352">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-08-23">23 August 2019</time><a class="permalink" href="#p151352" aria-label="Link to post 18">#18</a></header>
+<div class="post-body">Preparing to run my first analysis and I&#x27;m stuck on the soundcard calibration section. Yep, the very beginning.
+
+I have a Blue Sky Pro Desk 2.1 monitor system and I am not sure if I have everything set &quot;flat&quot; as the instructions indicate.
+The sub-woofer does have &quot;Variable Cutoff Frequency&quot; controls and I&#x27;m not sure if that is applicable or not.
+
+Also a little confused with the instructions for setting up my multi-channel output. I&#x27;m on a Mac OS X.
+
+
+[url]http://abluesky.com/products/prodesk-2-1//url]</div>
+</article>
+<article class="post" id="p151360">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-08-25">25 August 2019</time><a class="permalink" href="#p151360" aria-label="Link to post 19">#19</a></header>
+<div class="post-body">Attempting to proceed and having a problem with the input signal when calibrating my sound card.
+It will not show an input signal if I set the sample rate to 48kHz. Everything is set to 48 on my interface, etc.
+
+If set to 44.1 I do get an input signal.</div>
+</article>
+<article class="post" id="p151362">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-08-25">25 August 2019</time><a class="permalink" href="#p151362" aria-label="Link to post 20">#20</a></header>
+<div class="post-body">Well, I finally got an input signal at 48k but the measuring results may not look to good. Not sure how to correct this.
+<div class="bb-attachment-missing">Image not preserved: REW Capture 1.jpeg</div></div>
+</article>
+<article class="post" id="p151363">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-08-25">25 August 2019</time><a class="permalink" href="#p151363" aria-label="Link to post 21">#21</a></header>
+<div class="post-body">When I have my interface monitoring set to mono, I get better results. Not sure if this should be done though.
+<div class="bb-attachment-missing">Image not preserved: REW Capture 3.jpeg</div></div>
+</article>
+<article class="post" id="p151364">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-08-25">25 August 2019</time><a class="permalink" href="#p151364" aria-label="Link to post 22">#22</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Well, I finally got an input signal at 48k but the measuring results may not look to good. Not sure how to correct this</div></blockquote>You have a feedback loop in your system somewhere.  Probably you have monitoring engaged and feeding back into the inputs, or some such.
+
+Also, please move all of your posts about this to your own personal thread, instead of having them here on this thread, which is about using REW in general, not specific individual cases.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151369">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-08-26">26 August 2019</time><a class="permalink" href="#p151369" aria-label="Link to post 23">#23</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body"><blockquote class="bb-quote"><div class="bb-quote-body">Well, I finally got an input signal at 48k but the measuring results may not look to good. Not sure how to correct this</div></blockquote>You have a feedback loop in your system somewhere.  Probably you have monitoring engaged and feeding back into the inputs, or some such.
+
+Also, please move all of your posts about this to your own personal thread, instead of having them here on this thread, which is about using REW in general, not specific individual cases.
+
+-  Stuart  -</div></blockquote>Thank you Stuart. I have created a separate thread for this. I&#x27;m not able to delete my posts here. Do I need to send a request to have them deleted?</div>
+</article>
+<article class="post" id="p151479">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">victorr_sun</span><time datetime="2019-09-10">10 September 2019</time><a class="permalink" href="#p151479" aria-label="Link to post 24">#24</a></header>
+<div class="post-body">So can the Extech 407730 be used for calibration given its limited frequency response?
+
+This is the handheld meter I ended up purchasing, so just checking if I should return it and opt for another?
+
+Thanks</div>
+</article>
+<article class="post" id="p151726">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2019-10-27">27 October 2019</time><a class="permalink" href="#p151726" aria-label="Link to post 25">#25</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">So can the Extech 407730 be used for calibration given its limited frequency response?</div></blockquote>Why do you figure it has a limited frequency response? It has slow and C weighting settings and that&#x27;s all you need it to do. It should work fine.
+
+Greg</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"><nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/21122/page/2/">2</a>
+<a href="/t/21122/page/2/" rel="next">Next</a></nav></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

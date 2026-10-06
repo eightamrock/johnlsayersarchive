@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pyramid Diffuser/Absorber Calculations | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Mike Toor in Acoustics, 2013. 0 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/18513/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Pyramid Diffuser/Absorber Calculations</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Mike Toor on 27 August 2013. 0 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 18513.</p>
+
+</div>
+</header>
+<article class="post" id="p129686">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Mike Toor</span><time datetime="2013-08-27">27 August 2013</time><a class="permalink" href="#p129686" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi everyone!
+
+For all the details of my studio build, you can see the thread here, though I haven&#x27;t really updated it for a long time:
+
+<a href="/t/17356/">http://www.johnlsayers.com/phpBB2/viewt ... =2&amp;t=17356</a>
+
+Anyway, John&#x27;s manual says that pyramid diffusers can double as bass traps, so I thought I&#x27;d look into figuring out how to calculate an approximate range of their treatment. This thread was originally posted in question format, but Stuart (Soundman2020) filled me in on the  details, so I&#x27;m turning it into a reference.
+
+Basically, I built a bunch of diffusers out of 1/8&quot; thick plywood in three different sizes (the maximum depth is different for the three sizes, but all the dimensions are proportional). The diffusers are 18x18, 12x12, and 9x9 in inches.
+
+There are two relevant formulas used to calculate the resonant frequencies of the diffusers.
+
+The first type of resonance that is treated by filling diffusers with absorbing material is the resonance of each panel of wood that makes up the diffuser.
+
+To find the resonance of a square panel, the formula is:
+
+F(r) = 0.45vt((r/w)^2+(r/h)^2)
+
+r = harmonic number
+v = longitudinal velocity in the partition (roughly 3000 for plywood) in m/s
+t = panel thickness in m
+w= width in m
+h = height in m
+
+I&#x27;m not sure how this would apply to a triangular panel, but this type of resonance has a very minimal effect on the acoustics of the room anyway, so by dampening these resonances by filling the cavities with air, there would only be a very, very small effect.
+
+The second type of resonance that would occur happens when the cavity in the diffuser is sealed off with a thick board or when the diffuser is used as the top face of a box made out of a thicker material. This would form what is called a membrane trap. A membrane trap with a rectangular top panel treats a certain frequency that the trap is tuned to with a small range of other frequencies included based on very small variations in the depth of the box. In other words, this type of trap has a very narrow &quot;Q&quot;, or range of treated frequencies. When using a pyramid diffuser rather than a rectangular panel, there is a broad range of different depths, and therefore the Q is much wider and the membrane trap acts as broadband treatment.
+
+To find the resonant frequency at a certain depth, the formula is:
+
+f = 170/SQRT(md)
+
+m = surface density of the panel in lb/ft^2 (0.375 for 1/8&quot; plywood, 0.75 for 1/4&quot;, 1.5 for 1/2&quot;, etc.)
+d = depth in feet
+
+I used SketchUp to calculate the volume of my diffusers. I then divided these volumes by the area of the bases to get an average depth of the cavity. I used these average depths to get rough estimates for the center frequencies of the diffusers. I then used the max height of the diffusers to calculate their cut-off frequencies on the upper end and used the difference between these numbers and the center numbers to calculate low cut-off numbers (center - (high - center) or 2c-h=l, where c = center, h = high, and l = low). I did this because the minimum depth of the diffuser is 0 and you can&#x27;t use that to find a frequency because it&#x27;s not possible for a non existant depth to have a resonance. As you go up from the base of the pyramid to the top, the perimeter of the squares that experience each depth gets smaller and smaller, so the above approximation  wouldn&#x27;t really be a bell shape, but I used it to get a rough idea.
+
+This type of resonance is much more prominent than the first one (the individual panel resonance) and is where the real treating would happen. So, for diffusers that are small like mine, or just don&#x27;t have much depth, rather than putting a solid sheet on the back of the diffusers to seal the cavity, if you make a box underneath it instead, you increase the max depth, the average depth, and the minimum depth by the depth of that box, so you could use these three values to determine your center, high cut-off, and low cut-off.
+You can also work backwards with set numbers to determine what dimensions you need.
+
+Just remember, though, that the deeper your diffuser, the broader the Q. Also, within that broader Q, there will be less of an effect overall. A rectangular membrane trap gives you very good absorption for a very small Q, but one with varying depths would give you a broader Q and as that Q gets broader, the maximum effect and overall effect drop.
+
+Also, keep in mind that a higher surface density of the membrane drops the treated frequencies as well, so you have the membrane thickness, the diffuser depth, and the depth of the box (if you&#x27;re using a box and not just a panel as the base) to work with in setting your Q.
+
+Here is a picture of one set of diffusers (there is one set on each side of my rear wall):
+<div class="bb-attachment-missing">Image not preserved: Diffusers.jpg</div></div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

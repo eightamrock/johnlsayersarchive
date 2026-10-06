@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio hum. Where to start troubleshooting? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by ilya in Installation and Wiring, 2008. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/11425/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Studio hum. Where to start troubleshooting?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by ilya on 24 November 2008. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 11425.</p>
+
+</div>
+</header>
+<article class="post" id="p82374">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">ilya</span><time datetime="2008-11-24">24 November 2008</time><a class="permalink" href="#p82374" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I&#x27;m working at the studio with supposedly bad grounding and poor mains. Moreover, it looks like the overall ground wiring is done incorrectly (daisy-chain instead of star). The problem is hum and bleeding signal to ground (i. e. if I deadpatch the input to the desk and feed it a signal I can still hear it in the monitors, very softly though). I must add that digital signals (the desk is analogue, but it has digital controller) from the desk bleed into ground as well.
+I&#x27;m aware of troubleshooting techniques where one should unplug everything and then plug devices one by one until it hums. I have unplugged everything and I&#x27;ve even disconnected the patchbays EDACs (except master section obviously). No dice, it still hums.
+
+So, my question is where should I look next? I&#x27;m suspecting the ground itself (which is actually a metal piece of the building framing), and bad mains (the studio shares the power with the laundry with motors and other nasty stuff). Are there any ways of measuring this with the equipment at hand like DMM?
+
+Oh, and I must probably add that the desk is Euphonix CS-2000, powered from a step-down transformer (220/110, 30A secondary). At some point I started to think that the desk is faulty, but bleeding signals to ground doesn&#x27;t look right then. However I have an SPL monitor controller so I can omit the desk in the worst case of troubleshooting. But this requires a great amount of soldering, so I&#x27;m reserving it as the last chance.</div>
+</article>
+<article class="post" id="p82389">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2008-11-24">24 November 2008</time><a class="permalink" href="#p82389" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">I&#x27;m sure you already know this, but tracing hum is a bitch!  <span class="smilie" title=":)">:)</span>
+
+Seriously, have you eliminated your monitors as being the culprit?  I&#x27;m assuming that you use active speakers here.  How about if you connect up a battery-powered CD or even MP3 player direct to the speakers, with  everything else turned off and totally disconnected:  Do you still get hum?
+
+Next, how about on headphones?  If you disconnect everything except your console and just plug in headphones, do you get hum?
+
+If the answer to either one of those is &quot;yes&quot;, then you know where to start:  Check the grounding on that item, all the way back to where it hits Planet Earth.
+
+If the answer to BOTH of those is &quot;yes&quot;, then I&#x27;d suspect that your earthing itself is faulty, or your transformer, or that you are using different earths, or maybe even different electrical circuits.
+
+And if the answer is &quot;no&quot; to both, then I&#x27;d be looking for ground loops or faulty cables somewhere between the console and the speakers.  And that could be in either the electrical cables or the signal cables. Check your signal cables first, and if they are fine, then you need to go back to your electrical system again.
+
+Get an electrician to do this (don&#x27;t do it yourself unless you are qualified to do so, as it could be dangerous if you don&#x27;t know what you are doing, and I mean dangerous as in &quot;you could kill yourself if you screw up&quot;.):  On the plugs in your studio, measure the voltage between live and ground, and also between neutral and ground, and also between live and neutral.  Depending on how your electrical system works in Russia, you should see almost the same voltage between live-ground as you do between live-neutral, and nearly zero volts between neutral-ground.  If you do not see that, then either your electrical system in Russia does not ground the neutral, or you have a wiring problem.  A qualified local electrician can tell you what system you have.  
+
+So if you have the situation where you get, for example, 220 volts across live-neutral, 218 volts across live-ground, and 2 volts across neutral-ground, then you have a huge issue with your grounding.  In that kind of system, the neutral-ground voltage should be very, very nearly zero volts, just a few millivolts, maximum.
+
+Once you&#x27;ve done all that, you&#x27;ll have a better idea of where your problem is, and how to solve it.
+
+By the way, is your transformer a true transformer, with isolated input and output coils?  Or is it just an &quot;auto-transformer&quot;, with one coil that is tapped halfway for the output?  That could also be an issue.  For the best isolation, you need a true transformer, with no physical electrical connection between input and output at all.
+
+Anyway, that&#x27;s where I&#x27;d start looking.  But maybe you already did all this?
+
+Hope that helps!</div>
+</article>
+<article class="post" id="p82409">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">ilya</span><time datetime="2008-11-25">25 November 2008</time><a class="permalink" href="#p82409" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Stuart,
+Thanks for your suggestions. I&#x27;ve checked the volages and there&#x27;s about 1V floating between N and G. I can&#x27;t measure preciesely because my DMM can only do 200V AC and 500V AC. So on 200 it shows 1V.
+I&#x27;ve talked to the electrician and he couldn&#x27;t tell me where the bond between N and G is located. Although he showed me the main ground connection of the building and suggested taking the wire directly from there. 
+I think the first thing to do now is bringing this ground to the studio panel and abandoning the old one. Now, should we bond this new ground to the N at the studio panel?
+
+The step-down trafo is an isolated, not auto-transformer. It also has a faraday shield (the screening winding between primary and secondary) connected to ground of course.
+
+EDIT: I&#x27;ve just checked the current between hot and ground and between cold and ground at the monitor outputs with no signal. My dmm showed around 700uV. Is this something to warry about?</div>
+</article>
+<article class="post" id="p82420">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2008-11-26">26 November 2008</time><a class="permalink" href="#p82420" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;ve checked the volages and there&#x27;s about 1V floating between N and G.</div></blockquote>Yup, you certainly have a problem there!  1 volt is a lot, and is very, very likely a large source of your hum.
+
+I&#x27;d agree that you need to disconnect your existing ground system entirely form your studio, and run a totally separate, robust ground in &quot;star&quot; configuration, with everything coming together at one point, and a very decent connection to physical earth, preferably with long copper rods driven into the ground.  Use thick copper wire for your ground.  I usually specify that the ground wiring must have twice the surface area required by code, but that&#x27;s up to you to decide.
+
+I&#x27;d check with your electrician on his suggestions about tying neutral to ground.  Here in Chile, we do that in the main distribution panel, but I have no idea what your electrical code calls for where you live, so I&#x27;d rely on advice from a qualified professional. 
+
+Once you are done, you should get a N to G reading of just a few millivolts, and hopefully your hum will be gone.
+
+Regarding your 700 uV difference between hot and cold:  I don&#x27;t think that is something to worry about (yet).  If you still have hum problems after getting your ground in order, then you might need to start looking at other things, but this difference doesn&#x27;t sound like it is the cause of your problem, compared with 1 volt on your ground wiring!
+
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

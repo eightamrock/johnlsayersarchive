@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AVID Sync problem at Audio Post/Video house. Help, please! | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Plus4dB in Installation and Wiring, 2008. 2 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/11114/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>AVID Sync problem at Audio Post/Video house. Help, please!</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Plus4dB on 20 August 2008. 2 replies, 2008–2009.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 11114.</p>
+
+</div>
+</header>
+<article class="post" id="p79333">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Plus4dB</span><time datetime="2008-08-20">20 August 2008</time><a class="permalink" href="#p79333" aria-label="Link to post 1">#1</a></header>
+<div class="post-body"><strong>NOTE: Broadcast and video facilities must deal with this all the time. There must be a &quot;standard&quot; way of locking everything to house sync even when hundreds of feet of cabling are involved. Broadcast and video techs please read. Thanks!</strong>
+
+Sorry in advance, but this will be a long post.
+I just installed an AVID Nitris system running Media Composer, in a new separate room, in an existing multi-room audio/video facility. All appears to be fine, except the SYNC LED keeps flashing when trying to lock to house sync. System locks fine to incoming video (SDI). When an external sync gen is brought into the room and hooked up locally, it&#x27;s fine. The cable between house sync gen and AVID vid ref in is about 60 feet, brand new Belden 1694A and properly terminated.
+All other audio and video rooms have no problem locking to house sync. 
+The house clock is Aardsync Master Sync Generator (set to 59.94 NTSC). This feeds a VideoTek VSG-201 and three Sigma VDA-26A video DAs. Doesn&#x27;t matter if I use black burst from the DAs, or black burst or color bars from the VideoTek - the AVID won&#x27;t lock. I&#x27;ve ruled out EMI/RFI being induced into the installed cabling (which,for about six feet, DOES run parallel to one 15-amp A/C line, with the A/C inside metal conduit and A/V outside the metal conduit),  by dragging a separate 50-ft run of 1694A directly from various house sync outputs in the machine room to the AVID room through the doors and hallways, and it won&#x27;t lock to that, either.
+Sorry, but, yes, there is more - Here are my questions:
+1) Is it possible that there is too much cable for the sync gen/DAs to drive, and if so, what is the &quot;proper&quot; way to get good sync in the AVID room and still have it and everything else it may drive locked to house sync (for example, laying back from AVID to a DigiBeta in the Machine Room)?
+2) Is it possible that the VideoTek or Sigma need adjustment or calibration?
+3) Is it going to be necessary to get a waveform monitor or other test equipment? Neither I nor the facility currently own one, and have now gone about as far as we can go relying on only process-of-elimination style troubleshooting.
+Sorry for the long post and I&#x27;m sure that even with all this info I&#x27;ve left out some important details, but please ask, and any input at all would be greatly appreciated. Thanks, Mark in NYC</div>
+</article>
+<article class="post" id="p83929">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Plus4dB</span><time datetime="2009-01-13">13 January 2009</time><a class="permalink" href="#p83929" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Mystery solved! The Aardsync sync generator was actually incorrectly silk-screened from the factory!!! So there were two BNCs labeled &quot;OUTPUT,&quot; but one of them was actually an &quot;INPUT&quot;!!!  When the client finally gave me the go-ahead to dig into the rats nest of several years worth of pre-installed cabling, I found that only some of the facility was sync&#x27;ed from this &quot;output&quot;, including the VideoTek sync gen. As it turned out, one of the other rooms in the facility had also been having ongoing sync problems, and it was this room that was also on the same &quot;output&quot; as the Avid room. I sorted through all the sync cabling for the entire facility, pulling out old or questionable cabling and re-configuring and labeling as I went along. No more sync problems!</div>
+</article>
+<article class="post" id="p83934">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2009-01-13">13 January 2009</time><a class="permalink" href="#p83934" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Glad you managed to solve it yourself!  I feel for you!  Been there, done that, many times...  From what you wrote I was suspecting either a ground loop or a flaky sync output.  But glad you got it fixed, and thanks for posting the update!</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

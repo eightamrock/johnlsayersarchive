@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>about the corrected Helmholtz calculator | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Ted Nightshade in Acoustics, 2005. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/3212/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>about the corrected Helmholtz calculator</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Ted Nightshade on 16 February 2005. 6 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 3212.</p>
+
+</div>
+</header>
+<article class="post" id="p22623">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Ted Nightshade</span><time datetime="2005-02-16">16 February 2005</time><a class="permalink" href="#p22623" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi,
+
+I don&#x27;t have the right software to use the .xls files so kindly provided, so I&#x27;m figuring this stuff longhand. 
+
+What IS the correct formula? After reading that incorrect formulas are all over the web, I want to make sure I&#x27;m using the right one.
+
+Thanks!</div>
+</article>
+<article class="post" id="p22626">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-02-16">16 February 2005</time><a class="permalink" href="#p22626" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Here ya go Ted, had to first verify that the one in Everest&#x27;s last version wasn&#x27;t ALSO corrupted... Steve</div>
+</article>
+<article class="post" id="p22636">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Ted Nightshade</span><time datetime="2005-02-16">16 February 2005</time><a class="permalink" href="#p22636" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Thank you!!!</div>
+</article>
+<article class="post" id="p22638">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-02-16">16 February 2005</time><a class="permalink" href="#p22638" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">You&#x27;re welcome; just noticed that I&#x27;d left quite a bit of room between the 216 and the radical - just in case anyone&#x27;s confused by this, the formula is 216 TIMES the value within the radical, sorry... Steve
+
+<span class="bb-u"><em><strong>CORRECTION TO COMMENTS IN DRAWING - </strong></em></span>
+
+Other correction - in the included example, I used 0.125&quot; for slot width, NOT .75&quot; - actual values were
+Slot width = .125&quot;
+Slat width = 6.0&quot;
+slat thickness = .75&quot;
+cavity Depth = 12.0&quot;
+
+Taking .125, dividing by 6.125, multiplying by 100, gives p = 2.04 - denominator inside the radical would be .75 x 1.2, quantity x 12 - 
+total value inside the radical, = .1888...
+sqrt of that = .4346...
+x 216 = 93.8765.... = Fo
+
+Not talking down to anyone, just making sure my fuzzy brain is still semi-functional... Steve
+
+Aw, crap - here&#x27;s a newer version instead...<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: SlatResFormula1.JPG</div></div></div>
+</article>
+<article class="post" id="p23569">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">lomky</span><time datetime="2005-03-09">9 March 2005</time><a class="permalink" href="#p23569" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Just want to confirm something:
+
+i was looking through Modern Recording Techniques and the formula they give is:
+
+f= 216 SQRT r/(d x D) + (w + r)
+
+f = the frequency
+r = the slot width
+w = the slat width
+D = the airspace depth
+d = the effective depth of the slot (approx 1.2 x the thickness of the slat)
+
+Just courious if this is the same as the corrected formula or not. 
+
+Or maybe this has been said before and I&#x27;m just making an @ss of myself.
+
+Josh</div>
+</article>
+<article class="post" id="p23580">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-03-09">9 March 2005</time><a class="permalink" href="#p23580" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">No; the formula you posted does not take into account the EFFECTIVE slat thickness (this is the 1.2 factor), and I&#x27;m too groggy after 12-hour night shifts to sort out the rest; you can plug the same values into both formulas, and if yours is one of the WRONG ones it will be nearly an octave away from the one I posted here, using the same sets of values... Steve</div>
+</article>
+<article class="post" id="p23581">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2005-03-09">9 March 2005</time><a class="permalink" href="#p23581" aria-label="Link to post 7">#7</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">lomky wrote:</div><div class="bb-quote-body">Just want to confirm something:
+
+i was looking through Modern Recording Techniques and the formula they give is:
+
+f= 216 SQRT r/(d x D) + (w + r)
+
+f = the frequency
+r = the slot width
+w = the slat width
+D = the airspace depth
+d = the effective depth of the slot (approx 1.2 x the thickness of the slat)
+
+Just courious if this is the same as the corrected formula or not. 
+
+Or maybe this has been said before and I&#x27;m just making an @ss of myself.
+
+</div></blockquote>Steve gave the correct formula in the post immediately before yours!   You have in your post the infamous error that Steve is trying to correct!  The addition operand should be a multiplication operand!
+
+Andre</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

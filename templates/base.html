@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} | {% endif %}John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="{{ description or 'A read-only archive of the johnlsayers.com recording studio design forum, 2003–2022.' }}">
+<link rel="canonical" href="{{ base_url }}{{ path }}">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+{% if noindex %}<meta name="robots" content="noindex">{% endif %}
+{% block head %}{% endblock %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/"{% if section == 'library' %} aria-current="page"{% endif %}>Library</a>
+<a href="/forum/"{% if section == 'forum' %} aria-current="page"{% endif %}>Forums</a>
+<a href="/people/"{% if section == 'people' %} aria-current="page"{% endif %}>People</a>
+<a href="/about/"{% if section == 'about' %} aria-current="page"{% endif %}>About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+{% block content %}{% endblock %}
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact {% if "@" in removal_contact %}<a href="mailto:{{ removal_contact }}">{{ removal_contact }}</a>{% else %}{{ removal_contact }}{% endif %}.</p>
+</div></footer>
+</body>
+</html>

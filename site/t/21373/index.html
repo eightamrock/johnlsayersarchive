@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excel TL and Resonant Frequency Calculator | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Gregwor in Acoustics, 2018. 5 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21373/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Excel TL and Resonant Frequency Calculator</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Gregwor on 5 January 2018. 5 replies, 2018–2020. In the Library under <a href="/library/tools-measurement/">Measurement and tools</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21373.</p>
+
+</div>
+</header>
+<article class="post" id="p144126">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-01-05">5 January 2018</time><a class="permalink" href="#p144126" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi,
+
+I built an excel spreadsheet to calculate the TL and Resonant Frequency of a two leaf MSM wall because I was curious how big of gap/cavity I should have between my wall to achieve my needed TL.
+
+I followed Stuarts instructions:
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">The equations for calculating total isolation of a two-leaf wall are simple:
+
+First, for a single-leaf barrier you need the Mass Law equation:
+
+TL = 14.5 log (M * 0.205) + 23 dB
+
+Where: M = Surface density in kg/m2
+
+For a two-leaf wall, you need to calculate the above for EACH leaf separately (call the results &quot;R1&quot; and &quot;R2&quot;), then you need to know the resonant frequency of the complete system, using the MSM resonance equation:
+
+f0 = C [ (m1 + m2) / (m1 x m2 x d)]^0.5
+
+Where:
+C=constant (60 if the cavity is empty, 43 if you fill it with suitable insulation)
+m1=mass of first leaf (kg/m^2)
+m2=mass of second leaf (kg/m^2)
+d=depth of cavity (m)
+
+Then you use the following three equations to determine the isolation that your wall will provide for each of the three frequency ranges:
+
+R = 20log(f (m1 + m2)) - 47 ...[for the region where f &lt; f0]
+
+R = R1 + R2 + 20log(f x d) - 29 ...[for the region where f0 &lt; f &lt; f1]
+
+R = R1 + R2 + 6 ...[for the region where f &gt; f1]
+
+Where:
+f0 is the resonant frequency from the MSM resonant equation,
+f1 is 55/d Hz
+R1 and R2 are the transmission loss numbers you calculated first, using the mass law equation</div></blockquote>Clearly I screwed up somewhere because my F&lt;F0 isn&#x27;t working and my TL&#x27;s seem very unrealistic.
+
+Here is the excel file:
+<a href="https://drive.google.com/open?id=1maDSn4iDaCnaT7F6qSDESzVBuR7uyEFg" rel="nofollow noopener" target="_blank">https://drive.google.com/open?id=1maDSn ... VBuR7uyEFg</a>
+
+Can someone please check my excel spreadsheet to see where I went wrong? Once this is working, I think it would be a good resource for everyone to use.
+
+Thanks!
+
+Greg</div>
+</article>
+<article class="post" id="p144348">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-01-27">27 January 2018</time><a class="permalink" href="#p144348" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">UPDATE!
+
+I finally figured out what the problem was. Two things:
+
+- I was calculating using inches for depth instead of meters.
+- Excel needs * entered to do multiplication, you can&#x27;t just put 5(10) and it know to multiply the two.
+
+Anyway, this seems to work great. I hope this is a tool people can use! I&#x27;d like to spend some time and maybe update it to graph 20Hz-20kHz isolation. If I get around to it, I&#x27;ll post the updated version here.
+
+Greg
+
+NEW WORKING VERSION:
+
+<a href="https://drive.google.com/open?id=1ktKnfpLgmMDY2cYRR1vivIRfY_HUZhAv" rel="nofollow noopener" target="_blank">https://drive.google.com/open?id=1ktKnf ... RfY_HUZhAv</a></div>
+</article>
+<article class="post" id="p144352">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-01-27">27 January 2018</time><a class="permalink" href="#p144352" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Glad you found the problem!
+
+I did notice that the calculations for &quot;with insulation&quot; and &quot;without insulation&quot; are showing the same numbers...
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p144357">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-01-27">27 January 2018</time><a class="permalink" href="#p144357" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">UPDATE AGAIN:
+
+I removed a bunch of redundant stuff and added a second sheet that graphs everything from 20Hz-20kHz in 3rd octave format.
+
+Basically, on sheet one, just type how thick (in inches) your studs are and how much air gap between the walls you have.
+As you can see at the top of sheet one, it is set to calculate with two sheets of 5/8&quot; drywall on each leaf. You can easily change those parameters if you wish.
+
+I personally just wanted this to see how much a 1/2&quot; gap differed from 1&quot; or even 6&quot; with overall isolation. I&#x27;m not an excel wizard. Ideally, I&#x27;d like the chart to adjust itself, ultimately removing the lines where necessary based on the input data which would mean one nice TL line instead of all three visible at one time. Oh well, this is good enough for what I need!
+
+Hopefully it helps someone other than me. Here&#x27;s version 3:
+
+<a href="https://drive.google.com/open?id=1rC1qEZewW_qQKq7Ptkh1zqFVIs5bWjUq" rel="nofollow noopener" target="_blank">https://drive.google.com/open?id=1rC1qE ... FVIs5bWjUq</a></div>
+</article>
+<article class="post" id="p146329">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-06-27">27 June 2018</time><a class="permalink" href="#p146329" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Updated version with notes to help use the spreadsheet!
+
+<a href="http://www.mediafire.com/file/shl5c966qn1wewz/TL_calculator.xlsx/file" rel="nofollow noopener" target="_blank">http://www.mediafire.com/file/shl5c966q ... .xlsx/file</a>
+
+I decided to host this version on mediafire. If for some reason it ever stops working, PM me and I&#x27;ll post a new link or email it to you.
+
+Greg</div>
+</article>
+<article class="post" id="p154443">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Diederik</span><time datetime="2020-08-30">30 August 2020</time><a class="permalink" href="#p154443" aria-label="Link to post 6">#6</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Gregwor wrote:</div><div class="bb-quote-body">Updated version with notes to help use the spreadsheet!
+
+<a href="http://www.mediafire.com/file/shl5c966qn1wewz/TL_calculator.xlsx/file" rel="nofollow noopener" target="_blank">http://www.mediafire.com/file/shl5c966q ... .xlsx/file</a>
+
+I decided to host this version on mediafire. If for some reason it ever stops working, PM me and I&#x27;ll post a new link or email it to you.
+
+Greg</div></blockquote>Hi Greg
+
+I checked your spreadsheet and I think there is a mistake in the calculation for the two formulas (TL around F0 and above F1) which start with R1+R2.
+
+Since R1 and R2 are values in dB I think they should be summed in a logaritmic way.
+
+For example: R1 = 33   R2 = 33  ---&gt; 33+LN(33)= 36,49 dB.
+
+In your calculation the sum is calculated as e.g. 33+33= 66dB which is not correct if I am not mistaken.
+
+D</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

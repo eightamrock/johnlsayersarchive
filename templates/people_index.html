@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="read">
+<h1>People</h1>
+<p class="lede">The fifty members who posted most often. Between them they wrote {{ share }} of everything on the forum.</p>
+</div>
+<ul class="people">{% for p in people %}<li><a href="/people/{{ p.slug }}/">{{ p.name }}</a><span>{{ p.posts_label }}, {{ p.years }}</span></li>{% endfor %}</ul>
+{% endblock %}

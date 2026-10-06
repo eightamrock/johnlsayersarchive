@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Theory Question | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by mada in Acoustics, 2004. 14 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/1208/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>A Theory Question</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by mada on 27 January 2004. 14 replies. In the Library under <a href="/library/fundamentals/">Fundamentals</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 1208.</p>
+
+</div>
+</header>
+<article class="post" id="p8986">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mada</span><time datetime="2004-01-27">27 January 2004</time><a class="permalink" href="#p8986" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I have a theory question that I&#x27;ve been pondering lately.  
+
+Here it goes...
+
+If you have two sound sources in a room, one at 70 dB and one at 40 dB, they don&#x27;t add to make 110 dB, right?  Do they add at all?  
+
+From what I know, they don&#x27;t and the resulting spl reading would be 70 dB.  
+
+So, how come when you have a stadium packed with people and they are all clapping, you can get spl readings in the hundreds.  It seems like in this case the multiple sound sources are adding.  
+
+The only explaination I have is that when you have multiple sound sources that have similar frequencies (like clapping), you get peaks and valleys when the sound waves meet.
+
+Can anyone explain this any better or offer a more correct explaination.
+
+Thanks</div>
+</article>
+<article class="post" id="p8990">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/lovecow/">lovecow</a><time datetime="2004-01-27">27 January 2004</time><a class="permalink" href="#p8990" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Mada,
+
+Sound sources do add, but logarithmically. AND their addition is frequency dependent. Let&#x27;s take your examples one at a time:
+
+Two loudspeakers that have the same source will add when they are close in terms of SPL. Usually when they are within about 10 dB of each other. The formula is easy if you have a scientific calculator:
+
+&quot;SPL(sum)&quot; = 10*log[10^(&quot;SPL1&quot;/10)+10^(&quot;SPL2&quot;/10)]
+
+If you notice with your 70 dB source and your 40 dB source, the above gives you (assumes same sound source):
+
+SPL(sum) = 10*log[(10^7)+(10^4)] = 70.0043 dB
+
+But, if you had one 70 dB loudspeaker and one 71 dB loudspeaker (assumes same sound source):
+
+SPL(sum) = 10*log[(10^7)+(10^7.1)] = 73.5290 dB
+
+Now, when you have two sources that are NOT the same, you would have to take the two signals and sum them to be completely accurate. Most acousticians will simply take the sound in bands - octaves, 1/3-octaves, 1/6-octaves, etc. - and sum the bands to get the combined level(s).
+
+Finally, when you have people clapping in a stadium, you have a LOT of sound sources. The best way to model this would be to get an idea of the (average) SPL of one person clapping and then write a computer program to sum the tens of thousands of sources.
+
+An interesting aside to this:
+
+The Indianapolis Colts recently played the Kansas City Chiefs in an AFC playoff game at Kansas City. The highest recorded sound level in Arrowhead Stadium was (and still is) 116 dB. The mayor challenged the Chiefs fans to get &quot;into the 120s&quot; for the big playoff game. What is interesting to note is that - assuming all conditions being equal and the fans were being as loud as they could be to start with - one would need a crowd twice as large to even get the level to 119 dB.
+
+Of course, that assumes the fans <em>were</em> giving it their all to reach 116 dB AND the weather conditions were the same. (Weather can affect SPL in a big way for outdoor events.)
+
+FWIW.
+
+Best regards,
+
+Jeff D. Szymanski
+Chief Acoustical Engineer
+Auralex Acoustics, Inc.</div>
+</article>
+<article class="post" id="p8996">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2004-01-27">27 January 2004</time><a class="permalink" href="#p8996" aria-label="Link to post 3">#3</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">lovecow wrote:</div><div class="bb-quote-body">
+Finally, when you have people clapping in a stadium, you have a LOT of sound sources. The best way to model this would be to get an idea of the (average) SPL of one person clapping and then write a computer program to sum the tens of thousands of sources.</div></blockquote>Cool post Jeff. <span class="smilie" title="8)">8)</span> 
+
+Though, I don&#x27;t think you necessarily need a computer to estimate the stadium level.   Two uncorrelated sounds (no coherent phase or frequency relationship) having equal average SPL added together yield  +3dB higher SPL.  And the general equation looks like:
+
+SPLtotal = SPLavg  + 20Log(sqrt(N))
+
+Where N is the number of sources. So if you have 30000 fans, the new level would theoretically be 45dB higher than the average level of a single fan.   In reality it would be less than this because all those bodies also create extra sound absorption!
+
+Or maybe treating the clapping as uncorrelated is too simplistic?  
+
+Thomas</div>
+</article>
+<article class="post" id="p9009">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/lovecow/">lovecow</a><time datetime="2004-01-28">28 January 2004</time><a class="permalink" href="#p9009" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Thomas,
+
+True. I hadn&#x27;t gotten to the point of simplifying the math like that. Thanks!!!
+
+Best regards,
+
+Jeff D. Szymanski
+Chief Acoustical Engineer
+Auralex Acoustics, Inc.</div>
+</article>
+<article class="post" id="p9045">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-01-28">28 January 2004</time><a class="permalink" href="#p9045" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Just teasing,  <span class="smilie" title=":?">:?</span>
+
+And why not:
+SPLtotal = SPLavg + 10Log(N) 
+
+Hmmm  <span class="smilie" title=":roll:">:roll:</span> 
+
+Eric</div>
+</article>
+<article class="post" id="p9046">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2004-01-28">28 January 2004</time><a class="permalink" href="#p9046" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">The Decibel is a measure of the difference in power between to signals.
+
+10Log (P/P0)
+
+Where P0 is the reference power.
+
+The power in an acoustic wave goes as the square of the pressure
+
+10 Log [(p/p0)^2] = 20Log(p/p0)
+
+Where p0 is the reference sound pressure amplitude.
+
+So technically, if you&#x27;re talking about Sound <strong>Pressure</strong> Level you need to use
+
+SPL = 20Log(p/p0)
+
+This equation also works for electrical signal because the power of and electrical wave goes as the square of its voltage amplitude (what you see in your wave editor).
+
+Sorry, I didn&#x27;t catch that error in Jeff&#x27;s post.  SPL in his equation would need to mean Sound Power Level.
+
+The SQRT in my equation comes from the fact the individual handclaps are not correlated.    If they were all identical handclaps, then the SQRT wouldn&#x27;t be needed.
+
+Thomas</div>
+</article>
+<article class="post" id="p9057">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-01-28">28 January 2004</time><a class="permalink" href="#p9057" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Hello Thomas,
+
+I was just teasing.
+
+Not one hair on my head should doubt your knowledge.
+And I&#x27;m always jealous about the accuracy and manner you define things for others.
+
+Only here you make things a bit complicated
+The L always stand for Level <strong>expressed in dB </strong>(world-wide)
+
+An arithmetic multiplication, logarithmically expressed is simply the addition of the logarithm of this number.
+Expressed in dB rather than B makes it + 10 log(N).
+
+And then it doesn&#x27;t matter if you speak about power, intensity, pressure, acceleration or whatever.
+The dB is dimensionless and just represents a factor here.
+
+Jeff has a <strong>dB</strong> value for an averaged source (doesn&#x27;t matter what it stands for). 
+Now he must know the total for N of them (that&#x27;s a simple multiplication but logarithmically expressed)
+
+Warm regards
+Eric
+
+PS: was really not meant as competition.  <span class="smilie" title=":)">:)</span> 
+I learn a lot of your posts, and there aren&#x27;t many people giving such accurate definitions as you do.</div>
+</article>
+<article class="post" id="p9072">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/lovecow/">lovecow</a><time datetime="2004-01-29">29 January 2004</time><a class="permalink" href="#p9072" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Thomas,
+
+Eric&#x27;s right. It&#x27;s 10*log...
+
+This is the right way to add levels. Reference is assumed in the original readings.
+
+FWIW: If it were 20*log to add levels, you&#x27;d get &quot;2x&quot; more level. I.e., 70 dB + 70 dB would be 146 dB!!!
+
+Sorry. I missed the 20 in your equation in my excitement that the math condenses down so nicely. (The simple stuff is always the coolest!!! <span class="smilie" title=":D">:D</span>)
+
+Oh, those crazy &quot;dBs.&quot;
+
+Best regards,
+
+Jeff D. Szymanski
+Chief Acoustical Engineer
+Auralex Acoustics, Inc.</div>
+</article>
+<article class="post" id="p9089">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2004-01-29">29 January 2004</time><a class="permalink" href="#p9089" aria-label="Link to post 9">#9</a></header>
+<div class="post-body">Sorry to contradict you guys, but it absolutely does matter whether you&#x27;re describing power or intensity versus pressure or voltage.  
+
+The Decibel is defined as a <strong>Power</strong> ratio.  
+
+dB = 10Log (P/P0)
+
+This is the same as an intensity ratio because intensity = power/area.
+
+Now lets look at voltage because it&#x27;s a simple example.  Electrical power is defined as the voltage times the current.  Combining this with Ohm&#x27;s Law we get:
+
+Power = VI = V^2/R 
+
+Plugging this into the Decibel equation we get:
+
+dB = 10Log (P/P0) = 10Log[(V^2/R)/(V0^2/R)] = 10Log[V^2/V0^2] = 10Log[(V/V0)^2]
+
+The rules of elementary functions tell us that:
+
+Log (a^x) = xLog(a)
+
+so 
+
+dB = 10Log[(V/V0)^2] =  2*10Log(V/V0) = 20Log(V/V0)
+
+so for example if V = 2V0
+
+dB = 20Log(2V0/V0) = 20Log(2) = 6 dB
+
+Which is a very familiar result for anyone who has worked with a wave editor.  Pressure is the acoustic analog of voltage, so it follows the same equation.
+
+Therefore:
+
+Intensity (dB) = 10Log (I/I0)
+
+SPL (dB) = 20Log (p/p0)
+
+Please refer to any introductory acoustics text if you don&#x27;t believe me. <span class="smilie" title=":)">:)</span>
+
+Thomas</div>
+</article>
+<article class="post" id="p9096">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/lovecow/">lovecow</a><time datetime="2004-01-29">29 January 2004</time><a class="permalink" href="#p9096" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Thomas,
+
+No argument on that! I think we&#x27;ve diverged into two separate things.
+
+1. Summing levels - reference is irrelevant for the summing process.
+2. Power vs. pressure (intensity) - reference is crucial.
+
+Ultimately, I think we&#x27;re all saying the same thing. No one messed up.
+
+For anyone else following along:
+
+When talking about <em>summing</em> levels, the reference doesn&#x27;t come into play - only the levels. Whether you have pressure or power, we sum sources using:
+
+10*log[10^(L1/10)+10^(L2/10)+...+10^(Ln/10)]
+
+If all the L&#x27;s are equivalent:
+
+L1 = L2 = ... = Ln = L
+
+we can condense:
+
+10*log[n*10^(L/10)] = 10*log[n] + 10*log[10^(L/10)] = 10*log[n] + L
+
+Example using three equivalent 70 dB (sound power or sound pressure) sources:
+
+10*log[10^(70/10)+10^(70/10)+10^(70/10)] = 74.77 dB
+
+OR
+
+10*log[3] + 70 = 74.77 dB
+
+To use Thomas&#x27; example for 30000 equivalent sources, the level would in fact be 45 dB higher. Why does this work?
+
+Thomas&#x27; math (from earlier post):
+
+<strong>SPLtotal = SPLavg + 20Log(sqrt(N))*</strong>
+
+But: 20*log[sqrt(n)] = 20*log[n^1/2] = (1/2)*20*log[n] = 10*log[n]
+
+<strong>So: SPLtotal = SPLavg + 10Log(N)*
+
+*Equivalent expressions</strong>
+
+My apologies if this got confused more than was necessary.
+
+Best regards,
+
+Jeff D. Szymanski
+Chief Acoustical Engineer
+Auralex Acoustics, Inc.</div>
+</article>
+<article class="post" id="p9101">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-01-29">29 January 2004</time><a class="permalink" href="#p9101" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">Hi All,
+
+I do know and understand all the math Thomas entered here.
+
+BUT I DO NOT AGREE THAT THE DECIBEL IS DEFINED AS A POWER RATIO.
+
+THE Decibel comes from deci Bell 1/10 Bell wich is nothing more than a dimensionless logarithmic scale representing a ratio versus a reference quantity.
+
+Thomas maybe your books tell otherwise.
+
+But the dB scale is introduced to cover the enormous scale in acoustics and only refers to whatever when this is refered to either by the reference unit/quantity or by the used symbol.
+Or it just remains a dimensionless factor.
+
+This power ratio is certainly NOT a definition of the dB.
+
+The dB is a DIMENSIONLESS logarithmic scale.
+One can make an analogy with kilo which is also dimensionless meaning nothing else than the factor 1000.
+
+
+The definition of Levels and decibel by Leo L. Beranek one of the fathers in acoustics:
+
+Beranek states:
+
+<em>that decibels are basically defined for use with ratios of quantities as:
+Power W
+Intensity I
+mean-square pressure p^2
+mean-square voltage e^2
+etc.
+In each case, the level is with reference to a corresponding reference quantity</em>
+
+And there are much more references.
+
+I do not understand why you like to make things so difficult.
+
+Jeff wants a multiplication. Well I gave a logarithmic multiplication. Is there a more simple, straightforward and logical approach?
+
+You do not need to go to the basics of the the reference quantity. You just have to multiply the resulting dB value.
+
+And even when using your approach then it&#x27;s still logical that you simplify your formula, just from a mathematical point of view, which then ends up to my approach of a simple multiplication. Which in itself proves that you do superfluous steps.
+
+If you add dB values, even when pressure is meant, you bypass those basic quadratic relationships, but you just add logarithmic numbers.
+
+Eric</div>
+</article>
+<article class="post" id="p9104">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/lovecow/">lovecow</a><time datetime="2004-01-29">29 January 2004</time><a class="permalink" href="#p9104" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">Eric,
+
+Let&#x27;s not get carried away here!  <span class="smilie" title=":shock:">:shock:</span> 
+
+The terminology may not be pure, but the concepts are sound. We&#x27;re all on the same team here, man!   <span class="smilie" title=":D">:D</span>  <span class="smilie" title=":D">:D</span>  <span class="smilie" title=":D">:D</span> 
+
+Best regards,
+
+Jeff D. Szymanski
+Chief Acoustical Engineer
+Auralex Acoustics, Inc.</div>
+</article>
+<article class="post" id="p9107">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-01-29">29 January 2004</time><a class="permalink" href="#p9107" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">Hello Thomas, Jeff
+
+I&#x27;m sorry if I sounded .....
+
+Thomas if I don&#x27;t agree also read the well meant complements I as well wrote.
+I react sometimes a bit emotional (not OK I know) and direct.
+
+Best regards
+Eric</div>
+</article>
+<article class="post" id="p9109">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2004-01-29">29 January 2004</time><a class="permalink" href="#p9109" aria-label="Link to post 14">#14</a></header>
+<div class="post-body">Eric,
+
+Absolutely no offense taken and I do appreciate your compliments.<span class="smilie" title=":)">:)</span> My concern is just the propagation of accurate information.  
+
+So, for correct definitions of Intensity Level and Sound Pressure Level please refer to:
+
+Beranek - &quot;Acoustics&quot; - Part II, Section 1.9
+Everest - &quot;The Master Handbook of Acoustics&quot; - Chapter 3, Decibels 
+Kinsler et al -&quot;Fundamentals of Acoustics&quot; - Chapter 1, Section 1.8 
+ 
+The Decibel scale is NOT just any old Log10 scale.  Bell defined it as an INTENSITY scale.  And your quote from Baranek confirms this.  All of those terms (W, I, p^2, e^2) are either exactly equal to, or directly proportional to INTENSITY.
+
+And the distinctions between Intensity Level and Sound Pressure Level are very important because waves vary in TIME.   Intensity is a function of the time varying pressure amplitude.  It depends on the shape of the waveform and the time interval over which you choose to integrate.  Comparing time-averaged intensities is not the same as comparing instantaneous amplitudes.   Likewise, adding two sine waves of equal phase and amplitude is not the same as adding two different pink noise waves having equal average amplitudes.   The sine waves yield +6dB higher average amplitude as well as +6dB higher instantaneous amplitude on every point of the wave.  The noise yields +3dB higher average amplitude while the instantaneous gain varies.  This all happens because waves are functions of time.  
+
+I don&#x27;t think I can state it any more clearly without getting into a whole discussion about wave superposition, coherence, and time integrals.   I won&#x27;t do this because these topics are well covered in the references above, as well as standard undergraduate electrodynamics texts. I urge everyone who reads this thread to have a look at those books.   The mathematical treatments range from high school algebra to intermediate calculus.  
+
+Thomas</div>
+</article>
+<article class="post" id="p9130">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-desart/">Eric_Desart</a><time datetime="2004-01-30">30 January 2004</time><a class="permalink" href="#p9130" aria-label="Link to post 15">#15</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">barefoot wrote:</div><div class="bb-quote-body">
+
+Two uncorrelated sounds (no coherent phase or frequency relationship) having equal average SPL added together yield  +3dB higher SPL.  And the general equation looks like:
+
+SPLtotal = SPLavg  + 20Log(sqrt(N))</div></blockquote>Ok Thomas,
+
+But the discussion started from uncorrelated sounds
+And a stadium with lots of people.
+
+And then we calculate energetically, as is standard in environmental acoustics.
+
+But it&#x27;s good that you entered all the additional info.  <span class="smilie" title=":idea:">:idea:</span> 
+
+Warm regards
+Eric  
+
+[/quote]</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

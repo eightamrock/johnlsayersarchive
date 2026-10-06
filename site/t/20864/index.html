@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resonant &#34;Tunable&#34; Panel Absorber | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by houseofstone in Acoustics, 2017. 1 reply.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/20864/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Resonant &#34;Tunable&#34; Panel Absorber</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by houseofstone on 30 January 2017. 1 reply.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 20864.</p>
+
+</div>
+</header>
+<article class="post" id="p141184">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">houseofstone</span><time datetime="2017-01-30">30 January 2017</time><a class="permalink" href="#p141184" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I&#x27;m curious about the design concept of using a resonating panel absorber whereby the thin wood sheet (vibrating portion of design) is the &quot;finished look&quot; in the room with holes the approximate size of a wine bottle top (3/4&quot; or so)  spaced apart evenly.   If you could put a cork into these holes,(something light enough to not dampen the vibration) would it not be theoretically possible to tune the panel to a specific frequency?  Thus, better absorbing the specific frequency (frequencies) you are trying to tackle?  Thanks in advance, CS</div>
+</article>
+<article class="post" id="p141187">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-01-30">30 January 2017</time><a class="permalink" href="#p141187" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">A panel trap (or &quot;membrane trap&quot;) is a sealed device: it has to be in order to work.  Panel traps are pressure-based, meaning that they work on the pressure component of the sound wave, which is greatest near walls.  The pressure variations cause the panel to move in and out, thus doing work and robbing the wave of energy.  The tuned frequency of the panel trap is determined by the surface density of the panel itself (weight per square foot), and by the depth of the sealed cavity behind the panel.  The actual equation is very simple: F=170/SQRT(M x D), where M is the mass (surface density) of the membrane in lbs/ft2, and D is the depth of the cavity in inches.
+
+But if you drill holes in it, then it is no longer a membrane trap!  It now becomes a perforated panel device, which is a very different thing.  It works on a totally different principle.  Perf panel is based on the Helmholtz resonator, which is totally different.  A panel trap (membrane trap) is based on simple mechanical &quot;Mass-Spring&quot; resonance, but perf panel is based on Helmholtz resonance.  The equation is rather different:  
+
+F = 2160*sqrt(r/((d*1.2*D)*(r+w))) 
+
+r = slot width 
+d = slat thickness 
+1.2 = mouth correction 
+D = cavity depth, 
+w = slat width 
+2160 = c/(2*PI) but rounded 
+c = speed of sound in inch/sec. 
+
+That&#x27;s actually for a slot resonator, which is a specific case of a perforated panel where the holes are elongated into slots that run the full width of the device.  I couldn&#x27;t find the equation for perf panel off hand, but this still gives you a good idea of how it works.
+
+So, getting down to your basic question:  No you cannot tune a panel trap (membrane trap) by drilling holes in it and filling some of them with cork.  Just the act of drilling the holes destroys the properties of the trap: it no longer works as a panel trap, since there is no longer air &quot;trapped&quot; inside, to create the &quot;spring&quot; for the panel&#x27;s mass to move against.
+
+You could tune a perf panel device by plugging some of the holes, but not in the way you are thinking.  It would work best for perf panel that has a very high percentage open area, since such devices act more like broadband absorbers than they do like individual Helmholtz resonators.  Where the percentage open area is greater than about 30%, that&#x27;s what you get: broadband absorption, with the tuning centered on the average tuned frequency.  So if you had a perf panel device with several different sized holes, you could theoretically tune the center frequency by plugging only the larger holes, or only the smaller holes, to &quot;tilt&quot; the average tuning slightly one way or the other.  It is possible.
+
+For a device that has percentage open area less than about 10%, it does in deed act more like an array of individual Helmholtz resonators, each tuned to a different frequency.  So if you had several different sizes of hole, here too you could tune the device to act only on one set of frequencies by plugging or unplugging the other holes, or act on a few frequencies by unplugging only the ones you want it to act on.  However, by doing that (plugging/unplugging holes) you are changing the percentage open area!  So you would also be changing the Q of the device, which might or might not be what you wanted to do...
+
+Finally, there&#x27;s the issue that tuned resonators in general are much harder to tune than you think.  It sounds easy from reading the text books, but text books assume perfect materials, perfect workmanship, exact air temperature and pressure, etc.  Reality is different.  Tuning a Helmholtz device accurately is a lot harder than it sounds.
+
+Having said all of that, I&#x27;m wondering why you want to tune anything to a specific frequency in your room?  What frequency is problematic?  And why is that frequency a problem?  And where in the room is it a problem?  Helmholtz devices only work when the mouth is placed at a location in the room where that frequency is present.  So if you are having a problem with a specific frequency at the mix position, you&#x27;d have to find the location on a suitable wall where the SAME problem is evident at high level, so you could place your device there.  If you placed it at a location where that frequency was NOT a problem, then it would do nothing.  In fact, it could cause harm, not good...
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

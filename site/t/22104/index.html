@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Current Studio - REW Measurement Files | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Warrior in Acoustics, 2019. 4 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/22104/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Current Studio - REW Measurement Files</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Warrior on 31 August 2019. 4 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 22104.</p>
+
+</div>
+</header>
+<article class="post" id="p151418">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-08-31">31 August 2019</time><a class="permalink" href="#p151418" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Well, I finally managed to complete the measurements of my current studio. This will serve as a baseline to compare against the studio that I will be building in the basement of my new house. Estimated start date is March 2020.
+
+If time permits, I would love to hear the feedback of these results.
+
+This is in a room treated following a plan I received from a Ready Acoustics based on the room analysis they did for me based on a google Sketchup.
+
+This current studio has a Blue Sky Pro Desk 2.1 monitor system. 
+Seriously considering upgrading for the new studio and not sure if I would want a sub-woofer. Would also appreciate advice on this.
+
+<a href="https://www.dropbox.com/sh/mre2z29qjxhyibc/AACQXMse6dSC5kVGUyMNHKIma?dl=0" rel="nofollow noopener" target="_blank">https://www.dropbox.com/sh/mre2z29qjxhy ... HKIma?dl=0</a>
+<div class="bb-attachment-missing">Image not preserved: Studio 1.jpg</div><div class="bb-attachment-missing">Image not preserved: Studio 4.jpg</div><div class="bb-attachment-missing">Image not preserved: Studio-Treatment-Plan-Iso-2_Comp.jpg</div><div class="bb-attachment-missing">Image not preserved: Studio-Treatment-Plan-Top_Comp (1).jpg</div></div>
+</article>
+<article class="post" id="p151421">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-09-01">1 September 2019</time><a class="permalink" href="#p151421" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Looks like you figured out REW quite well!  The data in your file is valid, and you seem to have done everything right.  <span class="smilie" title=":thu:">:thu:</span>  
+
+The results are about what I&#x27;d expect for a room like that, except for one thing that&#x27;s a bit puzzling:  there&#x27;s a rather notable roll-off in the high end. Starting at about 4 kHz, the top end rolls off fairly steeply, at about 9 or 10 dB / octave.  It&#x27;s not an acoustic issue with the room, but rather a signal chain issue. For example, the level of your left speaker is around 80 dBC across most of the spectrum, but drops off above 4k.  At 10k it is down to around 73 dB, and at 20k it&#x27;s down to around 63 dB.  That&#x27;s a lot.  
+
+So the question is: is that intentional?  Did you apply EQ to some part of the signal chain, to roll off the high end?  Or is that accidental?  Many studios do use a &quot;house curve&quot; that rolls off the high end slightly, but it&#x27;s just a few dB (depending on which curve they use).  Rolling off 17 dB is rather a lot!  If that is NOT intentional, then you should probably go looking for the reason why your top end is dull, and fix it.
+
+The other big thing is the resonances in the bottom end.  There&#x27;s very clearly stuff going on at 27 Hz, 41, 54, 68, 88, 96, 145, 171, 238 and a few others:  You didn&#x27;t mention the size of the room, so it&#x27;s not possible to say if those are room resonances, or maybe the lower one is structural, or something else.  If they are modal, then bass trapping is not sufficient in your room, and that seems to be borne out by the photos you posted: there isn&#x27;t much deep bass treatment in there.
+
+Your overall decay times are reasonable, around 300 ms, and that might be OK for your room... except that I don&#x27;t know what the room dimensions are!   It&#x27;s a little high for a typical home studio, but on the other hand the room looks to be a decent size, so maybe it&#x27;s OK...  One good thing is that the decay times are consistently close between adjacent frequency bands. 
+
+There&#x27;s something strange going on at around 4 k, and I&#x27;m wondering if you have a flutter echo issue in there?  There&#x27;s some signs of that.  This should be fixed.
+
+You have what looks like the typical floor-bounce at around 122 Hz, and what looks like it might be SBIR at around 66 Hz.
+
+You also have several rather strong early reflections that should not be there, and the overall early sound level is rather high.  This should be fixed.
+
+One other issue, that isn&#x27;t all that important: you did the sound card calibration at one bit rate, but then did the measurements at a different bit rate, so the correction isn&#x27;t going to be 100% accurate.  But it&#x27;s not a big deal.
+
+So, over all it&#x27;s reasonable for a home studio, and it is consistent with the treatment in there... but it could be better!
+
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151425">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-09-01">1 September 2019</time><a class="permalink" href="#p151425" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Stuart,
+Thank you for the detailed feedback!!
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">Looks like you figured out REW quite well!  The data in your file is valid, and you seem to have done everything right.  <span class="smilie" title=":thu:">:thu:</span>  
+
+The results are about what I&#x27;d expect for a room like that, except for one thing that&#x27;s a bit puzzling:  there&#x27;s a rather notable roll-off in the high end. Starting at about 4 kHz, the top end rolls off fairly steeply, at about 9 or 10 dB / octave.  It&#x27;s not an acoustic issue with the room, but rather a signal chain issue. For example, the level of your left speaker is around 80 dBC across most of the spectrum, but drops off above 4k.  At 10k it is down to around 73 dB, and at 20k it&#x27;s down to around 63 dB.  That&#x27;s a lot.  
+
+So the question is: is that intentional?  Did you apply EQ to some part of the signal chain, to roll off the high end?  Or is that accidental?  Many studios do use a &quot;house curve&quot; that rolls off the high end slightly, but it&#x27;s just a few dB (depending on which curve they use).  Rolling off 17 dB is rather a lot!  If that is NOT intentional, then you should probably go looking for the reason why your top end is dull, and fix it.</div></blockquote>No, this is not intentional. If there&#x27;s EQ applied anywhere in the chain, I&#x27;m not aware of it. Wondering if the sub has something to do with it. When I calibrated to the actual levels the sub would only reach 70dB at the listening position, whereas the monitors were at 80dB.
+
+Could this be a flaw in the monitor system design itself - therefore justifying a monitor system upgrade?
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">The other big thing is the resonances in the bottom end.  There&#x27;s very clearly stuff going on at 27 Hz, 41, 54, 68, 88, 96, 145, 171, 238 and a few others:  You didn&#x27;t mention the size of the room, so it&#x27;s not possible to say if those are room resonances, or maybe the lower one is structural, or something else. </div></blockquote>The basic dimensions of the room are 20&#x27; Lx 12&#x27; W x 7&#x27;10&quot; H. I say basic because of the closet, the steps leading to the door and a small 3&quot; difference in width starting about the halfway point on the length.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">If they are modal, then bass trapping is not sufficient in your room, and that seems to be borne out by the photos you posted: there isn&#x27;t much deep bass treatment in there.</div></blockquote>There are 9 - 4&#x27;x2&#x27;x6&quot; bass traps in there. Curious how much more thee should have been?
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">Your overall decay times are reasonable, around 300 ms, and that might be OK for your room... except that I don&#x27;t know what the room dimensions are!   It&#x27;s a little high for a typical home studio, but on the other hand the room looks to be a decent size, so maybe it&#x27;s OK...  One good thing is that the decay times are consistently close between adjacent frequency bands. 
+
+There&#x27;s something strange going on at around 4 k, and I&#x27;m wondering if you have a flutter echo issue in there?  There&#x27;s some signs of that.  This should be fixed.</div></blockquote>I don&#x27;t think I have flutter issues but I&#x27;m not certain. Unfortunately, I can&#x27;t verify as I removed all of the treatments yesterday after running the analysis in preparation for our move. 
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">ou have what looks like the typical floor-bounce at around 122 Hz, and what looks like it might be SBIR at around 66 Hz.
+
+You also have several rather strong early reflections that should not be there, and the overall early sound level is rather high.  This should be fixed.
+
+One other issue, that isn&#x27;t all that important: you did the sound card calibration at one bit rate, but then did the measurements at a different bit rate, so the correction isn&#x27;t going to be 100% accurate.  But it&#x27;s not a big deal.</div></blockquote>Dang it.... not sure how that slipped by me. I thought I calibrated at 48!!
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">So, over all it&#x27;s reasonable for a home studio, and it is consistent with the treatment in there... but it could be better!</div></blockquote>Well, I&#x27;m certainly preparing to make the next studio better. I am bringing these acoustic treatments with me in hopes that I can use them as part of the treatment for the next room. Do you think that&#x27;s a good idea?  Of course, I realize the design (where they are positioned) will be somewhat different and I may need to build more.
+
+I am SO looking forward to starting the design of the next room!!  They have dug the hole for our basement and should start pouring concrete next week. I expect them to begin framing the house in the next 2-3 weeks. Once that is underway, I&#x27;ll be able to get some actual measurements and begin designing the new room.
+
+I&#x27;ve started that thread here <a href="/t/22045/">http://www.johnlsayers.com/phpBB2/viewtopic.php?f=1&amp;t=22045</a>
+
+Once the layout and construction principles of the room are decided, is it reasonable to begin considering acoustic treatments or is it best to wait to measure the actual room using REW and then determine the treatment design?</div>
+</article>
+<article class="post" id="p151429">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-09-02">2 September 2019</time><a class="permalink" href="#p151429" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">No, this is not intentional. If there&#x27;s EQ applied anywhere in the chain, I&#x27;m not aware of it. Wondering if the sub has something to do with it. When I calibrated to the actual levels the sub would only reach 70dB at the listening position, whereas the monitors were at 80dB.</div></blockquote>It&#x27;s not the sub.  The roll-off is in the very high end, above 4 kHz.  You can see it in the graph below:
+<div class="bb-attachment-missing">Image not preserved: Warrior--REW-FR--12-24k--roll-off.png</div>That&#x27;s the left and right curves along with the sub.  I placed the cursor line at 80 dB, which is the nominal level that you calibrated for, and you can see that in general most of the spectrum lines close to the line, reasonably flat, with a boost in the bass from your sub as well as the room modal response.  But above 5k, it takes a dive, quite steep.  Over the two octaves from 5k to 20k, it drops nearly 20 dB.  That&#x27;s a lot.  It&#x27;s about 18 dB, so that&#x27;s a 9db/octave roll off.  It&#x27;s not an acoustic issue, since it would be impossible for the room to suck out sound from the speakers before they even emit it!  That curve shows roughly the level that is being produced by the speakers themselves, so it is either a speaker problem (maybe the controls on the back of the speaker are not set correctly), or its a signal chain problem on the outgoing signal (EQ applied on your console, sound card, computer, etc.), or it&#x27;s an input problem: the mic, pre-amp, console, computer, etc, but on the path coming back in again).  Now, considering that you did do the loop-back calibration process, and it showed basically flat calibration (the way it should be), it&#x27;s unlikely to be anything related to your sound card or computer (that&#x27;s the very reason for doing the loop-back calibration test: to make sure that there&#x27;s no unexpected EQ or other problem happening internally, in that area).  So it can only be something that was NOT rested by the loop-back configuration.  That basically leaves console (if the signal is passing though one), cross-over (if you have one), speaker controller (if you have one), speaker, mic, and mic pre-amp.
+
+What speakers are you using?
+<blockquote class="bb-quote"><div class="bb-quote-body">Could this be a flaw in the monitor system design itself - therefore justifying a monitor system upgrade?</div></blockquote>I guess that&#x27;s possible of the speakers are really lousy, but good studio monitors should not do anything like that.  They should be pretty flat in the high end... unless you adjust the rear panel controls for treble roll-off.  Also, I doubt it is damage to the speakers, since they are both doing the exact same thing.
+<blockquote class="bb-quote"><div class="bb-quote-body">The basic dimensions of the room are 20&#x27; Lx 12&#x27; W x 7&#x27;10&quot; H. </div></blockquote>Great!  That confirms that your 28 Hz problem is your 1.0.0 axial mode.  That&#x27;s the first mode in the lengthwise direction, forming between the front and rear walls.  That 1.0.0 mode is often the largest and most problematic, in most rooms.  Its big, and it is hard to treat.  The 84 Hz peak is probably the third harmonic of that one (in other words, the 3.0.0 mode), and the 144 peak is likely the 5th harmonic.  In which case, it is possible that the 115 Hz dip is also the 4th harmonic.  
+
+So its clear that the rear wall treatment is very much insufficient, as there&#x27;s little sign that your front-to-back axial modes are being damped at all.
+
+You can see all of that on the waterfall plot below:
+<div class="bb-attachment-missing">Image not preserved: Warrior--REW-WF--15-500-modal.png</div><blockquote class="bb-quote"><div class="bb-quote-body">There are 9 - 4&#x27;x2&#x27;x6&quot; bass traps in there. Curious how much more thee should have been?</div></blockquote>6&quot; thickness isn&#x27;t very much for bass trapping.  That&#x27;s more like broadband for the low mids.  Think of it this way: at 28 Hz, the wavelength is forty FEET!  Yup.  That&#x27;s how long the waves are down that low.  So there&#x27;s a 40 foot difference between one peak and the next, if the wave was moving in free air... but it is NOT moving: the pressure peaks are standing still in your room, because your room is 20 feet long: that&#x27;s why modes are called &quot;standing waves&quot;: It&#x27;s not because the energy isn&#x27;t moving: it is.  The sound energy is still rushing around your room at 343 meters per second, just like for any other wave. But because the length of your room exactly matches half the length of the wave, that means that the pressure peaks and nulls always occur at the exact same location in your room, every time the energy rushes past.  Some text books say that you need absorption that is one quarter wavelength thick to deal with such a wave, which implies you would need a bass trap ten feet thick!  <span class="smilie" title=":shock:">:shock:</span>  Fortunately, that isn&#x27;t correct.  Yes, you would get optimum absorption if you had absorption ten feet from your front wall, or ten feet from your back wall, but that does not mean that it MUST be there, or that it MUST be that thick.  In reality, you still get reasonable absorption from treatment that is as little as 1/16th wavelength (about 7%)... but that&#x27;s still two and a half feet thick. About 30&quot;.  Your 6&quot; absorbers are only about 1% of the wavelength, which is why the are not doing anything to damp it.  They don&#x27;t damp the second harmonic at 56 Hz (still only 2.4% of the wavelength), nor the third harmonic (3.7%), nor the fourth harmonic at 112 Hz (5%), and it&#x27;s only at the fourth harmonic, 168 Hz that they start having some effect, where they are about 7.5% of the wavelength.  Once again, this is visible on the waterfall graph: you can almost see the &quot;line&quot; of effectiveness: You can see that as frequency increases, the modes are damped more and more.  Nothing at all at 28 Hz, and almost completely beyond about 180 Hz, with increasing improvement all the way, as the wavelength gets closer and closer to the effective thickness of the 6&quot; insulation.
+
+So, to properly damp that 208 Hz mode, you would need absorption about 30&quot; thick.  This is why you often see recommendations for &quot;superchunk&quot; bass traps to run at least 36&quot; along the walls, and also for studios that have enough space to have rear wall treatment at least 3 feet deep.  That doesn&#x27;t meat that you have to put up 3 feet of mineral-wool across the entire rear wall!  There are other ways of getting good absorption, but the point is that, to be effective below 30 Hz, it would need to extend about 3 feet into the room.
+
+That said, there are other methods too!  For the above, I have been talking about pure absorption bass traps.  But there are other types of bass trap that are effective at low frequencies while taking up much less thickness. It is possible to deal with 28 Hz modes using tuned traps that are less than one foot thick.  Tuned traps, such as various types of Helmholtz resonator, membrane traps, and panel traps.  For your new room, you could do a combination of those to get good trapping down to very low frequencies.
+<blockquote class="bb-quote"><div class="bb-quote-body">I don&#x27;t think I have flutter issues but I&#x27;m not certain. Unfortunately, I can&#x27;t verify as I removed all of the treatments yesterday after running the analysis in preparation for our move.</div></blockquote>Then it&#x27;s not worth worrying about, if you wont be using that room any more!  But it is something to be aware of when designing your new room.
+<blockquote class="bb-quote"><div class="bb-quote-body">Dang it.... not sure how that slipped by me. I thought I calibrated at 48!!</div></blockquote>It&#x27;s no big deal:  the calibration showed basically flat response for your sound card, with just the typical slight roll off at the extremes.  And that&#x27;s the entire point of doing the calibration! To make sure that nothing internal in the sound card or computer is messing things up.  For today0s sound cards, the response is pretty much always similar to what you have, so the calibration file isn&#x27;t really needed for interpreting the results.  But I put that step in the procedure as a check to make SURE that it is flat... If it turns out to be flat as it should, then the file isn&#x27;t needed.  But if it is NOT flat, that indicates that there&#x27;s an issue some place internally... which is what you had, in fact!  Initially, you had some type of internal monitoring path active that was causing feedback, which gave you the wonky initial result.  You would never have known about that if you didn&#x27;t do the calibration...  There&#x27;s reasons for every step in that procedure I wrote!  <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">
+Well, I&#x27;m certainly preparing to make the next studio better.</div></blockquote> <span class="smilie" title=":thu:">:thu:</span>  Hopefully your new room will be about the same size, but with a higher ceiling!  Your current room has a rather low ceiling, which isn&#x27;t helping the acoustics much...
+<blockquote class="bb-quote"><div class="bb-quote-body">I am bringing these acoustic treatments with me in hopes that I can use them as part of the treatment for the next room.</div></blockquote>Definitely!  They are doing what would be expected from such panels, and they can be used in your new room as well... just not for bass trapping!  As you can see, they were not doing an effective job for bass trapping.  But they are still good for treating other issues.  You can build your own bass traps simply and cheaply, then use these for other purposes.
+<blockquote class="bb-quote"><div class="bb-quote-body">I am SO looking forward to starting the design of the next room!! They have dug the hole for our basement and should start pouring concrete next week.</div></blockquote>Cool!  Keep us posted on that!  If it&#x27;s not too late, make sure that your new basement is deeper, with a higher ceiling....  Your length and width are fine, but a higher ceiling would be nice.  like 9 feet or so, if possible...
+<blockquote class="bb-quote"><div class="bb-quote-body">Once that is underway, I&#x27;ll be able to get some actual measurements and begin designing the new room.</div></blockquote>Do you have the actual plans for the basement?  Especially the HVAC, plumbing, and electrical plans?  Because right now is the time to check those, and makes sure that all of that stuff does NOT go anywhere near where your studio will be!!! You do not want pipes, ducts, or electrical distribution boxes above the location where your studio is.  If you fins that some of that will be overhead, then get them to change that on the plans, right now, to avoid problems later.
+<blockquote class="bb-quote"><div class="bb-quote-body">Once the layout and construction principles of the room are decided, is it reasonable to begin considering acoustic treatments or is it best to wait to measure the actual room using REW and then determine the treatment design?</div></blockquote>To be very honest, the basics of the room should be decided long before you start digging holes in the ground...  There&#x27;s many things you can build into the overall building design to create a better studio.  After the building design is locked in, it&#x27;s usually hard to change stuff, such as ceiling height and room dimensions for example.  It is sometimes possible to change HVAC duct layout, and plumbing, and gas pipes, and electrical, before they actually start the framing, but that might incur some costs in changing the plans and perhaps additional materials.  You might not be too late for that.
+
+In general, it is better to have the studio designed along with the rest of the building so that they work together with no conflicts.  Even something as simple as the location of the door into the room, and the location of the HVAC silencer boxes, can be a problem if not taken into consideration before the room is built.
+
+Now would be the right time to decide on all of that, and fix what still can be fixed before it gets carved in stone, so to speaker.  There&#x27;s a process I go through with my clients to help define all of this when designing their home studios.  If you are pouring concrete next week then it&#x27;s a little advanced to be doing the very basic stuff, as those decisions have already been made, but there&#x27;s still stuff that you could change to improve the final outcome of your studio.  The process starts with defining the isolation needs for the studio, then overall goals, the basic studio design concept (RFZ, NER, LEDE, FTB, CID, etc), and the overall dimensions, then moves on to factors that depend on the above, then the layout and geometry (where the speakers and mix position need to be for optimal performance), and eventually gets down into the nitty-gritty of designing each individual acoustic treatment device, and where it will go in the room.  You might be a little late to control some of the major decisions, but there&#x27;s still plenty of opportunity for controlling the rest.
+<blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;ve started that thread here</div></blockquote>Great!  I&#x27;ll take look over there, and start following your progress.  <span class="smilie" title=":thu:">:thu:</span>  
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151444">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Warrior</span><time datetime="2019-09-04">4 September 2019</time><a class="permalink" href="#p151444" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">So much great info in this thread. Going to be studying it for some time. Appreciate the education!
+
+I&#x27;ve addressed some of your questions/comments below.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">
+.......That basically leaves console (if the signal is passing though one), cross-over (if you have one), speaker controller (if you have one), speaker, mic, and mic pre-amp.
+
+What speakers are you using?</div></blockquote>I&#x27;m using a Blue Sky ProDesk 2.1 system
+
+<a href="http://abluesky.com/products/prodesk-2-1/" rel="nofollow noopener" target="_blank">http://abluesky.com/products/prodesk-2-1/</a>
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">I guess that&#x27;s possible of the speakers are really lousy, but good studio monitors should not do anything like that.  They should be pretty flat in the high end... unless you adjust the rear panel controls for treble roll-off.  Also, I doubt it is damage to the speakers, since they are both doing the exact same thing.</div></blockquote>Here&#x27;s a couple of pics showing the settings on the back of the monitors and sub.
+<div class="bb-attachment-missing">Image not preserved: IMG-2045.JPG</div><div class="bb-attachment-missing">Image not preserved: IMG-2047.JPG</div><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">That said, there are other methods too!  For the above, I have been talking about pure absorption bass traps.  But there are other types of bass trap that are effective at low frequencies while taking up much less thickness. It is possible to deal with 28 Hz modes using tuned traps that are less than one foot thick.  Tuned traps, such as various types of Helmholtz resonator, membrane traps, and panel traps.  For your new room, you could do a combination of those to get good trapping down to very low frequencies.</div></blockquote>Preference would be to minimize space but want to keep cost down too. Will need to study this.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body"> Hopefully your new room will be about the same size, but with a higher ceiling!  Your current room has a rather low ceiling, which isn&#x27;t helping the acoustics much...</div></blockquote>The new room ceiling will be 8&#x27;10&quot; to the bottom of the floor joists unfinished. If I left it unfinished, there would be another 11&quot; (?) of open space between each joist. I am leaning towards drywalling the ceiling but am interested in knowing the opinion on this.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">
+If it&#x27;s not too late, make sure that your new basement is deeper, with a higher ceiling....  Your length and width are fine, but a higher ceiling would be nice.  like 9 feet or so, if possible...</div></blockquote>See above
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">Do you have the actual plans for the basement?  Especially the HVAC, plumbing, and electrical plans?  Because right now is the time to check those, and makes sure that all of that stuff does NOT go anywhere near where your studio will be!!! You do not want pipes, ducts, or electrical distribution boxes above the location where your studio is.  If you fins that some of that will be overhead, then get them to change that on the plans, right now, to avoid problems later.</div></blockquote>Here&#x27;s the basement plan from the builder. We are getting the 2&#x27; extension option show. Our plan is actually flipped (left hand garage).
+The HVAC and water heater are next to the stairs as shown. Electrical panel will also be in that area.
+<div class="bb-attachment-missing">File not preserved: Small.pdf</div>This sketch I made shows a very basic proposal for studio location and size. Emphasis on very basic.
+The water inlet is in the location, as shown, but the electrical panel is not. I am not able to change the location of any of the mechanicals (water/gas inlets, HVAC, water heater locations, etc). If it was a total custom house I could but it&#x27;s not. My ability to customize was limited.
+
+Of course, I can change the HVAC ducts after the fact as needed.
+<div class="bb-attachment-missing">Image not preserved: BSEMENT STUDIO 1.jpg</div><div class="bb-attachment-missing">Image not preserved: BASEMENT STUDIO 2.jpg</div><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">To be very honest, the basics of the room should be decided long before you start digging holes in the ground...  There&#x27;s many things you can build into the overall building design to create a better studio.  After the building design is locked in, it&#x27;s usually hard to change stuff, such as ceiling height and room dimensions for example.  It is sometimes possible to change HVAC duct layout, and plumbing, and gas pipes, and electrical, before they actually start the framing, but that might incur some costs in changing the plans and perhaps additional materials.  You might not be too late for that.</div></blockquote>You are correct Sir.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

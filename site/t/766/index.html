@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIY Filter for Flush Mounting Freestanding Speakers | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by barefoot in Speaking of Speakers, 2003. 26 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/766/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/speaking-of-speakers/">Speaking of Speakers</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>DIY Filter for Flush Mounting Freestanding Speakers</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by barefoot on 2 October 2003. 26 replies, 2003–2019. In the Library under <a href="/library/speakers/">Speakers and soffits</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 766.</p>
+<nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/766/page/2/">2</a>
+<a href="/t/766/page/2/" rel="next">Next</a></nav>
+</div>
+</header>
+<article class="post" id="p5626">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2003-10-02">2 October 2003</time><a class="permalink" href="#p5626" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">So, you want to flush mount your nearfield monitors?  It&#x27;s a great idea and has many advantages over free standing.  
+
+However, if you have read through some of my posts on the subject and downloaded my <a href="/t/610/">wall bounce calculator</a>, then you know there&#x27;s a problem.   Freestanding speakers have -6dB shelf filter in their high frequency response. This compensates for an effect know as &quot;baffle step&quot; or &quot;diffraction loss&quot;.  At wavelengths longer than the width of the speaker cabinet , half of the acoustic energy wraps around the front baffle and radiates towards the back.    The high frequencies with shorter wavelengths are forced to radiate in the forward hemisphere only.  The -6dB shelf filter gives a flat anechoic on-axis response, but the total acoustic power emitted into the room is +6 dB heavy in the bass.  Now, when you flush mount a freestanding speaker, all the frequencies are forced into the forward hemisphere.  So, the on-axis response exhibits a +6 dB step in the bass in accordance with the power response imbalance.
+
+To illustrate the effect plug these values into the wall bounce calculator:
+
+D = 0 cm (flush mount)
+L = 200 cm(doesn’t matter)
+W = your speaker width 
+F3 = 1 Hz (to better illustrate effect)
+
+See the big bass shelf?  So, what is the solution?
+
+Answer:  a do-it-yourself -6dB low shelf filter.
+
+I&#x27;ve designed a high performance filter that will level out the power response step of a freestanding speaker, yielding both a flat power response and a flat on-axis response when flush mounted.   If you have some experience building electronic circuits, this project should be relatively easy for you.
+
+The circuit is simply a stereo -6dB low shelf filter with buffered inputs and outputs.  The filter response depends on the width of your speaker cabinet, so I&#x27;ve included a table of component values for a range of widths.  If your speaker doesn&#x27;t match up exactly with one of these dimensions, don&#x27;t worry.  Just round to the nearest dimension.  The response error will be a fraction of a decibel.  If you really want to be more exact, then choose a resistor value that falls in between the higher and lower values.  
+
+I&#x27;ve given two choices of op amps, but there might be others that are pin compatible.  The Burr-Brown OPA604 is an excellent and affordable amplifier.  It will give very high quality, transparent performance in this circuit.   For a no compromise circuit choose the Analog Devices AD797.   This a little monster of an op amp, combining extremely high input impedance, extremely high output current, extremely low noise, and extremely low distortion.  It&#x27;s just extremely good in every respect.  At almost $10 US each it also happens to be a rather expensive little bugger.   The price, however, isn&#x27;t too prohibitive in this project because we&#x27;re only using 4 of them.   A buffer built from an AD797 is just about as good as it gets.  You can possibly find a discreet circuit that will perform a hair better, but you&#x27;ll need to search long and hard.  
+
+All resistors should be 1% metal film types.  
+
+I&#x27;ve included an optional delayed relay circuit that prevents output thumps during power up.  The relay grounds the outputs (these op amps can take this indefinitely) for a few seconds after the power is turned on, giving the power supply and filter circuit enough time to stabilize.   This option doesn&#x27;t affect the sound because there is nothing in the circuit path when the relays open.  Keep in mind I haven&#x27;t actually tested this relay circuit.  It should certainly work, but I&#x27;m not 100% sure about the delay time.  It could be too long.  You might need to play with the 15k Ohm resistor and 220 uF capacitor values to get the time constant right.   I can suggest some other values.
+
+If you don&#x27;t want to build the relay circuit, then just make sure you turn this filter unit on <em>before</em> you turn on the power amplifer.
+
+<strong>You can download the schematic of the unbalanced circuit here:   <a href="http://barefootsound.com/homerecording_images/decompensation_filter-single.gif" rel="nofollow noopener" target="_blank">Baffle Step Decompensation Filter - Single Ended</a>.</strong>
+
+I will update this thread with a balanced version.
+
+I haven&#x27;t included a design for a dual 15 Volt power supply, but you can readily find them on the web.  Here are some designs:
+<a href="http://headwize2.powerpill.org/projects/showproj.php?file=harrison_prj.htm" rel="nofollow noopener" target="_blank">http://headwize2.powerpill.org/projects ... on_prj.htm</a>
+<a href="http://headwize2.powerpill.org/projects/showproj.php?file=pawliw1_prj.htm" rel="nofollow noopener" target="_blank">http://headwize2.powerpill.org/projects ... w1_prj.htm</a>
+<a href="http://headwize2.powerpill.org/projects/showproj.php?file=simpson_prj.htm" rel="nofollow noopener" target="_blank">http://headwize2.powerpill.org/projects ... on_prj.htm</a>
+
+And here are some places where you can purchase an appropriate power supply. 
+<a href="http://www.marchandelec.com/ps10.htm" rel="nofollow noopener" target="_blank">http://www.marchandelec.com/ps10.htm</a>
+<a href="http://www.arrow.com" rel="nofollow noopener" target="_blank">http://www.arrow.com</a> (Power-One HAD15-0.4-A or HAD15-0.8-A)
+<a href="http://www.bmm-electronics.com/Product.asp?Product_ID=31" rel="nofollow noopener" target="_blank">http://www.bmm-electronics.com/Product. ... duct_ID=31</a>
+
+
+Enjoy! <span class="smilie" title=":D">:D</span>
+
+Thomas<div class="bb-attachments-trailing"><figure class="bb-attachment"><img src="/img/965.jpg" loading="lazy" alt="DECOMP.jpg"><figcaption>DECOMP.jpg</figcaption></figure></div></div>
+</article>
+<article class="post" id="p11402">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">jeffjazz</span><time datetime="2004-04-26">26 April 2004</time><a class="permalink" href="#p11402" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">thanks for the tip, barefoot! i have a pair of krk v6&#x27;s and unfortunately i have no idea what is what when it comes to wiring electric circuts. 
+
+is there something i can buy or you would recommend for this? i&#x27;m pretty sold on soffit mounting the speaks, but i wouldn&#x27;t be able to do this shelf filter myself.
+
+thanks!
+jeff</div>
+</article>
+<article class="post" id="p11472">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/barefoot/">barefoot</a><time datetime="2004-04-27">27 April 2004</time><a class="permalink" href="#p11472" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Hi Jeff,
+
+I&#x27;m offering the SC2 Loudspeaker Controller [link no longer valid].  The first unit is due to ship to one of the members here in about a week.   Then I&#x27;ll update the page with pictures, specs, and a price.  
+<span style="color:red">[Edit:  Sorry, this product is no longer available]  </span>
+
+
+Thomas</div>
+</article>
+<article class="post" id="p24653">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">drfrankencopter</span><time datetime="2005-04-02">2 April 2005</time><a class="permalink" href="#p24653" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Thanks for posting this Barefoot!
+
+I&#x27;ve only had a short time to look it over, but thought I&#x27;d mention a few things. First, the AD797, while a superb op-amp is really best used with low impedance (&lt;1500 ohms) sources. An OPA627 FET input op-amp might might a nice sub for the OPA604, but, like the 797 its also expensive. The good news is if you ask Tesas Instruments for samples you can get 3 of em for free. Same with the AD797 (but ask analog devices of course).
+
+Second, the circuit is DC coupled input to output....this isn&#x27;t a bad thing in itself, but something for those building the circuit to be aware of. Don&#x27;t accidentally plug a mic line with phantom power in there, or you can say goodbye to your input op-amps. Fortunately, I image this circuit would be more of a &#x27;set and forget&#x27; type of thing, and wouldn&#x27;t see much patching.
+
+Third,  choose a nice quality capacitor for C. Since it&#x27;s going to be a fairly small value (under .33 uF) you can use a nice polypropylene without breaking the bank, or requiring a huge enclosure.
+
+Thanks again for the circuit....I&#x27;ll likely incorperate parts of it in my monitor controller (source selector, attenuator, talkback amp, cue mix buffer, etc)
+
+Cheers,
+
+Kris
+
+PS: In case you were wondering where the gang from Recording.Org&#x27;s &#x27;techtalk&#x27; went, we&#x27;re now here: <a href="http://www.prodigy-pro.com/forum/index.php" rel="nofollow noopener" target="_blank">http://www.prodigy-pro.com/forum/index.php</a></div>
+</article>
+<article class="post" id="p82534">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Skai_Penalva</span><time datetime="2008-11-30">30 November 2008</time><a class="permalink" href="#p82534" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">How do you know at which frequency to attenuate? My Adam A7&#x27;s have a Room EQ that can roll-off 6dBs at 150Hz, would this be too much when soffit mounted?</div>
+</article>
+<article class="post" id="p123363">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">dufo</span><time datetime="2012-06-22">22 June 2012</time><a class="permalink" href="#p123363" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Doesn&#x27;t seem many may have tried this design? Would really like to hear from any that have and how it went. Also any more detailed directions would be even better. And even better than that , a PCB layout ??</div>
+</article>
+<article class="post" id="p126068">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">G-Sun</span><time datetime="2012-12-10">10 December 2012</time><a class="permalink" href="#p126068" aria-label="Link to post 7">#7</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Skai_Penalva wrote:</div><div class="bb-quote-body">How do you know at which frequency to attenuate? My Adam A7&#x27;s have a Room EQ that can roll-off 6dBs at 150Hz, would this be too much when soffit mounted?</div></blockquote>Yes, I wander about this myself.
+I have a 80Hz filter on my monitor-mixer and wander if I could use that?</div>
+</article>
+<article class="post" id="p126076">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-12-10">10 December 2012</time><a class="permalink" href="#p126076" aria-label="Link to post 8">#8</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">How do you know at which frequency to attenuate? My Adam A7&#x27;s have a Room EQ that can roll-off 6dBs at 150Hz, would this be too much when soffit mounted?</div></blockquote>If your speaker has a roll-off control on the back, then it has been designed by the manufacturer of the speaker for that specific purpose, based on the design of the speaker itself, so yes, that is the correct frequency.  And yes, you probably will need to roll off 6 dB, but perhaps a bit less, depending on the design of the room, and how it loads the speaker.
+
+If your speaker does NOT have a control on the rear, then you will have to calculate the frequency, based on the equation for baffle step compensation, which you can find here on the forum and also in other places on the Internet.  Eric Best has posted it at least once, and so have others.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p126078">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">G-Sun</span><time datetime="2012-12-10">10 December 2012</time><a class="permalink" href="#p126078" aria-label="Link to post 9">#9</a></header>
+<div class="post-body">Thanks for the precise info Stuart!</div>
+</article>
+<article class="post" id="p126878">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">mago</span><time datetime="2013-02-07">7 February 2013</time><a class="permalink" href="#p126878" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Can anyone provide me with a high res copy of Barefoot&#x27;s filter schematics - unbalanced and balanced? The link has vanished and I cant get it anymore.
+Or if that is not available is there anything else out there?</div>
+</article>
+<article class="post" id="p126881">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2013-02-07">7 February 2013</time><a class="permalink" href="#p126881" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">Maybe you could PM him, and ask him for it personally?  I&#x27;m not sure if he still wants that in the public domain, though: I guess he stopped making them and removed the schematic for a reason.
+
+What speakers are you using, by the way?  Most good studio monitors already have the necessary controls built in.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p132757">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Al Nutrition</span><time datetime="2014-03-31">31 March 2014</time><a class="permalink" href="#p132757" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">I´m currently designing a new CR and after building the needed soundproofing I´m going to flush mount my Dynaudio BM6as. I am aware of the +6db LF boost with flush mounting and wondering will the BM6a´s controls do the job. I used Barefoots Wall Bounce Calculator and it seems that the speakers´ FL trim could be in the ballpark . Didn´t really have frontwall and sidewall absorption coefficients so hard to say how accurate the calculations are. 
+
+Would the speakers´ own LF trim do the job or do I need to build the filter according to Barefoots plans?
+
+Any insights very much appreciated. 
+ 
+This is what the Dynaudio BM6a owners manual has to say:
+<figure class="bb-attachment"><img src="/img/ext_4d02ec5f1a64613d.png" loading="lazy" alt=""><figcaption>Recovered from web.archive.org &mdash; originally hosted at http://www.superjanne.fi/studiodesign/dynaudiobm6a-HFLFtrim%20.png</figcaption></figure></div>
+</article>
+<article class="post" id="p132758">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-04-01">1 April 2014</time><a class="permalink" href="#p132758" aria-label="Link to post 13">#13</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Would the speakers´ own LF trim do the job or do I need to build the filter according to Barefoots plans?</div></blockquote>You should be fine with built-in roll-off controls.  Once you have the room built and the speakers installed (and the treatment completed!), you can check the response with REW.  If you still need more tweaking then you could do that with an external crossover, or a parametric equalizer that has bass shelving.
+
+However, the BM6a is rear ported, so that might create issues when flush-mounting.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p132764">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/eric-best/">Eric Best</a><time datetime="2014-04-01">1 April 2014</time><a class="permalink" href="#p132764" aria-label="Link to post 14">#14</a></header>
+<div class="post-body">I think that speaker has an 8&quot; baffle.  If it has the standard BSC it would start about 580hz.  If you flush mount that speaker, and use the 100hz 6 dB roll off, you will have bump in your freq response between 580hz and 100hz.  
+
+Look at the graphs that I posted in the &quot;Monitor Flush Mounting Method&quot; sticky at the top of the page.  That will explain what will happen the your speaker response when you put it in the wall.</div>
+</article>
+<article class="post" id="p135839">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Jwilliams</span><time datetime="2015-04-10">10 April 2015</time><a class="permalink" href="#p135839" aria-label="Link to post 15">#15</a></header>
+<div class="post-body">Greetings long time forum reader here, but this is my first post. I recently flush mounted my Tannoy DMT10 monitors and now need to roll off the expected 6db boost in low end due to the flush mounting. Is there a plan available for a diy filter still available, or one on the market that I can purchase, that will have the least impact on the current sound of my monitors? I see a few people were looking for a solution a few years back and I&#x27;m curious whether anyone found one? Thanks in Advance to all of the contributors on this forum, it&#x27;s been very helpful over the years.
+
+Would any &quot;high quality&quot; shelving filter work?
+Best Jay<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: IMG_0201.JPG</div></div></div>
+</article>
+<article class="post" id="p135840">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2015-04-10">10 April 2015</time><a class="permalink" href="#p135840" aria-label="Link to post 16">#16</a></header>
+<div class="post-body">Hi Jay. Please read the <a href="/t/3231/">forum rules for posting  (click here)</a>.  You seem to be missing a couple of things!  <span class="smilie" title=":)">:)</span>
+
+Your best bet is to use a good quality external crossover or speaker controller.  DBX makes some decent ones.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p135850">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Jwilliams</span><time datetime="2015-04-12">12 April 2015</time><a class="permalink" href="#p135850" aria-label="Link to post 17">#17</a></header>
+<div class="post-body">Thanks Admin, I added the necessary info and I completely understand it&#x27;s necessity..
+
+That aside I just wanted to share that in my case, &quot;with the specific monitors I flush mounted&quot;, which were tannoy DMT10&#x27;s, all I needed to do was push them forward a 1/2 inch, making them proud of the wall and this fixed the increased bass response without the addition of an eq/filter ..ect.  It seemed that having them recessed to the point of being perfectly flush with the wall, coupled them to the wall in a way that yielded a boomy response. Thought I&#x27;d share since I&#x27;ve taken info from this form on so many occasions. Good luck to anyone on the same journey. Lets also keep in mind that these specific monitors were made to be flush mounted or free standing by design.
+
+
+My room dimensions are:
+17&#x27;L x 13&#x27;W x 8&#x27;H
+
+Monitor woofer size: 10&quot; duel concentric</div>
+</article>
+<article class="post" id="p149243">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">curere</span><time datetime="2019-02-10">10 February 2019</time><a class="permalink" href="#p149243" aria-label="Link to post 18">#18</a></header>
+<div class="post-body">I have a pair of Adam S5X-H and it does not look like Adams make their external amp for soffit. mounting the unit again. Is there a way to soffit mount these?</div>
+</article>
+<article class="post" id="p149251">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2019-02-10">10 February 2019</time><a class="permalink" href="#p149251" aria-label="Link to post 19">#19</a></header>
+<div class="post-body">You can always rip the guts out and fill where they were with metal plates. Then mount the amps wherever you want. 
+
+Greg</div>
+</article>
+<article class="post" id="p149256">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">curere</span><time datetime="2019-02-11">11 February 2019</time><a class="permalink" href="#p149256" aria-label="Link to post 20">#20</a></header>
+<div class="post-body">There was an Extension Amp called EA-SX but I am not seeing anywhere and by extension have a price for it with the necessary Kit.</div>
+</article>
+<article class="post" id="p149259">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-02-11">11 February 2019</time><a class="permalink" href="#p149259" aria-label="Link to post 21">#21</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I have a pair of Adam S5X-H and it does not look like Adams make their external amp for soffit. mounting the unit again. Is there a way to soffit mount these?</div></blockquote>Those are pretty big speakers!  Powerful, too  They can move LOTS of air.... You can certainly soffit-mount them, but it&#x27;s going to need a pretty substantial structure to do that.  If you don&#x27;t want to pull out the amps and make your own extension kit, then the other option is to build the soffit in such a way that you can still get access to the rear panel for the tuning and tweaking.  I&#x27;ve done a few studios like that, with access panels built into the sides of the soffits.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p149263">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">curere</span><time datetime="2019-02-11">11 February 2019</time><a class="permalink" href="#p149263" aria-label="Link to post 22">#22</a></header>
+<div class="post-body">Do you have a design sketch? Obviously so I would not overheat the speakers</div>
+</article>
+<article class="post" id="p149273">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2019-02-11">11 February 2019</time><a class="permalink" href="#p149273" aria-label="Link to post 23">#23</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Do you have a design sketch? Obviously so I would not overheat the speakers</div></blockquote>Where your control room window recesses into your front wall soffit wall you have can put removable side panels that will allow you to reach in behind the speakers. 
+
+If you look at this picture, you&#x27;ll see the tall skinny piece of grey fabric on the side of the window that would allow you to reach in behind the soffit. This one is small as the soffits aren&#x27;t super deep. Your design could include a much deeper one if need be!
+<div class="bb-attachment-missing">Image not preserved: Speaker Access Panel.jpg</div>Greg</div>
+</article>
+<article class="post" id="p149313">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">curere</span><time datetime="2019-02-14">14 February 2019</time><a class="permalink" href="#p149313" aria-label="Link to post 24">#24</a></header>
+<div class="post-body">Thank you for that...
+
+Is there anyway that I can get more detail into actually mounting/framing up for the flush mount?
+
+I thought you had to use like 4 different material and really build out each frame inside of a frame.
+
+So Do you have a diagram as to what components are required</div>
+</article>
+<article class="post" id="p149317">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/stadank0/">Stadank0</a><time datetime="2019-02-14">14 February 2019</time><a class="permalink" href="#p149317" aria-label="Link to post 25">#25</a></header>
+<div class="post-body">Consider what would happen if your amp fails and you have to tear it all apart....I pulled my amps when I soffit mounted for that very real possibility...I&#x27;ve also had an amp fail on a Dynaudio BM12a in the past, so its something to consider...</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"><nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/766/page/2/">2</a>
+<a href="/t/766/page/2/" rel="next">Next</a></nav></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

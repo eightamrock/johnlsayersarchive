@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiring Your Studio with Audio Over Cat5/6 (AES72/QTP/RJ45) | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by aidanknight in Installation and Wiring, 2021. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/22943/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Wiring Your Studio with Audio Over Cat5/6 (AES72/QTP/RJ45)</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by aidanknight on 6 October 2021. 3 replies, 2021–2022.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 22943.</p>
+
+</div>
+</header>
+<article class="post" id="p157268">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">aidanknight</span><time datetime="2021-10-06">6 October 2021</time><a class="permalink" href="#p157268" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">First post! I apologize if this has been covered in other threads, I tried searching for this exact subject but didn&#x27;t find an answer.
+
+I am working on a new studio build where I live in Western Canada. 650-750 sq ft, 2 iso rooms (100-ish sq feet each). <span style="color:#0000FF">ISO1</span> is a drum room with 12 channels of audio + 1-2 HP boxes (probably the Behringer P16 system), <span style="color:#BF0000">ISO2</span> is a piano and vocals room with 8 channels of audio + 1 HP. 24 channels of audio in the <span style="color:#408040">MAINROOM</span> (synths, CP70, misc mic lines, etc). Another 4 channels of audio in the tiled bathroom bc why not! Reverb! So, 48 Channels of audio total coming back to the desk/patchbay.
+
+I would like to run the wiring over CAT5/6 cables (4 analog channels per Cat5), which I hear from many festival FOH folks are great for long cable runs. Plus the Behringer system uses RJ45 connections. Plus I can send video (maybe to a monitor with lyrics/arrangements for performers) and digital signals in general, from what I understand.
+
+I have a few questions:
+
+1. I want to run cabling through the floor, which allows me to avoid punching holes in my walls. What is considered best practice? PVC conduit? Or something shielded?
+2. Could I run digital signals alongside analog? Power will run through the floor as well, so I have two chases where I can put cables. 
+3. Should I install XLR boxes in the rooms (like the <a href="https://soundtools.com/audio-over-cat5-systems-page-wallcat4.html" rel="nofollow noopener" target="_blank">Sound Tools WallCAT</a>) or leave them as RJ45 outlets and use smaller portable breakout boxes (like the <a href="https://soundtools.com/audio-over-cat5-systems-page-supercatsoundtailsethercon.html" rel="nofollow noopener" target="_blank">Sound Tools CAT Tails</a>)?
+4. My interface is only 24 channels, not 48 - Could I use a RJ45 patchbay to patch groups of 4 to my patchbay (DB25)?. For example, <span style="color:#0000FF">ISO1 XLR 1-4</span> + <span style="color:#0000FF">ISO1 XLR 5-8</span> + <span style="color:#BF0000">ISO2 XLR 1-4</span> &gt; PATCHBAY 1-12.
+5. What are my options to convert the RJ45/Ethercon to DB25? I&#x27;ve found a few computer networking parts that fit the description but I have no idea if they will work for DB25 audio wiring (probably Tascam)
+
+Really appreciate any insights from anyone who&#x27;s installed analog audio over CAT5/6 in their studio. Thanks for reading!</div>
+</article>
+<article class="post" id="p157276">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gullfo/">gullfo</a><time datetime="2021-10-08">8 October 2021</time><a class="permalink" href="#p157276" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">the answer to your questions is effectively yes. 
+
+the conduit can be PVC, or shielded if you can afford it. more likely to use the shielded version if you&#x27;re running analog. running through the floor (as-in under the floor joists or in the concrete) works. if not, running the conduit into the space above the room can work - make sure to decouple either way to ensure the conduit doesn&#x27;t directly connect the inner isolation mass with the exterior isolation mass. a rubber coupler section does the trick.
+
+use a hyper-twisted cable type for best isolation. CAT-7 or better. 
+
+if you&#x27;re using XLR in the rooms, i&#x27;d use an XLR panel, if you&#x27;re using digital heads, the RJ-45. if both, then both <span class="smilie" title=":-)">:-)</span>
+
+the terminations of the cables - break out the soldering iron and the pin-out diagrams. test thoroughly. there are likely some adapter cables available for common devices so do some research there.</div>
+</article>
+<article class="post" id="p157786">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">aidanknight</span><time datetime="2022-01-20">20 January 2022</time><a class="permalink" href="#p157786" aria-label="Link to post 3">#3</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">gullfo wrote:</div><div class="bb-quote-body">the answer to your questions is effectively yes. 
+
+the conduit can be PVC, or shielded if you can afford it. more likely to use the shielded version if you&#x27;re running analog. running through the floor (as-in under the floor joists or in the concrete) works. if not, running the conduit into the space above the room can work - make sure to decouple either way to ensure the conduit doesn&#x27;t directly connect the inner isolation mass with the exterior isolation mass. a rubber coupler section does the trick.</div></blockquote>Excellent. I&#x27;ve been doing some additional research and the cost/benefit ratio seems to point towards PVC as the CAT-5/6/7 shielding is quite good. 
+
+And as for soldering, I am mentally preparing myself for that stage. I guess I will learn how to do that more efficiently as I go <span class="smilie" title=";)">;)</span></div>
+</article>
+<article class="post" id="p157789">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Sinclair</span><time datetime="2022-01-21">21 January 2022</time><a class="permalink" href="#p157789" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">aidanknight wrote:</div><div class="bb-quote-body"><blockquote class="bb-quote"><div class="bb-quote-author">gullfo wrote:</div><div class="bb-quote-body">
+And as for soldering, I am mentally preparing myself for that stage. I guess I will learn how to do that more efficiently as I go <span class="smilie" title=";)">;)</span></div></blockquote></div></blockquote>We got a quote of $2450 to install the wiring in our garage studio so we&#x27;re doing it ourselves.
+My son designed it, We have 2 iso booths a live room and control room. His design maximizing the recording options. A 40lb box of cables showed up today. We star soldering tomorrow. 
+We&#x27;ll use a narrow PVC through one double wall into the live room panel, and a larger PVC into the CR. 
+I understand stuffing that with left over sound insulation is helpful. All cables will run in a narrow trough against the baseboard that will be almost invisible.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

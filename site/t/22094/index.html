@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FREE STUDIO DESIGN TOOLS: 1) RAYTRACER AID and 2) ABSORBER | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Soundman2020 in Studio Design, 2019. 5 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/22094/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>FREE STUDIO DESIGN TOOLS: 1) RAYTRACER AID and 2) ABSORBER</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Soundman2020 on 27 August 2019. 5 replies, 2019–2020. In the Library under <a href="/library/tools-measurement/">Measurement and tools</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 22094.</p>
+
+</div>
+</header>
+<article class="post" id="p151382">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-08-27">27 August 2019</time><a class="permalink" href="#p151382" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I&#x27;m probably making a big mistake here, and I&#x27;ll end up regretting it hugely, but I decided to release a little tool I developed a while back, that I use when designing studios, to help me visualize speaker dispersion angles, and to assist with ray tracing purposes. I&#x27;m doing this ONLY for forum members here and on another forum where I&#x27;m also active. ONLY!
+
+This tool is a &quot;Dynamic Component&quot; for SketchUp. It should work with any version of SketchUp above SketchUp 2013... except for the silly little toy that they offer as on on-line browser thingy, called something like &quot;SketchUp Free&quot;. That one is rather useless anyway, and does not support Dynamic Components at all (nor any other plugins). But my tool should work fine with any other version of SketchUp, probably as far back as SketchUp V8. I haven&#x27;t tested that far back, though.
+
+You can find the tool here:
+
+<a href="http://spartanew.digistar.cl/StudioTools/" rel="nofollow noopener" target="_blank">http://spartanew.digistar.cl/StudioTools/</a>
+
+And this is what it looks like:
+<div class="bb-attachment-missing">Image not preserved: SOUNDMAN2020--Raytrace-Tool-Image-2.jpg</div>However, it is <em><span class="bb-u"><strong>dynamic</strong></span></em>, so you can change a bunch of parameters to make it do whatever you want it to do, and it updates everything automatically.
+
+If you have never used Dynamic Components in SketchUp, then it&#x27;s real easy. Just load that thing into your studio model, attach the apex of the tool (the pointy end of the triangle thingy) to your RIGHT speaker (at the acoustic center of the speaker, of course), right-click on the tool to select it, and on the drop-down menu select &quot;Dynamic Components --&gt; Component Options&quot;. That will open an option window that displays a copyright message, which basically tells you that you are not allowed to do anything with the tool except use it for your own personal, private, individual studio project. If you agree, then triple-click anywhere on the tool, and you will get the options screen, where you can adjust the parameters to your heart&#x27;s content:
+<div class="bb-attachment-missing">Image not preserved: SOUNDMAN2020--Raytrace-Tool-options-Image-2.jpg</div>With that menu, you can adjust things such as:
+
+- The spread of the &quot;rainbow&quot; slices (how large or small the angle is that you want the dispersion &quot;rainbow&quot; to cover), both vertically and horizontally,
+
+- The angle between adjacent rays. In other words, how wide each slice of the &quot;pie&quot; is. You can choose angles as small as 1 degrees steps, but it will be VERY slow to calculate like that. Especially if you have broad vertical and horizontal spread angles. A 5° step is more useful, and not too slow. Larger steps make it go faster. If you choose to display the angle numbers, it only displays them at multiples of 5° anyway (see below).
+
+- Length of the rays: how far you want the tool to extend into the room. You can set that in either distance (only metric: sorry) or in time (milliseconds).
+
+- Rotation. You can rotate the entire tool left or right, to match the acoustic axis of your speaker.
+
+- Tilt: You can tilt the horizontal plane up or down. I don&#x27;t know why I put that in there, really, but I thought it might be useful to someone one day, especially if you decide to tilt your speaker up or down (not recommended!), and it wasn&#x27;t too hard to implement, so there it is!
+
+- Horizontal display: You can choose whether or not you want to see the horizontal part inboard of the speaker (towards the center of the room), outboard of the speaker (towards the wall), both, or neither.
+
+- Vertical display: Ditto for the vertical plane.
+
+- Speaker Axis: You can display an axis that pokes out beyond the end of the &quot;rainbow&quot;, and there&#x27;s a couple of ways you can set the length of that.
+
+- Time Circles: You can also add what I call &quot;time circles&quot; to each slice of the ray-trace pie, at intervals of every few milliseconds. That shows you where the sound wave-front will be &quot;x&quot; ms after it leaves the speaker. Useful for resolving some design issues in studios.
+
+- Color Fill. You can choose to fill each time circle with an individual color, or to leave them empty. The same applies to each ray &quot;slice&quot;
+
+- Numbers: You can choose to show or not show the angle of each ray-trace slice, and the time circle numbers. The angle numbers appear as a dimension beyond the end of each slice, and the time circle numbers appear as a string of dimension arrows along the central axis of the tool. You can also select how far beyond the end you want them displayed, and how high above or below the plane you want the numbers, and for the time circles, how far you want the offset to the left or right. This can make it a bit easier to see them sometimes.
+
+- Temperature: Finally, you can enter the air temperature in your room. This is important, as air temperature affects the speed of sound, and that has an effect on the size of the time circles: if sound travels faster, it gets to any given distance sooner, so the time circles all shrink a bit for higher temperatures, and grow a bit for colder temperatures.
+
+
+CAVEATS/DISCLAIMER:
+
+1. This is not an earth-shattering tool that will design your speaker layout for you automatically! (I developed one of those too, but I&#x27;m not planning to release that one.). It&#x27;s just a simple &quot;helper&quot; that can assist a bit in visualizing what your speakers are doing, where the sound is going, at what angle it is hitting the walls, ceiling and floor, what the time delay is for each such hit, and things like that. I find it useful.  You might not.
+
+2. I&#x27;m releasing this AS IS! There is no support. Don&#x27;t expect any help with it. Don&#x27;t even ask, please. I don&#x27;t claim that this thing does anything useful, or that it is fit for any specific purpose, or that it is accurate, or even that it works! I don&#x27;t claim anything all about it at all, except that I use it myself. That&#x27;s it. If you try to use it and it doesn&#x27;t work for you, then too bad. I&#x27;m really sorry about that, but I don&#x27;t have the time to be trying to help you make it work (unless you want to pay my normal consulting fees). Just throw it away and go back to using pencil and paper. If you can&#x27;t get it to work, then maybe try visiting the SketchUp website help pages for Dynamic Components. Or just give up and forget it. If you use it and it destroys your studio model, then too bad: I&#x27;m not responsible for that either. Sorry. So make sure you save your model with a bunch of different names and on a bunch of different hard disks, thumb drives, and backup services BEFORE you try it. Ditto if it crashes SketchUp, or hangs, or crashes your computer, or hangs the computer, or burns down your house, or starts World War Three, or whatever. I&#x27;m not responsible for any of that. I did my best to make it work without it doing anything nasty, but if it does go wrong, then that&#x27;s sad, but it&#x27;s on your head, not mine. Be warned! it might go wrong. It might crash and burn. It might bite you and give you rabies. It might nuke the entire planet. It might tank the Dow-Jones. I really don&#x27;t know what it might do or what might happen when you use it or listen to my advice about anything, so I can&#x27;t be responsible for what you do with it. Use it at your own risk. You have been warned. (Yep, you guessed it: my lawyers said I had to put a disclaimer on here, even if I&#x27;m giving it away for free, so there it is!).
+
+3. It is really slow! There&#x27;s thousands of things it has to calculate in order to draw all of those slices, lines, angles, color, and numbers. It can take many seconds to update, after you click on the &quot;Apply&quot; button. While it is updating, you will see the word &quot;Working&quot; followed by a series of green bars advancing across the bottom of the main SketchUp window, as it does it&#x27;s calculations. I did my best to make it fast, but it is not fast. The more options you select, the slower it will be. If you select a 90° spread in both directions, with 1° rays, that are many meters long, plus time circles every millisecond, colors on everything and numbers too, then you might as well go make a cup of coffee, &#x27;cause it&#x27;s gonna take a while! It might even crash SketchUp (or start World War 3), so make sure you save your model before you try: With different names. In different places. The reason it is so slow is because of the silly way SketchUp has implemented dynamic components. Dynamic Components is a very useful and powerful thing, but very quirky, and very basic. Things that would be easy to do in other programming languages are very complicated in SketchUp Dynamic Components. There&#x27;s no global attributes, for example, so I had to manually copy every single attribute that I need, to every single part of the component. There&#x27;s also no way to display a number based on data: for example, the angle numbers you see there are not calculated, like you&#x27;d think, because that doesn&#x27;t work. You can&#x27;t just tell it &quot;Put the number of the angle you just made on a dimensions arrow&quot;. Nope. Doesn&#x27;t have any way of doing that. So in this tool, for each ray angle, there are actually number dimensions for every possible angle that might occur there (all 45 of them, in each of four directions, on every single ray...)! All of which I had to create manually, typing each individual number, and then I had to write code to select which one to display depending on the angle, while hiding all the others. So there&#x27;s hundreds more dimensions in there than are needed: you just can&#x27;t see them. You only see the one that makes sense. That&#x27;s also why you only get angle markers every 5°, not ever single degree. because otherwise there would be thousands more, and I&#x27;m not prepared to do that... It&#x27;s also why you only get 20ms of timing circles, and nothing less than 1 ms increments (it would be nice to have .5ms increments too, and maybe even .1 ms... but it ain&#x27;t gonna happen here).
+
+Sorry for the rant, but SketchUp loves to make things unnecessarily complicated hard for you in Dynamic Components, when it could be so simple if they would just use normal programming language conventions.
+
+So that&#x27;s why it is slow.  Because: SketchUp! AAARGH!!!   Because I had to jump through silly hoops to make the darn thing work at all!
+
+Also about SketchUp Dynamic Components: they grow like a hungry monster in a B grade horror movie! Each time you change paramaters and hit &quot;Apply&quot;, the size of your file will increase. If you change lots of things as you play around, the file can get REALLY big. As in big enough to fill the entire universe! OK, slight exaggeration there, but it can get large. So every now and then, open the &quot;Model Info&quot; window from the SketchUp main tool bar, select the &quot;Statistics&quot; tab, and hit &quot;Purge Unused&quot;. That will clear out the accumulated garbage, and make your file small enough to fit on just one planet. Warning! This will clear out ALL of the garbage from your ENTIRE model, not just the garbage created by this ray-tracing tool.
+
+4. IT PROBABLY HAS BUGS: It&#x27;s still rather crude: the circles are not really circular, but jagged lines, and ditto for the ray-trace slices... I might fix that on a later version, but for now I find it useful just as it is, for helping to figure out what the speakers might be doing in a studio that I&#x27;m designing. It might also have bugs that I haven&#x27;t found yet. If you find a bug, then please let me know, and I&#x27;ll see if I feel like fixing it.
+
+So, there you have it! Download it if you want, play with it, then throw it away if: 1) you don&#x27;t like it, 2) you can&#x27;t figure out how to use it, 3) You don&#x27;t find it useful, 4) smoke comes out of you computer, or 5) smoke comes out of the planet. Or just use it for free as much as you want on YOUR personal studio project, if you find it useful. But remember: <strong><em><span class="bb-u"> <span style="color:#0080FF">this tool is ONLY for members of the forum, to use on their own individual, private, personal studio projects!</span>  </span></em></strong> It is NOT for you to sell or rent to others, or for you to use if you design studios commercially, or if you would make money from using it in any other way, from whatever you do with it. Nope. Uh-uh! Bad! That&#x27;s not why I am releasing it. Its for folks here on the forum who want to make their own home studio, and that&#x27;s it. It&#x27;s free to you guys, but prohibited for everyone else. If you want to use it commercially, then contact me and we can talk about licensing fees. It took me many dozens of hours of head-knocking hard work to create this tool, so I&#x27;d really appreciate if you respect that, and don&#x27;t use it commercially. (I&#x27;m the only one that is allowed to do that!)
+
+I hope you find it worthwhile.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151391">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-08-28">28 August 2019</time><a class="permalink" href="#p151391" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">New version uploaded, with some bug fixes and a more compact options menu.  Current version:  V3.046
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151457">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-09-07">7 September 2019</time><a class="permalink" href="#p151457" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">I&#x27;m now releasing ANOTHER component, also for free.  Same disclaimer applies here.
+
+This time its a simple acoustic absorber, but it is fully dynamic, meaning that you can reshape it and resize it in different ways to fit whatever is you need to do in your own room. It also has automatic dimensioning on it, where the dimensions update as you change the parameters.  Like the raytracing aid, this is not an earth-shattering component: just something that I developed to be helpful in quickly trying out treatment options in the SketchUp model of studios.
+
+Here&#x27;s what it looks like:
+<div class="bb-attachment-missing">Image not preserved: SOUNDMAN2020--Absorber-Tool-cutaway-dimensioned-Image.jpg</div>Nothing fancy.  Just your basic porous absorber panel. A wood frame with insulation inside it, and plastic mesh front and back to hold the insulation in place.  That view shows it without the fabric cover visible, so you can see the inner parts.  Here&#x27;s what it looks like if you make the fabric visible:
+<div class="bb-attachment-missing">Image not preserved: SOUNDMAN2020--Absorber-Tool-normal-Image.jpg</div>Boring!  But useful.  What makes it useful is the ability to re-size it quickly and change the options, to help speed up the layout of your room.  Instead of needing to manually create and re-size each part of each absorber, this component does it all automatically.
+
+Here&#x27;s the Dynamic Component options control panel:
+<div class="bb-attachment-missing">Image not preserved: SOUNDMAN2020--Absorber-Tool-options-Image.jpg</div>This lets you set several options, such as:
+
+- Choosing the frame dimensions in three different ways: 1) A list of nominal lumber sizes, such as 2x4, or 1x8 etc. 2) A list of metric sized panels, or 3) manually entering the exact size you want.  If you choose #1 or #2 then the manual dimensions are ignored, as they are set automatically by the lumber size.  There are sensible limits on how big or small you can make the framing, and those are shown, along with the current width and thickness of the frame members.
+
+- Set the overall height and width of the device.  Limits apply here as well.
+
+- Set the insulation thickness: you can select to have that set automatically based on the lumber size, or to enter it manually yourself, or choose from a list of common sizes.
+
+- Air temperature: needed for the acoustic calculations.
+
+- Projected lowest useful absorption frequency.  This is presented in three different ways: first as the traditional &quot;quarter-wave length&quot; old-school theory, which has been proven to be wrong but you still find it in some texts that aren&#x27;t yet up to date.  Then as the more correct &quot; 1/16 wave length &quot; theory, which has been shown to be correct.  This theory states that an absorber provides useful absorption down to the wavelength that is 1/16th of the thickness of the absorber for normally incident sound (sound waves that hit the panel head-on, hitting the face at a 90° angle), and down to one octave lower for randomly incident sound waves (arriving at the panel face from all angles at once).  Be warned that the &quot;randomly incident&quot; number makes a number of assumptions that probably are not true in your room, unless it is VERY large!  The &quot;normal incidence&quot; number is more realistic, and shows the lowest frequency where your panel will have some usable effect.  The 1/4 wavelength number shows the lowest frequency where maximum absorption can be expected (assuming that the type of absorption is optimum).
+
+- Acoustic data: shows the frontal area of the insulation (does not take into account the parts of the insulation exposed through the side slots -  maybe in the next version...), along with the number of sabins of absorption (both imperial and metric) that this panel will provide, assuming that the coefficient of absorption is 1.
+
+- Display controls: the final section provides a set of controls for making some parts of the absorber invisible, so you can see what&#x27;s going on better.  One of these controls the visibility of the dimensions, in case you don&#x27;t want to see them all the time.  The dimensions will still update automatically every time you change something, even if the visibility is turned off: you&#x27;ll be able to see the new dimensions once you turn it on again.
+
+And that&#x27;s it!  Nothing fancy, really.  Just a useful component you can insert into your SketchUp model of your studio, for quickly placing and sizing acoustic absorbers in your room.
+
+Hopefully you&#x27;ll find it worthwhile.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p151478">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">richroyc</span><time datetime="2019-09-10">10 September 2019</time><a class="permalink" href="#p151478" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">WOW! Stuart thanks for these tools - I imagine they were not easy to design!!</div>
+</article>
+<article class="post" id="p151480">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2019-09-10">10 September 2019</time><a class="permalink" href="#p151480" aria-label="Link to post 5">#5</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">richroyc wrote:</div><div class="bb-quote-body">WOW! Stuart thanks for these tools - I imagine they were not easy to design!!</div></blockquote> Right!  The Dynamic Component module of SketchUp is actually quite powerful, but not so easy to use.  You can do lots of stuff with it, ... as long as you are prepared to suffer a bit, and do it slowly!  It&#x27;s rather quirky, and tedious... but if you beat it up hard enough, it&#x27;s possible to tame it, and persuade it to do fancy things.  These two are fairly basic examples that I don&#x27;t mind sharing... I have some much fancier ones that I&#x27;ve developed over the years... <span class="smilie" title=":)">:)</span>  Maybe one day, if I feel extremely generous, I&#x27;ll release one of those too.   But there&#x27;s too many hours of time invested in them to do that quite yet....  <span class="smilie" title="8)">8)</span> 
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p155144">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">henroc305</span><time datetime="2020-12-30">30 December 2020</time><a class="permalink" href="#p155144" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">thanks for your contribution we really appreciate it. But the link seems to be broken. Is there a new link to be able to download the acoustic panel software. Thanks again
+
+- Henry</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

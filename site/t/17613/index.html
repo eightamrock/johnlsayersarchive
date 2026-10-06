@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HVAC Design for Vents with Motorized Damper | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by SoundBoy in Studio Design, 2012. 16 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/17613/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>HVAC Design for Vents with Motorized Damper</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by SoundBoy on 4 June 2012. 16 replies. In the Library under <a href="/library/hvac/">HVAC and ventilation</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 17613.</p>
+
+</div>
+</header>
+<article class="post" id="p123134">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">SoundBoy</span><time datetime="2012-06-04">4 June 2012</time><a class="permalink" href="#p123134" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hey everyone,
+
+So ive been looking at the HVAC in my studio as I&#x27;m about to start reconstructing the walls and ceilings and I&#x27;ve come up with a design for the fresh air supply/return vents. 
+
+Basically its a motorized damper that will allow me to completely shut the vents whilst recording. The studio will also have split unit aircons for hot/cold conditioning so these vents are purely for the fresh air supply and return. 
+
+They work like this:
+
+The face of the vent is constructed of 32mm MDF, ive done this so that the vent itself has more or less the same density as the ceiling (2 x 15mm gypsum boards) The vent is sealed onto a hole in the ceiling with a rubber gasket or caulk and attached with bolts. On the back of the vent (inside the ceiling cavity) there is a MDF box. The air supply comes in or out of the side of this box via 200mm flexible duct. Inside the box there is a 32mm MDF plate that can be moved up or down. When the plate moves up it opens up the vent in the ceiling allowing the air flow through into the studio. When the plate moves down it presses against yet another rubber gasket and seals the vent closed. 
+
+The plate has a bolt attached at its center with a threaded rod running through. This rod is connected inline to a DC motor. When the motor spins one way the plate lowers, when it spins the other it raises the plate. The motor is controlled by a standard RF/Wireless motor control circuit so its as easy as pressing a button on a remote (like a garage door) to open or close the vent. The circuit has a built in timer that will stop the motor at a set point (when the plate reaches the correct position) It also has the option to have switches installed that will stop the motor when the plate contacts them. 
+
+My total cost to build one of these is about $75 US (actually less because I already have the wood). The only similar thing I could find to buy around here was $295 so its seems like a viable option.
+
+I wanted to get some opinions on it before I started building them and also if you feel it may be useful and you&#x27;d like to build some yourself Id be happy to give you all the sketchup files. I will do a diary on them when I do build them though. 
+
+I&#x27;ve attached a cutaway view of the whole thing for you to visualize.
+
+G<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: StudioDamper_1.jpg</div></div></div>
+</article>
+<article class="post" id="p123141">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/brihar/">BriHar</a><time datetime="2012-06-05">5 June 2012</time><a class="permalink" href="#p123141" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Design looks promising, but may be a bit too simplistic.  You may need to consider adding guide rods to prevent rubbing and it&#x27;s resultant wear and possible seazure.  Also you are missing limit switches to control the travel, these could be microswitches - the lower or closure sensor in particular will have to be calibrated (a simple bracket with an adjustable screw for actuating the microswitch (or proximity sensor or pressure sensor but I think a microswitch (probably DPDT set up in a standard 2-way configuration) is simpler). You may also want an indicator of some sort (LED?). 
+Also consider magnetic gasket around the perimeter instead of just rubber.</div>
+</article>
+<article class="post" id="p123142">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-06-05">5 June 2012</time><a class="permalink" href="#p123142" aria-label="Link to post 3">#3</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Basically its a motorized damper that will allow me to completely shut the vents whilst recording.</div></blockquote>I&#x27;m just wondering why you would want to do that?  If the HVAC system is designed correctly, then there should be no need to shut off your air supply to the room.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p123146">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">SoundBoy</span><time datetime="2012-06-06">6 June 2012</time><a class="permalink" href="#p123146" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Hey thanks for the replies,
+
+BriHar,
+
+I agree, will definitely add some sort of guidance for the plate. Also I like your magnetic seal idea will look into that, thanks. As far as the switches go, the motor control modules I will use can accept switches for this purpose so can do this easily, however the circuit does have a timer built in that can be adjusted. So If it takes say for instance 11 seconds for the plate to close or open completely from the initial set position, I will just calibrate the timer for 11 seconds and after 11 seconds the motor would stop. 
+
+Stuart, 
+
+Hey man, well the theory is to close the hole in the ceiling that is created by the vents, and by doing so achieving maximum isolation for that ceiling. Maybe I&#x27;m wrong, I&#x27;m still not all that clued up on ways for making the HVAC ideal for recording. After searching this site and others I understand the concepts behind slowing air velocity down by using larger ducting as well as inserting baffle boxes in the duct lines but In my mind I still see that hole in the ceiling as a major weak point for isolation. 
+
+Am I making mountain out of a molehill here? All the HVAC experts ive spoken to have said that having a split unit air con and a basic fresh air in and return vents in each room is going to be the best cost effective way to do it. But my concern is sound bleeding out (or worse in) through that point in the ceiling. What if the vent itself had a baffle box behind it up in the ceiling cavity? 
+
+Thanks again for the replies
+
+G</div>
+</article>
+<article class="post" id="p123154">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/brihar/">BriHar</a><time datetime="2012-06-07">7 June 2012</time><a class="permalink" href="#p123154" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">I would never trust a setup based solely on time.  After a while due to wear on the threads and any inaccuracies (rounding) of the time perameter istself, also minor fluctuations in power - oh all manner of gremlins,  the time and the physical operation could easily get out of whack leading to eventual stresses and probably malfunction.  A limit switch at least for the closing would be much more trustworthy.
+
+Never thought to question your reasons, but silencers or a muffler, baffle system integrated into the ducting would be the normal way to go, cutting off the fresh air supply could be risky (perhaps a better use of the timer function would be to auto-open the damper after a certain length of time).</div>
+</article>
+<article class="post" id="p123239">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-06-14">14 June 2012</time><a class="permalink" href="#p123239" aria-label="Link to post 6">#6</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">but silencers or a muffler, baffle system integrated into the ducting would be the normal way to go,</div></blockquote>Yup!  That was my thinking, too.
+<blockquote class="bb-quote"><div class="bb-quote-body">cutting off the fresh air supply could be risky</div></blockquote>Yup #2: Fine if you just have a speaker cab in there, but not so fine if you have people in there.
+
+Silencers is the way to go.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p123309">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gullfo/">gullfo</a><time datetime="2012-06-18">18 June 2012</time><a class="permalink" href="#p123309" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">another vote on proper baffle boxes and duct attenuation rather than something which closes off the vents.</div>
+</article>
+<article class="post" id="p123321">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">SoundBoy</span><time datetime="2012-06-19">19 June 2012</time><a class="permalink" href="#p123321" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Hey guys,
+
+Thanks for the replies. Ok well I think it&#x27;s plain to see what I should do then. Propper baffle boxes In the duct system it is. Will scrap this idea. Now just to design it. Will start a new topic once Ive done some more research and have some ideas. 
+
+Thanks again
+
+G</div>
+</article>
+<article class="post" id="p123323">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-06-19">19 June 2012</time><a class="permalink" href="#p123323" aria-label="Link to post 9">#9</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Will start a new topic once Ive done some more research and have some ideas.</div></blockquote>Don&#x27;t do that!  
+
+Don&#x27;t start a new topic, I mean.  <span class="smilie" title=":)">:)</span>  It&#x27;s much better to keep ALL of your posts together in one thread, so that your design and build are not fragmented across the forum.  People won&#x27;t know where to look to find the other details of what you are trying to do, especially folks who are only just joining in now and don&#x27;t know about your other threads, and all the other problems you are having with this build. (I think you have four or five threads going on at once, right now, if I recall correctly, each one about a different aspect of the studio that is giving you so many headaches!).
+
+So please try to just pick one of your threads, and use that as your single, combined thread.  If you want, in one posts on that thread attach some links to each of the various other threads that you have going, and at the end of each of those attach a link back to your &quot;main&quot; thread, so everyone can follow your build more easily.
+
+It just helps to keep things better organized, and all in one place.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p123330">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">SoundBoy</span><time datetime="2012-06-19">19 June 2012</time><a class="permalink" href="#p123330" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Hey Stuart,
+
+Dammit sorry I allready did it. Your right though. I&#x27;m not really used to using forums obviously. if no one has replied to the new post I will move it to this one.
+
+G</div>
+</article>
+<article class="post" id="p123332">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">SoundBoy</span><time datetime="2012-06-19">19 June 2012</time><a class="permalink" href="#p123332" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">Ok so after deciding that I wont be building my motorized dampers to shut off the air vents in the studio completely I got to designing some baffle boxes for the vents. Included are pictures of the boxes as well as a section view of the studio and a floor plan. 
+
+Basically I intend to run two ducts into each room. One for fresh air in and one for return air. The ducts will be 200mm insulated flexible ducting. All four duct lines coming from both rooms will go to a room on the other side of the building where they will be fed by duct fans. In the &quot;fan room&quot; both fresh air ducts will join to be fed by one fan and both return air ducts will join to be fed by a fan. Obviously the direction of the airflow will be opposite on the return fan. On the studio side - inside the ceiling cavity above the vents there will be a baffle box for each vent. 
+
+For conditioning I will just have a hot/cold split unit aircon in each room. 
+
+I have no idea if there is a better way to do this. Even after all my researching on studio hvac I still don&#x27;t know what is best so I&#x27;m putting it out there for some advice from you pros. 
+
+Some of you have a pretty good idea of my studios construction by now and for those who dont please feel free to ask and I will give you anything you need to help me. A sketchup model of the studios construction can be found here
+<a href="http://sketchup.google.com/3dwarehouse/" rel="nofollow noopener" target="_blank">http://sketchup.google.com/3dwarehouse/</a> ... revstart=0
+
+Looking forward to hearing your suggestions 
+
+G<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: StudioHVAC_3.jpg</div><div class="bb-attachment-missing">Image not preserved: StudioHVAC_4.png</div></div></div>
+</article>
+<article class="post" id="p123333">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">SoundBoy</span><time datetime="2012-06-19">19 June 2012</time><a class="permalink" href="#p123333" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">Floor Plan and Section<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: StudioHVAC_2.png</div><div class="bb-attachment-missing">Image not preserved: StudioHVAC_1.png</div></div></div>
+</article>
+<article class="post" id="p123354">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2012-06-21">21 June 2012</time><a class="permalink" href="#p123354" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">Your basic silencer box design looks OK, but there are some details you should be aware of:
+
+1) The cross section of the air flow at all points inside the box should be about TWICE the cross section of the inlet duct and outlet duct.  In other words, if the cross section of the duct is 150 cm^2 then at all points inside the silencer you should have a cross section of around 300 cm^2.  This forces the air to slow down to half the speed as it passes through, and creates a large impedance mis-match at both the entry and exit, thus helping tremendously to stop sound getting through while still allowing free passage of air and not adding too much new noise due to turbulence generated by the baffles.
+
+2) You need duct liner on all interior surfaces, not just the baffles: And you need to consider that when you figure out the cross-sectional areas (see above).  It is the free path, the actual open air space, that you use for the calculations.  In other words, the space between the duct liner surfaces, not the space between the box walls.
+
+3)  Leave a small gap between the silencer box and the drywall, to improve isolation. (in other words, the box should not touch the drywall).
+
+4) If the outlet / inlet goes directly to a grill, then the cross section of that entry/exit should be twice as large as the cross section within the box.  In other words, using the same example as above: if the duct is 150 cm^2, and the box interior is 300 cm^2, then the outlet should expand to 600 cm^2 at the grill.  That final expansion should be done as a gradual &quot;funnel&quot; shape, not a sudden jump, and it should be as long as possible, so it is a gradual change.  This makes the air velocity as low as possible at the grill, thus minimizing turbulence and air noise generated by the grill itself.
+
+5)  Consider using variable dampers and variable fans, so you can balance the flows better, but keep the dampers and fans as far away from the grills as possible, and always on the &quot;other&quot; side of the silencer boxes. (the side furthest away from the room).
+
+It looks like your plan is starting to come together nicely!
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p124676">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">SoundBoy</span><time datetime="2012-09-25">25 September 2012</time><a class="permalink" href="#p124676" aria-label="Link to post 14">#14</a></header>
+<div class="post-body">Hey Stuart,
+
+So sorry I never replied to this, things have been very busy on my side. Thanks as allways for great advice and help, I have redesigned my baffles using your advice <span class="smilie" title=":)">:)</span> 
+
+One question I have is, in my mind it is a big no no to put this hole in the cieling! I mean I&#x27;ve gone through all this trouble to create this massive cieling with double dry wall boards and green glue and now I&#x27;m gonna put holes in it for the air vents? What about isolation? I know I&#x27;m missing something, was hoping you could clear up this very uneasy feeling that I&#x27;m getting from the thought of the air inlets and returns destroying my transmission loss <span class="smilie" title=":)">:)</span> 
+
+The project has been standing pretty much since these last posts, and for good reason, I&#x27;ve been designing designing designing and saving saving saving. We officially started stripping the old studio a week ago and the place is now a blank canvas, so construction will start soon. I will be doing a build diary as soon as we start building tho. 
+
+G</div>
+</article>
+<article class="post" id="p124679">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/brihar/">BriHar</a><time datetime="2012-09-25">25 September 2012</time><a class="permalink" href="#p124679" aria-label="Link to post 15">#15</a></header>
+<div class="post-body">Technically, yes this does undermine your isolation, but only by a very small percent.  Important is to keep the duct between the vent and silencer as short as possible!  It should also preferably be a flexible duct - ideally as dense as possible there are lead or lead-infused flex ducts available which are ideal for this.</div>
+</article>
+<article class="post" id="p124681">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">SoundBoy</span><time datetime="2012-09-25">25 September 2012</time><a class="permalink" href="#p124681" aria-label="Link to post 16">#16</a></header>
+<div class="post-body">Hey Brihar,
+
+Thanks for the reply. I know the led impregnated flex duct you speak of, we allso get a product here called sonic duct. It&#x27;s the silver foil type flex duct but it has fiberglass insulation wrapped around it with a second outer silver skin to hold the fiber glass. On the inside of the flex (where the air moves through) it is perforated with thousands of tiny pin holes into the fiber glass layer. So it&#x27;s basically a flex duct doubling as a attenuator I suppose. I was planning on using that for all my ducting. What do you think? I&#x27;ll see if I can find it on a website and post the link.
+
+
+Allso what if I put my baffle box directly onto the cieling? So the vent comes straight out of the baffle box into the room. This way will allso stop my box from coupling the cieling with the concrete above since the only other way to install the box would be to hang it from the concrete slab above me. Note that my cieling will be completely de coupled from this slab above me, the cieling is supported from the ground up using a load baring steel structure built into my inner leaf wall.
+
+G</div>
+</article>
+<article class="post" id="p124682">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">SoundBoy</span><time datetime="2012-09-25">25 September 2012</time><a class="permalink" href="#p124682" aria-label="Link to post 17">#17</a></header>
+<div class="post-body">You can see the duct I&#x27;m talking about here 
+
+<a href="http://www.europair-africa.com/downloads/euroflex_ducting.pdf" rel="nofollow noopener" target="_blank">http://www.europair-africa.com/download ... ucting.pdf</a>
+
+It&#x27;s on the last page they call it sonodec <span class="smilie" title=":)">:)</span>
+
+G</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

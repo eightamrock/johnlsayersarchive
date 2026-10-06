@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bass problem at 40hz | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by just.sounds in Acoustics, 2014. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/18788/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Bass problem at 40hz</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by just.sounds on 12 February 2014. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 18788.</p>
+
+</div>
+</header>
+<article class="post" id="p131521">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">just.sounds</span><time datetime="2014-02-12">12 February 2014</time><a class="permalink" href="#p131521" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi!,
+
+I have a 40hz problem  <span class="smilie" title=":oops:">:oops:</span> 
+
+listening position, 1.70M from the back wall central.
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://www.just-sounds.nl/acoustics/Schermafbeelding%202014-02-12%20om%2008.22.15.png" rel="nofollow noopener" target="_blank">http://www.just-sounds.nl/acoustics/Schermafbeelding%202014-02-12%20om%2008.22.15.png</a></div><div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://www.just-sounds.nl/acoustics/Schermafbeelding%202014-02-12%20om%2008.24.39.png" rel="nofollow noopener" target="_blank">http://www.just-sounds.nl/acoustics/Schermafbeelding%202014-02-12%20om%2008.24.39.png</a></div>This dip varies a lot over the central axis of the room. So i would like to tame this.
+The peak is present on the full surface of the back wall. I tried to add 2M2 of tuned traps and took 1 db of the top of the peak  <span class="smilie" title=":(">:(</span> 
+
+The studio is build from wood strawbales and clay so screwing on the wall is not really an option. So i would have to build something hanging or freestanding.  
+
+<a href="http://www.just-sounds.nl/studio-technical-information-and-mobile-set/" rel="nofollow noopener" target="_blank">http://www.just-sounds.nl/studio-technical-information-and-mobile-set/</a> 
+
+At the bottom of this page you find the floorplan of the studio (it&#x27;s the small room).
+
+Do you think this could be adressed with paneltraps or limp membrane? Or is an active solution maybe a better idea?</div>
+</article>
+<article class="post" id="p131530">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-02-12">12 February 2014</time><a class="permalink" href="#p131530" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Several comments:
+
+1) Taking the -20 dB line as the point of reference, which seems to be how the software is set up, those peaks and nulls are only about 6 dB up or down, which is not bad at all for a control room.
+
+However, the REAL average seems to be more like -23, meaning that the peak is about +9 dB.
+
+2) On the other hand, that graph does show 1/3 octave smoothing, so the actual REAL peaks and nulls are probably much bigger: you should show the graph with no smoothing at all, or 1/48 octave smoothing at best.  Any more than that, and you are hiding the modal issues.
+
+3) The graphs are showing the entire spectrum, which is not much use for seeing modal response issues!  Zoom in to show just 15 Hz to 500 Hz.  That&#x27;s all you need to see for modes.
+
+4) Next, this is for a control room, right?  If so, the measurement should be taken at the mix position, not close to the rear wall.  The measurement mic should be located exactly where your head will be when mixing, and nowhere else.  That&#x27;s the point that matters.  The response will ALWAYS be different at other locations in the room, no matter how much you treat it.  Bass will always be more pronounced closer the walls, comb filtering will always be present close to windows, etc.
+
+5) Assuming that the numbers on the lower part of the right axis are milliseconds, that room is way too dry and over-damped already.  The overall decay time seems to be around 40 ms, which is very short for a control room.  I would be looking to increase the liveness, by covering some of the absorption with reflective surfaces.  Perhaps slot walls, or even diffusion if the room is large enough for that,
+<blockquote class="bb-quote"><div class="bb-quote-body">I tried to add 2M2 of tuned traps </div></blockquote>What type of trap, and how did you tune it?  The frontal area of the trap isn&#x27;t that important: the volume of the resonant cavity is what matters most.
+<blockquote class="bb-quote"><div class="bb-quote-body">Do you think this could be adressed with paneltraps or limp membrane? Or is an active solution maybe a better idea?</div></blockquote>Active systems generally only work well for specific locations in the room, and are rather expensive, as well as being difficult to install and tune correctly.  What other treatment is already in the room?  Please also provide some photos of the room, and use REW to to the testing. Then post the MDAT file here, so we can download it and analyze it in detail.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p131535">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">just.sounds</span><time datetime="2014-02-12">12 February 2014</time><a class="permalink" href="#p131535" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">I will post in more detail tomorrow with new measurements.
+
+I applied 8 monster bass traps from GIK for general broadband trapping. 
+6 gik scopus (60cmx60cmx20cm a piece) 40 hz traps (the 2m2) on the back wall where the energy is most concentrated. 
+
+And the ceiling is a combination of broadband trapping from 125Hz upwards and diffusion. 
+Limp membrane+poreus+mdf with holes in a diffusive pattern.
+
+But at 40hz i have the largest differences in energy when moving through the listening area. This measurement spot was actually most balanced (170 from backwall) and it serves as listening position for now <span class="smilie" title=";-)">;-)</span> But i want to make it more even so the severe nulls are more smoothed out.
+
+My proposed solution for now is to build an extra 8m2 of limp mass membrane absorber of 12kg m2 heavy flexible material with an 20 cm air cavity behind it to have approximately 40 hz resonance freq. Still have to work out the construction details though. 
+
+When I see pictures it seems as if the height and width are also important with this type of absorber. But i can&#x27;t find any of that in the calculator programs.  <span class="smilie" title=":shock:">:shock:</span></div>
+</article>
+<article class="post" id="p133507">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">dennisfoley</span><time datetime="2014-06-10">10 June 2014</time><a class="permalink" href="#p133507" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">just.sounds wrote:</div><div class="bb-quote-body">Hi!,
+
+I have a 40hz problem  <span class="smilie" title=":oops:">:oops:</span> 
+
+listening position, 1.70M from the back wall central.
+<div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://www.just-sounds.nl/acoustics/Schermafbeelding%202014-02-12%20om%2008.22.15.png" rel="nofollow noopener" target="_blank">http://www.just-sounds.nl/acoustics/Schermafbeelding%202014-02-12%20om%2008.22.15.png</a></div><div class="bb-external-img">External image, not preserved &mdash; original: <a href="http://www.just-sounds.nl/acoustics/Schermafbeelding%202014-02-12%20om%2008.24.39.png" rel="nofollow noopener" target="_blank">http://www.just-sounds.nl/acoustics/Schermafbeelding%202014-02-12%20om%2008.24.39.png</a></div>This dip varies a lot over the central axis of the room. So i would like to tame this.
+The peak is present on the full surface of the back wall. I tried to add 2M2 of tuned traps and took 1 db of the top of the peak  <span class="smilie" title=":(">:(</span> 
+
+The studio is build from wood strawbales and clay so screwing on the wall is not really an option. So i would have to build something hanging or freestanding.  
+
+<a href="http://www.just-sounds.nl/studio-technical-information-and-mobile-set/" rel="nofollow noopener" target="_blank">http://www.just-sounds.nl/studio-technical-information-and-mobile-set/</a> 
+
+At the bottom of this page you find the floorplan of the studio (it&#x27;s the small room).
+
+Do you think this could be adressed with paneltraps or limp membrane? Or is an active solution maybe a better idea?</div></blockquote>There are three main types of lower frequency absorption that you can consider. You can study membrane, Helmholtz, and diaphragmatic. Of the three, diaphragmatic would be your easiest build and have the necessary rates and levels of absorption that your room requires. 
+
+Diaphragmatic absorption levels can be acquired using the cabinet depth and material densities. Rates of absorption at the chosen resonant frequency, in your case 40 cycles and up, can be managed with the proper cabinet fill material. With diaphragmatic absorption, you also can achieve a narrow band of absorption or a more broadband approach which looking at your test data and doing a bit of interpolation, would be highly beneficial for you.   
+
+Regards,
+Dennis</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

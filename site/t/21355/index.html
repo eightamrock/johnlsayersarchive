@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two options for a control room shape. | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Gregwor in Studio Design, 2017. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21355/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Two options for a control room shape.</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Gregwor on 25 December 2017. 6 replies, 2017–2018. In the Library under <a href="/library/control-room-design/">Control room design</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21355.</p>
+
+</div>
+</header>
+<article class="post" id="p144009">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2017-12-25">25 December 2017</time><a class="permalink" href="#p144009" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi, 
+
+I&#x27;m trying to decide which layout works best for the interior treatment walls for my control room. My newer version allows the usable space of the room to be larger but doesn&#x27;t follow the standard RFZ control room designs I&#x27;ve found on Google. 
+I&#x27;d love some opinions. Of course I will be adding doors leading to the hallway and tilting walls and such once I decide on the layout.
+
+Thanks and Merry Christmas!
+
+Greg<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: Old.png</div><div class="bb-attachment-missing">Image not preserved: New.png</div></div></div>
+</article>
+<article class="post" id="p144010">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-12-25">25 December 2017</time><a class="permalink" href="#p144010" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">To be honest, I would not go with either of those!  They both have multiple wall segments that meet at unusual angles, and they both waste considerable space.
+
+When designing a control room, there are several basic key aspects and &quot;rules of thumb&quot; that you should take into account.  
+
+First, floor are and room volume should be large enough.  Take a look at specifications for critical listening rooms, such as ITU BS.1116-3, and you&#x27;ll see that there are certain minimum sizes of floor area, and minimum room volumes, that are recommended.  Any design that significantly reduces the room volume is a waste of space.  And money!  Real estate does not come cheap, and building materials are not cheap either, so if you are wasting those for no valid reason, that doesn&#x27;t seem smart.  Try to maximize volume and floor area.
+
+Then look for a &quot;room ratio&quot; that makes sense.  Once again, ITU BS.1116-3 and other similar documents lay out equations for determining if the relationship between the length, width, and height of the room are good, or not so good.  Those are simple mathematical formula that you can figure out on a calculator, or even by hand, or even in your head if you are good with math.   However, those equations are ONLY valid for purely rectangular rooms: six sided, with three pairs of sides mutually parallel and perpendicular.  If your room interior has more than six sides, or any sides skewed at angles other than 90°, then you CANNOT validly use those equations to predict the modal response of the room.  If the room is ononly slightly off from being a rectangle, then you can still use them to get an idea of how the room might work out, but if the room is far from rectangular such s in both of your diagrams, then all bets are off, and those equations are no use.  In that situation, you need to resort to far more complicated methods, such as FEM/FEA software, that models and analyzes the room as a &quot;mesh&quot; of thousands of interconnected &quot;finite elements&quot;, which are basically points and lines that represent different aspects of the room, such as air temperature, pressure, volume, location, resilience, etc. You&#x27;d need to hire an expert engineer to do that for you, as it is far beyond the ability of most home studio builders to correctly define the mesh and the boundary conditions, the run the simulation, then analyze the results.  And you don&#x27;t even need to do that anyway!  Modal response and room ratios are not &quot;life-and-death&quot;.  As long as your room has a reasonably decent ratio, and does NOT have a bad ratio, that&#x27;s all that really matters.  Here too, if I Have to choose between getting a great ratio but less room volume, or a less good but still acceptable ratio with more room volume, I&#x27;d go for &quot;more room volume&quot; pretty much every time.
+
+Then there&#x27;s the basic design concept:  NER rooms are one thing, LEDE rooms are another, CID rooms are different again, RFZ are yet something else.  Each has it&#x27;s own requirements, that you will have to take into account in your design.
+
+There&#x27;s also the issue of shape, and acoustics: In general, a room should never get narrower towards the back:  It should widen out behind the mix position if possible, or just stay the same width.  Rooms that get narrower at the back tend to have more complex bass problems, since they are &quot;compressing&quot; and focusing the bass.
+
+Then there&#x27;s functionality:  A studio where you have long, convoluted path to walk to get from the CR (control room) to the LR (live room), or where there are poor sight lines between rooms, or difficult access to load in and load out equipment, instruments and people, or no bathroom nearby, or other impediments, is not good.  I always try to lay out studios so that there are logical, simple, short paths between rooms (with the minimum number of doors), plus good sight lines, easy access with broad doors where they are needed, etc.
+
+There are many other aspects to take into account.  Studio design is part science, part art, and part experience.  Getting the mix right isn&#x27;t easy, sometimes.
+
+Overall, I&#x27;d suggest going for a simpler design, based on a mostly rectangular room, perhaps with small sections of angled walls at the front, if you plan to soffit mount your speakers.  If you do not plan to soffit mount them, then there&#x27;s not much point in angling walls at all!  Just keep the room rectangular, and treat accordingly.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p144040">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2017-12-29">29 December 2017</time><a class="permalink" href="#p144040" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Hi Stuart,
+
+I&#x27;ve added more to the layout (some door openings and drywall) and also tried to make the room more symmetrical while using the wasted space. I added a closet to the left of the mixing position. I may want to soffit mount monitors one day and ultimately hate the feeling of square rooms. 
+
+- I tried to use any angled walls to act as bass traps.
+- I angled the side walls in the rear half of the room only slightly which will hopefully allow me to have more air space in my MSM double door which will also eliminate the square room vibe. I made sure to have the rear half of the room open up to avoid compression/low end mess.
+
+Regarding the diffusion on the back wall, you&#x27;re right that I&#x27;ve read lots of threads and seen lots of &quot;pro&quot; studios with this. Ultimately, I am the only one who has to make critical mix decisions at mix position (which will be greater than 15ft from the diffusion wall) however, it does suck having to constantly let producers or the band sit in my chair while listening to mixes. I would love to have to have the mix translate more accurately at the couch or chair positions in the room. I&#x27;ve read that the couch positions in Wes Lachot&#x27;s control rooms sound killer, yet he has diffusion on the back walls in pretty much every design I&#x27;ve seen of his. So again, I&#x27;m confused what to do for rear wall treatment <span class="smilie" title=":-(">:-(</span>
+
+Regarding the couch riser, I&#x27;ll either seal it and fill it with sand to avoid it becoming a drum skin, or else hire you to tell me how to tune it to make it a bass trap.
+
+Lastly, for making the build easier, I&#x27;d love to avoid having drywall exposed anywhere. I was hoping to have the interior 2x4 frames filled with 703 and covered with Guilford of Maine then add wood slats where appropriate (with a professional like yourself directing me --- that I&#x27;ll gladly pay for).
+
+I thought I&#x27;d post here for others to learn from rather than private messaging or emailing you.
+
+Having said that, am I on the right track here or out to lunch?<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: Control Room 3.png</div></div></div>
+</article>
+<article class="post" id="p144044">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-12-30">30 December 2017</time><a class="permalink" href="#p144044" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">and also tried to make the room more symmetrical while using the wasted space.</div></blockquote>... yet there&#x27;s still a lot of wasted space in there,   <span class="smilie" title=":)">:)</span>   <span class="smilie" title="8)">8)</span> 
+<blockquote class="bb-quote"><div class="bb-quote-body">I added a closet to the left of the mixing position.</div></blockquote>You could do that.  Personally, I would use that space for the HVAC silencers.  If not there, then where will you put them?  They are large....
+<blockquote class="bb-quote"><div class="bb-quote-body"> I may want to soffit mount monitors one day</div></blockquote>If you plan to soffit mount them &quot;one day&quot;, then you had better plan for that now!  Do the full design for the soffits, and a proper RFZ style room, even if you don&#x27;t actually build the soffits yet.  Trying to retrofit soffits to a room that was never designed for that is a nightmare.  It&#x27;s far better to design with that end in mind, then just don&#x27;t build them yet: leave that entire area empty, with temporary treatment in it, until you build the soffits.
+
+I&#x27;d encourage you to build them now anyway: soffit mounting your speakers is the single best thing you can go for the acoustics of the room!  It solves several of the issues that &quot;speakers on stands&quot; always create, and greatly improves the overall acoustic signature of the room.
+<blockquote class="bb-quote"><div class="bb-quote-body">and ultimately hate the feeling of square rooms.</div></blockquote>Ummmm... in what way?  Take a look at some of the rooms that John has designed, and some that I have designed, and some that other forum members have designed, and see if you can tell which ones are rectangular, and which ones are not.... <span class="smilie" title=":)">:)</span>  You seem to be confusing the ACOUSTIC shape of the room, with the VISUAL shape of the room.  It&#x27;s not the same thing at all.  What you see when you look around the completed room is NOT the acoustic shape.  It can LOOK far from rectangular as far as your eyes are concerned, but still be very rectangular as far as your ears are concerned.
+<blockquote class="bb-quote"><div class="bb-quote-body">- I tried to use any angled walls to act as bass traps.</div></blockquote> ??? How&#x27;s that going to work?  Walls are not bass traps, and bass traps cannot be walls...  Your diagram does seem to show that you have placed walls where your bass traps should go, but you seem to be confusing the two.  Bass traps are usually just built from very large, deep, thick low-density insulation.  If you put a wall in front of it, then it won&#x27;t work too well, since the sound will never get to it, in order to be absorbed. . . . . . 
+
+Also, how do you plan to deal with the edge diffraction artifacts that will be generated by the suddenly angled walls just behind the mix position?  Are you not concerned about that?
+<blockquote class="bb-quote"><div class="bb-quote-body"> I angled the side walls in the rear half of the room only slightly which will </div></blockquote> . . . .  &quot;which will&quot; .... reduce the available room volume for no discernible benefit... <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">to have more air space in my MSM double door</div></blockquote>Why do you think you need more air space there?  What frequency are you tuning your MSM system for, overall, and what frequency are you tuning it for in the area where the door will be?  Why the discrepancy?
+<blockquote class="bb-quote"><div class="bb-quote-body">which will also eliminate the square room vibe.</div></blockquote>I&#x27;m still not getting what you mean by that... The room can BE rectangular without it LOOKING rectangular.  Does this room look rectangular to you?
+<div class="bb-attachment-missing">Image not preserved: IMG_0261 (2)-not-rectangular.JPG</div>It is.  It is actually a perfect rectangle... ACOUSTICALLY...  Yet here&#x27;s a view from the mix position towards the window on the left wall...
+<div class="bb-attachment-missing">Image not preserved: IMG_0436-not-rectangular.JPG</div>A room can BE rectangular, form the point of view of how sound waves see it, without LOOKING rectangular.
+<blockquote class="bb-quote"><div class="bb-quote-body"> I would love to have to have the mix translate more accurately at the couch or chair positions in the room.</div></blockquote>It&#x27;s not so easy to tune a room to have great acoustics at both locations, but it can be done.  However, if you have tuned acoustic treatment devices close to a listening position, then the chances are really slim that you&#x27;ll get even, smooth, clean response at that position.
+<blockquote class="bb-quote"><div class="bb-quote-body"> I&#x27;ve read that the couch positions in Wes Lachot&#x27;s control rooms sound killer,</div></blockquote>Hmmm... think of what you just said... If a location in a room &quot;sounds killer&quot;, then it is not flat!  <span class="smilie" title=":)">:)</span>  The reason it &quot;sounds great&quot; at the couch in many rooms, is because there&#x27;s a bass boost at the couch, due to the proximity of walls and treatment.  It sounds GREAT there!  But any spot that boosts, cuts, or colors the sound in any way would not be a good location to try to do a mix.  The mix position must have FLAT response, and to be honest, flat response isn&#x27;t &quot;killer&quot;.  It isn&#x27;t anything, actually.  It&#x27;s just ... neutral. It is flat, and it sounds flat, as it is supposed to.  Many people are disappointment when they listen to music in a truly flat room, because it sounds..... welllll... ummm... flat!  And &quot;flat&quot; isn&#x27;t interesting.  It isn&#x27;t &quot;killer&quot;. It isn&#x27;t ego-boosting, or earth-shattering, or cool, or wonderful... it is totally &quot;nothing&quot;.  That&#x27;s why I usually aim to have response that is similar to the famous B&amp;K curve in control rooms I design because it sounds slightly more interesting, less flat, but you wouldn&#x27;t call it &quot;killer&quot;.
+
+The reason you want flat response (or near flat, such as B&amp;K or X-curve, or some such), is because you need to be like a court of justice n the USA: You need to hear the truth.  The whole truth.  And nothing but the truth.  If the truth is ugly, you need to hear that. If it is harsh, or dull, or skewed, or boomy, or shrill, or tiny, or dry, or whatever, then you need to hear exactly that, so you can do your magic in the mix.  You need the room to be flat, or close to flat, so that your mixes will translate to all other rooms, regardless of the acoustics of that &quot;other&quot; room.  If the mix sounds good in a flat room, it will sound good anywhere.  But if the room is enhancing the bass, or the treble, or subtracting some parts of the spectrum ¿, or adding to others, such that the room has character, and the room itself sounds good, then your mixes will not translate.
+
+For example, if your room is over-enhancing the highs, so that you are getting a little more &quot;air&quot; and &quot;shimmy&quot; and &quot;crystalline clarity&quot; that sounds really neat, then your mixes will sound dull in other rooms, because you will have a natural tendency to compensate for the excessive high end by pulling it back in the mix.  It will sound good in your room, because your room is adding back in what you too out, but when you play it elsewhere, it will sound a bit lifeless, lacking clarity, a little dull, off...
+
+And if your room happens to be cancelling some frequencies on the low end, you&#x27;ll naturally boost them in the mix so that it sounds good again, but then when your mix is played in other rooms, those tones will sound too loud, and your mix will be &quot;heavy&quot;, unpleasant.  Or if your room has too little bass trapping in general, or unbalanced bass trapping, the low end will be over-represented in the room, so you will subconsciously compensate for that in the mix, by pulling down the bass a bit... it will sound cool in your room, but when played elsewhere, people will say that it is &quot;light&quot;, &quot;thin&quot;, &quot;under-powered&quot;,  &quot;loose&quot;, and similar things, because the low end won&#x27;t be there.
+
+Having the couch at the back can give you a great place to to hear the mix with a bass boost and shiny highs, because that&#x27;s what you normally get at the back, with diffusers close by.  It can sound nice, for sure.  &quot;killer&quot; even!  But not good for mixing.
+<blockquote class="bb-quote"><div class="bb-quote-body"> yet he has diffusion on the back walls in pretty much every design I&#x27;ve seen of his. </div></blockquote>John and I could both put you in touch with customers who came to us after they had rooms designed by big-name designers.... but they needed us to &quot;fix&quot; their rooms, that didn&#x27;t work.  I have been hired to do just that: fix designs by well-known names that didn&#x27;t work out the way the studio owner expected.  I won&#x27;t be naming names, and I doubt that John would either, but don&#x27;t rely on well-recognized industry names to be synonymous with excellent studios that the customers are satisfied with and provide excellent nearly-flat acoustics.  <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body"> So again, I&#x27;m confused what to do for rear wall treatment</div></blockquote> <span class="smilie" title=":)">:)</span>  It&#x27;s a dilemma, isn&#x27;t it?  <span class="smilie" title=":)">:)</span>  Basically, what I do is to do what the room needs acoustically, not what an interior decorators thinks will look good, and not necessarily what the acoustics prediction and modelling software said it would need.  That sounds like a bit of a cop-out, I know, but sometimes it&#x27;s worthwhile trying something different, or unusual, to see if it works.  9 times out of 10, it wont, but sometimes it does.  I don&#x27;t know if you looked at the Studio Three thread, but we did several tests of very strange stuff in there, trying to iron out a few kinks in the response.  At some points, we had rolls of insulation sitting in stools, and hard panels clamped at various angles and locations, testing, testing... some of that turned into actual treatment devices, but most of it didn&#x27;t  Either it didn&#x27;t have the effect I was looking for, or it did have the effect but also had an unwanted side effect.  There&#x27;s stuff in that room that&#x27;s a little unconventional, because the room shape itself was unconventional and could not be changed... yet look how it worked out.  You&#x27;d find it pretty darn hard to find a control room setup anywhere on the planet that has flatter response.  Some of the stuff we did in there was &quot;by the book&quot;, conforming to the predictions and conventions and equations... and didn&#x27;t work.  Some of it did.  Some went too far.  Some not far enough.  So for that room, I just did what needed to be done to get the results that the owner wanted.  And the interesting thing is that there is very little treatment on the rear wall of that room!  The rear wall has a large window in the middle, a set of glass double doors on the right, and another door to a closet on the left: not much place to put treatment!  So I had to come up with alternatives.
+
+Excuse the waffling, but that&#x27;s all to say that the rear wall should just get the treatment that it needs to do the job.  For your room, most likely that will be bass traps in the corners, thick absorption across the rest, with either wood strips or thick plastic over the insulation to keep the highs in, and perhaps some form of diffusion.  Or perhaps not.
+<blockquote class="bb-quote"><div class="bb-quote-body">Lastly, for making the build easier, I&#x27;d love to avoid having drywall exposed anywhere. I was hoping to have the interior 2x4 frames filled with 703 and covered with Guilford of Maine then add wood slats where appropriate</div></blockquote>Then build your inner-leaf walls inside out!  
+
+And take a close look at the photos of that room that I posted above: that&#x27;s exactly what you are seeing... <span class="smilie" title=":)">:)</span>  Here&#x27;s a view towards the main entry door, showing the completed rear wall, just before the fabric went on:
+<div class="bb-attachment-missing">Image not preserved: BRAUS--42--Entry-door-from-inside.jpg</div>And a view of the almost-finished rear, with the fabric on:
+<div class="bb-attachment-missing">Image not preserved: BRAUS-CR-to-door_0437.JPG</div>A view the other way, from the door towards the mix position.  All of the wall and ceiling surfaces you see are fabric:
+<div class="bb-attachment-missing">Image not preserved: Inside-out-ceiling-10.jpg</div>There&#x27;s basically two approaches to tuning a room:  1) Start with out too &quot;bright&quot;, too &quot;live&quot;, and slowly damp it down until you get it where you want it.  Or 2) Start with it too &quot;dead&quot;, too &quot;dry&quot;, and slowly liven it up until you get it where you want it.  Both are valid.  Both work.  But I prefer the second approach, for several reasons, including saving space and also because I think you can make it look cleaner, neater, less &quot;chunky&quot; like that.  And doing &quot;inside-out&quot; walls is a great way to start for that second approach.  I find it easier, and it gives you more control of the tuning.
+<blockquote class="bb-quote"><div class="bb-quote-body">Having said that, am I on the right track here or out to lunch?</div></blockquote>A bit of both!  <span class="smilie" title=":)">:)</span>  The basic layout is fine, with caveats, but some of the details area a bit off.  The good thing is that you have a good sized space to start with, so it is relatively easy to get it working. It can be quote a nice studio, I think, if you design it carefully.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p144045">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2017-12-30">30 December 2017</time><a class="permalink" href="#p144045" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Okay. I&#x27;m pretty excited after reading your response Stuart.
+
+I think I didn&#x27;t explain my design properly. So the walls that I keep adjusting in my SketchUp layout would purely be sound treatment walls that are full of exposed 703 with no drywall on either side of them. The &quot;square&quot; exterior walls will be 2x6 staggered stud walls with two layers of 5/8&quot; drywall and green glue between each layer. That single wall will be my two leaf system. Again, the &quot;angled&quot; walls I&#x27;m drawing it will be my treatment walls which I was hoping to cover in Guilford of Maine and create that super dead space that you said you like to start off with. Then add strips of wood to it (with your advice) to tune the room. That&#x27;s why I said the angled walls in the corners would be my bass traps.
+
+Having said all of that, is my 3rd design on the right track? I&#x27;m trying to keep the room as big as possible as per your instruction. The room is symmetrical and as &quot;square&quot; as I can make it ACOUSTICALLY. 
+
+I do not know what frequency I&#x27;m tuning the MSM dual door to. All I know is that to maximize the TL between two doors is to have them as far apart from one another as possible. I will try and seal/make the sound lock space between the doors a part of the drywalled wall system.
+
+As for HVAC silencers, I was planning on having the HVAC &quot;soffit&quot; (I believe that&#x27;s what it&#x27;s called in the forums) around the ceiling on the rear half of the room). Having said that, ideally, I&#x27;d like to have the warm air coming out more at ground level and have the cold air return registers up high.... so I have to figure that out still.
+
+Lastly, should I start off having the couch riser filled with sand and if the room sucks and needs more bass trapping, I&#x27;ll have you help me tune it into a bass trap later on?
+
+Thanks again for all of your advice Stuart. I look forward to working with you on the fine details once I get basic treatment room shapes sorted out so I can sleep peacefully at night hahaha</div>
+</article>
+<article class="post" id="p144073">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-01-02">2 January 2018</time><a class="permalink" href="#p144073" aria-label="Link to post 6">#6</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">So the walls that I keep adjusting in my SketchUp layout would purely be sound treatment walls that are full of exposed 703 with no drywall on either side of them. </div></blockquote>Sorry, but I don&#x27;t understand the purpose of that at all!  And in that case, I also do not see where your isolation system is...  This is making less and less sense as we go along!
+<blockquote class="bb-quote"><div class="bb-quote-body">The &quot;square&quot; exterior walls will be 2x6 staggered stud walls with two layers of 5/8&quot; drywall and green glue between each layer.  That single wall will be my two leaf system. </div></blockquote>I think you should try to actually model that in 3D, with studs and drywall, so you can see for yourself why it won&#x27;t work...  <span class="smilie" title=":)">:)</span>  It is impossible to build what you are trying to build, in the way you are showing it right now.  Work it through, to see why... And do consider that you need to have the inner-leaf of each room properly decoupled from the outer leaf, AND ALSO decoupled from the other room...
+
+And also consider that staggered stud walls offer much less isolation than proper 2-leaf MSM walls...
+
+Here&#x27;s how you should be building it:
+<div class="bb-attachment-missing">Image not preserved: MSM-two-leaf-WallChunk-conventional--inside-out--three-rooms--S04.png</div>That shows a typical situation where there&#x27;s a large space, such as an unfinished basement for example (the perimeter wall around the whole thing), and part of it needs to be turned into a studio, while the other part does not.  In this case, the section on the left will not be part of the studio, and the three rooms on the right ARE the studio.  Take a close look: there&#x27;s a single outer-leaf that surrounds all three rooms, and each room is built as a single leaf that is completely decoupled from the outer leaf, and also completely decoupled form the other rooms.  If you start at any point, in any of those rooms, you will find that there are exactly two leaves between that location and any other adjacent room.  Never one leaf, never three leaves: only two.  It is also dead easy to build, and in this case, all three rooms are built &quot;inside-out&quot;, so treatment is also dead easy, WITHOUT requiring extra strangely angled frames filled with even more insulation...
+
+This is the way studios are normally built.  It&#x27;s the most effective, simplest, lowest cost method, and it minimizes construction materials and complexity, while maximizing room volume and isolation. Win-win-win-win.
+<blockquote class="bb-quote"><div class="bb-quote-body">Again, the &quot;angled&quot; walls I&#x27;m drawing it will be my treatment walls which I was hoping to cover in Guilford of Maine and create that super dead space that you said you like to start off with. </div></blockquote>Again, those angled walls are totally unnecessary, ineffective, costly, and complex!  <span class="smilie" title=":)">:)</span>
+
+Again, if you simply build your inner-leaf walls &quot;inside-out&quot;, as shown above, then you already have insulation-filled surfaces facing the entire room!  Why would you then want to add yet another &quot;wall that is not a wall&quot;, to do the same thing that is already there?
+
+And what is the purpose of angling such a &quot;wall&quot;, when the angles would have no effect on anything?  Angled walls are only useful when they have hard, solid, rigid, massive surfaces on them, that actually can reflect sound in useful directions.  A &quot;wall&quot; made of pure insulation, with no mass, no rigidity, no solidity, and no hardness, is not going to reflect anything, so why would you go to all the hassle of angling it?
+
+In other words, there is zero purpose to your inner angled walls.  They accomplish nothing at all, at great expense, and high complexity, and they also completely prevent you from applying solutions such as slot walls or perforated panel treatment, since those require sealed cavities at the back, and with your plan it is impossible to have a sealed cavity...
+<blockquote class="bb-quote"><div class="bb-quote-body"> Then add strips of wood to it (with your advice) to tune the room.</div></blockquote>In other words: add a slot wall.  But that will not (and cannot) work in your system, because slot walls are tuned resonant devices, based on the Helmholtz resonator principle.  In order for that to work, you MUST have a sealed cavity behind the wood slats... but that&#x27;s impossible with your system. If you tried to create a sealed cavity by adding drywall or plywood to the back of the &quot;treatment wall&quot; studs, that would create a 3-leaf wall, thus negating your isolation...
+
+You are not thinking this through properly . . .
+<blockquote class="bb-quote"><div class="bb-quote-body">Having said all of that, is my 3rd design on the right track?</div></blockquote>No.  Because it is based on fall assumptions.
+<blockquote class="bb-quote"><div class="bb-quote-body">I do not know what frequency I&#x27;m tuning the MSM dual door to.</div></blockquote>  <span class="smilie" title=":shock:">:shock:</span>  <span class="smilie" title=":roll:">:roll:</span> <span class="smilie" title=":)">:)</span>  Then how do you know if you are isolating your room correctly?  If your MSM frequency is too high (for example, the lowest frequency you need to isolate is less than 1.414 times the MSM resonant frequency), then the system will not only fail to isolate, but in fact will AMPLIFY sounds going through the wall.  So for example, let&#x27;s say that you just took a wild guess at the air gap and mass, and it turns out that your MSM frequency is 34 Hz.  Considering that  6-string bass can get down to about 36 Hz, and that&#x27;s just 1.058 times the MSM frequency, your wall will actually amplify those bass notes: they will be louder on the outside than if you had no wall at all...
+
+It&#x27;s important to do the math!
+
+If you don&#x27;t do the math, and just sort of select your air cavity size, damping, and leaf mass by luck and chance, then it&#x27;s rather likely that the wall won&#x27;t perform the way you hoped it would, and you&#x27;ll end up with isolation issues, and treatment issues too.
+
+Studio design doesn&#x27;t work out to well if you just guess at things: you really should take the time to understand the principles, and do the math.  After you&#x27;ve designed and built a few dozen studios like this, you start to get a feeling for how things will work out, and you can skip a few steps in the process for most cases, but when you first start out, it&#x27;s important to actually work through the complete design process, doing all the math along the way, to make sure it really will work.
+<blockquote class="bb-quote"><div class="bb-quote-body"> All I know is that to maximize the TL between two doors is to have them as far apart from one another as possible.</div></blockquote>Ummm... well, yes... that&#x27;s true... but &quot;maximize&quot; relative to what?  That&#x27;s like saying &quot;All I know is that to maximize the distance I can drive on a tank of fuel, I have to drive slowly... but &quot;slowly&quot; relative to what?  And &quot;maximize distance&quot; relative to what?  Unless you have done the math, and know that when you slow down from 70 MPH to 30 MPH, you can drive 327 miles on a tank instead of just 270, and you need to go 305 on this trip, then your statement is meaningless and pointless!  You can0t guess: You have to KNOW what the numbers are.
+
+Saying that you need to have an air gap &quot;as large as possible&quot; means nothing, unless you know what the minimum sized air gap is that you NEED for your case.  Let&#x27;s say that in reality you need an 8&quot; air gap, but you don&#x27;t know that because you didn&#x27;t check, and instead you decide to &quot;maximize&quot; it to 6 inches, because that sounds about right for you... well, that means you screwed your isolation!  The wall wont isolate.   On the other hand, if you maximized to 8&quot;, but really only needed 6&quot; to get the isolation that you need, then you wasted 2&quot; of space....  
+
+Do the math, to find out if your &quot;maximized&quot; is enough, or too much, or just right.
+<blockquote class="bb-quote"><div class="bb-quote-body">I will try and seal/make the sound lock space between the doors a part of the drywalled wall system.</div></blockquote>Ummm. you do NOT want to seal the space between the doors!  That would be a mistake.  That is part of yoru MSM system, so that gap between the doors MUST be open to the gap between the walls.  Sealing it would create a separate resonant system, which would probably behave somthing like an undamped membrane trap...
+<blockquote class="bb-quote"><div class="bb-quote-body">As for HVAC silencers, I was planning on having the HVAC &quot;soffit&quot; (I believe that&#x27;s what it&#x27;s called in the forums) around the ceiling on the rear half of the room).</div></blockquote>I&#x27;m not sure what you are referring to.  Do you have a link to that?  
+
+Here&#x27;s a selection of silencer boxes built by forum members:  
+
+<a href="/t/15430/">viewtopic.php?f=2&amp;t=15430&amp;start=45</a>
+<a href="/t/1929/">viewtopic.php?f=2&amp;t=1929&amp;start=74</a>
+<a href="/t/8425/">viewtopic.php?t=8425&amp;start=2</a>
+<a href="/t/11542/">viewtopic.php?f=1&amp;t=11542&amp;start=5</a>
+<a href="/t/9761/">viewtopic.php?f=2&amp;t=9761&amp;start=0</a>
+<a href="/t/11485/">viewtopic.php?f=2&amp;t=11485&amp;start=98</a>
+<a href="/t/11508/">viewtopic.php?f=2&amp;t=11508&amp;start=157</a>
+<a href="/t/13821/">viewtopic.php?f=2&amp;t=13821</a>
+<a href="/t/15378/">viewtopic.php?f=1&amp;t=15378&amp;start=44</a>
+<a href="/t/18202/">viewtopic.php?f=2&amp;t=18202&amp;start=16</a>
+
+
+But here too, you MUST to the math, to make sure the silencer box will do two things: 1) Allow the correct volume of air to flow through at the correct speed, and 2) produce the correct amount of insertion loss at the correct frequencies, to match the rest of the isolation system.
+<blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;d like to have the warm air coming out more at ground level and have the cold air return registers up high.... so I have to figure that out still.</div></blockquote>Ummmm... I hope you plan to build your studio inside the ISS Space station then!  Because down here on planet earth, warm air RISES and cold sire DESCENDS   <span class="smilie" title=":!:">:!:</span>  So the place where you wanted to &quot;remove the cold air up high&quot;, would actually remove your WARM air...
+
+You need to think this through better, and do some research on how air behaves, and how to design HVAC systems.
+<blockquote class="bb-quote"><div class="bb-quote-body">Lastly, should I start off having the couch riser filled with sand and if the room sucks and needs more bass trapping, I&#x27;ll have you help me tune it into a bass trap later on?</div></blockquote>That sounds to me like you are wanting to design your room by guesswork, and try to fix it later if it doesn&#x27;t work!  <span class="smilie" title=":)">:)</span>  It is far, far better to design it from the start so that it WILL work, then just fine tune the details after it is built.
+
+I&#x27;m not sure if you have ever built a sand-filled deck before, but I should warn you that it is a messy thing: the sand goes everywhere, mostly into places where you did not want it to go.  And it leaks out:  You can try your best to stop it, but it is massive, and it is &quot;loose fill&quot;, and it compacts under vibration, and it can fit through very tiny gaps... unless you seal every last nook and cranny, gap and crack, you&#x27;ll forever be chasing grains of sand around your room.  Then if it does NOT work the way you expected,.... well then, good luck with trying to remove a few tons of sand, and leave the room spotless afterwards!  <span class="smilie" title=":)">:)</span>
+
+This is not a good plan.  Either build it as sand-filled, totally sealed, and leave it like that forever.  Or don&#x27;t build it as sand-filled, and tune it from the start.  Trying to do a major change like that &quot;in case it doesn&#x27;t work&quot; is not a good idea.  It&#x27;s guessing and hoping, instead of calculating and designing.
+
+Of course, so far I&#x27;m assuming that you want your control room to be top-notch, well isolated, and as neutral as possible for its size and shape, meeting the specs for critical listening rooms as closely as possible.  If that isn&#x27;t the case, and you are fine with just having it tuned any old way that it happens to turn out, then you don&#x27;t need to take these precautions, and plan in detail!  <span class="smilie" title=":)">:)</span>  But from what you are doing so far, it seems that you really do want it to be as good as it possibly can!
+<blockquote class="bb-quote"><div class="bb-quote-body">Thanks again for all of your advice Stuart. I look forward to working with you on the fine details once I get basic treatment room shapes sorted out</div></blockquote>Here too that sort of sounds like you want an insurance policy!  In case your random, non-calculated, guesswork design doesn0&#x27;t work out, you want to have somebody on hand to fix it afterwards?  <span class="smilie" title=":)">:)</span>
+
+Sorry to be harsh, but sometimes it&#x27;s good to have a bucket of water thrown in your face, to get your attention...  <span class="smilie" title=":)">:)</span>
+
+I&#x27;d really, really suggest that you should get a couple of books, and work your way through them slowly and carefully, until you fully understand the basics of acoustic theory, and the basics of studio design.  The two books I normally recommend, are: &quot;Master Handbook of Acoustics&quot; (&quot;MHoA&quot;) by F. Alton Everest (that&#x27;s sort of the Bible for acoustics), and &quot;Home Recording Studio: Build it Like the Pros&quot;, by Rod Gervais.  The first one will give you the background in acoustics that you need to be able to design a studio, and the second one will give you the basics for actually designing it and building it.  Realistically, for someone in your situation, it takes about three months of working through &quot;MHoA&quot; and doing the related research, until it starts to make sense, then another couple of months working through &quot;Rod&#x27;s book&quot;, until you get the hang of that, then maybe 3 to 6 months of actual design in SketchUp, with the help of forum members to guide you around the rough spots.  <em><span class="bb-u">THEN </span></em>you can start building.  So allow for at least 6 months to a year, starting now, until you&#x27;ll be ready to build.
+
+Hope you don&#x27;t think I&#x27;m trying to put you down, or insult you, or put you off trying to do this!!  Not at all: I&#x27;m just trying to get your attention, pointing out the issues that you have not noticed, so you can get on the right path and end up with a great studio!
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p144358">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-01-28">28 January 2018</time><a class="permalink" href="#p144358" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Okay, 
+So it&#x27;s been a minute here since I&#x27;ve posted my progress. I have much more done than this picture shows, but I&#x27;m meeting with the electrician who will be allowing me to help him run the conduit in the concrete and I&#x27;m having second thoughts about my room construction techniques. I realize that I can gain 3.5&quot; on each wall of my rooms if I build them using John&#x27;s inside out method, but, with that comes an exponentially longer, expensive, and tedious task of getting the walls up. I also won&#x27;t have much physical help to build this place, so that is a problem too. 
+
+I really feel like I&#x27;m wasting a lot of space. The foundation of the basement will be my outer leaf. Right now I&#x27;ll have 1 foot of space between the drywall and the foundation. I think I could easily spare another 3.5&quot; but man, the cost of caulk and headache building the walls seems extreme.
+
+Between the control room and ISO room, you can see that I have two 5&quot; conduits coming up between them. Yes, I have thought through cabling and power thoroughly <span class="smilie" title=";-)">;-)</span> Anyway, having normal walls, as you can see in the one picture, the gap is 13&quot;. The distance between the drywall in the ISO room and the front of my acoustic wall (window/soffit wall) is 31 7/8&quot;. In order to get the ray tracing correct and me sitting at 38% depth of the room, that&#x27;s where the acoustic wall has to live. I&#x27;m okay with it being so far from the front of the inner leaf purely because I will need as much bass trapping as possible due to the HVAC ducts eating up so much of the upper corners in the rear half of the room.
+
+You can see in the ceiling picture that I am 100% going to build the ceiling inside out to maintain height as my floor to ceiling height is only 9&#x27; 8 1/12&quot;.
+
+So, what do you guys think I should do:
+- Build the walls normal like I have them now
+- Build the window wall of the ISO room inside out (would increase that rooms size a bit and not increase price/construction headache too bad)
+- Go 100% and inside out the entire project (I don&#x27;t want to do this unless you all tell me I&#x27;m crazy not to)
+- Build any specific wall or two inside out (again, keeping the increase in pain/money small for a larger gain)
+
+I think my ratios are decent as is. This is purely to have bigger rooms which would lower my Schroeder Frequency and make the spaces feel bigger.
+
+Also, other than potential flanking from the 5&quot; conduit coming up between the rooms (I will make sure it doesn&#x27;t flank), do you see a problem with having my audio lines coming from the control room to that location? Only one of them is for the ISO room. The other will run up through the wall out to my live room which will be out in my garage. My plan was to extend the conduit runs over to the inner leaf of the ISO room wall and then build sealed box within the room. Thoughts?
+
+Note: I&#x27;m probably pushing to just build the ISO room window wall (and maybe even the wall with the door on it) inside out because that way I&#x27;ll have the ability to have a deeper corner bass trap. The door location for that room kind of screws me but working through the basement layout with the house builder, I&#x27;m pretty limited to where I can have it <span class="smilie" title=":-(">:-(</span>
+
+Thanks guys!
+
+Greg<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: Jan 27 Basement Normal.jpg</div><div class="bb-attachment-missing">Image not preserved: Jan 27 Basement Gaps.jpg</div><div class="bb-attachment-missing">Image not preserved: Jan 27 Basement Up Close.jpg</div><div class="bb-attachment-missing">Image not preserved: Jan 27 Basement Ceiling.jpg</div><div class="bb-attachment-missing">Image not preserved: Jan 27 Basement ISO Corner Concern.jpg</div></div></div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

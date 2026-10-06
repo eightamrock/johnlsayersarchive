@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="read">
+<h1>Forums</h1>
+<p class="lede">The forum’s original sections, with every thread they held. Threads are listed with the most recently active first, as they were on the live site.</p>
+{% for cat in categories %}<h2>{{ cat.name }}</h2>
+<ul class="topics" style="columns:1">{% for f in cat.forums %}<li><a href="/forum/{{ f.slug }}/">{{ f.name }}</a><p>{{ f.desc }} {{ f.count_label }}.</p></li>{% endfor %}</ul>
+{% endfor %}
+</div>
+{% endblock %}

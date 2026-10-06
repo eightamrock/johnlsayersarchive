@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deadfoot Studios | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by eddiemunster666 in Installation and Wiring, 2009. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/11681/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Deadfoot Studios</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by eddiemunster666 on 10 February 2009. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 11681.</p>
+
+</div>
+</header>
+<article class="post" id="p84944">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">eddiemunster666</span><time datetime="2009-02-10">10 February 2009</time><a class="permalink" href="#p84944" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Here is a rough run down of what is getting plugged in at this studio:
+<pre class="bb-code"><code>
+Line Voltage=120
+CR=Control Room
+TR=Tracking Room
+
+Room	Accessory                Power  Current
+                               (Watts)  (Amps)
+CR     Light                    40      0.33
+CR     Light                    40      0.33
+TR     Light                    40      0.33
+TR     Light                    40      0.33
+CR     Light                    60      0.5
+CR     Light                    60      0.5
+TR     Light                    60      0.5
+TR     Light                    60      0.5
+			                   Sub Total	3.33
+
+CR     Mixing Desk	          195	   1.625
+CR     Digital Interfaces	    20	   0.16
+CR     Compressor	            15	   0.125
+CR     Delay	                 15      0.125
+CR     Delay	                 15      0.125
+CR     Power Conditioner         0      0
+CR     Tape Machine            100      0.83
+CR     Power Amp	            500      4.16
+CR     Guitar Amp	           275      2.29
+CR     Space Heater            550      4.58
+CR     Computer                300      2.5
+CR     Computer Monitor        100      0.83
+				              Sub Total	17.375
+				
+TR     Guitar Amp              275	  2.29
+TR     Bass Amp                275	  2.29
+TR     Computer                300	  2.5
+TR     Computer Monitor        100	  0.83
+TR     Headphone Amp           20	   0.16
+TR     PA Head                 500     4.16
+TR     Space Heater            550     4.58
+				              Sub Total	16.83
+</code></pre>Since there could be more things plugged into each room that I&#x27;m not thinking of, then I would think I would need 2 circuit breakers for both rooms since 16amps for a 20amp breaker seems to be the limit.  I could do the following:
+
+CR  B1=20amp B2=20amp
+TR  B3=20amp B4=20amp
+
+I could also add a 15 amp breaker for the Lights.
+
+Lights  B5=15amp
+
+I am going to use Star Grounding.   From all the research I have done on this site, the BILTP book, internet, library books etc.....  I thought conduit would be the best thing to keep things neat with the isolated grounds.
+
+Here is my wiring plan.
+
+12gauge wire for all outlets
+14gauge wire for all lights
+
+6 outlets for the CR (2 quads under the mixing board)--&gt;3black+3white+ 6IGR=12 wires running in the main 1&quot; conduit
+4 outlets for the TR--&gt;2Black+2White+4IGR=8 wires running in the main 1&quot; conduit
+20 wires total running in the main 1&quot; conduit
+
+The lights I might be better off with just romex 14-2.
+2 overhead boxes for track lights in CR
+2 overhead boxes for track lights in TR
+2 switches--&gt;2 tracks CR
+2 switches--&gt;2 tracks TR
+<pre class="bb-code"><code>
+[Outlets]-----&lt;1/2&quot; conduit&gt;----&lt;1&quot; conduit&gt;----[Junction Box]--&lt;1/2&quot; conduit&gt;--&lt;10 IGRs&gt;--[Ground Panel]
+                                                        |                                   |
+                                                        |                                   |
+                                                        |                                   |----[Ground Rod]
+                                                        |                                   |
+                                                        |-----------&lt;1&quot; conduit&gt;--------[Panel]
+                                                                                          |
+                                                                                          |
+                                                                                          |
+[Lights]--&lt;14-2 romex&gt;--&lt;switches&gt;--&lt;14-2 romex&gt;------------------------------------------|
+
+</code></pre>Go ahead.  Have at it.  Rip this plan to shreds.</div>
+</article>
+<article class="post" id="p85810">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">WayneD</span><time datetime="2009-03-08">8 March 2009</time><a class="permalink" href="#p85810" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Hey, if I were you, I would add an extra circuit to each room. You never know what the future may bring or what a band may bring. 
+
+I take it you are using 12AWG spooled wire for the receptacles? Cheaper to run 12/2 or even 12/3 Romex. Just make sure all grounds are accounted for back to the panel. Make you connect to the outlets securely too. All 20amp.
+
+Lights, 15 amp circuits shouldn&#x27;t be a problem. If in doubt, pick up an Ugly&#x27;s book at Home Depot. Lots of really great info in there and some stuff you&#x27;ll never use but is great for party trivia.  <span class="smilie" title=":P">:P</span> 
+
+Your design looks a bit overkill. Unless you have something special planned for the future, skip the conduit (unless is absolutely a necessity) and run Romex. 
+
+W</div>
+</article>
+<article class="post" id="p85815">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2009-03-08">8 March 2009</time><a class="permalink" href="#p85815" aria-label="Link to post 3">#3</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">skip the conduit (unless is absolutely a necessity) and run Romex. </div></blockquote>I&#x27;m not so sure it&#x27;s a good idea to skip conduit.  It&#x27;s code where I live (Chile), and I&#x27;ve come to love the stuff!  If you ever have to replace a cable, or run a new cable, you just pull it through the conduit, without having to tear apart your wall to do so!  Especially useful when the wall cost you US$ 5,000 and a year to build!!!! <span class="smilie" title=":)">:)</span>
+
+I think I&#x27;d not only run conduit, but in fact run EXTRA conduit (empty for now), or oversize conduit, for future expansion.  You never know when you need &quot;just one more plug / light / mic / speaker / headphone / video / telephone / internet / etc.&quot; connection.  If you have conduit, properly installed, then its really easy to do.  It&#x27;s really easy and relatively cheap to install conduit now, at the outset, and very expensive / complicated to do it later.  An extra few dollars right now can save you major headaches down the road, when you you just have to connect a _____ (fill in the blank).
+
+I&#x27;ve installed and re-installed enough post production suites and equipment in my time to appreciate things like cable trays, cable ducts, and conduit.  Especially when the guy who installed them had the foresight to make them bigger than necessary.
+
+
+OK, I better shut up now. [[[ RANT-MODE=OFF ]]]  !!
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p85829">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">WayneD</span><time datetime="2009-03-08">8 March 2009</time><a class="permalink" href="#p85829" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">In the states, conduit is not required in residential homes unless you choose to use it. The Romex suggestion was economic as well as code acceptable.
+
+Stuart&#x27;s suggestion for conduit to feed tie-lines between rooms is a must. 1&quot; PVC will do the job and leave plenty of space for future in a small facility. Make sure you seal your penetrations. 
+
+W
+
+PS, if you are running Romex through any studs (wood), make sure you attach the protective plates made just for that type of install. Otherwise, you may send a screw right through the Romex and you are then.......well, screwed.  Plastic grommets are available as raceways for metal studs.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

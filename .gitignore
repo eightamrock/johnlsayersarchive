@@ -1,0 +1,21 @@
+# Never commit the raw SQL dumps: they hold emails, IPs and private messages.
+*.sql
+*.sql.gz
+
+# archive.db keeps post text unscrubbed (contact details are only removed
+# when pages are rendered), so it stays private. The site/ folder is the backup.
+data/archive.db
+data/pii_review.csv
+
+# Large or reproducible working files
+data/images/
+data/tag_batches/
+data/intro_batches/
+data/*.log
+data/wayback_attachment_captures.txt
+preview/
+
+.venv/
+__pycache__/
+node_modules/
+.DS_Store

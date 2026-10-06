@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How can monitors with holes not be out of phase? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by joenobody in Speaking of Speakers, 2017. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21035/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/speaking-of-speakers/">Speaking of Speakers</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>How can monitors with holes not be out of phase?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by joenobody on 30 April 2017. 3 replies, 2017–2018.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21035.</p>
+
+</div>
+</header>
+<article class="post" id="p142113">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">joenobody</span><time datetime="2017-04-30">30 April 2017</time><a class="permalink" href="#p142113" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">How can the phase component of frequency response graphs for monitors that have holes in them be correct?
+
+The wikipedia page on frequency response graphs defines frequency response as: &quot;a measure of magnitude and phase of the output as a function of frequency, in comparison to the input&quot;
+
+With sealed speakers that have no holes, it&#x27;s easy to understand to see how both the phase and magnitude of the output can match the input.
+
+However, with speakers that have holes in them, especially in the back, a significant portion of the sound is necessarily going to be out of phase in comparison from the sound coming directly off the speaker face since the distances are so different.
+
+For instance, suppose you have a monitor with holes in the back and it&#x27;s placed 5 feet from a wall. At 1.12533 ms/foot, the sound coming off the wall is going to be about 11 ms delayed which will make it quite hard to hear what a kick is actually doing since you&#x27;ll get an overlay of the initial attack and middle &quot;formant&quot; section of the kick sample.
+
+For a monitor with holes in the front, the sound from the hole will be out of phase by about double the depth of the monitor, if it&#x27;s internally 1 foot deep it should have an out of phase component of about 2 ms or so.
+
+I&#x27;ve noticed that in many pro studios, the monitors are set inside the walls to minimize the sound coming off the other faces of the speaker. I&#x27;ve also found that wrapping the sides and back of my monitors with acoustical blankets significantly clears up the low mid ranges.
+
+So my question is, are unsealed monitors always going to have the out of phase component and therefore be avoided, or am I making a mistake somewhere and that it really is possible for the two paths the sound takes to end up back in phase?</div>
+</article>
+<article class="post" id="p142115">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-04-30">30 April 2017</time><a class="permalink" href="#p142115" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">It looks like you are mashing together a whole bunch of very different issues, most of which aren&#x27;t even related to each other, and also confusing them with other things. You seem to be misunderstanding the purpose of the &quot;holes&quot;, and also confusing what happens inside the holes, with what happens inside the room.  Those are two entirely different things.  And you seem to be not taking into account the way low frequency sound behaves, regardless of how the speaker is built.
+
+Let&#x27;s take those in order.
+
+First, the &quot;holes&quot; in speakers are not holes at all!  They are tuned bass reflex ports.  Behind the &quot;hole&quot; is a tube inside the speaker cabinet that is carefully dimensioned such that it is tuned to a certain frequency, and it produces a wave at the front end of the port that is in phase with the rest of the output from the speaker.  If the port is on the rear face of the speaker, rather than the front, then it is designed in such a way that it is phase inverted with respect to the front (out of phase, not in phase).  So the &quot;holes&quot; themselves are not an issue: they are producing sound that is correctly phased with respect to the rest of the speaker.  The reason why they exist, is to extend the low frequency response of the speaker, taking it down a bit lower than it would have gone without it.  The design is done very carefully to ensure that the port is tuned correctly, and phased correctly.
+
+Next, the difference between the speaker and the room:  Yes, waves that leave the speaker, bounce off a wall, and then come back again, will indeed be out of phase at some points in the room with the wave that went the &quot;other&quot; way.  That will indeed create a phase cancellation problem, and that problem is referred to as &quot;SBIR&quot;, which stands for &quot;Speaker-Boundary Interference Response&quot;.  SBIR is a big problem in studios, and we studio designers have to work very hard to minimize that problem, by designing the room such that the SBIR issues are reduced as much as possible at the critical listening locations.
+
+And third: Regardless of whether or not a speaker has ports (not &quot;holes&quot;), and regardless of whether any ports are on the front or the rear, <em><span class="bb-u">all</span></em> speakers emit low frequency sound in all directions:  It does not matter how the speaker is designed, at low enough frequencies it acts as a point source, emitting sound in all directions equally.  The reason is simple:  Sound waves are only affected by objects that are larger than the wavelength.  So for ANY speaker whose smallest dimension is smaller than the longest wave it emits, there&#x27;s a frequency where the wavelength is the same as the smallest dimension of the cabinet, and for that frequency and all lower frequencies, the sound will appear to be emitted in all directions.  For all higher frequencies, sound tends to be emitted in only the &quot;forward&quot; direction, and for all lower frequencies it tends to be emitted in all directions.  This is referred to as the &quot;baffle step response&quot; of the speaker, and is independent of whether or not the speaker is sealed.  Higher frequencies are focused out the front of the speaker, and lower frequencies go in all directions.  This, of course, also implies that there is a power imbalance:  All of the high frequency energy goes towards the listener, but only <em><span class="bb-u">half </span></em>of the low frequency energy goes towards the listener.  That&#x27;s why the low end amplifier is twice as powerful in most speakers (6dB louder), because it must emit twice as much sound to balance the high frequency section.
+<blockquote class="bb-quote"><div class="bb-quote-body">For instance, suppose you have a monitor with holes in the back and it&#x27;s placed 5 feet from a wall. At 1.12533 ms/foot, the sound coming off the wall is going to be about 11 ms delayed which will make it quite hard to hear what a kick is actually doing since you&#x27;ll get an overlay of the initial attack and middle &quot;formant&quot; section of the kick sample.</div></blockquote>That&#x27;s actually not what happens at all!  What you will get is a phase cancellation problem at the wavelength that coincides with the distance between the speaker and the wall (and the listener too, to a certain extent).  There will be a null at 56 Hz in the response, followed by comb filtering at all related frequencies right up the scale.  But since very few kick drums are tuned to 54 Hz, there should not be too much of a problem:  But there will be for the bass guitar, since that&#x27;s pretty much where a lot of bass action takes place.  However, this will be a problem for ALL speakers, not just rear-ported speakers, since very few speakers are large enough to not be point sources at 54 Hz!
+<blockquote class="bb-quote"><div class="bb-quote-body">For a monitor with holes in the front, the sound from the hole will be out of phase by about double the depth of the monitor, if it&#x27;s internally 1 foot deep it should have an out of phase component of about 2 ms or so.</div></blockquote>Nope! Because that&#x27;s not a hole: it is a tuned port.  The sound will not be out of phase.
+<blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;ve noticed that in many pro studios, the monitors are set inside the walls to minimize the sound coming off the other faces of the speaker.</div></blockquote>What you are referring to is called &quot;soffit mounting&quot; or &quot;flush mounting&quot;, and no, that&#x27;s the note purpose at all!  Soffit mounting is not done to &quot;minimize sound coming off the other faces&quot;.  It is done for one single reason: to take the speaker out of the room completely.
+
+So now we can get into the issue of soffits and what they actually do.  
+
+In simple terms, soffits eliminate the artifacts associated with having the speaker inside the room.  For example, there is no more SBIR related to the front wall since the speaker is <em>flush </em>with the wall.  (There will probably still be SBIR and similar issues related to the other walls, the floor and the ceiling, but not the big one, related to the front wall.  There will also be no edge diffraction, since the speaker now has no edges.  There won&#x27;t be any more power imbalance either, since the woofers and tweeters will both be projecting into half space (instead of one going into half space and the other into full space).  Bass will also be tighter, cleaner, better defined, smoother.  No more comb filtering related to the front wall.  No more reflections from the front wall.  Etc.  Etc.  etc.  That&#x27;s the real purpose of soffit-mounting speakers: eliminating the artifacts associated with the front wall, as well as those associated with sound sources inside rooms.
+<blockquote class="bb-quote"><div class="bb-quote-body">are unsealed monitors always going to have the out of phase component</div></blockquote>No, because there is no out of phase component associated with ported speakers.  
+<blockquote class="bb-quote"><div class="bb-quote-body">or am I making a mistake somewhere and that it really is possible for the two paths the sound takes to end up back in phase?</div></blockquote>As mentioned above, that&#x27;s a different issue entirely, and is not associated only with ported speakers: it is associated with ALL speakers, regardless of design, and is the reason why soffit-mounting is such a good thing.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p146422">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">The Sound Guy</span><time datetime="2018-07-04">4 July 2018</time><a class="permalink" href="#p146422" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Enlightening! I wasn&#x27;t aware of the exact purpose of soffit/flush mounting! Nice!
+
+I do have a question about reflex versus sealed, however.
+The bass reflex system relies on a mass/spring system. The mass being the air in the port, the spring being the driver and the air inside the box. ANY mass/spring system has a resonant frequency, hence the port *tuning*, which determines the low frequency limit of such a speaker system.
+But, resonance implies ringing. And since it&#x27;s a mass/spring system, it has a certain inertia. This means it takes some time (x cycles) for the port to emit sound. And after the driver has stopped moving, the port will still &quot;ring&quot; for a short time, it&#x27;s output diminishing over time. The length of that time is determined by the amount of damping inside the speaker, if I&#x27;m correct. Too much damping will render the port more or less useless.
+
+So: even though the wavefronts are in phase, are the actual *acoustical signals* of both driver and port in phase? Or are they delayed somewhat?
+
+Sealed subs versus ported subs.
+They may have the same low frequency extension, both sound radically different. 
+Ported subs sound &quot;bigger&quot; and have more grunt. They have a higher &quot;fun factor&quot; than sealed subs.
+While sealed subs seem to have better transient response and sound more &quot;precise&quot;&quot;, quicker. With the same bass extension, sealed subs sound &quot;tighter&quot;, some how. Musically more correct, uncouloured. Why is that?
+
+I know that a large driver in a sealed box will have anything but spectacular extension. You&#x27;ll have to actively correct it&#x27;s response by using a Linkwitz transform eq. Among other things, this pulls down f3 to wherever you want it to be (taking into account the limits of the amp and driver), but at the expense of a lot of efficiency. You&#x27;ll need to apply serious power in the low registers below it&#x27;s natural cut-off frequency to achieve meaningful LF output. Also, by using that Linkwitz transform, you&#x27;ll introduce a phase shift of the signal (&quot;group delay&quot;). If you&#x27;re smart and install a hi-pass filter in order to save your amp and driver from infrasonic rumble, you&#x27;ll introduce even more phase shift. The trick is to get the signal in phase at the cross-over frequency to the mains.
+
+Does this mean that a ported sub has a more even phase response in relation to it&#x27;s input?</div>
+</article>
+<article class="post" id="p146431">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-07-04">4 July 2018</time><a class="permalink" href="#p146431" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">But, resonance implies ringing. And since it&#x27;s a mass/spring system, it has a certain inertia.</div></blockquote>Exactly.  Very correct.  Which is why bass reflex ports are usually damped in one way or another.  
+<blockquote class="bb-quote"><div class="bb-quote-body">This means it takes some time (x cycles) for the port to emit sound.</div></blockquote>Right, to a certain extent.  But since it is only ENHANCING sound that is already being emitted by the driver, there is already sound at that frequency: it just takes a bit until the port can &quot;get up to speed&quot; and help that along... which is why bass-reflex speakers often show pretty strange things on the Group Delay plots.
+<blockquote class="bb-quote"><div class="bb-quote-body">And after the driver has stopped moving, the port will still &quot;ring&quot; for a short time, it&#x27;s output diminishing over time.</div></blockquote>Right.  Hence the need for damping.
+<blockquote class="bb-quote"><div class="bb-quote-body">So: even though the wavefronts are in phase, are the actual *acoustical signals* of both driver and port in phase? Or are they delayed somewhat?</div></blockquote>Still in phase, but the INTENSITY peak is delayed.
+<blockquote class="bb-quote"><div class="bb-quote-body">Ported subs sound &quot;bigger&quot; and have more grunt. They have a higher &quot;fun factor&quot; than sealed subs.</div></blockquote>... which is why I&#x27;m not a big fan of ported speakers being used full-range in control rooms!  Rather, let a sub fill in at the low end, since the reflex port is only &quot;forcing&quot; the low end anyway, and does so at the expense of adding artifacts, and upsetting the group delay.
+<blockquote class="bb-quote"><div class="bb-quote-body">While sealed subs seem to have better transient response and sound more &quot;precise&quot;&quot;, quicker. With the same bass extension, sealed subs sound &quot;tighter&quot;, some how. Musically more correct, uncouloured. Why is that?</div></blockquote>Because all of the above!  <span class="smilie" title=":)">:)</span>  Which is why sealed full-range speakers are preferable, or ported speakers with subs to fill in the low end, but correctly set cross-overs....
+<blockquote class="bb-quote"><div class="bb-quote-body">I know that a large driver in a sealed box will have anything but spectacular extension.</div></blockquote>I&#x27;m not sure I&#x27;d agree with that!
+<blockquote class="bb-quote"><div class="bb-quote-body">You&#x27;ll need to apply serious power in the low registers below it&#x27;s natural cut-off frequency to achieve meaningful LF output. </div></blockquote>Or you could soffit-mount it...
+<blockquote class="bb-quote"><div class="bb-quote-body">you&#x27;ll introduce a phase shift of the signal (&quot;group delay&quot;).</div></blockquote>Phase shift is not group delay: two different things. Related, but different.
+<blockquote class="bb-quote"><div class="bb-quote-body">You&#x27;ll have to actively correct it&#x27;s response by using a Linkwitz transform eq. Among other things, this pulls down f3 to wherever you want it to be (taking into account the limits of the amp and driver), but at the expense of a lot of efficiency. You&#x27;ll need to apply serious power in the low registers below it&#x27;s natural cut-off frequency to achieve meaningful LF output. Also, by using that Linkwitz transform, you&#x27;ll introduce a phase shift of the signal (&quot;group delay&quot;). If you&#x27;re smart and install a hi-pass filter in order to save your amp and driver from infrasonic rumble, you&#x27;ll introduce even more phase shift. The trick is to get the signal in phase at the cross-over frequency to the mains.</div></blockquote>You seem to be assuming rather a lot about speaker design, and most of it is irrelevant to how the speakers actually perform in the room!  As  studio designer, I really don&#x27;t care if the speaker designer used a third-order Linkwitz-Riley filter in the cross-over, or a 2nd-order Butterworth, or a brand new unheard-of Trump-Obama 10th order filter!  I really don&#x27;t care.  All that I care about is the overall frequency response smoothness, and even more importantly, the time-domain smoothness, as well as the phase linearity, and the directionality characteristics.  I really don&#x27;t care HOW he achieved that inside the box: If he used pixie dust and unicorn hair to do it, that&#x27;s fine with me.  If he used an ART tweeter instead of a silk-dome conventional tweeter, or a woofer cone made from depleted uranium, or alien metal from Saturn... I just don&#x27;t care!  All that matters to me, is how the speaker performs.  I might be academically interested in the workings, but since my job is to design STUDIOS, not SPEAKERS, it matters not at all how the speaker designer worked his magic.
+
+In fact, when needed I will modify the speaker response myself, to suit that I need it to do.  Take a look at Studio Three (I linked you to that in another thread, but here it is again: <a href="/t/20471/">viewtopic.php?f=2&amp;t=20471</a> ).  Those are Eve Audio SC-407&#x27;s.  They are not supposed to be mounted vertically, and not supposed to be soffit-mounted.  But I did.  They are rear ported.  To get that to work, I had to put extra damping on the rear ports, and apply some digital tuning to compensate.  I did talk to the chief engineer at Eve Audio briefly, to get his approval, and he gave me a couple of tips.  So those speakers are performing rather wonderfully (as you can see form the REW graphs), even though they are NOT being used as designed.  I changed that, to make them work better with THAT SPECIFIC ROOM! In a different room, I might not have changed them at all, and perhaps would have mounted them horizontally.  But for THIS room, I wanted them to be a bit different from what the specs showed, so I did that.  But I have not the slightest idea, or interest, regarding the Thiele-Small parameters of the drivers, or the type of cross over, or the density of the cabinet material, or the thickness of the woofer cone material, or the Gaussian characteristics of the magnets... I chose those speakers because they came closest to what I needed for that room and were within the price range that the studio owner indicated, and then I did some slight &quot;tweaking&quot;, with the help of the manufacturer(!!!), to get them where I wanted them.
+
+My point being; the actual inner workings are not relevant to me: only the final behavior.  If I designed speakers instead of rooms, I would have a very different point of view, of course!  But my job is to design rooms, so to me a speaker is just a &quot;Black box&quot; that produces sound with certain characteristics.
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

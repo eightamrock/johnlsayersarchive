@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poly diffusers design in a 50 sqm live room | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by gabrielaudio in Studio Design, 2020. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/22289/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Poly diffusers design in a 50 sqm live room</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by gabrielaudio on 25 February 2020. 6 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 22289.</p>
+
+</div>
+</header>
+<article class="post" id="p152616">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">gabrielaudio</span><time datetime="2020-02-25">25 February 2020</time><a class="permalink" href="#p152616" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi,
+
+First of all...I wrote another Thread several months ago and I learned a lot thanks to it. This community is awesome I must say!
+
+We are going to build a DIY solution (due to budget constraints) for our recording studio. 
+
+We have a <strong>live room of 50 sqm</strong> and 4 meters height. So, basically, it&#x27;s a quite good space for recording drums, but we had been facing issues with the sound of it. It sounds a bit dull, lifeless...
+
+After reading a lot, and after several REW measurements, our <strong>conclusions</strong> are
+
+- Almost the entire room is tuned to the same frequency due to the slotted concrete blocks in the walls (Helmholtz resonators). That, while making the room a bit dead, creates an unbalanced response. (visible in the REW data, a valley around 250 Hz).
+
+- The ceiling is mostly absorptive in the HF spectrum, reducing the RT60 but without touching the low end. 
+
+- The walls are parallel and they introduce flutter echo and comb filtering (you can hear it actually when recording drums, in the OH). 
+
+In an ideal world, with money, we would definitely hire somebody to design the whole thing. That&#x27;s not our case at the moment so we had been waiting several months figuring out what to do (also because we were busy with other stuff). The great Stuart gave me some tips in another thread back in July last year, but I had been reading more and more since then.
+
+After the research process, we decided that we&#x27;re going to design and install <strong>polydiffusers</strong>. Reasons:
+- Easy to build
+- Cheap
+- They have a good diffusion coefficient, they will cover part of those concrete blocks, they will increase the RT60 of our room and they will absorb some bass resonances (placing absorptive material inside them).
+
+I attach some measurements. All of them show differences in the RT60 or Waterfall results, but also some similarities: 
+- All of them have an unbalanced response. Valley in the low-mids, peak in the mids, etc. 
+
+Based on calculations, the Schroeder Freq of our room is 74 Hz. The wave region goes from 17 to 74 Hz and the Ray Region starts at 297 Hz. Room size: 980 x 528 x 400 cm.  I attached also some REW files. 
+
+I know that our solution won&#x27;t be as properly designed as one made by an acoustic engineer. Our goal is to improve what we have right now and upgrading the sound of the studio without spending several thousand. A step forward. So take that into account  <span class="smilie" title=":mrgreen:">:mrgreen:</span>  <span class="smilie" title=":oops:">:oops:</span> 
+
+<strong>Our plan is to build</strong>
+- Big poly diffuser in the side wall (980 cm).
+- Poly&#x27;s in the corners (with low density mineral wool inside, to absorb bass).
+- Big poly diffuser in the front wall (528 cm).
+- Small polys in the ceiling (thanks Stuart!) placed by trial and error (doing measurements and endless tests). <span class="smilie" title="8)">8)</span> 
+
+<strong>What do you think about this design for the side wall? </strong> 
+<div class="bb-attachment-missing">Image not preserved: measurements.png</div><div class="bb-attachment-missing">Image not preserved: spatial response plot.jpg</div><div class="bb-attachment-missing">Image not preserved: coefficients.png</div>
+Thanks!!<div class="bb-attachments-trailing"><div class="bb-attachment-missing">File not preserved: CornerToCorner_NoGOBOS.mdat</div><div class="bb-attachment-missing">File not preserved: LastMeasurement_CornerToCornerWithGobos.mdat</div><div class="bb-attachment-missing">File not preserved: RoomMicPosition1.mdat</div></div></div>
+</article>
+<article class="post" id="p152624">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2020-02-25">25 February 2020</time><a class="permalink" href="#p152624" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">That should bring some life back into your room!
+
+Greg</div>
+</article>
+<article class="post" id="p152632">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">gabrielaudio</span><time datetime="2020-02-26">26 February 2020</time><a class="permalink" href="#p152632" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Yes that&#x27;s what I also think. 
+
+I was worried if making it work down to 200 Hz was a good idea, but taking into account that the slotted concrete blocks absorb freqs in that area...it makes sense to rebalance the room a bit also there. 
+
+Thanks Greg!</div>
+</article>
+<article class="post" id="p152636">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2020-02-26">26 February 2020</time><a class="permalink" href="#p152636" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I was worried if making it work down to 200 Hz was a good idea, but taking into account that the slotted concrete blocks absorb freqs in that area...it makes sense to rebalance the room a bit also there. </div></blockquote>Exactly what went through my head!
+
+Greg</div>
+</article>
+<article class="post" id="p152637">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">hazza26</span><time datetime="2020-02-26">26 February 2020</time><a class="permalink" href="#p152637" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Following! Greg has recommended polys as a diffusion solution for my room also. Trying to get my head around the design principles. Greg has kindly linked a couple of articles - there&#x27;s heaps of stuff on the internet covering QRDs, Skylines and even BAD panels but not much about polys, and this is the first time I&#x27;ve seen a design for an array.
+
+Can I ask some questions:
+- it&#x27;s big! How did you decide on the scale? And how did you work out the proportions for the varying cylinders, is there some kind of numerical sequence? Are the sizes calculated to tackle the uneven frequency response of your room, and if so how did you work it out? Are you duplicating the cylinder pattern in smaller scale for the front wall or devising a new pattern? I see you used AFMG Reflex, which I haven&#x27;t used yet.
+- why did you decide on entirely 1D horizontal scattering? Because this is a live room and you have polys on the ceiling would a mix of horizontal and vertical be beneficial?
+- what thickness / mass of panels are you intending to use?
+
+Sorry for all the questions! Really hope you can post some build pics and before / after REW measurements.</div>
+</article>
+<article class="post" id="p152730">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">gabrielaudio</span><time datetime="2020-03-03">3 March 2020</time><a class="permalink" href="#p152730" aria-label="Link to post 6">#6</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">hazza26 wrote:</div><div class="bb-quote-body">Following! Greg has recommended polys as a diffusion solution for my room also. Trying to get my head around the design principles. Greg has kindly linked a couple of articles - there&#x27;s heaps of stuff on the internet covering QRDs, Skylines and even BAD panels but not much about polys, and this is the first time I&#x27;ve seen a design for an array.
+
+Can I ask some questions:
+- it&#x27;s big! How did you decide on the scale? And how did you work out the proportions for the varying cylinders, is there some kind of numerical sequence? Are the sizes calculated to tackle the uneven frequency response of your room, and if so how did you work it out? Are you duplicating the cylinder pattern in smaller scale for the front wall or devising a new pattern? I see you used AFMG Reflex, which I haven&#x27;t used yet.
+- why did you decide on entirely 1D horizontal scattering? Because this is a live room and you have polys on the ceiling would a mix of horizontal and vertical be beneficial?
+- what thickness / mass of panels are you intending to use?
+
+Sorry for all the questions! Really hope you can post some build pics and before / after REW measurements.</div></blockquote>Hi Hazza! Happy to help. 
+
+Our longest wall is almost 10 meters. Our walls are parallel, and I want to remove as flutter echo as possible without introducing more HF absorption in the room. That&#x27;s why it&#x27;s so long. But even if it&#x27;s long, it won&#x27;t be covering the entire wall. The height of the panels will be between 2.40 and 2.80 meters (vertical). 
+
+There is no numerical sequence like with other diffusers, but I used the same concept to design it. It&#x27;s proven that repeatable patterns just make the diffusion and scattering coefficients worse. Same if you place 5 equal QRD or Skyline diffusers in the same position and order. 
+
+I designed first the first 3 meters, to have the response I want (plot and coefficients). Then I continued with the rest. 
+
+You can&#x27;t think like with a QRD or Skyline. Polys are a different beast. 
+
+I decided on the 1D approach because our ceiling is absorptive, so I don&#x27;t want to send more energy there. I want to keep it as live and diffusive as possible without introducing any other issues. I will design (later on) some polys for the ceiling (small ones).  
+
+The thickness of the panels is 3 mm.
+
+The first thing I recommend is to spend some time measuring your room and understanding its issues. Listening acoustic instruments recorded there (guitars, drums...) and doing REW measurements.</div>
+</article>
+<article class="post" id="p152899">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">hazza26</span><time datetime="2020-03-11">11 March 2020</time><a class="permalink" href="#p152899" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Many thanks! Look forward to an update on the build.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

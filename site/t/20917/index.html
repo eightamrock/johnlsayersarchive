@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2 windows isolation | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by nixoblivion in Studio Construction, 2017. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/20917/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-construction/">Studio Construction</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>2 windows isolation</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by nixoblivion on 28 February 2017. 6 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 20917.</p>
+
+</div>
+</header>
+<article class="post" id="p141446">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">nixoblivion</span><time datetime="2017-02-28">28 February 2017</time><a class="permalink" href="#p141446" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hey guys,
+
+Im new here and eager to learn a few things.
+Right now im planning on building my studio. Got quite a few problem aeras still open, but working on them one by one.
+
+Right now im wondering how i can make my windows more soundproof to the outside.
+
+I have a building in the courtyard of a residential building. The building is story high and im the only one in the building. The neighbours are across the courtyard, about 5meters away. There is no connection between the buildings. Even the ground concrete does not connect. This is good.
+The walls are brick and between 30cm and 60cm thick.
+
+Right now i have window sills with 2 windows. These windows are really bad, i would guess they have about 10db of TL (speech).
+So i was thinking of changing these windows and adding 2 new plastic windows.
+
+- Now my question is, in an ideal case, where the windows are installed perfectly, how do the TL of both windows add up?
+Say if i get 2 windows with 35db STC, will it then be 70db STC? 
+I&#x27;m guessing it will be a lot closer to 50db? Can this be calculated somehow?</div>
+</article>
+<article class="post" id="p141452">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-03-01">1 March 2017</time><a class="permalink" href="#p141452" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Hi &quot;nixoblivion&quot;, and Welcome!  <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">The building is story high and im the only one in the building.</div></blockquote>Was that supposed to say &quot;the building is ONE story high...&quot;?
+<blockquote class="bb-quote"><div class="bb-quote-body">The walls are brick and between 30cm and 60cm thick.</div></blockquote>With a concrete floor and thick brick walls, you should be able to get good isolation.
+<blockquote class="bb-quote"><div class="bb-quote-body">Right now i have window sills with 2 windows.</div></blockquote>Please post photos of those windows....
+<blockquote class="bb-quote"><div class="bb-quote-body">So i was thinking of changing these windows and adding 2 new plastic windows.</div></blockquote>Plastic windows have very low mass, compared to glass, and other undesirable characteristics.  Use only glass.
+<blockquote class="bb-quote"><div class="bb-quote-body">Say if i get 2 windows with 35db STC, will it then be 70db STC?</div></blockquote>Nope!  <span class="smilie" title=":)">:)</span>  If it worked like that, then four such windows would stop the sound of a fully loaded 747 at maximum take-off thrust, right outside in the courtyard!... <span class="smilie" title=":)">:)</span>
+
+You can&#x27;t add decibels like that.  The decibel scale is logarithmic, and adding two log numbers is the same as <em>multiplying </em>the base numbers.  It is possible to add decibels, but not in a simple way.
+<blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;m guessing it will be a lot closer to 50db? Can this be calculated somehow?</div></blockquote>Yes it can be calculated, but it&#x27;s not simple to do at all.  If you have just one window, then the equation you need is called &quot;mass law&quot;, and it goes like this:
+
+TL(dB)= 20log(W) + 20log(f) -47.2 
+
+W is the surface density of the window glass, and
+f is the frequency you are interested in-
+
+So you would need to calculate for each frequency, and plot the results on a graph.
+
+If you wanted a rough approximation of the total isolation at all frequencies on the spectrum, then there is a simpler form of the mass law equation, called the Empirical Mass Law Equation, that goes like this:
+
+TL = 14.5 log (Ms * 0.205) + 23 dB  
+
+Where:   Ms = Surface density of the glass, in kg/m2
+
+
+But those are for simple windows with just one pane of glass.  If you add a second pane in front of that, then you now have a very different situation: it is a resonant system, and the set of equation you need is very different.  First, you need to know the resonant frequency of the system, using the MSM resonant equations:
+
+Fc=c[(m1+m2)/(m1m2d)]^.5
+
+where:
+
+Fc=resonance frequency (Hz)
+c=constant (60 in this case)
+m1=mass of first window pane (kg/m^2)
+m2 mass of second window pane (kg/m^2)
+d=distance between the panes (m)
+
+Then you need the following series of equations to calculate the isolation in each of the three regions of the spectrum:
+
+R = 20log(f (m1 + m2)) - 47 	for the region where f &lt; f0
+R = R1 + R2 + 20log(fd) - 29	for the region where f0 &lt; f &lt; f1
+R = R1 + R2 + 6			for the region where f &gt; f1
+
+Where:
+f0 is the resonant frequency from the MSM resonant equation, 
+f1 is 55/d Hz
+R1 and R2 are the transmission loss numbers using the mass law equation, for window #1 and window #2
+
+So that&#x27;s how you can estimate the isolation that you would get for your two windows.
+
+Basically, to get good isolation, you need very thick laminated glass in each window (at least 16mm thick glass), and a large distance between them (at least 10cm).
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p141482">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">nixoblivion</span><time datetime="2017-03-03">3 March 2017</time><a class="permalink" href="#p141482" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Hey Stuart,
+
+Thanks for your great information. I did not expect such a complete response!!
+I&#x27;m pretty sure i already replied shortly after your answer, but apparently i did not submit my response <span class="smilie" title=":(">:(</span> so here one more time! <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">Was that supposed to say &quot;the building is ONE story high...&quot;?</div></blockquote>Correct. The building is one story high! I am the only person in this building. Its actually a slanted roof that is between 4m and 7m high. I will be adding a sub ceiling at 3.5m, because there are already beams fitted. But this is a different topic for another day <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">Please post photos of those windows....</div></blockquote>Sure!
+<blockquote class="bb-quote"><div class="bb-quote-body">Plastic windows have very low mass, compared to glass, and other undesirable characteristics.  Use only glass.</div></blockquote>I&#x27;m not sure if we misunderstood eachother. The window needs to have some sort of frame, and most windows i come across have a plastic frame, with several chambers to be more airtight.
+<a href="https://fensternorm.com/Kunststofffenster-Trocal-70-ECO-product-21-de" rel="nofollow noopener" target="_blank">https://fensternorm.com/Kunststofffenst ... duct-21-de</a>
+something of this sort, not this particular window though!
+
+
+The equations you gave me are great and i tried several variations of plugging in numbers! awesome, it really gets you some perspective! 
+The first 3 equations make sense to me. But the last bit confuses me a little.
+<blockquote class="bb-quote"><div class="bb-quote-body">Then you need the following series of equations to calculate the isolation in each of the three regions of the spectrum:
+
+R = 20log(f (m1 + m2)) - 47 	for the region where f &lt; f0
+R = R1 + R2 + 20log(fd) - 29	for the region where f0 &lt; f &lt; f1
+R = R1 + R2 + 6			for the region where f &gt; f1
+
+Where:
+f0 is the resonant frequency from the MSM resonant equation, 
+f1 is 55/d Hz
+R1 and R2 are the transmission loss numbers using the mass law equation, for window #1 and window #2</div></blockquote>Could you guide me through this part?
+
+So what i understand is these 3 equations will calculate the TL through my 2 Windows, dependant of the frequency... Right?
+
+The first equation is for the region where f &lt; f0. This shows the TL under my MSM resonant frequency.
+I&#x27;m not sure about the 2nd part. 
+What is f1?  55/d Hz? 55 devided by the distance between the 2 windows? 
+And what am i solving for here?
+
+The third equation shows me the TL above the MSM resonant frequency.
+
+So as an experiment i used 2 single pane windows (because its simpler) with 25kg density (10mm).
+This gives me 27db TL at 100Hz. 21db at 50Hz.
+And then i have 72db TL above the MSM frequency. 
+For R1 and R2 i inserted 33db, since that is what i got from the &quot;emprirical mass law&quot;. Since i don&#x27;t think i can solve for a specific frequency here.
+Is this correct?
+
+And to clarify. Right now the current 2 windows have about 20cm distance between eachother, but as you can see in the picture, its possible to move the inner window even further, since i don&#x27;t need the window sill. This way the 2 windows will have a distance of almost 40cm! 
+Did i understand it correctly from the equations you gave me (mostly the MSM), that having double pane windows is deadly? Everything under the MSM frequency (and that is quite high in most normal windows, since the distance between the 2 panes is very small) will not be attenuated very much. Therefore having 2 double pane windows will block lots about the MSM freq. but nearly nothing under. And that freq. will be quite high also. (i calculated something around 200-300hz with typical windows)
+
+
+Thanks so much for your advice Stuart! it really helps a lot!<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: IMG_2454.JPG</div></div></div>
+</article>
+<article class="post" id="p141492">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-03-03">3 March 2017</time><a class="permalink" href="#p141492" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">The window needs to have some sort of frame, and most windows i come across have a plastic frame, with several chambers to be more airtight.</div></blockquote>You are talking about PVC frames, not plastic windows!  When you said &quot;plastic windows&quot;, I assumed you were referring to Perspex or poly-carbonate for the window itself, not PVC for the frame.
+<blockquote class="bb-quote"><div class="bb-quote-body">The equations you gave me are great and i tried several variations of plugging in numbers! awesome, it really gets you some perspective!</div></blockquote>Yep!  It&#x27;s an eye-opener when you plug in real numbers and get disappointing results.... But you do also have to compare those results against the Fletcher-Munson curves, to get some perspective on how the sound levels will be perceived by people, rather than just the brute numbers.  Human hearing is not flat, and not even linear....  <span class="smilie" title=":)">:)</span>  
+<blockquote class="bb-quote"><div class="bb-quote-body">So what i understand is these 3 equations will calculate the TL through my 2 Windows, dependant of the frequency... Right?</div></blockquote>Three different frequency <em>ranges</em>.  Actually, five ranges, but disguised as three <span class="smilie" title=":)">:)</span>  The first one is for the region below MSM resonance.  The second &quot;range&quot; is at resonance (f=f0).  The third is between MSM resonance and the start of the coincidence dip.  The fourth is at the coincidence dip (f=f1), and the fifth is above coincidence. 
+<blockquote class="bb-quote"><div class="bb-quote-body">What is f1? 55/d Hz? 55 devided by the distance between the 2 windows? </div></blockquote>That&#x27;s the lowest frequency at which coincidence can occur.  It&#x27;s rather complex to explain how that number is derived.  Coincidence itself is rather hard to describe!  So just take it for granted.
+<blockquote class="bb-quote"><div class="bb-quote-body">The third equation shows me the TL above the MSM resonant frequency.</div></blockquote>No.  Above coincidence.  The second equation shows TL above MSM and below coincidence.
+<blockquote class="bb-quote"><div class="bb-quote-body">This gives me 27db TL at 100Hz. 21db at 50Hz.</div></blockquote>Sounds about right, assuming thick, heavy glass and a large air gap.
+<blockquote class="bb-quote"><div class="bb-quote-body">This way the 2 windows will have a distance of almost 40cm! </div></blockquote>Great!  I would also suggest putting some insulation around the edges of the cavity, as thick as you can make it within reason.  Wrap it in fabric to make it look nice.  That helps to damp some of the resonances going on inside the cavity, thus improving isolation.
+<blockquote class="bb-quote"><div class="bb-quote-body">Did i understand it correctly from the equations you gave me (mostly the MSM), that having double pane windows is deadly? </div></blockquote>Yup!  Surprisingly, it is.  For low frequencies at least.  It can work well for mids and great for highs, but for lows it can be a problem.  And having two double-glazed windows is even worse, as that is a four-leaf system, not a two-leaf system.  The math gets rather complex for that, but basically you lose even more low end, potentially, with a 4-leaf.   For any given total mass and total thickness, dividing that up into three leaves is always worse than having it on just two leaves, and dividing it into four leaves is worse still.
+<blockquote class="bb-quote"><div class="bb-quote-body">Everything under the MSM frequency (and that is quite high in most normal windows, since the distance between the 2 panes is very small) will not be attenuated very much</div></blockquote>Correct!
+<blockquote class="bb-quote"><div class="bb-quote-body">Therefore having 2 double pane windows will block lots about the MSM freq.</div></blockquote>Actually, it blocks poorly at resonance, and better above, but still not good.
+<blockquote class="bb-quote"><div class="bb-quote-body">(i calculated something around 200-300hz with typical windows)</div></blockquote>Right.  Not good for lows, good for mids and, best for highs.  That&#x27;s why you don&#x27;t see double glazed windows in studios.  They are fine for homes and offices, as they do a good job for typical exterior noise, but not good for modern bass-heavy music.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p141704">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">nixoblivion</span><time datetime="2017-03-27">27 March 2017</time><a class="permalink" href="#p141704" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Hey Stuart,
+
+I&#x27;ve read your reply so many times by now, that i almost know it by heart <span class="smilie" title=":D">:D</span>
+There is so much great info in there and im really grateful for it! I haven&#x27;t replied yet because i was collecting information from anywhere i could.
+
+But now i think i&#x27;m ready for the next round <span class="smilie" title=":)">:)</span>
+So i created an excel sheet to plot my data. I&#x27;m a visual guy and this helped me visualize. It might actually be of use for you or this forum?
+
+Maybe you could have a look and see if you agree with my data sheet. 
+So what i did is have 3 fields to enter data (thickness of both glasses and the distance between the glass)
+Then there is the table that shows the Transmission loss in the different conditions (under between and above resonsant and coincidence freq.). The last column is the Total TL of the MSM system. It takes into account the Resonant and Coincidence Frequencies.
+On the second sheet i plotted these values to make it easier to visualize.
+The 3rd and 4th sheet are just copies.
+
+here is the link to the excel file. unfortunately i can&#x27;t upload it to this forum.
+<a href="https://www.dropbox.com/s/co7um394j7lqst5/window.xlsx?dl=0" rel="nofollow noopener" target="_blank">https://www.dropbox.com/s/co7um394j7lqs ... .xlsx?dl=0</a>
+
+Looking at the Data, a double paned window still always has more transmission loss than a single paned window! When i was testing around, it seemed that a single paned window had a very similar TL (+/-1db) as the transmission loss of a double paned window of the same mass below the resonant frequency! So it seems under the resonant frequencies they are equal, but the double paned window is better above the resonant frequency. I must be calculating something wrong..?!
+
+Also one more question i have.
+I have researched several window companies and all of them have something called &quot;vsg&quot; which translated to english should mean &quot;laminated saftey glass&quot;. These are 2 glass panes glued by some sort of foil. This makes the glass stiffer and more rigid. 
+Especially the thicker panes all have this sort of glass.
+Is this a problem or might it even be beneficial, since the glass is more rigid this way?
+
+But getting to my current situation, it is practically impossible to find a window with only one pane of glass. All companies i have called have double or triple paned windows. But it is possible to find double paned windows where each layer has a thickness of 10mm, which should already have a pretty good TL.
+Since i have 40cm space for my window, i am thinking it might work to have 2 double paned windows that are 40cm apart. I&#x27;m sure this creates another even more complex situation that can not be predicted entirely. This would mean a 2 MSM system (windows) that are connected again as a MSM system i guess. 
+I&#x27;m not sure what the result would be though. Would this count as a 4 leaf system? the space of approx. 40cm is quite a a lot. Would this be 2 seperate MSM systems? 
+Might this work? Right now im not sure what other options i have, other than having custom made windows, which would be very expensive.
+
+hope this is not too much information/question in one post <span class="smilie" title=":D">:D</span></div>
+</article>
+<article class="post" id="p141802">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">nixoblivion</span><time datetime="2017-04-03">3 April 2017</time><a class="permalink" href="#p141802" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">I&#x27;m not sure if i did something wrong, or did not provide enough information to get a reply. 
+If i did, i would be grateful if someone could point me to my error so i can correct it!
+
+As mentioned in my post above, i&#x27;ve been playing around with the formulas you have given me.
+<a href="https://www.dropbox.com/s/co7um394j7lqst5/window.xlsx?dl=0" rel="nofollow noopener" target="_blank">https://www.dropbox.com/s/co7um394j7lqs ... .xlsx?dl=0</a>
+Here is an updated version of my xls file!
+
+I have now tried to compare 2 Window types. Same glass thickness. The only difference being the space between the glass (1,6cm and 2,4cm) because these are the types i can easily source.
+
+When i compare the data, it seems that the formulas show that the window with less distance between the glass panes actually has more transmission loss than the window with the bigger depth, especially in the resonant frequency area.
+Is this a mistake? Or is it actually better to have less space between the panes, when you can&#x27;t get a greater distance than 10cm?
+please guide me in a direction here.
+
+Also i have read on many occasions that it is beneficial to have 2 glass panes of different weights, so to have different resonant frequencies of the glass.
+Now my question is, will the TL be better with a window 10-16 (air gap) -10 (mm) or 10-16 (air gap) -8 (mm)??</div>
+</article>
+<article class="post" id="p143117">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-08-22">22 August 2017</time><a class="permalink" href="#p143117" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Wow!  I don&#x27;t know how I missed this for so long!   <span class="smilie" title=":oops:">:oops:</span>  Hopefully my belated reply is till of some use!
+<blockquote class="bb-quote"><div class="bb-quote-body">So i created an excel sheet to plot my data. I&#x27;m a visual guy and this helped me visualize. It might actually be of use for you or this forum?</div></blockquote>Thanks so much for that! I looks VERY useful.  I didn&#x27;t check the math, but I&#x27;m assuming it is correct...
+<blockquote class="bb-quote"><div class="bb-quote-body">Looking at the Data, a double paned window still always has more transmission loss than a single paned window!</div></blockquote>Exactly!  Yep.  Always.  &quot;Mass law&quot;, which applies to single-leaf barriers, is not very encouraging.  But MSM isolation is a lot better.
+<blockquote class="bb-quote"><div class="bb-quote-body">When i was testing around, it seemed that a single paned window had a very similar TL (+/-1db) as the transmission loss of a double paned window of the same mass below the resonant frequency! </div></blockquote>Right.
+<blockquote class="bb-quote"><div class="bb-quote-body"> So it seems under the resonant frequencies they are equal, but the double paned window is better above the resonant frequency. I must be calculating something wrong..?!</div></blockquote>No, not wrong.  Absolutely right.  Which is why you always need to tune your system so that the resonant frequency is as low as possible, preferably one octave below the lowest tone you need to isolate (in other words, half of the lowest frequency), or lower.
+<blockquote class="bb-quote"><div class="bb-quote-body">I have researched several window companies and all of them have something called &quot;vsg&quot; which translated to english should mean &quot;laminated saftey glass&quot;. </div></blockquote>Right.  That&#x27;s the stuff you need.  
+<blockquote class="bb-quote"><div class="bb-quote-body">These are 2 glass panes glued by some sort of foil. This makes the glass stiffer and more rigid. </div></blockquote>That &quot;foil&quot; is actually a thin file, and is called the &quot;interlayer&quot;. It is often PVB = Polyvinyl butyral (although there are other types of interlayer too).  PVB is a thermoplastic polymer, and it bonds strongly to the glass on either side.  This is the type of glass you need.  Some companies also manufacturer glass with an &quot;acoustic PVB&quot; interlayer, which is thicker than the standard PVB.  If you can get that, then even better.
+<blockquote class="bb-quote"><div class="bb-quote-body">Is this a problem or might it even be beneficial, since the glass is more rigid this way?</div></blockquote>It&#x27;s much better than ordinary glass, because the PVB also acts as a damper between the layers, to a certain extent.
+<blockquote class="bb-quote"><div class="bb-quote-body">But getting to my current situation, it is practically impossible to find a window with only one pane of glass.</div></blockquote>Then make the windows yourself!  It&#x27;s not hard.  Just buy the glass (single-pane thick laminated glass with acoustic PVB, and build your own windows.
+<blockquote class="bb-quote"><div class="bb-quote-body">This would mean a 2 MSM system (windows) that are connected again as a MSM system i guess. </div></blockquote>Right.  Actually, that&#x27;s a 4-leaf system, and since it has thin glass for all four leaves, plus two of the air gaps are also very thin, the resonant frequency will be rather high, and it will not isolate well at low frequencies...
+<blockquote class="bb-quote"><div class="bb-quote-body">Would this count as a 4 leaf system?</div></blockquote>Yes.
+<blockquote class="bb-quote"><div class="bb-quote-body">Right now im not sure what other options i have,</div></blockquote>Build them your self.  Like this:
+
+
+One frame built
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-01--main-outer-frame.jpg</div>
+Both frames (inner-leaf and outer-leaf) built and TEMPORARILY attached to each other with wood blocking, to keep them together during the installation.  You can also see the black cloth glued and taped across the gap
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-02--both-outer-frames-cloth-and-tape.jpg</div>Window frames in place, still attached to each other.
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-03--both-outer-frames-in-place.jpg</div>Window frames now separated, with inner blocking in place, and also glazing tape.
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-04--inner-frames-with-glazing-tape.jpg</div>
+Glass for inner-leaf window ready to put in place.
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-05--first-glass-ready.jpg</div>
+Inner-leaf glass in position, being sealed and fixed in permanently
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-06--first-glass-going-in-2.jpg</div>
+View into the middle of the window, in the air gap, before the second pane goes in.
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-07--one-pane-in--middle-view.jpg</div>
+Second pane going in, for the outer leaf.
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-08--second-pane-going-in.jpg</div>
+View of finished window from outside.
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-10--finished-outside-2.jpg</div>
+View of finished window from inside.
+<div class="bb-attachment-missing">Image not preserved: BRAUS-window-11--finished-window-from-inside-4.jpg</div>
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

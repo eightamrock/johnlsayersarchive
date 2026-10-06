@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control Room: New  Computer Model, or Old School Design? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by zepdude in Studio Design, 2014. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/19421/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Control Room: New  Computer Model, or Old School Design?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by zepdude on 5 May 2014. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 19421.</p>
+
+</div>
+</header>
+<article class="post" id="p133121">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">zepdude</span><time datetime="2014-05-05">5 May 2014</time><a class="permalink" href="#p133121" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">I&#x27;ve provided diagrams below, but as a more philosophical discussion, as someone about to build a studio I feel conflicted between going with a traditional and time tested design (such as the splayed wall RFZ designs kicking around here) or a pure rectangle that has been computer modeled (using REW) to predict the frequency response of the listening position.
+
+Lets assume in both cases the room would be built with proper studio construction techniques and would be treated and tuned using accepted techniques (bass traps, hangers, diffusers etc) so that is not a factor.
+
+Pros:
+
+Computer Model: 
+- The ability to create and predict a good low frequency response before construction.  For me, accurate bass is a critical start for a good control room.
+- The rectangular design maximizes available space allowing room for clients, keyboards and rack gear.
+
+Traditional Designs:  
+- Despite the fact that software can&#x27;t predict the outcome of the designs ahead of time, they seem to work well in the real world and have evolved over the last 50 years.
+- They look good.
+
+
+Cons:
+
+Computer Model:
+- How accurate is the prediction?
+- What is the model NOT telling us?  I.E. To what degree can something look good on paper but not sound good to our ear.
+
+Traditional Designs: 
+- Good acoustics do not necessarily scale with room dimensions (I don&#x27;t think) so taking a proven design and increasing it by 1 foot all around might put a nasty low frequency node in the listening position.  Let&#x27;s face it, once you get to highly splayed designs, ratios and predictions go out the window and the designer is going on his previous experience, training and gut instinct to get your room right.
+- There is no way to predict what the room will sound like ahead of time.  
+- Less efficient use of available space which means less space for people and gear, and less space for the sound to bloom (room volume is generally a good thing for sound).
+
+My proposed REW computer model is below.  The frequency response is with no treatment.  It has dips and peaks but note how evenly distributed they are.  The curve gets quite flat when I model in absorption.  
+
+Should I throw out what looks like a great bass response (so difficult to achieve) for a traditional time tested design?  Do the splayed walls and ceilings of the traditional designs somehow create optimal bass pressurization at the listening position which makes them better than a rectangular model?
+<div class="bb-attachment-missing">Image not preserved: Cont rm 15a 17 10 x 16 x 11 6 no sub.png</div><div class="bb-attachment-missing">Image not preserved: Control Room 15 3D.png</div><div class="bb-attachment-missing">Image not preserved: Control Room 15 diagram.jpg</div></div>
+</article>
+<article class="post" id="p133123">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-05-06">6 May 2014</time><a class="permalink" href="#p133123" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">I&#x27;m not sure that you are using valid parameters to come up with that response.  For example, you show ear height as 4&#x27;3&quot;, which is about 4 inches too high.  Standard listening height is 3&#x27;11-1/4&quot;, which is the average ear height for most people when seated (even tall people, since height is more commonly due to longer legs, not a longer torso).  So your head seems to be too high in that simulation.  Even worse, the speakers are not at head height: they are below head height.  If you really do want to sit with your ears 4&quot; higher than normal, then the speakers should also be 4&quot; higher than normal.
+
+You also have the listening position at 33% of room depth, but that puts it a bit too close to the front wall, probably.  You should be about 8 or 9 inches further back.  
+
+Also, you forgot to click the &quot;Room is sealed&quot; button
+
+Those changes wont produce a drastic change in the predicted response, but there will be very noticeable differences.  If you want accuracy then you should take them into account.
+<blockquote class="bb-quote"><div class="bb-quote-body"> I feel conflicted between going with a traditional and time tested design (such as the splayed wall RFZ designs kicking around here) or a pure rectangle</div></blockquote>Either will work.  You can get a great room using either of those methods, if the treatment is done right.
+<blockquote class="bb-quote"><div class="bb-quote-body">that has been computer modeled (using REW) to predict the frequency response of the listening position.</div></blockquote>I would not rely too much on software modelling:  At best, it can give you a rough idea of how the room will work out, but reality can be very much different.  Even slight variations during construction will make the actual response different, and that model does not even take into account your specific speakers, or the furniture in the room, or YOU in the room!  So don&#x27;t expect that the predicted response shown in that graph would be what actually happens if you were to build that room.  Very likely the real graph would not match the prediction too well.
+
+You are also putting too much priority on modal response:  That&#x27;s just a small part of overall studio design, and there&#x27;s no need to go nuts about it.  As long as your dimensions are not close to the &quot;bad&quot; ones, and are reasonably close to one of the good ones, you will be OK.
+<blockquote class="bb-quote"><div class="bb-quote-body">and put in slot walls to create an RFZ </div></blockquote>Sorry, but you can&#x27;t use slot walls to create an RFZ design inside of a rectangular room.  Firstly, slot walls are not normal walls: they don&#x27;t treat all frequencies alike:  They will only fully reflect the very high frequencies (those with wavelengths substantially shorter than the size of the slats), will absorb mids selectively (depending on how the wall is tuned and what the overall percent open area is) and reflect the rest to varying degrees, while scattering others, diffusing others, and allowing the lows through, where they will be partly absorbed and partly reflected.  So it will not act at all like the solid, massive, rigid inner-leaf surface of a true RFZ design.  RFZ is a complete system, with the entire room being designed for it from the start. It&#x27;s not something that can be cobbled together easily after the fact.
+<blockquote class="bb-quote"><div class="bb-quote-body">- The rectangular design maximizes available space allowing room for clients, keyboards and rack gear.</div></blockquote>RFZ doesn&#x27;t have to take up up a lot of space, and if you design the entire studio well, then you can gain that space back again in other rooms, or for other purposes.
+<blockquote class="bb-quote"><div class="bb-quote-body">- Despite the fact that software can&#x27;t predict the outcome of the designs ahead of time, they seem to work well in the real world </div></blockquote>Software CAN predict the outcome of an RFZ design:  Just not the free software that most people can use by themselves.  It requires FEM/FEA software and an operator who knows how to set up the boundary conditions, and how to interpret the results.
+<blockquote class="bb-quote"><div class="bb-quote-body">Good acoustics do not necessarily scale with room dimensions (I don&#x27;t think) </div></blockquote>Correct, although it&#x27;s not as critical as some people make out.  The only time it is really critical is if you are trying to copy a room that was designed with a specific musical scale in mind, such as a Wes Lachot design: those don&#x27;t scale well.
+<blockquote class="bb-quote"><div class="bb-quote-body"> Let&#x27;s face it, once you get to highly splayed designs, ratios and predictions go out the window </div></blockquote>Not really:  Only some of those change. Splaying the walls does not change the tangential and oblique modes that much, and since large portions of the walls are still parallel, even the axials are there to some extent.  Everest comments that it is possible to use the average dimensions of a room to get a reasonable idea of how a non-rectangular room will behave.
+<blockquote class="bb-quote"><div class="bb-quote-body">- There is no way to predict what the room will sound like ahead of time. </div></blockquote>Yes there is!  <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">Should I throw out what looks like a great bass response (so difficult to achieve) for a traditional time tested design? Do the splayed walls and ceilings of the traditional designs somehow create optimal bass pressurization at the listening position which makes them better than a rectangular model?</div></blockquote>What WILL change if you go with a true RFZ design with soffited speakers, is that there will be no SBIR artifacts at all from the front wall. and the side wall artifacts will be reduced, so the response would be flatter anyway to start with:  There will also be no power imbalance between the woofer and tweeter since the soffits eliminate the baffle step response issue.  There will also no longer be any edge diffraction form the speaker cabinets, and several other undesirable things will also be gone.  You&#x27;d also have clean, clear direct sound arriving at your ears without any room coloring, etc.
+
+Personally, I prefer RFZ design since it makes so much sense, but there&#x27;s nothing wrong with a simple rectangular design too.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p133130">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">zepdude</span><time datetime="2014-05-06">6 May 2014</time><a class="permalink" href="#p133130" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Hey Stuart,
+
+Very helpful information, thanks!
+
+You are actually slanting me towards using the traditional design over the computer model.  If I could be guaranteed the frequency response of the computer model, it might make sense to go that way, but if you&#x27;re saying that if I build that exact room it&#x27;s not going to have that curve then it&#x27;s not worth it.  I don&#x27;t want to end up with a rectangular room that doesn&#x27;t have the benefits of a splayed wall RFZ room and also doesn&#x27;t have a great bass response.  Then I&#x27;ve lost twice.
+
+BTW, The listening position in the computer model is based on my own studio situation.  I sit a bit high in my adjustable chair and the woofers of my monitors sit below ear height.  No matter, the response is pretty much the same if I make the adjustments you mentioned.</div>
+</article>
+<article class="post" id="p133135">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2014-05-07">7 May 2014</time><a class="permalink" href="#p133135" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">I sit a bit high in my adjustable chair and the woofers of my monitors sit below ear height. </div></blockquote>That&#x27;s fine: that&#x27;s where the woofers normally should be.  Speaker height refers to the height of the acoustic <em><span class="bb-u">axis </span></em>of the speakers, not the height of the woofer or tweeter, nor the height of the top or bottom of the speaker cabinet.  The manufacturer of your speakers should be able to tell you where the acoustic axis is.  That&#x27;s the reference point you should use.
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

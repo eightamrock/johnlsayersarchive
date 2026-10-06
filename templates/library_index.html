@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="read">
+<h1>The Library</h1>
+<p class="lede">{{ total }} of the forum’s most useful threads, sorted into twelve topics. Start here if you are planning a room and want the discussions people kept pointing back to.</p>
+<p class="muted small">Threads were chosen by how much they were read, how often other posts linked to them, and how many experienced members took part, then sorted into topics with AI assistance. Everything else is still in the <a href="/forum/">forums</a> and in search.</p>
+</div>
+<ul class="topics">{% for t in topics %}<li><a href="/library/{{ t.slug }}/">{{ t.name }}</a><p>{{ t.desc }} {{ t.count }} threads.</p></li>{% endfor %}</ul>
+{% endblock %}

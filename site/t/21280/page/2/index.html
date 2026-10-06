@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garage Studio Build - Checking my plans are sensible (page 2) | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by RKML in Studio Construction, 2017. 67 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21280/page/2/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-construction/">Studio Construction</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Garage Studio Build - Checking my plans are sensible</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by RKML on 19 October 2017. 67 replies, 2017–2020. In the Library under <a href="/library/build-diaries/">Build diaries</a>. <a href="/t/21280/key-posts/">Key posts in this thread</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21280.</p>
+<nav class="pager" aria-label="Pages"><span class="label">Page 2 of 3</span>
+<a href="/t/21280/" rel="prev">Previous</a>
+<a href="/t/21280/">1</a><span aria-current="page">2</span><a href="/t/21280/page/3/">3</a>
+<a href="/t/21280/page/3/" rel="next">Next</a></nav>
+</div>
+</header>
+<article class="post" id="p144756">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-02-18">18 February 2018</time><a class="permalink" href="#p144756" aria-label="Link to post 26">#26</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Luckily it&#x27;s not a problem to pull out what I put in - nothing is fabric-covered yet, and it&#x27;s just held in place with tacks and twine at the moment. Everything is easily-modifiable.  ....  the HH is definitely registering the speaker level as 80db on L and R, and 86 with both together. </div></blockquote>But that&#x27;s NOT what REW is showing!  The original tests seem to have been done with the individual speakers at around 65 - 70 dB, and the latest tests at around 75, or a bit less.  Are you SURE you followed the procedure exactly?  Are you SURE you set your HH meter to &quot;C&quot; weighting and &quot;Slow&quot; response, and that you typed in the correct number in REW?  To me, it looks like you have the HH meter set to &quot;A&quot; weighting, and REW set to &quot;C&quot;...
+
+Double-check everything, re-calibrate carefully, then make accurate notes of where you have every single setting for ever device in the signal chain, including the exact location of the mic tip in the room (That&#x27;s also very important, for checking high frequency response later).  Then try to not change any setting at any place in the signal chain from here on, and always set the mic in the exact same spot, every time.
+<blockquote class="bb-quote"><div class="bb-quote-body"> So hopefully the sweep tone is the same level, and is affecting the room the same way each time. I&#x27;m sure it&#x27;s a mic input trim issue that is affecting the final levels that show in the tests</div></blockquote>If you are absolutely certain that this is the case, then there&#x27;s no need to pull out the back wall to repeat the &quot;empty room&quot; measurement, as I can adjust it in REW to match the later measurement, ... but I&#x27;m a bit skeptical that it was only mic pre gain setting....
+<blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;ll re-calibrate REW, and do a new set of tests, all with exactly the same settings - it won&#x27;t take long</div></blockquote> <span class="smilie" title=":thu:">:thu:</span> 
+<blockquote class="bb-quote"><div class="bb-quote-body">I think I was a bit spooked by the original RT60 that went off the scale - so went over the top trying to bring the decay down.</div></blockquote>There&#x27;s basically two method for tuning a room: start with it very live, and kill it slowly, or start with it very dead and liven it up slowly.  Personally, I prefer the later.  Take a look at this thread carefully (and follow it into the future!) to see how that works:  <a href="/t/21368/">viewtopic.php?f=2&amp;t=21368</a>  If the room is dead, then you KNOW that you have already damped all the modes and resolved the big reflection issues, so you can see exactly what is happening as you add each new device.  If you start the other way (very live, slow killing) then you keep on revealing new stuff that you didn&#x27;t know was there, as it was masked by other stuff, so you are forever chasing your tail, adding new treatment to deal with those newly discovered things you hadn&#x27;t seen yet.  However, both methods work, and both are valid.  But you have to decide which one you are going to use!  It&#x27;s really tough to try to use both at once... <span class="smilie" title=":)">:)</span>
+
+So, starting with that empty room setting, you added a lot of absorption and got some results in attempting to make it &quot;dead&quot;, but the modal issues are still there.  So I&#x27;d suggest that you need to spend time attacking JUST the modal issues now, while taking care to not over-do the high-end absorption.  In other words, absorption mostly, perhaps some type of tuned trap if you have a really stubborn mode, but keep the highs in the room.
+<blockquote class="bb-quote"><div class="bb-quote-body">I have now done some reading on ITU/EBU recommendations and I have a clearer idea now why too little decay = also not ideal.</div></blockquote> <span class="smilie" title=":thu:">:thu:</span>  Yup!  Anad apart from the technical reasons, it just doesn&#x27;t sound nice.  It is fatiguing, and uncomfortable to be in a dead room for long periods, trying to do critical listening.
+<blockquote class="bb-quote"><div class="bb-quote-body">Bob Gold&#x27;s calculator gives *RT60 (ITU/EBU Control Room Recommended): 138 ms* for my room. I&#x27;m guessing this is &#x27;recommendation&#x27; as opposed to &#x27;hard rule&#x27;?</div></blockquote>I would go a little higher than that.  More recent research suggest that engineers prefer longer decay times, and find it more comfortable and accurate to mix in, provided that the decay is diffuse, not specular.  I would aim for closer 200 ms.  Perhaps around 180 or so.
+<blockquote class="bb-quote"><div class="bb-quote-body">I also don&#x27;t know whether it&#x27;s best to err above or below that number for given frequency areas.</div></blockquote>Ideal is flat!  I mean flat TIME response, not just flat FREQUENCY response.  In other words, the decay rate should be the same for all frequency bands, across the scale, within +/-50ms  So if you have, for example, 200 ms at 1 kHz then no point on the graphs should go higher than 249ms and no point should go lower than 151 ms, plus adjacent bands should ALSO be within 50ms of each other: so you can&#x27;t have 150 ms at 315 Hz but 250 ms at 400 Hz, which is the very next band.  Right now, you have 178ms at 315 Hz, then 271 at 400 Hz... <span class="smilie" title=":)">:)</span>  
+
+You can relax that a little at the very low end and very high end, but the mid range is critical.  BS.1116-3 includes a graph that shows the upper and lower limits across the spectrum.  If you can stay within those dotted lines, then you are doing fine.  This is more important that flat frequency response, actually.  Most people tend to grab onto the frequency response graph and attempt to get that flat, but it&#x27;s actually the least useful graph of the lot!  Much more important is time-domain response, which includes modal decay, SBIR, reflections, and other forms of resonance.  If you get that right, then the FR will take care of itself...
+<blockquote class="bb-quote"><div class="bb-quote-body">If I&#x27;m reading the room-mode calculator correctly, the 52hz peak, and the 104 hz null are both being caused by the same axial mode - between the front / rear wall</div></blockquote>I&#x27;d agree that the 52 Hz peak is modal, but I&#x27;m not so sure about 104.  You had that mode in the empty room, but it got nicely damped with the first round of treatment:
+<div class="bb-attachment-missing">Image not preserved: RKML--FR-20-500--first-three.png</div>Orange is the &quot;empty room&quot; test, green is with the rear wall done, and purple with the front superchunks.  So the mode at 101 was controlled with the first round.  The second round did not cause a &quot;negative mode&quot;!  Most likely, it uncovered an SBIR issue that happened to be at the same frequency as the mode, so it only came to light once the mode was fully damped.  You can see signs that it was there all along, but the mode was masking it.
+
+It is also roughly in the typical spot for all rooms, for the first-order floor bounce null.  That&#x27;s what I would suspect.
+<blockquote class="bb-quote"><div class="bb-quote-body">Then I&#x27;ve got the other big peak around 143hz, which I think corresponds to the axial mode between floor and ceiling?</div></blockquote>Possibly, but I&#x27;m not convinced.  It took a big hit with the front wall superchunks, so I&#x27;d suspect either axial across the room, or lengthwise.  However, it does not line up with any predicted modem which makes me suspect that either your walls are rather thin and/or low mass, or that the measurements you gave ar not correct.  Are you SURE it is 330cm long, 229cm wide, and 233cm high?  In other words, a square cross section?  <span class="smilie" title=":shock:">:shock:</span> 
+<blockquote class="bb-quote"><div class="bb-quote-body">I don&#x27;t know the solution to the front / rear axial mode.</div></blockquote>Which one?  <span class="smilie" title=":)">:)</span>
+
+One general rule of thumb (not entirely accurate, but it helps to get you on the track sometimes): usually you will find that treating the front and back walls with absorption will affect the time domain response, and treating the side walls with absorption will affect the frequency response.  Don&#x27;t confuse large SPL variations with modal ringing: they are related, but not the same thing....
+<blockquote class="bb-quote"><div class="bb-quote-body">Maybe I&#x27;m barking up all sorts of wrong trees here!</div></blockquote>A little bit!  But there&#x27;s lots of cats out there, calling for your attention, so it&#x27;s normal to go rushing around barking at everything until you figure out which tree they are actually hiding in... <span class="smilie" title=":)">:)</span>
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p144798">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-02-19">19 February 2018</time><a class="permalink" href="#p144798" aria-label="Link to post 27">#27</a></header>
+<div class="post-body">As always, thanks for a very generous and very interesting reply.  
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">But that&#x27;s NOT what REW is showing!  The original tests seem to have been done with the individual speakers at around 65 - 70 dB, and the latest tests at around 75, or a bit less.  Are you SURE you followed the procedure exactly?  Are you SURE you set your HH meter to &quot;C&quot; weighting and &quot;Slow&quot; response, and that you typed in the correct number in REW?  <strong>To me, it looks like you have the HH meter set to &quot;A&quot; weighting, and REW set to &quot;C&quot;.</strong>..</div></blockquote>Hmm.  I&#x27;ll check this
+<blockquote class="bb-quote"><div class="bb-quote-body">
+Double-check everything, re-calibrate carefully, then make accurate notes of where you have every single setting for ever device in the signal chain, including the exact location of the mic tip in the room (That&#x27;s also very important, for checking high frequency response later).  Then try to not change any setting at any place in the signal chain from here on, and always set the mic in the exact same spot, every time.
+but I&#x27;m a bit skeptical that it was only mic pre gain setting....
+</div></blockquote>I&#x27;m just going to do the tests again.  no point messing around with potentially flawed data.
+
+At the moment I&#x27;m delayed by the most British of problems... it&#x27;s raining!
+So I can&#x27;t take the rockwool out yet, as I have nowhere to put it except in the garden. I think Thursday is my next chance so fingers crossed.
+<blockquote class="bb-quote"><div class="bb-quote-body">There&#x27;s basically two method for tuning a room: start with it very live, and kill it slowly, or start with it very dead and liven it up slowly.  Personally, I prefer the latter.  Take a look at this thread carefully (and follow it into the future!) to see how that works:  <a href="/t/21368/">http://www.johnlsayers.com/phpBB2/viewt ... =2&amp;t=21368</a>  If the room is dead, then you KNOW that you have already damped all the modes and resolved the big reflection issues, so you can see exactly what is happening as you add each new device.  If you start the other way (very live, slow killing) then you keep on revealing new stuff that you didn&#x27;t know was there, as it was masked by other stuff, so you are forever chasing your tail, adding new treatment to deal with those newly discovered things you hadn&#x27;t seen yet.  However, both methods work, and both are valid.  But you have to decide which one you are going to use!  It&#x27;s really tough to try to use both at once... <span class="smilie" title=":)">:)</span>
+So, starting with that empty room setting, you added a lot of absorption and got some results in attempting to make it &quot;dead&quot;, but the modal issues are still there.  So I&#x27;d suggest that you need to spend time attacking JUST the modal issues now, while taking care to not over-do the high-end absorption.  In other words, absorption mostly, perhaps some type of tuned trap if you have a really stubborn mode, but keep the highs in the room.</div></blockquote>This makes sense - and it sounds like I&#x27;ve sort of started down the path of the second approach?
+
+I&#x27;m inferring that my likely sequence of action now will be something like:
+* Leave what I&#x27;ve done as it is (after I&#x27;ve re-tested)
+* Add more absorption strategically, to get the modes
+* Put some longer decay back, with intelligent use of relective surfaces.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body"> <span class="smilie" title=":thu:">:thu:</span>  Yup!  Anad apart from the technical reasons, it just doesn&#x27;t sound nice.  It is fatiguing, and uncomfortable to be in a dead room for long periods, trying to do critical listening.
+<blockquote class="bb-quote"><div class="bb-quote-author">RKML wrote:</div><div class="bb-quote-body">Bob Gold&#x27;s calculator gives *RT60 (ITU/EBU Control Room Recommended): 138 ms* for my room. I&#x27;m guessing this is &#x27;recommendation&#x27; as opposed to &#x27;hard rule&#x27;?</div></blockquote>I would go a little higher than that.  More recent research suggest that engineers prefer longer decay times, and find it more comfortable and accurate to mix in, provided that the decay is diffuse, not specular.  I would aim for closer 200 ms.  Perhaps around 180 or so.</div></blockquote>That&#x27;s fascinating. That&#x27;s experiential knowledge. Thank you.
+<blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;d agree that the 52 Hz peak is modal, but I&#x27;m not so sure about 104.  You had that mode in the empty room, but it got nicely damped with the first round of treatment:
+<div class="bb-attachment-missing">Not preserved: RKML--FR-20-500--first-three.png</div>Orange is the &quot;empty room&quot; test, green is with the rear wall done, and purple with the front superchunks.  So the mode at 101 was controlled with the first round.  The second round did not cause a &quot;negative mode&quot;!  Most likely, it uncovered an SBIR issue that happened to be at the same frequency as the mode, so it only came to light once the mode was fully damped.  You can see signs that it was there all along, but the mode was masking it.
+
+It is also roughly in the typical spot for all rooms, for the first-order floor bounce null.  That&#x27;s what I would suspect.</div></blockquote>The floor you say!!! 
+It must be defeated!!!
+I shall immediately cover my entire floor with 30cm of Rockwool........... 
+or on second thought, maybe I&#x27;ll hold my horses a little this time, read the data, and try to find the most sensible solution before I break out the rockwool...  <span class="smilie" title=":mrgreen:">:mrgreen:</span> 
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body"><blockquote class="bb-quote"><div class="bb-quote-author">RKML wrote:</div><div class="bb-quote-body">Then I&#x27;ve got the other big peak around 143hz, which I think corresponds to the axial mode between floor and ceiling?</div></blockquote>ed.  It took a big hit with the front wall superchunks, so I&#x27;d suspect either axial across the room, or lengthwise.  However, it does not line up with any predicted modem which makes me suspect that either your walls are rather thin and/or low mass, or that the measurements you gave ar not correct.  Are you SURE it is 330cm long, 229cm wide, and 233cm high? <strong> In other words, a square cross section?</strong>  <span class="smilie" title=":shock:">:shock:</span> </div></blockquote>I know.  <span class="smilie" title=":!:">:!:</span> 
+That fell firmly into the category of &quot;it&#x27;s that or no studio at all&quot;. I just hardly had any space to play with.
+I was aware going in that it was going to be tough to treat.
+
+The measurements are definitely correct.  
+I don&#x27;t think the walls are particularly thin, although I don&#x27;t know how you would define that relative to other walls.  They are Stud--&gt;15mm plywood--&gt;15mm drywall--&gt;15mm drywall.
+so 30mm drywall altogether on a backing of ply. The plasterboard is the high-density SoundBloc - it weighed 44kg per sheet, as I learned when I helped to lift them off the truck! 
+<blockquote class="bb-quote"><div class="bb-quote-body">
+One general rule of thumb (not entirely accurate, but it helps to get you on the track sometimes): usually you will find that treating the front and back walls with absorption will affect the time domain response, and treating the side walls with absorption will affect the frequency response.  Don&#x27;t confuse large SPL variations with modal ringing: they are related, but not the same thing....</div></blockquote>That&#x27;s really interesting.   I was wondering about exactly this after doing my best to interpret my test results
+My front / back wall absorption has clearly hammered the decay times, but doesn&#x27;t really seem to have touched the frequency response in the big peaks and the one huge null.  I was surprised at this - thought that it would have an effect on both.
+I&#x27;m fascinated now to see now what happens when I do add some treatment to the side walls. 
+
+My original generic plan was for 60cmx120cm panels, on the first reflection points on the side walls, 10cm thick, and spaced 10cm off the wall if possible.  
+Now I&#x27;m wondering if that&#x27;s still the best plan, or there&#x27;s a more targeted approach here - if there&#x27;s a chance that 100hz null could be got at with sidewall treatment.
+I won&#x27;t be doing anything til the tests are done anyway.
+
+Once again Stuart, your help with my flounderings here is very, very much appreciated.  I&#x27;m enjoying learning every bit, but it&#x27;s nice to know that if I start wandering off track, I&#x27;ll probably be called on it sooner rather than later!  <span class="smilie" title=":mrgreen:">:mrgreen:</span></div>
+</article>
+<article class="post" id="p144844">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-02-22">22 February 2018</time><a class="permalink" href="#p144844" aria-label="Link to post 28">#28</a></header>
+<div class="post-body">Retest done.
+I hope these files are usable. I&#x27;ve been having problems with clipping in REW, and I just cannot find the culprit.  I had to mess with my input trim again and again during calibration to get it right.
+These files are as close as I can get to 80db L, and 80dbR, and 86db LR.  
+
+I have not touched the master volume or any other settings at any point once I started testing though, so I can guarantee that the sweep tone was putting the same energy into the room on each test.  
+At the very least I know these tests are consistent.
+
+<strong>First up, the empty room:</strong>
+<div class="bb-attachment-missing">Image not preserved: EmptyRoom.jpg</div><div class="bb-attachment-missing">Image not preserved: Empty Room Wtrfll.jpg</div><strong>Then the room with Rear Wall treatment.</strong>
+* Superchunk across rear wall / ceiling corner. 56cm along the sides.  40cm deep.  79 Cm Hypotenuse
+* 30cm fill of rear wall.
+
+(I&#x27;ve made a drawing error in Sketchup here. The fill does not stop at knee level as it looks to in the picture - it goes down almost to the skirting board.)
+<div class="bb-attachment-missing">Image not preserved: RearWall.jpg</div><div class="bb-attachment-missing">Image not preserved: Rear Wall Wtrfll.jpg</div><strong>Then the addition of the front corner Superchunk</strong>
+* Superchunks are 60cm along sides. 42cm Deep.  85cm Hypotenuse
+<div class="bb-attachment-missing">Image not preserved: RearWallSprChnk.jpeg</div><div class="bb-attachment-missing">Image not preserved: RearWallSprChnk Wtrfll.jpg</div>All treatment is done with Rockwool 45kg/m3
+
+MDAT file containing all results
+<a href="https://www.dropbox.com/s/6ikkhmqms9hph8a/Empty%20-%20Rear%20-%20Rear%20SprChnk.mdat?dl=0" rel="nofollow noopener" target="_blank">https://www.dropbox.com/s/6ikkhmqms9hph ... .mdat?dl=0</a>
+
+The only thing missing from the sketchup drawings is me sitting in the chair, hyperventilating and swearing loudly in Welsh at REW my input trim knob  <span class="smilie" title=":D">:D</span></div>
+</article>
+<article class="post" id="p144848">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-02-22">22 February 2018</time><a class="permalink" href="#p144848" aria-label="Link to post 29">#29</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">me sitting in the chair, hyperventilating and swearing loudly in Welsh at REW my input trim knob</div></blockquote>Now THAT&#x27;S something I probably wouldn&#x27;t want to hear!  A Welshman swearing loudly is not very musical!  <span class="smilie" title=":)">:)</span>  In fact, I&#x27;m surprised your mic didn&#x27;t melt!   <span class="smilie" title=":shock:">:shock:</span>  <span class="smilie" title=":)">:)</span>
+
+OK, I took a very quick look at the data, and it&#x27;s all good now, at the right levels, and showing what I&#x27;d expect it to show.  I&#x27;ll try to find some time tomorrow to take a closer look, and see what I&#x27;d suggest, but I&#x27;m kind of busy right now with the projects of my paying customers, so I hope you understand that this can&#x27;t take high priority...
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p144873">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-02-23">23 February 2018</time><a class="permalink" href="#p144873" aria-label="Link to post 30">#30</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">Now THAT&#x27;S something I probably wouldn&#x27;t want to hear!  A Welshman swearing loudly is not very musical!  <span class="smilie" title=":)">:)</span>  In fact, I&#x27;m surprised your mic didn&#x27;t melt!   <span class="smilie" title=":shock:">:shock:</span>  <span class="smilie" title=":)">:)</span></div></blockquote>Nid yw&#x27;n swn melys iawn!  <span class="smilie" title=":)">:)</span> 
+<blockquote class="bb-quote"><div class="bb-quote-body">
+OK, I took a very quick look at the data, and it&#x27;s all good now, at the right levels, and showing what I&#x27;d expect it to show. </div></blockquote>That&#x27;s great to hear - I will now be declaring an exclusion zone around my sound card and no settings will be touched until all testing is finished
+<blockquote class="bb-quote"><div class="bb-quote-body">
+ I&#x27;ll try to find some time tomorrow to take a closer look, and see what I&#x27;d suggest, but I&#x27;m kind of busy right now with the projects of my paying customers, so I hope you understand that this can&#x27;t take high priority...
+
+-  Stuart  -</div></blockquote>Of course, anytime you get a chance is brilliant Stuart.  I&#x27;m enjoying digging in the archives here, researching and learning. 
+I&#x27;m sure it&#x27;s far more useful for the forum as a resource if I try to work it out myself as much as possible, and you can put me back on track if needed.  
+
+I&#x27;m focussed on trying to find that dip at 100hz at the moment, although I am forming a suspicion that the treatment that solves that will likely help the peaks around it too.
+I haven&#x27;t done anything with the sides yet, so I&#x27;m guessing something on the sidewalls, or even superchunks on the side wall / ceiling corners (or both) might be next point of attack.
+
+I wonder if I can treat this room to a usable state with just absorption.  I&#x27;d like to.
+I&#x27;ve read some great threads about slatted tuned traps, and had a look at John&#x27;s diagrams and formulas for them.  I think they fit into the &#x27;something to try in the future&#x27; category for me at the moment.  I don&#x27;t even know if I have enough space in my room for something like that.
+
+All food for thought.</div>
+</article>
+<article class="post" id="p144976">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-02-28">28 February 2018</time><a class="permalink" href="#p144976" aria-label="Link to post 31">#31</a></header>
+<div class="post-body">So having spent another week reading extensively here, and researching my situation:
+
+* No tuned / panel traps.  Just absorption.  I&#x27;ve read countless places here that my room is too small for those, and that&#x27;s fine by me.  
+* If I&#x27;ve interpreted my REW correctly (big IF) it seems that my big 99hz null is SBIR.  There&#x27;s a big change in the phase graph at that point.  I guess it either comes from the ceiling or the floor.
+
+My next steps will probably be:
+* Panels on the first reflection points on the side walls
+* Hard-backed cloud
+* Add plastic covering to some of the absorption I&#x27;ve already done.
+
+I have a couple of points I&#x27;m not quite sure on.
+
+<strong>Side Wall Panels</strong>
+60cm x 120cm panels.  These could be 100mm thick, and spaced away 100mm from the wall.  I&#x27;ve read this recommended in other threads.
+Or: they could simply be 200mm thick.  Do I get more bang for my buck by making them thicker?
+I&#x27;m guessing these shouldn&#x27;t be covered in plastic, as we don&#x27;t want anything reflecting from here.
+
+<strong>Ceiling cloud</strong>
+From reading here I understand the key points should be:
+* 15mm ply hard back
+* at least 12deg angle (lower edge toward front wall, higher edge towards rear wall)
+* Fixed to the ceiling joists theatre rigging style - with closed-loop bolts, no open hooks - rated for 10x the weight.
+* 100mm absorption on underside covered by thin plastic then fabric
+* more absorption on the top.
+
+I&#x27;m unsure about:
+* The angle.  Steeper than 12deg is fine - should I go steeper if possible?
+* I have plenty of RW45 offcuts. I could bag them up and stuff them above the cloud to make it almost like a superchunk up there if this is advantageous.
+* As I have such a small room, I could extend this cloud all the way to the front wall.  it would span the gap between the two front corner superchunks. Is this a good idea, or should I make a superchunk for the front wall top edge, and have the cloud smaller.
+
+<strong>Plastic coverings</strong>
+* I&#x27;ve read to use the thin plastic that painters use for drop-cloths
+* I&#x27;m guessing I should cover the whole back wall absorption with this.
+* And the cloud
+* I don&#x27;t know whether to cover the front wall superchunks with plastic?
+* I quite like the idea of putting some wide slats up (spaced far enough apart to avoid becoming tuned resonators). Are these necessary as well as the plastic?  Maybe we won&#x27;t know til testing with the plastic.
+
+That&#x27;s where I&#x27;ve got to so far.  
+I&#x27;ve not read anything that contradicts this (I think!!!!) but maybe my plans could be tweaked.  Any ideas very welcome. 
+
+Owen</div>
+</article>
+<article class="post" id="p144977">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-02-28">28 February 2018</time><a class="permalink" href="#p144977" aria-label="Link to post 32">#32</a></header>
+<div class="post-body">Here&#x27;s a sketchup of the cloud idea.
+<div class="bb-attachment-missing">Image not preserved: Re-Test Cloud .jpg</div>And here with the addition of rockwool off-cuts in polythene bags, stuffed up and hidden away above the cloud, if that is effective in any way.
+I&#x27;ve got loads of off-cuts, I could pretty much fill that space I think.
+<div class="bb-attachment-missing">Image not preserved: Re-Test Rockwool Bags.jpg</div></div>
+</article>
+<article class="post" id="p144997">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-02">2 March 2018</time><a class="permalink" href="#p144997" aria-label="Link to post 33">#33</a></header>
+<div class="post-body">Just a wee nudge for this one. 
+
+Looks like I’ve got a bit of non-fatherhood time this weekend, and even a willing helper / rockwool-cuttter in my songwriting partner, so I’m planning to get make some progress on the treatment building. 
+
+My panels and cloud plans seem sound from what I can work out, but any problems that might be spotted by those in the know would be brilliant, before I start cutting wood and drilling holes  <span class="smilie" title=":D">:D</span></div>
+</article>
+<article class="post" id="p145001">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-03-02">2 March 2018</time><a class="permalink" href="#p145001" aria-label="Link to post 34">#34</a></header>
+<div class="post-body">Do some ray tracing and check the angle of your cloud. Use the cloud to deflect sound into your back wall, that would be the goal. 
+
+Greg</div>
+</article>
+<article class="post" id="p145002">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-02">2 March 2018</time><a class="permalink" href="#p145002" aria-label="Link to post 35">#35</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Gregwor wrote:</div><div class="bb-quote-body">Do some ray tracing and check the angle of your cloud. Use the cloud to deflect sound into your back wall, that would be the goal. 
+
+Greg</div></blockquote>Cheers - will do. 
+I’ve just been reading your posts about ray-tracing in sketchup. Looks like that’ll be a learning process (as everything in sketchup is!)
+
+I should have some time in hand to do that, as the angle of the cloud is less critical to work out right now it think, as i can change it easily enough by adjusting the chain length later. 
+It’s more the general design and principles of the cloud and panels that I want to check, before the power tools come out and I start getting all excited.  <span class="smilie" title=":D">:D</span></div>
+</article>
+<article class="post" id="p145003">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-03-03">3 March 2018</time><a class="permalink" href="#p145003" aria-label="Link to post 36">#36</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">* If I&#x27;ve interpreted my REW correctly (big IF) it seems that my big 99hz null is SBIR. There&#x27;s a big change in the phase graph at that point. I guess it either comes from the ceiling or the floor.</div></blockquote>Probably floor bounce.  That&#x27;s a fairly common situation, even in pro studios.  You can check if that&#x27;s the case by piling up some thick absorption in the floor between the speakers and the mic.  If the dip goes away, then that&#x27;s very likely what it was.  If it doesn&#x27;t, then I&#x27;d suspect rear wall.
+<blockquote class="bb-quote"><div class="bb-quote-body">60cm x 120cm panels. These could be 100mm thick, and spaced away 100mm from the wall. I&#x27;ve read this recommended in other threads.</div></blockquote> :thu;
+<blockquote class="bb-quote"><div class="bb-quote-body">Or: they could simply be 200mm thick. Do I get more bang for my buck by making them thicker?</div></blockquote>Usually, yes.  They will then act down to much lower frequencies, assuming that the angle of incidence isn&#x27;t too high, but even then you&#x27;d probably get a good boost in overall low frequency absorption... especially if you leave the edges of the panel open to the room, or mostly open.
+<blockquote class="bb-quote"><div class="bb-quote-body">* 15mm ply hard back</div></blockquote>Minimum!  It doesn&#x27;t have to be ply:  MDF and OSB are fine too.
+<blockquote class="bb-quote"><div class="bb-quote-body">* at least 12deg angle (lower edge toward front wall, higher edge towards rear wall)</div></blockquote>As Greg said, you&#x27;d need to ray trace to find out if that is enough, but it does not NEED to be 12°: it&#x27;s not for flutter echo, and even if you did have a flutter echo problem, the absorption below the hard back would take care of that.
+<blockquote class="bb-quote"><div class="bb-quote-body">* Fixed to the ceiling joists theatre rigging style - with closed-loop bolts, no open hooks - rated for 10x the weight.</div></blockquote> <span class="smilie" title=":thu:">:thu:</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">* 100mm absorption on underside covered by thin plastic then fabric
+* more absorption on the top.</div></blockquote> <span class="smilie" title=":thu:">:thu:</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">* The angle. Steeper than 12deg is fine - should I go steeper if possible?</div></blockquote>12° is already pretty steep.  Going too steep with a large cloud can make the room looks strange.  Another option (if you do need a very large angle) is to have two or three smaller clouds, or even to have panels as part of the cloud that are angled more than the cloud itself.
+<blockquote class="bb-quote"><div class="bb-quote-body">* I have plenty of RW45 offcuts. I could bag them up and stuff them above the cloud to make it almost like a superchunk up there if this is advantageous.</div></blockquote>Save that for your speaker soffits (assuming you are going to soffit-mount...)
+<blockquote class="bb-quote"><div class="bb-quote-body">* As I have such a small room, I could extend this cloud all the way to the front wall. it would span the gap between the two front corner superchunks.</div></blockquote>Not necessary, and it might look strange.  As long as it covers most of the area between the speakers and the desk, that&#x27;s fine.  If you really like making clouds, then you could put another one at a flatter angle above the mix position.
+<blockquote class="bb-quote"><div class="bb-quote-body">* I&#x27;m guessing I should cover the whole back wall absorption with this.</div></blockquote>Maybe, but be careful.  Plastic is technically a &quot;foil&quot;, and it does have a certain tuning effect.  If you cover a large area with the same thickness of plastic, then you create a large area that reflects one range of frequencies very well, and absorbs another range very well.  That can color the sound of the room.  You might need to vary the thickness, or the coverage area, or both.
+<blockquote class="bb-quote"><div class="bb-quote-body">* I don&#x27;t know whether to cover the front wall superchunks with plastic?</div></blockquote>Probably not necessary, but you could if you are worried about fibers.
+<blockquote class="bb-quote"><div class="bb-quote-body">* I quite like the idea of putting some wide slats up (spaced far enough apart to avoid becoming tuned resonators). Are these necessary as well as the plastic? Maybe we won&#x27;t know til testing with the plastic.</div></blockquote>I&#x27;m not sure if yo are following the &quot;Room Tuning&quot; thread, but it might be really interesting for you:  <a href="/t/21368/">viewtopic.php?f=2&amp;t=21368</a>
+<blockquote class="bb-quote"><div class="bb-quote-body">Here&#x27;s a sketchup of the cloud idea.</div></blockquote>I would split that in half horizontally into two clouds: One running at a larger angle between the speakers and toward the desk, the other mostly above the desk at a smaller angle.
+<blockquote class="bb-quote"><div class="bb-quote-body">And here with the addition of rockwool off-cuts in polythene bags, stuffed up and hidden away above the cloud, if that is effective in any way.
+I&#x27;ve got loads of off-cuts, I could pretty much fill that space I think.</div></blockquote>It&#x27;s worth a try, as long as you don&#x27;t pack the off-cuts in the bags too tightly.  You don&#x27;t want to compress them too much.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p145011">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-03">3 March 2018</time><a class="permalink" href="#p145011" aria-label="Link to post 37">#37</a></header>
+<div class="post-body">Thanks Stuart - all really helpful.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body"><blockquote class="bb-quote"><div class="bb-quote-author">RKML wrote:</div><div class="bb-quote-body">Or: they could simply be 200mm thick. Do I get more bang for my buck by making them thicker?</div></blockquote>Usually, yes.  They will then act down to much lower frequencies, assuming that the angle of incidence isn&#x27;t too high, but even then you&#x27;d probably get a good boost in overall low frequency absorption... especially if you leave the edges of the panel open to the room, or mostly open.</div></blockquote>Cool - I&#x27;ve done this.
+<blockquote class="bb-quote"><div class="bb-quote-body"> Plastic is technically a &quot;foil&quot;, and it does have a certain tuning effect.  If you cover a large area with the same thickness of plastic, then you create a large area that reflects one range of frequencies very well, and absorbs another range very well.  That can color the sound of the room.  You might need to vary the thickness, or the coverage area, or both.
+
+I&#x27;m not sure if yo are following the &quot;Room Tuning&quot; thread, but it might be really interesting for you:  <a href="/t/21368/">viewtopic.php?f=2&amp;t=21368</a></div></blockquote>Ah - really interesting - thanks.  I&#x27;ll read that thread thoroughly.  Had a look at it before - but its becoming really relevant now - the plastic thickness and coverage topic.
+<blockquote class="bb-quote"><div class="bb-quote-body">I would split that in half horizontally into two clouds: One running at a larger angle between the speakers and toward the desk, the other mostly above the desk at a smaller angle.
+</div></blockquote>So I&#x27;ve had a go at the ray-tracing, and I think I&#x27;m getting the maths / angles right. (Thanks Greg, for your posts on this - it&#x27;s a tricky learning process in Sketchup.)
+I&#x27;m not sure I&#x27;m quite getting the concept right though.  
+I was under the impression that the purpose was to fire the reflections past the engineer, and into the back wall.
+However I go about it though, I always have reflections hitting the mix engineer&#x27;s head.  
+In this sketch, the cloud above the engineer is at 6deg, and the cloud above the speakers is all the way at 24deg, and it still doesn&#x27;t seem to be steep enough.  Am I missing something here?
+<div class="bb-attachment-missing">Image not preserved: Re-Test double cloud idea 2 Raytrace.jpg</div>It seems like, to get all the reflections from the above-speaker cloud to miss the mix engineer, the cloud would almost have to be 45deg, or more, with the bottom edge almost touching the speakers.
+I don&#x27;t mind building that, if that is what works, it just seems like I must have this wrong?  
+
+Cheers,
+
+Owen</div>
+</article>
+<article class="post" id="p145012">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-03">3 March 2018</time><a class="permalink" href="#p145012" aria-label="Link to post 38">#38</a></header>
+<div class="post-body">Even with this one - the above-speaker cloud is at 38deg, the poor old mix guy takes it in the face.
+<div class="bb-attachment-missing">Image not preserved: Re-Test double cloud idea 3.jpg</div>I&#x27;ve got to be getting something wrong here?</div>
+</article>
+<article class="post" id="p145018">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-03-04">4 March 2018</time><a class="permalink" href="#p145018" aria-label="Link to post 39">#39</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Even with this one - the above-speaker cloud is at 38deg, the poor old mix guy takes it in the face.</div></blockquote>It makes you realize how much easier designing a room would be with a really tall ceiling hey? <span class="smilie" title=":-(">:-(</span>
+
+I FINALLY got my angles worked out how I like them. I will try and post pictures on my thread tomorrow. The trick is trying to make it look good while still functioning. If I remember correctly, I had to have 2 separate angles before hitting my main &quot;flat-ish&quot; ceiling. I also had to move my mix position to somewhere around 33% of the room depth. That was mostly due to the side wall issue, but it might help you with your ceiling issue. I&#x27;ve read Stuart write several times that getting wall and ceiling angles right takes a lot of tweaking and time. I suppose it&#x27;s somewhat of a juggling act between a handful of factors (speaker position in the bezel in relation not only to the soffit wall but the side walls and front room corners, soffit wall angle, soffit wing angle, head position - depth within the room, entire front deflective surface wall depth from your front inner leaf, then of course your ceiling. Beyond that, you have to consider furniture positions in relation to your mixing space and whether or not you will have room to have a guitarist or pianist able to track their parts at your side. I could keep going, but obviously, being able to sort this out on a computer before building it sure is handy!
+
+Keep tweaking things and I&#x27;m sure it will come together for you. You&#x27;re on the homestretch!
+
+Greg</div>
+</article>
+<article class="post" id="p145021">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-04">4 March 2018</time><a class="permalink" href="#p145021" aria-label="Link to post 40">#40</a></header>
+<div class="post-body">Cheers Greg, I really appreciate the encouragement. 
+<blockquote class="bb-quote"><div class="bb-quote-author">Gregwor wrote:</div><div class="bb-quote-body">
+
+It makes you realize how much easier designing a room would be with a really tall ceiling hey? <span class="smilie" title=":-(">:-(</span></div></blockquote>Yeah - I can see doing this that 90% of my trouble here is just that I have a tiny room.  
+<blockquote class="bb-quote"><div class="bb-quote-author">Gregwor wrote:</div><div class="bb-quote-body">I FINALLY got my angles worked out how I like them. I will try and post pictures on my thread tomorrow. The trick is trying to make it look good while still functioning. If I remember correctly, I had to have 2 separate angles before hitting my main &quot;flat-ish&quot; ceiling</div></blockquote>Yeah, I&#x27;d like to see that if you get a chance.  That would be great.
+It&#x27;ll be interesting to see other ways of getting round the problem.
+<blockquote class="bb-quote"><div class="bb-quote-author">Gregwor wrote:</div><div class="bb-quote-body">obviously, being able to sort this out on a computer before building it sure is handy!</div></blockquote>Yeah, and I&#x27;m starting to get there with Sketchup.  It&#x27;s certainly &#x27;quirky&#x27;.   
+90% intuitive and 10% infuriating.  I&#x27;ve worked out how to lock the protractor on the incident angle using the shift key now.  There was some colourful Welsh language swearing floating through the air in my house up until that point...  <span class="smilie" title=":cen:">:cen:</span> 
+
+I have spotted somewhere that I&#x27;m gong wrong though I think.  I have my ray trace in sketchup reflecting off the lower edge of the cloud, the rockwool.  This isn&#x27;t right though is it?  The sound wave will be reflecting off the plywood. 
+If I change the ray trace to reflect that, it actually makes a difference.  The extra 10cm height gets pretty much all the sound shooting over the engineer&#x27;s head if I stick with the 38deg angle.  
+It&#x27;s pretty crazy steep, but I&#x27;ll tweak a bit more to see if I can get it looking a little slicker.
+
+I&#x27;ll definitely be waiting for a &#x27;yes you&#x27;re on the right track&#x27; from Stuart before I start cutting wood though.... <span class="smilie" title=":wink:">:wink:</span>
+<blockquote class="bb-quote"><div class="bb-quote-author">Gregwor wrote:</div><div class="bb-quote-body">
+Keep tweaking things and I&#x27;m sure it will come together for you. You&#x27;re on the homestretch!
+
+Greg</div></blockquote>Cheers!!  Fingers crossed...</div>
+</article>
+<article class="post" id="p145023">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-03-04">4 March 2018</time><a class="permalink" href="#p145023" aria-label="Link to post 41">#41</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">The sound wave will be reflecting off the plywood. </div></blockquote>Correct.
+
+I am working on my design right now. I&#x27;m trying to overcome newly discovered issues with my conduit now that I physically have the DB2 conduit in hand. I&#x27;ll update my post once I sort this crap out.
+
+Greg</div>
+</article>
+<article class="post" id="p145028">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-03-05">5 March 2018</time><a class="permalink" href="#p145028" aria-label="Link to post 42">#42</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">The sound wave will be reflecting off the plywood. </div></blockquote>I really hate to throw yet another complexity into the mix, but there&#x27;s another issue at play here.  Yes, LOW frequencies will be affected mostly by the hard back of the cloud, but HIGH frequencies hitting the face of the insulation at high angles of incidence are rather likely to reflect off that face, to a certain extent...  The impedance change occurs at the interface between the air and the insulation.
+
+Then there&#x27;s the issue of speaker dispersion:  no studio monitor puts out all frequencies equally at all angles: the vast majority tend to focus the highs in a tightish &quot;beam&quot; covering up to maybe 20°, 30°, 40° (depends on the speaker), with the mids hitting a wider angle than that, maybe 50°, 60°, 70° off axis, and the lows wrapping all the way around, of course.  
+
+So: you need to look at your speaker&#x27;s dispersion pattern vertically, to see what frequencies are going to be hitting your cloud, and your side-wall panels (if you have any), then based on that, try to figure out if that sound is going to be bouncing off the face of the insulation, or the hard back.  From the steep angles that I see on your images, I&#x27;d suspect that it&#x27;s mostly low-mids that are going to be hitting the front module, so consider the hard back....
+
+Then to REALLY complicate the issue, consider that the lower the frequency, the less sound acts like rays in any case, and the more like a shotgun blast, spreading out as a broadly angled reflection, not a specular reflection, and attenuated by the insulation anyway... and also starting out at a lower intensity to begin with, because it is off-axis....
+
+So yeah, it can get complex if you REALLY want to get into all the nitty gritty! details! <span class="smilie" title=":)">:)</span>
+
+Sorry to dump all this stuff on you suddenly like that!  And it&#x27;s probably not really necessary to go jumping it all of that, unless you are build a really high precision room, but it&#x27;s food for thought...
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p145031">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-05">5 March 2018</time><a class="permalink" href="#p145031" aria-label="Link to post 43">#43</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body"><blockquote class="bb-quote"><div class="bb-quote-body">The sound wave will be reflecting off the plywood. </div></blockquote>I really hate to throw yet another complexity into the mix, but there&#x27;s another issue at play here.  Yes, LOW frequencies will be affected mostly by the hard back of the cloud, but HIGH frequencies hitting the face of the insulation at high angles of incidence are rather likely to reflect off that face, to a certain extent...  The impedance change occurs at the interface between the air and the insulation.
+
+Then there&#x27;s the issue of speaker dispersion:  no studio monitor puts out all frequencies equally at all angles: the vast majority tend to focus the highs in a tightish &quot;beam&quot; covering up to maybe 20°, 30°, 40° (depends on the speaker), with the mids hitting a wider angle than that, maybe 50°, 60°, 70° off axis, and the lows wrapping all the way around, of course.  
+
+So: you need to look at your speaker&#x27;s dispersion pattern vertically, to see what frequencies are going to be hitting your cloud, and your side-wall panels (if you have any), then based on that, try to figure out if that sound is going to be bouncing off the face of the insulation, or the hard back.  From the steep angles that I see on your images, I&#x27;d suspect that it&#x27;s mostly low-mids that are going to be hitting the front module, so consider the hard back....</div></blockquote>Thanks!
+I&#x27;ll dig out the Neumann KH120 dispersion patterns if I can find them online.  It&#x27;s the lows that I&#x27;m worried about far more than the highs right now.  
+My waterfall below 150hz looks like the Petronas Towers.
+We&#x27;ll see if any of that is coming from the ceiling.
+I&#x27;m starting to get a bit despondent as the 50hz flab in there is enormous, and the 99hz null goes <em>right</em> down.  I&#x27;m going to get the cloud up this week, and bass trap the front wall top corner with a superchunk, but I feel like I&#x27;m running out of options after that.
+<blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">
+
+Then to REALLY complicate the issue, consider that the lower the frequency, the less sound acts like rays in any case, and the more like a shotgun blast, spreading out as a broadly angled reflection, not a specular reflection, and attenuated by the insulation anyway... and also starting out at a lower intensity to begin with, because it is off-axis....
+
+So yeah, it can get complex if you REALLY want to get into all the nitty gritty! details! <span class="smilie" title=":)">:)</span>
+
+Sorry to dump all this stuff on you suddenly like that!  And it&#x27;s probably not really necessary to go jumping it all of that, unless you are build a really high precision room, but it&#x27;s food for thought...
+
+-  Stuart  -</div></blockquote>No worries!  I&#x27;m hear to learn.  I&#x27;ve spent the last month trying to envisage the sound in my room and understanding what its doing. Every bit of knowledge helps.  I think my room has 0% chance of becoming a <em>high</em> precision room unfortunately.  The size and the dimensions are against me.  
+My ambition is purely to make it a functioning room at the moment (falling sadly short of the ideals of your signature!)</div>
+</article>
+<article class="post" id="p145045">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-06">6 March 2018</time><a class="permalink" href="#p145045" aria-label="Link to post 44">#44</a></header>
+<div class="post-body">I may be getting somewhere with this.
+
+This is my first design that seems to have mostly worked.  Almost all the direct sound goes over the mix position, although the 10deg vertical signal is still being reflected at the sound guy.
+The front panel is at 30deg, the 2nd panel is at 12deg
+This diagram only shows the plywood, not the rockwool treatment that will go onto it.
+
+(The front corner superchunk bass traps are missing from this diagram - sketch error)
+<div class="bb-attachment-missing">Image not preserved: Re-Test double cloud idea 5.jpg</div>
+
+Here&#x27;s my 2nd design, with the addition of a further panel at 50deg.  This design sends everything including 10deg vertical signal over the engineer&#x27;s head.
+<div class="bb-attachment-missing">Image not preserved: Re-Test double cloud idea 6.jpg</div>The 2nd design is going to be testing my engineering / carpentry skills, but I&#x27;m up for having a crack at it if it&#x27;s the right way to go.
+
+If Stu or Greg has a minute, I&#x27;d love to know if either of these designs is getting close to the mark.
+Am I over complicating things with the 2nd design?  I don&#x27;t know how much reward I get for the extra complexity involved - I don&#x27;t want to go chasing diminishing returns. On the other hand - if it&#x27;s sensible, I&#x27;ll get on the case.
+
+Thanks all, as always!
+
+Owen</div>
+</article>
+<article class="post" id="p145046">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-03-06">6 March 2018</time><a class="permalink" href="#p145046" aria-label="Link to post 45">#45</a></header>
+<div class="post-body">Ummm... Are you SURE you are doing your reflections correctly??? It doesn&#x27;t look like it from those diagrams!
+
+Key point:  <strong><em><span class="bb-u">&quot;Angle of reflection = angle of incidence</span></em></strong>&quot;, using the SURFACE NORMAL as the reference axis.  Are you SURE you are creating your surface normals correctly?  And that you are reflecting in the correct plane, around that surface normal?
+
+This one, for example, is clearly very wrong:
+<div class="bb-attachment-missing">Image not preserved: Re-Test double cloud idea 6-WRONG.jpg</div>The reflection on that one should be going nearly parallel to the ceiling!  Roughly in line with your uppermost panel...
+
+
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p145047">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-06">6 March 2018</time><a class="permalink" href="#p145047" aria-label="Link to post 46">#46</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Soundman2020 wrote:</div><div class="bb-quote-body">Ummm... Are you SURE you are doing your reflections correctly??? It doesn&#x27;t look like it from those diagrams!
+
+Key point:  <strong><em><span class="bb-u">&quot;Angle of reflection = angle of incidence</span></em></strong>&quot;, using the SURFACE NORMAL as the reference axis.  Are you SURE you are creating your surface normals correctly?  And that you are reflecting in the correct plane, around that surface normal?
+
+-  Stuart  -</div></blockquote>Wow.  WOW!!!!    <span class="smilie" title=":shock:">:shock:</span> 
+
+If anyone ever needed a demonstration on the effects of baby-induced sleep-deprivation on an otherwise vaguely competent brain - well there it is.
+
+Of course you&#x27;re right, and as soon as I read your post I could see I&#x27;ve been doing the angles backwards.  I done some weird calculation - measuring them from the vertical, not from the angle of the plywood panel or something like that   <span class="smilie" title=":oops:">:oops:</span> 
+
+Are new parents allowed to fly planes?  They shouldn&#x27;t be.
+
+I&#x27;m off to have a strong coffee and a word with myself.
+Back to the drawing board.
+
+(At least I&#x27;ve managed to answer my own question from 8 posts ago:)
+<blockquote class="bb-quote"><div class="bb-quote-author">RKML wrote:</div><div class="bb-quote-body"> I&#x27;ve got to be getting something wrong here </div></blockquote>YUP!</div>
+</article>
+<article class="post" id="p145048">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-03-06">6 March 2018</time><a class="permalink" href="#p145048" aria-label="Link to post 47">#47</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">If anyone ever needed a demonstration on the effects of baby-induced sleep-deprivation on an otherwise vaguely competent brain - well there it is.</div></blockquote>Oh yeah!  That&#x27;ll do it for sure!  <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">Are new parents allowed to fly planes? They shouldn&#x27;t be.</div></blockquote>Even worse than that, new parents are actually allowed to take care of small children!  Imagine that...  <span class="smilie" title=":ahh:">:ahh:</span>   <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">Back to the drawing board.</div></blockquote>I think you&#x27;ll find that your angles will be rather lower than what you had so far....  It&#x27;s a pity I didn&#x27;t see that before... I guess I hadn&#x27;t looked closely enough, or maybe it was just the view point in SketchUp... Dunno... I can&#x27;t blame it babies, though!  <span class="smilie" title=":)">:)</span>
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p145053">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-06">6 March 2018</time><a class="permalink" href="#p145053" aria-label="Link to post 48">#48</a></header>
+<div class="post-body">Erm, lets forget my last couple of posts ever happened....... and we&#x27;ll try this instead!
+
+Angles of sound illustrated are every 10˚, from 10˚ off vertical to 50˚ off vertical. 
+
+The two plywood panels are at 30˚ for the front one, and 15˚ for the rear one.
+I think this diagram makes a little more sense.... <span class="smilie" title=":oops:">:oops:</span>
+<div class="bb-attachment-missing">Image not preserved: Re-Test double cloud idea 7.jpg</div>The only angle that&#x27;s bugging me a little is the 40˚ one. It&#x27;s firing into the floor at the back of the room, instead of the rear wall treatment.  I could maybe tweak the rear panel and extend it back a little further to catch everything up to 40˚ or so.  
+
+If the concept and principle here is right though, I&#x27;m confident I could build this one at least!</div>
+</article>
+<article class="post" id="p145087">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">RKML</span><time datetime="2018-03-10">10 March 2018</time><a class="permalink" href="#p145087" aria-label="Link to post 49">#49</a></header>
+<div class="post-body">I’ve managed to find some hefty eye plates to hang my cloud from, and matching chain. 
+All the fixings are rated for 80kg, and there’ll be 4 on each cloud, so I’m happy that it’s not going to come down on my head. 
+I’ll use 21mm plywood. 
+
+Unfortunately there seems to be a Rockwool shortage in the UK at the moment, and I’ve just run out.  Apparently the factory have had a production problem and everyone is out of stock. It’s delayed me a bit but I’ve found a builders merchant in North London that has some so I’ll go and get it on Monday. 
+
+If Stu or Greg get a chance to have a look at my panels and see if my new design makes a bit more sense that would be really appreciated. I’m going to try to hang the plywood on Tuesday. 
+
+Onwards...</div>
+</article>
+<article class="post" id="p145088">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-03-11">11 March 2018</time><a class="permalink" href="#p145088" aria-label="Link to post 50">#50</a></header>
+<div class="post-body">Looks awesome to me! 
+
+Greg</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"><nav class="pager" aria-label="Pages"><span class="label">Page 2 of 3</span>
+<a href="/t/21280/" rel="prev">Previous</a>
+<a href="/t/21280/">1</a><span aria-current="page">2</span><a href="/t/21280/page/3/">3</a>
+<a href="/t/21280/page/3/" rel="next">Next</a></nav></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

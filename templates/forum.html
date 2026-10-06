@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% from "macros.html" import pager, topic_row %}
+{% block content %}
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a></nav>
+<h1>{{ forum_name }}</h1>
+{% if forum_desc %}<p class="lede">{{ forum_desc }}</p>{% endif %}
+{{ pager(pages) }}
+<ol class="topic-list">{% for t in topics %}{{ topic_row(t) }}{% endfor %}</ol>
+{{ pager(pages) }}
+</div>
+{% endblock %}

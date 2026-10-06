@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wrong Helmholtz formula!? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by the dreamer in Acoustics, 2005. 27 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/4252/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Wrong Helmholtz formula!?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by the dreamer on 23 August 2005. 27 replies, 2005–2007. In the Library under <a href="/library/treatment/">Acoustic treatment</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 4252.</p>
+<nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/4252/page/2/">2</a>
+<a href="/t/4252/page/2/" rel="next">Next</a></nav>
+</div>
+</header>
+<article class="post" id="p30431">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">the dreamer</span><time datetime="2005-08-23">23 August 2005</time><a class="permalink" href="#p30431" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi,
+I just had a conversation with an acoustician in a german recording board. You know him as Will/Interface at Studiotips.
+He pointed out to me, that the corrected Helmholtzspreadsheet is still wrong.
+
+This he gave me as the right one:
+fo=c/(2*PI*SQRT(B*D*(d/r+2Δd/r+(1/3)*D/B))) 
+
+with:
+c = speed of sound[m/sec] 
+r = slotwidth[m] 
+w = slatwidth[m] 
+d = thickness of slat[m] 
+B = r+w 
+e = r/B 
+2Δd = mouthcorrection =2*(-r/PI*ln(sin(PI*e/2))) 
+D = width of airspace behind the slats[m]
+
+He pointed me to this thread on ST where he pointed this out before:
+<a href="http://forum.studiotips.com/viewtopic.php?t=1513" rel="nofollow noopener" target="_blank">http://forum.studiotips.com/viewtopic.php?t=1513</a>
+
+And this is the original german thread:
+<a href="http://homerecording.de/modules/newbb/viewtopic.php?topic_id=38967&amp;post_id=301436&amp;order=0&amp;viewmode=flat&amp;pid=0&amp;forum=47#301436" rel="nofollow noopener" target="_blank">http://homerecording.de/modules/newbb/v ... =47#301436</a>
+
+I wanted to bring this to your attention.
+Maybe there is something to examine.
+Greetings
+Florian</div>
+</article>
+<article class="post" id="p30440">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-08-23">23 August 2005</time><a class="permalink" href="#p30440" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Florian, thanks; the formula I used for the &quot;corrected&quot; one corresponds with Everest&#x27;s results in the MHOA, when factoring in the hole depth factor; I&#x27;m off to the salt mines in a few, but I copied this to my laptop and if things behave tonite hopefully I&#x27;ll get a chance to go through it. 
+
+Bump this if you think of it so I won&#x27;t let it slide - thanks... Steve</div>
+</article>
+<article class="post" id="p30442">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-08-23">23 August 2005</time><a class="permalink" href="#p30442" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Florian, if you get time maybe you could make some comparisons for me - say, 2 or 3 different sets of dimensions calculated with our calculator and the &quot;other correct one&quot;, and post your results on this thread? It would be much appreciated, since I&#x27;m currently in the midst of multiple, weather-dependent projects - if you can, many thanks... Steve</div>
+</article>
+<article class="post" id="p30540">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-08-25">25 August 2005</time><a class="permalink" href="#p30540" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Here is an Excel file to check the differences of both calculations.
+
+Best wishes
+Will<div class="bb-attachments-trailing"><div class="bb-attachment-missing">File not preserved: Slit Resonator.xls</div></div></div>
+</article>
+<article class="post" id="p30561">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">the dreamer</span><time datetime="2005-08-25">25 August 2005</time><a class="permalink" href="#p30561" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Will,
+Thanks for that handy spreadsheet!
+Couldn&#x27;t you have come up with this a little earlier? <span class="smilie" title=":D">:D</span> I sat down this morning to follow Steves request for comparisons and tried to calculate a couple. And when I went online, your tool was here <span class="smilie" title=":?">:?</span> .
+I did something wrong anyway, it&#x27;s many years since I had to deal with maths-stuff. I don&#x27;t know where I went astray.
+I scanned one of my attempts. Maybe you can tell me what went wrong.
+The frequency I got for this certain set of parameters is 154,08 Hz whereas calculated with your spreadsheet it gives me 129,96 Hz.
+I guess my braincells from about 15 years ago already passed away <span class="smilie" title=":D">:D</span> 
+
+Thanks 
+Florian<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: equation.jpg</div><div class="bb-attachment-missing">Image not preserved: equation2.gif</div></div></div>
+</article>
+<article class="post" id="p30564">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-08-25">25 August 2005</time><a class="permalink" href="#p30564" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Hi Florian,
+the calculation of the mouth-correction is a bit twisted in your formula.
+
+1. &quot;ln(sin(PI*e/2)&quot; needs to be placed in the numerator.
+--&gt; have a look again in this way: -r/PI........*ln(sin(PI*e/2))
+The result of 2Δd has to be: 0,00928256....
+
+2. check also the result of &quot;sin(pi*e/2)&quot;
+
+Best wishes
+Will</div>
+</article>
+<article class="post" id="p30597">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-08-25">25 August 2005</time><a class="permalink" href="#p30597" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Here are measured and calculated results of a SLIT RESONATOR to compare.
+Source: Norwegian Department of Telecommunications
+
+Will<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: Measurement Slit Resonator.jpg</div></div></div>
+</article>
+<article class="post" id="p30601">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">the dreamer</span><time datetime="2005-08-25">25 August 2005</time><a class="permalink" href="#p30601" aria-label="Link to post 8">#8</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">interface wrote:</div><div class="bb-quote-body">Hi Florian,
+the calculation of the mouth-correction is a bit twisted ...</div></blockquote>Will,
+Thanks for helping! <span class="smilie" title=":D">:D</span></div>
+</article>
+<article class="post" id="p30625">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Andrew Steel</span><time datetime="2005-08-26">26 August 2005</time><a class="permalink" href="#p30625" aria-label="Link to post 9">#9</a></header>
+<div class="post-body">Hi Will,
+
+Do you have the reference to the original document or the rest of the details like air gap behind the slats, damping material details etc? I would like to have such an example and calculate it myself so that if it matches the graph I know I am doing it reasonably correctly.
+
+Thanks
+Andrew</div>
+</article>
+<article class="post" id="p30641">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-08-26">26 August 2005</time><a class="permalink" href="#p30641" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Hi Andrew,
+
+The adjusted air cavity was exactly 100mm, the fabric was 2.5mm with a flow resistance of 86 Pa*s/m.
+
+Best wishes
+Will</div>
+</article>
+<article class="post" id="p30644">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-08-26">26 August 2005</time><a class="permalink" href="#p30644" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">...here is the same calculation which I wrote in Matlab (Transfer Matrix).
+...the resolution is a bit better to compare.
+
+Will<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: Calculation Slit Resonator.jpg</div></div></div>
+</article>
+<article class="post" id="p30662">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2005-08-26">26 August 2005</time><a class="permalink" href="#p30662" aria-label="Link to post 12">#12</a></header>
+<div class="post-body">Thanks Ineerface!
+
+Andre</div>
+</article>
+<article class="post" id="p30668">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Andrew Steel</span><time datetime="2005-08-26">26 August 2005</time><a class="permalink" href="#p30668" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">Hi Will,
+
+Thank you. Was there no glasswool or anything in the cavity?
+
+Andrew</div>
+</article>
+<article class="post" id="p30671">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-08-26">26 August 2005</time><a class="permalink" href="#p30671" aria-label="Link to post 14">#14</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Andrew Steel wrote:</div><div class="bb-quote-body">Hi Will,
+
+Thank you. Was there no glasswool or anything in the cavity?
+
+Andrew</div></blockquote>Hi Andrew,
+There was no glass wool in the cavity.
+This is a typical effect by damping only the neck of the resonator.
+More damping e.g. with mineral wool would primarily have an influence on the bandwidth and the absorption coefficient.
+
+Will</div>
+</article>
+<article class="post" id="p30824">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">the dreamer</span><time datetime="2005-08-30">30 August 2005</time><a class="permalink" href="#p30824" aria-label="Link to post 15">#15</a></header>
+<div class="post-body">Hi Steve,
+have you had time to investigate this?
+Conclusions?
+To me it seems to be an important topic as we all refer people to the Helmholtz-calculator all the time! And since there is chance that it is wrong....
+
+Thanks.
+Florian</div>
+</article>
+<article class="post" id="p30826">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-08-30">30 August 2005</time><a class="permalink" href="#p30826" aria-label="Link to post 16">#16</a></header>
+<div class="post-body">Florian, other than just verifying the difference in results, I&#x27;ve not had time for much of anything; this is likely to be the case until winter sets in and I can&#x27;t work outside anymore. I&#x27;m so far behind on home repairs and similar projects that I must take advantage of every minute of daylight/dry weather, or I&#x27;ll be setting buckets under the buckets when the rains come.
+
+I bought Cox/D&#x27;Antonio&#x27;s absorber book several months ago, and have barely had time to thumb through it - when the weather gets nasty, I&#x27;m going to budget some time to go thru that and this thread, and probably write 1 or 2 new spreadsheets for better calculation of both helmholtz and panel absorbers (it wouldn&#x27;t hurt my feelings a bit if someone were to beat me to it though - hint hint  <span class="smilie" title=":wink:">:wink:</span> ) Steve</div>
+</article>
+<article class="post" id="p32158">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-10-01">1 October 2005</time><a class="permalink" href="#p32158" aria-label="Link to post 17">#17</a></header>
+<div class="post-body">Still pretty much buried in work, but would like to interject this - 
+
+Will, you stated that the cavity behind the slats was NOT filled with any mineral wool - only the cloth at the slats? According to Everest, on P. 221 of the Master Handbook of Acoustics, adding absorbent inside a Helmholtz resonator would change the results quite a bit - to quote - &quot;More damping e.g. with mineral wool would primarily have an influence on the bandwidth and the absorption coefficient.&quot; - 
+
+All this does for me, til I find more conclusive information, is to further muddy the waters. 
+
+I don&#x27;t contest the fact that your spreadsheet accurately predicts the results of a NON-filled trap, but will need more info before telling people who build half-filled traps to use your formula, especially since on the same page of MHOA there is a chart of actual absorption of a half-filled trap (which I&#x27;ve yet to compare, maybe in a few days)
+
+Just some thoughts and a gentle &quot;bump&quot;... Steve</div>
+</article>
+<article class="post" id="p32300">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-10-04">4 October 2005</time><a class="permalink" href="#p32300" aria-label="Link to post 18">#18</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">knightfly wrote:</div><div class="bb-quote-body">Still pretty much buried in work, but would like to interject this - 
+
+Will, you stated that the cavity behind the slats was NOT filled with any mineral wool - only the cloth at the slats? According to Everest, on P. 221 of the Master Handbook of Acoustics, adding absorbent inside a Helmholtz resonator would change the results quite a bit - to quote - &quot;More damping e.g. with mineral wool would primarily have an influence on the bandwidth and the absorption coefficient.&quot; - 
+
+All this does for me, til I find more conclusive information, is to further muddy the waters. 
+
+I don&#x27;t contest the fact that your spreadsheet accurately predicts the results of a NON-filled trap, but will need more info before telling people who build half-filled traps to use your formula, especially since on the same page of MHOA there is a chart of actual absorption of a half-filled trap (which I&#x27;ve yet to compare, maybe in a few days)
+
+Just some thoughts and a gentle &quot;bump&quot;... Steve</div></blockquote>Hi Steve,
+
+the resonance frequency will become slightly lower and the bandwidth will become broader by adding soft mineral wool (e.g. 5 kPa*s/m²) into the air cavity.
+The resonance frequency will become only higher if you increase the flow resistance of the mineral wool (e.g. wool with higher density).
+
+Best wishes
+Will</div>
+</article>
+<article class="post" id="p32378">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-10-06">6 October 2005</time><a class="permalink" href="#p32378" aria-label="Link to post 19">#19</a></header>
+<div class="post-body">Thanks Will - I&#x27;m not familiar with acoustic resistance vs. density of commonly used insulation materials - I started out here just moderating the construction section and kind of got &quot;volunteered&quot; for the rest when another mod had no more time to donate. I doubt I&#x27;ll ever have enough time to become versed enough in this aspect to be able to design custom treatments, so I tend to offer up what&#x27;s worked for others (mainly John) and continue to try to find time to read as much as I find on the subject...
+
+Do you have any sources of info on the relationship of resistance vs. density vs. material type vs. thickness? 
+
+For example, a commonly used material for absorbers would be either mineral wool or rigid fiberglass in 3 PCF (48 kG/m^3) - if this were used inside a Helmholtz trap, what would the effect be on Fo for (say) half fill and complete fill as compared to an empty trap?
+
+I appreciate any help you may offer in this area, and I&#x27;m sure our other members will also... Steve</div>
+</article>
+<article class="post" id="p32399">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-10-06">6 October 2005</time><a class="permalink" href="#p32399" aria-label="Link to post 20">#20</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">knightfly wrote:</div><div class="bb-quote-body">Thanks Will - I&#x27;m not familiar with acoustic resistance vs. density of commonly used insulation materials - I started out here just moderating the construction section and kind of got &quot;volunteered&quot; for the rest when another mod had no more time to donate. I doubt I&#x27;ll ever have enough time to become versed enough in this aspect to be able to design custom treatments, so I tend to offer up what&#x27;s worked for others (mainly John) and continue to try to find time to read as much as I find on the subject...
+
+Do you have any sources of info on the relationship of resistance vs. density vs. material type vs. thickness? 
+
+For example, a commonly used material for absorbers would be either mineral wool or rigid fiberglass in 3 PCF (48 kG/m^3) - if this were used inside a Helmholtz trap, what would the effect be on Fo for (say) half fill and complete fill as compared to an empty trap?
+
+I appreciate any help you may offer in this area, and I&#x27;m sure our other members will also... Steve</div></blockquote>Hi Steve,
+
+steel wool could have a higher density but a lower flow resistance than mineral fibre wool.
+It’s not advisable to connect density with flow resistance in an absolute way. I just stated an example!
+Many other parameters which define the flow resistance have to be considered as well, e.g. the type of capillaries, the open area, the type of tortuosity…etc.
+
+I wrote an excel sheet in order to your other questions.
+
+(Note: Analysis ToolPak needs to be installed and activated: Menu  Tools  Add-Ins  Analysis ToolPak)
+
+Best wishes
+Will</div>
+</article>
+<article class="post" id="p32436">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-10-07">7 October 2005</time><a class="permalink" href="#p32436" aria-label="Link to post 21">#21</a></header>
+<div class="post-body">Calculated elements of slitresonator depicted:<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: WilHelmCrop.JPG</div></div></div>
+</article>
+<article class="post" id="p32460">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2005-10-08">8 October 2005</time><a class="permalink" href="#p32460" aria-label="Link to post 22">#22</a></header>
+<div class="post-body">Interface:
+
+Nice drawing!  Thanks.
+
+Andre</div>
+</article>
+<article class="post" id="p32469">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-10-08">8 October 2005</time><a class="permalink" href="#p32469" aria-label="Link to post 23">#23</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">AVare wrote:</div><div class="bb-quote-body">Interface:
+
+Nice drawing!  Thanks.
+
+Andre</div></blockquote>You&#x27;re welcome!</div>
+</article>
+<article class="post" id="p32663">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">interface</span><time datetime="2005-10-13">13 October 2005</time><a class="permalink" href="#p32663" aria-label="Link to post 24">#24</a></header>
+<div class="post-body">Here is the Formula for the wall impedance of the slotted plate (Zsp). Most of it is used in the second Excel sheet.
+The wall impedance is the difference of the sound pressure on the plate divided by the velocity of the plate. This formula is a parallel connection of the slotted plate theory and the plate theory. The plate theory considers the mass, the stiffness and the loss factor of the plate. The real part of the slotted plate is a series combination of the viscous losses in the neck by considering the viscosity of air and the resistance R of the fabric or fleece material at the neck.</div>
+</article>
+<article class="post" id="p54445">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/ro/">Ro</a><time datetime="2006-12-20">20 December 2006</time><a class="permalink" href="#p54445" aria-label="Link to post 25">#25</a></header>
+<div class="post-body">so.... what&#x27;s the verdict <span class="smilie" title=";)">;)</span>
+(okay, it&#x27;s been a year, but still)
+
+
+
+
+** jup, I&#x27;m reading through the whole darn forum here.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"><nav class="pager" aria-label="Pages"><span class="label">Page 1 of 2</span>
+
+<span aria-current="page">1</span><a href="/t/4252/page/2/">2</a>
+<a href="/t/4252/page/2/" rel="next">Next</a></nav></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

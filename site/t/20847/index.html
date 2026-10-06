@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio white noise help! | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by rosestudios in Installation and Wiring, 2017. 4 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/20847/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Studio white noise help!</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by rosestudios on 17 January 2017. 4 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 20847.</p>
+
+</div>
+</header>
+<article class="post" id="p141062">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">rosestudios</span><time datetime="2017-01-17">17 January 2017</time><a class="permalink" href="#p141062" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hey all,
+
+So I successfully built my rooms out thanks to a lot of the resources on this forum, but I&#x27;m experiencing a problem with my audio signal path.  Right now there&#x27;s an unacceptable amount of white noise floor when I record.  I can get by with music and certain microphones like the AKG C414 for better signal to noise but when using a Neumann U87 for voiceover I can&#x27;t use my recordings due to this noise floor.  Currently my signal path is as follows:
+
+Mic -&gt; Wall Panel -&gt; Canare/Mogami cabling in walls -&gt; Wall Panel -&gt; Control Room Snake -&gt; Desk Patchbay -&gt; Pre&#x27;s -&gt; Patchbay -&gt; Converters
+
+I&#x27;ve also included a screenshot of various noise levels with their peak measurements in Pro Tools.  The noisiest at the bottom is the regular path, and the top quietest track is going straight from the same microphone to the preamp (API 3124).  The 2nd track is going through a guitar closet wall panel which is separated from the other main wall panel although it contains the same components (canare cabling with neutrik panels).  The 3rd track is the signal path without the snake between the wall panel and the desk patchbay.  
+
+It seems like the more I add the noise builds, how can I prevent this?  Should I just simplify my signal flow as much as possible?  Really hoping I didn&#x27;t neglect anything when installing wiring in the walls, I simply soldered the snakes to the wall panels and laid the cable inside the wall.
+
+Thanks so much for any assistance.<div class="bb-attachments-trailing"><div class="bb-attachment-missing">Image not preserved: Rose Studios Noise Test.png</div></div></div>
+</article>
+<article class="post" id="p141073">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/tomvan/">TomVan</a><time datetime="2017-01-18">18 January 2017</time><a class="permalink" href="#p141073" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">The easiest way to track down your noise source is start with the basics.
+Mic directly into AD converter from wall panel into CR, then first control room snake ,patch bay, etc.
+Good luck
+T</div>
+</article>
+<article class="post" id="p141108">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">DanCostello</span><time datetime="2017-01-22">22 January 2017</time><a class="permalink" href="#p141108" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">That doesn&#x27;t look like white noise. Well, the top one does, but the rest don&#x27;t. White noise would have a constant level, not oscillating like that. Without hearing the noise, it&#x27;s tough to tell what the source is, but my first guess would be that your wiring is picking up some kind of interference, perhaps due to strong RF fields, proximity to electrical wiring, or poor soldering on your part. 
+
+Can you post a recording of the noise?
+
+-Dan.</div>
+</article>
+<article class="post" id="p141110">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2017-01-23">23 January 2017</time><a class="permalink" href="#p141110" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">DanCostello wrote:</div><div class="bb-quote-body">That doesn&#x27;t look like white noise. Well, the top one does, but the rest don&#x27;t. White noise would have a constant level, not oscillating like that. Without hearing the noise, it&#x27;s tough to tell what the source is, but my first guess would be that your wiring is picking up some kind of interference, perhaps due to strong RF fields, proximity to electrical wiring, or poor soldering on your part. 
+
+Can you post a recording of the noise?
+
+-Dan.</div></blockquote>I was thinking the same thing.  There&#x27;s a regular &quot;beat&quot; to it, it seems.  I would suspect wiring, or maybe grounding.  Have you checked for ground loops?  Are you sure your star grounding was done correctly?  Get an electrician to measure the voltage difference between ground and neutral at all of your outlets, and check that all of your gear is correctly grounded.  Check each of your signal cables with a proper cable tester, to make sure you don&#x27;t have any shorted signal paths, or swapped polarity.  Especially check that on your XLR cables: It&#x27;s easy to mess those up if there were soldered by you or someone else.  Factory made cables should be fine, but check them anyway.  As Tom said, start with a minimal system: disconnect EVERYTHING, all of your cables, even the ones you aren&#x27;t using, or don&#x27;t suspect.  Start with just the most basic system you can, then add in all the other bits, one at a time, until you find the culprit.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p141121">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">ABitAnalog</span><time datetime="2017-01-23">23 January 2017</time><a class="permalink" href="#p141121" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">What is the frequency of the beating that is seen in the data? I assume that it is 60 Hz, which would imply a grounding issue or that you have a cable running parallel to a power circuit.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

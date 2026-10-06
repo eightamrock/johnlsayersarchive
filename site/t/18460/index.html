@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baffle Step | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by DanMilo in Acoustics, 2013. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/18460/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Baffle Step</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by DanMilo on 25 July 2013. 6 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 18460.</p>
+
+</div>
+</header>
+<article class="post" id="p129285">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">DanMilo</span><time datetime="2013-07-25">25 July 2013</time><a class="permalink" href="#p129285" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hey,
+i just asked myself where and how the 6db boost start in theory when flushmounting nearfield or midfield speakers. I know sidewalls etc. have an influence on this, but how would it look like in a freefield with only one wall and the speaker flushmounted.  Does it start from 600Hz or from 300Hz? And is it a slow starting shelf with the maximum (+6db) at 100Hz or at a higher or lower frequency?
+Is there a frequency response chart showing the bass rise?
+I couldnt find much about this in the i-net. 
+thankyou</div>
+</article>
+<article class="post" id="p129287">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2013-07-25">25 July 2013</time><a class="permalink" href="#p129287" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">It depends on each specific speaker, and each specific soffit design.
+
+The bass rise is simply due to the way sound propagates in free space and in &quot;half space&quot;.  Basically, for low frequency sound, the speaker acts as a point source, radiating sound out in all directions, in a sphere, since sound waves are large enough to wrap around behind the cabinet, as well as in front.  But for higher frequencies the front panel forces the sound to only radiate forwards, in a hemisphere.  Therefore, for low frequencies, half of the sound power goes forwards while half goes backwards, whereas for high frequencies all of the sound power goes forwards.  So there is a power imbalance of exactly 6 dB (twice the power is 6 dB).  
+
+The point at which the transition occurs from &quot;half space&quot; radiation to &quot;full space&quot; radiation, depends on the size of the speaker cabinet: wavelengths that are larger than the dimensions of the front baffle, can wrap around behind it, while wavelengths that are shorter cannot wrap.  So for the original speaker (without a soffit) the frequency where that happens is set purely by the cabinet dimensions.  And of course, the manufacturer builds in a circuit to compensate for the power imbalance, by increasing the power by 6dB for the low frequencies.
+
+The center frequency where the transition occurs, is given by the equation: f = 4650 / W (where W is the baffle width in inches).  I need to check this as I could not find the reference, but as far as I recall, the slope of the curve is 6 dB/octave.  But I might be wrong on that.  Eric Best probably knows.
+
+So for any given speaker in a free field, the point where the baffle step will occur is determined purely by the dimensions of the front baffle.  And if you then soffit mount that same speaker, still in a free field, then the new baffle step will occur at a much lower frequency, governed by the dimensions of the soffit panel.
+
+Of course, if you mount a typical studio monitor in a soffit, then you have to &quot;uncorrect&quot; the built in baffle step correction, since it is no longer needed.  That&#x27;s why manufacturers of good speaker put the bass shelving filter controls on the rear panel, as you&#x27;ll need to adjust it to the -6 dB position if you soffit mount, to turn off the built-in baffle step correction.
+
+And as you also pointed out, there will be an additional effect caused by the walls, floor and ceiling of the room, which complicates matters, and then there are the loading effects caused by the room volume itself, plus other issues.  So it is sort of complex.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p129297">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">DanMilo</span><time datetime="2013-07-26">26 July 2013</time><a class="permalink" href="#p129297" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">oh okay i see.....
+so for example if the slope is truely at 6db/oct. and it starts for example at 300hz - than the maximum boost for an infinite wall is reached at 150Hz?
+I read here in the forum that some people completly separate the mounting for the speaker from the soffit-wall and leave a small gap between the front wall and the speaker cabinet (0.5cm) and fill that with insulation. But isn´t there than a loss in loading so it doens´t really rise by 6db? Because some bass gets through the small gap behind the frontwall?
+thank you so much <span class="smilie" title=":D">:D</span></div>
+</article>
+<article class="post" id="p129301">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">DanMilo</span><time datetime="2013-07-26">26 July 2013</time><a class="permalink" href="#p129301" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">oh okay...i think it wouldnt reach the +6db maximum because the slope is more looking like a shelfing filter. So the peak is lower in frequency....
+but i can´t find anything with google about it...</div>
+</article>
+<article class="post" id="p129315">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2013-07-27">27 July 2013</time><a class="permalink" href="#p129315" aria-label="Link to post 5">#5</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">so for example if the slope is truely at 6db/oct. and it starts for example at 300hz - than the maximum boost for an infinite wall is reached at 150Hz?</div></blockquote>In theory, yes.
+<blockquote class="bb-quote"><div class="bb-quote-body">I read here in the forum that some people completly separate the mounting for the speaker from the soffit-wall and leave a small gap between the front wall and the speaker cabinet (0.5cm) and fill that with insulation. But isn´t there than a loss in loading so it doens´t really rise by 6db? Because some bass gets through the small gap behind the frontwall?</div></blockquote>It has very little effect at all (if any), compared to the major positive effect of the baffle itself.  The walls, floor and ceiling of the room will also have a much larger effect on the overall response.  But I still wouldn&#x27;t use a 5mm gap: maybe 2 or 3 mm at most.
+<blockquote class="bb-quote"><div class="bb-quote-body">the slope is more looking like a shelfing filter.</div></blockquote>Right!
+<blockquote class="bb-quote"><div class="bb-quote-body">i think it wouldnt reach the +6db maximum </div></blockquote>I don&#x27;t understand: in order to not reach the 6dB value, your baffle step compensation would have to occur at a frequency that is less than one octave above the cutoff frequency for the speaker.  That would be unusual.
+<blockquote class="bb-quote"><div class="bb-quote-body">i can´t find anything with google about it...</div></blockquote><a href="http://www.trueaudio.com/st_diff1.htm" rel="nofollow noopener" target="_blank">http://www.trueaudio.com/st_diff1.htm</a>
+
+<span class="smilie" title=":)">:)</span>
+
+- Stuart  -</div>
+</article>
+<article class="post" id="p129415">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">DanMilo</span><time datetime="2013-08-02">2 August 2013</time><a class="permalink" href="#p129415" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">thx Stuart ...good read!!!
+Sorry i explained it not as well.
+If the baffle step starts for example at 300hz with 6db slope but more looking like a shelving filter, then the maximum boost (+6db) from the frontwall will be much lower than 150Hz?! Perhaps the maximum is reached anywhere between 30-100hz?
+I could post an image with a freeware eq to show what i mean.....I think 150Hz doesnt get the same boost as 50hz because, the slope is really soft rounded, isn´t it?</div>
+</article>
+<article class="post" id="p129418">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2013-08-02">2 August 2013</time><a class="permalink" href="#p129418" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">For a shelving filter that drops by 6 dB, if the slope is 6 db <span class="bb-u">PER OCTAVE</span>, and it starts at 300 Hz, then it ends one octave lower, at 150 Hz... <span class="smilie" title=":)">:)</span>  Above 300 Hz it is flat, and below 150 Hz it is flat again.  The curve in between is smooth, yes; the name &quot;step&quot; is a misnomer, since it is not a &quot;step&quot; at all, but a gradual curve.
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

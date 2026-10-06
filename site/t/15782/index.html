@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is this how to sample a room&#39;s natural resonances? | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by phlange in Studio Design, 2011. 3 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/15782/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Is this how to sample a room&#39;s natural resonances?</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by phlange on 25 March 2011. 3 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 15782.</p>
+
+</div>
+</header>
+<article class="post" id="p112156">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">phlange</span><time datetime="2011-03-25">25 March 2011</time><a class="permalink" href="#p112156" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Today I did this:
+
+-Apple Logic comes with some plugins which, until today, I had no idea what they&#x27;re for.
+ Now it seems they&#x27;re designed for the purpose of testing a room&#x27;s acoustics.
+(please let coffee always be a legal substance)
+
+-I connected a Shure SM58 (from a pre-CD era) to an input and put the mic at the listening position.  speakers are equilateral triangle with ears as per the (outrageously great) reference book on the home page of this site. and listening position is 38% from room front.
+
+- I opened the Test Oscillator plugin in Logic and put a Spectral Analyzer on its channel.
+- Bounced the pink noise as a wave file.
+
+- Blasted the pink noise into the room.
+- Recorded 10 seconds of it through the mic.
+
+- Used the same plugin to do a &quot;sine sweep&quot; from 20Hz slllowly up to 20kHz...
+- Bounced the sine sweep as an audio file.
+- And played the sine sweep into the room and Recorded it with the mic.
+
+The pink noise and the sine sweep that never hit air were completely smooth at all frequencies on the EQ&#x27;s meter.
+The sine sweep and the pink noise that <em>did</em> hit air (and were recorded through the mic)
+appear on the EQ meter to be quite varied.
+There is a mountain which peaks at about 120Hz, and a valley I can&#x27;t remember where, on the recorded EQ&#x27;s meter.
+I&#x27;m wondering if this is in agreement with this room&#x27;s &quot;modes&quot;?
+Is this the same thing that&#x27;s referred to when talking about a room&#x27;s modes?
+I&#x27;m guessing the broadband absorbers which I&#x27;m gonna spend me whole
+weekend &quot;mass producing&quot; (YES) will absorb the mountain, as well as everything else.
+Would you/do you usually look to use a slot/slat type device to treat the mountain scenario?</div>
+</article>
+<article class="post" id="p112159">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2011-03-25">25 March 2011</time><a class="permalink" href="#p112159" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">It sounds like you are going through the right basic procedure, but there are several things you should be aware of:  The equipment you describe will not give you an accurate representation of your room response, just a very rough idea.  The response curve of the SM-58 is not flat, and is DESIGNED to not be flat: it&#x27;s a good vocal mic precisely because the curve is shaped for vocals.  So it is &quot;coloring&quot; the tests you are doing.  For testing room response, you need a mic with flat response.  Or you need some kind of compensation file that tells the measuring software what the response of your mic is, so it can make the adjustments internally.
+
+Secondly, your speakers might not be flat either.  What speakers are they? (make, model).
+
+Third, your interface (sound card) might or might not have flat response.
+
+Fourth, the software you are using might or might not have flat response.  use REW or ETF.
+
+Fifth, is the resolution of the measurement: if your software shows results only as one-third octave response, then that is pretty useless.  You need very accurate resolution, with precision down to 1 Hz in the low end.  1/3 octave is fine for the mids and highs, but you need much better resolution for the lows.
+
+So at best what you are getting is a distorted picture of the response of your room, and only in the frequency domain.  You also need to measure response in the time domain.
+<blockquote class="bb-quote"><div class="bb-quote-body">There is a mountain which peaks at about 120Hz, and a valley I can&#x27;t remember where, on the recorded EQ&#x27;s meter. I&#x27;m wondering if this is in agreement with this room&#x27;s &quot;modes&quot;?</div></blockquote>Most likely, yes.  But they might also be artifacts of the equipment, as mentioned above.  What are the exact dimensions of your room?
+<blockquote class="bb-quote"><div class="bb-quote-body">Is this the same thing that&#x27;s referred to when talking about a room&#x27;s modes?</div></blockquote>Basically, yes, but it isn&#x27;t just pure modes.  There are other issues that you might be measuring without realizing it, such as comb filtering, reflections, and resonance (depending on the size of the room).
+<blockquote class="bb-quote"><div class="bb-quote-body">I&#x27;m guessing the broadband absorbers which I&#x27;m gonna spend me whole
+weekend &quot;mass producing&quot; (YES) will absorb the mountain, as well as everything else.</div></blockquote>Probably, but not necessarily.  Your treatment will make a big difference, yes, but the peaks and valleys might still be there.  They might even move...
+<blockquote class="bb-quote"><div class="bb-quote-body">Would you/do you usually look to use a slot/slat type device to treat the mountain scenario?</div></blockquote>That&#x27;s one method, yes.
+
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p112170">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">phlange</span><time datetime="2011-03-25">25 March 2011</time><a class="permalink" href="#p112170" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Understood:)
+
+Speakers: Event PS8
+Souncard: MOTU 2408 mkII
+
+Exact dimensions of the room:
+13&#x27;6&quot; by 12&#x27;2&quot; with 8&#x27; ceiling.
+
+Of course I probably wont get into a slat resonator yet.
+But maybe if there were some certainty about where
+a strong bass frequency would appear in a room of
+this size, a single membrane absorber would smooth it.</div>
+</article>
+<article class="post" id="p112180">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2011-03-25">25 March 2011</time><a class="permalink" href="#p112180" aria-label="Link to post 4">#4</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-body">Exact dimensions of the room: 13&#x27;6&quot; by 12&#x27;2&quot; with 8&#x27; ceiling.</div></blockquote>OK, that would explain your 120 Hz. issue! You have two oblique modes, two tangential modes AND an axial mode, all piled up practically on top of each other, right around that point!   <span class="smilie" title=":shock:">:shock:</span> 
+
+116.7 hz 	(0,2,1 Tangential)
+119.0 hz 	(2,1,1 Oblique)
+123.9 hz 	(1,2,1 Oblique)
+125.0 hz 	(2,2,0 Tangential)
+125.6 hz 	(3,0,0 Axial)
+
+It is more likely to your 3:0:0 mode, so putting thick, deep absorption on the front and rear walls would probably make a difference.
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

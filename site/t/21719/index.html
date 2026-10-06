@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>confusing REW readout for LEFT, RIGHT and combined | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by msieczko in Acoustics, 2018. 4 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21719/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>confusing REW readout for LEFT, RIGHT and combined</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by msieczko on 28 August 2018. 4 replies.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21719.</p>
+
+</div>
+</header>
+<article class="post" id="p147140">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">msieczko</span><time datetime="2018-08-28">28 August 2018</time><a class="permalink" href="#p147140" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi - as I&#x27;m fighting through my room treatment I started gettig quite confusing results with REW readouts.
+
+When I measure left and right speakers separately I get nice readings. But when L and R are both turned on (same mic position) I gave random huge dips in high end. On different days thay would appear with different frequencies. 
+I&#x27;m using ref mic provided with sonarworks (system wide turned off for measurements).
+
+Any ideas?
+<div class="bb-attachment-missing">Image not preserved: LEFT no sub.jpg</div><div class="bb-attachment-missing">Image not preserved: RIGHT no sub.jpg</div><div class="bb-attachment-missing">Image not preserved: BOTH no sub.jpg</div></div>
+</article>
+<article class="post" id="p147141">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gregwor/">Gregwor</a><time datetime="2018-08-28">28 August 2018</time><a class="permalink" href="#p147141" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">I believe the answer to your question lies within chapter 10 of:
+
+<a href="http://www.roletech.net/books/HandbookAcoustics.pdf" rel="nofollow noopener" target="_blank">www.roletech.net/books/HandbookAcoustics.pdf</a>
+
+Ultimately this is probably due to a symmetry issue of your room/speaker/mic placement or room treatment.  
+
+Greg</div>
+</article>
+<article class="post" id="p147145">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-08-29">29 August 2018</time><a class="permalink" href="#p147145" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">Hi there &quot;msieczko&quot;.  Welcome.
+
+Please read the<strong> <a href="/t/3231/">forum rules for posting  (click here)</a>. </strong> You seem to be missing a couple of things!  <span class="smilie" title=":)">:)</span>
+<blockquote class="bb-quote"><div class="bb-quote-body">When I measure left and right speakers separately I get nice readings. But when L and R are both turned on (same mic position) I gave random huge dips in high end.</div></blockquote>That&#x27;s perfectly normal.  You CANNOT use the combined LR signal to judge the high end!  It&#x27;s only useful for judging the low end.  Indeed, it&#x27;s the ONLY way to judge the low end, since it correctly shows the combination of the bass, which is much less directional than the highs.  Plus, with both speakers on, that guarantees that you are exciting all of the modes that will normally be excited, so you&#x27;ll be able to see them better.  
+
+By the same token, you can&#x27;t judge the low end very well from only looking at left or right speakers individually, but you CAN judge the high end by looking at left and right individually.
+
+In other words: Don&#x27;t bother looking too much at the high end, anything above about 2 kHz on the LR data set, and don&#x27;t bother looking too much at the low end below about 200 Hz on the individual L and R data sets.  (There is some useful information in those areas, if you know how to read it, but it&#x27;s not easy).  Combined LR is only good for lows and mids.  Individual L and R is only good for mids and highs.
+
+There are many reasons why those huge dips and peaks in your data can happen, but mostly it is related to the very short wavelengths of high frequencies, and the fact that REW uses coherent sine sweeps to do the measurements.  The wavelength at 5 kHz, for example, is about 6.8cm, so if you get the SAME signal emitted by both speakers arriving at the mic with a difference of only 3.4 cm in wave arrival (because you set the mic just 16mm off center, for example), they are 180° out of phase, so you get phase cancellation at the mic tip.  And even if it was only 8mm off center, that&#x27;s a quarter wave difference, so the two waves would still be 90° out of phase.  Thus you get comb filtering, interference patterns, huge differences in apparent level, but in reality that&#x27;s not really there!  What you see on that graph does not actually exist in the real world.  You would NEVER hear that, because your ears are not microphones, you have two ears (rather than just one mic), and your ears are many cm away from the location where you have the mic tip.  Your ears will hear two DIFFERENT signals, neither of which looks anything like that waveform.
+
+If you really want to know what your brain will be perceiving from BOTH speakers at once, then do a pair of REW tests: one test where you have the mic positioned about 7cm left of the center line at the mix position (which is roughly where your left ear will be) and pointing directly at the left speaker, then a second test with the mic located 7cm to the right of the center line at the mix position and pointing directly at the right speaker, then add those together mathematically in REW, and smooth the result 1/24 octave.  That will be roughly how your brain will actually perceive the sound, and even though it still isn&#x27;t accurate, it&#x27;s a much more realistic representation of what you will really hear.
+<blockquote class="bb-quote"><div class="bb-quote-body"> On different days thay would appear with different frequencies. </div></blockquote>That&#x27;s because on different days there were minor differences in the exact location of the speakers, the mic, objects in the room (including YOU), different air temperature, different humidity, etc.  All of those can cause changes in path length of just a few mm, which is more than enough to cause major changes in the interference patterns.
+
+-  Stuart  -</div>
+</article>
+<article class="post" id="p147146">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">msieczko</span><time datetime="2018-08-29">29 August 2018</time><a class="permalink" href="#p147146" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Many thanks for explanation. It makes perfect sense and i intuitively didn’t bother with these dips. Especially that it never occurred on RTA when working with pink noise. Now I understand why <span class="smilie" title=":)">:)</span>
+
+Many thanks, back to tuning now</div>
+</article>
+<article class="post" id="p147147">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/soundman2020/">Soundman2020</a><time datetime="2018-08-29">29 August 2018</time><a class="permalink" href="#p147147" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Great!  And since you are working on room tuning, you might find this thread helpful:  <a href="/t/21368/">viewtopic.php?f=2&amp;t=21368</a> that&#x27;s an example of room-tuning that is going on right now, and getting close to completion.
+
+But please do read the <strong><a href="/t/3231/">forum rules for posting  (click here)</a>.</strong>  You are still missing something!
+
+-  Stuart  -</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

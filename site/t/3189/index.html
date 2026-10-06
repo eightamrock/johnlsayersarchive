@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>resonators and bass traps | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by abraxxus in Acoustics, 2005. 15 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/3189/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/acoustics/">Acoustics</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>resonators and bass traps</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by abraxxus on 15 February 2005. 15 replies. In the Library under <a href="/library/treatment/">Acoustic treatment</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 3189.</p>
+
+</div>
+</header>
+<article class="post" id="p22564">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">abraxxus</span><time datetime="2005-02-15">15 February 2005</time><a class="permalink" href="#p22564" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hey guys. I know this has been covered a thousand times here but, as usual I cant find anything that meets my specific requirements.
+
+Here is my situation, Ive got my control room built out, its appx 18&#x27;x10&#x27;
+with a 12&#x27; pitched ceiling. Durring the build of the place I planed on building resonators in the corners of the room. 
+
+&lt;img src=&quot;http://www.mantisrecording.com/CR00.jpg&quot;&gt;
+
+Our Idea after much research on Helmholtz....
+In the rear corners or the room, I am going to build out resonators with 5/8 MDF... We are going to bring in the test equipment and tune them by drilling holes in the MDF. We have a calculator that tells us what diam holes and how many we need to drill in order to deal with a specific band.
+
+According to our research, this should work..... comments?
+
+Now the other thing, In the front of the room, I was originally going to build resonators up there as well, but after more reading, having resonators directly behind my monitors (which are mackie HR824&#x27;s if that makes any diffrence to anyone) will not have much effect. so we just thought we would build bass traps there. but....  I cant find anything on corner bass traps.. Am I just missing this completely?
+
+Thanks in advance.
+-Abe</div>
+</article>
+<article class="post" id="p22582">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-02-15">15 February 2005</time><a class="permalink" href="#p22582" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">On helmholtz calculators - be VERY careful here; nearly every one of these on the web is WRONGGGGG.... apparently some time back there was a typo in the book everyone &quot;borrowed&quot; their formula from, reportedly the Handbook for Sound Engineers - now it&#x27;s all over the web  <span class="smilie" title=":(">:(</span> 
+
+Check any spreadsheet you&#x27;re using - although the formula may look slightly different, just look for a &quot;*&quot; instead of a &quot;+&quot; in between the parentheses - here is the correct formula for slat resonators (holes will be different, but the + is still WRONG - 
+Correct formula - 
+=2160*SQRT(A42/((A45*A44)*(A43+A42)))
+Incorrect formula - 
+=2160*SQRT(A42/((A45*A44)+(A43+A42)))
+
+The problem I see with drilling holes for tuning - there needs to be a cloth right behind the holes and the rear half of the enclosure filled with insulation for the calculations to have much meaning - the insulation depth can be varied, more = wider bandwidth/lower Q, but the cloth needs to be there (wish I could remember why  <span class="smilie" title=":cry:">:cry:</span> ) 
+
+ON bass traps - it&#x27;s not clear from your drawing if you intend to soffit your Mackies - even though they have rear passive radiators, several people here have had good luck doing that. 
+
+Have you seen this yet?
+
+<a href="http://www.saecollege.de/reference_material/pages/Speakers.htm" rel="nofollow noopener" target="_blank">http://www.saecollege.de/reference_mate ... eakers.htm</a>
+
+Let us know about soffiting and we can probably get closer to what you want to know... Steve</div>
+</article>
+<article class="post" id="p22583">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">abraxxus</span><time datetime="2005-02-15">15 February 2005</time><a class="permalink" href="#p22583" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">I thought about soffit at first, but I changed my mind (for some reason or another, probably the heat thing...) anyway, I dont think the corners are deep enough to flush mount the Mackies. They will stick out of the wall by a few inches. I *could* do some major modifications if you think the soffit mount of the monitors would benifit me that much. ( other than looking sweeeeeet!)
+
+Thoughts?
+
+On the resonators, im a little confused now, I was going to put the cloth *over* the front of the holes, covering the face of the entire resonator.
+
+The design I thought I was going to use is this(front of resonator to back): 
+canvas cloth -&gt; 5/8&quot; mdf -&gt;3 1/2&quot; rigid insulation -&gt; airspace.
+
+Thats what I got off the SAE designs. or am I reading wrong, following what you just said it looks to be:
+5/8&quot; mdf -&gt; cloth -&gt; airspace -&gt; rigid insulation.
+
+the drilling of holes is going to be experimental, MDF is spendy... So if i get  bad feedback from you guys, I may just lay off and do something more conventional..
+
+thoughts on this one?
+
+-caleb
+
+
+
+-abe</div>
+</article>
+<article class="post" id="p22586">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-02-15">15 February 2005</time><a class="permalink" href="#p22586" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">I get confused on this also; in Everest&#x27;s Master Handbook, there are two drawings showing Helmholtz with the absorbent at the rear, no cloth mentioned; then, further along, there are two more diagrams showing Helmholtz traps with the absorbent right behind the holes. 
+
+Cox and D&#x27;Antonio treat this subject fairly lightly, commenting that putting absorbent within a hole diameter of the front increases impedance, and show it being there in their (few) diagrams. 
+
+I&#x27;m thinking that if you were to place the absorbent against the front of the absorber, you would reduce the ringing of the slats or front panel which would widen the Q, lower the absorption, and probably change the frequency of the device slightly. 
+
+I was a bit disappointed on the lack of coverage on this topic by Cox and D&#x27;Antonio, considering the cost of the book and it&#x27;s title - Acoustic Absorbers and Diffusors; Theory, Design and Application... Steve</div>
+</article>
+<article class="post" id="p22589">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">abraxxus</span><time datetime="2005-02-15">15 February 2005</time><a class="permalink" href="#p22589" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">Well that does get confusing!
+
+From this link: <a href="http://www.johnlsayers.com/HR/index1.htm" rel="nofollow noopener" target="_blank">http://www.johnlsayers.com/HR/index1.htm</a>
+it shows the absorbent sortof in the middle, with airspace in front and behind.
+
+then i jump over too: <a href="http://www.saecollege.de/reference_material/index.html" rel="nofollow noopener" target="_blank">http://www.saecollege.de/reference_material/index.html</a>
+the absorbent is right up agianst it....
+
+Which should I follow?
+
+Thanks
+-abe</div>
+</article>
+<article class="post" id="p22601">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-02-16">16 February 2005</time><a class="permalink" href="#p22601" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">After a bit more reading in the Cox/D&#x27;Antonio book, I&#x27;d put the absorbent up against the slats, and maybe go a bit more than half depth with it. This would smooth out the response so it isn&#x27;t so peaky, although it would also lower the absorption at resonance a little.
+
+I think part of the confusion is due to just the opposite requirements for PANEL type traps - those MUST have the panel free to resonate or they don&#x27;t work... Steve</div>
+</article>
+<article class="post" id="p22609">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">abraxxus</span><time datetime="2005-02-16">16 February 2005</time><a class="permalink" href="#p22609" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">Thanks Steve! Glad we are clearing this one up.
+
+I think im going to be able to make this work out well. I was going to get my pix posted of the studio tonight, but.... Im stuck here at work rebuilding the darn email server... So no studio work for me tonight....
+
+anyway, any other thoughts on this? John, you around ? =)
+
+
+-abe</div>
+</article>
+<article class="post" id="p22745">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-02-19">19 February 2005</time><a class="permalink" href="#p22745" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">I&#x27;ve yet to talk to anyone who&#x27;s soffited ANY monitors that wasn&#x27;t really pleased with the results; even if you don&#x27;t seal things all around so the powered speakers can stay cool, as long as the speakers are mounted flush with the face of a sturdy baffle extension that&#x27;s at least 3 woofer diameters or so in all directions away from the woofer, it will work fine... Steve</div>
+</article>
+<article class="post" id="p22784">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">lex</span><time datetime="2005-02-20">20 February 2005</time><a class="permalink" href="#p22784" aria-label="Link to post 9">#9</a></header>
+<div class="post-body">So the fibre glass is touching the cloth then?  How about covering the front of the fibre glass panel with the cloth and then having it right up against and touching the slats?  
+
+Has anyone tried it both ways?  Can you hear the difference?</div>
+</article>
+<article class="post" id="p22805">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-02-21">21 February 2005</time><a class="permalink" href="#p22805" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">&quot;How about covering the front of the fibre glass panel with the cloth and then having it right up against and touching the slats?&quot; - 
+
+Yes, this is what everyone (including Everest, in SOME of his illustrations) says to do; the increased acoustic resistance at the slots is part of what makes the design work as intended. This would also minimise any sympathetic ringing of the slats themselves... Steve</div>
+</article>
+<article class="post" id="p22809">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">lex</span><time datetime="2005-02-21">21 February 2005</time><a class="permalink" href="#p22809" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">I guess I&#x27;ll do it that way then.  It just seems at first that the fibre glass will interfere with the effectiveness of the cavity behind it, like you&#x27;re blocking the cavity you just created.  It seems to make more sense the other way, with the fibre glass at the back.  That&#x27;s the initial thought I get, but then I don&#x27;t fully understand it yet so what do I know.  <span class="smilie" title=":P">:P</span></div>
+</article>
+<article class="post" id="p22815">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Sword9</span><time datetime="2005-02-21">21 February 2005</time><a class="permalink" href="#p22815" aria-label="Link to post 12">#12</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">lex wrote:</div><div class="bb-quote-body">It seems to make more sense the other way, with the fibre glass at the back.  That&#x27;s the initial thought I get, but then I don&#x27;t fully understand it yet so what do I know.  <span class="smilie" title=":P">:P</span></div></blockquote>I had it once explained to me like this.   Since sound is transmitted by molecules bumping against each other and transmitting their energy to the next molecule, every time the sound has to change the medium it&#x27;s traveling in, it loses more power than if it just died off in the same medium. 
+
+So by mounting the absorbtion at the front, the sound first encounters the insulation and has to change from an air-borne sound to a sound traveling through the insulation.  It loses power.  
+
+Then it traverses the insulation and leaves it back into the air.  Another power loss.  
+
+The sound then hits the back wall and bounces back.  Just like a basketball bouncing off a wall, it loses more power.
+
+The sound, if it&#x27;s still traveling, once again has to convert format to hit the insulation again on the back side.  Losing more power.
+
+
+As I understand it, the distance dictates which frequencies are absorbed the most, based upon wave development.  This is why with some commercial acoustical treatments, the same thickness of absorbative panel is used, and the &quot;distance from the wall&quot; mounting is varied for more broadband absorbtion.
+
+Please feel free to correct me if I&#x27;m wrong, but that was the layman answer given to me in my youth about the subject.</div>
+</article>
+<article class="post" id="p22818">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">lex</span><time datetime="2005-02-21">21 February 2005</time><a class="permalink" href="#p22818" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">That makes sense for a panel trap such as you&#x27;d put across a corner but wouldn&#x27;t the concept change for a resonating cavity or would it hold firm?
+
+To me it almost sounds like putting the cap on the bottle.
+I suppose however, that the fibre glass is not a barrier to such large waves and their energy.  But then, aren&#x27;t these designed for the weaker mids as well?  I&#x27;m still a little confused. <span class="smilie" title=":?">:?</span></div>
+</article>
+<article class="post" id="p24013">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">sinbad</span><time datetime="2005-03-19">19 March 2005</time><a class="permalink" href="#p24013" aria-label="Link to post 14">#14</a></header>
+<div class="post-body">The plot thickens, I got this formula off the saecollege.de/reference_material under absorbers, mid frequencies. Maybe somebody should tell &#x27;em   <span class="smilie" title=":mrgreen:">:mrgreen:</span> 
+
+&quot;
+The formula for calculating the helmholtz resonant frequency is: 
+
+f = 2160 x sqrt ( r / (( d x D ) + ( r + w ))) 
+Where: 
+
+f = resonant frequency in Hertz (Hz)
+r = slot width.
+w = slat width.
+d = effective depth of slot. (1.2 x the actual thickness of the slat)
+D = depth of box. 
+&quot;</div>
+</article>
+<article class="post" id="p24030">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/avare/">AVare</a><time datetime="2005-03-20">20 March 2005</time><a class="permalink" href="#p24030" aria-label="Link to post 15">#15</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">sinbad wrote:</div><div class="bb-quote-body">The plot thickens, I got this formula off the saecollege.de/reference_material under absorbers, mid frequencies. Maybe somebody should tell &#x27;em   <span class="smilie" title=":mrgreen:">:mrgreen:</span> 
+
+&quot;
+The formula for calculating the helmholtz resonant frequency is: 
+
+f = 2160 x sqrt ( r / (( d x D ) + ( r + w ))) 
+Where: 
+
+f = resonant frequency in Hertz (Hz)
+r = slot width.
+w = slat width.
+d = effective depth of slot. (1.2 x the actual thickness of the slat)
+D = depth of box. 
+&quot;</div></blockquote>That is the WRONG formula!  The  addition  sign should be a multiplication sign.  Dimensional analysis should make that obvoius!
+
+Now if only I could sepll as well;
+Andre</div>
+</article>
+<article class="post" id="p24034">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-03-20">20 March 2005</time><a class="permalink" href="#p24034" aria-label="Link to post 16">#16</a></header>
+<div class="post-body">It&#x27;s been nearly 5 years since John sold that site to SAE - not sure what his relationship is with them ATM, but I&#x27;ve tried to contact two OTHER erroneous sites in the last year with ZERO results or feedback.
+
+That &quot;+&quot; sign in the middle of the equation you posted will throw off the results by typically more than an OCTAVE... Steve
+
+(The CORRECT formula/spreadsheet are at the top of THIS forum.)</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

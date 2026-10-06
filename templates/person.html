@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% from "macros.html" import topic_row %}
+{% block content %}
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/people/">People</a></nav>
+<h1>{{ name }}</h1>
+<p class="lede">{{ posts_label }} between {{ first_year }} and {{ last_year }}, in {{ threads_label }}.{% if is_john %} John ran the forum and designed studios through John Sayers Productions.{% endif %}</p>
+{% if started %}<h2>Threads {{ name }} started</h2>
+<ol class="topic-list">{% for t in started %}{{ topic_row(t, show_forum=True) }}{% endfor %}</ol>{% endif %}
+<h2>Threads with the most posts by {{ name }}</h2>
+<ol class="topic-list">{% for t in active %}{{ topic_row(t, show_forum=True) }}{% endfor %}</ol>
+</div>
+{% endblock %}

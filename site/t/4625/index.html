@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A quick&amp;specific star grounding question | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Hashbrown in Installation and Wiring, 2005. 12 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/4625/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/installation-and-wiring/">Installation and Wiring</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>A quick&amp;specific star grounding question</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Hashbrown on 7 November 2005. 12 replies, 2005–2006. In the Library under <a href="/library/electrical/">Electrical and wiring</a>.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 4625.</p>
+
+</div>
+</header>
+<article class="post" id="p33690">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Hashbrown</span><time datetime="2005-11-07">7 November 2005</time><a class="permalink" href="#p33690" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">From Steve:
+If using &quot;romex&quot; type wire, you would need to do &quot;home runs&quot; for each and every outlet, so the three wires in each romex only go to ONE outlet, and there is only one ground connection which starts at the common ground point in your switch panel and stops at ONLY ONE outlet. 
+---
+
+I&#x27;m using plastic boxes and romex.  I&#x27;m doing home runs from every outlet back to the grounding bus bar(not using ground from romex).  I&#x27;m going to have my speakers on a separate circuit and will have a light switch to flip power on to all speaker outlets (they will be behind soffits, so can&#x27;t easily access their individual power switches).
+
+My question is, do I also need a home run ground for the light switch?  Seems all discussion is centered around the outlets.  I&#x27;m assuming I do, otherwise the switch itself would not be grounded?
+
+Also, if I have the light switch as the first receptacle in the chain, can I just use the ground from the romex itself for the switch?
+
+Thanks guys,
+
+HB</div>
+</article>
+<article class="post" id="p33695">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-11-07">7 November 2005</time><a class="permalink" href="#p33695" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">I moved this to the Installation/wiring forum; and I have a question - what ARE you using for ground to each outlet, if not the included one in the Romex? I&#x27;m asking because I&#x27;m not sure you don&#x27;t have a code violation in the making by doing that - I know that when using individual conductors in conduit, ALL conductors INCLUDING the ground are required to be in the SAME conduit. The reason for this is mutual inductance of the wires; in the event of a short, it&#x27;s important that the wires can &quot;interact&quot; field-wise, in order to properly trip the overcurrent device. 
+
+Here&#x27;s the pertinent information - 
+
+ (from 408.20 Grounding of Panelboards, commentary) 
+
+The grounding of electronic equipment as well as overall power quality is of concern to the electrical industry. Sensitive electronic equipment used in industrial and commercial power systems may fail to perform properly if electrical noise is present in the equipment grounding conductor.
+An isolated equipment grounding terminal is permitted if required for the reduction of electrical noise on the grounding circuit. This equipment grounding terminal must be grounded by an insulated equipment grounding conductor <strong>that is run with the circuit conductors.</strong>
+
+(Bold added by Steve)
+
+And
+
+A connection to only a separate grounding electrode that places the earth in the fault return path may prevent sufficient current for opening overcurrent protection when a ground fault occurs. See the commentary following 250.146(D) FPN and 250.54.
+
+There is a 6-page thread on RO where Rod and I explained all of this in exhaustive detail - 
+
+<a href="http://www.recording.org/ftopic-16729-days0-orderasc-0.html" rel="nofollow noopener" target="_blank">http://www.recording.org/ftopic-16729-d ... asc-0.html</a>
+
+The above quotes are from page 3 of that thread.
+
+On the switched speaker outlets - a light switch is a single pole device, so can only switch one conductor - to maintain star grounding to your speakers, you will need to run neutral and hot from the panel to your switch along with the romex ground, which should be tied to the switch frame and its box - the neutral will just pass THROUGH that box on its way to the speaker outlet box, along with the SWITCHED hot wire. 
+
+Then, since you are using plastic boxes, you would run a separate insulated ground wire (green) all the way from the speaker outlet box back to your star point. 
+
+You still need to use an IGR outlet though, because the frame of standard outlets is connected to the ground pin of the receptacle; running a separate ground from this point AND using the romex ground will cause a ground LOOP. You defeat the loop by using an IGR, and connecting the FRAME of the IGR to Romex ground (to meet code) and the SEPARATE receptacle ground of the IGR back to your star point. 
+
+HTH... Steve</div>
+</article>
+<article class="post" id="p33719">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Hashbrown</span><time datetime="2005-11-07">7 November 2005</time><a class="permalink" href="#p33719" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">&quot;what ARE you using for ground to each outlet, if not the included one in the Romex&quot;
+
+I&#x27;m using a separate 14 guage green copper wire.  I can&#x27;t use the green in the rmoex or else each outlet woudln&#x27;t get it&#x27;s own ground.  I am running the separate grounds along with the romex though.
+
+Ok I understand how to wire the switch, it is as I thought, thanks!
+
+&quot;You still need to use an IGR outlet though, because the frame of standard outlets is connected to the ground pin of the receptacle; running a separate ground from this point AND using the romex ground will cause a ground LOOP.&quot;
+
+Don&#x27;t understand how this applies to me, since I am not using the romex ground plus separate ground.  Only using the separate ground to teh outlets.  As I understood it, if I was using metal boxes, then I would use romex ground to the box, and separate ground for each outlet.  But since I&#x27;m using plastic boxes, then only the separate ground for each outlet is necessary.
+???
+
+-HB</div>
+</article>
+<article class="post" id="p33722">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/sharward/">sharward</a><time datetime="2005-11-07">7 November 2005</time><a class="permalink" href="#p33722" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Have you throughly read the following?<ul class="bb-list"><strong><a href="/t/2206/">Star Grounding System Question (sticky thread here on John&#x27;s site)</a>
+
+<a href="ttp://www.recording.org/ftopic-16729-days0-orderasc-0.html" rel="nofollow noopener" target="_blank">Switch and Receptacle Height? (6-page thread on recording.org</a>
+
+<a href="/t/4442/">Permits, Codes, Licenses -- and WHY YOU SHOULD CARE! (My worrywart thread here on John&#x27;s site)</a></ul></strong>Your question pertains to much more than sound quality. It pertains to <strong>keeping people from not getting dead</strong>.<span style="color:red"> <strong>PLEASE</strong> proceed with caution</span> as your life and others may very well depend on it!!  <span class="smilie" title=":!:">:!:</span>  <span class="smilie" title=":!:">:!:</span>  <span class="smilie" title=":!:">:!:</span>  <span class="smilie" title=":!:">:!:</span>  <span class="smilie" title=":!:">:!:</span></div>
+</article>
+<article class="post" id="p33726">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-11-07">7 November 2005</time><a class="permalink" href="#p33726" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">HB, if you&#x27;re doing a home run with romex from each plastic box back to your main panel, and each romex ground is connected to the outlet&#x27;s ground and to the panel ground bus, you already HAVE a star system. 
+
+I&#x27;m confused now; when you said &quot;home run&quot;, did you only mean with the separate grounds? Or are your Romex runs ALSO only serving one outlet box per run?  Steve</div>
+</article>
+<article class="post" id="p33734">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Hashbrown</span><time datetime="2005-11-07">7 November 2005</time><a class="permalink" href="#p33734" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">Using Hot/Neutral from Romex, and all boxes wired in series (correct term?), meaning they are all daisy-chained together.  I&#x27;m following this simple illustration..
+<a href="http://www.saecollege.de/reference_material/images/Star%201.gif" rel="nofollow noopener" target="_blank">http://www.saecollege.de/reference_mate ... ar%201.gif</a>
+
+And following this advice from Steve found on this post.
+<a href="/t/2206/">http://www.johnlsayers.com/phpBB2/viewt ... c&amp;start=15</a>
+
+&quot;The second way would allow daisy-chaining of the romex conductors between plastic outlet boxes, EXCEPT that it would require a SEPARATE, INSULATED, ground wire to be run from each receptacle in each box straight to the STAR point; still no IGR&#x27;s required as long as multiple receptacles in a box do NOT TOUCH each other. This isn&#x27;t hard to do, just a caution that it&#x27;s necessary.&quot;
+
+Keith - I&#x27;ve definitely read those first 2 threads a couple times.  The last one I think I&#x27;ve read some posts while I was searching through the forum.
+
+Thanks for watching out for me guys!
+
+-HB</div>
+</article>
+<article class="post" id="p33743">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-11-07">7 November 2005</time><a class="permalink" href="#p33743" aria-label="Link to post 7">#7</a></header>
+<div class="post-body">OK, now I&#x27;m with you; your method is fine. Only one caution, one I&#x27;ve forgotten to mention anywhere else - when using plastic boxes and NON-IGR receptacles in a star system, do NOT use METAL cover plates, especially on multiple gang boxes (more than one duplex receptacle) ; this would tie two grounds together through the frames of each receptacle and through the metal cover plate. 
+
+If you use plastic cover plates and plastic boxes, it&#x27;s not necessary to use IGR&#x27;s when &quot;daisy chaining&quot; hot and neutral <strong>IF IF IF IF IF IF IF IF IF IF IF IF</strong> you run <strong>separate &quot;Home run&quot; ground wires</strong> from each receptacle back to the star point. 
+
+If you use steel framing, this is another possible ground loop to watch out for; just be sure nothing metal can cause a secondary path back to ground... Steve
+
+BTW, the above method means that your separate grounds are both the &quot;noise&quot; ground AND the &quot;safety&quot; ground, so technically this would mean that the separate ground wires need to be bundled with the romex for each run. 
+
+If that&#x27;s not feasible, using IGR&#x27;s may make more sense; in that case, you would use the Romex ground to each IGR&#x27;s frame (safety ground) and run your separate ground wires to the Isolated ground connector on each receptacle. That method would eliminate the requirement for your separate grounds to be bundled together with the current carrying conductors...</div>
+</article>
+<article class="post" id="p33748">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Hashbrown</span><time datetime="2005-11-07">7 November 2005</time><a class="permalink" href="#p33748" aria-label="Link to post 8">#8</a></header>
+<div class="post-body">Cool, I totally understand what you&#x27;re saying.  I&#x27;m using plastic cover plates and only one outlet per box, so no frames will touch, also using wood studs.  I am running the grounds bundled with the Romex.  
+
+And concerning the grounding of the switch, I can use the ground from the romex for that, as long as the romex ground is not used by any other receptacles.
+
+Thanks for sticking with me there!
+
+-HB</div>
+</article>
+<article class="post" id="p33768">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/knightfly/">knightfly</a><time datetime="2005-11-08">8 November 2005</time><a class="permalink" href="#p33768" aria-label="Link to post 9">#9</a></header>
+<div class="post-body"><span class="smilie" title="8)">8)</span></div>
+</article>
+<article class="post" id="p33926">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">drfrankencopter</span><time datetime="2005-11-12">12 November 2005</time><a class="permalink" href="#p33926" aria-label="Link to post 10">#10</a></header>
+<div class="post-body">Hey, when you guys are running your home runs back to the panel, or even an alternate junction box, how are you tying them all together. By the time you get say 6 plugs on one circuit, you have a whole lot of wires to bring together....too many for a wire nut (I can&#x27;t stand them). Is there some kind of an approved screw-down junction block?
+
+Cheers,
+
+Kris</div>
+</article>
+<article class="post" id="p33981">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/aaronw/">Aaronw</a><time datetime="2005-11-14">14 November 2005</time><a class="permalink" href="#p33981" aria-label="Link to post 11">#11</a></header>
+<div class="post-body">Yes.
+
+You can pick them up at your local Home Depot or Lowes or hardware place for a couple bucks.  It&#x27;s just a grounding strip w/ screw lugs on it.</div>
+</article>
+<article class="post" id="p35486">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">ridgeback</span><time datetime="2005-12-12">12 December 2005</time><a class="permalink" href="#p35486" aria-label="Link to post 12">#12</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">Aaronw wrote:</div><div class="bb-quote-body">Yes.
+
+You can pick them up at your local Home Depot or Lowes or hardware place for a couple bucks.  It&#x27;s just a grounding strip w/ screw lugs on it.</div></blockquote>The extra grounding bus must be approved for your type of panel. And you must use the threaded holes on the panel case designed for that purpose for secure grounding and bonding to the panel case. DO NOT USE self drilling screws to attach the extra ground or neutral bus. Also remember if this is a subpanel, the nuetral bar must isolated from the panel case/grounding bus. This is done by removing the bonding jumper screw or in some cases the #6 copper bonding tab and keeping all neutrals on the neutral bar/all grounds respectively on the bonded ground bar.</div>
+</article>
+<article class="post" id="p36890">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">edenorchestra</span><time datetime="2006-01-01">1 January 2006</time><a class="permalink" href="#p36890" aria-label="Link to post 13">#13</a></header>
+<div class="post-body">In regards to grounding one thing you need be aware of is whether you are wiring to a Main or a Sub panel.  For example in my case I have a Sub panel feed from the Main in my house to my studio which is a separate building. From the Sub panel there are 4 conductors to the Main, 2 hot legs, 1 neutral, and 1 ground.  In keeping with only one path to earth ground you must be sure that a ground and neutral are isolated at any Sub panel.  In other words unlike your Main panel where the ground and neutral are electrically conductive (one strip often or the separate neutral physically bonded to the case) in a Sub panel the neutral is NOT tied on the same strip as the ground.  You must have two separate terminal strips with the neutral un-bonded to the panel case, thus the reason for 4 conductors to from Sub to Main.
+The Master technical ground-reference bus is the central hub for all technical ground conductors. Only one of these buses is within any given facility, and it is this point that connects the technical ground system to the ground electrode system of the building and to the electrical grounding system for the building. This point also grounds to the neutral conductor for the power distribution. So in a Sub Panel system, this is back at the Main. The term building here loosely describe one electrical service entrance even though I have two physical buildings, its all one system.
+I have split my Sub panel functionally into two Legs (which by the way are not phases, you only have phases in three phase systems, your home is Single phase with two Legs).  One leg is for all audio equipment.  I have 80 amps of service from my Main to the Sub.  There is no code requirement for a Main breaker at the Sub panel as the wiring is protected by the 80 Amp sub feed breaker at the Main.  I have 8 distribution breakers in my Sub.  Four of these will be for audio; four will be for lighting and any misc. type receptacles.   
+
+For current purposes in my example I have 80 amps (I) at 240 volts (V) which is 19.2 kW of total power (P).  (I * V = P) Another way to look at this on a per Leg basis is 80A * 120V = 9.6 kW. You still end up with L1 + L2 = 19.2kW of power.
+
+NEC allows for ground wires smaller than the current carrying conductors but the sizing for 15A, 20A, and 30A circuits remains the same #14, #12, and #10 respectively.  You can actually use a #10 ground up to 60A of current carrying, but then you need about a #4 on your current runs and 60A receptacles; I haven’t seen too many of those.
+
+I prefer the plastic boxes as this eliminates any secondary bonding issues and special electrical devices.  I am running Romex in a parallel connection (daisy chain) for the hot and neutral and then a separate green ground wire from each device back to a common terminal strip in a separate “ground box”.  Since my wiring is in free air and not conduit I am going to wire tie the ground wire right along with the Romex.  The ground in the Romex will not be used.  Actually I am cutting it flush to the outer Romex sheath to avoid any contact.  From there you can run one conductor back to the ground strip on your type of panel ( Main or Sub).  Since each of my circuits is limited to the breaker size (20A) my home run to the breaker will be #12.  Terminal strips are great for this purpose as you can run each receptacle to the strip and then 1 wire back to the panel.  Find an industrial electrical supplier in your area as opposed to a commercial supplier; these guys have the good stuff.  Allen Bradley, Phoenix, Square D to name a very few.
+
+When you wire your devices, receptacles, switches, etc., don’t use the quick connectors, they suck.  Some have an insert hole and you can crank down a screw on the connection, that’s fine, but don’t use the type that “grab” the wire.  I prefer a pair of needle nose pliers, make a small loop and put the wire around the screw, squeeze the loop around the screw threads and tighten it down well. Do the same on any terminal strip or breaker.  MAKE GOOD TIGHT CONNECTIONS.  As a foot note, never, ever connect copper to aluminum. Bad, bad, bad.
+
+Also be sure you are getting the right devices.  Receptacles and switches are rated in Amps.  Don’t put 15A receptacles on #12 wire rated for 20A with a 20A breaker.  The wire and breaker can handle the current but the device can not, they can heat up.
+
+Bottom line is that when you are all done you should have a great big “Tree” grounding system.  I think the Tree is more intuitive than seeing a star. <span class="smilie" title=":wink:">:wink:</span></div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>

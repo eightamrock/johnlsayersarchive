@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JLS Archive — Phase 5 Review</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #f6f5f1; --panel: #fff; --border: #ddd8cc; --text: #2a2620; --muted: #7a7466;
+    --accent: #8a5a2c; --accent-bg: #f1e6d8; --drop: #b23b3b; --drop-bg: #fbeaea;
+    --pin: #b8860b; --ok: #3a7d44;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+  header { background: var(--panel); border-bottom: 1px solid var(--border); padding: 10px 16px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; position: sticky; top: 0; z-index: 10; }
+  header h1 { font-size: 15px; margin: 0; white-space: nowrap; }
+  header .stats { font-size: 12px; color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; }
+  header .spacer { flex: 1; }
+  header button, .btn { font: inherit; font-size: 12px; padding: 6px 10px; border: 1px solid var(--border); background: var(--panel); border-radius: 4px; cursor: pointer; color: var(--text); }
+  header button:hover, .btn:hover { background: var(--accent-bg); }
+  header button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  header button.primary:hover { opacity: .9; }
+  #layout { display: flex; align-items: flex-start; }
+  nav#topics { width: 230px; flex: none; background: var(--panel); border-right: 1px solid var(--border); min-height: calc(100vh - 49px); padding: 8px; position: sticky; top: 49px; }
+  nav#topics .topic-btn { display: flex; justify-content: space-between; gap: 6px; width: 100%; text-align: left; background: none; border: none; padding: 8px 8px; border-radius: 4px; cursor: pointer; font: inherit; font-size: 13px; color: var(--text); }
+  nav#topics .topic-btn:hover { background: var(--accent-bg); }
+  nav#topics .topic-btn.active { background: var(--accent); color: #fff; }
+  nav#topics .topic-btn .n { color: var(--muted); font-size: 11px; }
+  nav#topics .topic-btn.active .n { color: #f1e6d8; }
+  main { flex: 1; min-width: 0; padding: 16px 20px 60px; }
+  .intro-box { background: var(--panel); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; margin-bottom: 16px; }
+  .intro-box h2 { margin: 0 0 4px; font-size: 17px; }
+  .intro-box .desc { color: var(--muted); font-size: 12px; margin-bottom: 10px; }
+  .intro-box textarea { width: 100%; min-height: 130px; font: inherit; font-size: 13px; padding: 8px; border: 1px solid var(--border); border-radius: 4px; resize: vertical; background: #fffdf8; }
+  .intro-box .intro-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; font-size: 11px; color: var(--muted); }
+  .intro-box .ai-label { display: inline-block; background: var(--accent-bg); color: var(--accent); padding: 2px 7px; border-radius: 3px; font-size: 10.5px; font-weight: 600; letter-spacing: .02em; }
+  .toolbar { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+  .toolbar input[type=search] { font: inherit; font-size: 13px; padding: 6px 8px; border: 1px solid var(--border); border-radius: 4px; width: 220px; }
+  .toolbar select { font: inherit; font-size: 12px; padding: 5px 6px; border: 1px solid var(--border); border-radius: 4px; }
+  .toolbar label { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 4px; }
+  .toolbar .spacer { flex: 1; }
+  table#threads { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+  table#threads th { text-align: left; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .03em; padding: 8px 10px; border-bottom: 1px solid var(--border); background: #fbfaf7; }
+  table#threads td { padding: 7px 10px; border-bottom: 1px solid #eee; vertical-align: top; font-size: 13px; }
+  table#threads tr.dropped { opacity: .45; }
+  table#threads tr.dropped .title { text-decoration: line-through; }
+  table#threads tr:hover { background: #fbfaf3; }
+  .title a { color: var(--text); text-decoration: none; font-weight: 500; }
+  .title a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 11.5px; margin-top: 2px; }
+  .badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 10.5px; margin-right: 4px; }
+  .badge.ref { background: #e6f0e7; color: var(--ok); }
+  .badge.conf-low { background: #fbeaea; color: var(--drop); }
+  .badge.diary { background: #eee7f7; color: #5a3d99; }
+  .row-actions { display: flex; gap: 4px; align-items: center; white-space: nowrap; }
+  .row-actions button { border: 1px solid var(--border); background: var(--panel); border-radius: 4px; padding: 4px 7px; cursor: pointer; font-size: 12px; }
+  .row-actions button.on { background: var(--ok); color: #fff; border-color: var(--ok); }
+  .row-actions button.drop-btn.on { background: var(--drop); color: #fff; border-color: var(--drop); }
+  .row-actions button.pin-btn.on { background: var(--pin); color: #fff; border-color: var(--pin); }
+  .row-actions select { font-size: 11.5px; padding: 3px 4px; border: 1px solid var(--border); border-radius: 4px; max-width: 150px; }
+  #empty-msg { color: var(--muted); padding: 30px; text-align: center; }
+  dialog#help { max-width: 480px; border-radius: 8px; border: 1px solid var(--border); }
+  dialog#help h3 { margin-top: 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Phase 5 Review — johnlsayersarchive</h1>
+  <div class="stats" id="stats"></div>
+  <div class="spacer"></div>
+  <button id="help-btn">Help</button>
+  <label class="btn" style="display:inline-flex;align-items:center;gap:6px;">
+    Import curation.json <input type="file" id="import-input" accept="application/json" style="display:none">
+  </label>
+  <button id="export-btn" class="primary">Export curation.json</button>
+</header>
+<div id="layout">
+  <nav id="topics"></nav>
+  <main>
+    <div class="intro-box" id="intro-box"></div>
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Filter by title…">
+      <select id="sort">
+        <option value="score">Sort: score (high→low)</option>
+        <option value="confidence">Sort: confidence (low→high, review first)</option>
+        <option value="views">Sort: views (high→low)</option>
+        <option value="title">Sort: title (A→Z)</option>
+      </select>
+      <label><input type="checkbox" id="hide-dropped"> hide dropped</label>
+      <div class="spacer"></div>
+      <button class="btn" id="approve-shown">Approve all shown</button>
+      <button class="btn" id="drop-shown">Drop all shown</button>
+    </div>
+    <table id="threads">
+      <thead><tr>
+        <th style="width:46%">Thread</th>
+        <th>Signals</th>
+        <th style="width:160px">Move to</th>
+        <th style="width:140px">Actions</th>
+      </tr></thead>
+      <tbody id="thread-rows"></tbody>
+    </table>
+    <div id="empty-msg" style="display:none">No threads match this filter.</div>
+  </main>
+</div>
+
+<dialog id="help">
+  <h3>How this works</h3>
+  <p>Each of the 2,500 candidate threads was auto-tagged into one of 12 topics by an AI pass. Your job: skim each topic's list, <strong>drop</strong> anything miscategorized or not worth keeping, <strong>move</strong> anything filed under the wrong topic, and <strong>pin</strong> 3–5 of the best entries per topic (these become the "key threads" linked from that topic's intro). Edit each topic's AI-drafted intro paragraph directly in the box above the list.</p>
+  <p>Everything you do is saved to your browser's local storage as you go, so it's safe to close the tab and come back. When you're done (or want a checkpoint), click <strong>Export curation.json</strong> and save the downloaded file as <code>data/curation.json</code> in the project folder — the Phase 6 site build reads only that file.</p>
+  <p>Thread titles link to the full rendered preview so you can read the actual thread before deciding.</p>
+  <form method="dialog"><button class="btn primary">Close</button></form>
+</dialog>
+
+<script src="data.js"></script>
+<script>
+'use strict';
+const LS_KEY = 'jls_review_state_v1';
+const TAXONOMY = REVIEW_DATA.taxonomy;
+const TOPIC_DESC = Object.fromEntries(TAXONOMY.map(t => [t.slug, t.desc]));
+const THREADS = REVIEW_DATA.threads; // array, id, title, forum, views, replies, score, primary_topic, secondary_topics, diary_subtag, is_reference_quality, confidence
+
+function freshState() {
+  const threads = {};
+  for (const t of THREADS) {
+    threads[t.id] = { status: 'approved', primary_topic: t.primary_topic, pinned: false };
+  }
+  const topics = {};
+  for (const slug of Object.keys(REVIEW_DATA.intros)) {
+    const src = REVIEW_DATA.intros[slug];
+    topics[slug] = { intro: src.intro, key_threads: [...src.key_threads] };
+    for (const tid of src.key_threads) {
+      if (threads[tid]) threads[tid].pinned = true;
+    }
+  }
+  return { threads, topics };
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (!raw) return freshState();
+    const parsed = JSON.parse(raw);
+    // merge onto fresh defaults so newly-tagged threads (if data.js regenerated) aren't lost
+    const fresh = freshState();
+    for (const [id, v] of Object.entries(parsed.threads || {})) {
+      if (fresh.threads[id]) fresh.threads[id] = v;
+    }
+    for (const [slug, v] of Object.entries(parsed.topics || {})) {
+      if (fresh.topics[slug]) fresh.topics[slug] = v;
+    }
+    return fresh;
+  } catch (e) {
+    console.error('Failed to load saved state, starting fresh.', e);
+    return freshState();
+  }
+}
+
+let state = loadState();
+let saveTimer = null;
+function saveState() {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => {
+    try { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
+    catch (e) { console.error('localStorage save failed', e); }
+  }, 250);
+}
+
+const threadById = Object.fromEntries(THREADS.map(t => [t.id, t]));
+let activeTopic = TAXONOMY[0].slug;
+
+function threadsForTopic(slug) {
+  return THREADS.filter(t => state.threads[t.id].primary_topic === slug);
+}
+
+function renderTopicsNav() {
+  const nav = document.getElementById('topics');
+  nav.innerHTML = '';
+  for (const t of TAXONOMY) {
+    const all = threadsForTopic(t.slug);
+    const approved = all.filter(x => state.threads[x.id].status === 'approved').length;
+    const btn = document.createElement('button');
+    btn.className = 'topic-btn' + (t.slug === activeTopic ? ' active' : '');
+    btn.innerHTML = `<span>${t.slug}</span><span class="n">${approved}/${all.length}</span>`;
+    btn.onclick = () => { activeTopic = t.slug; renderAll(); };
+    nav.appendChild(btn);
+  }
+}
+
+function renderStats() {
+  const total = THREADS.length;
+  let approved = 0, dropped = 0, moved = 0, pinned = 0;
+  for (const t of THREADS) {
+    const s = state.threads[t.id];
+    if (s.status === 'approved') approved++; else dropped++;
+    if (s.primary_topic !== t.primary_topic) moved++;
+    if (s.pinned) pinned++;
+  }
+  document.getElementById('stats').innerHTML =
+    `<span>${total} threads</span><span>${approved} approved</span><span>${dropped} dropped</span>` +
+    `<span>${moved} moved</span><span>${pinned} pinned</span>`;
+}
+
+function renderIntroBox() {
+  const box = document.getElementById('intro-box');
+  const data = state.topics[activeTopic] || { intro: '', key_threads: [] };
+  const desc = TOPIC_DESC[activeTopic] || '';
+  box.innerHTML = `
+    <h2>${activeTopic} <span class="ai-label">AI-drafted intro — edit before publishing</span></h2>
+    <div class="desc">${desc}</div>
+    <textarea id="intro-text">${escapeHtml(data.intro)}</textarea>
+    <div class="intro-meta">
+      <span id="word-count"></span>
+      <button class="btn" id="reset-intro">Reset to AI draft</button>
+    </div>`;
+  const ta = document.getElementById('intro-text');
+  const wc = document.getElementById('word-count');
+  const updateWc = () => { wc.textContent = ta.value.trim().split(/\s+/).filter(Boolean).length + ' words'; };
+  updateWc();
+  ta.addEventListener('input', () => {
+    state.topics[activeTopic].intro = ta.value;
+    updateWc();
+    saveState();
+  });
+  document.getElementById('reset-intro').onclick = () => {
+    const original = REVIEW_DATA.intros[activeTopic];
+    if (original && confirm('Discard your edits and restore the original AI draft for this topic?')) {
+      ta.value = original.intro;
+      state.topics[activeTopic].intro = original.intro;
+      updateWc();
+      saveState();
+    }
+  };
+}
+
+function escapeHtml(s) {
+  return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function currentFiltered() {
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  const hideDropped = document.getElementById('hide-dropped').checked;
+  const sort = document.getElementById('sort').value;
+  let list = threadsForTopic(activeTopic).filter(t => {
+    if (hideDropped && state.threads[t.id].status === 'dropped') return false;
+    if (q && !t.title.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  const pinnedFirst = (a, b) => (state.threads[b.id].pinned - state.threads[a.id].pinned);
+  const cmp = {
+    score: (a, b) => b.score - a.score,
+    confidence: (a, b) => a.confidence - b.confidence,
+    views: (a, b) => b.views - a.views,
+    title: (a, b) => a.title.localeCompare(b.title),
+  }[sort];
+  list.sort((a, b) => pinnedFirst(a, b) || cmp(a, b));
+  return list;
+}
+
+function topicOptionsHtml(current) {
+  return TAXONOMY.map(t => `<option value="${t.slug}" ${t.slug === current ? 'selected' : ''}>${t.slug}</option>`).join('');
+}
+
+function renderRows() {
+  const list = currentFiltered();
+  const tbody = document.getElementById('thread-rows');
+  document.getElementById('empty-msg').style.display = list.length ? 'none' : 'block';
+  tbody.innerHTML = list.map(t => {
+    const s = state.threads[t.id];
+    const dropped = s.status === 'dropped';
+    const badges = [];
+    if (t.is_reference_quality) badges.push('<span class="badge ref">reference</span>');
+    if (t.confidence < 0.6) badges.push(`<span class="badge conf-low">low conf ${t.confidence.toFixed(2)}</span>`);
+    if (t.diary_subtag) badges.push(`<span class="badge diary">${t.diary_subtag}</span>`);
+    if (t.secondary_topics.length) badges.push(`<span class="badge" style="background:#eee;color:#666;">also: ${t.secondary_topics.join(', ')}</span>`);
+    return `
+      <tr class="${dropped ? 'dropped' : ''}" data-id="${t.id}">
+        <td>
+          <div class="title"><a href="../../preview/t/${t.id}/" target="_blank" rel="noopener">${escapeHtml(t.title)}</a></div>
+          <div class="meta">${t.forum} · ${t.views.toLocaleString()} views · ${t.replies} replies · score ${t.score.toFixed(1)}</div>
+        </td>
+        <td>${badges.join(' ')}</td>
+        <td><select class="move-select" data-id="${t.id}">${topicOptionsHtml(s.primary_topic)}</select></td>
+        <td>
+          <div class="row-actions">
+            <button class="approve-btn ${!dropped ? 'on' : ''}" data-id="${t.id}" title="Approve">✓</button>
+            <button class="drop-btn ${dropped ? 'on' : ''}" data-id="${t.id}" title="Drop">✕</button>
+            <button class="pin-btn ${s.pinned ? 'on' : ''}" data-id="${t.id}" title="Pin as key thread">★</button>
+          </div>
+        </td>
+      </tr>`;
+  }).join('');
+
+  tbody.querySelectorAll('.approve-btn').forEach(b => b.onclick = () => {
+    state.threads[b.dataset.id].status = 'approved'; saveState(); renderAll();
+  });
+  tbody.querySelectorAll('.drop-btn').forEach(b => b.onclick = () => {
+    state.threads[b.dataset.id].status = 'dropped'; saveState(); renderAll();
+  });
+  tbody.querySelectorAll('.pin-btn').forEach(b => b.onclick = () => {
+    const id = b.dataset.id;
+    const s = state.threads[id];
+    s.pinned = !s.pinned;
+    const kt = state.topics[activeTopic].key_threads;
+    const idx = kt.indexOf(Number(id));
+    if (s.pinned && idx === -1) kt.push(Number(id));
+    if (!s.pinned && idx !== -1) kt.splice(idx, 1);
+    saveState(); renderAll();
+  });
+  tbody.querySelectorAll('.move-select').forEach(sel => sel.onchange = () => {
+    const id = sel.dataset.id;
+    const s = state.threads[id];
+    const oldTopic = s.primary_topic;
+    const newTopic = sel.value;
+    if (oldTopic === newTopic) return;
+    s.primary_topic = newTopic;
+    if (s.pinned) {
+      // pin follows the thread's new topic
+      const oldKt = state.topics[oldTopic].key_threads;
+      const idx = oldKt.indexOf(Number(id));
+      if (idx !== -1) oldKt.splice(idx, 1);
+      state.topics[newTopic].key_threads.push(Number(id));
+    }
+    saveState(); renderAll();
+  });
+}
+
+function renderAll() {
+  renderTopicsNav();
+  renderStats();
+  renderIntroBox();
+  renderRows();
+}
+
+document.getElementById('search').addEventListener('input', renderRows);
+document.getElementById('sort').addEventListener('change', renderRows);
+document.getElementById('hide-dropped').addEventListener('change', renderRows);
+document.getElementById('approve-shown').onclick = () => {
+  for (const t of currentFiltered()) state.threads[t.id].status = 'approved';
+  saveState(); renderAll();
+};
+document.getElementById('drop-shown').onclick = () => {
+  if (!confirm('Drop all threads currently shown in this filtered view?')) return;
+  for (const t of currentFiltered()) state.threads[t.id].status = 'dropped';
+  saveState(); renderAll();
+};
+document.getElementById('help-btn').onclick = () => document.getElementById('help').showModal();
+
+document.getElementById('export-btn').onclick = () => {
+  const out = {
+    generated_at: new Date().toISOString(),
+    topics: state.topics,
+    threads: THREADS.map(t => {
+      const s = state.threads[t.id];
+      return {
+        topic_id: t.id,
+        primary_topic: s.primary_topic,
+        secondary_topics: t.secondary_topics,
+        diary_subtag: s.primary_topic === 'build-diaries' ? (t.diary_subtag || 'other') : null,
+        status: s.status,
+        pinned: s.pinned,
+      };
+    }),
+  };
+  const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'curation.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+};
+
+document.getElementById('import-input').addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const parsed = JSON.parse(reader.result);
+      const fresh = freshState();
+      for (const [slug, v] of Object.entries(parsed.topics || {})) {
+        if (fresh.topics[slug]) fresh.topics[slug] = v;
+      }
+      for (const row of parsed.threads || []) {
+        if (fresh.threads[row.topic_id]) {
+          fresh.threads[row.topic_id] = { status: row.status, primary_topic: row.primary_topic, pinned: row.pinned };
+        }
+      }
+      state = fresh;
+      saveState();
+      renderAll();
+      alert('Imported ' + (parsed.threads || []).length + ' thread decisions.');
+    } catch (err) {
+      alert('Could not read that file: ' + err.message);
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+});
+
+renderAll();
+</script>
+</body>
+</html>

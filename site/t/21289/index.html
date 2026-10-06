@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculating transmission loss of a triple leaf system | John Sayers’ Recording Studio Design Forum archive</title>
+<meta name="description" content="Started by Waka in Studio Design, 2017. 6 replies.">
+<link rel="canonical" href="https://johnlsayersarchive.com/t/21289/">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<div class="masthead-row">
+<a class="wordmark" href="/">John Sayers’ Recording Studio Design Forum<small>An archive of johnlsayers.com, 2003–2022</small></a>
+<nav class="site-nav" aria-label="Site">
+<a href="/library/">Library</a>
+<a href="/forum/" aria-current="page">Forums</a>
+<a href="/people/">People</a>
+<a href="/about/">About</a>
+<form action="/search/" method="get" role="search"><label class="vh" for="site-q">Search the archive</label><input type="search" id="site-q" name="q" placeholder="Search threads"></form>
+</nav>
+</div>
+</div>
+<svg class="wall" aria-hidden="true" focusable="false"><defs><pattern id="batt" width="14" height="34" patternUnits="userSpaceOnUse"><path class="batt" d="M0 25 L7 9 L14 25"/></pattern></defs><rect class="leaf" x="0" y="0" width="100%" height="3"/><rect class="leaf-2" x="0" y="4" width="100%" height="2.5"/><rect x="0" y="0" width="100%" height="34" fill="url(#batt)"/><rect class="leaf-2" x="0" y="27.5" width="100%" height="2.5"/><rect class="leaf" x="0" y="31" width="100%" height="3"/></svg>
+</header>
+<main id="main"><div class="wrap">
+
+<div class="read">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/forum/">Forums</a> › <a href="/forum/studio-design/">Studio Design</a></nav>
+<article data-pagefind-body>
+<header class="thread-head">
+<h1>Calculating transmission loss of a triple leaf system</h1>
+<div data-pagefind-ignore="all">
+<p class="thread-meta">Started by Waka on 1 November 2017. 6 replies, 2017–2022.</p>
+<p class="origin">Originally posted at johnlsayers.com, topic 21289.</p>
+
+</div>
+</header>
+<article class="post" id="p143734">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/waka/">Waka</a><time datetime="2017-11-01">1 November 2017</time><a class="permalink" href="#p143734" aria-label="Link to post 1">#1</a></header>
+<div class="post-body">Hi again,
+
+To start with I&#x27;ll show you my double leaf wall calculations and then I&#x27;ll move on to the triple leaf questions.
+
+(I&#x27;m going to show my working, so you can double check the method is correct)
+
+<strong>For my double leaf walls:</strong>
+First calculate MSM wall resonant frequency: 
+
+Fx = c[(m1+m2)/(m1m2d)]^0.5
+
+18mm OSB3 and 15mm Plasterboard on each decoupled wall frame. Insulated cavity is 225mm panel to panel.
+18mm OSB3 at 11.8kg/m2.
+15mm Plasterboard at 10.25kg/m2.
+Total: 22.05kg/m2
+
+Giving: 
+Fx = 43 * [(22.05 + 22.05) / (22.05 * 22.05 * 0.225)] ^ 0.5
+Fx = 43 * [ 44.1 / 109.4 ] ^ 0.5
+Fx = 43 * 0.4 ^ 0.5
+Fx = 43 * 0.63
+<strong>Fx = 27.09Hz</strong>
+
+Single leaf transmission loss for each leaf:
+TL = 14.5 log(M * 0.205) + 23 dB
+
+TL = 14.5 log(22.05 * 0.205) + 23
+TL = 14.5 log(4.52) + 23
+TL = 14.5 * 0.66 + 23
+TL = 9.57 + 23
+<strong>TL = 32.57dB</strong>
+
+Now move on to transmission loss formulas:
+R1 and R2 are using my single leaf transmission loss calculated above (32.57dB).
+f0 is my wall resonant frequency.
+f1 is 55/d Hz = 55 / 0.225 = 244.45Hz.
+
+R = 20log(f (m1 + m2)) - 47 ...[for the region where f &lt; f0]
+R = R1 + R2 + 20log(f * d) - 29 ...[for the region where f0 &lt; f &lt; f1]
+R = R1 + R2 + 6 ...[for the region where f &gt; f1]
+
+The lowest frequency I&#x27;m realistically aiming to isolate is the low E of a 4 string Bass guitar so I&#x27;m looking at 40Hz upwards.
+So as 40Hz is above my resonant wall frequency and less than 244.45Hz I use formula two above.
+
+R = R1 + R2 + 20log(f * d) - 29
+R = 32.57 + 32.57 + 20 log( 40 * 0.225) - 29
+R = 65.14 + 20 log( 9 ) - 29
+R = 65.14 + 19.08 - 29
+<strong>R = 55.22dB</strong>
+
+I am happy with this level of isolation if I can achieve it.
+
+
+Now moving onto the the triple leaf, this is my roof. I need a vented roof space so will have to seal the underside of the roof joists, this forces me to have a triple leaf ceiling.
+
+How do you calculate the resonant frequencies is this system? As I have read this is not just a case of calculating them independently?
+
+I&#x27;ve seen these equations listed on another thread here:
+<div class="bb-attachment-missing">Image not preserved: double-triple f0.jpg</div>The author of the thread listed the variables as:
+m1,m2,m3 - mass per unit area (kg/m2)
+c0 - speed of sound 343 m/s
+ro0 - air density 1,18 kg/m3
+
+These are more complicated formulas and I&#x27;m struggling to understand the triple leaf one especially. This is my working for the double leaf partition:
+
+m0 = (2 * m1 * m2) / (m1 + m2)
+m0 = (2 * 22.05 * 22.05) / (22.05 + 22.05)
+m0 = 972.4 / 44.1
+m0 = 22.05
+
+f0 = 1 / (2π) * [(3.6 * ro0 * c0^2) / (m0 * d)] ^ 0.5  
+f0 = 0.16 * [(3.6 * 1.18 * 343^2) / ( 22.05 * 0.225)] ^ 0.5
+f0 = 0.16 * [499772.95 / 21.07] ^ 0.5
+f0 = 0.16 * 23719.65 ^ 0.5
+f0 = 0.16 * 154.01
+<strong>f0 = 24.64Hz</strong>
+
+This is reasonably close to the simplified formula I&#x27;ve used before (although I&#x27;m not sure if insulation is figured in this formula at all??). Have I calculated this correctly?
+Then can someone help me with the second formula for triple leaf partitions please?
+
+This is my working so far on the triple leaf calcs:
+m1 = 22.05
+m2 = 22.05
+m3 = 11.8 (single OSB3 18mm)
+d1 and d2 = 0.2 (200mm cavities)
+
+a = 1 / (2 * m2) * ( [(m1 + m2) / (m1 * d1)] + [(m2 + m3) / (m3 * d2)] )
+a = 1 / ( 2 * 22.05) * ( [(22.05 + 22.05) / (22.05 * 0.2)] + [(22.05 + 11.8 ) / (11.8 * 0.2)] )
+a = 0.023 * ( [44.1 / 4.41] + [33.85 / 2.36] )
+a = 0.023 * ( 10 + 14.34)
+<strong>a = 0.56</strong>
+
+b = M / (m1 * m2 * m3 * d1 * d2)
+I&#x27;m assuming capitalised M means the combined mass of the all of the layers on the leaves (as in the single leaf equation). So:
+b = (22.05 + 22.05 + 11.8 ) / (22.05 * 22.05 * 11.8 * 0.2 * 0.2)
+b = 55.9 / 229.49
+<strong>b = 0.24</strong>
+
+<strong>Now the actual resonant frequency formula:</strong>
+
+For the first frequency:
+fx = 1 / (2π) * [(3.6 * ro0 * c0 ^ 2) ^ 0.5] * [ ( a + [ (a^2 - b) ^ 0.5 ] ) ^ 0.5 ]
+fx = 1 / (2π) * [(3.6 * 1.18 * 343^2) ^ 0.5] * [ ( 0.56 + [ (0.56^2 - 0.24) ^ 0.5 ] ) ^ 0.5 ]
+fx = 0.16 * [499772.95 ^ 0.5] * [(0.56 + 0.27) ^ 0.5]
+fx = 0.16 * 706.94 * 0.91
+<strong>fx = 102.93Hz</strong>
+
+For the second frequency:
+fy = 1 / (2π) * [(3.6 * ro0 * c0 ^ 2) ^ 0.5] * [ ( a - [ (a^2 - b) ^ 0.5 ] ) ^ 0.5 ]
+fy = 1 / (2π) * [(3.6 * 1.18 * 343^2) ^ 0.5] * [ ( 0.56 - [ (0.56^2 - 0.24) ^ 0.5 ] ) ^ 0.5 ]
+fy = 0.16 * [499772.95 ^ 0.5] * [(0.56 - 0.27) ^ 0.5]
+fy = 0.16 * 706.94 * 0.54
+<strong>fy = 61Hz</strong>
+
+These don&#x27;t quite look right as the lowest frequency is almost 3 times what I calculated for the double leaf.
+
+Thanks (I feel like I&#x27;m back at school)  <span class="smilie" title=":oops:">:oops:</span> 
+Dan</div>
+</article>
+<article class="post" id="p157610">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">TomSleebus</span><time datetime="2022-01-02">2 January 2022</time><a class="permalink" href="#p157610" aria-label="Link to post 2">#2</a></header>
+<div class="post-body">Old thread, hope someone can pick it up
+
+I found only a reference to green glue&#x27;s pdf on <a href="https://www.greengluecompany.com/sites/imdf.greengluecompany.com/files/files_resource_library/understanding_thetriple_leaf_effect.pdf" rel="nofollow noopener" target="_blank">https://www.greengluecompany.com/sites/ ... effect.pdf</a>
+
+Which seems to indicate indeed higher fx and fy figures.
+
+Have you been able to confirm the formula&#x27;s? I&#x27;m curious to see as I have a similar situation to solve...
+
+As I cannot add mass to the shell (which is a double leaf) I currently have the inner shell (third leaf) to be built as far away from the existing wall as doable (and yes that is a compromise), not yet sure how to calculate correctly.</div>
+</article>
+<article class="post" id="p157614">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gullfo/">gullfo</a><time datetime="2022-01-03">3 January 2022</time><a class="permalink" href="#p157614" aria-label="Link to post 3">#3</a></header>
+<div class="post-body">you have to take into account several factors - each layer attenuation before calculating the next leaf. then if the final (third leaf) is far away (e.g. 3&#x27;) and it&#x27;s mass is more substantial than the inner leafs, the 3rd leaf effect is much less significant. otherwise to mitigate - you need to change the layering in each leaf to avoid (as much as possible) coincident resonance frequencies. (2x 5/8, 2x 5/8, 1x 5/8) on each subsequent leaf. i did this for a client who had a 2 leaf construct from someone else but not enough isolation and adding the light 3rd leaf as a membrane absorber effect did the trick. neighbor 5&#x27; away couldn&#x27;t hear anything when band inside was cranking 110 or more db... fusion jazz - 5 string bass, 7 string electrics</div>
+</article>
+<article class="post" id="p157619">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">TomSleebus</span><time datetime="2022-01-03">3 January 2022</time><a class="permalink" href="#p157619" aria-label="Link to post 4">#4</a></header>
+<div class="post-body">Thanx Glenn,
+
+I&#x27;ll continue the triple leaf question in my thread on my studio project if you agree...
+
+To return to the OP&#x27;s initial question, I think he made a mistake in the formula
+
+f0 = 1 / (2π) * [(3.6 * ro0 * c0^2) / (m0 * d)] ^ 0.5
+f0 = 0.16 * [(3.6 * 1.18 * 343^2) / ( 22.05 * 0.225)] ^ 0.5
+f0 = 0.16 * [499772.95 / 21.07] ^ 0.5
+f0 = 0.16 * 23719.65 ^ 0.5
+f0 = 0.16 * 154.01
+f0 = 24.64Hz
+
+In the third line, 21,07 is not the result of 22.05*0.225, when calculating the f0 in that case would be closer to 51Hz, which on its turn is much closer to the fy found for the triple leaf formula.
+
+Still puzzles me why this&#x27; thread double leaf resonant frequency formula gets another result from the formula that I&#x27;m used to
+
+f0 = C [ (m1 + m2) / (m1 x m2 x d)]^0.5
+
+This gives for the OP&#x27;s wall 29Hz as resonant frequency with insulation, 40Hz without insulation.</div>
+</article>
+<article class="post" id="p157625">
+<header class="post-head" data-pagefind-ignore="all"><a class="post-author" href="/people/gullfo/">gullfo</a><time datetime="2022-01-03">3 January 2022</time><a class="permalink" href="#p157625" aria-label="Link to post 5">#5</a></header>
+<div class="post-body">keeping in mind, these formulas are very simplistic using simple mass calculations and changing the framing (narrower to raise resonances, staggered width 16&quot; + 24&quot;, and plywood sheathing) can change the actual functioning quite a lot. the old studiotips MSM spreadsheets while useful are simply rough estimates and its really required to empirical tests to assess what the construction, layers, and materials actually do.</div>
+</article>
+<article class="post" id="p157704">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Elusive Sounds</span><time datetime="2022-01-13">13 January 2022</time><a class="permalink" href="#p157704" aria-label="Link to post 6">#6</a></header>
+<div class="post-body">I was just asking about this in my design thread. Will look at this closely. Thanks.</div>
+</article>
+<article class="post" id="p157841">
+<header class="post-head" data-pagefind-ignore="all"><span class="post-author">Elusive Sounds</span><time datetime="2022-01-25">25 January 2022</time><a class="permalink" href="#p157841" aria-label="Link to post 7">#7</a></header>
+<div class="post-body"><blockquote class="bb-quote"><div class="bb-quote-author">TomSleebus wrote:</div><div class="bb-quote-body"> Still puzzles me why this&#x27; thread double leaf resonant frequency formula gets another result from the formula that I&#x27;m used to
+
+f0 = C [ (m1 + m2) / (m1 x m2 x d)]^0.5</div></blockquote>Tom, which value do you use for the constant C for your calculations? This is giving me a lot of confusion because I keep seeing the value 43 (representing a filled cavity for imperial units calculations) used while metric values for mass (KG/m^2) are used in the equation for fo.</div>
+</article>
+
+</article>
+<div data-pagefind-ignore="all"></div>
+</div>
+
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<p>An independent, read-only archive of the johnlsayers.com recording studio design forum. Posts appear as their authors wrote them, with contact details removed.</p>
+<p>Have an old johnlsayers.com link? <a href="/old-link/">Find the thread it pointed to</a>. To ask for a post to be removed, contact <a href="mailto:removals@johnlsayersarchive.com">removals@johnlsayersarchive.com</a>.</p>
+</div></footer>
+</body>
+</html>
