@@ -29,6 +29,12 @@ Image recovery from the Wayback Machine (`tools/03_wayback.py`, `tools/08_waybac
 
 `PLAN.md` records every decision behind the archive.
 
+## Publishing
+
+The site is hosted on GitHub Pages. `.github/workflows/pages.yml` uploads whatever is committed in `site/` whenever it changes on `main`, so publishing is: build, run QA, commit, push.
+
+While the domain still pointed elsewhere, the site was previewed at https://eightamrock.github.io/johnlsayersarchive/ using a build made with `JLS_BASE_PATH=/johnlsayersarchive`, which prefixes every link with that folder. Builds for johnlsayersarchive.com itself leave `JLS_BASE_PATH` unset.
+
 ## Removal requests
 
 If you wrote a post here and want it removed, see the contact on the site's About page.
